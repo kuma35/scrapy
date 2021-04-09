@@ -322,3 +322,7 @@ def maybe_skip_member(app, what, name, obj, skip, options):
         # https://github.com/sphinx-doc/sphinx/issues/4422
         return name in {'default_item_class', 'default_selector_class'}
     return skip
+
+# for sphinx-intl
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.
