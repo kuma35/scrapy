@@ -1,0 +1,590 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008–2021, Scrapy developers
+# This file is distributed under the same license as the Scrapy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Scrapy 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-10 01:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../topics/api.rst:5
+msgid "Core API"
+msgstr ""
+
+#: ../../topics/api.rst:7
+msgid ""
+"This section documents the Scrapy core API, and it's intended for "
+"developers of extensions and middlewares."
+msgstr ""
+
+#: ../../topics/api.rst:13
+msgid "Crawler API"
+msgstr ""
+
+#: ../../topics/api.rst:15
+msgid ""
+"The main entry point to Scrapy API is the "
+":class:`~scrapy.crawler.Crawler` object, passed to extensions through the"
+" ``from_crawler`` class method. This object provides access to all Scrapy"
+" core components, and it's the only way for extensions to access them and"
+" hook their functionality into Scrapy."
+msgstr ""
+
+#: ../../topics/api.rst:23
+msgid ""
+"The Extension Manager is responsible for loading and keeping track of "
+"installed extensions and it's configured through the "
+":setting:`EXTENSIONS` setting which contains a dictionary of all "
+"available extensions and their order similar to how you :ref:`configure "
+"the downloader middlewares <topics-downloader-middleware-setting>`."
+msgstr ""
+
+#: ../../topics/api.rst:31
+msgid ""
+"The Crawler object must be instantiated with a "
+":class:`scrapy.spiders.Spider` subclass and a "
+":class:`scrapy.settings.Settings` object."
+msgstr ""
+
+#: ../../topics/api.rst:37
+msgid "The settings manager of this crawler."
+msgstr ""
+
+#: ../../topics/api.rst:39
+msgid ""
+"This is used by extensions & middlewares to access the Scrapy settings of"
+" this crawler."
+msgstr ""
+
+#: ../../topics/api.rst:42
+msgid "For an introduction on Scrapy settings see :ref:`topics-settings`."
+msgstr ""
+
+#: ../../topics/api.rst:44
+msgid "For the API see :class:`~scrapy.settings.Settings` class."
+msgstr ""
+
+#: ../../topics/api.rst:48
+msgid "The signals manager of this crawler."
+msgstr ""
+
+#: ../../topics/api.rst:50
+msgid ""
+"This is used by extensions & middlewares to hook themselves into Scrapy "
+"functionality."
+msgstr ""
+
+#: ../../topics/api.rst:53
+msgid "For an introduction on signals see :ref:`topics-signals`."
+msgstr ""
+
+#: ../../topics/api.rst:55
+msgid "For the API see :class:`~scrapy.signalmanager.SignalManager` class."
+msgstr ""
+
+#: ../../topics/api.rst:59
+msgid "The stats collector of this crawler."
+msgstr ""
+
+#: ../../topics/api.rst:61
+msgid ""
+"This is used from extensions & middlewares to record stats of their "
+"behaviour, or access stats collected by other extensions."
+msgstr ""
+
+#: ../../topics/api.rst:64
+msgid "For an introduction on stats collection see :ref:`topics-stats`."
+msgstr ""
+
+#: ../../topics/api.rst:66
+msgid "For the API see :class:`~scrapy.statscollectors.StatsCollector` class."
+msgstr ""
+
+#: ../../topics/api.rst:70
+msgid "The extension manager that keeps track of enabled extensions."
+msgstr ""
+
+#: ../../topics/api.rst:72
+msgid "Most extensions won't need to access this attribute."
+msgstr ""
+
+#: ../../topics/api.rst:74
+msgid ""
+"For an introduction on extensions and a list of available extensions on "
+"Scrapy see :ref:`topics-extensions`."
+msgstr ""
+
+#: ../../topics/api.rst:79
+msgid ""
+"The execution engine, which coordinates the core crawling logic between "
+"the scheduler, downloader and spiders."
+msgstr ""
+
+#: ../../topics/api.rst:82
+msgid ""
+"Some extension may want to access the Scrapy engine, to inspect  or "
+"modify the downloader and scheduler behaviour, although this is an "
+"advanced use and this API is not yet stable."
+msgstr ""
+
+#: ../../topics/api.rst:88
+msgid ""
+"Spider currently being crawled. This is an instance of the spider class "
+"provided while constructing the crawler, and it is created after the "
+"arguments given in the :meth:`crawl` method."
+msgstr ""
+
+#: ../../topics/api.rst:94
+msgid ""
+"Starts the crawler by instantiating its spider class with the given "
+"``args`` and ``kwargs`` arguments, while setting the execution engine in "
+"motion."
+msgstr ""
+
+#: ../../topics/api.rst:98
+msgid "Returns a deferred that is fired when the crawl is finished."
+msgstr ""
+
+#: ../../topics/api.rst:113
+msgid "Settings API"
+msgstr ""
+
+#: ../../topics/api.rst:120
+msgid ""
+"Dictionary that sets the key name and priority level of the default "
+"settings priorities used in Scrapy."
+msgstr ""
+
+#: ../../topics/api.rst:123
+msgid ""
+"Each item defines a settings entry point, giving it a code name for "
+"identification and an integer priority. Greater priorities take more "
+"precedence over lesser ones when setting and retrieving values in the "
+":class:`~scrapy.settings.Settings` class."
+msgstr ""
+
+#: ../../topics/api.rst:140
+msgid ""
+"For a detailed explanation on each settings sources, see: :ref:`topics-"
+"settings`."
+msgstr ""
+
+#: of scrapy.settings.get_settings_priority:1
+msgid ""
+"Small helper function that looks up a given string priority in the "
+":attr:`~scrapy.settings.SETTINGS_PRIORITIES` dictionary and returns its "
+"numerical value, or directly returns a given numerical priority."
+msgstr ""
+
+#: of scrapy.settings.Settings:1
+msgid "Bases: :class:`scrapy.settings.BaseSettings`"
+msgstr ""
+
+#: of scrapy.settings.Settings:1
+msgid ""
+"This object stores Scrapy settings for the configuration of internal "
+"components, and can be used for any further customization."
+msgstr ""
+
+#: of scrapy.settings.Settings:4
+msgid ""
+"It is a direct subclass and supports all methods of "
+":class:`~scrapy.settings.BaseSettings`. Additionally, after instantiation"
+" of this class, the new object will have the global default settings "
+"described on :ref:`topics-settings-ref` already populated."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings:1
+msgid ""
+"Instances of this class behave like dictionaries, but store priorities "
+"along with their ``(key, value)`` pairs, and can be frozen (i.e. marked "
+"immutable)."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings:5
+msgid ""
+"Key-value entries can be passed on initialization with the ``values`` "
+"argument, and they would take the ``priority`` level (unless ``values`` "
+"is already an instance of :class:`~scrapy.settings.BaseSettings`, in "
+"which case the existing priority levels will be kept).  If the "
+"``priority`` argument is a string, the priority name will be looked up in"
+" :attr:`~scrapy.settings.SETTINGS_PRIORITIES`. Otherwise, a specific "
+"integer should be provided."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings:13
+msgid ""
+"Once the object is created, new settings can be loaded or updated with "
+"the :meth:`~scrapy.settings.BaseSettings.set` method, and can be accessed"
+" with the square bracket notation of dictionaries, or with the "
+":meth:`~scrapy.settings.BaseSettings.get` method of the instance and its "
+"value conversion variants. When requesting a stored key, the value with "
+"the highest priority will be retrieved."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.copy:1
+msgid "Make a deep copy of current settings."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.copy:3
+msgid ""
+"This method returns a new instance of the :class:`Settings` class, "
+"populated with the same values and their priorities."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.copy:6
+msgid ""
+"Modifications to the new object won't be reflected on the original "
+"settings."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.copy_to_dict:1
+msgid "Make a copy of current settings and convert to a dict."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.copy_to_dict:3
+msgid ""
+"This method returns a new dict populated with the same values and their "
+"priorities as the current settings."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.copy_to_dict:6
+msgid ""
+"Modifications to the returned dict won't be reflected on the original "
+"settings."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.copy_to_dict:9
+msgid ""
+"This method can be useful for example for printing settings in Scrapy "
+"shell."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.freeze:1
+msgid "Disable further changes to the current settings."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.freeze:3
+msgid ""
+"After calling this method, the present state of the settings will become "
+"immutable. Trying to change values through the :meth:`~set` method and "
+"its variants won't be possible and will be alerted."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.frozencopy:1
+msgid "Return an immutable copy of the current settings."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.frozencopy:3
+msgid "Alias for a :meth:`~freeze` call in the object returned by :meth:`copy`."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.get:1
+msgid "Get a setting value without affecting its original type."
+msgstr ""
+
+#: ../../topics/api.rst of scrapy.settings.BaseSettings.get
+#: scrapy.settings.BaseSettings.getbool scrapy.settings.BaseSettings.getdict
+#: scrapy.settings.BaseSettings.getfloat scrapy.settings.BaseSettings.getint
+#: scrapy.settings.BaseSettings.getlist
+#: scrapy.settings.BaseSettings.getpriority
+#: scrapy.settings.BaseSettings.getwithbase scrapy.settings.BaseSettings.set
+#: scrapy.settings.BaseSettings.setmodule scrapy.settings.BaseSettings.update
+msgid "Parameters"
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.get:3 scrapy.settings.BaseSettings.getbool:9
+#: scrapy.settings.BaseSettings.getdict:9
+#: scrapy.settings.BaseSettings.getfloat:3
+#: scrapy.settings.BaseSettings.getint:3 scrapy.settings.BaseSettings.getlist:7
+#: scrapy.settings.BaseSettings.getpriority:4
+#: scrapy.settings.BaseSettings.set:7
+msgid "the setting name"
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.get:6
+#: scrapy.settings.BaseSettings.getbool:12
+#: scrapy.settings.BaseSettings.getdict:12
+#: scrapy.settings.BaseSettings.getfloat:6
+#: scrapy.settings.BaseSettings.getint:6
+#: scrapy.settings.BaseSettings.getlist:10
+msgid "the value to return if no setting is found"
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getbool:1
+msgid "Get a setting value as a boolean."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getbool:3
+msgid ""
+"``1``, ``'1'``, `True`` and ``'True'`` return ``True``, while ``0``, "
+"``'0'``, ``False``, ``'False'`` and ``None`` return ``False``."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getbool:6
+msgid ""
+"For example, settings populated through environment variables set to "
+"``'0'`` will return ``False`` when using this method."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getdict:1
+msgid ""
+"Get a setting value as a dictionary. If the setting original type is a "
+"dictionary, a copy of it will be returned. If it is a string it will be "
+"evaluated as a JSON dictionary. In the case that it is a "
+":class:`~scrapy.settings.BaseSettings` instance itself, it will be "
+"converted to a dictionary, containing all its current settings values as "
+"they would be returned by :meth:`~scrapy.settings.BaseSettings.get`, and "
+"losing all information about priority and mutability."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getfloat:1
+msgid "Get a setting value as a float."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getint:1
+msgid "Get a setting value as an int."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getlist:1
+msgid ""
+"Get a setting value as a list. If the setting original type is a list, a "
+"copy of it will be returned. If it's a string it will be split by \",\"."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getlist:4
+msgid ""
+"For example, settings populated through environment variables set to "
+"``'one,two'`` will return a list ['one', 'two'] when using this method."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getpriority:1
+msgid ""
+"Return the current numerical priority value of a setting, or ``None`` if "
+"the given ``name`` does not exist."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getwithbase:1
+msgid ""
+"Get a composition of a dictionary-like setting and its `_BASE` "
+"counterpart."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.getwithbase:4
+msgid "name of the dictionary-like setting"
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.maxpriority:1
+msgid ""
+"Return the numerical value of the highest priority present throughout all"
+" settings, or the numerical value for ``default`` from "
+":attr:`~scrapy.settings.SETTINGS_PRIORITIES` if there are no settings "
+"stored."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.set:1
+msgid "Store a key/value attribute with a given priority."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.set:3
+msgid ""
+"Settings should be populated *before* configuring the Crawler object "
+"(through the :meth:`~scrapy.crawler.Crawler.configure` method), otherwise"
+" they won't have any effect."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.set:10
+msgid "the value to associate with the setting"
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.set:13
+msgid ""
+"the priority of the setting. Should be a key of "
+":attr:`~scrapy.settings.SETTINGS_PRIORITIES` or an integer"
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.setmodule:1
+msgid "Store settings from a module with a given priority."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.setmodule:3
+msgid ""
+"This is a helper function that calls "
+":meth:`~scrapy.settings.BaseSettings.set` for every globally declared "
+"uppercase variable of ``module`` with the provided ``priority``."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.setmodule:7
+msgid "the module or the path of the module"
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.setmodule:10
+#: scrapy.settings.BaseSettings.update:17
+msgid ""
+"the priority of the settings. Should be a key of "
+":attr:`~scrapy.settings.SETTINGS_PRIORITIES` or an integer"
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.update:1
+msgid "Store key/value pairs with a given priority."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.update:3
+msgid ""
+"This is a helper function that calls "
+":meth:`~scrapy.settings.BaseSettings.set` for every item of ``values`` "
+"with the provided ``priority``."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.update:7
+msgid ""
+"If ``values`` is a string, it is assumed to be JSON-encoded and parsed "
+"into a dict with ``json.loads()`` first. If it is a "
+":class:`~scrapy.settings.BaseSettings` instance, the per-key priorities "
+"will be used and the ``priority`` parameter ignored. This allows "
+"inserting/updating settings with different priorities with a single "
+"command."
+msgstr ""
+
+#: of scrapy.settings.BaseSettings.update:14
+msgid "the settings names and values"
+msgstr ""
+
+#: ../../topics/api.rst:155
+msgid "SpiderLoader API"
+msgstr ""
+
+#: ../../topics/api.rst:162
+msgid ""
+"This class is in charge of retrieving and handling the spider classes "
+"defined across the project."
+msgstr ""
+
+#: ../../topics/api.rst:165
+msgid ""
+"Custom spider loaders can be employed by specifying their path in the "
+":setting:`SPIDER_LOADER_CLASS` project setting. They must fully implement"
+" the :class:`scrapy.interfaces.ISpiderLoader` interface to guarantee an "
+"errorless execution."
+msgstr ""
+
+#: ../../topics/api.rst:172
+msgid ""
+"This class method is used by Scrapy to create an instance of the class. "
+"It's called with the current project settings, and it loads the spiders "
+"found recursively in the modules of the :setting:`SPIDER_MODULES` "
+"setting."
+msgstr ""
+
+#: ../../topics/api.rst:177
+msgid "project settings"
+msgstr ""
+
+#: ../../topics/api.rst:182
+msgid ""
+"Get the Spider class with the given name. It'll look into the previously "
+"loaded spiders for a spider class with name ``spider_name`` and will "
+"raise a KeyError if not found."
+msgstr ""
+
+#: ../../topics/api.rst:186
+msgid "spider class name"
+msgstr ""
+
+#: ../../topics/api.rst:191
+msgid "Get the names of the available spiders in the project."
+msgstr ""
+
+#: ../../topics/api.rst:195
+msgid ""
+"List the spiders' names that can handle the given request. Will try to "
+"match the request's url against the domains of the spiders."
+msgstr ""
+
+#: ../../topics/api.rst:198
+msgid "queried request"
+msgstr ""
+
+#: ../../topics/api.rst:204
+msgid "Signals API"
+msgstr ""
+
+#: ../../topics/api.rst:214
+msgid "Stats Collector API"
+msgstr ""
+
+#: ../../topics/api.rst:216
+msgid ""
+"There are several Stats Collectors available under the "
+":mod:`scrapy.statscollectors` module and they all implement the Stats "
+"Collector API defined by the "
+":class:`~scrapy.statscollectors.StatsCollector` class (which they all "
+"inherit from)."
+msgstr ""
+
+#: ../../topics/api.rst:228
+msgid "Return the value for the given stats key or default if it doesn't exist."
+msgstr ""
+
+#: ../../topics/api.rst:232
+msgid "Get all stats from the currently running spider as a dict."
+msgstr ""
+
+#: ../../topics/api.rst:236
+msgid "Set the given value for the given stats key."
+msgstr ""
+
+#: ../../topics/api.rst:240
+msgid "Override the current stats with the dict passed in ``stats`` argument."
+msgstr ""
+
+#: ../../topics/api.rst:244
+msgid ""
+"Increment the value of the given stats key, by the given count, assuming "
+"the start value given (when it's not set)."
+msgstr ""
+
+#: ../../topics/api.rst:249
+msgid ""
+"Set the given value for the given key only if current value for the same "
+"key is lower than value. If there is no current value for the given key, "
+"the value is always set."
+msgstr ""
+
+#: ../../topics/api.rst:255
+msgid ""
+"Set the given value for the given key only if current value for the same "
+"key is greater than value. If there is no current value for the given "
+"key, the value is always set."
+msgstr ""
+
+#: ../../topics/api.rst:261
+msgid "Clear all stats."
+msgstr ""
+
+#: ../../topics/api.rst:263
+msgid ""
+"The following methods are not part of the stats collection api but "
+"instead used when implementing custom stats collectors:"
+msgstr ""
+
+#: ../../topics/api.rst:268
+msgid "Open the given spider for stats collection."
+msgstr ""
+
+#: ../../topics/api.rst:272
+msgid ""
+"Close the given spider. After this is called, no more specific stats can "
+"be accessed or collected."
+msgstr ""
+

@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008–2021, Scrapy developers
+# This file is distributed under the same license as the Scrapy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Scrapy 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-10 01:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../topics/asyncio.rst:5
+msgid "asyncio"
+msgstr ""
+
+#: ../../topics/asyncio.rst:9
+msgid ""
+"Scrapy has partial support for :mod:`asyncio`. After you :ref:`install "
+"the asyncio reactor <install-asyncio>`, you may use :mod:`asyncio` and "
+":mod:`asyncio`-powered libraries in any :doc:`coroutine <coroutines>`."
+msgstr ""
+
+#: ../../topics/asyncio.rst:13
+msgid ""
+":mod:`asyncio` support in Scrapy is experimental, and not yet recommended"
+" for production environments. Future Scrapy versions may introduce "
+"related changes without a deprecation period or warning."
+msgstr ""
+
+#: ../../topics/asyncio.rst:21
+msgid "Installing the asyncio reactor"
+msgstr ""
+
+#: ../../topics/asyncio.rst:23
+msgid ""
+"To enable :mod:`asyncio` support, set the :setting:`TWISTED_REACTOR` "
+"setting to ``'twisted.internet.asyncioreactor.AsyncioSelectorReactor'``."
+msgstr ""
+
+#: ../../topics/asyncio.rst:26
+msgid ""
+"If you are using :class:`~scrapy.crawler.CrawlerRunner`, you also need to"
+" install the "
+":class:`~twisted.internet.asyncioreactor.AsyncioSelectorReactor` reactor "
+"manually. You can do that using "
+":func:`~scrapy.utils.reactor.install_reactor`::"
+msgstr ""
+
+#: ../../topics/asyncio.rst:36
+msgid "Using custom asyncio loops"
+msgstr ""
+
+#: ../../topics/asyncio.rst:38
+msgid ""
+"You can also use custom asyncio event loops with the asyncio reactor. Set"
+" the :setting:`ASYNCIO_EVENT_LOOP` setting to the import path of the "
+"desired event loop class to use it instead of the default asyncio event "
+"loop."
+msgstr ""
+

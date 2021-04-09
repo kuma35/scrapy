@@ -1,0 +1,465 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008–2021, Scrapy developers
+# This file is distributed under the same license as the Scrapy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Scrapy 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-10 01:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../topics/loaders.rst:5
+msgid "Item Loaders"
+msgstr ""
+
+#: ../../topics/loaders.rst:10
+msgid ""
+"Item Loaders provide a convenient mechanism for populating scraped "
+":ref:`items <topics-items>`. Even though items can be populated directly,"
+" Item Loaders provide a much more convenient API for populating them from"
+" a scraping process, by automating some common tasks like parsing the raw"
+" extracted data before assigning it."
+msgstr ""
+
+#: ../../topics/loaders.rst:15
+msgid ""
+"In other words, :ref:`items <topics-items>` provide the *container* of "
+"scraped data, while Item Loaders provide the mechanism for *populating* "
+"that container."
+msgstr ""
+
+#: ../../topics/loaders.rst:19
+msgid ""
+"Item Loaders are designed to provide a flexible, efficient and easy "
+"mechanism for extending and overriding different field parsing rules, "
+"either by spider, or by source format (HTML, XML, etc) without becoming a"
+" nightmare to maintain."
+msgstr ""
+
+#: ../../topics/loaders.rst:23
+msgid ""
+"Item Loaders are an extension of the itemloaders_ library that make it "
+"easier to work with Scrapy by adding support for :ref:`responses <topics-"
+"request-response>`."
+msgstr ""
+
+#: ../../topics/loaders.rst:28
+msgid "Using Item Loaders to populate items"
+msgstr ""
+
+#: ../../topics/loaders.rst:30
+msgid ""
+"To use an Item Loader, you must first instantiate it. You can either "
+"instantiate it with an :ref:`item object <topics-items>` or without one, "
+"in which case an :ref:`item object <topics-items>` is automatically "
+"created in the Item Loader ``__init__`` method using the :ref:`item "
+"<topics-items>` class specified in the "
+":attr:`ItemLoader.default_item_class` attribute."
+msgstr ""
+
+#: ../../topics/loaders.rst:36
+msgid ""
+"Then, you start collecting values into the Item Loader, typically using "
+":ref:`Selectors <topics-selectors>`. You can add more than one value to "
+"the same item field; the Item Loader will know how to \"join\" those "
+"values later using a proper processing function."
+msgstr ""
+
+#: ../../topics/loaders.rst:41
+msgid ""
+"Collected data is internally stored as lists, allowing to add several "
+"values to the same field. If an ``item`` argument is passed when creating"
+" a loader, each of the item's values will be stored as-is if it's already"
+" an iterable, or wrapped with a list if it's a single value."
+msgstr ""
+
+#: ../../topics/loaders.rst:47
+msgid ""
+"Here is a typical Item Loader usage in a :ref:`Spider <topics-spiders>`, "
+"using the :ref:`Product item <topics-items-declaring>` declared in the "
+":ref:`Items chapter <topics-items>`::"
+msgstr ""
+
+#: ../../topics/loaders.rst:63
+msgid ""
+"By quickly looking at that code, we can see the ``name`` field is being "
+"extracted from two different XPath locations in the page:"
+msgstr ""
+
+#: ../../topics/loaders.rst:66
+msgid "``//div[@class=\"product_name\"]``"
+msgstr ""
+
+#: ../../topics/loaders.rst:67
+msgid "``//div[@class=\"product_title\"]``"
+msgstr ""
+
+#: ../../topics/loaders.rst:69
+msgid ""
+"In other words, data is being collected by extracting it from two XPath "
+"locations, using the :meth:`~ItemLoader.add_xpath` method. This is the "
+"data that will be assigned to the ``name`` field later."
+msgstr ""
+
+#: ../../topics/loaders.rst:73
+msgid ""
+"Afterwards, similar calls are used for ``price`` and ``stock`` fields "
+"(the latter using a CSS selector with the :meth:`~ItemLoader.add_css` "
+"method), and finally the ``last_update`` field is populated directly with"
+" a literal value (``today``) using a different method: "
+":meth:`~ItemLoader.add_value`."
+msgstr ""
+
+#: ../../topics/loaders.rst:78
+msgid ""
+"Finally, when all data is collected, the :meth:`ItemLoader.load_item` "
+"method is called which actually returns the item populated with the data "
+"previously extracted and collected with the "
+":meth:`~ItemLoader.add_xpath`, :meth:`~ItemLoader.add_css`, and "
+":meth:`~ItemLoader.add_value` calls."
+msgstr ""
+
+#: ../../topics/loaders.rst:87
+msgid "Working with dataclass items"
+msgstr ""
+
+#: ../../topics/loaders.rst:89
+msgid ""
+"By default, :ref:`dataclass items <dataclass-items>` require all fields "
+"to be passed when created. This could be an issue when using dataclass "
+"items with item loaders: unless a pre-populated item is passed to the "
+"loader, fields will be populated incrementally using the loader's "
+":meth:`~ItemLoader.add_xpath`, :meth:`~ItemLoader.add_css` and "
+":meth:`~ItemLoader.add_value` methods."
+msgstr ""
+
+#: ../../topics/loaders.rst:95
+msgid ""
+"One approach to overcome this is to define items using the "
+":func:`~dataclasses.field` function, with a ``default`` argument::"
+msgstr ""
+
+#: ../../topics/loaders.rst:111
+msgid "Input and Output processors"
+msgstr ""
+
+#: ../../topics/loaders.rst:113
+msgid ""
+"An Item Loader contains one input processor and one output processor for "
+"each (item) field. The input processor processes the extracted data as "
+"soon as it's received (through the :meth:`~ItemLoader.add_xpath`, "
+":meth:`~ItemLoader.add_css` or :meth:`~ItemLoader.add_value` methods) and"
+" the result of the input processor is collected and kept inside the "
+"ItemLoader. After collecting all data, the :meth:`ItemLoader.load_item` "
+"method is called to populate and get the populated :ref:`item object "
+"<topics-items>`.  That's when the output processor is called with the "
+"data previously collected (and processed using the input processor). The "
+"result of the output processor is the final value that gets assigned to "
+"the item."
+msgstr ""
+
+#: ../../topics/loaders.rst:124
+msgid ""
+"Let's see an example to illustrate how the input and output processors "
+"are called for a particular field (the same applies for any other "
+"field)::"
+msgstr ""
+
+#: ../../topics/loaders.rst:134
+msgid "So what happens is:"
+msgstr ""
+
+#: ../../topics/loaders.rst:136
+msgid ""
+"Data from ``xpath1`` is extracted, and passed through the *input "
+"processor* of the ``name`` field. The result of the input processor is "
+"collected and kept in the Item Loader (but not yet assigned to the item)."
+msgstr ""
+
+#: ../../topics/loaders.rst:140
+msgid ""
+"Data from ``xpath2`` is extracted, and passed through the same *input "
+"processor* used in (1). The result of the input processor is appended to "
+"the data collected in (1) (if any)."
+msgstr ""
+
+#: ../../topics/loaders.rst:144
+msgid ""
+"This case is similar to the previous ones, except that the data is "
+"extracted from the ``css`` CSS selector, and passed through the same "
+"*input processor* used in (1) and (2). The result of the input processor "
+"is appended to the data collected in (1) and (2) (if any)."
+msgstr ""
+
+#: ../../topics/loaders.rst:149
+msgid ""
+"This case is also similar to the previous ones, except that the value to "
+"be collected is assigned directly, instead of being extracted from a "
+"XPath expression or a CSS selector. However, the value is still passed "
+"through the input processors. In this case, since the value is not "
+"iterable it is converted to an iterable of a single element before "
+"passing it to the input processor, because input processor always receive"
+" iterables."
+msgstr ""
+
+#: ../../topics/loaders.rst:157
+msgid ""
+"The data collected in steps (1), (2), (3) and (4) is passed through the "
+"*output processor* of the ``name`` field. The result of the output "
+"processor is the value assigned to the ``name`` field in the item."
+msgstr ""
+
+#: ../../topics/loaders.rst:162
+msgid ""
+"It's worth noticing that processors are just callable objects, which are "
+"called with the data to be parsed, and return a parsed value. So you can "
+"use any function as input or output processor. The only requirement is "
+"that they must accept one (and only one) positional argument, which will "
+"be an iterable."
+msgstr ""
+
+#: ../../topics/loaders.rst:167
+msgid "Processors no longer need to be methods."
+msgstr ""
+
+#: ../../topics/loaders.rst:170
+msgid ""
+"Both input and output processors must receive an iterable as their first "
+"argument. The output of those functions can be anything. The result of "
+"input processors will be appended to an internal list (in the Loader) "
+"containing the collected values (for that field). The result of the "
+"output processors is the value that will be finally assigned to the item."
+msgstr ""
+
+#: ../../topics/loaders.rst:176
+msgid ""
+"The other thing you need to keep in mind is that the values returned by "
+"input processors are collected internally (in lists) and then passed to "
+"output processors to populate the fields."
+msgstr ""
+
+#: ../../topics/loaders.rst:180
+msgid ""
+"Last, but not least, itemloaders_ comes with some :ref:`commonly used "
+"processors <itemloaders:built-in-processors>` built-in for convenience."
+msgstr ""
+
+#: ../../topics/loaders.rst:185
+msgid "Declaring Item Loaders"
+msgstr ""
+
+#: ../../topics/loaders.rst:187
+msgid ""
+"Item Loaders are declared using a class definition syntax. Here is an "
+"example::"
+msgstr ""
+
+#: ../../topics/loaders.rst:203
+msgid ""
+"As you can see, input processors are declared using the ``_in`` suffix "
+"while output processors are declared using the ``_out`` suffix. And you "
+"can also declare a default input/output processors using the "
+":attr:`ItemLoader.default_input_processor` and "
+":attr:`ItemLoader.default_output_processor` attributes."
+msgstr ""
+
+#: ../../topics/loaders.rst:212
+msgid "Declaring Input and Output Processors"
+msgstr ""
+
+#: ../../topics/loaders.rst:214
+msgid ""
+"As seen in the previous section, input and output processors can be "
+"declared in the Item Loader definition, and it's very common to declare "
+"input processors this way. However, there is one more place where you can"
+" specify the input and output processors to use: in the :ref:`Item Field "
+"<topics-items-fields>` metadata. Here is an example::"
+msgstr ""
+
+#: ../../topics/loaders.rst:245
+msgid "The precedence order, for both input and output processors, is as follows:"
+msgstr ""
+
+#: ../../topics/loaders.rst:247
+msgid ""
+"Item Loader field-specific attributes: ``field_in`` and ``field_out`` "
+"(most precedence)"
+msgstr ""
+
+#: ../../topics/loaders.rst:249
+msgid "Field metadata (``input_processor`` and ``output_processor`` key)"
+msgstr ""
+
+#: ../../topics/loaders.rst:250
+msgid ""
+"Item Loader defaults: :meth:`ItemLoader.default_input_processor` and "
+":meth:`ItemLoader.default_output_processor` (least precedence)"
+msgstr ""
+
+#: ../../topics/loaders.rst:253
+msgid "See also: :ref:`topics-loaders-extending`."
+msgstr ""
+
+#: ../../topics/loaders.rst:258
+msgid "Item Loader Context"
+msgstr ""
+
+#: ../../topics/loaders.rst:260
+msgid ""
+"The Item Loader Context is a dict of arbitrary key/values which is shared"
+" among all input and output processors in the Item Loader. It can be "
+"passed when declaring, instantiating or using Item Loader. They are used "
+"to modify the behaviour of the input/output processors."
+msgstr ""
+
+#: ../../topics/loaders.rst:265
+msgid ""
+"For example, suppose you have a function ``parse_length`` which receives "
+"a text value and extracts a length from it::"
+msgstr ""
+
+#: ../../topics/loaders.rst:273
+msgid ""
+"By accepting a ``loader_context`` argument the function is explicitly "
+"telling the Item Loader that it's able to receive an Item Loader context,"
+" so the Item Loader passes the currently active context when calling it, "
+"and the processor function (``parse_length`` in this case) can thus use "
+"them."
+msgstr ""
+
+#: ../../topics/loaders.rst:278
+msgid "There are several ways to modify Item Loader context values:"
+msgstr ""
+
+#: ../../topics/loaders.rst:280
+msgid ""
+"By modifying the currently active Item Loader context "
+"(:attr:`~ItemLoader.context` attribute)::"
+msgstr ""
+
+#: ../../topics/loaders.rst:286
+msgid ""
+"On Item Loader instantiation (the keyword arguments of Item Loader "
+"``__init__`` method are stored in the Item Loader context)::"
+msgstr ""
+
+#: ../../topics/loaders.rst:291
+msgid ""
+"On Item Loader declaration, for those input/output processors that "
+"support instantiating them with an Item Loader context. "
+":class:`~processor.MapCompose` is one of them::"
+msgstr ""
+
+#: ../../topics/loaders.rst:300
+msgid "ItemLoader objects"
+msgstr ""
+
+#: ../../topics/loaders.rst:309
+msgid "Nested Loaders"
+msgstr ""
+
+#: ../../topics/loaders.rst:311
+msgid ""
+"When parsing related values from a subsection of a document, it can be "
+"useful to create nested loaders.  Imagine you're extracting details from "
+"a footer of a page that looks something like:"
+msgstr ""
+
+#: ../../topics/loaders.rst:315 ../../topics/loaders.rst:326
+#: ../../topics/loaders.rst:338
+msgid "Example::"
+msgstr ""
+
+#: ../../topics/loaders.rst:323
+msgid ""
+"Without nested loaders, you need to specify the full xpath (or css) for "
+"each value that you wish to extract."
+msgstr ""
+
+#: ../../topics/loaders.rst:334
+msgid ""
+"Instead, you can create a nested loader with the footer selector and add "
+"values relative to the footer.  The functionality is the same but you "
+"avoid repeating the footer selector."
+msgstr ""
+
+#: ../../topics/loaders.rst:348
+msgid ""
+"You can nest loaders arbitrarily and they work with either xpath or css "
+"selectors. As a general guideline, use nested loaders when they make your"
+" code simpler but do not go overboard with nesting or your parser can "
+"become difficult to read."
+msgstr ""
+
+#: ../../topics/loaders.rst:355
+msgid "Reusing and extending Item Loaders"
+msgstr ""
+
+#: ../../topics/loaders.rst:357
+msgid ""
+"As your project grows bigger and acquires more and more spiders, "
+"maintenance becomes a fundamental problem, especially when you have to "
+"deal with many different parsing rules for each spider, having a lot of "
+"exceptions, but also wanting to reuse the common processors."
+msgstr ""
+
+#: ../../topics/loaders.rst:362
+msgid ""
+"Item Loaders are designed to ease the maintenance burden of parsing "
+"rules, without losing flexibility and, at the same time, providing a "
+"convenient mechanism for extending and overriding them. For this reason "
+"Item Loaders support traditional Python class inheritance for dealing "
+"with differences of specific spiders (or groups of spiders)."
+msgstr ""
+
+#: ../../topics/loaders.rst:368
+msgid ""
+"Suppose, for example, that some particular site encloses their product "
+"names in three dashes (e.g. ``---Plasma TV---``) and you don't want to "
+"end up scraping those dashes in the final product names."
+msgstr ""
+
+#: ../../topics/loaders.rst:372
+msgid ""
+"Here's how you can remove those dashes by reusing and extending the "
+"default Product Item Loader (``ProductLoader``)::"
+msgstr ""
+
+#: ../../topics/loaders.rst:384
+msgid ""
+"Another case where extending Item Loaders can be very helpful is when you"
+" have multiple source formats, for example XML and HTML. In the XML "
+"version you may want to remove ``CDATA`` occurrences. Here's an example "
+"of how to do it::"
+msgstr ""
+
+#: ../../topics/loaders.rst:395
+msgid "And that's how you typically extend input processors."
+msgstr ""
+
+#: ../../topics/loaders.rst:397
+msgid ""
+"As for output processors, it is more common to declare them in the field "
+"metadata, as they usually depend only on the field and not on each "
+"specific site parsing rule (as input processors do). See also: :ref"
+":`topics-loaders-processors-declaring`."
+msgstr ""
+
+#: ../../topics/loaders.rst:402
+msgid ""
+"There are many other possible ways to extend, inherit and override your "
+"Item Loaders, and different Item Loaders hierarchies may fit better for "
+"different projects. Scrapy only provides the mechanism; it doesn't impose"
+" any specific organization of your Loaders collection - that's up to you "
+"and your project's needs."
+msgstr ""
+

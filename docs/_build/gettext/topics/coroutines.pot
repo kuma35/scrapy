@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008–2021, Scrapy developers
+# This file is distributed under the same license as the Scrapy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Scrapy 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-10 01:26+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../topics/coroutines.rst:3
+msgid "Coroutines"
+msgstr ""
+
+#: ../../topics/coroutines.rst:7
+msgid "Scrapy has :ref:`partial support <coroutine-support>` for the :ref:`coroutine syntax <async>`."
+msgstr ""
+
+#: ../../topics/coroutines.rst:13
+msgid "Supported callables"
+msgstr ""
+
+#: ../../topics/coroutines.rst:15
+msgid "The following callables may be defined as coroutines using ``async def``, and hence use coroutine syntax (e.g. ``await``, ``async for``, ``async with``):"
+msgstr ""
+
+#: ../../topics/coroutines.rst:18
+msgid ":class:`~scrapy.http.Request` callbacks."
+msgstr ""
+
+#: ../../topics/coroutines.rst:20
+msgid "The callback output is not processed until the whole callback finishes."
+msgstr ""
+
+#: ../../topics/coroutines.rst:23
+msgid "As a side effect, if the callback raises an exception, none of its output is processed."
+msgstr ""
+
+#: ../../topics/coroutines.rst:26
+msgid "This is a known caveat of the current implementation that we aim to address in a future version of Scrapy."
+msgstr ""
+
+#: ../../topics/coroutines.rst:29
+msgid "The :meth:`process_item` method of :ref:`item pipelines <topics-item-pipeline>`."
+msgstr ""
+
+#: ../../topics/coroutines.rst:32
+msgid "The :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_request`, :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_response`, and :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_exception` methods of :ref:`downloader middlewares <topics-downloader-middleware-custom>`."
+msgstr ""
+
+#: ../../topics/coroutines.rst:40
+msgid ":ref:`Signal handlers that support deferreds <signal-deferred>`."
+msgstr ""
+
+#: ../../topics/coroutines.rst:43
+msgid "Usage"
+msgstr ""
+
+#: ../../topics/coroutines.rst:45
+msgid "There are several use cases for coroutines in Scrapy. Code that would return Deferreds when written for previous Scrapy versions, such as downloader middlewares and signal handlers, can be rewritten to be shorter and cleaner::"
+msgstr ""
+
+#: ../../topics/coroutines.rst:63
+msgid "becomes::"
+msgstr ""
+
+#: ../../topics/coroutines.rst:73
+msgid "Coroutines may be used to call asynchronous code. This includes other coroutines, functions that return Deferreds and functions that return :term:`awaitable objects <awaitable>` such as :class:`~asyncio.Future`. This means you can use many useful Python libraries providing such code::"
+msgstr ""
+
+#: ../../topics/coroutines.rst:91
+msgid "Many libraries that use coroutines, such as `aio-libs`_, require the :mod:`asyncio` loop and to use them you need to :doc:`enable asyncio support in Scrapy<asyncio>`."
+msgstr ""
+
+#: ../../topics/coroutines.rst:95
+msgid "Common use cases for asynchronous code include:"
+msgstr ""
+
+#: ../../topics/coroutines.rst:97
+msgid "requesting data from websites, databases and other services (in callbacks, pipelines and middlewares);"
+msgstr ""
+
+#: ../../topics/coroutines.rst:99
+msgid "storing data in databases (in pipelines and middlewares);"
+msgstr ""
+
+#: ../../topics/coroutines.rst:100
+msgid "delaying the spider initialization until some external event (in the :signal:`spider_opened` handler);"
+msgstr ""
+
+#: ../../topics/coroutines.rst:102
+msgid "calling asynchronous Scrapy methods like ``ExecutionEngine.download`` (see :ref:`the screenshot pipeline example<ScreenshotPipeline>`)."
+msgstr ""

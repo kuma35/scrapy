@@ -21,3 +21,6 @@ htmlcov/
 
 # Windows
 Thumbs.db
+
+docs/_build/doctrees
+docs/_build/html
