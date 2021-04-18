@@ -1,75 +1,87 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-09-26 02:33+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../topics/item-pipeline.rst:5
 msgid "Item Pipeline"
-msgstr ""
+msgstr "アイテム・パイプライン"
 
 #: ../../topics/item-pipeline.rst:7
 msgid ""
-"After an item has been scraped by a spider, it is sent to the Item "
-"Pipeline which processes it through several components that are executed "
-"sequentially."
+"After an item has been scraped by a spider, it is sent to the Item Pipeline "
+"which processes it through several components that are executed sequentially."
 msgstr ""
+"アイテムがスパイダーによってスクレイプされた後、アイテムはアイテム・パイプラ"
+"インに送信され、アイテム・パイプラインは順次実行される複数のコンポーネントを"
+"介してアイテムを処理します。"
 
 #: ../../topics/item-pipeline.rst:10
 msgid ""
-"Each item pipeline component (sometimes referred as just \"Item "
-"Pipeline\") is a Python class that implements a simple method. They "
-"receive an item and perform an action over it, also deciding if the item "
-"should continue through the pipeline or be dropped and no longer "
-"processed."
+"Each item pipeline component (sometimes referred as just \"Item Pipeline\") "
+"is a Python class that implements a simple method. They receive an item and "
+"perform an action over it, also deciding if the item should continue through "
+"the pipeline or be dropped and no longer processed."
 msgstr ""
+"各アイテム・パイプライン・コンポーネント(アイテム・パイプラインとも呼ばれる)"
+"は、単純なメソッドを実装するPythonクラスです。 それらはアイテムを受け取り、そ"
+"れに対してアクションを実行します。また、そのアイテムがパイプラインで処理を継"
+"続されるか、そのアイテムをドロップして処理しなくなくなるかを決定します。"
 
 #: ../../topics/item-pipeline.rst:15
 msgid "Typical uses of item pipelines are:"
-msgstr ""
+msgstr "アイテムパイプラインの一般的な用途は次のとおりです:"
 
 #: ../../topics/item-pipeline.rst:17
 msgid "cleansing HTML data"
-msgstr ""
+msgstr "HTMLデータの洗浄(cleansing)"
 
 #: ../../topics/item-pipeline.rst:18
-msgid "validating scraped data (checking that the items contain certain fields)"
+msgid ""
+"validating scraped data (checking that the items contain certain fields)"
 msgstr ""
+"スクレイプしたグデータの検証(アイテムに特定のフィールドが含まれていることを確"
+"認)"
 
 #: ../../topics/item-pipeline.rst:19
 msgid "checking for duplicates (and dropping them)"
-msgstr ""
+msgstr "重複のチェック(そして重複分をドロップする)"
 
 #: ../../topics/item-pipeline.rst:20
 msgid "storing the scraped item in a database"
-msgstr ""
+msgstr "スクレイプされたアイテムをデータベースに保存する"
 
 #: ../../topics/item-pipeline.rst:24
 msgid "Writing your own item pipeline"
-msgstr ""
+msgstr "あなた独自のアイテム・パイプラインを書く"
 
 #: ../../topics/item-pipeline.rst:26
 msgid ""
 "Each item pipeline component is a Python class that must implement the "
 "following method:"
 msgstr ""
+"各アイテム・パイプライン・コンポーネントは、Pythonクラスであり、次のメソッド"
+"を実装する必要があります:"
 
 #: ../../topics/item-pipeline.rst:30
+#, fuzzy
+#| msgid "This method is called when the spider is opened."
 msgid "This method is called for every item pipeline component."
-msgstr ""
+msgstr "このメソッドは、スパイダーがオープンされたときに呼び出されます。"
 
 #: ../../topics/item-pipeline.rst:32
 msgid ""
@@ -79,97 +91,113 @@ msgstr ""
 
 #: ../../topics/item-pipeline.rst:35
 msgid ""
-":meth:`process_item` must either: return an :ref:`item object <item-"
-"types>`, return a :class:`~twisted.internet.defer.Deferred` or raise a "
-":exc:`~scrapy.exceptions.DropItem` exception."
+":meth:`process_item` must either: return an :ref:`item object <item-types>`, "
+"return a :class:`~twisted.internet.defer.Deferred` or raise a :exc:`~scrapy."
+"exceptions.DropItem` exception."
 msgstr ""
 
 #: ../../topics/item-pipeline.rst:39
 msgid "Dropped items are no longer processed by further pipeline components."
 msgstr ""
 
-#: ../../topics/item-pipeline.rst
+#: ../../topics/item-pipeline.rst:0
 msgid "Parameters"
 msgstr ""
 
 #: ../../topics/item-pipeline.rst:41
+#, fuzzy
+#| msgid "the item scraped"
 msgid "the scraped item"
-msgstr ""
+msgstr "スクレイプされたアイテム"
 
 #: ../../topics/item-pipeline.rst:44
 msgid "the spider which scraped the item"
-msgstr ""
+msgstr "アイテムをスクレイプしたスパイダー"
 
 #: ../../topics/item-pipeline.rst:47
 msgid "Additionally, they may also implement the following methods:"
-msgstr ""
+msgstr "さらに、以下のメソッドも実装できます:"
 
 #: ../../topics/item-pipeline.rst:51
 msgid "This method is called when the spider is opened."
-msgstr ""
+msgstr "このメソッドは、スパイダーがオープンされたときに呼び出されます。"
 
 #: ../../topics/item-pipeline.rst:53
 msgid "the spider which was opened"
-msgstr ""
+msgstr "オープンされたスパイダー"
 
 #: ../../topics/item-pipeline.rst:58
 msgid "This method is called when the spider is closed."
-msgstr ""
+msgstr "このメソッドはスパイダーがクローズされたときに呼び出されます。"
 
 #: ../../topics/item-pipeline.rst:60
 msgid "the spider which was closed"
-msgstr ""
+msgstr "クローズされたスパイダー"
 
 #: ../../topics/item-pipeline.rst:65
 msgid ""
-"If present, this classmethod is called to create a pipeline instance from"
-" a :class:`~scrapy.crawler.Crawler`. It must return a new instance of the"
-" pipeline. Crawler object provides access to all Scrapy core components "
-"like settings and signals; it is a way for pipeline to access them and "
-"hook its functionality into Scrapy."
+"If present, this classmethod is called to create a pipeline instance from a :"
+"class:`~scrapy.crawler.Crawler`. It must return a new instance of the "
+"pipeline. Crawler object provides access to all Scrapy core components like "
+"settings and signals; it is a way for pipeline to access them and hook its "
+"functionality into Scrapy."
 msgstr ""
+"存在する場合、このクラスメソッドは、 :class:`~scrapy.crawler.Crawler` からパ"
+"イプライ・ンインスタンスを作成するために呼び出されます。パイプラインの新しい"
+"インスタンスを返す必要があります。クローラー・オブジェクトは、設定やシグナル"
+"などのすべてのScrapyコアコンポーネントへのアクセスを提供します。 つまり、それ"
+"はパイプラインがそれらにアクセスし、その機能をScrapyにフックする方法です。"
 
 #: ../../topics/item-pipeline.rst:71
 msgid "crawler that uses this pipeline"
-msgstr ""
+msgstr "このパイプラインを使用するクローラー"
 
 #: ../../topics/item-pipeline.rst:76
 msgid "Item pipeline example"
-msgstr ""
+msgstr "アイテム・パイプライン例"
 
 #: ../../topics/item-pipeline.rst:79
 msgid "Price validation and dropping items with no prices"
-msgstr ""
+msgstr "価格の検証と価格のないアイテムのドロップ"
 
 #: ../../topics/item-pipeline.rst:81
 msgid ""
-"Let's take a look at the following hypothetical pipeline that adjusts the"
-" ``price`` attribute for those items that do not include VAT "
+"Let's take a look at the following hypothetical pipeline that adjusts the "
+"``price`` attribute for those items that do not include VAT "
 "(``price_excludes_vat`` attribute), and drops those items which don't "
 "contain a price::"
 msgstr ""
+"VAT(訳注:付加価値税)を含まないアイテムの価格( ``price_excludes_vat`` 属性)を"
+"調整し、価格を含まないアイテムをドロップする、次の仮想パイプラインを見てみま"
+"しょう::"
 
 #: ../../topics/item-pipeline.rst:103
 msgid "Write items to a JSON file"
-msgstr ""
+msgstr "JSONファイルにアイテムを書き込む"
 
 #: ../../topics/item-pipeline.rst:105
 msgid ""
-"The following pipeline stores all scraped items (from all spiders) into a"
-" single ``items.jl`` file, containing one item per line serialized in "
-"JSON format::"
+"The following pipeline stores all scraped items (from all spiders) into a "
+"single ``items.jl`` file, containing one item per line serialized in JSON "
+"format::"
 msgstr ""
+"次のパイプラインは、(すべてのスパイダーからの)すべてのスクレイプされたアイテ"
+"ムを、JSON形式でシリアル化された行ごとに1つのアイテムを含む単一の ``items."
+"jl`` ファイルに保存します::"
 
 #: ../../topics/item-pipeline.rst:126
 msgid ""
 "The purpose of JsonWriterPipeline is just to introduce how to write item "
-"pipelines. If you really want to store all scraped items into a JSON file"
-" you should use the :ref:`Feed exports <topics-feed-exports>`."
+"pipelines. If you really want to store all scraped items into a JSON file "
+"you should use the :ref:`Feed exports <topics-feed-exports>`."
 msgstr ""
+"JsonWriterPipelineの目的は、アイテム・パイプラインの記述方法を紹介することだ"
+"けです。すべてのスクレイプ・アイテムをJSONファイルに保存する場合は、 :ref:`"
+"フィード・エクスポート<topics-feed-exports>` を使用する必要があります。"
 
 #: ../../topics/item-pipeline.rst:131
 msgid "Write items to MongoDB"
-msgstr ""
+msgstr "MongoDBにアイテムを書き込む"
 
 #: ../../topics/item-pipeline.rst:133
 msgid ""
@@ -177,57 +205,99 @@ msgid ""
 "address and database name are specified in Scrapy settings; MongoDB "
 "collection is named after item class."
 msgstr ""
+"この例では、私たちは pymongo_ を使用してMongoDB_ にアイテムを書き込みます。"
+"MongoDBアドレスとデータベース名は、Scrapy設定で指定します。MongoDBコレクショ"
+"ンは、アイテム・クラスに基づいて名前が付けられます。"
 
 #: ../../topics/item-pipeline.rst:137
 msgid ""
-"The main point of this example is to show how to use :meth:`from_crawler`"
-" method and how to clean up the resources properly.::"
+"The main point of this example is to show how to use :meth:`from_crawler` "
+"method and how to clean up the resources properly.::"
 msgstr ""
+"この例の主なポイントは、 :meth:`from_crawler` メソッドの使用方法と、リソース"
+"を適切にクリーンアップする方法を示すことです::"
 
 #: ../../topics/item-pipeline.rst:176
 msgid "Take screenshot of item"
-msgstr ""
+msgstr "アイテムのスクリーンショットをとる"
 
 #: ../../topics/item-pipeline.rst:178
 msgid ""
-"This example demonstrates how to use :doc:`coroutine syntax <coroutines>`"
-" in the :meth:`process_item` method."
+"This example demonstrates how to use :doc:`coroutine syntax <coroutines>` in "
+"the :meth:`process_item` method."
 msgstr ""
 
 #: ../../topics/item-pipeline.rst:181
 msgid ""
-"This item pipeline makes a request to a locally-running instance of "
-"Splash_ to render a screenshot of the item URL. After the request "
-"response is downloaded, the item pipeline saves the screenshot to a file "
-"and adds the filename to the item."
+"This item pipeline makes a request to a locally-running instance of Splash_ "
+"to render a screenshot of the item URL. After the request response is "
+"downloaded, the item pipeline saves the screenshot to a file and adds the "
+"filename to the item."
 msgstr ""
 
 #: ../../topics/item-pipeline.rst:225
 msgid "Duplicates filter"
-msgstr ""
+msgstr "重複フィルター"
 
 #: ../../topics/item-pipeline.rst:227
 msgid ""
 "A filter that looks for duplicate items, and drops those items that were "
-"already processed. Let's say that our items have a unique id, but our "
-"spider returns multiples items with the same id::"
+"already processed. Let's say that our items have a unique id, but our spider "
+"returns multiples items with the same id::"
 msgstr ""
+"重複するアイテムを探し、すでに処理されたアイテムをドロップするフィルター。ア"
+"イテムには一意のIDがありますが、スパイダーは同じIDの複数のアイテムを返しま"
+"す::"
 
 #: ../../topics/item-pipeline.rst:250
 msgid "Activating an Item Pipeline component"
-msgstr ""
+msgstr "アイテム・パイプライン・コンポーネントのアクティブ化"
 
 #: ../../topics/item-pipeline.rst:252
 msgid ""
-"To activate an Item Pipeline component you must add its class to the "
-":setting:`ITEM_PIPELINES` setting, like in the following example::"
+"To activate an Item Pipeline component you must add its class to the :"
+"setting:`ITEM_PIPELINES` setting, like in the following example::"
 msgstr ""
+"アイテム・パイプライン・コンポーネントをアクティブにするには、次の例のよう"
+"に、そのクラスを :setting:`ITEM_PIPELINES` 設定に追加する必要があります::"
 
 #: ../../topics/item-pipeline.rst:260
 msgid ""
-"The integer values you assign to classes in this setting determine the "
-"order in which they run: items go through from lower valued to higher "
-"valued classes. It's customary to define these numbers in the 0-1000 "
-"range."
+"The integer values you assign to classes in this setting determine the order "
+"in which they run: items go through from lower valued to higher valued "
+"classes. It's customary to define these numbers in the 0-1000 range."
 msgstr ""
+"あなたがこの設定でクラスに割り当てる整数値は、それらが実行される順序を決定し"
+"ます。項目は、低い値のクラスから高い値のクラスへと通過します。 これらの数値は"
+"0〜1000の範囲で定義するのが慣例です。"
 
+#~ msgid ""
+#~ "This method is called for every item pipeline component. :meth:"
+#~ "`process_item` must either: return a dict with data, return an :class:"
+#~ "`~scrapy.item.Item` (or any descendant class) object, return a `Twisted "
+#~ "Deferred`_ or raise :exc:`~scrapy.exceptions.DropItem` exception. Dropped "
+#~ "items are no longer processed by further pipeline components."
+#~ msgstr ""
+#~ "このメソッドは、すべてのアイテム・パイプライン・コンポーネントに対して呼び"
+#~ "出されます。 :meth:`process_item` は、データの辞書を返す、あるいは :class:"
+#~ "`~scrapy.item.Item` (または任意の子孫クラス)オブジェクトを返す、あるいは "
+#~ "`Twisted Deferred`_ を返す、あるいは :exc:`~scrapy.exceptions.DropItem` 例"
+#~ "外を発生させる、のいずれかを行う必要があります。ドロップしたアイテムは、そ"
+#~ "れ以降のパイプライン・コンポーネントにでは処理しません。"
+
+#~ msgid "パラメータ"
+#~ msgstr "パラメータ"
+
+#~ msgid ""
+#~ "This example demonstrates how to return Deferred_ from :meth:"
+#~ "`process_item` method. It uses Splash_ to render screenshot of item url. "
+#~ "Pipeline makes request to locally running instance of Splash_. After "
+#~ "request is downloaded and Deferred callback fires, it saves item to a "
+#~ "file and adds filename to an item."
+#~ msgstr ""
+#~ "このデモンストレーションは、 :meth:`process_item` メソッドから Deferred_ "
+#~ "を返す方法を示しています。 Splash_ を使用して、アイテムのURLのスクリーン"
+#~ "ショットをレンダリングします。 パイプラインは、ローカルで実行されている "
+#~ "Splash_ のインスタンスにリクエストを行います。 リクエストがダウンロードさ"
+#~ "れ、Deferredコールバックが起動した後、アイテムをファイルに保存し、ファイル"
+#~ "名をアイテムに追加します。"

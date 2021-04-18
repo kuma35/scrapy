@@ -1,106 +1,126 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-09-23 18:22+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../versioning.rst:5
+#, fuzzy
+#| msgid "Versioning and API Stability"
 msgid "Versioning and API stability"
-msgstr ""
+msgstr "バージョン管理とAPIの安定性"
 
 #: ../../versioning.rst:8
 msgid "Versioning"
-msgstr ""
+msgstr "バージョン管理"
 
 #: ../../versioning.rst:10
 msgid "There are 3 numbers in a Scrapy version: *A.B.C*"
-msgstr ""
+msgstr "Scrapyのバージョンは3つの数字から成ります。 *A.B.C*"
 
 #: ../../versioning.rst:12
 msgid ""
 "*A* is the major version. This will rarely change and will signify very "
 "large changes."
 msgstr ""
+"*A* はメジャーバージョンです。これはめったに変更されず、非常に大きな変更を示"
+"します。"
 
 #: ../../versioning.rst:14
 msgid ""
-"*B* is the release number. This will include many changes including "
-"features and things that possibly break backward compatibility, although "
-"we strive to keep theses cases at a minimum."
+"*B* is the release number. This will include many changes including features "
+"and things that possibly break backward compatibility, although we strive to "
+"keep theses cases at a minimum."
 msgstr ""
+"*B* はリリース番号です。 これには、下位互換性を損なう可能性がある、機能や事柄"
+"を含む多くの変更が含まれますが、これらのケースを最小限に抑えるよう努めていま"
+"す。"
 
 #: ../../versioning.rst:17
 msgid "*C* is the bugfix release number."
-msgstr ""
+msgstr "*C* はバグ修正リリース番号です。"
 
 #: ../../versioning.rst:19
 msgid ""
 "Backward-incompatibilities are explicitly mentioned in the :ref:`release "
 "notes <news>`, and may require special attention before upgrading."
 msgstr ""
+"後方非互換性は :ref:`リリースノート<news>` で明示的に言及してあります。アップ"
+"グレードする前に特別な注意が必要な場合があります。"
 
 #: ../../versioning.rst:22
 msgid ""
 "Development releases do not follow 3-numbers version and are generally "
 "released as ``dev`` suffixed versions, e.g. ``1.3dev``."
 msgstr ""
+"開発リリースは3番号のバージョンには従わず、通常、接尾辞付きの ``dev`` バー"
+"ジョンとしてリリースされます。例： ``1.3dev``"
 
 #: ../../versioning.rst:26
 msgid ""
-"With Scrapy 0.* series, Scrapy used `odd-numbered versions for "
-"development releases`_. This is not the case anymore from Scrapy 1.0 "
-"onwards."
+"With Scrapy 0.* series, Scrapy used `odd-numbered versions for development "
+"releases`_. This is not the case anymore from Scrapy 1.0 onwards."
 msgstr ""
+"Scrapy 0.* シリーズでは、Scrapyは奇数番号のバージョンは開発リリース(`odd-"
+"numbered versions for development releases`_)でしたた。これはScrapy 1.0以降に"
+"は適用されません。"
 
 #: ../../versioning.rst:29
 msgid ""
-"Starting with Scrapy 1.0, all releases should be considered production-"
-"ready."
-msgstr ""
+"Starting with Scrapy 1.0, all releases should be considered production-ready."
+msgstr "Scrapy 1.0からは、すべてのリリースは本番環境対応と見なすべきです。"
 
 #: ../../versioning.rst:31
 msgid "For example:"
-msgstr ""
+msgstr "例えば:"
 
 #: ../../versioning.rst:33
 msgid ""
 "*1.1.1* is the first bugfix release of the *1.1* series (safe to use in "
 "production)"
 msgstr ""
+"(製品で使っても安全な) *1.1* シリーズの *1.1.1* は最初のバグ修正リリース"
 
 #: ../../versioning.rst:38
+#, fuzzy
+#| msgid "API Stability"
 msgid "API stability"
-msgstr ""
+msgstr "APIの安定性"
 
 #: ../../versioning.rst:40
 msgid "API stability was one of the major goals for the *1.0* release."
-msgstr ""
+msgstr "APIの安定性は、 *1.0* リリースの主要な目標の1つでした。"
 
 #: ../../versioning.rst:42
 msgid ""
-"Methods or functions that start with a single dash (``_``) are private "
-"and should never be relied as stable."
+"Methods or functions that start with a single dash (``_``) are private and "
+"should never be relied as stable."
 msgstr ""
+"単一のダッシュ( ``_`` )で始まるメソッドまたは関数はプライベートであり、安定版"
+"として信頼してはいけません。"
 
 #: ../../versioning.rst:45
 msgid ""
-"Also, keep in mind that stable doesn't mean complete: stable APIs could "
-"grow new methods or functionality but the existing methods should keep "
-"working the same way."
+"Also, keep in mind that stable doesn't mean complete: stable APIs could grow "
+"new methods or functionality but the existing methods should keep working "
+"the same way."
 msgstr ""
+"また、安定版は完全を意味するものではないことに注意してください。安定版APIは新"
+"しいメソッドや機能を拡張できますが、既存のメソッドは依然として同じように機能"
+"し続ける必要があります。"
 
 #: ../../versioning.rst:53
 msgid "Deprecation policy"
@@ -114,20 +134,19 @@ msgstr ""
 
 #: ../../versioning.rst:57
 msgid ""
-"For example, if a feature is deprecated in a Scrapy version released on "
-"June 15th 2020, that feature should continue to work in versions released"
-" on June 14th 2021 or before that."
+"For example, if a feature is deprecated in a Scrapy version released on June "
+"15th 2020, that feature should continue to work in versions released on June "
+"14th 2021 or before that."
 msgstr ""
 
 #: ../../versioning.rst:61
 msgid ""
-"Any new Scrapy release after a year *may* remove support for that "
-"deprecated feature."
+"Any new Scrapy release after a year *may* remove support for that deprecated "
+"feature."
 msgstr ""
 
 #: ../../versioning.rst:64
 msgid ""
-"All deprecated features removed in a Scrapy release are explicitly "
-"mentioned in the :ref:`release notes <news>`."
+"All deprecated features removed in a Scrapy release are explicitly mentioned "
+"in the :ref:`release notes <news>`."
 msgstr ""
-

@@ -1,136 +1,204 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-10-03 10:34+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../topics/jobs.rst:5
 msgid "Jobs: pausing and resuming crawls"
-msgstr ""
+msgstr "ジョブ制御: クロールの一時停止と再開"
 
 #: ../../topics/jobs.rst:7
 msgid ""
 "Sometimes, for big sites, it's desirable to pause crawls and be able to "
 "resume them later."
 msgstr ""
+"大きなサイトでは、クロールを一時停止して後で再開できることが望ましい場合があ"
+"ります。"
 
 #: ../../topics/jobs.rst:10
 msgid ""
-"Scrapy supports this functionality out of the box by providing the "
-"following facilities:"
+"Scrapy supports this functionality out of the box by providing the following "
+"facilities:"
 msgstr ""
+"Scrapyは、以下の機構を提供することにより、この機能をいち早くサポートしていま"
+"す:"
 
 #: ../../topics/jobs.rst:13
 msgid "a scheduler that persists scheduled requests on disk"
-msgstr ""
+msgstr "スケジュールされたリクエストをディスクに保持するスケジューラー"
 
 #: ../../topics/jobs.rst:15
 msgid "a duplicates filter that persists visited requests on disk"
-msgstr ""
+msgstr "訪問したリクエストをディスク上に保持する重複フィルター"
 
 #: ../../topics/jobs.rst:17
 msgid ""
 "an extension that keeps some spider state (key/value pairs) persistent "
 "between batches"
-msgstr ""
+msgstr "バッチ間でいくつかのスパイダーの状態(キー/値のペア)を保持する拡張機能"
 
 #: ../../topics/jobs.rst:21
 msgid "Job directory"
-msgstr ""
+msgstr "Jobディレクトリ"
 
 #: ../../topics/jobs.rst:23
+#, fuzzy
+#| msgid ""
+#| "To enable persistence support you just need to define a *job directory* "
+#| "through the ``JOBDIR`` setting. This directory will be for storing all "
+#| "required data to keep the state of a single job (ie. a spider run).  It's "
+#| "important to note that this directory must not be shared by different "
+#| "spiders, or even different jobs/runs of the same spider, as it's meant to "
+#| "be used for storing the state of a *single* job."
 msgid ""
 "To enable persistence support you just need to define a *job directory* "
 "through the ``JOBDIR`` setting. This directory will be for storing all "
-"required data to keep the state of a single job (i.e. a spider run).  "
-"It's important to note that this directory must not be shared by "
-"different spiders, or even different jobs/runs of the same spider, as "
-"it's meant to be used for storing the state of a *single* job."
+"required data to keep the state of a single job (i.e. a spider run).  It's "
+"important to note that this directory must not be shared by different "
+"spiders, or even different jobs/runs of the same spider, as it's meant to be "
+"used for storing the state of a *single* job."
 msgstr ""
+"永続性サポートを有効にするには、 ``JOBDIR`` 設定で **jobディレクトリ** を定義"
+"するだけです。このディレクトリは、単一のジョブ(スパイダー実行など)の状態を維"
+"持するために必要なすべてのデータを保存するためのものです。このディレクトリ"
+"は、**単一ジョブ** の状態を保存するために使用されるため、異なるスパイダー、ま"
+"たは同じスパイダーの異なる job/run でさえ共有してはならないことに注意すること"
+"が重要です。"
 
 #: ../../topics/jobs.rst:31
 msgid "How to use it"
-msgstr ""
+msgstr "使い方"
 
 #: ../../topics/jobs.rst:33
 msgid "To start a spider with persistence support enabled, run it like this::"
 msgstr ""
+"永続性サポートを有効にしてスパイダーを起動するには、次のように実行します::"
 
 #: ../../topics/jobs.rst:37
 msgid ""
 "Then, you can stop the spider safely at any time (by pressing Ctrl-C or "
 "sending a signal), and resume it later by issuing the same command::"
 msgstr ""
+"その後、いつでも(Ctrl-Cを押すかシグナルを送信することにより)スパイダーを安全"
+"に停止し、同じコマンドを発行して後で再開できます::"
 
 #: ../../topics/jobs.rst:43
 msgid "Keeping persistent state between batches"
-msgstr ""
+msgstr "バッチ間で永続的な状態を維持する"
 
 #: ../../topics/jobs.rst:45
 msgid ""
-"Sometimes you'll want to keep some persistent spider state between "
-"pause/resume batches. You can use the ``spider.state`` attribute for "
-"that, which should be a dict. There's a built-in extension that takes "
-"care of serializing, storing and loading that attribute from the job "
-"directory, when the spider starts and stops."
+"Sometimes you'll want to keep some persistent spider state between pause/"
+"resume batches. You can use the ``spider.state`` attribute for that, which "
+"should be a dict. There's a built-in extension that takes care of "
+"serializing, storing and loading that attribute from the job directory, when "
+"the spider starts and stops."
 msgstr ""
+"時々、一時停止/再開バッチ間で永続的なスパイダー状態を維持したい場合がありま"
+"す。 それには ``spider.state`` 属性を使用できます。これは辞書である必要があり"
+"ます。スパイダーが開始および停止するときに、ジョブ・ディレクトリからの属性の"
+"シリアル化、保存、および読み込みを処理する組み込みの拡張機能があります。"
 
 #: ../../topics/jobs.rst:51
 msgid ""
 "Here's an example of a callback that uses the spider state (other spider "
 "code is omitted for brevity)::"
 msgstr ""
+"スパイダー状態を使用するコールバックの例を次に示します(簡潔にするため、他のス"
+"パイダー・コードは省略されています)::"
 
+# https://eigobu.jp/magazine/gotcha
+# スラング「gotcha」の5つの意味とネイティブの使い方 
+# 「gotcha」の意味①：「つかまえたぞ」
+# 「gotcha」の意味②：「みーちゃった」
+# 「gotcha」の意味③：「やったぜえ」
+# 「gotcha」の意味④：「逮捕、問題の原因」(名詞)
+# 「gotcha」の意味⑤：「わかった」 
 #: ../../topics/jobs.rst:59
 msgid "Persistence gotchas"
-msgstr ""
+msgstr "永続性サポートあるある"
 
 #: ../../topics/jobs.rst:61
 msgid ""
 "There are a few things to keep in mind if you want to be able to use the "
 "Scrapy persistence support:"
 msgstr ""
+"Scrapy永続性サポートを使用できるようにしたい場合、留意すべきことがいくつかあ"
+"ります:"
 
 #: ../../topics/jobs.rst:65
 msgid "Cookies expiration"
-msgstr ""
+msgstr "クッキーの有効期限"
 
 #: ../../topics/jobs.rst:67
+#, fuzzy
+#| msgid ""
+#| "Cookies may expire. So, if you don't resume your spider quickly the "
+#| "requests scheduled may no longer work. This won't be an issue if you "
+#| "spider doesn't rely on cookies."
 msgid ""
-"Cookies may expire. So, if you don't resume your spider quickly the "
-"requests scheduled may no longer work. This won't be an issue if your "
-"spider doesn't rely on cookies."
+"Cookies may expire. So, if you don't resume your spider quickly the requests "
+"scheduled may no longer work. This won't be an issue if your spider doesn't "
+"rely on cookies."
 msgstr ""
+"Cookieの有効期限が切れる場合があります。 そのため、スパイダーをすぐに再開しな"
+"いと、スケジュールされたリクエストが機能しなくなる可能性があります。 クモが"
+"クッキーに依存していない場合、これは問題になりません。"
 
 #: ../../topics/jobs.rst:75
 msgid "Request serialization"
-msgstr ""
+msgstr "リクエストのシリアル化"
 
 #: ../../topics/jobs.rst:77
 msgid ""
 "For persistence to work, :class:`~scrapy.http.Request` objects must be "
-"serializable with :mod:`pickle`, except for the ``callback`` and "
-"``errback`` values passed to their ``__init__`` method, which must be "
-"methods of the running :class:`~scrapy.spiders.Spider` class."
+"serializable with :mod:`pickle`, except for the ``callback`` and ``errback`` "
+"values passed to their ``__init__`` method, which must be methods of the "
+"running :class:`~scrapy.spiders.Spider` class."
 msgstr ""
 
 #: ../../topics/jobs.rst:82
 msgid ""
 "If you wish to log the requests that couldn't be serialized, you can set "
-"the :setting:`SCHEDULER_DEBUG` setting to ``True`` in the project's "
-"settings page. It is ``False`` by default."
+"the :setting:`SCHEDULER_DEBUG` setting to ``True`` in the project's settings "
+"page. It is ``False`` by default."
 msgstr ""
+"シリアル化できなかったリクエストをログに記録したい場合、プロジェクトの設定"
+"ページで :setting:`SCHEDULER_DEBUG` 設定を ``True`` に設定できます。デフォル"
+"トでは ``False`` です。"
 
+#~ msgid ""
+#~ "Requests must be serializable by the ``pickle`` module, in order for "
+#~ "persistence to work, so you should make sure that your requests are "
+#~ "serializable."
+#~ msgstr ""
+#~ "永続性が機能するためには、リクエストは ``pickle`` モジュールによってシリア"
+#~ "ル化可能でなければならないため、リクエストがシリアル化可能であることを確認"
+#~ "する必要があります。"
+
+#~ msgid ""
+#~ "The most common issue here is to use ``lambda`` functions on request "
+#~ "callbacks that can't be persisted."
+#~ msgstr ""
+#~ "ここで最も一般的な問題は、永続化できないリクエスト・コールバックで "
+#~ "``lambda`` 関数を使用することです。"
+
+#~ msgid "So, for example, this won't work::"
+#~ msgstr "たとえば、これは機能しません::"
+
+#~ msgid "But this will::"
+#~ msgstr "しかし、これは動作します::"

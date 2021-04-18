@@ -1,75 +1,98 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-10-10 11:08+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../topics/shell.rst:5
 msgid "Scrapy shell"
-msgstr ""
+msgstr "Scrapyシェル"
 
 #: ../../topics/shell.rst:7
 msgid ""
-"The Scrapy shell is an interactive shell where you can try and debug your"
-" scraping code very quickly, without having to run the spider. It's meant"
-" to be used for testing data extraction code, but you can actually use it"
-" for testing any kind of code as it is also a regular Python shell."
+"The Scrapy shell is an interactive shell where you can try and debug your "
+"scraping code very quickly, without having to run the spider. It's meant to "
+"be used for testing data extraction code, but you can actually use it for "
+"testing any kind of code as it is also a regular Python shell."
 msgstr ""
+"Scrapyシェルは、スパイダーを実行することなく、非常に迅速にスクレイピングコー"
+"ドを試行およびデバッグできる対話型シェルです。これは、データ抽出コードのテス"
+"トに使用することを目的としていますが、通常のPythonシェルでもあるため、実際に"
+"はあらゆる種類のコードのテストに使用できます。"
 
 #: ../../topics/shell.rst:12
 msgid ""
-"The shell is used for testing XPath or CSS expressions and see how they "
-"work and what data they extract from the web pages you're trying to "
-"scrape. It allows you to interactively test your expressions while you're"
-" writing your spider, without having to run the spider to test every "
-"change."
+"The shell is used for testing XPath or CSS expressions and see how they work "
+"and what data they extract from the web pages you're trying to scrape. It "
+"allows you to interactively test your expressions while you're writing your "
+"spider, without having to run the spider to test every change."
 msgstr ""
+"シェルは、XPath式またはCSS式をテストし、それらがどのように機能するか、および"
+"スクレイピングしようとしているWebページからどのようなデータを抽出するかを確認"
+"するために使用されます。すべての変更をテストするためにスパイダーを実行する必"
+"要なく、スパイダーを作成している間に式をインタラクティブにテストできます。"
 
 #: ../../topics/shell.rst:17
 msgid ""
 "Once you get familiarized with the Scrapy shell, you'll see that it's an "
 "invaluable tool for developing and debugging your spiders."
 msgstr ""
+"Scrapyシェルに親しむと、スパイダーを開発およびデバッグするための非常に素晴ら"
+"しいツールであることがわかります。"
 
 #: ../../topics/shell.rst:21
 msgid "Configuring the shell"
-msgstr ""
+msgstr "シェルの構成(configure)"
 
 #: ../../topics/shell.rst:23
 msgid ""
-"If you have `IPython`_ installed, the Scrapy shell will use it (instead "
-"of the standard Python console). The `IPython`_ console is much more "
-"powerful and provides smart auto-completion and colorized output, among "
-"other things."
+"If you have `IPython`_ installed, the Scrapy shell will use it (instead of "
+"the standard Python console). The `IPython`_ console is much more powerful "
+"and provides smart auto-completion and colorized output, among other things."
 msgstr ""
+"`IPython`_ がインストールされている場合、Scrapyシェルは(標準のPythonコンソー"
+"ルの代わりに)それを使用します。 `IPython`_ コンソールははるかに強力で、とりわ"
+"けスマートなオートコンプリートとカラー化された出力を提供します。"
 
 #: ../../topics/shell.rst:27
 msgid ""
-"We highly recommend you install `IPython`_, specially if you're working "
-"on Unix systems (where `IPython`_ excels). See the `IPython installation "
+"We highly recommend you install `IPython`_, specially if you're working on "
+"Unix systems (where `IPython`_ excels). See the `IPython installation "
 "guide`_ for more info."
 msgstr ""
+"特に、( `IPython`_ が優れている)Unixシステムで作業している場合は、 "
+"`IPython`_ をインストールすることを強くお勧めします。 詳細については、 "
+"`IPython installation guide`_  を参照してください。"
 
 #: ../../topics/shell.rst:31
 msgid ""
 "Scrapy also has support for `bpython`_, and will try to use it where "
 "`IPython`_ is unavailable."
 msgstr ""
+"Scrapyは `bpython`_ もサポートしており、 `IPython`_ が利用できない場合はそれ"
+"を使用しようとします。"
 
 #: ../../topics/shell.rst:34
+#, fuzzy
+#| msgid ""
+#| "Through scrapy's settings you can configure it to use any one of "
+#| "``ipython``, ``bpython`` or the standard ``python`` shell, regardless of "
+#| "which are installed. This is done by setting the ``SCRAPY_PYTHON_SHELL`` "
+#| "environment variable; or by defining it in your :ref:`scrapy.cfg <topics-"
+#| "config-settings>`::"
 msgid ""
 "Through Scrapy's settings you can configure it to use any one of "
 "``ipython``, ``bpython`` or the standard ``python`` shell, regardless of "
@@ -77,167 +100,224 @@ msgid ""
 "environment variable; or by defining it in your :ref:`scrapy.cfg <topics-"
 "config-settings>`::"
 msgstr ""
+"Scrapyの設定により、インストールされているかどうかに関係なく、 ``ipython`` ま"
+"たは ``bpython`` または、標準の ``python`` シェルのいずれかを使用するように設"
+"定できます。 これには ``SCRAPY_PYTHON_SHELL`` 環境変数を設定するか、または :"
+"ref:`scrapy.cfg <topics-config-settings>` で定義することにより行います。"
 
 #: ../../topics/shell.rst:47
 msgid "Launch the shell"
-msgstr ""
+msgstr "シェルを起動する"
 
 #: ../../topics/shell.rst:49
 msgid ""
 "To launch the Scrapy shell you can use the :command:`shell` command like "
 "this::"
 msgstr ""
+"Scrapyシェルを起動するには、次のように :command:`shell` コマンドを使用しま"
+"す::"
 
 #: ../../topics/shell.rst:54
 msgid "Where the ``<url>`` is the URL you want to scrape."
-msgstr ""
+msgstr "``<url>`` は、あなたがスクレイプしたいURLです。"
 
 #: ../../topics/shell.rst:56
 msgid ""
-":command:`shell` also works for local files. This can be handy if you "
-"want to play around with a local copy of a web page. :command:`shell` "
-"understands the following syntaxes for local files::"
+":command:`shell` also works for local files. This can be handy if you want "
+"to play around with a local copy of a web page. :command:`shell` understands "
+"the following syntaxes for local files::"
 msgstr ""
+":command:`shell` はローカルファイルでも機能します。 これは、Webページのローカ"
+"ルコピーで遊んでみたい場合に便利です。 :command:`shell` はローカルファイルの"
+"次の構文を理解します::"
 
 #: ../../topics/shell.rst:68
 msgid ""
-"When using relative file paths, be explicit and prepend them with ``./`` "
-"(or ``../`` when relevant). ``scrapy shell index.html`` will not work as "
-"one might expect (and this is by design, not a bug)."
+"When using relative file paths, be explicit and prepend them with ``./`` (or "
+"``../`` when relevant). ``scrapy shell index.html`` will not work as one "
+"might expect (and this is by design, not a bug)."
 msgstr ""
+"相対ファイルパスを使用する場合は、明示的に指定し、 ``./`` (または関連する場合"
+"は ``../`` )を先頭に追加します。 ``scrapy shell index.html`` はあなたの予想ど"
+"おりに機能しません(これは設計によるものであり、バグではありません)。"
 
 #: ../../topics/shell.rst:73
 msgid ""
-"Because :command:`shell` favors HTTP URLs over File URIs, and "
-"``index.html`` being syntactically similar to ``example.com``, "
-":command:`shell` will treat ``index.html`` as a domain name and trigger a"
-" DNS lookup error::"
+"Because :command:`shell` favors HTTP URLs over File URIs, and ``index.html`` "
+"being syntactically similar to ``example.com``, :command:`shell` will treat "
+"``index.html`` as a domain name and trigger a DNS lookup error::"
 msgstr ""
+"なぜなら、 :command:`shell` はファイルURIよりもHTTP URLを優先し、 ``index."
+"html`` は構文的に ``example.com`` に似ているため、 :command:`shell` は "
+"``index.html`` をドメイン名とみなしてDNSルックアップし、エラーをトリガしま"
+"す::"
 
 #: ../../topics/shell.rst:84
 msgid ""
-":command:`shell` will not test beforehand if a file called ``index.html``"
-" exists in the current directory. Again, be explicit."
+":command:`shell` will not test beforehand if a file called ``index.html`` "
+"exists in the current directory. Again, be explicit."
 msgstr ""
+":command:`shell` は ``index.html`` というファイルが現在のディレクトリに存在す"
+"るかどうかを事前にテストしません。繰り返しますが、明示的に指定してください。"
 
 #: ../../topics/shell.rst:89
 msgid "Using the shell"
-msgstr ""
+msgstr "シェルの使用"
 
 #: ../../topics/shell.rst:91
 msgid ""
-"The Scrapy shell is just a regular Python console (or `IPython`_ console "
-"if you have it available) which provides some additional shortcut "
-"functions for convenience."
+"The Scrapy shell is just a regular Python console (or `IPython`_ console if "
+"you have it available) which provides some additional shortcut functions for "
+"convenience."
 msgstr ""
+"Scrapyシェルは、全くもってPythonコンソール(または、使用可能な場合は "
+"`IPython`_ コンソール)です。そして、便利な追加のショートカット機能を提供しま"
+"す。"
 
 #: ../../topics/shell.rst:96
 msgid "Available Shortcuts"
-msgstr ""
+msgstr "利用可能なショートカット"
 
 #: ../../topics/shell.rst:98
 msgid ""
-"``shelp()`` - print a help with the list of available objects and "
-"shortcuts"
+"``shelp()`` - print a help with the list of available objects and shortcuts"
 msgstr ""
+"``shelp()`` - 利用可能なオブジェクトとショートカットのリストを含むヘルプを出"
+"力します"
 
 #: ../../topics/shell.rst:101
 msgid ""
-"``fetch(url[, redirect=True])`` - fetch a new response from the given URL"
-" and update all related objects accordingly. You can optionaly ask for "
-"HTTP 3xx redirections to not be followed by passing ``redirect=False``"
+"``fetch(url[, redirect=True])`` - fetch a new response from the given URL "
+"and update all related objects accordingly. You can optionaly ask for HTTP "
+"3xx redirections to not be followed by passing ``redirect=False``"
 msgstr ""
+"``fetch(url[, redirect=True])`` - 指定されたURLから新しいリクエストを取得し、"
+"それに応じてすべての関連オブジェクトを更新します。 HTTP 3xxリダイレクトの後"
+"に ``redirect=False`` を渡さないようにオプションで要求できます"
 
 #: ../../topics/shell.rst:105
 msgid ""
-"``fetch(request)`` - fetch a new response from the given request and "
-"update all related objects accordingly."
+"``fetch(request)`` - fetch a new response from the given request and update "
+"all related objects accordingly."
 msgstr ""
+"``fetch(request)`` - 特定のリクエストから新しいレスポンスを取得し、それに応じ"
+"てすべての関連オブジェクトを更新します。"
 
 #: ../../topics/shell.rst:108
 msgid ""
-"``view(response)`` - open the given response in your local web browser, "
-"for inspection. This will add a `\\<base\\> tag`_ to the response body in"
-" order for external links (such as images and style sheets) to display "
-"properly. Note, however, that this will create a temporary file in your "
-"computer, which won't be removed automatically."
+"``view(response)`` - open the given response in your local web browser, for "
+"inspection. This will add a `\\<base\\> tag`_ to the response body in order "
+"for external links (such as images and style sheets) to display properly. "
+"Note, however, that this will create a temporary file in your computer, "
+"which won't be removed automatically."
 msgstr ""
+"``view(response)`` - 検査のために、指定されたレスポンスをローカルWebブラウ"
+"ザーで開きます。 これにより、外部リンク(画像やスタイルシートなど)が正しく表示"
+"されるように、 `\\<base\\> tag`_ がレスポンス・ボディに追加されます。 ただ"
+"し、これによりコンピューターに一時ファイルが作成され、自動的には削除されない"
+"ことに注意してください。"
 
 #: ../../topics/shell.rst:117
 msgid "Available Scrapy objects"
-msgstr ""
+msgstr "利用可能なScrapyオブジェクト"
 
 #: ../../topics/shell.rst:119
 msgid ""
 "The Scrapy shell automatically creates some convenient objects from the "
-"downloaded page, like the :class:`~scrapy.http.Response` object and the "
-":class:`~scrapy.selector.Selector` objects (for both HTML and XML "
-"content)."
+"downloaded page, like the :class:`~scrapy.http.Response` object and the :"
+"class:`~scrapy.selector.Selector` objects (for both HTML and XML content)."
 msgstr ""
+"Scrapyシェルは、ダウンロードしたページから、 :class:`~scrapy.http.Response` "
+"オブジェクトや、(HTMLコンテンツとXMLコンテンツの両方のために) :class:"
+"`~scrapy.selector.Selector` オブジェクトなどの便利なオブジェクトを自動的に作"
+"成します。"
 
 #: ../../topics/shell.rst:124
 msgid "Those objects are:"
-msgstr ""
+msgstr "それらのオブジェクトは次のとおりです:"
 
 #: ../../topics/shell.rst:126
 msgid "``crawler`` - the current :class:`~scrapy.crawler.Crawler` object."
-msgstr ""
+msgstr "``crawler`` - 現在の :class:`~scrapy.crawler.Crawler` オブジェクト。"
 
 #: ../../topics/shell.rst:128
 msgid ""
-"``spider`` - the Spider which is known to handle the URL, or a "
-":class:`~scrapy.spiders.Spider` object if there is no spider found for "
-"the current URL"
+"``spider`` - the Spider which is known to handle the URL, or a :class:"
+"`~scrapy.spiders.Spider` object if there is no spider found for the current "
+"URL"
 msgstr ""
+"``spider`` - URLを処理することが知られているスパイダー、または現在のURL用にス"
+"パイダーが見つからない場合は :class:`~scrapy.spiders.Spider` オブジェクト"
 
 #: ../../topics/shell.rst:132
 msgid ""
 "``request`` - a :class:`~scrapy.http.Request` object of the last fetched "
-"page. You can modify this request using "
-":meth:`~scrapy.http.Request.replace` or fetch a new request (without "
-"leaving the shell) using the ``fetch`` shortcut."
+"page. You can modify this request using :meth:`~scrapy.http.Request.replace` "
+"or fetch a new request (without leaving the shell) using the ``fetch`` "
+"shortcut."
 msgstr ""
+"``request`` - 最後に取得したページの :class:`~scrapy.http.Request` オブジェク"
+"ト。 :meth:`~scrapy.http.Request.replace` を使用してこのリクエストを変更する"
+"か、 ``fetch`` ショートカットを使用して、(シェルを離れずに)新しいリクエストを"
+"取得できます。"
 
 #: ../../topics/shell.rst:137
 msgid ""
-"``response`` - a :class:`~scrapy.http.Response` object containing the "
-"last fetched page"
+"``response`` - a :class:`~scrapy.http.Response` object containing the last "
+"fetched page"
 msgstr ""
+"``response`` - 最後に取得したページを含む :class:`~scrapy.http.Response` オブ"
+"ジェクト"
 
 #: ../../topics/shell.rst:140
 msgid "``settings`` - the current :ref:`Scrapy settings <topics-settings>`"
-msgstr ""
+msgstr "``settings`` - 現在の :ref:`Scrapy設定<topics-settings>`"
 
 #: ../../topics/shell.rst:143
 msgid "Example of shell session"
-msgstr ""
+msgstr "シェル セッション の例"
 
 #: ../../topics/shell.rst:145
+#, fuzzy
+#| msgid ""
+#| "Here's an example of a typical shell session where we start by scraping "
+#| "the https://scrapy.org page, and then proceed to scrape the https://"
+#| "reddit.com page. Finally, we modify the (Reddit) request method to POST "
+#| "and re-fetch it getting an error. We end the session by typing Ctrl-D (in "
+#| "Unix systems) or Ctrl-Z in Windows."
 msgid ""
-"Here's an example of a typical shell session where we start by scraping "
-"the https://scrapy.org page, and then proceed to scrape the "
-"https://old.reddit.com/ page. Finally, we modify the (Reddit) request "
-"method to POST and re-fetch it getting an error. We end the session by "
-"typing Ctrl-D (in Unix systems) or Ctrl-Z in Windows."
+"Here's an example of a typical shell session where we start by scraping the "
+"https://scrapy.org page, and then proceed to scrape the https://old.reddit."
+"com/ page. Finally, we modify the (Reddit) request method to POST and re-"
+"fetch it getting an error. We end the session by typing Ctrl-D (in Unix "
+"systems) or Ctrl-Z in Windows."
 msgstr ""
+"ここで、 https://scrapy.org ページをスクレイピングすることから始めて、 次"
+"に、 https://reddit.com ページのスクレイピングに進む、典型的なシェルセッショ"
+"ンの例を以下に示します。 そして最後に、(Reddit)リクエストメソッドをPOSTに変更"
+"し、エラーを取得して再フェッチします。セッションを終了するには、Ctrl-D(Unixシ"
+"ステムの場合)、WindowsではCtrl-Zを入力します。"
 
 #: ../../topics/shell.rst:151
 msgid ""
-"Keep in mind that the data extracted here may not be the same when you "
-"try it, as those pages are not static and could have changed by the time "
-"you test this. The only purpose of this example is to get you "
-"familiarized with how the Scrapy shell works."
+"Keep in mind that the data extracted here may not be the same when you try "
+"it, as those pages are not static and could have changed by the time you "
+"test this. The only purpose of this example is to get you familiarized with "
+"how the Scrapy shell works."
 msgstr ""
+"これらのページは静的ではなく、テストするまでに変更されている可能性があるた"
+"め、ここで抽出したデータは同じではない可能性があることに注意してください。 こ"
+"の例の唯一の目的は、Scrapyシェルの仕組みを理解してもらうことです。"
 
 #: ../../topics/shell.rst:156
 msgid "First, we launch the shell::"
-msgstr ""
+msgstr "まず、私たちはシェルを起動します::"
 
 #: ../../topics/shell.rst:162
 msgid ""
-"Remember to always enclose URLs in quotes when running the Scrapy shell "
-"from the command line, otherwise URLs containing arguments (i.e. the "
-"``&`` character) will not work."
+"Remember to always enclose URLs in quotes when running the Scrapy shell from "
+"the command line, otherwise URLs containing arguments (i.e. the ``&`` "
+"character) will not work."
 msgstr ""
 
 #: ../../topics/shell.rst:166
@@ -246,60 +326,79 @@ msgstr ""
 
 #: ../../topics/shell.rst:171
 msgid ""
-"Then, the shell fetches the URL (using the Scrapy downloader) and prints "
-"the list of available objects and useful shortcuts (you'll notice that "
-"these lines all start with the ``[s]`` prefix)::"
+"Then, the shell fetches the URL (using the Scrapy downloader) and prints the "
+"list of available objects and useful shortcuts (you'll notice that these "
+"lines all start with the ``[s]`` prefix)::"
 msgstr ""
+"次に、シェルは(Scrapyダウンローダーを使用して)URLを取得し、使用可能なオブジェ"
+"クトと便利なショートカットのリストを出力します(これらの行はすべて ``[s]`` 接"
+"頭辞で始まることがわかります)::"
 
 #: ../../topics/shell.rst:192
+#, fuzzy
+#| msgid "After that, we can start playing with the objects::"
 msgid "After that, we can start playing with the objects:"
-msgstr ""
+msgstr "その後、オブジェクトで遊んでみましょう::"
 
 #: ../../topics/shell.rst:237
 msgid "Invoking the shell from spiders to inspect responses"
-msgstr ""
+msgstr "スパイダーからシェルを呼び出してレスポンスを検査する"
 
 #: ../../topics/shell.rst:239
 msgid ""
-"Sometimes you want to inspect the responses that are being processed in a"
-" certain point of your spider, if only to check that response you expect "
-"is getting there."
+"Sometimes you want to inspect the responses that are being processed in a "
+"certain point of your spider, if only to check that response you expect is "
+"getting there."
 msgstr ""
+"あなたが期待するレスポンスがそこに到達していることを確認するためだけに、スパ"
+"イダーの特定のポイントで処理されているレスポンスを検査したい場合があります。"
 
 #: ../../topics/shell.rst:243
 msgid ""
-"This can be achieved by using the ``scrapy.shell.inspect_response`` "
-"function."
+"This can be achieved by using the ``scrapy.shell.inspect_response`` function."
 msgstr ""
+"これは ``scrapy.shell.inspect_response`` 関数を使用することで実現できます。"
 
 #: ../../topics/shell.rst:245
 msgid "Here's an example of how you would call it from your spider::"
-msgstr ""
+msgstr "スパイダーから呼び出す方法の例を次に示します::"
 
 #: ../../topics/shell.rst:266
 msgid "When you run the spider, you will get something similar to this::"
-msgstr ""
+msgstr "スパイダーを実行すると、次のようなものが得られます::"
 
 #: ../../topics/shell.rst:277
+#, fuzzy
+#| msgid "Then, you can check if the extraction code is working::"
 msgid "Then, you can check if the extraction code is working:"
-msgstr ""
+msgstr "そこから、抽出コードが機能しているかどうかを確認できます::"
 
 #: ../../topics/shell.rst:282
+#, fuzzy
+#| msgid ""
+#| "Nope, it doesn't. So you can open the response in your web browser and "
+#| "see if it's the response you were expecting::"
 msgid ""
-"Nope, it doesn't. So you can open the response in your web browser and "
-"see if it's the response you were expecting:"
+"Nope, it doesn't. So you can open the response in your web browser and see "
+"if it's the response you were expecting:"
 msgstr ""
+"Orz。期待したとおりではありません。 したがって、あなたはWebブラウザーでレスポ"
+"ンスを開き、それが期待したレスポンスかどうかを確認できます::"
 
 #: ../../topics/shell.rst:288
 msgid ""
-"Finally you hit Ctrl-D (or Ctrl-Z in Windows) to exit the shell and "
-"resume the crawling::"
+"Finally you hit Ctrl-D (or Ctrl-Z in Windows) to exit the shell and resume "
+"the crawling::"
 msgstr ""
+"最後に、Ctrl-D(WindowsではCtrl-Z)を押してシェルを終了し、クロールを再開しま"
+"す::"
 
 #: ../../topics/shell.rst:295
 msgid ""
-"Note that you can't use the ``fetch`` shortcut here since the Scrapy "
-"engine is blocked by the shell. However, after you leave the shell, the "
-"spider will continue crawling where it stopped, as shown above."
+"Note that you can't use the ``fetch`` shortcut here since the Scrapy engine "
+"is blocked by the shell. However, after you leave the shell, the spider will "
+"continue crawling where it stopped, as shown above."
 msgstr ""
-
+"Scrapyエンジンはシェルによってブロックされているため、ここでは ``fetch`` "
+"ショートカットを使用できないことに注意してください。 ただし、上記のように、"
+"シェルを離れた後、スパイダーは停止した場所からクロールを続けます。"

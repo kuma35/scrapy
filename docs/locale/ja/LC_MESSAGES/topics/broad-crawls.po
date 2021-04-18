@@ -1,330 +1,415 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-09-30 01:16+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../topics/broad-crawls.rst:5
 msgid "Broad Crawls"
-msgstr ""
+msgstr "広範なクロール"
 
 #: ../../topics/broad-crawls.rst:7
 msgid ""
-"Scrapy defaults are optimized for crawling specific sites. These sites "
-"are often handled by a single Scrapy spider, although this is not "
-"necessary or required (for example, there are generic spiders that handle"
-" any given site thrown at them)."
+"Scrapy defaults are optimized for crawling specific sites. These sites are "
+"often handled by a single Scrapy spider, although this is not necessary or "
+"required (for example, there are generic spiders that handle any given site "
+"thrown at them)."
 msgstr ""
+"Scrapyのデフォルトは、特定のサイトをクロールするために最適化されています。 多"
+"くの場合、これらのサイトは単一のScrapyスパイダーで処理されますが、これは必要"
+"または必須ではありません(たとえば、スロー(throw)される特定のサイトを処理する"
+"汎用スパイダーがあります)。"
 
 #: ../../topics/broad-crawls.rst:12
 msgid ""
 "In addition to this \"focused crawl\", there is another common type of "
-"crawling which covers a large (potentially unlimited) number of domains, "
-"and is only limited by time or other arbitrary constraint, rather than "
-"stopping when the domain was crawled to completion or when there are no "
-"more requests to perform. These are called \"broad crawls\" and is the "
-"typical crawlers employed by search engines."
+"crawling which covers a large (potentially unlimited) number of domains, and "
+"is only limited by time or other arbitrary constraint, rather than stopping "
+"when the domain was crawled to completion or when there are no more requests "
+"to perform. These are called \"broad crawls\" and is the typical crawlers "
+"employed by search engines."
 msgstr ""
+"この「フォーカスクロール」に加えて、多数の（潜在的に無制限の）ドメインをカ"
+"バーする別の一般的なタイプのクロールがあり、ドメインが完全にクロールされたと"
+"きまたは、実行するリクエストがなくなったときに停止するのではなく、時間または"
+"その他の任意の制約によってのみ制限されます。これらは広範なクロール(broad "
+"crawls)と呼ばれ、検索エンジンで採用されている典型的なクローラーです。"
 
 #: ../../topics/broad-crawls.rst:19
 msgid "These are some common properties often found in broad crawls:"
-msgstr ""
+msgstr "これらは、広範なクロールでよく見られる一般的なプロパティです:"
 
 #: ../../topics/broad-crawls.rst:21
 msgid ""
-"they crawl many domains (often, unbounded) instead of a specific set of "
-"sites"
+"they crawl many domains (often, unbounded) instead of a specific set of sites"
 msgstr ""
+"特定のサイトセットではなく、多くのドメイン（多くの場合、無制限）をクロールし"
+"ます。"
 
 #: ../../topics/broad-crawls.rst:23
 msgid ""
 "they don't necessarily crawl domains to completion, because it would be "
-"impractical (or impossible) to do so, and instead limit the crawl by time"
-" or number of pages crawled"
+"impractical (or impossible) to do so, and instead limit the crawl by time or "
+"number of pages crawled"
 msgstr ""
+"ドメインをクロールする必要はありません。実行するのは非現実的（または不可能）"
+"であるため、代わりにクロールを時間またはクロールされるページ数で制限します。"
 
 #: ../../topics/broad-crawls.rst:27
 msgid ""
 "they are simpler in logic (as opposed to very complex spiders with many "
-"extraction rules) because data is often post-processed in a separate "
-"stage"
+"extraction rules) because data is often post-processed in a separate stage"
 msgstr ""
+"(多くの抽出ルールを持つ非常に複雑なスパイダーとは対照的に、)多くの場合、デー"
+"タは別の段階で後処理されることが多いため、ロジックが単純です。"
 
 #: ../../topics/broad-crawls.rst:30
 msgid ""
-"they crawl many domains concurrently, which allows them to achieve faster"
-" crawl speeds by not being limited by any particular site constraint "
-"(each site is crawled slowly to respect politeness, but many sites are "
-"crawled in parallel)"
+"they crawl many domains concurrently, which allows them to achieve faster "
+"crawl speeds by not being limited by any particular site constraint (each "
+"site is crawled slowly to respect politeness, but many sites are crawled in "
+"parallel)"
 msgstr ""
+"多くのドメインを並列してクロールします。これにより、特定のサイトの制約によっ"
+"て制限されないため、クロール速度が向上します(各サイトはポライトネスを尊重する"
+"ためにゆっくりクロールされますが、多くのサイトが並行してクロールされます)"
 
 #: ../../topics/broad-crawls.rst:35
 msgid ""
-"As said above, Scrapy default settings are optimized for focused crawls, "
-"not broad crawls. However, due to its asynchronous architecture, Scrapy "
-"is very well suited for performing fast broad crawls. This page "
-"summarizes some things you need to keep in mind when using Scrapy for "
-"doing broad crawls, along with concrete suggestions of Scrapy settings to"
-" tune in order to achieve an efficient broad crawl."
+"As said above, Scrapy default settings are optimized for focused crawls, not "
+"broad crawls. However, due to its asynchronous architecture, Scrapy is very "
+"well suited for performing fast broad crawls. This page summarizes some "
+"things you need to keep in mind when using Scrapy for doing broad crawls, "
+"along with concrete suggestions of Scrapy settings to tune in order to "
+"achieve an efficient broad crawl."
 msgstr ""
+"前述のように、Scrapyのデフォルト設定は、広範なクロールではなく、集中的なク"
+"ロール用に最適化されています。ただし、非同期アーキテクチャのため、Scrapyは高"
+"速で広範なクロールを実行するのに非常に適しています。ここでは、Scrapyを使用し"
+"て幅広いクロールを行う際に留意する必要があるいくつかの事項を要約し、効率的な"
+"幅広いクロールを実現するために調整するScrapy設定の具体的な提案を行います。"
 
 #: ../../topics/broad-crawls.rst:45
 msgid "Use the right :setting:`SCHEDULER_PRIORITY_QUEUE`"
-msgstr ""
+msgstr "正しい :setting:`SCHEDULER_PRIORITY_QUEUE` の使用"
 
 #: ../../topics/broad-crawls.rst:47
 msgid ""
-"Scrapy’s default scheduler priority queue is "
-"``'scrapy.pqueues.ScrapyPriorityQueue'``. It works best during single-"
-"domain crawl. It does not work well with crawling many different domains "
-"in parallel"
+"Scrapy’s default scheduler priority queue is ``'scrapy.pqueues."
+"ScrapyPriorityQueue'``. It works best during single-domain crawl. It does "
+"not work well with crawling many different domains in parallel"
 msgstr ""
+"Scrapyのデフォルトのスケジューラ優先度キューは ``'scrapy.pqueues."
+"ScrapyPriorityQueue'`` です。 単一ドメインクロール中に最適に機能します。多く"
+"の異なるドメインを並行してクロールするとうまく機能しません"
 
 #: ../../topics/broad-crawls.rst:51
 msgid "To apply the recommended priority queue use::"
-msgstr ""
+msgstr "推奨される優先度キューを適用するには::"
 
 #: ../../topics/broad-crawls.rst:58
 msgid "Increase concurrency"
-msgstr ""
+msgstr "並行性を高める"
 
 #: ../../topics/broad-crawls.rst:60
 msgid ""
-"Concurrency is the number of requests that are processed in parallel. "
-"There is a global limit (:setting:`CONCURRENT_REQUESTS`) and an "
-"additional limit that can be set either per domain "
-"(:setting:`CONCURRENT_REQUESTS_PER_DOMAIN`) or per IP "
-"(:setting:`CONCURRENT_REQUESTS_PER_IP`)."
+"Concurrency is the number of requests that are processed in parallel. There "
+"is a global limit (:setting:`CONCURRENT_REQUESTS`) and an additional limit "
+"that can be set either per domain (:setting:"
+"`CONCURRENT_REQUESTS_PER_DOMAIN`) or per IP (:setting:"
+"`CONCURRENT_REQUESTS_PER_IP`)."
 msgstr ""
+"同時実行性は、並行して処理されるリクエストの数です。グローバル制限( :setting:"
+"`CONCURRENT_REQUESTS` )と、ドメイン( :setting:"
+"`CONCURRENT_REQUESTS_PER_DOMAIN` )またはIP( :setting:"
+"`CONCURRENT_REQUESTS_PER_IP` )ごとに設定できる追加の制限があります。"
 
 #: ../../topics/broad-crawls.rst:65
 msgid ""
 "The scheduler priority queue :ref:`recommended for broad crawls <broad-"
-"crawls-scheduler-priority-queue>` does not support "
-":setting:`CONCURRENT_REQUESTS_PER_IP`."
+"crawls-scheduler-priority-queue>` does not support :setting:"
+"`CONCURRENT_REQUESTS_PER_IP`."
 msgstr ""
+"スケジューラの優先度キューの :ref:`広範なクロールにお勧めのキュー<broad-"
+"crawls-scheduler-priority-queue>` は :setting:`CONCURRENT_REQUESTS_PER_IP` を"
+"サポートしていません。"
 
 #: ../../topics/broad-crawls.rst:69
 msgid ""
-"The default global concurrency limit in Scrapy is not suitable for "
-"crawling many different domains in parallel, so you will want to increase"
-" it. How much to increase it will depend on how much CPU and memory you "
-"crawler will have available."
+"The default global concurrency limit in Scrapy is not suitable for crawling "
+"many different domains in parallel, so you will want to increase it. How "
+"much to increase it will depend on how much CPU and memory you crawler will "
+"have available."
 msgstr ""
+"Scrapyのデフォルトのグローバル同時実行制限は、多くの異なるドメインを並行して"
+"クロールするのには適していないため、増やすことをお勧めします。どれだけ増やす"
+"かは、クローラーが使用できるCPUとメモリの量によって異なります。"
 
 #: ../../topics/broad-crawls.rst:74
 msgid "A good starting point is ``100``::"
-msgstr ""
+msgstr "良い出発点は ``100`` です::"
 
 #: ../../topics/broad-crawls.rst:78
 msgid ""
-"But the best way to find out is by doing some trials and identifying at "
-"what concurrency your Scrapy process gets CPU bounded. For optimum "
-"performance, you should pick a concurrency where CPU usage is at 80-90%."
+"But the best way to find out is by doing some trials and identifying at what "
+"concurrency your Scrapy process gets CPU bounded. For optimum performance, "
+"you should pick a concurrency where CPU usage is at 80-90%."
 msgstr ""
+"しかし、それを見つけるための最良の方法は、いくつかの試行を行い、Scrapyプロセ"
+"スがCPUの限界に達する同時性を特定することです。最適なパフォーマンスを得るに"
+"は、CPU使用率が80〜90％の同時実行性を選択する必要があります。"
 
 #: ../../topics/broad-crawls.rst:82
 msgid ""
 "Increasing concurrency also increases memory usage. If memory usage is a "
-"concern, you might need to lower your global concurrency limit "
-"accordingly."
+"concern, you might need to lower your global concurrency limit accordingly."
 msgstr ""
+"並行性を高めると、メモリ使用量も増えます。メモリ使用量が懸念される場合は、そ"
+"れに応じてグローバル同時実行制限を下げる必要があります。"
 
 #: ../../topics/broad-crawls.rst:87
 msgid "Increase Twisted IO thread pool maximum size"
-msgstr ""
+msgstr "Twisted IOスレッド・プールの最大サイズを増やす"
 
 #: ../../topics/broad-crawls.rst:89
 msgid ""
-"Currently Scrapy does DNS resolution in a blocking way with usage of "
-"thread pool. With higher concurrency levels the crawling could be slow or"
-" even fail hitting DNS resolver timeouts. Possible solution to increase "
-"the number of threads handling DNS queries. The DNS queue will be "
-"processed faster speeding up establishing of connection and crawling "
-"overall."
+"Currently Scrapy does DNS resolution in a blocking way with usage of thread "
+"pool. With higher concurrency levels the crawling could be slow or even fail "
+"hitting DNS resolver timeouts. Possible solution to increase the number of "
+"threads handling DNS queries. The DNS queue will be processed faster "
+"speeding up establishing of connection and crawling overall."
 msgstr ""
+"現在、Scrapyは、スレッド・プールの使用をブロックする方法でDNS解決を行いま"
+"す。 同時実行レベルが高いと、クロールが遅くなったり、DNSリゾルバーのタイムア"
+"ウトに失敗したりすることさえあります。可能な解決策はDNSクエリを処理するスレッ"
+"ドの数を増やす事です。そうすれば、DNSキューはより速く処理され、接続の確立とク"
+"ロール全体が高速化されます。"
 
 #: ../../topics/broad-crawls.rst:95
 msgid "To increase maximum thread pool size use::"
-msgstr ""
+msgstr "スレッド・プールの最大サイズを増やすには::"
 
 #: ../../topics/broad-crawls.rst:100
 msgid "Setup your own DNS"
-msgstr ""
+msgstr "あなた独自のDNSをセットアップする"
 
 #: ../../topics/broad-crawls.rst:102
 msgid ""
-"If you have multiple crawling processes and single central DNS, it can "
-"act like DoS attack on the DNS server resulting to slow down of entire "
-"network or even blocking your machines. To avoid this setup your own DNS "
-"server with local cache and upstream to some large DNS like OpenDNS or "
-"Verizon."
+"If you have multiple crawling processes and single central DNS, it can act "
+"like DoS attack on the DNS server resulting to slow down of entire network "
+"or even blocking your machines. To avoid this setup your own DNS server with "
+"local cache and upstream to some large DNS like OpenDNS or Verizon."
 msgstr ""
+"複数のクロール・プロセスと単一の中央DNSがある場合、DNSサーバーに対するDoS攻撃"
+"のように動作し、ネットワーク全体の速度を低下させたり、マシンをブロックするこ"
+"とさえあります。この設定を回避するには、ローカルキャッシュを備えた独自のDNS"
+"サーバーと、OpenDNSやVerizonなどの大規模なDNSのアップ・ストリームを使用しま"
+"す。"
 
 #: ../../topics/broad-crawls.rst:108
 msgid "Reduce log level"
-msgstr ""
+msgstr "ログレベルを下げる"
 
 #: ../../topics/broad-crawls.rst:110
 msgid ""
-"When doing broad crawls you are often only interested in the crawl rates "
-"you get and any errors found. These stats are reported by Scrapy when "
-"using the ``INFO`` log level. In order to save CPU (and log storage "
-"requirements) you should not use ``DEBUG`` log level when preforming "
-"large broad crawls in production. Using ``DEBUG`` level when developing "
-"your (broad) crawler may be fine though."
+"When doing broad crawls you are often only interested in the crawl rates you "
+"get and any errors found. These stats are reported by Scrapy when using the "
+"``INFO`` log level. In order to save CPU (and log storage requirements) you "
+"should not use ``DEBUG`` log level when preforming large broad crawls in "
+"production. Using ``DEBUG`` level when developing your (broad) crawler may "
+"be fine though."
 msgstr ""
+"広範なクロールを行う場合、多くの場合、取得するクロール・レートと検出されたエ"
+"ラーのみに関心があります。 これらの統計は、 ``INFO`` ログ・レベルを使用してい"
+"るときにScrapyによって報告されます。 CPU資源(およびログ・ストレージ要件)を節"
+"約するために、本番環境で大規模な広範なクロールを実行するときに ``DEBUG`` ロ"
+"グ・レベルを使用しないでください。（広範囲の)クローラーの開発時では "
+"``DEBUG`` レベルを使用しても問題ありません。"
 
 #: ../../topics/broad-crawls.rst:117
 msgid "To set the log level use::"
-msgstr ""
+msgstr "ログレベルを設定するには:"
 
 #: ../../topics/broad-crawls.rst:122
 msgid "Disable cookies"
-msgstr ""
+msgstr "クッキーを無効にする"
 
 #: ../../topics/broad-crawls.rst:124
 msgid ""
-"Disable cookies unless you *really* need. Cookies are often not needed "
-"when doing broad crawls (search engine crawlers ignore them), and they "
-"improve performance by saving some CPU cycles and reducing the memory "
-"footprint of your Scrapy crawler."
+"Disable cookies unless you *really* need. Cookies are often not needed when "
+"doing broad crawls (search engine crawlers ignore them), and they improve "
+"performance by saving some CPU cycles and reducing the memory footprint of "
+"your Scrapy crawler."
 msgstr ""
+"**本当に** 必要がない限り、クッキーを無効にします。クッキーは、広範なクロール"
+"を実行するときに必要ない場合が多く(検索エンジンク・ローラーはそれらを無視しま"
+"す)、CPUサイクルを節約し、Scrapyクローラーのメモリ・フット・プリントを削減す"
+"ることでパフォーマンスを向上させます。"
 
 #: ../../topics/broad-crawls.rst:129
 msgid "To disable cookies use::"
-msgstr ""
+msgstr "クッキーを無効にするには::"
 
 #: ../../topics/broad-crawls.rst:134
 msgid "Disable retries"
-msgstr ""
+msgstr "再試行を無効にする"
 
 #: ../../topics/broad-crawls.rst:136
 msgid ""
 "Retrying failed HTTP requests can slow down the crawls substantially, "
-"specially when sites causes are very slow (or fail) to respond, thus "
-"causing a timeout error which gets retried many times, unnecessarily, "
-"preventing crawler capacity to be reused for other domains."
+"specially when sites causes are very slow (or fail) to respond, thus causing "
+"a timeout error which gets retried many times, unnecessarily, preventing "
+"crawler capacity to be reused for other domains."
 msgstr ""
+"失敗したHTTPリクエストを再試行すると、特にサイトが原因でレスポンスが非常に遅"
+"い(または失敗する)場合、クロールが大幅に遅くなる可能性があります。そのため、"
+"タイム・アウト・エラーが何度も再試行され、不必要にクローラー容量が他のドメイ"
+"ンで再利用できなくなります。"
 
 #: ../../topics/broad-crawls.rst:141
 msgid "To disable retries use::"
-msgstr ""
+msgstr "再試行を無効にするには::"
 
 #: ../../topics/broad-crawls.rst:146
 msgid "Reduce download timeout"
-msgstr ""
+msgstr "ダウンロードのタイムアウトを短縮"
 
 #: ../../topics/broad-crawls.rst:148
 msgid ""
-"Unless you are crawling from a very slow connection (which shouldn't be "
-"the case for broad crawls) reduce the download timeout so that stuck "
-"requests are discarded quickly and free up capacity to process the next "
-"ones."
+"Unless you are crawling from a very slow connection (which shouldn't be the "
+"case for broad crawls) reduce the download timeout so that stuck requests "
+"are discarded quickly and free up capacity to process the next ones."
 msgstr ""
+"非常に遅い接続からクロールする場合を除き(広範なクロールの場合はそうではありま"
+"せん)、ダウンロード・タイムアウトを減らして、スタックしたリクエストを迅速に破"
+"棄し、次のリクエストを処理するための容量を解放します。"
 
 #: ../../topics/broad-crawls.rst:152
 msgid "To reduce the download timeout use::"
-msgstr ""
+msgstr "ダウンロードのタイムアウトを短縮するには::"
 
 #: ../../topics/broad-crawls.rst:157
 msgid "Disable redirects"
-msgstr ""
+msgstr "リダイレクトを無効にする"
 
 #: ../../topics/broad-crawls.rst:159
 msgid ""
-"Consider disabling redirects, unless you are interested in following "
-"them. When doing broad crawls it's common to save redirects and resolve "
-"them when revisiting the site at a later crawl. This also help to keep "
-"the number of request constant per crawl batch, otherwise redirect loops "
-"may cause the crawler to dedicate too many resources on any specific "
-"domain."
+"Consider disabling redirects, unless you are interested in following them. "
+"When doing broad crawls it's common to save redirects and resolve them when "
+"revisiting the site at a later crawl. This also help to keep the number of "
+"request constant per crawl batch, otherwise redirect loops may cause the "
+"crawler to dedicate too many resources on any specific domain."
 msgstr ""
+"リダイレクトの追跡に興味がない限り、リダイレクトを無効にすることを検討してく"
+"ださい。広範なクロールを実行する場合、リダイレクトを保存し、後のクロールでサ"
+"イトを再訪するときにリダイレクトを解決するのが一般的です。これは、クロール・"
+"バッチごとにリクエストの数を一定に保つのにも役立ちます。そうしないと、リダイ"
+"レクト・ループが原因で、クローラーが特定のドメインで多くのリソースを占有する"
+"可能性があります。"
 
 #: ../../topics/broad-crawls.rst:165
 msgid "To disable redirects use::"
-msgstr ""
+msgstr "リダイレクトを無効にするには::"
 
 #: ../../topics/broad-crawls.rst:170
 msgid "Enable crawling of \"Ajax Crawlable Pages\""
-msgstr ""
+msgstr "「Ajaxクロール可能なページ」のクロールを有効にします"
 
 #: ../../topics/broad-crawls.rst:172
 msgid ""
 "Some pages (up to 1%, based on empirical data from year 2013) declare "
-"themselves as `ajax crawlable`_. This means they provide plain HTML "
-"version of content that is usually available only via AJAX. Pages can "
-"indicate it in two ways:"
+"themselves as `ajax crawlable`_. This means they provide plain HTML version "
+"of content that is usually available only via AJAX. Pages can indicate it in "
+"two ways:"
 msgstr ""
+"一部のページ(2013年の経験データに基づいて最大1％)は、自身をajaxクロール可能"
+"(`ajax crawlable`_)と宣言しています。 これは、通常AJAX経由でのみ利用可能なコ"
+"ンテンツのプレーンHTMLバージョンを提供することを意味します。ページは2つの方法"
+"でそれを示すことができます:"
 
 #: ../../topics/broad-crawls.rst:177
 msgid "by using ``#!`` in URL - this is the default way;"
-msgstr ""
+msgstr "URLで ``#!`` を使用する - これがデフォルトの方法です;"
 
 #: ../../topics/broad-crawls.rst:178
 msgid ""
 "by using a special meta tag - this way is used on \"main\", \"index\" "
 "website pages."
 msgstr ""
+"特殊なメタ・タグを使用する - この方法は、\"main\"、\"index\"ウェブサイトペー"
+"ジで使用されます。"
 
 #: ../../topics/broad-crawls.rst:181
 msgid ""
-"Scrapy handles (1) automatically; to handle (2) enable "
-":ref:`AjaxCrawlMiddleware <ajaxcrawl-middleware>`::"
+"Scrapy handles (1) automatically; to handle (2) enable :ref:"
+"`AjaxCrawlMiddleware <ajaxcrawl-middleware>`::"
 msgstr ""
+"Scrapyは (1) を自動的に処理します。そして、 (2) を処理するには、 :ref:"
+"`AjaxCrawlMiddleware <ajaxcrawl-middleware>` を有効にします::"
 
 #: ../../topics/broad-crawls.rst:186
 msgid ""
-"When doing broad crawls it's common to crawl a lot of \"index\" web "
-"pages; AjaxCrawlMiddleware helps to crawl them correctly. It is turned "
-"OFF by default because it has some performance overhead, and enabling it "
-"for focused crawls doesn't make much sense."
+"When doing broad crawls it's common to crawl a lot of \"index\" web pages; "
+"AjaxCrawlMiddleware helps to crawl them correctly. It is turned OFF by "
+"default because it has some performance overhead, and enabling it for "
+"focused crawls doesn't make much sense."
 msgstr ""
+"広範なクロールを行う場合、多くの「インデックス」Webページをクロールするのが一"
+"般的です。 AjaxCrawlMiddlewareは、それらを正しくクロールするのに役立ちます。 "
+"パフォーマンスのオーバーヘッドがあるため、デフォルトではオフになっています。"
+"また、集中的なクロール(focused crawls)を有効にすることはあまり意味がありませ"
+"ん。"
 
 #: ../../topics/broad-crawls.rst:196
 msgid "Crawl in BFO order"
-msgstr ""
+msgstr "BFO順でクロールする"
 
 #: ../../topics/broad-crawls.rst:198
 msgid ":ref:`Scrapy crawls in DFO order by default <faq-bfo-dfo>`."
-msgstr ""
+msgstr ":ref:`ScrapyクロールのデフォルトはDFO順 <faq-bfo-dfo>`."
 
 #: ../../topics/broad-crawls.rst:200
 msgid ""
 "In broad crawls, however, page crawling tends to be faster than page "
-"processing. As a result, unprocessed early requests stay in memory until "
-"the final depth is reached, which can significantly increase memory "
-"usage."
+"processing. As a result, unprocessed early requests stay in memory until the "
+"final depth is reached, which can significantly increase memory usage."
 msgstr ""
+"ただし、広範なクロールでは、ページのクロールはページの処理よりも高速になる傾"
+"向があります。その結果、未処理の初期リクエストは最終的な深さに達するまでメモ"
+"リ内に留まり、メモリ使用量が大幅に増加する可能性があります。"
 
 #: ../../topics/broad-crawls.rst:204
 msgid ":ref:`Crawl in BFO order <faq-bfo-dfo>` instead to save memory."
 msgstr ""
+"メモリを節約するために、代わりに、 :ref:`BFO順でクロール<faq-bfo-dfo>` する。"
 
 #: ../../topics/broad-crawls.rst:208
 msgid "Be mindful of memory leaks"
-msgstr ""
+msgstr "メモリリークに気を配る"
 
 #: ../../topics/broad-crawls.rst:210
 msgid ""
-"If your broad crawl shows a high memory usage, in addition to "
-":ref:`crawling in BFO order <broad-crawls-bfo>` and :ref:`lowering "
-"concurrency <broad-crawls-concurrency>` you should :ref:`debug your "
-"memory leaks <topics-leaks>`."
+"If your broad crawl shows a high memory usage, in addition to :ref:`crawling "
+"in BFO order <broad-crawls-bfo>` and :ref:`lowering concurrency <broad-"
+"crawls-concurrency>` you should :ref:`debug your memory leaks <topics-"
+"leaks>`."
 msgstr ""
+":ref:`BFOの順序でのクロール<broad-crawls-bfo>` および :ref:`並行処理の低下"
+"<broad-crawls-concurrency>` に加えて、広範なクロールのメモリ使用量が多い場"
+"合、 あなたは :ref:`メモリリークのデバッグ<topics-leaks>` をするべきです。"
 
 #: ../../topics/broad-crawls.rst:217
 msgid "Install a specific Twisted reactor"
@@ -332,8 +417,7 @@ msgstr ""
 
 #: ../../topics/broad-crawls.rst:219
 msgid ""
-"If the crawl is exceeding the system's capabilities, you might want to "
-"try installing a specific Twisted reactor, via the "
-":setting:`TWISTED_REACTOR` setting."
+"If the crawl is exceeding the system's capabilities, you might want to try "
+"installing a specific Twisted reactor, via the :setting:`TWISTED_REACTOR` "
+"setting."
 msgstr ""
-

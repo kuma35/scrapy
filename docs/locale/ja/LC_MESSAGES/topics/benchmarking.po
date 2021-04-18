@@ -1,53 +1,72 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-10-02 21:52+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.7.0\n"
 
+# from wikipedia
+# ベンチマーキング（英：benchmarking）とは国や企業等が製品、サービス、プロセス、慣行を継続的に測定し、優れた競合他社やその他の優良企業のパフォーマンスと比較・分析する活動を指す。測定する尺度は、顧客による企業のパフォーマンスに対する評価に直接、間接的に影響を与えるものでなければならない。 
 #: ../../topics/benchmarking.rst:5
 msgid "Benchmarking"
-msgstr ""
+msgstr "ベンチマーキング"
 
 #: ../../topics/benchmarking.rst:7
 msgid ""
 "Scrapy comes with a simple benchmarking suite that spawns a local HTTP "
 "server and crawls it at the maximum possible speed. The goal of this "
-"benchmarking is to get an idea of how Scrapy performs in your hardware, "
-"in order to have a common baseline for comparisons. It uses a simple "
-"spider that does nothing and just follows links."
+"benchmarking is to get an idea of how Scrapy performs in your hardware, in "
+"order to have a common baseline for comparisons. It uses a simple spider "
+"that does nothing and just follows links."
 msgstr ""
+"Scrapyには、ローカルHTTPサーバーを生成し、可能な最大速度でクロールする単純な"
+"ベンチマーキング・スイートが付属しています。 このベンチマークの目標は、ハード"
+"ウェアでScrapyがどのように機能するかを把握し、比較のための共通のベースライン"
+"を得ることにあります。 何もせず、リンクをたどるシンプルなスパイダーを使用しま"
+"す。"
 
 #: ../../topics/benchmarking.rst:13
 msgid "To run it use::"
-msgstr ""
+msgstr "その実行は::"
 
 #: ../../topics/benchmarking.rst:17
 msgid "You should see an output like this::"
-msgstr ""
+msgstr "次のような出力が表示されるはずです::"
 
 #: ../../topics/benchmarking.rst:78
 msgid ""
-"That tells you that Scrapy is able to crawl about 3000 pages per minute "
-"in the hardware where you run it. Note that this is a very simple spider "
-"intended to follow links, any custom spider you write will probably do "
-"more stuff which results in slower crawl rates. How slower depends on how"
-" much your spider does and how well it's written."
+"That tells you that Scrapy is able to crawl about 3000 pages per minute in "
+"the hardware where you run it. Note that this is a very simple spider "
+"intended to follow links, any custom spider you write will probably do more "
+"stuff which results in slower crawl rates. How slower depends on how much "
+"your spider does and how well it's written."
 msgstr ""
+"これは、Scrapyを実行するあなたのハードウェアで1分あたり約3000ページをクロール"
+"できることを示しています。 これは、リンクをたどることを目的とした非常に単純な"
+"スパイダーであることに注意してください。作成するカスタム・スパイダーは、おそ"
+"らくより多くの処理を行うため、クロール速度が遅くなります。 どれだけ遅くなるか"
+"は、スパイダーがどれだけ行うかと、それがどれだけうまく書かれているかに依存し"
+"ます。"
 
 #: ../../topics/benchmarking.rst:84
 msgid "Use scrapy-bench_ for more complex benchmarking."
 msgstr ""
 
+#~ msgid ""
+#~ "In the future, more cases will be added to the benchmarking suite to "
+#~ "cover other common scenarios."
+#~ msgstr ""
+#~ "将来的には、他の一般的なシナリオをカバーするために、ベンチマーキング・ス"
+#~ "イートにさらにケースが追加されるでしょう。"

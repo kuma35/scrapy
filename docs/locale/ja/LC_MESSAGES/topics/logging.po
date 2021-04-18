@@ -1,141 +1,182 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-09-28 20:40+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../topics/logging.rst:5
 msgid "Logging"
-msgstr ""
+msgstr "ロギング(logging)"
 
 #: ../../topics/logging.rst:8
 msgid ""
-":mod:`scrapy.log` has been deprecated alongside its functions in favor of"
-" explicit calls to the Python standard logging. Keep reading to learn "
-"more about the new logging system."
+":mod:`scrapy.log` has been deprecated alongside its functions in favor of "
+"explicit calls to the Python standard logging. Keep reading to learn more "
+"about the new logging system."
 msgstr ""
+":mod:`scrapy.log` は、Python標準ロギングの明示的な呼び出しを支援する機能とと"
+"もに非推奨になりました。 新しいロギングシステムの詳細については、以下をご覧く"
+"ださい。"
 
 #: ../../topics/logging.rst:12
+#, fuzzy
+#| msgid ""
+#| "Scrapy uses `Python's builtin logging system <https://docs.python.org/3/"
+#| "library/logging.html>`_ for event logging. We'll provide some simple "
+#| "examples to get you started, but for more advanced use-cases it's "
+#| "strongly suggested to read thoroughly its documentation."
 msgid ""
 "Scrapy uses :mod:`logging` for event logging. We'll provide some simple "
-"examples to get you started, but for more advanced use-cases it's "
-"strongly suggested to read thoroughly its documentation."
+"examples to get you started, but for more advanced use-cases it's strongly "
+"suggested to read thoroughly its documentation."
 msgstr ""
+"Scrapyは、イベント・ロギングにPythonの組み込みロギング・システム(`Python's "
+"builtin logging system <https://docs.python.org/3/library/logging.html>`_)を"
+"使用します。 始めるための簡単な例をいくつか紹介しますが、より高度なユース・"
+"ケースについては、Pythonの組み込みロギング・システムのドキュメントを徹底的に"
+"読むことを強くお勧めします。"
 
 #: ../../topics/logging.rst:16
 msgid ""
-"Logging works out of the box, and can be configured to some extent with "
-"the Scrapy settings listed in :ref:`topics-logging-settings`."
+"Logging works out of the box, and can be configured to some extent with the "
+"Scrapy settings listed in :ref:`topics-logging-settings`."
 msgstr ""
+"ロギングはそのままで機能し、 :ref:`topics-logging-settings` にリストされてい"
+"るScrapy設定である程度設定できます。"
 
 #: ../../topics/logging.rst:19
 msgid ""
 "Scrapy calls :func:`scrapy.utils.log.configure_logging` to set some "
 "reasonable defaults and handle those settings in :ref:`topics-logging-"
-"settings` when running commands, so it's recommended to manually call it "
-"if you're running Scrapy from scripts as described in :ref:`run-from-"
-"script`."
+"settings` when running commands, so it's recommended to manually call it if "
+"you're running Scrapy from scripts as described in :ref:`run-from-script`."
 msgstr ""
+"Scrapyは :func:`scrapy.utils.log.configure_logging` を呼び出していくつかの妥"
+"当なデフォルトを設定し、コマンドを実行するときに :ref:`topics-logging-"
+"settings` でそれらの設定を処理するため、:ref:`run-from-script` で説明されてい"
+"るスクリプトからScrapyを実行している場合は、手動で呼び出すことをお勧めしま"
+"す。"
 
 #: ../../topics/logging.rst:27
 msgid "Log levels"
-msgstr ""
+msgstr "ログ・レベル"
 
 #: ../../topics/logging.rst:29
 msgid ""
-"Python's builtin logging defines 5 different levels to indicate the "
-"severity of a given log message. Here are the standard ones, listed in "
-"decreasing order:"
+"Python's builtin logging defines 5 different levels to indicate the severity "
+"of a given log message. Here are the standard ones, listed in decreasing "
+"order:"
 msgstr ""
+"Pythonの組み込みロギングは、特定のログメッセージの重大度を示す5つの異なるレベ"
+"ルを定義します。 以下は標準のもので、降順でリストされています:"
 
 #: ../../topics/logging.rst:32
 msgid "``logging.CRITICAL`` - for critical errors (highest severity)"
-msgstr ""
+msgstr "``logging.CRITICAL`` - 致命的なエラーの場合(最高の重要度)"
 
 #: ../../topics/logging.rst:33
 msgid "``logging.ERROR`` - for regular errors"
-msgstr ""
+msgstr "``logging.ERROR`` - 通常のエラーの場合"
 
 #: ../../topics/logging.rst:34
 msgid "``logging.WARNING`` - for warning messages"
-msgstr ""
+msgstr "``logging.WARNING`` - 警告メッセージの場合"
 
 #: ../../topics/logging.rst:35
 msgid "``logging.INFO`` - for informational messages"
-msgstr ""
+msgstr "``logging.INFO`` - 情報メッセージ用"
 
 #: ../../topics/logging.rst:36
 msgid "``logging.DEBUG`` - for debugging messages (lowest severity)"
-msgstr ""
+msgstr "``logging.DEBUG`` - デバッグメッセージ用(最も低い重要度)"
 
 #: ../../topics/logging.rst:39
 msgid "How to log messages"
-msgstr ""
+msgstr "メッセージをログ出しする方法"
 
 #: ../../topics/logging.rst:41
 msgid ""
-"Here's a quick example of how to log a message using the "
-"``logging.WARNING`` level::"
+"Here's a quick example of how to log a message using the ``logging.WARNING`` "
+"level::"
 msgstr ""
+"``logging.WARNING`` レベルを使用してメッセージをログ出しする方法の簡単な例を"
+"次に示します::"
 
 #: ../../topics/logging.rst:47
 msgid ""
 "There are shortcuts for issuing log messages on any of the standard 5 "
 "levels, and there's also a general ``logging.log`` method which takes a "
-"given level as argument.  If needed, the last example could be rewritten "
-"as::"
+"given level as argument.  If needed, the last example could be rewritten as::"
 msgstr ""
+"標準の5つのレベルのいずれかでログメッセージを発行するためのショートカットがあ"
+"り、引数として指定されたレベルを取る一般的な ``logging.log`` メソッドもありま"
+"す。必要に応じて、さっきの例を次のように書き換えることができます::"
 
 #: ../../topics/logging.rst:54
 msgid ""
 "On top of that, you can create different \"loggers\" to encapsulate "
-"messages. (For example, a common practice is to create different loggers "
-"for every module). These loggers can be configured independently, and "
-"they allow hierarchical constructions."
+"messages. (For example, a common practice is to create different loggers for "
+"every module). These loggers can be configured independently, and they allow "
+"hierarchical constructions."
 msgstr ""
+"さらに、あなたはメッセージをカプセル化するためのさまざまなロガーを作成できま"
+"す。(たとえば、一般的な方法は、モジュールごとに異なるロガーを作成することで"
+"す)。 これらのロガーは独立して構成でき、階層構造が可能です。"
 
 #: ../../topics/logging.rst:59
 msgid ""
-"The previous examples use the root logger behind the scenes, which is a "
-"top level logger where all messages are propagated to (unless otherwise "
-"specified). Using ``logging`` helpers is merely a shortcut for getting "
-"the root logger explicitly, so this is also an equivalent of the last "
-"snippets::"
+"The previous examples use the root logger behind the scenes, which is a top "
+"level logger where all messages are propagated to (unless otherwise "
+"specified). Using ``logging`` helpers is merely a shortcut for getting the "
+"root logger explicitly, so this is also an equivalent of the last snippets::"
 msgstr ""
+"前の例では、舞台裏でルート・ロガーを使用します。これは、特に指定がない限り、"
+"すべてのメッセージが伝播されるトップ・レベル・ロガーです。 ``logging`` ヘル"
+"パーの使用は、ルート・ロガーを明示的に取得するための単なるショートカットであ"
+"るため、これは最後のコード片と同等です。"
 
 #: ../../topics/logging.rst:68
 msgid ""
-"You can use a different logger just by getting its name with the "
-"``logging.getLogger`` function::"
+"You can use a different logger just by getting its name with the ``logging."
+"getLogger`` function::"
 msgstr ""
+"``logging.getLogger`` 関数で名前を取得するだけで、異なるロガーを使用できま"
+"す::"
 
 #: ../../topics/logging.rst:75
 msgid ""
-"Finally, you can ensure having a custom logger for any module you're "
-"working on by using the ``__name__`` variable, which is populated with "
-"current module's path::"
+"Finally, you can ensure having a custom logger for any module you're working "
+"on by using the ``__name__`` variable, which is populated with current "
+"module's path::"
 msgstr ""
+"最後に、 ``__name__`` 変数を使用して、作業中のモジュールのカスタム・ロガーを"
+"確保できます。これには、現在のモジュールのパスが入力されます::"
 
 #: ../../topics/logging.rst:86
+#, fuzzy
+#| msgid ""
+#| "Module logging, `HowTo <https://docs.python.org/2/howto/logging.html>`_"
 msgid "Module logging, :doc:`HowTo <howto/logging>`"
 msgstr ""
+"モジュール・ロギング `HowTo <https://docs.python.org/2/howto/logging.html>`_"
 
 #: ../../topics/logging.rst:86
 msgid "Basic Logging Tutorial"
 msgstr ""
+"基本ロギング・チュートリアル(https://docs.python.org/2/howto/logging.html)"
 
 #: ../../topics/logging.rst:88
 msgid "Module logging, :ref:`Loggers <logger>`"
@@ -144,26 +185,32 @@ msgstr ""
 #: ../../topics/logging.rst:89
 msgid "Further documentation on loggers"
 msgstr ""
+"ロガーに関する詳細なドキュメント(https://docs.python.org/2/library/logging."
+"html#logger-objects)"
 
 #: ../../topics/logging.rst:94
 msgid "Logging from Spiders"
-msgstr ""
+msgstr "スパイダーからのロギング"
 
 #: ../../topics/logging.rst:96
 msgid ""
-"Scrapy provides a :data:`~scrapy.spiders.Spider.logger` within each "
-"Spider instance, which can be accessed and used like this::"
+"Scrapy provides a :data:`~scrapy.spiders.Spider.logger` within each Spider "
+"instance, which can be accessed and used like this::"
 msgstr ""
+"Scrapyは、各スパイダー・インスタンス内で :data:`~scrapy.spiders.Spider."
+"logger` を提供します。"
 
 #: ../../topics/logging.rst:109
 msgid ""
-"That logger is created using the Spider's name, but you can use any "
-"custom Python logger you want. For example::"
+"That logger is created using the Spider's name, but you can use any custom "
+"Python logger you want. For example::"
 msgstr ""
+"そのロガーはスパイダーの名前を使用して作成されますが、任意のカスタムPythonロ"
+"ガーを使用できます。 例えば以下です::"
 
 #: ../../topics/logging.rst:128
 msgid "Logging configuration"
-msgstr ""
+msgstr "ロギング構成(configuration)"
 
 #: ../../topics/logging.rst:130
 msgid ""
@@ -172,120 +219,160 @@ msgid ""
 "logger instance and they will redirect those messages to appropriate "
 "destinations, such as the standard output, files, emails, etc."
 msgstr ""
+"ロガー自身は、ロガーを介して送信されたメッセージの表示方法を管理しません。 こ"
+"のタスクでは、さまざまなハンドラーを任意のロガー・インスタンスにアタッチし"
+"て、それらのメッセージを標準出力、ファイル、電子メールなどの適切な宛先にリダ"
+"イレクトします。"
 
 #: ../../topics/logging.rst:135
 msgid ""
-"By default, Scrapy sets and configures a handler for the root logger, "
-"based on the settings below."
+"By default, Scrapy sets and configures a handler for the root logger, based "
+"on the settings below."
 msgstr ""
+"デフォルトでは、Scrapyは以下の設定に基づいて、ルート・ロガーのハンドラーを設"
+"定および構成します。"
 
 #: ../../topics/logging.rst:141
 msgid "Logging settings"
-msgstr ""
+msgstr "ロギング設定"
 
 #: ../../topics/logging.rst:143
 msgid "These settings can be used to configure the logging:"
-msgstr ""
+msgstr "これらの設定は、ロギングの構成(configuration)に使用できます:"
 
 #: ../../topics/logging.rst:145
 msgid ":setting:`LOG_FILE`"
-msgstr ""
+msgstr ":setting:`LOG_FILE`"
 
 #: ../../topics/logging.rst:146
 msgid ":setting:`LOG_ENABLED`"
-msgstr ""
+msgstr ":setting:`LOG_ENABLED`"
 
 #: ../../topics/logging.rst:147
 msgid ":setting:`LOG_ENCODING`"
-msgstr ""
+msgstr ":setting:`LOG_ENCODING`"
 
 #: ../../topics/logging.rst:148
 msgid ":setting:`LOG_LEVEL`"
-msgstr ""
+msgstr ":setting:`LOG_LEVEL`"
 
 #: ../../topics/logging.rst:149
 msgid ":setting:`LOG_FORMAT`"
-msgstr ""
+msgstr ":setting:`LOG_FORMAT`"
 
 #: ../../topics/logging.rst:150
 msgid ":setting:`LOG_DATEFORMAT`"
-msgstr ""
+msgstr ":setting:`LOG_DATEFORMAT`"
 
 #: ../../topics/logging.rst:151
 msgid ":setting:`LOG_STDOUT`"
-msgstr ""
+msgstr ":setting:`LOG_STDOUT`"
 
 #: ../../topics/logging.rst:152
 msgid ":setting:`LOG_SHORT_NAMES`"
-msgstr ""
+msgstr ":setting:`LOG_SHORT_NAMES`"
 
 #: ../../topics/logging.rst:154
 msgid ""
-"The first couple of settings define a destination for log messages. If "
-":setting:`LOG_FILE` is set, messages sent through the root logger will be"
-" redirected to a file named :setting:`LOG_FILE` with encoding "
-":setting:`LOG_ENCODING`. If unset and :setting:`LOG_ENABLED` is ``True``,"
-" log messages will be displayed on the standard error. Lastly, if "
-":setting:`LOG_ENABLED` is ``False``, there won't be any visible log "
-"output."
+"The first couple of settings define a destination for log messages. If :"
+"setting:`LOG_FILE` is set, messages sent through the root logger will be "
+"redirected to a file named :setting:`LOG_FILE` with encoding :setting:"
+"`LOG_ENCODING`. If unset and :setting:`LOG_ENABLED` is ``True``, log "
+"messages will be displayed on the standard error. Lastly, if :setting:"
+"`LOG_ENABLED` is ``False``, there won't be any visible log output."
 msgstr ""
+"最初のいくつかの設定は、ログメッセージの宛先を定義します。 :setting:"
+"`LOG_FILE` が設定されている場合、ルート・ロガーを介して送信されたメッセージ"
+"は :setting:`LOG_ENCODING` エンコーディングで :setting:`LOG_FILE` という名前"
+"のファイルにリダイレクトされます。設定が解除され、 :setting:`LOG_ENABLED` が "
+"``True`` の場合、ログメッセージは標準エラーに表示されます。 そして、 :"
+"setting:`LOG_ENABLED` が ``False`` の場合、目に見えるログ出力はありません。"
 
 #: ../../topics/logging.rst:161
 msgid ""
-":setting:`LOG_LEVEL` determines the minimum level of severity to display,"
-" those messages with lower severity will be filtered out. It ranges "
-"through the possible levels listed in :ref:`topics-logging-levels`."
+":setting:`LOG_LEVEL` determines the minimum level of severity to display, "
+"those messages with lower severity will be filtered out. It ranges through "
+"the possible levels listed in :ref:`topics-logging-levels`."
 msgstr ""
+":setting:`LOG_LEVEL` は表示する重大度の最小レベルを決定し、指定より重大度の低"
+"いメッセージは除外されます。 :ref:`topics-logging-levels` にリストされている"
+"可能なレベルを範囲としています。"
 
 #: ../../topics/logging.rst:165
+#, fuzzy
+#| msgid ""
+#| ":setting:`LOG_FORMAT` and :setting:`LOG_DATEFORMAT` specify formatting "
+#| "strings used as layouts for all messages. Those strings can contain any "
+#| "placeholders listed in `logging's logrecord attributes docs <https://docs."
+#| "python.org/2/library/logging.html#logrecord-attributes>`_ and `datetime's "
+#| "strftime and strptime directives <https://docs.python.org/2/library/"
+#| "datetime.html#strftime-and-strptime-behavior>`_ respectively."
 msgid ""
 ":setting:`LOG_FORMAT` and :setting:`LOG_DATEFORMAT` specify formatting "
 "strings used as layouts for all messages. Those strings can contain any "
-"placeholders listed in :ref:`logging's logrecord attributes docs "
-"<logrecord-attributes>` and :ref:`datetime's strftime and strptime "
-"directives <strftime-strptime-behavior>` respectively."
+"placeholders listed in :ref:`logging's logrecord attributes docs <logrecord-"
+"attributes>` and :ref:`datetime's strftime and strptime directives <strftime-"
+"strptime-behavior>` respectively."
 msgstr ""
+":setting:`LOG_FORMAT` と :setting:`LOG_DATEFORMAT` は、すべてのメッセージのレ"
+"イアウトとして使用されるフォーマット文字列を指定します。これらの文字列には、 "
+"それぞれ、ロギングのログ・レコード属性文書(`logging's logrecord attributes "
+"docs <https://docs.python.org/2/library/logging.html#logrecord-"
+"attributes>`_) や、日時のstrftimeおよびstrptimeディレクティブ(`datetime's "
+"strftime and strptime directives <https://docs.python.org/2/library/datetime."
+"html#strftime-and-strptime-behavior>`_) にリストされているプレース・ホルダー"
+"を含めることができます。"
 
 #: ../../topics/logging.rst:171
+#, fuzzy
+#| msgid ""
+#| "If :setting:`LOG_SHORT_NAMES` is set, then the logs will not display the "
+#| "scrapy component that prints the log. It is unset by default, hence logs "
+#| "contain the scrapy component responsible for that log output."
 msgid ""
 "If :setting:`LOG_SHORT_NAMES` is set, then the logs will not display the "
 "Scrapy component that prints the log. It is unset by default, hence logs "
 "contain the Scrapy component responsible for that log output."
 msgstr ""
+":setting:`LOG_SHORT_NAMES` が設定されている場合、ログはログを印刷するScrapyコ"
+"ンポーネントを表示しません。 デフォルトでは設定されていないため、ログにはその"
+"ログ出力の原因となるScrapyコンポーネントが含まれています。"
 
 #: ../../topics/logging.rst:176
 msgid "Command-line options"
-msgstr ""
+msgstr "コマンド・ライン・オプション"
 
 #: ../../topics/logging.rst:178
 msgid ""
-"There are command-line arguments, available for all commands, that you "
-"can use to override some of the Scrapy settings regarding logging."
+"There are command-line arguments, available for all commands, that you can "
+"use to override some of the Scrapy settings regarding logging."
 msgstr ""
+"すべてのコマンドで使用できるコマンドライン引数があり、これを使用してロギング"
+"に関するScrapy設定の一部をオーバーライドできます。"
 
 #: ../../topics/logging.rst:181
 msgid "``--logfile FILE``"
-msgstr ""
+msgstr "``--logfile FILE``"
 
 #: ../../topics/logging.rst:182
 msgid "Overrides :setting:`LOG_FILE`"
-msgstr ""
+msgstr ":setting:`LOG_FILE` をオーバーライドする"
 
 #: ../../topics/logging.rst:183
 msgid "``--loglevel/-L LEVEL``"
-msgstr ""
+msgstr "``--loglevel/-L LEVEL``"
 
 #: ../../topics/logging.rst:184
 msgid "Overrides :setting:`LOG_LEVEL`"
-msgstr ""
+msgstr ":setting:`LOG_LEVEL` をオーバーライドする"
 
 #: ../../topics/logging.rst:186
 msgid "``--nolog``"
-msgstr ""
+msgstr "``--nolog``"
 
 #: ../../topics/logging.rst:186
 msgid "Sets :setting:`LOG_ENABLED` to ``False``"
-msgstr ""
+msgstr ":setting:`LOG_ENABLED` を ``False`` に設定"
 
 #: ../../topics/logging.rst:190
 msgid "Module :mod:`logging.handlers`"
@@ -293,152 +380,205 @@ msgstr ""
 
 #: ../../topics/logging.rst:191
 msgid "Further documentation on available handlers"
-msgstr ""
+msgstr "利用可能なハンドラーに関する詳細なドキュメント"
 
 #: ../../topics/logging.rst:196
 msgid "Custom Log Formats"
-msgstr ""
+msgstr "カスタム・ログ書式"
 
 #: ../../topics/logging.rst:198
 msgid ""
-"A custom log format can be set for different actions by extending "
-":class:`~scrapy.logformatter.LogFormatter` class and making "
-":setting:`LOG_FORMATTER` point to your new class."
+"A custom log format can be set for different actions by extending :class:"
+"`~scrapy.logformatter.LogFormatter` class and making :setting:"
+"`LOG_FORMATTER` point to your new class."
 msgstr ""
+":class:`~scrapy.logformatter.LogFormatter` クラスを拡張し、 :setting:"
+"`LOG_FORMATTER` が新しいクラスを指すようにすることで、さまざまなアクションに"
+"対してカスタム・ログ形式を設定できます。"
 
-#: of scrapy.logformatter.LogFormatter:1
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter:1
 msgid "Class for generating log messages for different actions."
-msgstr ""
+msgstr "さまざまなアクションのログメッセージを生成するためのクラス。"
 
-#: of scrapy.logformatter.LogFormatter:3
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter:3
 msgid ""
 "All methods must return a dictionary listing the parameters ``level``, "
 "``msg`` and ``args`` which are going to be used for constructing the log "
 "message when calling ``logging.log``."
 msgstr ""
+"すべてのメソッドは、パラメーター ``level`` と ``msg`` と ``args`` をリストす"
+"る辞書を返さなければなりません。これらは、 ``logging.log`` を呼び出すときにロ"
+"グ・メッセージを作成するために使用されます。"
 
-#: of scrapy.logformatter.LogFormatter:7
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter:7
 msgid "Dictionary keys for the method outputs:"
-msgstr ""
+msgstr "メソッド出力の辞書キー:"
 
-#: of scrapy.logformatter.LogFormatter:9
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter:9
 msgid ""
 "``level`` is the log level for that action, you can use those from the "
-"`python logging library "
-"<https://docs.python.org/3/library/logging.html>`_ : ``logging.DEBUG``, "
-"``logging.INFO``, ``logging.WARNING``, ``logging.ERROR`` and "
-"``logging.CRITICAL``."
+"`python logging library <https://docs.python.org/3/library/logging.html>`_ : "
+"``logging.DEBUG``, ``logging.INFO``, ``logging.WARNING``, ``logging.ERROR`` "
+"and ``logging.CRITICAL``."
 msgstr ""
+"``level`` はそのアクションのログ・レベルです。 `python logging library "
+"<https://docs.python.org/3/library/logging.html>`_ のログレベルを使用できま"
+"す。それは ``logging.DEBUG`` と ``logging.INFO`` と ``logging.WARNING`` と  "
+"``logging.ERROR`` と ``logging.CRITICAL`` です。"
 
-#: of scrapy.logformatter.LogFormatter:13
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter:13
 msgid ""
 "``msg`` should be a string that can contain different formatting "
-"placeholders. This string, formatted with the provided ``args``, is going"
-" to be the long message for that action."
+"placeholders. This string, formatted with the provided ``args``, is going to "
+"be the long message for that action."
 msgstr ""
+"``msg`` は異なるフォーマットのプレース・ホルダーを含むことができる文字列でな"
+"ければなりません。 提供された ``args`` でフォーマットされたこの文字列は、その"
+"アクションの長いメッセージになります。"
 
-#: of scrapy.logformatter.LogFormatter:16
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter:16
 msgid ""
 "``args`` should be a tuple or dict with the formatting placeholders for "
 "``msg``. The final log message is computed as ``msg % args``."
 msgstr ""
+"``args`` は、 ``msg`` のフォーマット・プレース・ホルダーを持つタプルまたは辞"
+"書である必要があります。最終的なログメッセージは ``msg % args`` として処理さ"
+"れます。"
 
-#: of scrapy.logformatter.LogFormatter:19
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter:19
 msgid ""
-"Users can define their own ``LogFormatter`` class if they want to "
-"customize how each action is logged or if they want to omit it entirely. "
-"In order to omit logging an action the method must return ``None``."
+"Users can define their own ``LogFormatter`` class if they want to customize "
+"how each action is logged or if they want to omit it entirely. In order to "
+"omit logging an action the method must return ``None``."
 msgstr ""
 
-#: of scrapy.logformatter.LogFormatter:23
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter:23
 msgid ""
 "Here is an example on how to create a custom log formatter to lower the "
-"severity level of the log message when an item is dropped from the "
-"pipeline::"
+"severity level of the log message when an item is dropped from the pipeline::"
 msgstr ""
+"アイテムがパイプラインからドロップされたときにログ・メッセージの重大度を下げ"
+"るためにカスタム・ログ・フォーマッタを作成する方法の例を次に示します::"
 
-#: of scrapy.logformatter.LogFormatter.crawled:1
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter.crawled:1
 msgid "Logs a message when the crawler finds a webpage."
-msgstr ""
+msgstr "クローラーがWebページを見つけたときにメッセージをログ出力します。"
 
-#: of scrapy.logformatter.LogFormatter.download_error:1
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter.download_error:1
 msgid ""
 "Logs a download error message from a spider (typically coming from the "
 "engine)."
 msgstr ""
 
-#: of scrapy.logformatter.LogFormatter.dropped:1
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter.dropped:1
 msgid ""
-"Logs a message when an item is dropped while it is passing through the "
+"Logs a message when an item is dropped while it is passing through the item "
+"pipeline."
+msgstr ""
+"アイテムがアイテム・パイプラインを通過中にドロップされたときにメッセージをrロ"
+"グ出力します。"
+
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter.item_error:1
+#, fuzzy
+#| msgid ""
+#| "Logs a message when an item is dropped while it is passing through the "
+#| "item pipeline."
+msgid ""
+"Logs a message when an item causes an error while it is passing through the "
 "item pipeline."
 msgstr ""
+"アイテムがアイテム・パイプラインを通過中にドロップされたときにメッセージをrロ"
+"グ出力します。"
 
-#: of scrapy.logformatter.LogFormatter.item_error:1
-msgid ""
-"Logs a message when an item causes an error while it is passing through "
-"the item pipeline."
-msgstr ""
-
-#: of scrapy.logformatter.LogFormatter.scraped:1
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter.scraped:1
 msgid "Logs a message when an item is scraped by a spider."
 msgstr ""
+"アイテムがスパイダーによってスクレイプされたときにメッセージをログ出力しま"
+"す。"
 
-#: of scrapy.logformatter.LogFormatter.spider_error:1
+#: ../../../scrapy/logformatter.py:docstring of
+#: scrapy.logformatter.LogFormatter.spider_error:1
 msgid "Logs an error message from a spider."
 msgstr ""
 
 #: ../../topics/logging.rst:209
 msgid "Advanced customization"
-msgstr ""
+msgstr "高度なカスタマイズ"
 
 #: ../../topics/logging.rst:211
 msgid ""
-"Because Scrapy uses stdlib logging module, you can customize logging "
-"using all features of stdlib logging."
+"Because Scrapy uses stdlib logging module, you can customize logging using "
+"all features of stdlib logging."
 msgstr ""
+"Scrapyはstdlibロギング・モジュールを使用するため、stdlibロギングのすべての機"
+"能を使用してロギングをカスタマイズできます。"
 
 #: ../../topics/logging.rst:214
 msgid ""
-"For example, let's say you're scraping a website which returns many HTTP "
-"404 and 500 responses, and you want to hide all messages like this::"
+"For example, let's say you're scraping a website which returns many HTTP 404 "
+"and 500 responses, and you want to hide all messages like this::"
 msgstr ""
+"たとえば、多くの「HTTP 404」や「HTTP 500」のレスポンスを返すWebサイトをスクレ"
+"イピングしていて、このようなすべてのメッセージを非表示にしたいとします::"
 
 #: ../../topics/logging.rst:221
 msgid ""
-"The first thing to note is a logger name - it is in brackets: "
-"``[scrapy.spidermiddlewares.httperror]``. If you get just ``[scrapy]`` "
-"then :setting:`LOG_SHORT_NAMES` is likely set to True; set it to False "
-"and re-run the crawl."
+"The first thing to note is a logger name - it is in brackets: ``[scrapy."
+"spidermiddlewares.httperror]``. If you get just ``[scrapy]`` then :setting:"
+"`LOG_SHORT_NAMES` is likely set to True; set it to False and re-run the "
+"crawl."
 msgstr ""
+"最初に注意することはロガー名です。角括弧内に書きます。 ``[scrapy."
+"spidermiddlewares.httperror]`` 。単に ``[scrapy]`` を取得した場合、 :setting:"
+"`LOG_SHORT_NAMES` はおそらくTrueに設定されています。Falseに設定して、クロール"
+"を再実行します。"
 
 #: ../../topics/logging.rst:226
 msgid ""
-"Next, we can see that the message has INFO level. To hide it we should "
-"set logging level for ``scrapy.spidermiddlewares.httperror`` higher than "
-"INFO; next level after INFO is WARNING. It could be done e.g. in the "
-"spider's ``__init__`` method::"
+"Next, we can see that the message has INFO level. To hide it we should set "
+"logging level for ``scrapy.spidermiddlewares.httperror`` higher than INFO; "
+"next level after INFO is WARNING. It could be done e.g. in the spider's "
+"``__init__`` method::"
 msgstr ""
+"次に、メッセージにINFOレベルがあることがわかります。非表示にするには、INFOよ"
+"りも高い ``scrapy.spidermiddlewares.httperror`` のログ・レベルを設定する必要"
+"があります。 INFOの次のレベルはWARNINGです。 スパイダー ``__init__`` メソッド"
+"内でその設定を行うことができます::"
 
 #: ../../topics/logging.rst:242
 msgid ""
-"If you run this spider again then INFO messages from "
-"``scrapy.spidermiddlewares.httperror`` logger will be gone."
+"If you run this spider again then INFO messages from ``scrapy."
+"spidermiddlewares.httperror`` logger will be gone."
 msgstr ""
+"あなたがこのスパイダーを再度実行すると、 ``scrapy.spidermiddlewares."
+"httperror`` ロガーからのINFOメッセージはなくなります。"
 
 #: ../../topics/logging.rst:245
 msgid ""
 "You can also filter log records by :class:`~logging.LogRecord` data. For "
-"example, you can filter log records by message content using a substring "
-"or a regular expression. Create a :class:`logging.Filter` subclass and "
-"equip it with a regular expression pattern to filter out unwanted "
-"messages::"
+"example, you can filter log records by message content using a substring or "
+"a regular expression. Create a :class:`logging.Filter` subclass and equip it "
+"with a regular expression pattern to filter out unwanted messages::"
 msgstr ""
 
 #: ../../topics/logging.rst:260
 msgid ""
 "A project-level filter may be attached to the root handler created by "
-"Scrapy, this is a wieldy way to filter all loggers in different parts of "
-"the project (middlewares, spider, etc.)::"
+"Scrapy, this is a wieldy way to filter all loggers in different parts of the "
+"project (middlewares, spider, etc.)::"
 msgstr ""
 
 #: ../../topics/logging.rst:274
@@ -449,84 +589,135 @@ msgstr ""
 
 #: ../../topics/logging.rst:287
 msgid "scrapy.utils.log module"
-msgstr ""
+msgstr "scrapy.utils.logモジュール"
 
-#: of scrapy.utils.log.configure_logging:1
+#: ../../../scrapy/utils/log.py:docstring of
+#: scrapy.utils.log.configure_logging:1
 msgid "Initialize logging defaults for Scrapy."
-msgstr ""
+msgstr "Scrapyのロギングのデフォルトを初期化します。"
 
-#: ../../topics/logging.rst
+#: ../../topics/logging.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: of scrapy.utils.log.configure_logging:3
+#: ../../../scrapy/utils/log.py:docstring of
+#: scrapy.utils.log.configure_logging:3
 msgid ""
 "settings used to create and configure a handler for the root logger "
 "(default: None)."
 msgstr ""
+"ルートロガーのハンドラーの作成と設定に使用される設定(デフォルト: None)。"
 
-#: of scrapy.utils.log.configure_logging:7
+#: ../../../scrapy/utils/log.py:docstring of
+#: scrapy.utils.log.configure_logging:7
 msgid "whether to install root logging handler (default: True)"
 msgstr ""
+"ルート・ロギング・ハンドラーをインストールするかどうか(デフォルト: True)"
 
-#: of scrapy.utils.log.configure_logging:11
+#: ../../../scrapy/utils/log.py:docstring of
+#: scrapy.utils.log.configure_logging:11
 msgid "This function does:"
-msgstr ""
+msgstr "この関数は以下のとおり動作します:"
 
-#: of scrapy.utils.log.configure_logging:13
+#: ../../../scrapy/utils/log.py:docstring of
+#: scrapy.utils.log.configure_logging:13
 msgid "Route warnings and twisted logging through Python standard logging"
-msgstr ""
+msgstr "Pythonの標準ログを介したルーティング警告とtwistedのロギング"
 
-#: of scrapy.utils.log.configure_logging:14
+#: ../../../scrapy/utils/log.py:docstring of
+#: scrapy.utils.log.configure_logging:14
 msgid "Assign DEBUG and ERROR level to Scrapy and Twisted loggers respectively"
 msgstr ""
+"ScrapyおよびTwistedロガーにそれぞれDEBUGおよびERRORレベルを割り当てます"
 
-#: of scrapy.utils.log.configure_logging:15
+#: ../../../scrapy/utils/log.py:docstring of
+#: scrapy.utils.log.configure_logging:15
 msgid "Route stdout to log if LOG_STDOUT setting is True"
-msgstr ""
+msgstr "LOG_STDOUT設定がTrueの場合、ログは標準出力に出力されます。"
 
-#: of scrapy.utils.log.configure_logging:17
+#: ../../../scrapy/utils/log.py:docstring of
+#: scrapy.utils.log.configure_logging:17
 msgid ""
-"When ``install_root_handler`` is True (default), this function also "
-"creates a handler for the root logger according to given settings (see "
-":ref:`topics-logging-settings`). You can override default options using "
-"``settings`` argument. When ``settings`` is empty or None, defaults are "
-"used."
+"When ``install_root_handler`` is True (default), this function also creates "
+"a handler for the root logger according to given settings (see :ref:`topics-"
+"logging-settings`). You can override default options using ``settings`` "
+"argument. When ``settings`` is empty or None, defaults are used."
 msgstr ""
+"``install_root_handler`` がTrue(デフォルト)の場合、この関数は与えられた設定"
+"( :ref:`topics-logging-settings` 参照)に従ってルート・ロガーのハンドラーも作"
+"成します。 ``settings`` 引数を使用してデフォルトのオプションを上書きできま"
+"す。 ``settings`` が空またはNoneの場合、デフォルトが使用されます。"
 
 #: ../../topics/logging.rst:294
 msgid ""
-"``configure_logging`` is automatically called when using Scrapy commands "
-"or :class:`~scrapy.crawler.CrawlerProcess`, but needs to be called "
-"explicitly when running custom scripts using "
-":class:`~scrapy.crawler.CrawlerRunner`. In that case, its usage is not "
-"required but it's recommended."
+"``configure_logging`` is automatically called when using Scrapy commands or :"
+"class:`~scrapy.crawler.CrawlerProcess`, but needs to be called explicitly "
+"when running custom scripts using :class:`~scrapy.crawler.CrawlerRunner`. In "
+"that case, its usage is not required but it's recommended."
 msgstr ""
+"``configure_logging`` はScrapyコマンドまたは :class:`~scrapy.crawler."
+"CrawlerProcess` を使用すると自動的に呼び出されますが、 :class:`~scrapy."
+"crawler.CrawlerRunner` を使用してカスタム・スクリプトを実行する場合は明示的に"
+"呼び出す必要があります。その場合、その使用は必須ではありませんが、推奨されま"
+"す。"
 
 #: ../../topics/logging.rst:299
 msgid ""
 "Another option when running custom scripts is to manually configure the "
-"logging. To do this you can use :func:`logging.basicConfig` to set a "
-"basic root handler."
+"logging. To do this you can use :func:`logging.basicConfig` to set a basic "
+"root handler."
 msgstr ""
 
 #: ../../topics/logging.rst:302
 msgid ""
 "Note that :class:`~scrapy.crawler.CrawlerProcess` automatically calls "
-"``configure_logging``, so it is recommended to only use "
-":func:`logging.basicConfig` together with "
-":class:`~scrapy.crawler.CrawlerRunner`."
+"``configure_logging``, so it is recommended to only use :func:`logging."
+"basicConfig` together with :class:`~scrapy.crawler.CrawlerRunner`."
 msgstr ""
 
 #: ../../topics/logging.rst:306
 msgid ""
-"This is an example on how to redirect ``INFO`` or higher messages to a "
-"file::"
+"This is an example on how to redirect ``INFO`` or higher messages to a file::"
 msgstr ""
 
 #: ../../topics/logging.rst:316
 msgid ""
-"Refer to :ref:`run-from-script` for more details about using Scrapy this "
-"way."
+"Refer to :ref:`run-from-script` for more details about using Scrapy this way."
 msgstr ""
+"この方法でScrapyを使用する方法の詳細については、 :ref:`run-from-script` を参"
+"照してください。"
 
+#~ msgid ""
+#~ "Module logging, `Loggers <https://docs.python.org/2/library/logging."
+#~ "html#logger-objects>`_"
+#~ msgstr ""
+#~ "モジュール・ロギング `Loggers <https://docs.python.org/2/library/logging."
+#~ "html#logger-objects>`_"
+
+#~ msgid ""
+#~ "Module `logging.handlers <https://docs.python.org/2/library/logging."
+#~ "handlers.html>`_"
+#~ msgstr ""
+#~ "`logging.handlers <https://docs.python.org/2/library/logging.handlers."
+#~ "html>`_ モジュール"
+
+#~ msgid "パラメータ"
+#~ msgstr "パラメータ"
+
+#~ msgid ""
+#~ "If you plan on configuring the handlers yourself is still recommended you "
+#~ "call this function, passing ``install_root_handler=False``. Bear in mind "
+#~ "there won't be any log output set by default in that case."
+#~ msgstr ""
+#~ "ハンドラーを自分で設定する予定がある場合は、この関数を呼び出して "
+#~ "``install_root_handler=False`` を渡すことをお勧めします。その場合、デフォ"
+#~ "ルトではログ出力が設定されないことに注意してください。"
+
+#~ msgid ""
+#~ "To get you started on manually configuring logging's output, you can use "
+#~ "`logging.basicConfig()`_ to set a basic root handler. This is an example "
+#~ "on how to redirect ``INFO`` or higher messages to a file::"
+#~ msgstr ""
+#~ "ロギングの出力の手動設定を開始するには、 `logging.basicConfig()`_ を使用し"
+#~ "て基本的なルート・ハンドラーを設定できます。 以下は、INFO以上のメッセージ"
+#~ "をファイルにリダイレクトする方法の例です::"

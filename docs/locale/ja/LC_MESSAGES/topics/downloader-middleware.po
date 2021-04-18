@@ -1,280 +1,366 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-10-04 22:37+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../topics/downloader-middleware.rst:5
 msgid "Downloader Middleware"
-msgstr ""
+msgstr "ダウンローダー・ミドルウェア"
 
 #: ../../topics/downloader-middleware.rst:7
 msgid ""
-"The downloader middleware is a framework of hooks into Scrapy's "
-"request/response processing.  It's a light, low-level system for globally"
-" altering Scrapy's requests and responses."
+"The downloader middleware is a framework of hooks into Scrapy's request/"
+"response processing.  It's a light, low-level system for globally altering "
+"Scrapy's requests and responses."
 msgstr ""
+"ダウンローダー・ミドルウェアは、Scrapyのリクエスト/レスポンス処理へのフックの"
+"フレームワークです。Scrapyのリクエストとレスポンスをグローバルに変更するため"
+"の軽量で低レベルのシステムです。"
 
 #: ../../topics/downloader-middleware.rst:14
 msgid "Activating a downloader middleware"
-msgstr ""
+msgstr "ダウンローダーミドルウェアをアクティブにする"
 
 #: ../../topics/downloader-middleware.rst:16
 msgid ""
-"To activate a downloader middleware component, add it to the "
-":setting:`DOWNLOADER_MIDDLEWARES` setting, which is a dict whose keys are"
-" the middleware class paths and their values are the middleware orders."
+"To activate a downloader middleware component, add it to the :setting:"
+"`DOWNLOADER_MIDDLEWARES` setting, which is a dict whose keys are the "
+"middleware class paths and their values are the middleware orders."
 msgstr ""
+"ダウンローダー・ミドルウェア・コンポーネントを有効にするには、それを :"
+"setting:`DOWNLOADER_MIDDLEWARES` 設定に追加します。これは、キーがミドルウェ"
+"ア・クラス・パスであり、値がミドルウェアの順序である辞書です。"
 
 #: ../../topics/downloader-middleware.rst:20
 msgid "Here's an example::"
-msgstr ""
+msgstr "ここに例があります::"
 
 #: ../../topics/downloader-middleware.rst:26
 msgid ""
-"The :setting:`DOWNLOADER_MIDDLEWARES` setting is merged with the "
-":setting:`DOWNLOADER_MIDDLEWARES_BASE` setting defined in Scrapy (and not"
-" meant to be overridden) and then sorted by order to get the final sorted"
-" list of enabled middlewares: the first middleware is the one closer to "
-"the engine and the last is the one closer to the downloader. In other "
-"words, the "
-":meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_request`"
-" method of each middleware will be invoked in increasing middleware order"
-" (100, 200, 300, ...) and the "
-":meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_response`"
-" method of each middleware will be invoked in decreasing order."
+"The :setting:`DOWNLOADER_MIDDLEWARES` setting is merged with the :setting:"
+"`DOWNLOADER_MIDDLEWARES_BASE` setting defined in Scrapy (and not meant to be "
+"overridden) and then sorted by order to get the final sorted list of enabled "
+"middlewares: the first middleware is the one closer to the engine and the "
+"last is the one closer to the downloader. In other words, the :meth:`~scrapy."
+"downloadermiddlewares.DownloaderMiddleware.process_request` method of each "
+"middleware will be invoked in increasing middleware order (100, 200, "
+"300, ...) and the :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware."
+"process_response` method of each middleware will be invoked in decreasing "
+"order."
 msgstr ""
+":setting:`DOWNLOADER_MIDDLEWARES` 設定は、Scrapyで定義された :setting:"
+"`DOWNLOADER_MIDDLEWARES_BASE` 設定とマージされ(オーバーライドされることはあり"
+"ません)、有効なミドルウェアの最終ソートリストを取得するために順序でソートされ"
+"ます。1つはエンジンに近く、最後はダウンローダーに近いものです。つまり、各ミド"
+"ルウェアの :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware."
+"process_request` メソッドは、ミドルウェアの昇順(100、200、300…)で呼び出され、"
+"各ミドルウェアの :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware."
+"process_response` メソッドは、降順で呼び出されます。"
 
 #: ../../topics/downloader-middleware.rst:36
 msgid ""
-"To decide which order to assign to your middleware see the "
-":setting:`DOWNLOADER_MIDDLEWARES_BASE` setting and pick a value according"
-" to where you want to insert the middleware. The order does matter "
-"because each middleware performs a different action and your middleware "
-"could depend on some previous (or subsequent) middleware being applied."
+"To decide which order to assign to your middleware see the :setting:"
+"`DOWNLOADER_MIDDLEWARES_BASE` setting and pick a value according to where "
+"you want to insert the middleware. The order does matter because each "
+"middleware performs a different action and your middleware could depend on "
+"some previous (or subsequent) middleware being applied."
 msgstr ""
+"ミドルウェアに割り当てる順序を決定するには、 :setting:"
+"`DOWNLOADER_MIDDLEWARES_BASE` 設定を参照し、ミドルウェアを挿入する場所に応じ"
+"て値を選択します。各ミドルウェアは異なるアクションを実行し、ミドルウェアは適"
+"用される以前の(または後続の)ミドルウェアに依存する可能性があるため、順序は重"
+"要です。"
 
 #: ../../topics/downloader-middleware.rst:42
 msgid ""
-"If you want to disable a built-in middleware (the ones defined in "
-":setting:`DOWNLOADER_MIDDLEWARES_BASE` and enabled by default) you must "
-"define it in your project's :setting:`DOWNLOADER_MIDDLEWARES` setting and"
-" assign ``None`` as its value.  For example, if you want to disable the "
-"user-agent middleware::"
+"If you want to disable a built-in middleware (the ones defined in :setting:"
+"`DOWNLOADER_MIDDLEWARES_BASE` and enabled by default) you must define it in "
+"your project's :setting:`DOWNLOADER_MIDDLEWARES` setting and assign ``None`` "
+"as its value.  For example, if you want to disable the user-agent "
+"middleware::"
 msgstr ""
+"組み込みのミドルウェア( :setting:`DOWNLOADER_MIDDLEWARES_BASE` で定義され、デ"
+"フォルトで有効になっているミドルウェア)を無効にするには、プロジェクトの :"
+"setting:`DOWNLOADER_MIDDLEWARES` 設定で定義し、その値として ``None`` を割り当"
+"てる必要があります。たとえば、ユーザーエージェントミドルウェアを無効にする場"
+"合、以下の通りです::"
 
 #: ../../topics/downloader-middleware.rst:52
 msgid ""
-"Finally, keep in mind that some middlewares may need to be enabled "
-"through a particular setting. See each middleware documentation for more "
-"info."
+"Finally, keep in mind that some middlewares may need to be enabled through a "
+"particular setting. See each middleware documentation for more info."
 msgstr ""
+"最後に、特定の設定で一部のミドルウェアを有効にする必要がある場合があることに"
+"注意してください。詳細については、各ミドルウェアのドキュメントを参照してくだ"
+"さい。"
 
 #: ../../topics/downloader-middleware.rst:58
 msgid "Writing your own downloader middleware"
-msgstr ""
+msgstr "あなた自身のダウンローダー・ミドルウェアを書く"
 
 #: ../../topics/downloader-middleware.rst:60
 msgid ""
-"Each downloader middleware is a Python class that defines one or more of "
-"the methods defined below."
+"Each downloader middleware is a Python class that defines one or more of the "
+"methods defined below."
 msgstr ""
+"各ダウンローダー・ミドルウェアは、以下で定義される1つ以上のメソッドを定義する"
+"Pythonクラスです。"
 
 #: ../../topics/downloader-middleware.rst:63
 msgid ""
-"The main entry point is the ``from_crawler`` class method, which receives"
-" a :class:`~scrapy.crawler.Crawler` instance. The "
-":class:`~scrapy.crawler.Crawler` object gives you access, for example, to"
-" the :ref:`settings <topics-settings>`."
+"The main entry point is the ``from_crawler`` class method, which receives a :"
+"class:`~scrapy.crawler.Crawler` instance. The :class:`~scrapy.crawler."
+"Crawler` object gives you access, for example, to the :ref:`settings <topics-"
+"settings>`."
 msgstr ""
+"メインのエントリー・ポイントは ``from_crawler`` クラス・メソッドで、これは  :"
+"class:`~scrapy.crawler.Crawler` インスタンスを受け取ります。 :class:`~scrapy."
+"crawler.Crawler` オブジェクトは、たとえば :ref:`設定<topics-settings>` へのア"
+"クセスを提供します。"
 
 #: ../../topics/downloader-middleware.rst:71
 msgid "Any of the downloader middleware methods may also return a deferred."
 msgstr ""
+"どのダウンローダー・ミドルウェア・メソッドも遅延オブジェクト(deferred)を返す"
+"場合があります。"
 
 #: ../../topics/downloader-middleware.rst:75
 msgid ""
 "This method is called for each request that goes through the download "
 "middleware."
 msgstr ""
+"このメソッドは、ダウンロード・ミドルウェアを通過するリクエストごとに呼び出さ"
+"れます。"
 
 #: ../../topics/downloader-middleware.rst:78
 msgid ""
-":meth:`process_request` should either: return ``None``, return a "
-":class:`~scrapy.http.Response` object, return a "
-":class:`~scrapy.http.Request` object, or raise "
-":exc:`~scrapy.exceptions.IgnoreRequest`."
+":meth:`process_request` should either: return ``None``, return a :class:"
+"`~scrapy.http.Response` object, return a :class:`~scrapy.http.Request` "
+"object, or raise :exc:`~scrapy.exceptions.IgnoreRequest`."
 msgstr ""
+":meth:`process_request` の結果は次のいずれかでなければなりません: ``None`` を"
+"返す、 :class:`~scrapy.http.Response` オブジェクトを返す、 :class:`~scrapy."
+"http.Request` オブジェクトを返す、 :exc:`~scrapy.exceptions.IgnoreRequest` 例"
+"外を起こす。"
 
 #: ../../topics/downloader-middleware.rst:82
 msgid ""
 "If it returns ``None``, Scrapy will continue processing this request, "
-"executing all other middlewares until, finally, the appropriate "
-"downloader handler is called the request performed (and its response "
-"downloaded)."
+"executing all other middlewares until, finally, the appropriate downloader "
+"handler is called the request performed (and its response downloaded)."
 msgstr ""
+"``None`` を返した場合、Scrapyはこのリクエストの処理を続け、最終的に適切なダウ"
+"ンローダー・ハンドラーが実行されたリクエスト(およびダウンロードされたレスポン"
+"ス）が呼ばれるまで、他のすべてのミドルウェアを実行します。"
 
 #: ../../topics/downloader-middleware.rst:86
 msgid ""
-"If it returns a :class:`~scrapy.http.Response` object, Scrapy won't "
-"bother calling *any* other :meth:`process_request` or "
-":meth:`process_exception` methods, or the appropriate download function; "
-"it'll return that response. The :meth:`process_response` methods of "
-"installed middleware is always called on every response."
+"If it returns a :class:`~scrapy.http.Response` object, Scrapy won't bother "
+"calling *any* other :meth:`process_request` or :meth:`process_exception` "
+"methods, or the appropriate download function; it'll return that response. "
+"The :meth:`process_response` methods of installed middleware is always "
+"called on every response."
 msgstr ""
+":class:`~scrapy.http.Response` オブジェクトを返す場合、Scrapyは他の **任意の"
+"** :meth:`process_request` メソッドまたは :meth:`process_exception` メソッ"
+"ド、または適切なダウンロード関数の呼び出しを考慮しません。そのレスポンスオブ"
+"ジェクトそのものを返します。なお、インストールされたミドルウェアの :meth:"
+"`process_response` メソッドは、すべてのレスポンスで常に呼び出されます。"
 
 #: ../../topics/downloader-middleware.rst:91
 msgid ""
 "If it returns a :class:`~scrapy.http.Request` object, Scrapy will stop "
-"calling process_request methods and reschedule the returned request. Once"
-" the newly returned request is performed, the appropriate middleware "
-"chain will be called on the downloaded response."
+"calling process_request methods and reschedule the returned request. Once "
+"the newly returned request is performed, the appropriate middleware chain "
+"will be called on the downloaded response."
 msgstr ""
+":class:`~scrapy.http.Request` オブジェクトを返す場合、Scrapyはprocess_request"
+"メソッドの呼び出しを停止し、返されたリクエストを再スケジュールします。 新しく"
+"返されたリクエストが実行されると、ダウンロードされたレスポンスで適切なミドル"
+"ウェア・チェーンが呼び出されます。"
 
 #: ../../topics/downloader-middleware.rst:96
 msgid ""
-"If it raises an :exc:`~scrapy.exceptions.IgnoreRequest` exception, the "
-":meth:`process_exception` methods of installed downloader middleware will"
-" be called. If none of them handle the exception, the errback function of"
-" the request (``Request.errback``) is called. If no code handles the "
-"raised exception, it is ignored and not logged (unlike other exceptions)."
+"If it raises an :exc:`~scrapy.exceptions.IgnoreRequest` exception, the :meth:"
+"`process_exception` methods of installed downloader middleware will be "
+"called. If none of them handle the exception, the errback function of the "
+"request (``Request.errback``) is called. If no code handles the raised "
+"exception, it is ignored and not logged (unlike other exceptions)."
 msgstr ""
+":exc:`~scrapy.exceptions.IgnoreRequest` 例外が発生した場合、インストールされ"
+"たダウンローダー・ミドルウェアの :meth:`process_exception` メソッドが呼び出さ"
+"れます。それらのいずれもが例外を処理しない場合、リクエストのerrback関数"
+"( ``Request.errback`` )が呼び出されます。発生した例外を処理するコードがない場"
+"合、無視され、(他の例外とは異なり)ログに記録されません。"
 
-#: ../../topics/downloader-middleware.rst of
-#: scrapy.robotstxt.RobotParser.allowed
-#: scrapy.robotstxt.RobotParser.from_crawler
+#: ../../topics/downloader-middleware.rst:0
+#: ../../../scrapy/robotstxt.py:docstring of
+#: scrapy.robotstxt.RobotParser.allowed:0
+#: scrapy.robotstxt.RobotParser.from_crawler:0
 msgid "Parameters"
 msgstr ""
 
 #: ../../topics/downloader-middleware.rst:102
 msgid "the request being processed"
-msgstr ""
+msgstr "処理中のリクエスト"
 
 #: ../../topics/downloader-middleware.rst:105
 #: ../../topics/downloader-middleware.rst:163
 msgid "the spider for which this request is intended"
-msgstr ""
+msgstr "このリクエストの対象となるスパイダー"
 
 #: ../../topics/downloader-middleware.rst:110
 msgid ""
-":meth:`process_response` should either: return a "
-":class:`~scrapy.http.Response` object, return a "
-":class:`~scrapy.http.Request` object or raise a "
-":exc:`~scrapy.exceptions.IgnoreRequest` exception."
+":meth:`process_response` should either: return a :class:`~scrapy.http."
+"Response` object, return a :class:`~scrapy.http.Request` object or raise a :"
+"exc:`~scrapy.exceptions.IgnoreRequest` exception."
 msgstr ""
+":meth:`process_response` は次のいずれかの結果でなければなりません: :class:"
+"`~scrapy.http.Response` オブジェクトを返す、 :class:`~scrapy.http.Request` オ"
+"ブジェクトを返す、 :exc:`~scrapy.exceptions.IgnoreRequest` 例外を起こす。"
 
 #: ../../topics/downloader-middleware.rst:114
 msgid ""
-"If it returns a :class:`~scrapy.http.Response` (it could be the same "
-"given response, or a brand-new one), that response will continue to be "
-"processed with the :meth:`process_response` of the next middleware in the"
-" chain."
+"If it returns a :class:`~scrapy.http.Response` (it could be the same given "
+"response, or a brand-new one), that response will continue to be processed "
+"with the :meth:`process_response` of the next middleware in the chain."
 msgstr ""
+":class:`~scrapy.http.Response` が返された場合(指定されたレスポンスと同じか、"
+"まったく新しいレスポンスである可能性があります)、そのレスポンスは次のチェーン"
+"内のミドルウェアの :meth:`process_response` で引き続き処理されます。"
 
 #: ../../topics/downloader-middleware.rst:118
 msgid ""
-"If it returns a :class:`~scrapy.http.Request` object, the middleware "
-"chain is halted and the returned request is rescheduled to be downloaded "
-"in the future. This is the same behavior as if a request is returned from"
-" :meth:`process_request`."
+"If it returns a :class:`~scrapy.http.Request` object, the middleware chain "
+"is halted and the returned request is rescheduled to be downloaded in the "
+"future. This is the same behavior as if a request is returned from :meth:"
+"`process_request`."
 msgstr ""
+":class:`~scrapy.http.Request` オブジェクトを返す場合、ミドルウェア・チェーン"
+"は停止し、返されたリクエストは将来ダウンロードされるように再スケジュールされ"
+"ます。これは、リクエストが :meth:`process_request` から返される場合と同じ動作"
+"です。"
 
 #: ../../topics/downloader-middleware.rst:122
 msgid ""
 "If it raises an :exc:`~scrapy.exceptions.IgnoreRequest` exception, the "
-"errback function of the request (``Request.errback``) is called. If no "
-"code handles the raised exception, it is ignored and not logged (unlike "
-"other exceptions)."
+"errback function of the request (``Request.errback``) is called. If no code "
+"handles the raised exception, it is ignored and not logged (unlike other "
+"exceptions)."
 msgstr ""
+":exc:`~scrapy.exceptions.IgnoreRequest` 例外が発生した場合、リクエストの"
+"errback関数( ``Request.errback`` )が呼び出されます。発生した例外を処理する"
+"コードがない場合、無視され、(他の例外とは異なり)ログに記録されません。"
 
 #: ../../topics/downloader-middleware.rst:126
 msgid "the request that originated the response"
-msgstr ""
+msgstr "レスポンスを引き起こしたリクエスト"
 
 #: ../../topics/downloader-middleware.rst:129
 msgid "the response being processed"
-msgstr ""
+msgstr "処理中のレスポンス"
 
 #: ../../topics/downloader-middleware.rst:132
 msgid "the spider for which this response is intended"
-msgstr ""
+msgstr "このレスポンスを意図したスパイダー"
 
 #: ../../topics/downloader-middleware.rst:137
 msgid ""
-"Scrapy calls :meth:`process_exception` when a download handler or a "
-":meth:`process_request` (from a downloader middleware) raises an "
-"exception (including an :exc:`~scrapy.exceptions.IgnoreRequest` "
-"exception)"
+"Scrapy calls :meth:`process_exception` when a download handler or a :meth:"
+"`process_request` (from a downloader middleware) raises an exception "
+"(including an :exc:`~scrapy.exceptions.IgnoreRequest` exception)"
 msgstr ""
+"Scrapyは、ダウンロード・ハンドラーまたは、(ダウンローダー・ミドルウェアか"
+"ら) :meth:`process_request` が例外( :exc:`~scrapy.exceptions.IgnoreRequest` "
+"例外を含む）を発生させると、 :meth:`process_exception` を呼び出します"
 
 #: ../../topics/downloader-middleware.rst:141
 msgid ""
-":meth:`process_exception` should return: either ``None``, a "
-":class:`~scrapy.http.Response` object, or a :class:`~scrapy.http.Request`"
-" object."
+":meth:`process_exception` should return: either ``None``, a :class:`~scrapy."
+"http.Response` object, or a :class:`~scrapy.http.Request` object."
 msgstr ""
+":meth:`process_exception` は、 ``None`` または :class:`~scrapy.http."
+"Response` オブジェクトまたは :class:`~scrapy.http.Request` オブジェクトを返す"
+"必要があります。"
 
 #: ../../topics/downloader-middleware.rst:144
 msgid ""
 "If it returns ``None``, Scrapy will continue processing this exception, "
 "executing any other :meth:`process_exception` methods of installed "
-"middleware, until no middleware is left and the default exception "
-"handling kicks in."
+"middleware, until no middleware is left and the default exception handling "
+"kicks in."
 msgstr ""
+"``None`` を返す場合、Scrapyはこの例外の処理を続け、ミドルウェアが無くなりデ"
+"フォルトの例外処理が開始されるまで、順にインストールされた他のミドルウェア"
+"の :meth:`process_exception` メソッドを実行します。"
 
 #: ../../topics/downloader-middleware.rst:148
 msgid ""
-"If it returns a :class:`~scrapy.http.Response` object, the "
-":meth:`process_response` method chain of installed middleware is started,"
-" and Scrapy won't bother calling any other :meth:`process_exception` "
-"methods of middleware."
+"If it returns a :class:`~scrapy.http.Response` object, the :meth:"
+"`process_response` method chain of installed middleware is started, and "
+"Scrapy won't bother calling any other :meth:`process_exception` methods of "
+"middleware."
 msgstr ""
+":class:`~scrapy.http.Response` オブジェクトを返す場合、インストールされたミド"
+"ルウェアの :meth:`process_response` メソッド・チェーンが開始され、Scrapyは他"
+"のミドルウェアの :meth:`process_exception` メソッドを呼び出すことはありませ"
+"ん。"
 
 #: ../../topics/downloader-middleware.rst:152
 msgid ""
-"If it returns a :class:`~scrapy.http.Request` object, the returned "
-"request is rescheduled to be downloaded in the future. This stops the "
-"execution of :meth:`process_exception` methods of the middleware the same"
-" as returning a response would."
+"If it returns a :class:`~scrapy.http.Request` object, the returned request "
+"is rescheduled to be downloaded in the future. This stops the execution of :"
+"meth:`process_exception` methods of the middleware the same as returning a "
+"response would."
 msgstr ""
+":class:`~scrapy.http.Request` オブジェクトを返す場合、返されたリクエストは将"
+"来ダウンロードされるように再スケジュールされます。これは、レスポンスを返すの"
+"と同様に、ミドルウェアの :meth:`process_exception` メソッドの実行を停止しま"
+"す。"
 
 #: ../../topics/downloader-middleware.rst:157
 msgid "the request that generated the exception"
-msgstr ""
+msgstr "例外を生成したリクエスト"
 
 #: ../../topics/downloader-middleware.rst:160
 msgid "the raised exception"
-msgstr ""
+msgstr "発生した例外"
 
 #: ../../topics/downloader-middleware.rst:168
 msgid ""
-"If present, this classmethod is called to create a middleware instance "
-"from a :class:`~scrapy.crawler.Crawler`. It must return a new instance of"
-" the middleware. Crawler object provides access to all Scrapy core "
-"components like settings and signals; it is a way for middleware to "
-"access them and hook its functionality into Scrapy."
+"If present, this classmethod is called to create a middleware instance from "
+"a :class:`~scrapy.crawler.Crawler`. It must return a new instance of the "
+"middleware. Crawler object provides access to all Scrapy core components "
+"like settings and signals; it is a way for middleware to access them and "
+"hook its functionality into Scrapy."
 msgstr ""
+"存在する場合、このクラス・メソッドは :class:`~scrapy.crawler.Crawler` からミ"
+"ドルウェア・インスタンスを作成するために呼び出されます。ミドルウェアの新しい"
+"インスタンスを返す必要があります。クローラー・オブジェクトは、設定や信号など"
+"のすべてのScrapyコアコンポーネントへのアクセスを提供します。それはミドルウェ"
+"アがそれらにアクセスし、その機能をScrapyにフックする方法です。"
 
 #: ../../topics/downloader-middleware.rst:174
 msgid "crawler that uses this middleware"
-msgstr ""
+msgstr "このミドルウェアを使用するクローラー"
 
 #: ../../topics/downloader-middleware.rst:180
 msgid "Built-in downloader middleware reference"
-msgstr ""
+msgstr "組み込みダウンローダー・ミドルウェア・リファレンス"
 
 #: ../../topics/downloader-middleware.rst:182
 msgid ""
@@ -283,78 +369,97 @@ msgid ""
 "downloader middleware, see the :ref:`downloader middleware usage guide "
 "<topics-downloader-middleware>`."
 msgstr ""
+"この文書では、Scrapyに付属するすべてのダウンローダー・ミドルウェア・コンポー"
+"ネントについて説明します。それらの使用方法と独自のダウンローダ・ミドルウェア"
+"の作成方法については、:ref:`ダウンローダミドルウェア使用ガイド<topics-"
+"downloader-middleware>` を参照してください。"
 
 #: ../../topics/downloader-middleware.rst:187
 msgid ""
-"For a list of the components enabled by default (and their orders) see "
-"the :setting:`DOWNLOADER_MIDDLEWARES_BASE` setting."
+"For a list of the components enabled by default (and their orders) see the :"
+"setting:`DOWNLOADER_MIDDLEWARES_BASE` setting."
 msgstr ""
+"デフォルトで有効になっているコンポーネント(およびその順序)のリストについて"
+"は、 :setting:`DOWNLOADER_MIDDLEWARES_BASE` 設定を参照してください。"
 
 #: ../../topics/downloader-middleware.rst:193
 msgid "CookiesMiddleware"
-msgstr ""
+msgstr "CookiesMiddleware"
 
 #: ../../topics/downloader-middleware.rst:200
+#, fuzzy
+#| msgid ""
+#| "This middleware enables working with sites that require cookies, such as "
+#| "those that use sessions. It keeps track of cookies sent by web servers, "
+#| "and send them back on subsequent requests (from that spider), just like "
+#| "web browsers do."
 msgid ""
 "This middleware enables working with sites that require cookies, such as "
-"those that use sessions. It keeps track of cookies sent by web servers, "
-"and sends them back on subsequent requests (from that spider), just like "
-"web browsers do."
+"those that use sessions. It keeps track of cookies sent by web servers, and "
+"sends them back on subsequent requests (from that spider), just like web "
+"browsers do."
 msgstr ""
+"このミドルウェアにより、セッションを使用するサイトなど、クッキーを必要とする"
+"サイトを操作できます。Webサーバーが送信したクッキーを追跡し、Webブラウザーが"
+"行うように、その後の(スパイダーからの)リクエストでそれらを送り返します。"
 
 #: ../../topics/downloader-middleware.rst:205
 msgid ""
-"When non-UTF8 encoded byte sequences are passed to a "
-":class:`~scrapy.http.Request`, the ``CookiesMiddleware`` will log a "
-"warning. Refer to :ref:`topics-logging-advanced-customization` to "
-"customize the logging behaviour."
+"When non-UTF8 encoded byte sequences are passed to a :class:`~scrapy.http."
+"Request`, the ``CookiesMiddleware`` will log a warning. Refer to :ref:"
+"`topics-logging-advanced-customization` to customize the logging behaviour."
 msgstr ""
 
 #: ../../topics/downloader-middleware.rst:210
 msgid ""
-"Cookies set via the ``Cookie`` header are not considered by the :ref"
-":`cookies-mw`. If you need to set cookies for a request, use the "
-":class:`Request.cookies <scrapy.http.Request>` parameter. This is a known"
-" current limitation that is being worked on."
+"Cookies set via the ``Cookie`` header are not considered by the :ref:"
+"`cookies-mw`. If you need to set cookies for a request, use the :class:"
+"`Request.cookies <scrapy.http.Request>` parameter. This is a known current "
+"limitation that is being worked on."
 msgstr ""
 
 #: ../../topics/downloader-middleware.rst:215
 msgid "The following settings can be used to configure the cookie middleware:"
-msgstr ""
+msgstr "次の設定を使用して、クッキー・ミドルウェアを構成(configure)できます:"
 
 #: ../../topics/downloader-middleware.rst:217
 msgid ":setting:`COOKIES_ENABLED`"
-msgstr ""
+msgstr ":setting:`COOKIES_ENABLED`"
 
 #: ../../topics/downloader-middleware.rst:218
 msgid ":setting:`COOKIES_DEBUG`"
-msgstr ""
+msgstr ":setting:`COOKIES_DEBUG`"
 
 #: ../../topics/downloader-middleware.rst:223
 msgid "Multiple cookie sessions per spider"
-msgstr ""
+msgstr "スパイダーごとの複数のクッキー・セッション"
 
 #: ../../topics/downloader-middleware.rst:225
 msgid ""
-"There is support for keeping multiple cookie sessions per spider by using"
-" the :reqmeta:`cookiejar` Request meta key. By default it uses a single "
-"cookie jar (session), but you can pass an identifier to use different "
-"ones."
+"There is support for keeping multiple cookie sessions per spider by using "
+"the :reqmeta:`cookiejar` Request meta key. By default it uses a single "
+"cookie jar (session), but you can pass an identifier to use different ones."
 msgstr ""
+":reqmeta:`cookiejar` リクエスト・メタ・キーを使用することにより、スパイダーご"
+"とに複数のクッキー・セッションの保持をサポートします。デフォルトでは、単一の"
+"cookie jar(セッション)を使用しますが、異なるものを使用するために識別子を渡す"
+"ことができます。"
 
 #: ../../topics/downloader-middleware.rst:229
 msgid "For example::"
-msgstr ""
+msgstr "例えば::"
 
 #: ../../topics/downloader-middleware.rst:235
 msgid ""
-"Keep in mind that the :reqmeta:`cookiejar` meta key is not \"sticky\". "
-"You need to keep passing it along on subsequent requests. For example::"
+"Keep in mind that the :reqmeta:`cookiejar` meta key is not \"sticky\". You "
+"need to keep passing it along on subsequent requests. For example::"
 msgstr ""
+":reqmeta:`cookiejar` メタ・キーは \"sticky\" ではないことに注意してください"
+"(訳注:つまりvolatile)。 後続のリクエストでそれを渡し続ける必要があります::"
 
 #: ../../topics/downloader-middleware.rst:247
 msgid "COOKIES_ENABLED"
-msgstr ""
+msgstr "COOKIES_ENABLED"
 
 #: ../../topics/downloader-middleware.rst:249
 #: ../../topics/downloader-middleware.rst:709
@@ -363,32 +468,41 @@ msgstr ""
 #: ../../topics/downloader-middleware.rst:908
 #: ../../topics/downloader-middleware.rst:1187
 msgid "Default: ``True``"
-msgstr ""
+msgstr "デフォルト: ``True``"
 
 #: ../../topics/downloader-middleware.rst:251
 msgid ""
-"Whether to enable the cookies middleware. If disabled, no cookies will be"
-" sent to web servers."
+"Whether to enable the cookies middleware. If disabled, no cookies will be "
+"sent to web servers."
 msgstr ""
+"クッキー・ミドルウェアを有効にするかどうか。 無効にすると、クッキーはWebサー"
+"バーに送信されません。"
 
 #: ../../topics/downloader-middleware.rst:254
 msgid ""
 "Notice that despite the value of :setting:`COOKIES_ENABLED` setting if "
 "``Request.``:reqmeta:`meta['dont_merge_cookies'] <dont_merge_cookies>` "
-"evaluates to ``True`` the request cookies will **not** be sent to the web"
-" server and received cookies in :class:`~scrapy.http.Response` will "
-"**not** be merged with the existing cookies."
+"evaluates to ``True`` the request cookies will **not** be sent to the web "
+"server and received cookies in :class:`~scrapy.http.Response` will **not** "
+"be merged with the existing cookies."
 msgstr ""
+"``Request.``:reqmeta:`meta['dont_merge_cookies'] <dont_merge_cookies>` が "
+"``True`` と評価される場合、 :setting:`COOKIES_ENABLED` 設定にかかわらず、リク"
+"エス・トクッキーは Webサーバーに **送信されません** 。そして :class:`~scrapy."
+"http.Response` で受信されたクッキーは、既存のクッキーとは **マージされません"
+"** 。"
 
 #: ../../topics/downloader-middleware.rst:260
 msgid ""
-"For more detailed information see the ``cookies`` parameter in "
-":class:`~scrapy.http.Request`."
+"For more detailed information see the ``cookies`` parameter in :class:"
+"`~scrapy.http.Request`."
 msgstr ""
+"詳細については、 :class:`~scrapy.http.Request` の ``cookies`` パラメーターを"
+"参照してください。"
 
 #: ../../topics/downloader-middleware.rst:266
 msgid "COOKIES_DEBUG"
-msgstr ""
+msgstr "COOKIES_DEBUG"
 
 #: ../../topics/downloader-middleware.rst:268
 #: ../../topics/downloader-middleware.rst:553
@@ -397,791 +511,965 @@ msgstr ""
 #: ../../topics/downloader-middleware.rst:650
 #: ../../topics/downloader-middleware.rst:1173
 msgid "Default: ``False``"
-msgstr ""
+msgstr "デフォルト: ``False``"
 
 #: ../../topics/downloader-middleware.rst:270
+#, fuzzy
+#| msgid ""
+#| "If enabled, Scrapy will log all cookies sent in requests (ie. ``Cookie`` "
+#| "header) and all cookies received in responses (ie. ``Set-Cookie`` header)."
 msgid ""
-"If enabled, Scrapy will log all cookies sent in requests (i.e. ``Cookie``"
-" header) and all cookies received in responses (i.e. ``Set-Cookie`` "
-"header)."
+"If enabled, Scrapy will log all cookies sent in requests (i.e. ``Cookie`` "
+"header) and all cookies received in responses (i.e. ``Set-Cookie`` header)."
 msgstr ""
+"有効にすると、Scrapyはリクエストで送信されたすべてのクッキー( ``Cookie`` ヘッ"
+"ダー)およびレスポンスで受信されたすべてのクッキー( ``Set-Cookie`` ヘッダー)を"
+"ログに記録します。"
 
 #: ../../topics/downloader-middleware.rst:273
 msgid "Here's an example of a log with :setting:`COOKIES_DEBUG` enabled::"
-msgstr ""
+msgstr ":setting:`COOKIES_DEBUG` が有効になっているログの例を次に示します::"
 
 #: ../../topics/downloader-middleware.rst:287
 msgid "DefaultHeadersMiddleware"
-msgstr ""
+msgstr "DefaultHeadersMiddleware"
 
 #: ../../topics/downloader-middleware.rst:294
 msgid ""
-"This middleware sets all default requests headers specified in the "
-":setting:`DEFAULT_REQUEST_HEADERS` setting."
+"This middleware sets all default requests headers specified in the :setting:"
+"`DEFAULT_REQUEST_HEADERS` setting."
 msgstr ""
+"このミドルウェアは、 :setting:`DEFAULT_REQUEST_HEADERS` 設定で指定されたすべ"
+"てのデフォルト・リクエスト・ヘッダーを設定します。"
 
 #: ../../topics/downloader-middleware.rst:298
 msgid "DownloadTimeoutMiddleware"
-msgstr ""
+msgstr "DownloadTimeoutMiddleware"
 
 #: ../../topics/downloader-middleware.rst:305
 msgid ""
-"This middleware sets the download timeout for requests specified in the "
-":setting:`DOWNLOAD_TIMEOUT` setting or :attr:`download_timeout` spider "
+"This middleware sets the download timeout for requests specified in the :"
+"setting:`DOWNLOAD_TIMEOUT` setting or :attr:`download_timeout` spider "
 "attribute."
 msgstr ""
+"このミドルウェアは、 :setting:`DOWNLOAD_TIMEOUT` 設定または :attr:"
+"`download_timeout` スパイダー属性で指定されたリクエストのダウンロード・タイム"
+"アウトを設定します。"
 
 #: ../../topics/downloader-middleware.rst:311
 msgid ""
-"You can also set download timeout per-request using "
-":reqmeta:`download_timeout` Request.meta key; this is supported even when"
-" DownloadTimeoutMiddleware is disabled."
+"You can also set download timeout per-request using :reqmeta:"
+"`download_timeout` Request.meta key; this is supported even when "
+"DownloadTimeoutMiddleware is disabled."
 msgstr ""
+":reqmeta:`download_timeout`  リクエスト・メタ・キーを使用して、リクエストごと"
+"にダウンロード・タイムアウトを設定することもできます。これは、"
+"DownloadTimeoutMiddlewareが無効になっている場合でもサポートされます。"
 
 #: ../../topics/downloader-middleware.rst:316
 msgid "HttpAuthMiddleware"
-msgstr ""
+msgstr "HttpAuthMiddleware"
 
 #: ../../topics/downloader-middleware.rst:323
 msgid ""
-"This middleware authenticates all requests generated from certain spiders"
-" using `Basic access authentication`_ (aka. HTTP auth)."
+"This middleware authenticates all requests generated from certain spiders "
+"using `Basic access authentication`_ (aka. HTTP auth)."
 msgstr ""
+"このミドルウェアは、 `Basic access authentication`_ (別名BASIC認証)を使用し"
+"て、特定のスパイダーから生成されたすべてのリクエストを認証します。"
 
 #: ../../topics/downloader-middleware.rst:326
 msgid ""
-"To enable HTTP authentication from certain spiders, set the ``http_user``"
-" and ``http_pass`` attributes of those spiders."
+"To enable HTTP authentication from certain spiders, set the ``http_user`` "
+"and ``http_pass`` attributes of those spiders."
 msgstr ""
+"特定のスパイダーからのBASIC認証を有効にするには、それらのスパイダーの "
+"``http_user`` と ``http_pass`` 属性を設定します。"
 
 #: ../../topics/downloader-middleware.rst:329
 msgid "Example::"
-msgstr ""
+msgstr "例::"
 
 #: ../../topics/downloader-middleware.rst:345
 msgid "HttpCacheMiddleware"
-msgstr ""
+msgstr "HttpCacheMiddleware"
 
 #: ../../topics/downloader-middleware.rst:352
 msgid ""
-"This middleware provides low-level cache to all HTTP requests and "
-"responses. It has to be combined with a cache storage backend as well as "
-"a cache policy."
+"This middleware provides low-level cache to all HTTP requests and responses. "
+"It has to be combined with a cache storage backend as well as a cache policy."
 msgstr ""
+"このミドルウェアは、すべてのHTTPリクエストおよびレスポンスに低レベルのキャッ"
+"シュを提供します。 キャッシュ・ストレージ・バックエンドおよびキャッシュ・ポリ"
+"シーと組み合わせる必要があります。"
 
 #: ../../topics/downloader-middleware.rst:355
 msgid "Scrapy ships with three HTTP cache storage backends:"
 msgstr ""
+"Scrapyには3つのHTTPキャッシュ・ストレージ・バックエンドが付属しています:"
 
 #: ../../topics/downloader-middleware.rst:357
 msgid ":ref:`httpcache-storage-fs`"
-msgstr ""
+msgstr ":ref:`httpcache-storage-fs`"
 
 #: ../../topics/downloader-middleware.rst:358
 msgid ":ref:`httpcache-storage-dbm`"
-msgstr ""
+msgstr ":ref:`httpcache-storage-dbm`"
 
 #: ../../topics/downloader-middleware.rst:360
 msgid ""
-"You can change the HTTP cache storage backend with the "
-":setting:`HTTPCACHE_STORAGE` setting. Or you can also :ref:`implement "
-"your own storage backend. <httpcache-storage-custom>`"
+"You can change the HTTP cache storage backend with the :setting:"
+"`HTTPCACHE_STORAGE` setting. Or you can also :ref:`implement your own "
+"storage backend. <httpcache-storage-custom>`"
 msgstr ""
+":setting:`HTTPCACHE_STORAGE` 設定でHTTPキャッシュ・ストレージ・バックエンドを"
+"変更できます。また、 :ref:`独自のストレージ・バックエンドの実装<httpcache-"
+"storage-custom>` もできます。"
 
 #: ../../topics/downloader-middleware.rst:363
 msgid "Scrapy ships with two HTTP cache policies:"
-msgstr ""
+msgstr "Scrapyには2つのHTTPキャッシュ・ポリシーが付属しています:"
 
 #: ../../topics/downloader-middleware.rst:365
 msgid ":ref:`httpcache-policy-rfc2616`"
-msgstr ""
+msgstr ":ref:`httpcache-policy-rfc2616`"
 
 #: ../../topics/downloader-middleware.rst:366
 msgid ":ref:`httpcache-policy-dummy`"
-msgstr ""
+msgstr ":ref:`httpcache-policy-dummy`"
 
 #: ../../topics/downloader-middleware.rst:368
 msgid ""
-"You can change the HTTP cache policy with the :setting:`HTTPCACHE_POLICY`"
-" setting. Or you can also implement your own policy."
+"You can change the HTTP cache policy with the :setting:`HTTPCACHE_POLICY` "
+"setting. Or you can also implement your own policy."
 msgstr ""
+":setting:`HTTPCACHE_POLICY` 設定でHTTPキャッシュ・ポリシーを変更できます。ま"
+"たは、独自のポリシーを実装することもできます。"
 
 #: ../../topics/downloader-middleware.rst:373
 msgid ""
-"You can also avoid caching a response on every policy using "
-":reqmeta:`dont_cache` meta key equals ``True``."
+"You can also avoid caching a response on every policy using :reqmeta:"
+"`dont_cache` meta key equals ``True``."
 msgstr ""
+":reqmeta:`dont_cache` メタ・キーが ``True`` に等しいことを使用して、すべての"
+"ポリシーで応答をキャッシュしないようにすることもできます。"
 
 #: ../../topics/downloader-middleware.rst:381
 msgid "Dummy policy (default)"
-msgstr ""
+msgstr "ダミー・ポリシー(デフォルト)"
 
 #: ../../topics/downloader-middleware.rst:385
 msgid ""
 "This policy has no awareness of any HTTP Cache-Control directives. Every "
-"request and its corresponding response are cached.  When the same request"
-" is seen again, the response is returned without transferring anything "
-"from the Internet."
+"request and its corresponding response are cached.  When the same request is "
+"seen again, the response is returned without transferring anything from the "
+"Internet."
 msgstr ""
+"このポリシーは、HTTPキャッシュ制御ディレクティブを認識しません。すべてのリク"
+"エストとそれに対応するレスポンスはキャッシュされます。同じリクエストが再び現"
+"れるると、インターネットから何も転送せずにレスポンスが返されます。"
 
 #: ../../topics/downloader-middleware.rst:390
 msgid ""
 "The Dummy policy is useful for testing spiders faster (without having to "
-"wait for downloads every time) and for trying your spider offline, when "
-"an Internet connection is not available. The goal is to be able to "
-"\"replay\" a spider run *exactly as it ran before*."
+"wait for downloads every time) and for trying your spider offline, when an "
+"Internet connection is not available. The goal is to be able to \"replay\" a "
+"spider run *exactly as it ran before*."
 msgstr ""
+"ダミー・ポリシーは、スパイダーをより高速にテストする(毎回ダウンロードを待つ必"
+"要なしに)ときや、インターネット接続が利用できないときにスパイダーをオフライン"
+"で試すのに役立ちます。設計目標は、スパイダーの実行を前に実行したとおりに再現"
+"できるようにすることです。"
 
 #: ../../topics/downloader-middleware.rst:399
 msgid "RFC2616 policy"
-msgstr ""
+msgstr "RFC2616ポリシー"
 
 #: ../../topics/downloader-middleware.rst:403
 msgid ""
-"This policy provides a RFC2616 compliant HTTP cache, i.e. with HTTP "
-"Cache-Control awareness, aimed at production and used in continuous runs "
-"to avoid downloading unmodified data (to save bandwidth and speed up "
-"crawls)."
+"This policy provides a RFC2616 compliant HTTP cache, i.e. with HTTP Cache-"
+"Control awareness, aimed at production and used in continuous runs to avoid "
+"downloading unmodified data (to save bandwidth and speed up crawls)."
 msgstr ""
+"このポリシーは、RFC2616準拠のHTTPキャッシュ、つまりHTTP Cache-Control認識を提"
+"供します。これは、新たな生成物に狙いを定め、変更されていないデータのダウン"
+"ロードを回避するために連続実行で使用されます(帯域幅を節約し、クロールを高速化"
+"するため)。"
 
 #: ../../topics/downloader-middleware.rst:408
 msgid "What is implemented:"
-msgstr ""
+msgstr "実装されているもの:"
 
 #: ../../topics/downloader-middleware.rst:410
 msgid ""
-"Do not attempt to store responses/requests with ``no-store`` cache-"
-"control directive set"
+"Do not attempt to store responses/requests with ``no-store`` cache-control "
+"directive set"
 msgstr ""
+"``no-store`` キャッシュ制御ディレクティブが設定されている場合、レスポンス/リ"
+"クエストを保存しようとしないでください。"
 
 #: ../../topics/downloader-middleware.rst:411
 msgid ""
-"Do not serve responses from cache if ``no-cache`` cache-control directive"
-" is set even for fresh responses"
+"Do not serve responses from cache if ``no-cache`` cache-control directive is "
+"set even for fresh responses"
 msgstr ""
+"``no-cache`` キャッシュ制御ディレクティブが新しいレスポンスに対しても設定され"
+"ている場合、キャッシュからレスポンスを提供しません"
 
 #: ../../topics/downloader-middleware.rst:412
 msgid "Compute freshness lifetime from ``max-age`` cache-control directive"
-msgstr ""
+msgstr "``max-age`` キャッシュ制御ディレクティブから鮮度寿命を計算します"
 
 #: ../../topics/downloader-middleware.rst:413
 msgid "Compute freshness lifetime from ``Expires`` response header"
-msgstr ""
+msgstr "``Expires`` レスポンス・ヘッダーから鮮度寿命を計算します"
 
 #: ../../topics/downloader-middleware.rst:414
 msgid ""
-"Compute freshness lifetime from ``Last-Modified`` response header "
-"(heuristic used by Firefox)"
+"Compute freshness lifetime from ``Last-Modified`` response header (heuristic "
+"used by Firefox)"
 msgstr ""
+"``Last-Modified`` レスポンス・ヘッダーから鮮度の有効期間を計算します(Firefox"
+"で使用されるヒューリスティック)"
 
 #: ../../topics/downloader-middleware.rst:415
 msgid "Compute current age from ``Age`` response header"
-msgstr ""
+msgstr "``Age`` レスポンス・ヘッダーから現在の年齢を計算する"
 
 #: ../../topics/downloader-middleware.rst:416
 msgid "Compute current age from ``Date`` header"
-msgstr ""
+msgstr "``Date`` ヘッダーから現在の年齢を計算"
 
 #: ../../topics/downloader-middleware.rst:417
 msgid "Revalidate stale responses based on ``Last-Modified`` response header"
 msgstr ""
+"``Last-Modified`` レスポンス・ヘッダーに基づいて古いレスポンスを再検証します"
 
 #: ../../topics/downloader-middleware.rst:418
 msgid "Revalidate stale responses based on ``ETag`` response header"
-msgstr ""
+msgstr "``ETag`` レスポンス・ヘッダーに基づいて古いレスポンスを再検証します"
 
 #: ../../topics/downloader-middleware.rst:419
 msgid "Set ``Date`` header for any received response missing it"
-msgstr ""
+msgstr "受信したレスポンスがない場合に ``Date`` ヘッダーを設定します"
 
 #: ../../topics/downloader-middleware.rst:420
 msgid "Support ``max-stale`` cache-control directive in requests"
-msgstr ""
+msgstr "リクエストで ``max-stale`` キャッシュ制御ディレクティブをサポート"
 
 #: ../../topics/downloader-middleware.rst:422
 msgid ""
-"This allows spiders to be configured with the full RFC2616 cache policy, "
-"but avoid revalidation on a request-by-request basis, while remaining "
-"conformant with the HTTP spec."
+"This allows spiders to be configured with the full RFC2616 cache policy, but "
+"avoid revalidation on a request-by-request basis, while remaining conformant "
+"with the HTTP spec."
 msgstr ""
+"これにより、スパイダーを完全なRFC2616キャッシュ・ポリシーで構成できますが、"
+"HTTP仕様に準拠したまま、リクエストごとの再検証を回避できます。"
 
 #: ../../topics/downloader-middleware.rst:426
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #: ../../topics/downloader-middleware.rst:428
 msgid ""
-"Add ``Cache-Control: max-stale=600`` to Request headers to accept "
-"responses that have exceeded their expiration time by no more than 600 "
-"seconds."
+"Add ``Cache-Control: max-stale=600`` to Request headers to accept responses "
+"that have exceeded their expiration time by no more than 600 seconds."
 msgstr ""
+"``Cache-Control: max-stale=600`` をリクエスト・ヘッダーに追加して、600秒以内"
+"ならば有効期限を超えたレスポンスを受け入れます。"
 
 #: ../../topics/downloader-middleware.rst:431
 msgid "See also: RFC2616, 14.9.3"
-msgstr ""
+msgstr "RFC2616, 14.9.3 も参照下さい。"
 
 #: ../../topics/downloader-middleware.rst:433
 msgid "What is missing:"
-msgstr ""
+msgstr "実装されてないもの:"
 
 #: ../../topics/downloader-middleware.rst:435
 msgid ""
-"``Pragma: no-cache`` support "
-"https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.1"
+"``Pragma: no-cache`` support https://www.w3.org/Protocols/rfc2616/rfc2616-"
+"sec14.html#sec14.9.1"
 msgstr ""
+"``Pragma: no-cache`` サポート https://www.w3.org/Protocols/rfc2616/rfc2616-"
+"sec14.html#sec14.9.1"
 
 #: ../../topics/downloader-middleware.rst:436
 msgid ""
-"``Vary`` header support "
-"https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html#sec13.6"
+"``Vary`` header support https://www.w3.org/Protocols/rfc2616/rfc2616-sec13."
+"html#sec13.6"
 msgstr ""
+"``Vary`` ヘッダー・サポート https://www.w3.org/Protocols/rfc2616/rfc2616-"
+"sec13.html#sec13.6"
 
 #: ../../topics/downloader-middleware.rst:437
 msgid ""
-"Invalidation after updates or deletes "
-"https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html#sec13.10"
+"Invalidation after updates or deletes https://www.w3.org/Protocols/rfc2616/"
+"rfc2616-sec13.html#sec13.10"
 msgstr ""
+"更新または削除後の無効化 https://www.w3.org/Protocols/rfc2616/rfc2616-sec13."
+"html#sec13.10"
 
 #: ../../topics/downloader-middleware.rst:438
 msgid "... probably others .."
-msgstr ""
+msgstr "…その他いろいろ…"
 
 #: ../../topics/downloader-middleware.rst:444
 msgid "Filesystem storage backend (default)"
-msgstr ""
+msgstr "ファイルシステム・ストレージ・バックエンド(デフォルト)"
 
 #: ../../topics/downloader-middleware.rst:448
 msgid "File system storage backend is available for the HTTP cache middleware."
 msgstr ""
+"ファイルシステム・ストレージ・バックエンドは、HTTPキャッシュ・ミドルウェアで"
+"使用できます。"
 
 #: ../../topics/downloader-middleware.rst:450
 msgid ""
-"Each request/response pair is stored in a different directory containing "
-"the following files:"
+"Each request/response pair is stored in a different directory containing the "
+"following files:"
 msgstr ""
+"各リクエスト/レスポンスのペアは、次のファイルを含む異なるディレクトリに保存さ"
+"れます:"
 
 #: ../../topics/downloader-middleware.rst:453
 msgid "``request_body`` - the plain request body"
-msgstr ""
+msgstr "``request_body`` - 生のリクエスト・ボディそのもの"
 
 #: ../../topics/downloader-middleware.rst:455
 msgid "``request_headers`` - the request headers (in raw HTTP format)"
-msgstr ""
+msgstr "``request_headers`` - リクエスト・ヘッダ(生HTTP書式)"
 
 #: ../../topics/downloader-middleware.rst:457
 msgid "``response_body`` - the plain response body"
-msgstr ""
+msgstr "``response_body`` - 生のレスポンス・ボディそのもの"
 
 #: ../../topics/downloader-middleware.rst:459
 msgid "``response_headers`` - the request headers (in raw HTTP format)"
-msgstr ""
+msgstr "``response_headers`` - リクエスト・ヘッダ(生HTTP書式)"
 
 #: ../../topics/downloader-middleware.rst:461
 msgid ""
-"``meta`` - some metadata of this cache resource in Python ``repr()`` "
-"format (grep-friendly format)"
+"``meta`` - some metadata of this cache resource in Python ``repr()`` format "
+"(grep-friendly format)"
 msgstr ""
+"``meta`` - Python ``repr()`` 形式の、このキャッシュ・リソースのメタ・データ"
+"(grepに優しい形式)"
 
 #: ../../topics/downloader-middleware.rst:464
 msgid ""
 "``pickled_meta`` - the same metadata in ``meta`` but pickled for more "
 "efficient deserialization"
 msgstr ""
+"``pickled_meta`` - `` meta`` と同じメタデータですが、より効率的な逆シリアル化"
+"のために直列化(pickled)されています"
 
 #: ../../topics/downloader-middleware.rst:467
 msgid ""
-"The directory name is made from the request fingerprint (see "
-"``scrapy.utils.request.fingerprint``), and one level of subdirectories is"
-" used to avoid creating too many files into the same directory (which is "
-"inefficient in many file systems). An example directory could be::"
+"The directory name is made from the request fingerprint (see ``scrapy.utils."
+"request.fingerprint``), and one level of subdirectories is used to avoid "
+"creating too many files into the same directory (which is inefficient in "
+"many file systems). An example directory could be::"
 msgstr ""
+"ディレクトリ名はリクエストのフィンガー・プリントから作成され( ``scrapy.utils."
+"request.fingerprint`` 参照)、1つのレベルのサブ・ディレクトリを使用して、同じ"
+"ディレクトリに多くのファイルを作成しないようにします(多くのファイルシステムで"
+"は非効率的です)。ディレクトリの例以下です::"
 
 #: ../../topics/downloader-middleware.rst:477
 msgid "DBM storage backend"
-msgstr ""
+msgstr "DBMストレージ・バックエンド"
 
 #: ../../topics/downloader-middleware.rst:481
 msgid "A DBM_ storage backend is also available for the HTTP cache middleware."
 msgstr ""
+"DBM_ ストレージ・バックエンドは、HTTPキャッシュ・ミドルウェアでも使用できま"
+"す。"
 
 #: ../../topics/downloader-middleware.rst:483
+#, fuzzy
+#| msgid ""
+#| "By default, it uses the anydbm_ module, but you can change it with the :"
+#| "setting:`HTTPCACHE_DBM_MODULE` setting."
 msgid ""
-"By default, it uses the :mod:`dbm`, but you can change it with the "
-":setting:`HTTPCACHE_DBM_MODULE` setting."
+"By default, it uses the :mod:`dbm`, but you can change it with the :setting:"
+"`HTTPCACHE_DBM_MODULE` setting."
 msgstr ""
+"デフォルトでは、anydbm_ モジュールを使用しますが、 :setting:"
+"`HTTPCACHE_DBM_MODULE` 設定で変更できます。"
 
 #: ../../topics/downloader-middleware.rst:489
 msgid "Writing your own storage backend"
-msgstr ""
+msgstr "あなた自身のストレージ・バックエンドを書く"
 
 #: ../../topics/downloader-middleware.rst:491
 msgid ""
-"You can implement a cache storage backend by creating a Python class that"
-" defines the methods described below."
+"You can implement a cache storage backend by creating a Python class that "
+"defines the methods described below."
 msgstr ""
+"以下に説明するメソッドを定義するPythonクラスを作成することにより、キャッシュ"
+"ス・トレージ・バックエンドを実装できます。"
 
 #: ../../topics/downloader-middleware.rst:500
 msgid ""
 "This method gets called after a spider has been opened for crawling. It "
 "handles the :signal:`open_spider <spider_opened>` signal."
 msgstr ""
+"このメソッドは、クロールのためにスパイダーがオープンされた後に呼び出されま"
+"す。 :signal:`open_spider <spider_opened>` シグナルを処理します。"
 
 #: ../../topics/downloader-middleware.rst:503
 msgid "the spider which has been opened"
-msgstr ""
+msgstr "オープンされたスパイダー"
 
 #: ../../topics/downloader-middleware.rst:508
 msgid ""
-"This method gets called after a spider has been closed. It handles the "
-":signal:`close_spider <spider_closed>` signal."
+"This method gets called after a spider has been closed. It handles the :"
+"signal:`close_spider <spider_closed>` signal."
 msgstr ""
+"このメソッドは、スパイダーがクローズさられた後に呼び出されます。 :signal:"
+"`close_spider <spider_closed>` シグナルを処理します。"
 
 #: ../../topics/downloader-middleware.rst:511
 msgid "the spider which has been closed"
-msgstr ""
+msgstr "クローズされたスパイダー"
 
 #: ../../topics/downloader-middleware.rst:516
 msgid "Return response if present in cache, or ``None`` otherwise."
 msgstr ""
+"キャッシュに存在する場合はレスポンスを返し、そうでない場合は ``None`` を返し"
+"ます。"
 
 #: ../../topics/downloader-middleware.rst:518
 msgid "the spider which generated the request"
-msgstr ""
+msgstr "リクエストを生成したスパイダー"
 
 #: ../../topics/downloader-middleware.rst:521
+#, fuzzy
+#| msgid "the request to find cached reponse for"
 msgid "the request to find cached response for"
-msgstr ""
+msgstr "キャッシュされたレスポンスを見つけるためのリクエスト"
 
 #: ../../topics/downloader-middleware.rst:526
 msgid "Store the given response in the cache."
-msgstr ""
+msgstr "与えられたレスポンスをキャッシュに保存します。"
 
 #: ../../topics/downloader-middleware.rst:528
 msgid "the spider for which the response is intended"
-msgstr ""
+msgstr "このレスポンスを意図したスパイダー"
 
 #: ../../topics/downloader-middleware.rst:531
 msgid "the corresponding request the spider generated"
-msgstr ""
+msgstr "スパイダーが生成した対応するリクエスト"
 
 #: ../../topics/downloader-middleware.rst:534
 msgid "the response to store in the cache"
-msgstr ""
+msgstr "キャッシュに保存するレスポンス"
 
 #: ../../topics/downloader-middleware.rst:537
 msgid "In order to use your storage backend, set:"
-msgstr ""
+msgstr "ストレージ・バックエンドを使用するには、以下の設定をします::"
 
 #: ../../topics/downloader-middleware.rst:539
 msgid ""
 ":setting:`HTTPCACHE_STORAGE` to the Python import path of your custom "
 "storage class."
 msgstr ""
+":setting:`HTTPCACHE_STORAGE` をあなたのカスタム・ストレージ・クラスのPythonイ"
+"ンポート・パスに設定します。"
 
 #: ../../topics/downloader-middleware.rst:543
 msgid "HTTPCache middleware settings"
-msgstr ""
+msgstr "HTTPCache middleware 設定"
 
 #: ../../topics/downloader-middleware.rst:545
 msgid ""
 "The :class:`HttpCacheMiddleware` can be configured through the following "
 "settings:"
-msgstr ""
+msgstr ":class:`HttpCacheMiddleware` は次の設定で構成(configure)できます:"
 
 #: ../../topics/downloader-middleware.rst:551
 msgid "HTTPCACHE_ENABLED"
-msgstr ""
+msgstr "HTTPCACHE_ENABLED"
 
 #: ../../topics/downloader-middleware.rst:555
 msgid "Whether the HTTP cache will be enabled."
-msgstr ""
+msgstr "HTTPキャッシュを有効にするかどうか。"
 
 #: ../../topics/downloader-middleware.rst:560
 msgid "HTTPCACHE_EXPIRATION_SECS"
-msgstr ""
+msgstr "HTTPCACHE_EXPIRATION_SECS"
 
 #: ../../topics/downloader-middleware.rst:562
 msgid "Default: ``0``"
-msgstr ""
+msgstr "デフォルト: ``0``"
 
 #: ../../topics/downloader-middleware.rst:564
 msgid "Expiration time for cached requests, in seconds."
-msgstr ""
+msgstr "キャッシュされたリクエストの有効期限(秒単位)。"
 
 #: ../../topics/downloader-middleware.rst:566
 msgid ""
-"Cached requests older than this time will be re-downloaded. If zero, "
-"cached requests will never expire."
+"Cached requests older than this time will be re-downloaded. If zero, cached "
+"requests will never expire."
 msgstr ""
+"この時間より古いキャッシュされたリクエストは再ダウンロードされます。ゼロの場"
+"合、キャッシュされたリクエストは期限切れになりません。"
 
 #: ../../topics/downloader-middleware.rst:572
 msgid "HTTPCACHE_DIR"
-msgstr ""
+msgstr "HTTPCACHE_DIR"
 
 #: ../../topics/downloader-middleware.rst:574
 msgid "Default: ``'httpcache'``"
-msgstr ""
+msgstr "デフォルト: ``'httpcache'``"
 
 #: ../../topics/downloader-middleware.rst:576
 msgid ""
-"The directory to use for storing the (low-level) HTTP cache. If empty, "
-"the HTTP cache will be disabled. If a relative path is given, is taken "
-"relative to the project data dir. For more info see: :ref:`topics-"
-"project-structure`."
+"The directory to use for storing the (low-level) HTTP cache. If empty, the "
+"HTTP cache will be disabled. If a relative path is given, is taken relative "
+"to the project data dir. For more info see: :ref:`topics-project-structure`."
 msgstr ""
+"(低レベル)HTTPキャッシュを保存するために使用するディレクトリ。空の場合、HTTP"
+"キャッシュは無効になります。相対パスが指定されている場合、プロジェクト・デー"
+"タ・ディレクトリからの相対パスが使用されます。詳細については、 :ref:`topics-"
+"project-structure` を参照してください。"
 
 #: ../../topics/downloader-middleware.rst:583
 msgid "HTTPCACHE_IGNORE_HTTP_CODES"
-msgstr ""
+msgstr "HTTPCACHE_IGNORE_HTTP_CODES"
 
 #: ../../topics/downloader-middleware.rst:585
 #: ../../topics/downloader-middleware.rst:668
 #: ../../topics/downloader-middleware.rst:850
 msgid "Default: ``[]``"
-msgstr ""
+msgstr "デフォルト: ``[]``"
 
 #: ../../topics/downloader-middleware.rst:587
 msgid "Don't cache response with these HTTP codes."
-msgstr ""
+msgstr "これらのHTTPコードでレスポンスをキャッシュしないでください。"
 
 #: ../../topics/downloader-middleware.rst:592
 msgid "HTTPCACHE_IGNORE_MISSING"
-msgstr ""
+msgstr "HTTPCACHE_IGNORE_MISSING"
 
 #: ../../topics/downloader-middleware.rst:596
 msgid ""
 "If enabled, requests not found in the cache will be ignored instead of "
 "downloaded."
 msgstr ""
+"有効にすると、キャッシュに見つからないリクエストはダウンロードされずに無視さ"
+"れます。"
 
 #: ../../topics/downloader-middleware.rst:601
 msgid "HTTPCACHE_IGNORE_SCHEMES"
-msgstr ""
+msgstr "HTTPCACHE_IGNORE_SCHEMES"
 
 #: ../../topics/downloader-middleware.rst:603
 msgid "Default: ``['file']``"
-msgstr ""
+msgstr "デフォルト: ``['file']``"
 
 #: ../../topics/downloader-middleware.rst:605
 msgid "Don't cache responses with these URI schemes."
-msgstr ""
+msgstr "これらのURIスキームでレスポンスをキャッシュしないでください。"
 
 #: ../../topics/downloader-middleware.rst:610
 msgid "HTTPCACHE_STORAGE"
-msgstr ""
+msgstr "HTTPCACHE_STORAGE"
 
 #: ../../topics/downloader-middleware.rst:612
 msgid "Default: ``'scrapy.extensions.httpcache.FilesystemCacheStorage'``"
-msgstr ""
+msgstr "デフォルト: ``'scrapy.extensions.httpcache.FilesystemCacheStorage'``"
 
 #: ../../topics/downloader-middleware.rst:614
 msgid "The class which implements the cache storage backend."
-msgstr ""
+msgstr "キャッシュ・ストレージ・バックエンドを実装するクラス。"
 
 #: ../../topics/downloader-middleware.rst:619
 msgid "HTTPCACHE_DBM_MODULE"
-msgstr ""
+msgstr "HTTPCACHE_DBM_MODULE"
 
 #: ../../topics/downloader-middleware.rst:621
+#, fuzzy
+#| msgid "Default: ``'anydbm'``"
 msgid "Default: ``'dbm'``"
-msgstr ""
+msgstr "デフォルト: ``'anydbm'``"
 
 #: ../../topics/downloader-middleware.rst:623
 msgid ""
 "The database module to use in the :ref:`DBM storage backend <httpcache-"
 "storage-dbm>`. This setting is specific to the DBM backend."
 msgstr ""
+":ref:`DBMストレージ・バックエンド<httpcache-storage-dbm>` で使用するデータ"
+"ベース・モジュール。この設定は、DBMバックエンド固有です。"
 
 #: ../../topics/downloader-middleware.rst:629
 msgid "HTTPCACHE_POLICY"
-msgstr ""
+msgstr "HTTPCACHE_POLICY"
 
 #: ../../topics/downloader-middleware.rst:631
 msgid "Default: ``'scrapy.extensions.httpcache.DummyPolicy'``"
-msgstr ""
+msgstr "デフォルト: ``'scrapy.extensions.httpcache.DummyPolicy'``"
 
 #: ../../topics/downloader-middleware.rst:633
 msgid "The class which implements the cache policy."
-msgstr ""
+msgstr "キャッシュ・ポリシーを実装するクラス。"
 
 #: ../../topics/downloader-middleware.rst:638
 msgid "HTTPCACHE_GZIP"
-msgstr ""
+msgstr "HTTPCACHE_GZIP"
 
 #: ../../topics/downloader-middleware.rst:642
 msgid ""
 "If enabled, will compress all cached data with gzip. This setting is "
 "specific to the Filesystem backend."
 msgstr ""
+"有効にすると、キャッシュされたすべてのデータがgzipで圧縮されます。この設定"
+"は、ファイルシステム・バックエンド固有です。"
 
 #: ../../topics/downloader-middleware.rst:648
 msgid "HTTPCACHE_ALWAYS_STORE"
-msgstr ""
+msgstr "HTTPCACHE_ALWAYS_STORE"
 
 #: ../../topics/downloader-middleware.rst:652
 msgid "If enabled, will cache pages unconditionally."
-msgstr ""
+msgstr "有効にすると、ページを無条件にキャッシュします。"
 
 #: ../../topics/downloader-middleware.rst:654
 msgid ""
-"A spider may wish to have all responses available in the cache, for "
-"future use with ``Cache-Control: max-stale``, for instance. The "
-"DummyPolicy caches all responses but never revalidates them, and "
-"sometimes a more nuanced policy is desirable."
+"A spider may wish to have all responses available in the cache, for future "
+"use with ``Cache-Control: max-stale``, for instance. The DummyPolicy caches "
+"all responses but never revalidates them, and sometimes a more nuanced "
+"policy is desirable."
 msgstr ""
+"スパイダーは、たとえば ``Cache-Control：max-stale`` で将来使用するために、す"
+"べてのレスポンスをキャッシュで利用可能にしたい場合があります。 DummyPolicyは"
+"すべてのレスポンスをキャッシュしますが、それらを再検証することはありません。"
+"また、より微妙なポリシーが望ましい場合があります。"
 
 #: ../../topics/downloader-middleware.rst:659
+#, fuzzy
+#| msgid ""
+#| "This setting still respects ``Cache-Control: no-store`` directives in "
+#| "responses. If you don't want that, filter ``no-store`` out of the Cache-"
+#| "Control headers in responses you feedto the cache middleware."
 msgid ""
 "This setting still respects ``Cache-Control: no-store`` directives in "
 "responses. If you don't want that, filter ``no-store`` out of the Cache-"
 "Control headers in responses you feed to the cache middleware."
 msgstr ""
+"この設定は、レスポンスの ``Cache-Control：no-store`` ディレクティブを引き続き"
+"尊重します。不要な場合は、キャッシュ・ミドルウェアにフィードするレスポンスの"
+"Cache-Controlヘッダーから ``no-store`` をフィルターします。"
 
 #: ../../topics/downloader-middleware.rst:666
 msgid "HTTPCACHE_IGNORE_RESPONSE_CACHE_CONTROLS"
-msgstr ""
+msgstr "HTTPCACHE_IGNORE_RESPONSE_CACHE_CONTROLS"
 
 #: ../../topics/downloader-middleware.rst:670
 msgid "List of Cache-Control directives in responses to be ignored."
-msgstr ""
+msgstr "無視されるレスポンスのキャッシュ制御ディレクティブのリスト。"
 
 #: ../../topics/downloader-middleware.rst:672
+#, fuzzy
+#| msgid ""
+#| "Sites often set \"no-store\", \"no-cache\", \"must-revalidate\", etc., "
+#| "but get upset at the traffic a spider can generate if it respects those "
+#| "directives. This allows to selectively ignore Cache-Control directives "
+#| "that are known to be unimportant for the sites being crawled."
 msgid ""
-"Sites often set \"no-store\", \"no-cache\", \"must-revalidate\", etc., "
-"but get upset at the traffic a spider can generate if it actually "
-"respects those directives. This allows to selectively ignore Cache-"
-"Control directives that are known to be unimportant for the sites being "
-"crawled."
+"Sites often set \"no-store\", \"no-cache\", \"must-revalidate\", etc., but "
+"get upset at the traffic a spider can generate if it actually respects those "
+"directives. This allows to selectively ignore Cache-Control directives that "
+"are known to be unimportant for the sites being crawled."
 msgstr ""
+"サイトは \"no-store\"、\"no-cache\"、\"must-revalidate\"などを設定することが"
+"よくありますが、これらのディレクティブを尊重するとスパイダーが生成できる取引"
+"(traffic)をろうばいさせます。この設定により、クロールされるサイトにとって重要"
+"ではないことがわかっているCache-Controlディレクティブを選択的に無視できます。"
 
 #: ../../topics/downloader-middleware.rst:677
 msgid ""
 "We assume that the spider will not issue Cache-Control directives in "
-"requests unless it actually needs them, so directives in requests are not"
-" filtered."
+"requests unless it actually needs them, so directives in requests are not "
+"filtered."
 msgstr ""
+"スパイダーは、実際に必要な場合を除き、リクエストでCache-Controlディレクティブ"
+"を発行しないため、リクエストのディレクティブはフィルタリングされません。"
 
 #: ../../topics/downloader-middleware.rst:682
 msgid "HttpCompressionMiddleware"
-msgstr ""
+msgstr "HttpCompressionMiddleware"
 
 #: ../../topics/downloader-middleware.rst:689
 msgid ""
-"This middleware allows compressed (gzip, deflate) traffic to be "
-"sent/received from web sites."
+"This middleware allows compressed (gzip, deflate) traffic to be sent/"
+"received from web sites."
 msgstr ""
+"このミドルウェアにより、圧縮(gzip、deflate)取引(traffic)をWebサイトから送受信"
+"できます。"
 
 #: ../../topics/downloader-middleware.rst:692
+#, fuzzy
+#| msgid ""
+#| "This middleware also supports decoding `brotli-compressed`_ responses, "
+#| "provided `brotlipy`_ is installed."
 msgid ""
-"This middleware also supports decoding `brotli-compressed`_ as well as "
-"`zstd-compressed`_ responses, provided that `brotlipy`_ or `zstandard`_ "
-"is installed, respectively."
+"This middleware also supports decoding `brotli-compressed`_ as well as `zstd-"
+"compressed`_ responses, provided that `brotlipy`_ or `zstandard`_ is "
+"installed, respectively."
 msgstr ""
+"このミドルウェアは、 `brotlipy`_ がインストールされている場合、 `brotli-"
+"compressed`_ レスポンスのデコードもサポートします。"
 
 #: ../../topics/downloader-middleware.rst:702
 msgid "HttpCompressionMiddleware Settings"
-msgstr ""
+msgstr "HttpCompressionMiddleware 設定"
 
 #: ../../topics/downloader-middleware.rst:707
 msgid "COMPRESSION_ENABLED"
-msgstr ""
+msgstr "COMPRESSION_ENABLED"
 
 #: ../../topics/downloader-middleware.rst:711
 msgid "Whether the Compression middleware will be enabled."
-msgstr ""
+msgstr "圧縮ミドルウェアを有効にするかどうか。"
 
 #: ../../topics/downloader-middleware.rst:715
 msgid "HttpProxyMiddleware"
-msgstr ""
+msgstr "HttpProxyMiddleware"
 
 #: ../../topics/downloader-middleware.rst:724
 msgid ""
 "This middleware sets the HTTP proxy to use for requests, by setting the "
 "``proxy`` meta value for :class:`~scrapy.http.Request` objects."
 msgstr ""
+"このミドルウェアは、 :class:`~scrapy.http.Request` オブジェクトに ``proxy`` "
+"メタ値を設定することにより、リクエストに使用するHTTPプロキシを設定します。"
 
 #: ../../topics/downloader-middleware.rst:727
+#, fuzzy
+#| msgid ""
+#| "Like the Python standard library modules `urllib`_ and `urllib2`_, it "
+#| "obeys the following environment variables:"
 msgid ""
-"Like the Python standard library module :mod:`urllib.request`, it obeys "
-"the following environment variables:"
+"Like the Python standard library module :mod:`urllib.request`, it obeys the "
+"following environment variables:"
 msgstr ""
+"Python標準ライブラリモジュール `urllib`_ および `urllib2`_ と同様に、以下の環"
+"境変数に従います:"
 
 #: ../../topics/downloader-middleware.rst:730
 msgid "``http_proxy``"
-msgstr ""
+msgstr "``http_proxy``"
 
 #: ../../topics/downloader-middleware.rst:731
 msgid "``https_proxy``"
-msgstr ""
+msgstr "``https_proxy``"
 
 #: ../../topics/downloader-middleware.rst:732
 msgid "``no_proxy``"
-msgstr ""
+msgstr "``no_proxy``"
 
 #: ../../topics/downloader-middleware.rst:734
 msgid ""
 "You can also set the meta key ``proxy`` per-request, to a value like "
-"``http://some_proxy_server:port`` or "
-"``http://username:password@some_proxy_server:port``. Keep in mind this "
-"value will take precedence over ``http_proxy``/``https_proxy`` "
-"environment variables, and it will also ignore ``no_proxy`` environment "
-"variable."
+"``http://some_proxy_server:port`` or ``http://username:"
+"password@some_proxy_server:port``. Keep in mind this value will take "
+"precedence over ``http_proxy``/``https_proxy`` environment variables, and it "
+"will also ignore ``no_proxy`` environment variable."
 msgstr ""
+"リクエストごとにメタ・キー ``proxy`` を ``http://some_proxy_server:port`` ま"
+"たは ``http://username:password@some_proxy_server:port`` のような値に設定する"
+"こともできます。この値は ``http_proxy`` / ``https_proxy`` 環境変数よりも優先"
+"され、また ``no_proxy`` 環境変数も無視することに注意してください。"
 
 #: ../../topics/downloader-middleware.rst:740
 msgid "RedirectMiddleware"
-msgstr ""
+msgstr "RedirectMiddleware"
 
 #: ../../topics/downloader-middleware.rst:747
-msgid "This middleware handles redirection of requests based on response status."
+msgid ""
+"This middleware handles redirection of requests based on response status."
 msgstr ""
+"このミドルウェアは、レスポンス・ステータスに基づいてリクエストのリダイレクト"
+"を処理します。"
 
 #: ../../topics/downloader-middleware.rst:751
 msgid ""
 "The urls which the request goes through (while being redirected) can be "
-"found in the ``redirect_urls`` :attr:`Request.meta "
-"<scrapy.http.Request.meta>` key."
+"found in the ``redirect_urls`` :attr:`Request.meta <scrapy.http.Request."
+"meta>` key."
 msgstr ""
+"(リダイレクト中に)リクエストが通過するURLは :attr:`Request.meta <scrapy.http."
+"Request.meta>` の ``redirect_urls`` キーで見つけることができます。"
 
 #: ../../topics/downloader-middleware.rst:756
 msgid ""
-"The reason behind each redirect in :reqmeta:`redirect_urls` can be found "
-"in the ``redirect_reasons`` :attr:`Request.meta "
-"<scrapy.http.Request.meta>` key. For example: ``[301, 302, 307, 'meta "
-"refresh']``."
+"The reason behind each redirect in :reqmeta:`redirect_urls` can be found in "
+"the ``redirect_reasons`` :attr:`Request.meta <scrapy.http.Request.meta>` "
+"key. For example: ``[301, 302, 307, 'meta refresh']``."
 msgstr ""
+":reqmeta:`redirect_urls` の各リダイレクトの理由は、 :attr:`Request.meta "
+"<scrapy.http.Request.meta>` の ``redirect_reasons`` キーにあります。例: "
+"``[301, 302, 307, 'meta refresh']``"
 
 #: ../../topics/downloader-middleware.rst:760
 msgid ""
 "The format of a reason depends on the middleware that handled the "
-"corresponding redirect. For example, :class:`RedirectMiddleware` "
-"indicates the triggering response status code as an integer, while "
-":class:`MetaRefreshMiddleware` always uses the ``'meta refresh'`` string "
-"as reason."
+"corresponding redirect. For example, :class:`RedirectMiddleware` indicates "
+"the triggering response status code as an integer, while :class:"
+"`MetaRefreshMiddleware` always uses the ``'meta refresh'`` string as reason."
 msgstr ""
+"理由の形式は、対応するリダイレクトを処理したミドルウェアによって異なります。 "
+"たとえば、 :class:`RedirectMiddleware` はトリガーとなったレスポンス・ステー"
+"タ・スコードを整数で示しますが、 :class:`MetaRefreshMiddleware` は常に "
+"``'meta refresh'`` 文字列を理由として使用します。"
 
 #: ../../topics/downloader-middleware.rst:765
 msgid ""
 "The :class:`RedirectMiddleware` can be configured through the following "
 "settings (see the settings documentation for more info):"
 msgstr ""
+":class:`RedirectMiddleware` は次の設定で設定できます(詳細については設定ドキュ"
+"メントを参照してください):"
 
 #: ../../topics/downloader-middleware.rst:768
 msgid ":setting:`REDIRECT_ENABLED`"
-msgstr ""
+msgstr ":setting:`REDIRECT_ENABLED`"
 
 #: ../../topics/downloader-middleware.rst:769
 msgid ":setting:`REDIRECT_MAX_TIMES`"
-msgstr ""
+msgstr ":setting:`REDIRECT_MAX_TIMES`"
 
 #: ../../topics/downloader-middleware.rst:773
 msgid ""
-"If :attr:`Request.meta <scrapy.http.Request.meta>` has ``dont_redirect`` "
-"key set to True, the request will be ignored by this middleware."
+"If :attr:`Request.meta <scrapy.http.Request.meta>` has ``dont_redirect`` key "
+"set to True, the request will be ignored by this middleware."
 msgstr ""
+":attr:`Request.meta <scrapy.http.Request.meta>` の ``dont_redirect`` キーが"
+"Trueに設定されている場合、リクエストはこのミドルウェアによって無視されます。"
 
 #: ../../topics/downloader-middleware.rst:776
 msgid ""
 "If you want to handle some redirect status codes in your spider, you can "
 "specify these in the ``handle_httpstatus_list`` spider attribute."
 msgstr ""
+"スパイダーでいくつかのリダイレクト・ステータス・コードを処理したい場合、これ"
+"らを ``handle_httpstatus_list`` スパイダー属性で指定できます。"
 
 #: ../../topics/downloader-middleware.rst:779
 msgid ""
 "For example, if you want the redirect middleware to ignore 301 and 302 "
 "responses (and pass them through to your spider) you can do this::"
 msgstr ""
+"たとえば、リダイレクト・ミドルウェアで、301と302レスポンスを無視する(およびそ"
+"れらをスパイダーに渡す)場合は、以下のようにします::"
 
 #: ../../topics/downloader-middleware.rst:785
 msgid ""
-"The ``handle_httpstatus_list`` key of :attr:`Request.meta "
-"<scrapy.http.Request.meta>` can also be used to specify which response "
-"codes to allow on a per-request basis. You can also set the meta key "
-"``handle_httpstatus_all`` to ``True`` if you want to allow any response "
-"code for a request."
+"The ``handle_httpstatus_list`` key of :attr:`Request.meta <scrapy.http."
+"Request.meta>` can also be used to specify which response codes to allow on "
+"a per-request basis. You can also set the meta key ``handle_httpstatus_all`` "
+"to ``True`` if you want to allow any response code for a request."
 msgstr ""
+":attr:`Request.meta <scrapy.http.Request.meta>` の "
+"``handle_httpstatus_list`` キーは、リクエストごとに許可するレスポンス・コード"
+"を指定するためにも使用できます。リクエストに対するレスポンス・コードを許可し"
+"たい場合、メタ・キー ``handle_httpstatus_all`` を ``True`` に設定することもで"
+"きます。"
 
 #: ../../topics/downloader-middleware.rst:793
 msgid "RedirectMiddleware settings"
-msgstr ""
+msgstr "RedirectMiddleware 設定"
 
 #: ../../topics/downloader-middleware.rst:798
 msgid "REDIRECT_ENABLED"
-msgstr ""
+msgstr "REDIRECT_ENABLED"
 
 #: ../../topics/downloader-middleware.rst:802
 msgid "Whether the Redirect middleware will be enabled."
-msgstr ""
+msgstr "リダイレクト・ミドルウェアを有効にするかどうか。"
 
 #: ../../topics/downloader-middleware.rst:807
 msgid "REDIRECT_MAX_TIMES"
-msgstr ""
+msgstr "REDIRECT_MAX_TIMES"
 
 #: ../../topics/downloader-middleware.rst:809
 msgid "Default: ``20``"
-msgstr ""
+msgstr "デフォルト: ``20``"
 
 #: ../../topics/downloader-middleware.rst:811
+#, fuzzy
+#| msgid ""
+#| "The maximum number of redirections that will be followed for a single "
+#| "request."
 msgid ""
 "The maximum number of redirections that will be followed for a single "
 "request. After this maximum, the request's response is returned as is."
-msgstr ""
+msgstr "1回のリクエストで追跡されるリダイレクトの最大数。"
 
 #: ../../topics/downloader-middleware.rst:815
 msgid "MetaRefreshMiddleware"
-msgstr ""
+msgstr "MetaRefreshMiddleware"
 
 #: ../../topics/downloader-middleware.rst:819
 msgid ""
-"This middleware handles redirection of requests based on meta-refresh "
-"html tag."
+"This middleware handles redirection of requests based on meta-refresh html "
+"tag."
 msgstr ""
+"このミドルウェアは、メタ・リフレッシュhtmlタグに基づいてリクエストのリダイレ"
+"クトを処理します。"
 
 #: ../../topics/downloader-middleware.rst:821
 msgid ""
-"The :class:`MetaRefreshMiddleware` can be configured through the "
-"following settings (see the settings documentation for more info):"
+"The :class:`MetaRefreshMiddleware` can be configured through the following "
+"settings (see the settings documentation for more info):"
 msgstr ""
+":class:`MetaRefreshMiddleware` は次の設定で設定できます(詳細については設定ド"
+"キュメントを参照してください):"
 
 #: ../../topics/downloader-middleware.rst:824
 msgid ":setting:`METAREFRESH_ENABLED`"
-msgstr ""
+msgstr ":setting:`METAREFRESH_ENABLED`"
 
 #: ../../topics/downloader-middleware.rst:825
 msgid ":setting:`METAREFRESH_IGNORE_TAGS`"
-msgstr ""
+msgstr ":setting:`METAREFRESH_IGNORE_TAGS`"
 
 #: ../../topics/downloader-middleware.rst:826
 msgid ":setting:`METAREFRESH_MAXDELAY`"
-msgstr ""
+msgstr ":setting:`METAREFRESH_MAXDELAY`"
 
 #: ../../topics/downloader-middleware.rst:828
 msgid ""
-"This middleware obey :setting:`REDIRECT_MAX_TIMES` setting, "
-":reqmeta:`dont_redirect`, :reqmeta:`redirect_urls` and "
-":reqmeta:`redirect_reasons` request meta keys as described for "
-":class:`RedirectMiddleware`"
+"This middleware obey :setting:`REDIRECT_MAX_TIMES` setting, :reqmeta:"
+"`dont_redirect`, :reqmeta:`redirect_urls` and :reqmeta:`redirect_reasons` "
+"request meta keys as described for :class:`RedirectMiddleware`"
 msgstr ""
+"このミドルウェアは、 :class:`RedirectMiddleware` で説明されているように、 ::"
+"setting:`REDIRECT_MAX_TIMES` 設定と :reqmeta:`dont_redirect` リクエスト・メ"
+"タ・キーと :reqmeta:`redirect_urls` リクエスト・メタ・キーと :reqmeta:"
+"`redirect_reasons` リクエスト・メタ・キーに従います。"
 
 #: ../../topics/downloader-middleware.rst:834
 msgid "MetaRefreshMiddleware settings"
-msgstr ""
+msgstr "MetaRefreshMiddleware 設定"
 
 #: ../../topics/downloader-middleware.rst:839
 msgid "METAREFRESH_ENABLED"
-msgstr ""
+msgstr "METAREFRESH_ENABLED"
 
 #: ../../topics/downloader-middleware.rst:843
 msgid "Whether the Meta Refresh middleware will be enabled."
-msgstr ""
+msgstr "メタ・リフレッシュ・ミドルウェアを有効にするかどうか。"
 
 #: ../../topics/downloader-middleware.rst:848
 msgid "METAREFRESH_IGNORE_TAGS"
-msgstr ""
+msgstr "METAREFRESH_IGNORE_TAGS"
 
 #: ../../topics/downloader-middleware.rst:852
 msgid "Meta tags within these tags are ignored."
-msgstr ""
+msgstr "これらのタグ内のメタ・タグは無視されます。"
 
 #: ../../topics/downloader-middleware.rst:854
 msgid ""
@@ -1191,115 +1479,132 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:861
 msgid "METAREFRESH_MAXDELAY"
-msgstr ""
+msgstr "METAREFRESH_MAXDELAY"
 
 #: ../../topics/downloader-middleware.rst:863
 msgid "Default: ``100``"
-msgstr ""
+msgstr "デフォルト: ``100``"
 
 #: ../../topics/downloader-middleware.rst:865
 msgid ""
-"The maximum meta-refresh delay (in seconds) to follow the redirection. "
-"Some sites use meta-refresh for redirecting to a session expired page, so"
-" we restrict automatic redirection to the maximum delay."
+"The maximum meta-refresh delay (in seconds) to follow the redirection. Some "
+"sites use meta-refresh for redirecting to a session expired page, so we "
+"restrict automatic redirection to the maximum delay."
 msgstr ""
+"リダイレクト後の最大メタリフレッシュ遅延(秒単位)。一部のサイトでは、セッショ"
+"ンの期限切れページへのリダイレクトにメタ・リフレッシュを使用しているため、自"
+"動リダイレクトを最大遅延に制限しています。"
 
 #: ../../topics/downloader-middleware.rst:870
 msgid "RetryMiddleware"
-msgstr ""
+msgstr "RetryMiddleware"
 
 #: ../../topics/downloader-middleware.rst:877
 msgid ""
 "A middleware to retry failed requests that are potentially caused by "
 "temporary problems such as a connection timeout or HTTP 500 error."
 msgstr ""
+"接続タイムアウトやHTTP 500エラーなどの一時的な問題が原因である可能性のある失"
+"敗した要求を再試行するミドルウェア。"
 
 #: ../../topics/downloader-middleware.rst:880
 msgid ""
-"Failed pages are collected on the scraping process and rescheduled at the"
-" end, once the spider has finished crawling all regular (non failed) "
-"pages."
+"Failed pages are collected on the scraping process and rescheduled at the "
+"end, once the spider has finished crawling all regular (non failed) pages."
 msgstr ""
+"スパイダーがすべての通常の(失敗していない)ページのクロールを完了すると、失敗"
+"したページはスクレイピング・プロセスで収集され、最後に再スケジュールされま"
+"す。"
 
 #: ../../topics/downloader-middleware.rst:883
 msgid ""
 "The :class:`RetryMiddleware` can be configured through the following "
 "settings (see the settings documentation for more info):"
 msgstr ""
+":class:`RetryMiddleware` は次の設定で設定できます(詳細については設定ドキュメ"
+"ントを参照):"
 
 #: ../../topics/downloader-middleware.rst:886
 msgid ":setting:`RETRY_ENABLED`"
-msgstr ""
+msgstr ":setting:`RETRY_ENABLED`"
 
 #: ../../topics/downloader-middleware.rst:887
 msgid ":setting:`RETRY_TIMES`"
-msgstr ""
+msgstr ":setting:`RETRY_TIMES`"
 
 #: ../../topics/downloader-middleware.rst:888
 msgid ":setting:`RETRY_HTTP_CODES`"
-msgstr ""
+msgstr ":setting:`RETRY_HTTP_CODES`"
 
 #: ../../topics/downloader-middleware.rst:892
 msgid ""
-"If :attr:`Request.meta <scrapy.http.Request.meta>` has ``dont_retry`` key"
-" set to True, the request will be ignored by this middleware."
+"If :attr:`Request.meta <scrapy.http.Request.meta>` has ``dont_retry`` key "
+"set to True, the request will be ignored by this middleware."
 msgstr ""
+":attr:`Request.meta <scrapy.http.Request.meta>` の ``dont_retry`` キーがTrue"
+"に設定されている場合、リクエストはこのミドルウェアによって無視されます。"
 
 #: ../../topics/downloader-middleware.rst:895
 msgid ""
-"To retry requests from a spider callback, you can use the "
-":func:`get_retry_request` function:"
+"To retry requests from a spider callback, you can use the :func:"
+"`get_retry_request` function:"
 msgstr ""
 
-#: of scrapy.downloadermiddlewares.retry.get_retry_request:1
+#: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
+#: scrapy.downloadermiddlewares.retry.get_retry_request:1
 msgid ""
 "Returns a new :class:`~scrapy.Request` object to retry the specified "
-"request, or ``None`` if retries of the specified request have been "
-"exhausted."
+"request, or ``None`` if retries of the specified request have been exhausted."
 msgstr ""
 
-#: of scrapy.downloadermiddlewares.retry.get_retry_request:5
+#: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
+#: scrapy.downloadermiddlewares.retry.get_retry_request:5
 msgid ""
 "For example, in a :class:`~scrapy.Spider` callback, you could use it as "
 "follows::"
 msgstr ""
 
-#: of scrapy.downloadermiddlewares.retry.get_retry_request:17
+#: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
+#: scrapy.downloadermiddlewares.retry.get_retry_request:17
 msgid ""
 "*spider* is the :class:`~scrapy.Spider` instance which is asking for the "
-"retry request. It is used to access the :ref:`settings <topics-settings>`"
-" and :ref:`stats <topics-stats>`, and to provide extra logging context "
-"(see :func:`logging.debug`)."
+"retry request. It is used to access the :ref:`settings <topics-settings>` "
+"and :ref:`stats <topics-stats>`, and to provide extra logging context (see :"
+"func:`logging.debug`)."
 msgstr ""
 
-#: of scrapy.downloadermiddlewares.retry.get_retry_request:22
+#: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
+#: scrapy.downloadermiddlewares.retry.get_retry_request:22
 msgid ""
 "*reason* is a string or an :class:`Exception` object that indicates the "
-"reason why the request needs to be retried. It is used to name retry "
-"stats."
+"reason why the request needs to be retried. It is used to name retry stats."
 msgstr ""
 
-#: of scrapy.downloadermiddlewares.retry.get_retry_request:25
+#: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
+#: scrapy.downloadermiddlewares.retry.get_retry_request:25
 msgid ""
-"*max_retry_times* is a number that determines the maximum number of times"
-" that *request* can be retried. If not specified or ``None``, the number "
-"is read from the :reqmeta:`max_retry_times` meta key of the request. If "
-"the :reqmeta:`max_retry_times` meta key is not defined or ``None``, the "
-"number is read from the :setting:`RETRY_TIMES` setting."
+"*max_retry_times* is a number that determines the maximum number of times "
+"that *request* can be retried. If not specified or ``None``, the number is "
+"read from the :reqmeta:`max_retry_times` meta key of the request. If the :"
+"reqmeta:`max_retry_times` meta key is not defined or ``None``, the number is "
+"read from the :setting:`RETRY_TIMES` setting."
 msgstr ""
 
-#: of scrapy.downloadermiddlewares.retry.get_retry_request:31
+#: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
+#: scrapy.downloadermiddlewares.retry.get_retry_request:31
 msgid ""
-"*priority_adjust* is a number that determines how the priority of the new"
-" request changes in relation to *request*. If not specified, the number "
-"is read from the :setting:`RETRY_PRIORITY_ADJUST` setting."
+"*priority_adjust* is a number that determines how the priority of the new "
+"request changes in relation to *request*. If not specified, the number is "
+"read from the :setting:`RETRY_PRIORITY_ADJUST` setting."
 msgstr ""
 
-#: of scrapy.downloadermiddlewares.retry.get_retry_request:35
+#: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
+#: scrapy.downloadermiddlewares.retry.get_retry_request:35
 msgid "*logger* is the logging.Logger object to be used when logging messages"
 msgstr ""
 
-#: of scrapy.downloadermiddlewares.retry.get_retry_request:37
+#: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
+#: scrapy.downloadermiddlewares.retry.get_retry_request:37
 msgid ""
 "*stats_base_key* is a string to be used as the base key for the retry-"
 "related job stats"
@@ -1307,65 +1612,75 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:901
 msgid "RetryMiddleware Settings"
-msgstr ""
+msgstr "RetryMiddleware 設定"
 
 #: ../../topics/downloader-middleware.rst:906
 msgid "RETRY_ENABLED"
-msgstr ""
+msgstr "RETRY_ENABLED"
 
 #: ../../topics/downloader-middleware.rst:910
 msgid "Whether the Retry middleware will be enabled."
-msgstr ""
+msgstr "再試行ミドルウェアを有効にするかどうか。"
 
 #: ../../topics/downloader-middleware.rst:915
 msgid "RETRY_TIMES"
-msgstr ""
+msgstr "RETRY_TIMES"
 
 #: ../../topics/downloader-middleware.rst:917
 msgid "Default: ``2``"
-msgstr ""
+msgstr "デフォルト: ``2``"
 
 #: ../../topics/downloader-middleware.rst:919
 msgid "Maximum number of times to retry, in addition to the first download."
-msgstr ""
+msgstr "(最初のダウンロードに加えて)再試行する最大回数。"
 
 #: ../../topics/downloader-middleware.rst:921
 msgid ""
-"Maximum number of retries can also be specified per-request using "
-":reqmeta:`max_retry_times` attribute of :attr:`Request.meta "
-"<scrapy.http.Request.meta>`. When initialized, the "
-":reqmeta:`max_retry_times` meta key takes higher precedence over the "
-":setting:`RETRY_TIMES` setting."
+"Maximum number of retries can also be specified per-request using :reqmeta:"
+"`max_retry_times` attribute of :attr:`Request.meta <scrapy.http.Request."
+"meta>`. When initialized, the :reqmeta:`max_retry_times` meta key takes "
+"higher precedence over the :setting:`RETRY_TIMES` setting."
 msgstr ""
+"再試行の最大回数は、 :attr:`Request.meta <scrapy.http.Request.meta>` の :"
+"reqmeta:`max_retry_times` 属性を使用してリクエストごとに指定することもできま"
+"す。初期化されると、 :reqmeta:`max_retry_times` メタ・キーは :setting:"
+"`RETRY_TIMES` 設定よりも優先されます。"
 
 #: ../../topics/downloader-middleware.rst:929
 msgid "RETRY_HTTP_CODES"
-msgstr ""
+msgstr "RETRY_HTTP_CODES"
 
 #: ../../topics/downloader-middleware.rst:931
 msgid "Default: ``[500, 502, 503, 504, 522, 524, 408, 429]``"
-msgstr ""
+msgstr "デフォルト: ``[500, 502, 503, 504, 522, 524, 408, 429]``"
 
 #: ../../topics/downloader-middleware.rst:933
 msgid ""
 "Which HTTP response codes to retry. Other errors (DNS lookup issues, "
 "connections lost, etc) are always retried."
 msgstr ""
+"再試行するHTTPレスポンス・コード。その他のエラー(DNSルックアップの問題、接続"
+"の切断など)は常に再試行されます。"
 
 #: ../../topics/downloader-middleware.rst:936
 msgid ""
-"In some cases you may want to add 400 to :setting:`RETRY_HTTP_CODES` "
-"because it is a common code used to indicate server overload. It is not "
-"included by default because HTTP specs say so."
+"In some cases you may want to add 400 to :setting:`RETRY_HTTP_CODES` because "
+"it is a common code used to indicate server overload. It is not included by "
+"default because HTTP specs say so."
 msgstr ""
+"場合によっては、400を :setting:`RETRY_HTTP_CODES` に追加することもできます。"
+"これは、サーバーの過負荷を示すために使用される一般的なコードだからです。HTTP"
+"の仕様ではそうなっているため、デフォルトでは含まれていません。"
 
 #: ../../topics/downloader-middleware.rst:943
 msgid "RETRY_PRIORITY_ADJUST"
 msgstr ""
 
 #: ../../topics/downloader-middleware.rst:945
+#, fuzzy
+#| msgid "Default: ``100``"
 msgid "Default: ``-1``"
-msgstr ""
+msgstr "デフォルト: ``100``"
 
 #: ../../topics/downloader-middleware.rst:947
 msgid "Adjust retry request priority relative to original request:"
@@ -1381,66 +1696,86 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:956
 msgid "RobotsTxtMiddleware"
-msgstr ""
+msgstr "RobotsTxtMiddleware"
 
 #: ../../topics/downloader-middleware.rst:963
 msgid ""
-"This middleware filters out requests forbidden by the robots.txt "
-"exclusion standard."
+"This middleware filters out requests forbidden by the robots.txt exclusion "
+"standard."
 msgstr ""
+"このミドルウェアは、robots.txt除外標準で禁止されているリクエストを除外しま"
+"す。"
 
 #: ../../topics/downloader-middleware.rst:966
 msgid ""
-"To make sure Scrapy respects robots.txt make sure the middleware is "
-"enabled and the :setting:`ROBOTSTXT_OBEY` setting is enabled."
+"To make sure Scrapy respects robots.txt make sure the middleware is enabled "
+"and the :setting:`ROBOTSTXT_OBEY` setting is enabled."
 msgstr ""
+"Scrapyがrobots.txtを尊重するようにするには、ミドルウェアが有効になっており、"
+"かつ、 :setting:`ROBOTSTXT_OBEY` 設定が有効になっていることを確認してくださ"
+"い。"
 
 #: ../../topics/downloader-middleware.rst:969
 msgid ""
-"The :setting:`ROBOTSTXT_USER_AGENT` setting can be used to specify the "
-"user agent string to use for matching in the robots.txt_ file. If it is "
-"``None``, the User-Agent header you are sending with the request or the "
-":setting:`USER_AGENT` setting (in that order) will be used for "
-"determining the user agent to use in the robots.txt_ file."
+"The :setting:`ROBOTSTXT_USER_AGENT` setting can be used to specify the user "
+"agent string to use for matching in the robots.txt_ file. If it is ``None``, "
+"the User-Agent header you are sending with the request or the :setting:"
+"`USER_AGENT` setting (in that order) will be used for determining the user "
+"agent to use in the robots.txt_ file."
 msgstr ""
+":setting:`ROBOTSTXT_USER_AGENT` 設定を使用して、robots.txt_ ファイルでの照合"
+"に使用するユーザー・エージェント文字列を指定できます。  ``None`` の場合、リク"
+"エストで送信しているUser-Agentヘッダーまたは :setting:`USER_AGENT` 設定(この"
+"順序で)は、robots.txt_ ファイルで使用するユーザー・エージェントを決定するため"
+"に使用されます。"
 
 #: ../../topics/downloader-middleware.rst:975
 msgid "This middleware has to be combined with a robots.txt_ parser."
-msgstr ""
+msgstr "このミドルウェアは robots.txt_ パーサと組み合わせる必要があります。"
 
 #: ../../topics/downloader-middleware.rst:977
 msgid "Scrapy ships with support for the following robots.txt_ parsers:"
-msgstr ""
+msgstr "Scrapyには、次の robots.txt_ パーサがサポートされています:"
 
 #: ../../topics/downloader-middleware.rst:979
+#, fuzzy
+#| msgid ":ref:`Protego <protego-parser>`"
 msgid ":ref:`Protego <protego-parser>` (default)"
-msgstr ""
+msgstr ":ref:`Protego <protego-parser>`"
 
 #: ../../topics/downloader-middleware.rst:980
+#, fuzzy
+#| msgid ":ref:`RobotFileParser <python-robotfileparser>` (default)"
 msgid ":ref:`RobotFileParser <python-robotfileparser>`"
-msgstr ""
+msgstr ":ref:`RobotFileParser <python-robotfileparser>` (デフォルト)"
 
 #: ../../topics/downloader-middleware.rst:981
 msgid ":ref:`Reppy <reppy-parser>`"
-msgstr ""
+msgstr ":ref:`Reppy <reppy-parser>`"
 
 #: ../../topics/downloader-middleware.rst:982
 msgid ":ref:`Robotexclusionrulesparser <rerp-parser>`"
-msgstr ""
+msgstr ":ref:`Robotexclusionrulesparser <rerp-parser>`"
 
 #: ../../topics/downloader-middleware.rst:984
 msgid ""
-"You can change the robots.txt_ parser with the "
-":setting:`ROBOTSTXT_PARSER` setting. Or you can also :ref:`implement "
-"support for a new parser <support-for-new-robots-parser>`."
+"You can change the robots.txt_ parser with the :setting:`ROBOTSTXT_PARSER` "
+"setting. Or you can also :ref:`implement support for a new parser <support-"
+"for-new-robots-parser>`."
 msgstr ""
+"robots.txt_ パーサは、 :setting:`ROBOTSTXT_PARSER` 設定で変更できます。また"
+"は、 :ref:`新しいパーサ<support-for-new-robots-parser>` のサポートを実装する"
+"こともできます。"
 
 #: ../../topics/downloader-middleware.rst:989
 msgid ""
 "If :attr:`Request.meta <scrapy.http.Request.meta>` has "
-"``dont_obey_robotstxt`` key set to True the request will be ignored by "
-"this middleware even if :setting:`ROBOTSTXT_OBEY` is enabled."
+"``dont_obey_robotstxt`` key set to True the request will be ignored by this "
+"middleware even if :setting:`ROBOTSTXT_OBEY` is enabled."
 msgstr ""
+":attr:`Request.meta <scrapy.http.Request.meta>` の ``dont_obey_robotstxt`` "
+"キーがTrueに設定されている場合、 :setting:`ROBOTSTXT_OBEY` が有効になっていて"
+"も、このミドルウェアは要求を無視します。"
 
 #: ../../topics/downloader-middleware.rst:994
 msgid "Parsers vary in several aspects:"
@@ -1460,26 +1795,31 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:1002
 msgid ""
-"Usage of `length based rule "
-"<https://developers.google.com/search/reference/robots_txt#order-of-"
-"precedence-for-group-member-lines>`_: in particular for ``Allow`` and "
-"``Disallow`` directives, where the most specific rule based on the length"
-" of the path trumps the less specific (shorter) rule"
+"Usage of `length based rule <https://developers.google.com/search/reference/"
+"robots_txt#order-of-precedence-for-group-member-lines>`_: in particular for "
+"``Allow`` and ``Disallow`` directives, where the most specific rule based on "
+"the length of the path trumps the less specific (shorter) rule"
 msgstr ""
 
 #: ../../topics/downloader-middleware.rst:1007
 msgid ""
-"Performance comparison of different parsers is available at `the "
-"following link <https://anubhavp28.github.io/gsoc-weekly-checkin-12/>`_."
+"Performance comparison of different parsers is available at `the following "
+"link <https://anubhavp28.github.io/gsoc-weekly-checkin-12/>`_."
 msgstr ""
 
 #: ../../topics/downloader-middleware.rst:1013
 msgid "Protego parser"
-msgstr ""
+msgstr "Protegoパーサ"
 
 #: ../../topics/downloader-middleware.rst:1015
+#, fuzzy
+#| msgid ""
+#| "Install `Protego <https://github.com/scrapy/protego>`_ by running ``pip "
+#| "install protego``"
 msgid "Based on `Protego <https://github.com/scrapy/protego>`_:"
 msgstr ""
+"``pip install protego`` を実行して `Protego <https://github.com/scrapy/"
+"protego>`_ をインストールします"
 
 #: ../../topics/downloader-middleware.rst:1017
 #: ../../topics/downloader-middleware.rst:1083
@@ -1488,8 +1828,8 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:1019
 msgid ""
-"is compliant with `Google's Robots.txt Specification "
-"<https://developers.google.com/search/reference/robots_txt>`_"
+"is compliant with `Google's Robots.txt Specification <https://developers."
+"google.com/search/reference/robots_txt>`_"
 msgstr ""
 
 #: ../../topics/downloader-middleware.rst:1022
@@ -1509,7 +1849,7 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:1031
 msgid "RobotFileParser"
-msgstr ""
+msgstr "RobotFileParser"
 
 #: ../../topics/downloader-middleware.rst:1033
 msgid "Based on :class:`~urllib.robotparser.RobotFileParser`:"
@@ -1522,10 +1862,19 @@ msgstr ""
 #: ../../topics/downloader-middleware.rst:1037
 #: ../../topics/downloader-middleware.rst:1060
 #: ../../topics/downloader-middleware.rst:1085
+#, fuzzy
+#| msgid ""
+#| "`Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ is "
+#| "fully compliant with `Martijn Koster's 1996 draft specification <http://"
+#| "www.robotstxt.org/norobots-rfc.txt>`_, with support for wildcard matching."
 msgid ""
-"is compliant with `Martijn Koster's 1996 draft specification "
-"<https://www.robotstxt.org/norobots-rfc.txt>`_"
+"is compliant with `Martijn Koster's 1996 draft specification <https://www."
+"robotstxt.org/norobots-rfc.txt>`_"
 msgstr ""
+"`Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ は、 "
+"`Martijn Koster's 1996 draft specification <http://www.robotstxt.org/"
+"norobots-rfc.txt>`_ に完全に準拠しており、サポートされています。ワイルド・"
+"カード・マッチング用です。"
 
 #: ../../topics/downloader-middleware.rst:1040
 msgid "lacks support for wildcard matching"
@@ -1538,25 +1887,33 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:1044
 msgid ""
-"It is faster than Protego and backward-compatible with versions of Scrapy"
-" before 1.8.0."
+"It is faster than Protego and backward-compatible with versions of Scrapy "
+"before 1.8.0."
 msgstr ""
 
 #: ../../topics/downloader-middleware.rst:1046
 msgid "In order to use this parser, set:"
-msgstr ""
+msgstr "このパーサーを使用するには、以下を設定します:"
 
 #: ../../topics/downloader-middleware.rst:1048
 msgid ":setting:`ROBOTSTXT_PARSER` to ``scrapy.robotstxt.PythonRobotParser``"
 msgstr ""
+":setting:`ROBOTSTXT_PARSER` 設定に ``scrapy.robotstxt.PythonRobotParser`` を"
+"セット"
 
 #: ../../topics/downloader-middleware.rst:1053
 msgid "Reppy parser"
-msgstr ""
+msgstr "Reppyパーサ"
 
 #: ../../topics/downloader-middleware.rst:1055
+#, fuzzy
+#| msgid ""
+#| "Install `Reppy <https://github.com/seomoz/reppy/>`_ by running ``pip "
+#| "install reppy``"
 msgid "Based on `Reppy <https://github.com/seomoz/reppy/>`_:"
 msgstr ""
+"``pip install reppy`` を実行して `Reppy <https://github.com/seomoz/reppy/>`_ "
+"をインストールします"
 
 #: ../../topics/downloader-middleware.rst:1057
 msgid ""
@@ -1571,168 +1928,319 @@ msgstr ""
 #: ../../topics/downloader-middleware.rst:1069
 #: ../../topics/downloader-middleware.rst:1092
 msgid "In order to use this parser:"
-msgstr ""
+msgstr "このパーサーを使用するには:"
 
 #: ../../topics/downloader-middleware.rst:1071
 msgid ""
-"Install `Reppy <https://github.com/seomoz/reppy/>`_ by running ``pip "
-"install reppy``"
+"Install `Reppy <https://github.com/seomoz/reppy/>`_ by running ``pip install "
+"reppy``"
 msgstr ""
+"``pip install reppy`` を実行して `Reppy <https://github.com/seomoz/reppy/>`_ "
+"をインストールします"
 
 #: ../../topics/downloader-middleware.rst:1073
 msgid ""
-"Set :setting:`ROBOTSTXT_PARSER` setting to "
-"``scrapy.robotstxt.ReppyRobotParser``"
+"Set :setting:`ROBOTSTXT_PARSER` setting to ``scrapy.robotstxt."
+"ReppyRobotParser``"
 msgstr ""
+":setting:`ROBOTSTXT_PARSER` 設定に ``scrapy.robotstxt.ReppyRobotParser`` を"
+"セットします"
 
 #: ../../topics/downloader-middleware.rst:1079
 msgid "Robotexclusionrulesparser"
-msgstr ""
+msgstr "Robotexclusionrulesparser"
 
 #: ../../topics/downloader-middleware.rst:1081
+#, fuzzy
+#| msgid ""
+#| "Install `Robotexclusionrulesparser <http://nikitathespider.com/python/"
+#| "rerp/>`_ by running ``pip install robotexclusionrulesparser``"
 msgid ""
-"Based on `Robotexclusionrulesparser "
-"<http://nikitathespider.com/python/rerp/>`_:"
+"Based on `Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/"
+">`_:"
 msgstr ""
+"``pip install robotexclusionrulesparser`` を実行して、 "
+"`Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ をイン"
+"ストールします"
 
 #: ../../topics/downloader-middleware.rst:1094
 msgid ""
-"Install `Robotexclusionrulesparser "
-"<http://nikitathespider.com/python/rerp/>`_ by running ``pip install "
-"robotexclusionrulesparser``"
+"Install `Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/"
+">`_ by running ``pip install robotexclusionrulesparser``"
 msgstr ""
+"``pip install robotexclusionrulesparser`` を実行して、 "
+"`Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ をイン"
+"ストールします"
 
 #: ../../topics/downloader-middleware.rst:1097
 msgid ""
-"Set :setting:`ROBOTSTXT_PARSER` setting to "
-"``scrapy.robotstxt.RerpRobotParser``"
+"Set :setting:`ROBOTSTXT_PARSER` setting to ``scrapy.robotstxt."
+"RerpRobotParser``"
 msgstr ""
+":setting:`ROBOTSTXT_PARSER` 設定に ``scrapy.robotstxt.RerpRobotParser`` を"
+"セットします"
 
 #: ../../topics/downloader-middleware.rst:1103
 msgid "Implementing support for a new parser"
-msgstr ""
+msgstr "新しいパーサのサポートの実装"
 
 #: ../../topics/downloader-middleware.rst:1105
 msgid ""
-"You can implement support for a new robots.txt_ parser by subclassing the"
-" abstract base class :class:`~scrapy.robotstxt.RobotParser` and "
-"implementing the methods described below."
+"You can implement support for a new robots.txt_ parser by subclassing the "
+"abstract base class :class:`~scrapy.robotstxt.RobotParser` and implementing "
+"the methods described below."
 msgstr ""
+"抽象基本クラス :class:`~scrapy.robotstxt.RobotParser` をサブクラス化し、以下"
+"に説明するメソッドを実装することにより、新しい robots.txt_ パーサーのサポート"
+"を実装できます。"
 
-#: of scrapy.robotstxt.RobotParser.allowed:1
+#: ../../../scrapy/robotstxt.py:docstring of
+#: scrapy.robotstxt.RobotParser.allowed:1
 msgid ""
-"Return ``True`` if  ``user_agent`` is allowed to crawl ``url``, otherwise"
-" return ``False``."
+"Return ``True`` if  ``user_agent`` is allowed to crawl ``url``, otherwise "
+"return ``False``."
 msgstr ""
+"``user_agent`` が ``url`` をクロールできる場合は ``True``を返し、そうでない場"
+"合は ``False`` を返します。"
 
-#: of scrapy.robotstxt.RobotParser.allowed:3
+#: ../../../scrapy/robotstxt.py:docstring of
+#: scrapy.robotstxt.RobotParser.allowed:3
 msgid "Absolute URL"
-msgstr ""
+msgstr "絶対URL"
 
-#: of scrapy.robotstxt.RobotParser.allowed:6
+#: ../../../scrapy/robotstxt.py:docstring of
+#: scrapy.robotstxt.RobotParser.allowed:6
 msgid "User agent"
-msgstr ""
+msgstr "ユーザ・エージェント"
 
-#: of scrapy.robotstxt.RobotParser.from_crawler:1
+#: ../../../scrapy/robotstxt.py:docstring of
+#: scrapy.robotstxt.RobotParser.from_crawler:1
 msgid ""
 "Parse the content of a robots.txt_ file as bytes. This must be a class "
 "method. It must return a new instance of the parser backend."
 msgstr ""
+"robots.txt_ ファイルのコンテンツをbyte型データとして解析します。 これはクラ"
+"ス・メソッドである必要があります。パーサ・バックエンドの新しいインスタンスを"
+"返す必要があります。"
 
-#: of scrapy.robotstxt.RobotParser.from_crawler:4
+#: ../../../scrapy/robotstxt.py:docstring of
+#: scrapy.robotstxt.RobotParser.from_crawler:4
 msgid "crawler which made the request"
-msgstr ""
+msgstr "リクエストを行ったクローラー"
 
-#: of scrapy.robotstxt.RobotParser.from_crawler:7
+#: ../../../scrapy/robotstxt.py:docstring of
+#: scrapy.robotstxt.RobotParser.from_crawler:7
 msgid "content of a robots.txt_ file."
-msgstr ""
+msgstr "robots.txt_ ファイルの内容。"
 
 #: ../../topics/downloader-middleware.rst:1118
 msgid "DownloaderStats"
-msgstr ""
+msgstr "DownloaderStats"
 
 #: ../../topics/downloader-middleware.rst:1125
 msgid ""
-"Middleware that stores stats of all requests, responses and exceptions "
-"that pass through it."
+"Middleware that stores stats of all requests, responses and exceptions that "
+"pass through it."
 msgstr ""
+"通過するすべてのリクエストとレスポンスと例外の統計を保存するミドルウェア。"
 
 #: ../../topics/downloader-middleware.rst:1128
 msgid ""
 "To use this middleware you must enable the :setting:`DOWNLOADER_STATS` "
 "setting."
 msgstr ""
+"このミドルウェアを使用するには、 :setting:`DOWNLOADER_STATS` 設定を有効にする"
+"必要があります。"
 
 #: ../../topics/downloader-middleware.rst:1132
 msgid "UserAgentMiddleware"
-msgstr ""
+msgstr "UserAgentMiddleware"
 
 #: ../../topics/downloader-middleware.rst:1139
 msgid "Middleware that allows spiders to override the default user agent."
 msgstr ""
+"スパイダーがデフォルトのユーザ・エージェントをオーバーライドできるようにする"
+"ミドルウェア。"
 
 #: ../../topics/downloader-middleware.rst:1141
 msgid ""
-"In order for a spider to override the default user agent, its "
-"``user_agent`` attribute must be set."
+"In order for a spider to override the default user agent, its ``user_agent`` "
+"attribute must be set."
 msgstr ""
+"スパイダーがデフォルトのユーザー・エージェントを上書きするには、その "
+"``user_agent`` 属性を設定する必要があります。"
 
 #: ../../topics/downloader-middleware.rst:1147
 msgid "AjaxCrawlMiddleware"
-msgstr ""
+msgstr "AjaxCrawlMiddleware"
 
 #: ../../topics/downloader-middleware.rst:1153
+#, fuzzy
+#| msgid ""
+#| "Middleware that finds 'AJAX crawlable' page variants based on meta-"
+#| "fragment html tag. See https://developers.google.com/webmasters/ajax-"
+#| "crawling/docs/getting-started for more info."
 msgid ""
-"Middleware that finds 'AJAX crawlable' page variants based on meta-"
-"fragment html tag. See https://developers.google.com/search/docs/ajax-"
-"crawling/docs/getting-started for more info."
+"Middleware that finds 'AJAX crawlable' page variants based on meta-fragment "
+"html tag. See https://developers.google.com/search/docs/ajax-crawling/docs/"
+"getting-started for more info."
 msgstr ""
+"メタ・フラグメントHTMLタグに基づいて「AJAXクロール可能な」ページ・バリアント"
+"を検出するミドルウェア。 詳細については、https：//developers.google.com/"
+"webmasters/ajax-crawling/docs/getting-started をご覧ください。"
 
 #: ../../topics/downloader-middleware.rst:1160
 msgid ""
-"Scrapy finds 'AJAX crawlable' pages for URLs like "
-"``'http://example.com/!#foo=bar'`` even without this middleware. "
-"AjaxCrawlMiddleware is necessary when URL doesn't contain ``'!#'``. This "
-"is often a case for 'index' or 'main' website pages."
+"Scrapy finds 'AJAX crawlable' pages for URLs like ``'http://example.com/!"
+"#foo=bar'`` even without this middleware. AjaxCrawlMiddleware is necessary "
+"when URL doesn't contain ``'!#'``. This is often a case for 'index' or "
+"'main' website pages."
 msgstr ""
+"Scrapyは、このミドルウェアがなくても、「 'http://example.com/!#foo=bar'」など"
+"のURLの「AJAXクロール可能な」ページを検出します。AjaxCrawlMiddlewareは、URL"
+"に ``'!#'`` が含まれていない場合に必要です。これは多くの場合、 'index' また"
+"は 'main' のWebサイトページの場合です。"
 
 #: ../../topics/downloader-middleware.rst:1166
 msgid "AjaxCrawlMiddleware Settings"
-msgstr ""
+msgstr "AjaxCrawlMiddleware 設定"
 
 #: ../../topics/downloader-middleware.rst:1171
 msgid "AJAXCRAWL_ENABLED"
-msgstr ""
+msgstr "AJAXCRAWL_ENABLED"
 
 #: ../../topics/downloader-middleware.rst:1175
 msgid ""
-"Whether the AjaxCrawlMiddleware will be enabled. You may want to enable "
-"it for :ref:`broad crawls <topics-broad-crawls>`."
+"Whether the AjaxCrawlMiddleware will be enabled. You may want to enable it "
+"for :ref:`broad crawls <topics-broad-crawls>`."
 msgstr ""
+"AjaxCrawlMiddlewareを有効にするかどうか。 :ref:`broad crawls <topics-broad-"
+"crawls>` に対して有効にすることをお勧めします。"
 
 #: ../../topics/downloader-middleware.rst:1179
 msgid "HttpProxyMiddleware settings"
-msgstr ""
+msgstr "HttpProxyMiddleware 設定"
 
 #: ../../topics/downloader-middleware.rst:1185
 msgid "HTTPPROXY_ENABLED"
-msgstr ""
+msgstr "HTTPPROXY_ENABLED"
 
 #: ../../topics/downloader-middleware.rst:1189
 msgid "Whether or not to enable the :class:`HttpProxyMiddleware`."
-msgstr ""
+msgstr ":class:`HttpProxyMiddleware` を有効にするかどうか。"
 
 #: ../../topics/downloader-middleware.rst:1192
 msgid "HTTPPROXY_AUTH_ENCODING"
-msgstr ""
+msgstr "HTTPPROXY_AUTH_ENCODING"
 
 #: ../../topics/downloader-middleware.rst:1194
 msgid "Default: ``\"latin-1\"``"
-msgstr ""
+msgstr "デフォルト: ``\"latin-1\"``"
 
 #: ../../topics/downloader-middleware.rst:1196
 msgid ""
-"The default encoding for proxy authentication on "
-":class:`HttpProxyMiddleware`."
+"The default encoding for proxy authentication on :class:"
+"`HttpProxyMiddleware`."
 msgstr ""
+":class:`HttpProxyMiddleware` のプロキシ認証のデフォルトのエンコーディング。"
 
+#~ msgid "パラメータ"
+#~ msgstr "パラメータ"
+
+#~ msgid ":ref:`httpcache-storage-leveldb`"
+#~ msgstr ":ref:`httpcache-storage-leveldb`"
+
+#~ msgid "LevelDB storage backend"
+#~ msgstr "LevelDBストレージ・バックエンド"
+
+#~ msgid ""
+#~ "A LevelDB_ storage backend is also available for the HTTP cache "
+#~ "middleware."
+#~ msgstr ""
+#~ "LevelDB_ ストレージ・バックエンドは、HTTPキャッシュ・ミドルウェアでも使用"
+#~ "できます。"
+
+#~ msgid ""
+#~ "This backend is not recommended for development because only one process "
+#~ "can access LevelDB databases at the same time, so you can't run a crawl "
+#~ "and open the scrapy shell in parallel for the same spider."
+#~ msgstr ""
+#~ "LevelDBデータベースに同時にアクセスできるプロセスは1つだけなので、このバッ"
+#~ "クエンドは開発にはお勧めできません。そのため、同じスパイダーに対してクロー"
+#~ "ルを実行してScrapyシェルを並行して開くことはできません。"
+
+#~ msgid ""
+#~ "In order to use this storage backend, install the `LevelDB python "
+#~ "bindings`_ (e.g. ``pip install leveldb``)."
+#~ msgstr ""
+#~ "このストレージ・バックエンドを使用するには、 `LevelDB python bindings`_ を"
+#~ "インストールします(例: ``pip install leveldb`` )。"
+
+#~ msgid "Before 0.11, :setting:`HTTPCACHE_DIR` was used to enable cache."
+#~ msgstr ""
+#~ "バージョン0.11より前は、 :setting:`HTTPCACHE_DIR` がキャッシュを有効にする"
+#~ "のに使われていました。"
+
+#~ msgid "Before 0.11, zero meant cached requests always expire."
+#~ msgstr ""
+#~ "バージョン0.11より前は、ゼロは、キャッシュされたリクエストが常に期限切れに"
+#~ "なることを意味しました。"
+
+#~ msgid "Default: ``['script', 'noscript']``"
+#~ msgstr "デフォルト: ``['script', 'noscript']``"
+
+#~ msgid ""
+#~ "`RobotFileParser <https://docs.python.org/3.7/library/urllib.robotparser."
+#~ "html>`_ is Python's inbuilt robots.txt_ parser. The parser is fully "
+#~ "compliant with `Martijn Koster's 1996 draft specification <http://www."
+#~ "robotstxt.org/norobots-rfc.txt>`_. It lacks support for wildcard "
+#~ "matching. Scrapy uses this parser by default."
+#~ msgstr ""
+#~ "`RobotFileParser <https://docs.python.org/3.7/library/urllib.robotparser."
+#~ "html>`_ はPythonに組み込まれている robots.txt_ パーサです。 パーサは、"
+#~ "`Martijn Kosterの1996年のドラフト仕様 <http://www.robotstxt.org/norobots-"
+#~ "rfc.txt>`_ に完全に準拠しています。 ワイルド・カード・マッチングのサポート"
+#~ "はありません。Scrapyはデフォルトでこのパーサを使用します。"
+
+#~ msgid ""
+#~ "`Reppy <https://github.com/seomoz/reppy/>`_ is a Python wrapper around "
+#~ "`Robots Exclusion Protocol Parser for C++ <https://github.com/seomoz/rep-"
+#~ "cpp>`_. The parser is fully compliant with `Martijn Koster's 1996 draft "
+#~ "specification <http://www.robotstxt.org/norobots-rfc.txt>`_, with support "
+#~ "for wildcard matching. Unlike `RobotFileParser <https://docs.python."
+#~ "org/3.7/library/urllib.robotparser.html>`_ and `Robotexclusionrulesparser "
+#~ "<http://nikitathespider.com/python/rerp/>`_, it uses the length based "
+#~ "rule, in particular for ``Allow`` and ``Disallow`` directives, where the "
+#~ "most specific rule based on the length of the path trumps the less "
+#~ "specific (shorter) rule."
+#~ msgstr ""
+#~ "`Reppy <https://github.com/seomoz/reppy/>`_ は、 `Robots Exclusion "
+#~ "Protocol Parser for C++ <https://github.com/seomoz/rep-cpp>`_ のPythonラッ"
+#~ "パーです。 パーサーは、 `Martijn Koster's 1996 draft specification "
+#~ "<http://www.robotstxt.org/norobots-rfc.txt>`_ に完全に準拠しており、ワイル"
+#~ "ド・カード・マッチングをサポートしています。 `RobotFileParser <https://"
+#~ "docs.python.org/3.7/library/urllib.robotparser.html>`_ や "
+#~ "``Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ と"
+#~ "は異なり、特に、 ``Allow`` と ``Disallow`` ディレクティブでは、パスの長さ"
+#~ "に基づいた最も具体的なルールがより具体的ではない(より短い)ルールより優先さ"
+#~ "れる、長さベースのルールを使用します。"
+
+#~ msgid ""
+#~ "`Protego <https://github.com/scrapy/protego>`_ is a pure-Python robots."
+#~ "txt_ parser. The parser is fully compliant with `Google's Robots.txt "
+#~ "Specification <https://developers.google.com/search/reference/"
+#~ "robots_txt>`_ hence supports wildcard matching, and uses the length based "
+#~ "rule similar to `Reppy <https://github.com/seomoz/reppy/>`_."
+#~ msgstr ""
+#~ "`Protego <https://github.com/scrapy/protego>`_ は、純粋なPython robots."
+#~ "txt_ パーサです。パーサは `Google's Robots.txt Specification <https://"
+#~ "developers.google.com/search/reference/robots_txt>`_ に完全に準拠している"
+#~ "ため、ワイルドカード・マッチングをサポートし、 `Reppy <https://github.com/"
+#~ "seomoz/reppy/>`_ に類似した長さベースのルールを使用します。"
+
+#~ msgid ""
+#~ "Set :setting:`ROBOTSTXT_PARSER` setting to ``scrapy.robotstxt."
+#~ "ProtegoRobotParser``"
+#~ msgstr ""
+#~ ":setting:`ROBOTSTXT_PARSER` 設定に ``scrapy.robotstxt."
+#~ "ProtegoRobotParser`` をセットします"

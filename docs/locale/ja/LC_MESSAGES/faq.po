@@ -1,187 +1,248 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2008–2021, Scrapy developers
+# Copyright (C) 2008–2018, Scrapy developers
 # This file is distributed under the same license as the Scrapy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Scrapy 2.5\n"
+"Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-10-07 06:28+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../faq.rst:4
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "F.A.Q.(よくある質問と回答)"
 
 #: ../../faq.rst:9
 msgid "How does Scrapy compare to BeautifulSoup or lxml?"
-msgstr ""
+msgstr "ScrapyはBeautifulSoupやlxmlと比較してどうですか？"
 
 #: ../../faq.rst:11
 msgid ""
-"`BeautifulSoup`_ and `lxml`_ are libraries for parsing HTML and XML. "
-"Scrapy is an application framework for writing web spiders that crawl web"
-" sites and extract data from them."
+"`BeautifulSoup`_ and `lxml`_ are libraries for parsing HTML and XML. Scrapy "
+"is an application framework for writing web spiders that crawl web sites and "
+"extract data from them."
 msgstr ""
+"`BeautifulSoup`_ と `lxml`_ は、HTMLとXMLを解析するためのライブラリです。 "
+"Scrapyは、Webサイトをクロールし、そこからデータを抽出するWebスパイダーを作成"
+"するためのアプリケーションフレームワークです。"
 
 #: ../../faq.rst:15
 msgid ""
-"Scrapy provides a built-in mechanism for extracting data (called "
-":ref:`selectors <topics-selectors>`) but you can easily use "
-"`BeautifulSoup`_ (or `lxml`_) instead, if you feel more comfortable "
-"working with them. After all, they're just parsing libraries which can be"
-" imported and used from any Python code."
+"Scrapy provides a built-in mechanism for extracting data (called :ref:"
+"`selectors <topics-selectors>`) but you can easily use `BeautifulSoup`_ (or "
+"`lxml`_) instead, if you feel more comfortable working with them. After all, "
+"they're just parsing libraries which can be imported and used from any "
+"Python code."
 msgstr ""
+"Scrapyはデータを抽出するための組み込みメカニズムを提供します( :ref:`セレク"
+"ター<topics-selectors>` とよばれます)が、より快適に作業できる場合は、代わり"
+"に `BeautifulSoup`_ (または `lxml`_ )を簡単に使用できます。結局のところ、それ"
+"らは任意のPythonコードからインポートして使用できるライブラリを利用しているだ"
+"けです。"
 
 #: ../../faq.rst:21
 msgid ""
-"In other words, comparing `BeautifulSoup`_ (or `lxml`_) to Scrapy is like"
-" comparing `jinja2`_ to `Django`_."
+"In other words, comparing `BeautifulSoup`_ (or `lxml`_) to Scrapy is like "
+"comparing `jinja2`_ to `Django`_."
 msgstr ""
+"いいかえると、 `BeautifulSoup`_ (または `lxml`_ )とScrapyを比較することは、  "
+"`jinja2`_ と `Django`_ を比較するようなものです。"
 
 #: ../../faq.rst:30
 msgid "Can I use Scrapy with BeautifulSoup?"
-msgstr ""
+msgstr "ScrapyでBeautifulSoupを使用できますか？"
 
 #: ../../faq.rst:32
 msgid ""
 "Yes, you can. As mentioned :ref:`above <faq-scrapy-bs-cmp>`, "
-"`BeautifulSoup`_ can be used for parsing HTML responses in Scrapy "
-"callbacks. You just have to feed the response's body into a "
-"``BeautifulSoup`` object and extract whatever data you need from it."
+"`BeautifulSoup`_ can be used for parsing HTML responses in Scrapy callbacks. "
+"You just have to feed the response's body into a ``BeautifulSoup`` object "
+"and extract whatever data you need from it."
 msgstr ""
+"はい、できます。 :ref:`上記<faq-scrapy-bs-cmp>` のように、 `BeautifulSoup`_ "
+"はScrapyコールバックでHTMLレスポンスをパースするために使用できます。 レスポン"
+"スのボディを ``BeautifulSoup`` オブジェクトに送り、必要なデータを抽出するだけ"
+"です。"
 
 #: ../../faq.rst:38
 msgid ""
-"Here's an example spider using BeautifulSoup API, with ``lxml`` as the "
-"HTML parser::"
+"Here's an example spider using BeautifulSoup API, with ``lxml`` as the HTML "
+"parser::"
 msgstr ""
+"HTMLパーサーとして ``lxml`` を使用して、BeautifulSoup API を使用するスパイ"
+"ダーの例を次に示します::"
 
 #: ../../faq.rst:62
 msgid ""
-"``BeautifulSoup`` supports several HTML/XML parsers. See `BeautifulSoup's"
-" official documentation`_ on which ones are available."
+"``BeautifulSoup`` supports several HTML/XML parsers. See `BeautifulSoup's "
+"official documentation`_ on which ones are available."
 msgstr ""
+"``BeautifulSoup`` はいくつかのHTML/XMLパーサーをサポートしています。利用可能"
+"なものについてはBeautifulSoupの公式ドキュメント(`BeautifulSoup's official "
+"documentation`_) を参照してください。"
 
 #: ../../faq.rst:69
 msgid "Did Scrapy \"steal\" X from Django?"
-msgstr ""
+msgstr "ScrapyはDjangoからhogehogeを盗んだ？"
 
 #: ../../faq.rst:71
 msgid ""
 "Probably, but we don't like that word. We think Django_ is a great open "
-"source project and an example to follow, so we've used it as an "
-"inspiration for Scrapy."
+"source project and an example to follow, so we've used it as an inspiration "
+"for Scrapy."
 msgstr ""
+"たぶん。だけど、私たちはそういう言い方はしないな。 Django_ は素晴らしいオープ"
+"ンソースプロジェクトであり、従うべき例であると考えているため、Scrapyの着想を"
+"得るのに利用したんだよ。"
 
 #: ../../faq.rst:75
 msgid ""
 "We believe that, if something is already done well, there's no need to "
 "reinvent it. This concept, besides being one of the foundations for open "
 "source and free software, not only applies to software but also to "
-"documentation, procedures, policies, etc. So, instead of going through "
-"each problem ourselves, we choose to copy ideas from those projects that "
-"have already solved them properly, and focus on the real problems we need"
-" to solve."
+"documentation, procedures, policies, etc. So, instead of going through each "
+"problem ourselves, we choose to copy ideas from those projects that have "
+"already solved them properly, and focus on the real problems we need to "
+"solve."
 msgstr ""
+"車輪の再発明する必要はないという信念です。この信念は、オープンソースおよびフ"
+"リーソフトウェアの基礎の1つであることに加えて、ソフトウェアだけでなく、ドキュ"
+"メント、手順、ポリシーなどにも適用されます。したがって、各問題を自分で進める"
+"のではなく、それらのプロジェクトからアイデアをコピーすることを選択します それ"
+"が既に各問題を適切に解決しているので、私たちは解決する必要がある実際の問題に"
+"焦点を当てる事ができます。"
 
 #: ../../faq.rst:82
 msgid ""
-"We'd be proud if Scrapy serves as an inspiration for other projects. Feel"
-" free to steal from us!"
+"We'd be proud if Scrapy serves as an inspiration for other projects. Feel "
+"free to steal from us!"
 msgstr ""
+"私たちはScrapyが他のプロジェクトのインスピレーションとして役立つことを誇りに"
+"思います。 じゃんじゃん盗め！"
 
 #: ../../faq.rst:86
 msgid "Does Scrapy work with HTTP proxies?"
-msgstr ""
+msgstr "ScrapyはHTTPプロキシ経由で動作しますか？"
 
 #: ../../faq.rst:88
 msgid ""
 "Yes. Support for HTTP proxies is provided (since Scrapy 0.8) through the "
-"HTTP Proxy downloader middleware. See "
-":class:`~scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware`."
+"HTTP Proxy downloader middleware. See :class:`~scrapy.downloadermiddlewares."
+"httpproxy.HttpProxyMiddleware`."
 msgstr ""
+"はい。 HTTPプロキシのサポートは、HTTPプロキシ・ダウンローダー・ミドルウェアを"
+"通じて提供されます(Scrapy 0.8以降)。 :class:`~scrapy.downloadermiddlewares."
+"httpproxy.HttpProxyMiddleware` を参照してください。"
 
 #: ../../faq.rst:93
 msgid "How can I scrape an item with attributes in different pages?"
 msgstr ""
+"異なるページの属性を持つアイテムをスクレイピングするにはどうすればよいです"
+"か？"
 
 #: ../../faq.rst:95
 msgid "See :ref:`topics-request-response-ref-request-callback-arguments`."
-msgstr ""
+msgstr ":ref:`topics-request-response-ref-request-callback-arguments` 参照。"
 
 #: ../../faq.rst:99
 msgid "Scrapy crashes with: ImportError: No module named win32api"
-msgstr ""
+msgstr "Scrapyがクラッシュします。「ImportError: No module named win32api」"
 
 #: ../../faq.rst:101
 msgid "You need to install `pywin32`_ because of `this Twisted bug`_."
 msgstr ""
+"あなたは「このツイストバグ」(`this Twisted bug`_)のため、 `pywin32`_ をインス"
+"トールする必要があります。"
 
 #: ../../faq.rst:107
 msgid "How can I simulate a user login in my spider?"
 msgstr ""
+"スパイダーでユーザーログインをシミュレートするにはどうすればよいですか？"
 
 #: ../../faq.rst:109
 msgid "See :ref:`topics-request-response-ref-request-userlogin`."
-msgstr ""
+msgstr ":ref:`topics-request-response-ref-request-userlogin` 参照。"
 
 #: ../../faq.rst:114
 msgid "Does Scrapy crawl in breadth-first or depth-first order?"
-msgstr ""
+msgstr "Scrapyは幅(breadth)優先または深さ(depth)優先でクロールしますか？"
 
 #: ../../faq.rst:116
 msgid ""
-"By default, Scrapy uses a `LIFO`_ queue for storing pending requests, "
-"which basically means that it crawls in `DFO order`_. This order is more "
+"By default, Scrapy uses a `LIFO`_ queue for storing pending requests, which "
+"basically means that it crawls in `DFO order`_. This order is more "
 "convenient in most cases."
 msgstr ""
+"デフォルトでは、Scrapyは保留中のリクエストを保存するために `LIFO`_ キューを使"
+"用します。これは基本的に、DFO順序(`DFO order`_)でクロールすることを意味しま"
+"す。 ほとんどの場合、この順序の方が便利です。"
 
 #: ../../faq.rst:120
 msgid ""
-"If you do want to crawl in true `BFO order`_, you can do it by setting "
-"the following settings::"
+"If you do want to crawl in true `BFO order`_, you can do it by setting the "
+"following settings::"
 msgstr ""
+"あなたが本当にBFO順(`BFO order`_)でクロールしたい場合は、次の設定を行うことで"
+"実行できます::"
 
 #: ../../faq.rst:127
+#, fuzzy
+#| msgid ""
+#| "While pending requests are below the configured values of :setting:"
+#| "`CONCURRENT_REQUESTS`, :setting:`CONCURRENT_REQUESTS_PER_DOMAIN` or :"
+#| "setting:`CONCURRENT_REQUESTS_PER_DOMAIN`, those requests are sent "
+#| "concurrently. As a result, the first few requests of a crawl rarely "
+#| "follow the desired order. Lowering those settings to ``1`` enforces the "
+#| "desired order, but it significantly slows down the crawl as a whole."
 msgid ""
-"While pending requests are below the configured values of "
-":setting:`CONCURRENT_REQUESTS`, :setting:`CONCURRENT_REQUESTS_PER_DOMAIN`"
-" or :setting:`CONCURRENT_REQUESTS_PER_IP`, those requests are sent "
-"concurrently. As a result, the first few requests of a crawl rarely "
-"follow the desired order. Lowering those settings to ``1`` enforces the "
-"desired order, but it significantly slows down the crawl as a whole."
+"While pending requests are below the configured values of :setting:"
+"`CONCURRENT_REQUESTS`, :setting:`CONCURRENT_REQUESTS_PER_DOMAIN` or :setting:"
+"`CONCURRENT_REQUESTS_PER_IP`, those requests are sent concurrently. As a "
+"result, the first few requests of a crawl rarely follow the desired order. "
+"Lowering those settings to ``1`` enforces the desired order, but it "
+"significantly slows down the crawl as a whole."
 msgstr ""
+"保留中のリクエストが :setting:`CONCURRENT_REQUESTS` または :setting:"
+"`CONCURRENT_REQUESTS_PER_DOMAIN` または :setting:"
+"`CONCURRENT_REQUESTS_PER_DOMAIN` の設定値を下回っている間、これらのリクエスト"
+"は同時に送信されます。その結果、クロールの最初のいくつかのリクエストが目的の"
+"順序に従うことはほとんどありません。 これらの設定を ``1`` に下げると、目的の"
+"順序が強制されますが、クロール全体が大幅に遅くなります。"
 
 #: ../../faq.rst:136
 msgid "My Scrapy crawler has memory leaks. What can I do?"
 msgstr ""
+"Scrapyクローラーにメモリリークがあります。 何か私にできる事がありますか？"
 
 #: ../../faq.rst:138
 msgid "See :ref:`topics-leaks`."
-msgstr ""
+msgstr ":ref:`topics-leaks` 参照。"
 
 #: ../../faq.rst:140
 msgid ""
-"Also, Python has a builtin memory leak issue which is described in :ref"
-":`topics-leaks-without-leaks`."
+"Also, Python has a builtin memory leak issue which is described in :ref:"
+"`topics-leaks-without-leaks`."
 msgstr ""
+"また、Pythonには :ref:`topics-leaks-without-leaks` で説明されている組み込みの"
+"メモリリークの問題があります。"
 
 #: ../../faq.rst:144
 msgid "How can I make Scrapy consume less memory?"
-msgstr ""
+msgstr "Scrapyが消費するメモリを減らすにはどうすればよいですか？"
 
 #: ../../faq.rst:146
 msgid "See previous question."
-msgstr ""
+msgstr "1つ前の質問を見て下さい。"
 
 #: ../../faq.rst:149
 msgid "How can I prevent memory errors due to many allowed domains?"
@@ -189,27 +250,25 @@ msgstr ""
 
 #: ../../faq.rst:151
 msgid ""
-"If you have a spider with a long list of "
-":attr:`~scrapy.spiders.Spider.allowed_domains` (e.g. 50,000+), consider "
-"replacing the default "
-":class:`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware` spider "
-"middleware with a :ref:`custom spider middleware <custom-spider-"
-"middleware>` that requires less memory. For example:"
+"If you have a spider with a long list of :attr:`~scrapy.spiders.Spider."
+"allowed_domains` (e.g. 50,000+), consider replacing the default :class:"
+"`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware` spider middleware with "
+"a :ref:`custom spider middleware <custom-spider-middleware>` that requires "
+"less memory. For example:"
 msgstr ""
 
 #: ../../faq.rst:158
 msgid ""
 "If your domain names are similar enough, use your own regular expression "
-"instead joining the strings in "
-":attr:`~scrapy.spiders.Spider.allowed_domains` into a complex regular "
-"expression."
+"instead joining the strings in :attr:`~scrapy.spiders.Spider."
+"allowed_domains` into a complex regular expression."
 msgstr ""
 
 #: ../../faq.rst:163
 msgid ""
 "If you can `meet the installation requirements`_, use pyre2_ instead of "
-"Python’s re_ to compile your URL-filtering regular expression. See "
-":issue:`1908`."
+"Python’s re_ to compile your URL-filtering regular expression. See :issue:"
+"`1908`."
 msgstr ""
 
 #: ../../faq.rst:167
@@ -217,63 +276,78 @@ msgid "See also other suggestions at `StackOverflow`_."
 msgstr ""
 
 #: ../../faq.rst:169
+#, fuzzy
+#| msgid ""
+#| "For more info see: :class:`~scrapy.spidermiddlewares.offsite."
+#| "OffsiteMiddleware`."
 msgid ""
-"Remember to disable "
-":class:`scrapy.spidermiddlewares.offsite.OffsiteMiddleware` when you "
-"enable your custom implementation::"
+"Remember to disable :class:`scrapy.spidermiddlewares.offsite."
+"OffsiteMiddleware` when you enable your custom implementation::"
 msgstr ""
+"詳細は :class:`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware` を参照し"
+"て下さい。"
 
 #: ../../faq.rst:184
 msgid "Can I use Basic HTTP Authentication in my spiders?"
-msgstr ""
+msgstr "スパイダーは基本HTTP認証を使用できますか？"
 
 #: ../../faq.rst:186
 msgid ""
-"Yes, see "
-":class:`~scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware`."
+"Yes, see :class:`~scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware`."
 msgstr ""
+"はい。 :class:`~scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` 参"
+"照。"
 
 #: ../../faq.rst:189
-msgid "Why does Scrapy download pages in English instead of my native language?"
-msgstr ""
+msgid ""
+"Why does Scrapy download pages in English instead of my native language?"
+msgstr "Scrapyが母国語ではなく英語でページをダウンロードするのはなぜですか？"
 
 #: ../../faq.rst:191
 msgid ""
 "Try changing the default `Accept-Language`_ request header by overriding "
 "the :setting:`DEFAULT_REQUEST_HEADERS` setting."
 msgstr ""
+":setting:`DEFAULT_REQUEST_HEADERS` 設定をオーバーライドして、デフォルトの "
+"`Accept-Language`_ リクエスト・ヘッダーを変更してみてください。"
 
 #: ../../faq.rst:197
 msgid "Where can I find some example Scrapy projects?"
-msgstr ""
+msgstr "Scrapyプロジェクトの例はどこにありますか？"
 
 #: ../../faq.rst:199
 msgid "See :ref:`intro-examples`."
-msgstr ""
+msgstr ":ref:`intro-examples` 参照。"
 
 #: ../../faq.rst:202
 msgid "Can I run a spider without creating a project?"
-msgstr ""
+msgstr "プロジェクトを作成せずにスパイダーを実行できますか？"
 
 #: ../../faq.rst:204
 msgid ""
-"Yes. You can use the :command:`runspider` command. For example, if you "
-"have a spider written in a ``my_spider.py`` file you can run it with::"
+"Yes. You can use the :command:`runspider` command. For example, if you have "
+"a spider written in a ``my_spider.py`` file you can run it with::"
 msgstr ""
+"はい。 :command:`runspider` コマンドを使用できます。たとえば、 ``my_spider."
+"py`` ファイルにスパイダーが記述されている場合は、次のコマンドで実行できます::"
 
 #: ../../faq.rst:209
 msgid "See :command:`runspider` command for more info."
-msgstr ""
+msgstr "詳細については :command:`runspider` を参照してください。"
 
 #: ../../faq.rst:212
 msgid "I get \"Filtered offsite request\" messages. How can I fix them?"
 msgstr ""
+"\"Filtered offsite request\"(フィルターされたオフサイト要求)メッセージが表示"
+"されます。 どうすれば修正できますか？"
 
 #: ../../faq.rst:214
 msgid ""
-"Those messages (logged with ``DEBUG`` level) don't necessarily mean there"
-" is a problem, so you may not need to fix them."
+"Those messages (logged with ``DEBUG`` level) don't necessarily mean there is "
+"a problem, so you may not need to fix them."
 msgstr ""
+"これらのメッセージ(DEBUGレベルでログに記録される)は、必ずしも問題があることを"
+"意味するわけではないため、修正する必要はありません。"
 
 #: ../../faq.rst:217
 msgid ""
@@ -281,168 +355,214 @@ msgid ""
 "spider middleware (enabled by default) whose purpose is to filter out "
 "requests to domains outside the ones covered by the spider."
 msgstr ""
+"これらのメッセージは、オフサイト・スパイダー・ミドルウェアによって送出されま"
+"す。オフサイト・スパイダー・ミドルウェアは、スパイダーの対象外のドメインへの"
+"リクエストをフィルター処理することを目的とするスパイダー・ミドルウェア(デフォ"
+"ルトで有効)です。"
 
 #: ../../faq.rst:221
 msgid ""
-"For more info see: "
-":class:`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware`."
+"For more info see: :class:`~scrapy.spidermiddlewares.offsite."
+"OffsiteMiddleware`."
 msgstr ""
+"詳細は :class:`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware` を参照し"
+"て下さい。"
 
 #: ../../faq.rst:225
 msgid "What is the recommended way to deploy a Scrapy crawler in production?"
-msgstr ""
+msgstr "Scrapyクローラーを運用環境に展開する推奨方法は何ですか？"
 
 #: ../../faq.rst:227
 msgid "See :ref:`topics-deploy`."
-msgstr ""
+msgstr ":ref:`topics-deploy` 参照。"
 
 #: ../../faq.rst:230
 msgid "Can I use JSON for large exports?"
-msgstr ""
+msgstr "大規模なエクスポートにJSONを使用できますか？"
 
 #: ../../faq.rst:232
 msgid ""
-"It'll depend on how large your output is. See :ref:`this warning <json-"
-"with-large-data>` in :class:`~scrapy.exporters.JsonItemExporter` "
-"documentation."
+"It'll depend on how large your output is. See :ref:`this warning <json-with-"
+"large-data>` in :class:`~scrapy.exporters.JsonItemExporter` documentation."
 msgstr ""
+"出力の大きさに依存します。 :class:`~scrapy.exporters.JsonItemExporter` 文書"
+"の :ref:`警告<json-with-large-data>` を参照してください。"
 
 #: ../../faq.rst:237
 msgid "Can I return (Twisted) deferreds from signal handlers?"
-msgstr ""
+msgstr "シグナルハンドラーから(Twisted)遅延(deferred)を返すことができますか？"
 
 #: ../../faq.rst:239
 msgid ""
-"Some signals support returning deferreds from their handlers, others "
-"don't. See the :ref:`topics-signals-ref` to know which ones."
+"Some signals support returning deferreds from their handlers, others don't. "
+"See the :ref:`topics-signals-ref` to know which ones."
 msgstr ""
+"ハンドラーからの遅延(deferred)を返すことをサポートするシグナルもあれば、サ"
+"ポートしないシグナルもあります。 :ref:`topics-signals-ref` を参照して、どれが"
+"どれか確認してください。"
 
 #: ../../faq.rst:243
 msgid "What does the response status code 999 means?"
-msgstr ""
+msgstr "レスポンス・ステータス・コード999の意味は何ですか？"
 
 #: ../../faq.rst:245
 msgid ""
 "999 is a custom response status code used by Yahoo sites to throttle "
-"requests. Try slowing down the crawling speed by using a download delay "
-"of ``2`` (or higher) in your spider::"
+"requests. Try slowing down the crawling speed by using a download delay of "
+"``2`` (or higher) in your spider::"
 msgstr ""
+"999は、リクエストを抑制するためにYahooサイトで使用されるカスタム・レスポン"
+"ス・ステータス・コードです。スパイダーで ``2`` (またはそれ以上)のダウンロード"
+"遅延を使用して、クロール速度を遅くしてみてください::"
 
 #: ../../faq.rst:257
 msgid ""
-"Or by setting a global download delay in your project with the "
-":setting:`DOWNLOAD_DELAY` setting."
+"Or by setting a global download delay in your project with the :setting:"
+"`DOWNLOAD_DELAY` setting."
 msgstr ""
+"または、 :setting:`DOWNLOAD_DELAY` 設定でプロジェクトのグローバル・ダウンロー"
+"ド遅延を設定します。"
 
 #: ../../faq.rst:261
 msgid "Can I call ``pdb.set_trace()`` from my spiders to debug them?"
-msgstr ""
+msgstr "スパイダーから ``pdb.set_trace()`` を呼び出してデバッグできますか？"
 
 #: ../../faq.rst:263
 msgid ""
 "Yes, but you can also use the Scrapy shell which allows you to quickly "
-"analyze (and even modify) the response being processed by your spider, "
-"which is, quite often, more useful than plain old ``pdb.set_trace()``."
+"analyze (and even modify) the response being processed by your spider, which "
+"is, quite often, more useful than plain old ``pdb.set_trace()``."
 msgstr ""
+"はい。ただし、スパイダーによって処理されているレスポンスをすばやく分析(および"
+"変更)できるScrapyシェルを使用することもできます。これは、通常の ``pdb."
+"set_trace()`` よりも非常に便利です。"
 
 #: ../../faq.rst:267
 msgid "For more info see :ref:`topics-shell-inspect-response`."
-msgstr ""
+msgstr "詳細は :ref:`topics-shell-inspect-response` を参照して下さい。"
 
 #: ../../faq.rst:270
 msgid "Simplest way to dump all my scraped items into a JSON/CSV/XML file?"
 msgstr ""
+"スクレイピングしたすべてのアイテムをJSON/CSV/XMLファイルにダンプする最も簡単"
+"な方法は？"
 
 #: ../../faq.rst:272
 msgid "To dump into a JSON file::"
-msgstr ""
+msgstr "JSONファイルにダンプするには::"
 
 #: ../../faq.rst:276
 msgid "To dump into a CSV file::"
-msgstr ""
+msgstr "CSVファイルにダンプするには::"
 
 #: ../../faq.rst:280
 msgid "To dump into a XML file::"
-msgstr ""
+msgstr "XMLファイルにダンプするには::"
 
 #: ../../faq.rst:284
 msgid "For more information see :ref:`topics-feed-exports`"
-msgstr ""
+msgstr "詳細は :ref:`topics-feed-exports` を参照して下さい。"
 
 #: ../../faq.rst:287
 msgid "What's this huge cryptic ``__VIEWSTATE`` parameter used in some forms?"
 msgstr ""
+"いくつかのフォームで使用されているこの巨大な ``__VIEWSTATE`` パラメーターは何"
+"ですか？"
 
 #: ../../faq.rst:289
+#, fuzzy
+#| msgid ""
+#| "The ``__VIEWSTATE`` parameter is used in sites built with ASP.NET/VB.NET. "
+#| "For more info on how it works see http://search.cpan.org/~ecarroll/HTML-"
+#| "TreeBuilderX-ASP_NET-0.09/lib/HTML/TreeBuilderX/ASP_NET.pm . Also, here's "
+#| "an `example spider`_ which scrapes one of these sites."
 msgid ""
-"The ``__VIEWSTATE`` parameter is used in sites built with ASP.NET/VB.NET."
-" For more info on how it works see `this page`_. Also, here's an `example"
-" spider`_ which scrapes one of these sites."
+"The ``__VIEWSTATE`` parameter is used in sites built with ASP.NET/VB.NET. "
+"For more info on how it works see `this page`_. Also, here's an `example "
+"spider`_ which scrapes one of these sites."
 msgstr ""
+"``__VIEWSTATE`` パラメーターは、ASP.NET/VB.NETで構築されたサイトで使用されま"
+"す。動作の詳細については、http://search.cpan.org/~ecarroll/HTML-TreeBuilderX-"
+"ASP_NET-0.09/lib/HTML/TreeBuilderX/ASP_NET.pm を参照してください。また、これ"
+"らのサイトの1つをスクレイピングする `example spider`_ もあります。"
 
 #: ../../faq.rst:297
 msgid "What's the best way to parse big XML/CSV data feeds?"
-msgstr ""
+msgstr "大きなXML/CSVデータ・フィードを解析する最良の方法は何ですか？"
 
 #: ../../faq.rst:299
 msgid ""
-"Parsing big feeds with XPath selectors can be problematic since they need"
-" to build the DOM of the entire feed in memory, and this can be quite "
-"slow and consume a lot of memory."
+"Parsing big feeds with XPath selectors can be problematic since they need to "
+"build the DOM of the entire feed in memory, and this can be quite slow and "
+"consume a lot of memory."
 msgstr ""
+"XPathセレクターを使用して大きなフィードを解析すると、フィード全体のDOMをメモ"
+"リに構築する必要があるため問題が発生する可能性があります。これは非常に遅く、"
+"大量のメモリを消費する可能性があります。"
 
 #: ../../faq.rst:303
 msgid ""
-"In order to avoid parsing all the entire feed at once in memory, you can "
-"use the functions ``xmliter`` and ``csviter`` from "
-"``scrapy.utils.iterators`` module. In fact, this is what the feed spiders"
-" (see :ref:`topics-spiders`) use under the cover."
+"In order to avoid parsing all the entire feed at once in memory, you can use "
+"the functions ``xmliter`` and ``csviter`` from ``scrapy.utils.iterators`` "
+"module. In fact, this is what the feed spiders (see :ref:`topics-spiders`) "
+"use under the cover."
 msgstr ""
+"メモリ内のフィード全体を一度に解析することを避けるために、 ``scrapy.utils."
+"iterators`` モジュールの関数 ``xmliter`` と ``csviter`` を使用できます。 実"
+"際、これはフィード・スパイダー( :ref:`topics-spiders` 参照)が内部で使用してい"
+"るものです。"
 
 #: ../../faq.rst:309
 msgid "Does Scrapy manage cookies automatically?"
-msgstr ""
+msgstr "Scrapyはクッキーを自動的に管理しますか？"
 
 #: ../../faq.rst:311
 msgid ""
-"Yes, Scrapy receives and keeps track of cookies sent by servers, and "
-"sends them back on subsequent requests, like any regular web browser "
-"does."
+"Yes, Scrapy receives and keeps track of cookies sent by servers, and sends "
+"them back on subsequent requests, like any regular web browser does."
 msgstr ""
+"はい、Scrapyはサーバーから送信されたクッキーを受信して追跡し、通常のWebブラウ"
+"ザーが行うように、後続のリクエストでそれらを送り返します。"
 
 #: ../../faq.rst:314
 msgid "For more info see :ref:`topics-request-response` and :ref:`cookies-mw`."
 msgstr ""
+"詳細は :ref:`topics-request-response` と :ref:`cookies-mw` を参照下さい。"
 
 #: ../../faq.rst:317
 msgid "How can I see the cookies being sent and received from Scrapy?"
 msgstr ""
+"Scrapyとの間で送受信されているCookieを確認するにはどうすればよいですか？"
 
 #: ../../faq.rst:319
 msgid "Enable the :setting:`COOKIES_DEBUG` setting."
-msgstr ""
+msgstr ":setting:`COOKIES_DEBUG` 設定を有効にします。"
 
 #: ../../faq.rst:322
 msgid "How can I instruct a spider to stop itself?"
-msgstr ""
+msgstr "スパイダーに自分自身を止めるように指示するにはどうすればよいですか？"
 
 #: ../../faq.rst:324
 msgid ""
-"Raise the :exc:`~scrapy.exceptions.CloseSpider` exception from a "
-"callback. For more info see: :exc:`~scrapy.exceptions.CloseSpider`."
+"Raise the :exc:`~scrapy.exceptions.CloseSpider` exception from a callback. "
+"For more info see: :exc:`~scrapy.exceptions.CloseSpider`."
 msgstr ""
+"コールバックから :exc:`~scrapy.exceptions.CloseSpider` 例外を発生させます。 "
+"詳細については、 :exc:`~scrapy.exceptions.CloseSpider` を参照してください。"
 
 #: ../../faq.rst:328
 msgid "How can I prevent my Scrapy bot from getting banned?"
-msgstr ""
+msgstr "Scrapyボットがバン(BAN)されるのを防ぐにはどうすればよいですか？"
 
 #: ../../faq.rst:330
 msgid "See :ref:`bans`."
-msgstr ""
+msgstr ":ref:`bans` 参照。"
 
 #: ../../faq.rst:333
 msgid "Should I use spider arguments or settings to configure my spider?"
 msgstr ""
+"スパイダーを設定するには、スパイダーの引数または設定を使用する必要があります"
+"か？"
 
 #: ../../faq.rst:335
 msgid ""
@@ -451,50 +571,78 @@ msgid ""
 "that mandates to use one or the other, but settings are more suited for "
 "parameters that, once set, don't change much, while spider arguments are "
 "meant to change more often, even on each spider run and sometimes are "
-"required for the spider to run at all (for example, to set the start url "
-"of a spider)."
+"required for the spider to run at all (for example, to set the start url of "
+"a spider)."
 msgstr ""
+":ref:`スパイダー引数<spiderargs>` と :ref:`設定<topics-settings>` の両方を使"
+"用して、スパイダーを設定できます。どちらか一方を使用することを義務付ける厳密"
+"なルールはありませんが、設定は一度設定するとあまり変化しないパラメーターに適"
+"しています。一方、スパイダーの引数はスパイダーの実行ごとに頻繁に変更されるこ"
+"とを意図しており、スパイダーを実行するには(たとえば、スパイダーの開始URLを設"
+"定するためなど、)どうせ必要になります。"
 
 #: ../../faq.rst:342
 msgid ""
-"To illustrate with an example, assuming you have a spider that needs to "
-"log into a site to scrape data, and you only want to scrape data from a "
-"certain section of the site (which varies each time). In that case, the "
-"credentials to log in would be settings, while the url of the section to "
-"scrape would be a spider argument."
+"To illustrate with an example, assuming you have a spider that needs to log "
+"into a site to scrape data, and you only want to scrape data from a certain "
+"section of the site (which varies each time). In that case, the credentials "
+"to log in would be settings, while the url of the section to scrape would be "
+"a spider argument."
 msgstr ""
+"例で説明するために、データをスクレイピングするためにサイトにログインする必要"
+"があるスパイダーがあり、(毎回異なる)サイトの特定のセクションからのみデータを"
+"スクレイピングしたいとします。 その場合、ログインする資格情報は設定になり、ス"
+"クレイピングするセクションのURLはスパイダー引数になります。"
 
 #: ../../faq.rst:349
-msgid "I'm scraping a XML document and my XPath selector doesn't return any items"
+msgid ""
+"I'm scraping a XML document and my XPath selector doesn't return any items"
 msgstr ""
+"XMLドキュメントをスクレイピングしていますが、XPathセレクターはアイテムを返し"
+"ません"
 
 #: ../../faq.rst:351
 msgid "You may need to remove namespaces. See :ref:`removing-namespaces`."
 msgstr ""
+"名前空間を削除する必要がある場合があります。 :ref:`removing-namespaces` 参"
+"照。"
 
 #: ../../faq.rst:356
 msgid "How to split an item into multiple items in an item pipeline?"
-msgstr ""
+msgstr "アイテム・パイプラインでアイテムを複数のアイテムに分割する方法は？"
 
 #: ../../faq.rst:358
+#, fuzzy
+#| msgid ""
+#| ":ref:`Item pipelines <topics-item-pipeline>` cannot yield multiple items "
+#| "per input item. :ref:`Create a spider middleware <custom-spider-"
+#| "middleware>` instead, and use its :meth:`~scrapy.spidermiddlewares."
+#| "SpiderMiddleware.process_spider_output` method for this puspose. For "
+#| "example::"
 msgid ""
-":ref:`Item pipelines <topics-item-pipeline>` cannot yield multiple items "
-"per input item. :ref:`Create a spider middleware <custom-spider-"
-"middleware>` instead, and use its "
-":meth:`~scrapy.spidermiddlewares.SpiderMiddleware.process_spider_output` "
-"method for this purpose. For example::"
+":ref:`Item pipelines <topics-item-pipeline>` cannot yield multiple items per "
+"input item. :ref:`Create a spider middleware <custom-spider-middleware>` "
+"instead, and use its :meth:`~scrapy.spidermiddlewares.SpiderMiddleware."
+"process_spider_output` method for this purpose. For example::"
 msgstr ""
+":ref:`アイテム・パイプライン<topics-item-pipeline>` は、入力アイテムごとに複"
+"数のアイテムを生成できません。 代わりに :ref:`スパイダー・ミドルウェア"
+"<custom-spider-middleware>` を作成し、この目的で :meth:`~scrapy."
+"spidermiddlewares.SpiderMiddleware.process_spider_output` メソッドを使用しま"
+"す。例えば以下です::"
 
 #: ../../faq.rst:378
+#, fuzzy
+#| msgid "Does Scrapy work with HTTP proxies?"
 msgid "Does Scrapy support IPv6 addresses?"
-msgstr ""
+msgstr "ScrapyはHTTPプロキシ経由で動作しますか？"
 
 #: ../../faq.rst:380
 msgid ""
-"Yes, by setting :setting:`DNS_RESOLVER` to "
-"``scrapy.resolver.CachingHostnameResolver``. Note that by doing so, you "
-"lose the ability to set a specific timeout for DNS requests (the value of"
-" the :setting:`DNS_TIMEOUT` setting is ignored)."
+"Yes, by setting :setting:`DNS_RESOLVER` to ``scrapy.resolver."
+"CachingHostnameResolver``. Note that by doing so, you lose the ability to "
+"set a specific timeout for DNS requests (the value of the :setting:"
+"`DNS_TIMEOUT` setting is ignored)."
 msgstr ""
 
 #: ../../faq.rst:388
@@ -506,10 +654,9 @@ msgstr ""
 #: ../../faq.rst:390
 msgid ""
 "This issue `has been reported`_ to appear when running broad crawls in "
-"macOS, where the default Twisted reactor is "
-":class:`twisted.internet.selectreactor.SelectReactor`. Switching to a "
-"different reactor is possible by using the :setting:`TWISTED_REACTOR` "
-"setting."
+"macOS, where the default Twisted reactor is :class:`twisted.internet."
+"selectreactor.SelectReactor`. Switching to a different reactor is possible "
+"by using the :setting:`TWISTED_REACTOR` setting."
 msgstr ""
 
 #: ../../faq.rst:398
@@ -519,13 +666,36 @@ msgstr ""
 #: ../../faq.rst:400
 msgid ""
 "In some situations, it might be useful to stop the download of a certain "
-"response. For instance, sometimes you can determine whether or not you "
-"need the full contents of a response by inspecting its headers or the "
-"first bytes of its body. In that case, you could save resources by "
-"attaching a handler to the :class:`~scrapy.signals.bytes_received` or "
-":class:`~scrapy.signals.headers_received` signals and raising a "
-":exc:`~scrapy.exceptions.StopDownload` exception. Please refer to the "
-":ref:`topics-stop-response-download` topic for additional information and"
-" examples."
+"response. For instance, sometimes you can determine whether or not you need "
+"the full contents of a response by inspecting its headers or the first bytes "
+"of its body. In that case, you could save resources by attaching a handler "
+"to the :class:`~scrapy.signals.bytes_received` or :class:`~scrapy.signals."
+"headers_received` signals and raising a :exc:`~scrapy.exceptions."
+"StopDownload` exception. Please refer to the :ref:`topics-stop-response-"
+"download` topic for additional information and examples."
 msgstr ""
 
+#~ msgid "What Python versions does Scrapy support?"
+#~ msgstr "ScrapyはどのPythonバージョンをサポートしていますか？"
+
+#~ msgid ""
+#~ "Scrapy is supported under Python 2.7 and Python 3.5+ under CPython "
+#~ "(default Python implementation) and PyPy (starting with PyPy 5.9). Python "
+#~ "2.6 support was dropped starting at Scrapy 0.20. Python 3 support was "
+#~ "added in Scrapy 1.1. PyPy support was added in Scrapy 1.4, PyPy3 support "
+#~ "was added in Scrapy 1.5."
+#~ msgstr ""
+#~ "ScrapyはCPython(デフォルトのPython実装)での Python 2.7 および Python 3.5+ "
+#~ "と、PyPy(PyPy 5.9以降) でサポートされています。Python 2.6のサポートは"
+#~ "Scrapy 0.20以降は削除されました。Python 3のサポートはScrapy 1.1で追加され"
+#~ "ました。 PyPyサポートはScrapy 1.4で追加され、PyPy3サポートはScrapy 1.5で追"
+#~ "加されました。"
+
+#~ msgid ""
+#~ "For Python 3 support on Windows, it is recommended to use Anaconda/"
+#~ "Miniconda as :ref:`outlined in the installation guide <intro-install-"
+#~ "windows>`."
+#~ msgstr ""
+#~ "WindowsでPython 3をサポートするには、 :ref:`インストールガイドで概説"
+#~ "<intro-install-windows>` しているように、Anaconda/Miniconda を使用すること"
+#~ "をお勧めします。"
