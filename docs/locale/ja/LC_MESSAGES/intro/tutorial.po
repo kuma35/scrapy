@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-24 08:01+0900\n"
+"PO-Revision-Date: 2021-04-22 19:22+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -140,25 +140,13 @@ msgid "Our first Spider"
 msgstr "私たちの最初のスパイダー"
 
 #: ../../intro/tutorial.rst:79
-#, fuzzy
-#| msgid ""
-#| "Spiders are classes that you define and that Scrapy uses to scrape "
-#| "information from a website (or a group of websites). They must subclass :"
-#| "class:`scrapy.Spider` and define the initial requests to make, optionally "
-#| "how to follow links in the pages, and how to parse the downloaded page "
-#| "content to extract data."
 msgid ""
 "Spiders are classes that you define and that Scrapy uses to scrape "
 "information from a website (or a group of websites). They must subclass :"
 "class:`~scrapy.spiders.Spider` and define the initial requests to make, "
 "optionally how to follow links in the pages, and how to parse the downloaded "
 "page content to extract data."
-msgstr ""
-"スパイダーはユーザが定義するクラスであり、ScrapyはWebサイト(またはWebサイトの"
-"グループ)から情報をスクレイピングするために使用します。 :class:`scrapy."
-"Spider` をサブクラス化し、最初のリクエストを作成し、オプションでページ内のリ"
-"ンクをたどる方法、およびダウンロードしたページ内容をパースしてデータを抽出す"
-"る方法を定義する必要があります。"
+msgstr "スパイダーはユーザが定義するクラスであり、ScrapyはWebサイト(またはWebサイトのグループ)から情報をスクレイピングするために使用します。 :class:`~scrapy.spiders.Spider`  をサブクラス化して最初のリクエストを作成し、オプションで、ページ内のリンクをたどる方法やダウンロードしたページ内容をパースしてデータを抽出する方法を定義する必要があります。"
 
 #: ../../intro/tutorial.rst:85
 msgid ""
@@ -338,11 +326,6 @@ msgstr ""
 "shell>` を使用してセレクターを試すことです。 以下のように実行します::"
 
 #: ../../intro/tutorial.rst:214
-#, fuzzy
-#| msgid ""
-#| "Remember to always enclose urls in quotes when running Scrapy shell from "
-#| "command-line, otherwise urls containing arguments (ie. ``&`` character) "
-#| "will not work."
 msgid ""
 "Remember to always enclose urls in quotes when running Scrapy shell from "
 "command-line, otherwise urls containing arguments (i.e. ``&`` character) "
@@ -361,16 +344,10 @@ msgid "You will see something like::"
 msgstr "あなたは以下のようなものを見る事になるでしょう::"
 
 #: ../../intro/tutorial.rst:239
-#, fuzzy
-#| msgid ""
-#| "Using the shell, you can try selecting elements using `CSS`_ with the "
-#| "response object::"
 msgid ""
 "Using the shell, you can try selecting elements using `CSS`_ with the "
 "response object:"
-msgstr ""
-"シェルを使用して、あなたはレスポンス・オブジェクトで `CSS`_ を使用して要素の"
-"選択を試す事ができます::"
+msgstr "シェルを使用して、あなたはレスポンス・オブジェクトで `CSS`_ を使用して要素の選択を試す事ができます:"
 
 #: ../../intro/tutorial.rst:249
 msgid ""
@@ -387,52 +364,28 @@ msgstr ""
 "ます。"
 
 #: ../../intro/tutorial.rst:255
-#, fuzzy
-#| msgid "To extract the text from the title above, you can do::"
 msgid "To extract the text from the title above, you can do:"
-msgstr "上記のタイトルからテキストを抽出するには、以下のようにします::"
+msgstr "上記のタイトルからテキストを抽出するには、以下のようにします:"
 
 #: ../../intro/tutorial.rst:260
-#, fuzzy
-#| msgid ""
-#| "There are two things to note here: one is that we've added ``::text`` to "
-#| "the CSS query, to mean we want to select only the text elements directly "
-#| "inside ``<title>`` element.  If we don't specify ``::text``, we'd get the "
-#| "full title element, including its tags::"
 msgid ""
 "There are two things to note here: one is that we've added ``::text`` to the "
 "CSS query, to mean we want to select only the text elements directly inside "
 "``<title>`` element.  If we don't specify ``::text``, we'd get the full "
 "title element, including its tags:"
-msgstr ""
-"ここで注意すべき点が2つあります。1つは、CSSクエリに ``::text`` を追加したこと"
-"です。これは、 ``<title>`` 要素内のテキスト要素のみを直接選択することを意味し"
-"ます。 ``::text`` を指定しない場合、そのタグを含む完全なタイトル要素を取得し"
-"ます::"
+msgstr "ここで注意すべき点が2つあります。1つは、CSSクエリに ``::text`` を追加したことです。これは、 ``<title>`` 要素内のテキスト要素のみを直接選択することを意味します。 ``::text`` を指定しない場合、そのタグを含む完全なタイトル要素を取得します:"
 
 #: ../../intro/tutorial.rst:268
-#, fuzzy
-#| msgid ""
-#| "The other thing is that the result of calling ``.getall()`` is a list: it "
-#| "is possible that a selector returns more than one result, so we extract "
-#| "them all. When you know you just want the first result, as in this case, "
-#| "you can do::"
 msgid ""
 "The other thing is that the result of calling ``.getall()`` is a list: it is "
 "possible that a selector returns more than one result, so we extract them "
 "all. When you know you just want the first result, as in this case, you can "
 "do:"
-msgstr ""
-"もう1つは、 ``.getall()`` を呼び出した結果がリストであるということです。セレ"
-"クターが複数の結果を返す可能性があり、そしてそれらの全てを抽出します。この場"
-"合のように、最初の結果だけが必要であることがわかったら、次の操作を実行できま"
-"す::"
+msgstr "もう1つは、 ``.getall()`` を呼び出した結果がリストであるということです。セレクターが複数の結果を返す可能性があり、そしてそれらの全てを抽出します。この場合のように、最初の結果だけが必要であることがわかったら、次の操作を実行できます:"
 
 #: ../../intro/tutorial.rst:275
-#, fuzzy
-#| msgid "As an alternative, you could've written::"
 msgid "As an alternative, you could've written:"
-msgstr "代わりに以下のように書くこともできます::"
+msgstr "代わりに以下のように書くこともできます:"
 
 #: ../../intro/tutorial.rst:280
 msgid ""
@@ -455,22 +408,12 @@ msgstr ""
 "た場合でも、少なくとも **いくつかの** データを取得できるようにします。"
 
 #: ../../intro/tutorial.rst:288
-#, fuzzy
-#| msgid ""
-#| "Besides the :meth:`~scrapy.selector.SelectorList.getall` and :meth:"
-#| "`~scrapy.selector.SelectorList.get` methods, you can also use the :meth:"
-#| "`~scrapy.selector.SelectorList.re` method to extract using `regular "
-#| "expressions`_::"
 msgid ""
 "Besides the :meth:`~scrapy.selector.SelectorList.getall` and :meth:`~scrapy."
 "selector.SelectorList.get` methods, you can also use the :meth:`~scrapy."
 "selector.SelectorList.re` method to extract using :doc:`regular expressions "
 "<library/re>`:"
-msgstr ""
-":meth:`~scrapy.selector.SelectorList.getall` メソッドや :meth:`~scrapy."
-"selector.SelectorList.get` メソッドに加えて、正規表現(`regular expressions`_)"
-"により抽出する :meth:`~scrapy.selector.SelectorList.re` メソッドも使用できま"
-"す::"
+msgstr ":meth:`~scrapy.selector.SelectorList.getall` メソッドや :meth:`~scrapy.selector.SelectorList.get` メソッドに加えて、 :doc:`正規表現 <library/re>` (訳注: https://docs.python.org/ja/3/library/re.html ) により抽出する :meth:`~scrapy.selector.SelectorList.re` メソッドも使用できます:"
 
 #: ../../intro/tutorial.rst:300
 msgid ""
@@ -497,13 +440,9 @@ msgid "XPath: a brief intro"
 msgstr "XPathの簡単な紹介"
 
 #: ../../intro/tutorial.rst:314
-#, fuzzy
-#| msgid ""
-#| "Besides `CSS`_, Scrapy selectors also support using `XPath`_ expressions::"
 msgid ""
 "Besides `CSS`_, Scrapy selectors also support using `XPath`_ expressions:"
-msgstr ""
-"`CSS`_ に加えて、Scrapyセレクターは `XPath`_ 式の使用もサポートしています::"
+msgstr "`CSS`_ に加えて、Scrapyセレクターは `XPath`_ 式の使用もサポートしています:"
 
 #: ../../intro/tutorial.rst:321
 msgid ""
@@ -571,63 +510,34 @@ msgstr ""
 "Scrapyシェルで少しいじって、必要なデータを抽出する方法を見つけましょう::"
 
 #: ../../intro/tutorial.rst:374
-#, fuzzy
-#| msgid "We get a list of selectors for the quote HTML elements with::"
 msgid "We get a list of selectors for the quote HTML elements with:"
-msgstr "引用HTML要素のセレクターのリストを取得します::"
+msgstr "引用HTML要素のセレクターのリストを取得します:"
 
 #: ../../intro/tutorial.rst:381
-#, fuzzy
-#| msgid ""
-#| "Each of the selectors returned by the query above allows us to run "
-#| "further queries over their sub-elements. Let's assign the first selector "
-#| "to a variable, so that we can run our CSS selectors directly on a "
-#| "particular quote::"
 msgid ""
 "Each of the selectors returned by the query above allows us to run further "
 "queries over their sub-elements. Let's assign the first selector to a "
 "variable, so that we can run our CSS selectors directly on a particular "
 "quote:"
-msgstr ""
-"上記のクエリによって返された各セレクタを使用すると、サブ要素に対してさらにク"
-"エリを実行できます。 最初のセレクターを変数に割り当てて、特定の引用でCSSセレ"
-"クターを直接実行できるようにします::"
+msgstr "上記のクエリによって返された各セレクタを使用すると、サブ要素に対してさらにクエリを実行できます。 最初のセレクターを変数に割り当てて、特定の引用でCSSセレクターを直接実行できるようにします:"
 
 #: ../../intro/tutorial.rst:387
-#, fuzzy
-#| msgid ""
-#| "Now, let's extract ``text``, ``author`` and the ``tags`` from that quote "
-#| "using the ``quote`` object we just created::"
 msgid ""
 "Now, let's extract ``text``, ``author`` and the ``tags`` from that quote "
 "using the ``quote`` object we just created:"
-msgstr ""
-"それでは、作成したばかりの ``quote`` オブジェクトを使用して、その引用から "
-"``text`` と ``author`` と ``tags`` を抽出しましょう::"
+msgstr "それでは、作成したばかりの ``quote`` オブジェクトを使用して、その引用から ``text`` と ``author`` と ``tags`` を抽出しましょう:"
 
 #: ../../intro/tutorial.rst:397
-#, fuzzy
-#| msgid ""
-#| "Given that the tags are a list of strings, we can use the ``.getall()`` "
-#| "method to get all of them::"
 msgid ""
 "Given that the tags are a list of strings, we can use the ``.getall()`` "
 "method to get all of them:"
-msgstr ""
-"タグは文字列のリストになっているので、 ``.getall()`` メソッドを使用してそれら"
-"すべてを取得できます::"
+msgstr "タグは文字列のリストになっているので、 ``.getall()`` メソッドを使用してそれらすべてを取得できます:"
 
 #: ../../intro/tutorial.rst:408
-#, fuzzy
-#| msgid ""
-#| "Having figured out how to extract each bit, we can now iterate over all "
-#| "the quotes elements and put them together into a Python dictionary::"
 msgid ""
 "Having figured out how to extract each bit, we can now iterate over all the "
 "quotes elements and put them together into a Python dictionary:"
-msgstr ""
-"各パーツを抽出する方法を考え出したので、すべての引用要素を反復処理して、それ"
-"らをPython辞書にまとめることができます::"
+msgstr "各パーツを抽出する方法を考え出したので、すべての引用要素を反復処理して、それらをPython辞書にまとめることができます:"
 
 #: ../../intro/tutorial.rst:421
 msgid "Extracting data in our spider"
@@ -673,10 +583,6 @@ msgstr ""
 "ポート<topics-feed-exports>` を以下のコマンドで使用することです::"
 
 #: ../../intro/tutorial.rst:467
-#, fuzzy
-#| msgid ""
-#| "That will generate an ``quotes.json`` file containing all scraped items, "
-#| "serialized in `JSON`_."
 msgid ""
 "That will generate a ``quotes.json`` file containing all scraped items, "
 "serialized in `JSON`_."
@@ -690,7 +596,7 @@ msgid ""
 "instead to append new content to any existing file. However, appending to a "
 "JSON file makes the file contents invalid JSON. When appending to a file, "
 "consider using a different serialization format, such as `JSON Lines`_::"
-msgstr ""
+msgstr "``-O``  コマンドラインスイッチは既存のファイルを上書きします。 一方 ``-o`` を使用すると、既存のファイルに新しいコンテンツを追加します。 ただし、JSONファイルに追加をすると、無効なJSONになります。ファイルに追加するときは、 `JSON Lines`_ など別のシリアル化形式の使用を検討してください::"
 
 #: ../../intro/tutorial.rst:477
 msgid ""
@@ -754,36 +660,21 @@ msgstr ""
 "アップを含む、次のページへのリンクがあることがわかります:"
 
 #: ../../intro/tutorial.rst:515
-#, fuzzy
-#| msgid "We can try extracting it in the shell::"
 msgid "We can try extracting it in the shell:"
-msgstr "私たちはScrapyシェルでこれの抽出を試してみることができます::"
+msgstr "私たちはScrapyシェルでこれの抽出を試してみることができます:"
 
 #: ../../intro/tutorial.rst:520
-#, fuzzy
-#| msgid ""
-#| "This gets the anchor element, but we want the attribute ``href``. For "
-#| "that, Scrapy supports a CSS extension that lets you select the attribute "
-#| "contents, like this::"
 msgid ""
 "This gets the anchor element, but we want the attribute ``href``. For that, "
 "Scrapy supports a CSS extension that lets you select the attribute contents, "
 "like this:"
-msgstr ""
-"これはアンカー要素を取得しますが、属性 ``href`` が必要です。 そのために、"
-"Scrapyは、次のように属性の内容を選択できるCSS拡張機能をサポートしています:"
+msgstr "これはアンカー要素を取得しますが、属性 ``href`` が必要です。 そのために、Scrapyは、次のように属性の内容を選択できるCSS拡張機能をサポートしています:"
 
 #: ../../intro/tutorial.rst:527
-#, fuzzy
-#| msgid ""
-#| "There is also an ``attrib`` property available (see :ref:`selecting-"
-#| "attributes` for more)::"
 msgid ""
 "There is also an ``attrib`` property available (see :ref:`selecting-"
 "attributes` for more):"
-msgstr ""
-"``attrib`` プロパティもあります(詳細については :ref:`selecting-attributes` 参"
-"照)::"
+msgstr "``attrib`` プロパティもあります(詳細については :ref:`要素属性の選択 <selecting-attributes>` 参照):"
 
 #: ../../intro/tutorial.rst:533
 msgid ""
@@ -877,20 +768,14 @@ msgstr ""
 "を自動的に使用します。 したがって、コードをさらに短くすることができます::"
 
 #: ../../intro/tutorial.rst:624
-#, fuzzy
-#| msgid ""
-#| "As a shortcut for creating Request objects you can use :meth:`response."
-#| "follow <scrapy.http.TextResponse.follow>`::"
 msgid ""
 "To create multiple requests from an iterable, you can use :meth:`response."
 "follow_all <scrapy.http.TextResponse.follow_all>` instead::"
-msgstr ""
-"Requestオブジェクトを作成するためのショートカットとして、 :meth:`response."
-"follow <scrapy.http.TextResponse.follow>` を使用できます::"
+msgstr "反復可能ファイルから複数のリクエストを作成するには、代わりに :meth:`response.follow_all <scrapy.http.TextResponse.follow_all>` を使用できます::"
 
 #: ../../intro/tutorial.rst:630
 msgid "or, shortening it further::"
-msgstr ""
+msgstr "更に短縮してみます::"
 
 #: ../../intro/tutorial.rst:636
 msgid "More examples and patterns"
@@ -915,17 +800,11 @@ msgstr ""
 "``parse`` コールバックのページ分けリンクをたどります。"
 
 #: ../../intro/tutorial.rst:670
-#, fuzzy
-#| msgid ""
-#| "Here we're passing callbacks to ``response.follow`` as positional "
-#| "arguments to make the code shorter; it also works for ``scrapy.Request``."
 msgid ""
 "Here we're passing callbacks to :meth:`response.follow_all <scrapy.http."
 "TextResponse.follow_all>` as positional arguments to make the code shorter; "
 "it also works for :class:`~scrapy.http.Request`."
-msgstr ""
-"ここでは、コードを短くするための位置引数としてコールバックを  ``response."
-"follow`` に渡しますが、 ``scrapy.Request`` でも機能します。"
+msgstr "ここでは、コードを短くするための位置引数として、コールバックを :meth:`response.follow_all <scrapy.http.TextResponse.follow_all>` に渡しますが、 :class:`~scrapy.http.Request` でも機能します。"
 
 # 文脈からPython dictをPython辞書と訳したが。さて。
 #: ../../intro/tutorial.rst:675
@@ -1050,27 +929,3 @@ msgstr ""
 "ター、およびスクレイプデータのモデリングのようにチュートリアルで扱っていない"
 "その他のことについて詳しく知ることができます。 サンプルプロジェクトで遊びたい"
 "場合は、 :ref:`intro-examples` 節を確認してください。"
-
-#~ msgid ""
-#~ "For historic reasons, Scrapy appends to a given file instead of "
-#~ "overwriting its contents. If you run this command twice without removing "
-#~ "the file before the second time, you'll end up with a broken JSON file."
-#~ msgstr ""
-#~ "歴史的な理由により、Scrapyはファイルの内容を上書きする代わりに、指定された"
-#~ "ファイルに追加します。 2回目の前にファイルを削除せずにこのコマンドを2回実"
-#~ "行すると、JSONファイルが壊れてしまいます。"
-
-#~ msgid "You can also use other formats, like `JSON Lines`_::"
-#~ msgstr "`JSON Lines`_ のような他の形式を使用することもできます::"
-
-#~ msgid ""
-#~ "``response.follow(response.css('li.next a'))`` is not valid because "
-#~ "``response.css`` returns a list-like object with selectors for all "
-#~ "results, not a single selector. A ``for`` loop like in the example above, "
-#~ "or ``response.follow(response.css('li.next a')[0])`` is fine."
-#~ msgstr ""
-#~ "``response.css`` は、単一のセレクターではなく、すべての結果のセレクターを"
-#~ "持つリストのようなオブジェクトを返すため、 ``response.follow(response."
-#~ "css('li.next a'))`` は有効ではありません。上記の例のような ``for`` ルー"
-#~ "プ、または ``response.follow(response.css('li.next a')[0])`` は問題ありま"
-#~ "せん。"

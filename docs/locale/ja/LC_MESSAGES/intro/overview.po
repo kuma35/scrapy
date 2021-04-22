@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-22 14:55+0900\n"
+"PO-Revision-Date: 2021-04-22 18:56+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -75,17 +75,10 @@ msgstr ""
 "command:`runspider` コマンドを使用してスパイダーを実行します::"
 
 #: ../../intro/overview.rst:50
-#, fuzzy
-#| msgid ""
-#| "When this finishes you will have in the ``quotes.json`` file a list of "
-#| "the quotes in JSON format, containing text and author, looking like this "
-#| "(reformatted here for better readability)::"
 msgid ""
 "When this finishes you will have in the ``quotes.jl`` file a list of the "
 "quotes in JSON Lines format, containing text and author, looking like this::"
-msgstr ""
-"これが完了すると、quotes.jsonファイルに、以下のようなテキストと著者を含むJSON"
-"形式の引用のリストができます(読みやすくするために整え直してあります)::"
+msgstr "これが完了すると、 ``quotes.jl`` ファイルに、以下のようなテキストと著者を含むJSON形式の引用のリストができます::"
 
 #: ../../intro/overview.rst:60
 msgid "What just happened?"
