@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-24 07:54+0900\n"
+"PO-Revision-Date: 2021-04-22 18:49+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -23,32 +23,24 @@ msgstr "インストール ガイド"
 
 #: ../../intro/install.rst:10
 msgid "Supported Python versions"
-msgstr ""
+msgstr "対象とするPythonのバージョン"
 
 #: ../../intro/install.rst:12
 msgid ""
 "Scrapy requires Python 3.6+, either the CPython implementation (default) or "
 "the PyPy 7.2.0+ implementation (see :ref:`python:implementations`)."
-msgstr ""
+msgstr "Scrapyには、CPython 実装(デフォルト)または PyPy 7.2.0+ 実装のいずれかの Python3.6+ が必要です( :ref:`python:implementations` 参照)。"
 
 #: ../../intro/install.rst:18
 msgid "Installing Scrapy"
 msgstr "Scrapyのインストール"
 
 #: ../../intro/install.rst:20
-#, fuzzy
-#| msgid ""
-#| "If you're using `Anaconda`_ or `Miniconda`_, you can install the package "
-#| "from the `conda-forge`_ channel, which has up-to-date packages for Linux, "
-#| "Windows and OS X."
 msgid ""
 "If you're using `Anaconda`_ or `Miniconda`_, you can install the package "
 "from the `conda-forge`_ channel, which has up-to-date packages for Linux, "
 "Windows and macOS."
-msgstr ""
-"あなたが `Anaconda`_ または `Miniconda`_ を使用している場合、Linux、Windows、"
-"およびOS X用の最新のパッケージがある `conda-forge`_ チャンネルからパッケージ"
-"をインストールできます。"
+msgstr "あなたが `Anaconda`_ または `Miniconda`_ を使用している場合、Linux用 や Windows用 や macOS用の最新のパッケージがある `conda-forge`_ チャンネルからパッケージをインストールできます。"
 
 #: ../../intro/install.rst:24
 msgid "To install Scrapy using ``conda``, run::"
@@ -175,10 +167,8 @@ msgid "`lxml installation`_"
 msgstr "`lxml installation`_"
 
 #: ../../intro/install.rst:73
-#, fuzzy
-#| msgid "`cryptography installation`_"
 msgid ":doc:`cryptography installation <cryptography:installation>`"
-msgstr "`cryptography installation`_"
+msgstr ":doc:`cryptography installation <cryptography:installation>`"
 
 #: ../../intro/install.rst:81
 msgid "Using a virtual environment (recommended)"
@@ -195,62 +185,31 @@ msgstr ""
 "docs.python.org/ja/3/library/venv.html 参照)"
 
 #: ../../intro/install.rst:86
-#, fuzzy
-#| msgid ""
-#| "Python packages can be installed either globally (a.k.a system wide), or "
-#| "in user-space. We do not recommend installing scrapy system wide."
 msgid ""
 "Python packages can be installed either globally (a.k.a system wide), or in "
 "user-space. We do not recommend installing Scrapy system wide."
-msgstr ""
-"Pythonパッケージは、グローバル（システム全体）またはユーザー空間にインストー"
-"ルできます。 システム全体にScrapyをインストールすることはお勧めしません。"
+msgstr "Pythonパッケージは、グローバル(システムワイドとも呼ばれる)またはユーザー空間にインストールできます。 システムワイドにScrapyをインストールすることはお勧めしません。"
 
 #: ../../intro/install.rst:89
-#, fuzzy
-#| msgid ""
-#| "Instead, we recommend that you install scrapy within a so-called "
-#| "\"virtual environment\" (`virtualenv`_). Virtualenvs allow you to not "
-#| "conflict with already-installed Python system packages (which could break "
-#| "some of your system tools and scripts), and still install packages "
-#| "normally with ``pip`` (without ``sudo`` and the likes)."
 msgid ""
 "Instead, we recommend that you install Scrapy within a so-called \"virtual "
 "environment\" (:mod:`venv`). Virtual environments allow you to not conflict "
 "with already-installed Python system packages (which could break some of "
 "your system tools and scripts), and still install packages normally with "
 "``pip`` (without ``sudo`` and the likes)."
-msgstr ""
-"代わりに、いわゆる仮想環境(`virtualenv`_)内にScrapyをインストールすることをお"
-"勧めします。 Virtualenv(訳注:python3ならvenv)を使用すると、既にインストールさ"
-"れているPythonシステムパッケージと競合(システムツールやスクリプトの一部が破損"
-"する可能性があります)することなく、通常は(``sudo`` などを使用せずに) ``pip`` "
-"でパッケージをインストールできます。"
+msgstr "代わりに、いわゆる「仮想環境」( :mod:`venv` )内にScrapyをインストールすることをお勧めします。 仮想環境を使用すると、既にインストールされているPythonシステムパッケージと競合(システムツールやスクリプトの一部が破損する可能性があります)することなく、通常は(``sudo`` などを使用せずに) ``pip`` でパッケージをインストールできます。"
 
 #: ../../intro/install.rst:95
-#, fuzzy
-#| msgid "Check this `user guide`_ on how to create your virtualenv."
 msgid "See :ref:`tut-venv` on how to create your virtual environment."
-msgstr ""
-"virtualenvの作成方法については、この `user guide`_ を確認してください。"
+msgstr "仮想環境の作成方法については、 :ref:`tut-venv` (訳注: https://docs.python.org/ja/3/tutorial/venv.html#tut-venv ) を参照してください。"
 
 #: ../../intro/install.rst:97
-#, fuzzy
-#| msgid ""
-#| "Once you have created a virtualenv, you can install scrapy inside it with "
-#| "``pip``, just like any other Python package. (See :ref:`platform-specific "
-#| "guides <intro-install-platform-notes>` below for non-Python dependencies "
-#| "that you may need to install beforehand)."
 msgid ""
 "Once you have created a virtual environment, you can install Scrapy inside "
 "it with ``pip``, just like any other Python package. (See :ref:`platform-"
 "specific guides <intro-install-platform-notes>` below for non-Python "
 "dependencies that you may need to install beforehand)."
-msgstr ""
-"virtualenvを作成したら、他のPythonパッケージと同様に ``pip`` を使用してその中"
-"にScrapyをインストールできます(事前にインストールする必要がある非Python依存関"
-"係については、以下の  :ref:`プラットフォーム別ガイド<intro-install-platform-"
-"notes>` を参照してください)。"
+msgstr "仮想環境を作成したら、他のPythonパッケージと同様に ``pip`` を使用してその中にScrapyをインストールできます(事前にインストールする必要がある非Python依存関係については、以下の  :ref:`プラットフォーム別ガイド<intro-install-platform-notes>` を参照してください)。"
 
 #: ../../intro/install.rst:106
 msgid "Platform specific installation notes"
@@ -279,55 +238,53 @@ msgstr ""
 "Scrapyをインストールします::"
 
 #: ../../intro/install.rst:121
-#, fuzzy
-#| msgid "To install Scrapy using ``conda``, run::"
 msgid "To install Scrapy on Windows using ``pip``:"
-msgstr "``conda`` を使用してScrapyをインストールするには、以下を実行します::"
+msgstr "``pip`` を使用してWindowsにScrapyをインストールするには:"
 
 #: ../../intro/install.rst:124
 msgid ""
 "This installation method requires “Microsoft Visual C++” for installing some "
 "Scrapy dependencies, which demands significantly more disk space than "
 "Anaconda."
-msgstr ""
+msgstr "このインストール方法では、Scrapyの依存関係をインストールするために “Microsoft Visual C++” が必要です。これには、Anacondaより非常に多くのディスク容量が必要です。"
 
 #: ../../intro/install.rst:127
 msgid ""
 "Download and execute `Microsoft C++ Build Tools`_ to install the Visual "
 "Studio Installer."
-msgstr ""
+msgstr "`Microsoft C++ Build Tools`_ をダウンロードして実行し、Visual Studio インストーラーをインストールします。"
 
 #: ../../intro/install.rst:129
 msgid "Run the Visual Studio Installer."
-msgstr ""
+msgstr "Visual Studio インストーラーを実行します。"
 
 #: ../../intro/install.rst:131
 msgid "Under the Workloads section, select **C++ build tools**."
-msgstr ""
+msgstr "[Workloads]セクションで、 **C++ build tools** を選択します。"
 
 #: ../../intro/install.rst:133
 msgid ""
 "Check the installation details and make sure following packages are selected "
 "as optional components:"
-msgstr ""
+msgstr "インストールの詳細を確認し、以下のパッケージがオプションのコンポーネントとして選択されていることを確認してください。"
 
 #: ../../intro/install.rst:135
 msgid "**MSVC**  (e.g MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.23) )"
-msgstr ""
+msgstr "**MSVC**  (e.g MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.23) )"
 
 #: ../../intro/install.rst:137
 msgid "**Windows SDK**  (e.g Windows 10 SDK (10.0.18362.0))"
-msgstr ""
+msgstr "**Windows SDK**  (e.g Windows 10 SDK (10.0.18362.0))"
 
 #: ../../intro/install.rst:139
 msgid "Install the Visual Studio Build Tools."
-msgstr ""
+msgstr "Visual Studio Build Tools をインストールします。"
 
 #: ../../intro/install.rst:141
 msgid ""
 "Now, you should be able to :ref:`install Scrapy <intro-install-scrapy>` "
 "using ``pip``."
-msgstr ""
+msgstr "これで、あなたは ``pip`` を使用して :ref:`Scrapyのインストール <intro-install-scrapy>` を実行できるようになります。"
 
 #: ../../intro/install.rst:146
 msgid "Ubuntu 14.04 or above"
@@ -354,10 +311,6 @@ msgstr ""
 "れらはたいてい古すぎて、最新のScrapyに追いつくことができていません。"
 
 #: ../../intro/install.rst:157
-#, fuzzy
-#| msgid ""
-#| "To install scrapy on Ubuntu (or Ubuntu-based) systems, you need to "
-#| "install these dependencies::"
 msgid ""
 "To install Scrapy on Ubuntu (or Ubuntu-based) systems, you need to install "
 "these dependencies::"
@@ -366,16 +319,10 @@ msgstr ""
 "関係をインストールする必要があります::"
 
 #: ../../intro/install.rst:162
-#, fuzzy
-#| msgid ""
-#| "``python-dev``, ``zlib1g-dev``, ``libxml2-dev`` and ``libxslt1-dev`` are "
-#| "required for ``lxml``"
 msgid ""
 "``python3-dev``, ``zlib1g-dev``, ``libxml2-dev`` and ``libxslt1-dev`` are "
 "required for ``lxml``"
-msgstr ""
-"``python-dev`` 、 ``zlib1g-dev`` 、 ``libxml2-dev`` 、 ``libxslt1-dev`` は、 "
-"``lxml`` の為に必要です。"
+msgstr "``python3-dev`` 、 ``zlib1g-dev`` 、 ``libxml2-dev`` 、 ``libxslt1-dev`` は、 ``lxml`` の為に必要です。"
 
 #: ../../intro/install.rst:164
 msgid "``libssl-dev`` and ``libffi-dev`` are required for ``cryptography``"
@@ -399,25 +346,15 @@ msgstr ""
 
 #: ../../intro/install.rst:179
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../intro/install.rst:181
-#, fuzzy
-#| msgid ""
-#| "Building Scrapy's dependencies requires the presence of a C compiler and "
-#| "development headers. On OS X this is typically provided by Apple’s Xcode "
-#| "development tools. To install the Xcode command line tools open a "
-#| "terminal window and run::"
 msgid ""
 "Building Scrapy's dependencies requires the presence of a C compiler and "
 "development headers. On macOS this is typically provided by Apple’s Xcode "
 "development tools. To install the Xcode command line tools open a terminal "
 "window and run::"
-msgstr ""
-"Scrapyの依存関係を構築するには、Cコンパイラと開発ヘッダーが必要です。 OS Xで"
-"は、通常これはAppleのXcode開発ツールによって提供されます。 Xcodeコマンドライ"
-"ンツールをインストールするには、ターミナルウィンドウを開き、以下を実行しま"
-"す::"
+msgstr "Scrapyの依存関係を構築するには、Cコンパイラと開発ヘッダーが必要です。 macOSでは、通常これはAppleのXcode開発ツールによって提供されます。 Xcodeコマンドラインツールをインストールするには、ターミナルウィンドウを開き、以下を実行します::"
 
 #: ../../intro/install.rst:188
 msgid ""
@@ -472,25 +409,16 @@ msgstr ""
 "ルする必要はありません。 そうでない場合は、pythonをアップグレードします::"
 
 #: ../../intro/install.rst:218
-#, fuzzy
-#| msgid "*(Optional)* Install Scrapy inside an isolated python environment."
 msgid ""
 "*(Optional)* :ref:`Install Scrapy inside a Python virtual environment <intro-"
 "using-virtualenv>`."
-msgstr "*(オプション)* 隔離されたpython環境内にScrapyをインストールします。"
+msgstr "*(オプション)* :ref:`Python仮想環境内にScrapyをインストール <intro-using-virtualenv>`"
 
 #: ../../intro/install.rst:221
-#, fuzzy
-#| msgid ""
-#| "This method is a workaround for the above OS X issue, but it's an overall "
-#| "good practice for managing dependencies and can complement the first "
-#| "method."
 msgid ""
 "This method is a workaround for the above macOS issue, but it's an overall "
 "good practice for managing dependencies and can complement the first method."
-msgstr ""
-"この方法は、上記のOS Xの問題の回避策ですが、依存関係を管理するための全体的な"
-"グッドプラクティスであり、最初の方法を補完できます。"
+msgstr "この方法は、上記のmacOSの問題の回避策ですが、依存関係を管理するための全体的なグッドプラクティスであり、最初の方法を補完できます。"
 
 #: ../../intro/install.rst:224
 msgid "After any of these workarounds you should be able to install Scrapy::"
@@ -510,18 +438,6 @@ msgstr ""
 "ジョンは5.9.0です。 PyPy3では、Linuxインストールのみがテストされました。"
 
 #: ../../intro/install.rst:235
-#, fuzzy
-#| msgid ""
-#| "Most scrapy dependencides now have binary wheels for CPython, but not for "
-#| "PyPy. This means that these dependecies will be built during "
-#| "installation. On OS X, you are likely to face an issue with building "
-#| "Cryptography dependency, solution to this problem is described `here "
-#| "<https://github.com/pyca/cryptography/"
-#| "issues/2692#issuecomment-272773481>`_, that is to ``brew install "
-#| "openssl`` and then export the flags that this command recommends (only "
-#| "needed when installing scrapy). Installing on Linux has no special issues "
-#| "besides installing build dependencies. Installing scrapy with PyPy on "
-#| "Windows is not tested."
 msgid ""
 "Most Scrapy dependencies now have binary wheels for CPython, but not for "
 "PyPy. This means that these dependencies will be built during installation. "
@@ -532,37 +448,16 @@ msgid ""
 "(only needed when installing Scrapy). Installing on Linux has no special "
 "issues besides installing build dependencies. Installing Scrapy with PyPy on "
 "Windows is not tested."
-msgstr ""
-"現在、Scrapyが依存するほとんどの依存コンポーネントには、CPython用のバイナリホ"
-"イール形式のパッケージがありますが、PyPy用ではありません。 これは、これらの依"
-"存関係がインストール中に構築されることを意味します。 OS Xでは、暗号化の依存関"
-"係の構築に関する問題に直面する可能性があります。この問題の解決策は `こちら "
-"<https://github.com/pyca/cryptography/issues/2692#issuecomment-272773481>`_ "
-"で説明されています。 ``brew install openssl`` してから、このコマンドが推奨す"
-"るフラグをエクスポートします(scrapyのインストール時にのみ必要)。 Linuxへのイ"
-"ンストールには、ビルドの依存関係のインストール以外に特別な問題はありません。 "
-"WindowsでPyPyを使用したScrapyのインストールはテストされていません。"
+msgstr "現在、Scrapyが依存するほとんどの依存コンポーネントには、CPython用のバイナリホイール形式のパッケージがありますが、PyPy用ではありません。 これは、これらの依存関係がインストール中に構築されることを意味します。 macOSでは、暗号化の依存関係の構築に関する問題に直面する可能性があります。この問題の解決策は `こちら <https://github.com/pyca/cryptography/issues/2692#issuecomment-272773481>`_ で説明されています。 ``brew install openssl`` してから、このコマンドが推奨するフラグをエクスポートします(Scrapyのインストール時にのみ必要)。 Linuxへのインストールには、ビルドの依存関係のインストール以外に特別な問題はありません。 WindowsでPyPyを使用したScrapyのインストールはテストされていません。"
 
 #: ../../intro/install.rst:245
-#, fuzzy
-#| msgid ""
-#| "You can check that scrapy is installed correctly by running ``scrapy "
-#| "bench``. If this command gives errors such as ``TypeError: ... got 2 "
-#| "unexpected keyword arguments``, this means that setuptools was unable to "
-#| "pick up one PyPy-specific dependency. To fix this issue, run ``pip "
-#| "install 'PyPyDispatcher>=2.1.0'``."
 msgid ""
 "You can check that Scrapy is installed correctly by running ``scrapy "
 "bench``. If this command gives errors such as ``TypeError: ... got 2 "
 "unexpected keyword arguments``, this means that setuptools was unable to "
 "pick up one PyPy-specific dependency. To fix this issue, run ``pip install "
 "'PyPyDispatcher>=2.1.0'``."
-msgstr ""
-"あなたは、 ``scrapy bench`` を実行して、scrapyが正しくインストールされている"
-"ことを確認できます。 このコマンドが ``TypeError: ... got 2 \"\n"
-"\"unexpected keyword arguments`` のようなエラーを出す場合、これはsetuptoolsが"
-"1つのPyPy固有の依存関係を選択できなかったことを意味します。 この問題を修正す"
-"るには、 ``pip install 'PyPyDispatcher>=2.1.0'`` を実行します。"
+msgstr "あなたは、 ``scrapy bench`` を実行して、Scrapyが正しくインストールされていることを確認できます。 このコマンドが ``TypeError: ... got 2 unexpected keyword arguments`` のようなエラーを出す場合、これはsetuptoolsが1つのPyPy固有の依存関係を選択できなかったことを意味します。 この問題を修正するには、 ``pip install 'PyPyDispatcher>=2.1.0'`` を実行します。"
 
 #: ../../intro/install.rst:255
 msgid "Troubleshooting"
@@ -603,66 +498,3 @@ msgid ""
 msgstr ""
 "詳細は `Issue #2473 <https://github.com/scrapy/scrapy/issues/2473>`_ をご覧く"
 "ださい。"
-
-#~ msgid ""
-#~ "Scrapy runs on Python 2.7 and Python 3.5 or above under CPython (default "
-#~ "Python implementation) and PyPy (starting with PyPy 5.9)."
-#~ msgstr ""
-#~ "Scrapy は CPython(デフォルトのPython実装)のPython 2.7(またはそれ以上)と"
-#~ "Python 3.5(またはそれ以上)、またはPyPy(PyPy 5.9以降)で動作します。"
-
-#~ msgid ""
-#~ "To get started with virtual environments, see `virtualenv installation "
-#~ "instructions`_. To install it globally (having it globally installed "
-#~ "actually helps here), it should be a matter of running::"
-#~ msgstr ""
-#~ "仮想環境の使用を開始するには、 `virtualenv installation instructions`_ を"
-#~ "参照してください。 グローバルにインストールする(グローバルにインストールし"
-#~ "ないと役に立ちません)には、次を実行する必要があります::"
-
-#~ msgid ""
-#~ "If you use Linux or OS X, `virtualenvwrapper`_ is a handy tool to create "
-#~ "virtualenvs."
-#~ msgstr ""
-#~ "あなたがLinuxまたはOS Xを使用している場合、 `virtualenvwrapper`_ は"
-#~ "virtualenvを作成するのに便利なツールです。"
-
-#~ msgid ""
-#~ "Python virtualenvs can be created to use Python 2 by default, or Python 3 "
-#~ "by default."
-#~ msgstr ""
-#~ "Python virtualenvは、デフォルトでPython 2、またはデフォルトでPython 3を使"
-#~ "用するように作成できます。"
-
-#~ msgid ""
-#~ "If you want to install scrapy with Python 3, install scrapy within a "
-#~ "Python 3 virtualenv."
-#~ msgstr ""
-#~ "Python3でScrapyをインストールする場合は、Python3のvirtualenv内にScrapyをイ"
-#~ "ンストールします。"
-
-#~ msgid ""
-#~ "And if you want to install scrapy with Python 2, install scrapy within a "
-#~ "Python 2 virtualenv."
-#~ msgstr ""
-#~ "また、Python2でScrapyをインストールする場合は、Python2 virtualenv内に"
-#~ "Scrapyをインストールします。"
-
-#~ msgid ""
-#~ "If you want to install scrapy on Python 3, you’ll also need Python 3 "
-#~ "development headers::"
-#~ msgstr ""
-#~ "Python3にScrapyをインストールする場合は、Python3開発ヘッダーも必要になりま"
-#~ "す::"
-
-#~ msgid "Mac OS X"
-#~ msgstr "Mac OS X"
-
-#~ msgid ""
-#~ "`virtualenv`_ is a tool you can use to create virtual environments in "
-#~ "python. We recommended reading a tutorial like http://docs.python-guide."
-#~ "org/en/latest/dev/virtualenvs/ to get started."
-#~ msgstr ""
-#~ "`virtualenv`_ は、Pythonで仮想環境を作成するために使用できるツールです。 "
-#~ "http://docs.python-guide.org/en/latest/dev/virtualenvs/ のようなチュートリ"
-#~ "アルを読むことをお勧めします。"

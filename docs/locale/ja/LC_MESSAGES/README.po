@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-04-18 16:00+0900\n"
+"PO-Revision-Date: 2021-04-20 08:41+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -19,87 +19,87 @@ msgstr ""
 
 #: ../../README.rst:5
 msgid "Scrapy documentation quick start guide"
-msgstr ""
+msgstr "Scrapy文書クイックスタートガイド"
 
 #: ../../README.rst:7
 msgid ""
 "This file provides a quick guide on how to compile the Scrapy "
 "documentation."
-msgstr ""
+msgstr "このファイルは、Scrapy文書のコンパイル方法に関するクイックガイドです。"
 
 #: ../../README.rst:11
 msgid "Setup the environment"
-msgstr ""
+msgstr "環境のセットアップ"
 
 #: ../../README.rst:13
 msgid ""
 "To compile the documentation you need Sphinx Python library. To install "
 "it and all its dependencies run the following command from this dir"
-msgstr ""
+msgstr "文書をコンパイルするには、Sphinx Pythonライブラリが必要です。Sphinxとそのすべての依存関係をインストールするには、このディレクトリで以下のコマンドを実行します。"
 
 #: ../../README.rst:22
 msgid "Compile the documentation"
-msgstr ""
+msgstr "文書のコンパイル"
 
 #: ../../README.rst:24
 msgid ""
 "To compile the documentation (to classic HTML output) run the following "
 "command from this dir::"
-msgstr ""
+msgstr "文書を(従来のHTML出力に)コンパイルするには、このディレクトリで以下のコマンドを実行します::"
 
 #: ../../README.rst:29
 msgid ""
 "Documentation will be generated (in HTML format) inside the "
 "``build/html`` dir."
-msgstr ""
+msgstr "文書は ``build/html`` ディレクトリ内に(HTML形式で)生成されます。"
 
 #: ../../README.rst:33
 msgid "View the documentation"
-msgstr ""
+msgstr "文書の閲覧"
 
 #: ../../README.rst:35
 msgid "To view the documentation run the following command::"
-msgstr ""
+msgstr "文書を閲覧するには以下のコマンドを実行します::"
 
 #: ../../README.rst:39
 msgid ""
 "This command will fire up your default browser and open the main page of "
 "your (previously generated) HTML documentation."
-msgstr ""
+msgstr "このコマンドはデフォルトのブラウザを起動し、(さっき作った)HTML文書のメインページを開きます。"
 
 #: ../../README.rst:44
 msgid "Start over"
-msgstr ""
+msgstr "最初からやり直す"
 
 #: ../../README.rst:46
 msgid "To cleanup all generated documentation files and start from scratch run::"
-msgstr ""
+msgstr "生成したすべての文書ファイルを掃除し、最初から実行するには以下のようにします::"
 
 #: ../../README.rst:50
 msgid "Keep in mind that this command won't touch any documentation source files."
-msgstr ""
+msgstr "このコマンドは文書のソースファイルには影響しないことに注意してください。"
 
 #: ../../README.rst:54
 msgid "Recreating documentation on the fly"
-msgstr ""
+msgstr "文書の自動再作成"
 
 #: ../../README.rst:56
 msgid ""
 "There is a way to recreate the doc automatically when you make changes, "
 "you need to install watchdog (``pip install watchdog``) and then use::"
-msgstr ""
+msgstr "変更を加えたときに文書を自動的に再作成する方法があります。そのためには watchdog ( ``pip install watchdog`` ) インストールしてから以下を使用する必要があります::"
 
 #: ../../README.rst:62
 msgid "Alternative method using tox"
-msgstr ""
+msgstr "代わりにtoxを使う方法"
 
 #: ../../README.rst:64
 msgid "To compile the documentation to HTML run the following command::"
-msgstr ""
+msgstr "文書をHTMLにコンパイルするには、次のコマンドを実行します::"
 
 #: ../../README.rst:68
 msgid ""
 "Documentation will be generated (in HTML format) inside the "
 "``.tox/docs/tmp/html`` dir."
-msgstr ""
+msgstr "文書は、 ``.tox/docs/tmp/html`` ディレクトリ内に(HTML形式で)生成されます。"
 

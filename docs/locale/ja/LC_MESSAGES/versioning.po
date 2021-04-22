@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-23 18:22+0900\n"
+"PO-Revision-Date: 2021-04-21 01:27+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -18,8 +18,6 @@ msgstr ""
 "Generated-By: Babel 2.7.0\n"
 
 #: ../../versioning.rst:5
-#, fuzzy
-#| msgid "Versioning and API Stability"
 msgid "Versioning and API stability"
 msgstr "バージョン管理とAPIの安定性"
 
@@ -95,8 +93,6 @@ msgstr ""
 "(製品で使っても安全な) *1.1* シリーズの *1.1.1* は最初のバグ修正リリース"
 
 #: ../../versioning.rst:38
-#, fuzzy
-#| msgid "API Stability"
 msgid "API stability"
 msgstr "APIの安定性"
 
@@ -124,29 +120,29 @@ msgstr ""
 
 #: ../../versioning.rst:53
 msgid "Deprecation policy"
-msgstr ""
+msgstr "非推奨に関するポリシー"
 
 #: ../../versioning.rst:55
 msgid ""
 "We aim to maintain support for deprecated Scrapy features for at least 1 "
 "year."
-msgstr ""
+msgstr "非推奨のScrapy機能のサポートは、少なくとも1年間維持することを目指しています。"
 
 #: ../../versioning.rst:57
 msgid ""
 "For example, if a feature is deprecated in a Scrapy version released on June "
 "15th 2020, that feature should continue to work in versions released on June "
 "14th 2021 or before that."
-msgstr ""
+msgstr "たとえば、2020年6月15日にリリースされたScrapyバージョンで当該機能が非推奨になった場合、その機能は2021年6月14日以前にリリースされたバージョンでは引き続き機能するべきです。"
 
 #: ../../versioning.rst:61
 msgid ""
 "Any new Scrapy release after a year *may* remove support for that deprecated "
 "feature."
-msgstr ""
+msgstr "そして1年後の新しいScrapyリリースは、その非推奨機能のサポートを削除する可能性があります。"
 
 #: ../../versioning.rst:64
 msgid ""
 "All deprecated features removed in a Scrapy release are explicitly mentioned "
 "in the :ref:`release notes <news>`."
-msgstr ""
+msgstr "Scrapyリリースで削除されたすべての非推奨機能は、 :ref:`リリース・ノート <news>` に明示的に記載されています。"

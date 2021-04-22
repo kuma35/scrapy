@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-07 06:28+0900\n"
+"PO-Revision-Date: 2021-04-22 04:10+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -196,14 +196,6 @@ msgstr ""
 "実行できます::"
 
 #: ../../faq.rst:127
-#, fuzzy
-#| msgid ""
-#| "While pending requests are below the configured values of :setting:"
-#| "`CONCURRENT_REQUESTS`, :setting:`CONCURRENT_REQUESTS_PER_DOMAIN` or :"
-#| "setting:`CONCURRENT_REQUESTS_PER_DOMAIN`, those requests are sent "
-#| "concurrently. As a result, the first few requests of a crawl rarely "
-#| "follow the desired order. Lowering those settings to ``1`` enforces the "
-#| "desired order, but it significantly slows down the crawl as a whole."
 msgid ""
 "While pending requests are below the configured values of :setting:"
 "`CONCURRENT_REQUESTS`, :setting:`CONCURRENT_REQUESTS_PER_DOMAIN` or :setting:"
@@ -211,13 +203,7 @@ msgid ""
 "result, the first few requests of a crawl rarely follow the desired order. "
 "Lowering those settings to ``1`` enforces the desired order, but it "
 "significantly slows down the crawl as a whole."
-msgstr ""
-"保留中のリクエストが :setting:`CONCURRENT_REQUESTS` または :setting:"
-"`CONCURRENT_REQUESTS_PER_DOMAIN` または :setting:"
-"`CONCURRENT_REQUESTS_PER_DOMAIN` の設定値を下回っている間、これらのリクエスト"
-"は同時に送信されます。その結果、クロールの最初のいくつかのリクエストが目的の"
-"順序に従うことはほとんどありません。 これらの設定を ``1`` に下げると、目的の"
-"順序が強制されますが、クロール全体が大幅に遅くなります。"
+msgstr "保留中のリクエストが :setting:`CONCURRENT_REQUESTS` または :setting:`CONCURRENT_REQUESTS_PER_DOMAIN` または :setting:`CONCURRENT_REQUESTS_PER_IP` の設定値を下回っている間、これらのリクエストは同時に送信されます。その結果、クロールの最初のいくつかのリクエストが目的の順序に従うことはほとんどありません。 これらの設定を ``1`` に下げると、目的の順序が強制されますが、クロール全体が大幅に遅くなります。"
 
 #: ../../faq.rst:136
 msgid "My Scrapy crawler has memory leaks. What can I do?"
@@ -246,7 +232,7 @@ msgstr "1つ前の質問を見て下さい。"
 
 #: ../../faq.rst:149
 msgid "How can I prevent memory errors due to many allowed domains?"
-msgstr ""
+msgstr "多くの許可されたドメインによるメモリエラーを防ぐにはどうすればよいですか？"
 
 #: ../../faq.rst:151
 msgid ""
@@ -255,37 +241,31 @@ msgid ""
 "`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware` spider middleware with "
 "a :ref:`custom spider middleware <custom-spider-middleware>` that requires "
 "less memory. For example:"
-msgstr ""
+msgstr ":attr:`~scrapy.spiders.Spider.allowed_domains` の長いリスト(たとえば5万以上)を持つスパイダーがある場合は、デフォルトの :class:`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware` スパイダーミドルウェアを :ref:`カスタム スパイダー ミドルウェア <custom-spider-middleware>` に置き換えることを検討してください。 必要なメモリが少なくて済みます。 例:"
 
 #: ../../faq.rst:158
 msgid ""
 "If your domain names are similar enough, use your own regular expression "
 "instead joining the strings in :attr:`~scrapy.spiders.Spider."
 "allowed_domains` into a complex regular expression."
-msgstr ""
+msgstr "ドメイン名が十分に類似している場合は、 :attr:`~scrapy.spiders.Spider.allowed_domains` の文字列を複雑な正規表現に結合する代わりに、あなた独自の正規表現を使用してください。"
 
 #: ../../faq.rst:163
 msgid ""
 "If you can `meet the installation requirements`_, use pyre2_ instead of "
 "Python’s re_ to compile your URL-filtering regular expression. See :issue:"
 "`1908`."
-msgstr ""
+msgstr "`meet the installation requirements`_ (インストール要件を満たす)ことができる場合は、Pythonの re_ の代わりに pyre2_ を使用して、URLフィルタリングの正規表現をコンパイルします。 :issue:`1908` を参照してください。"
 
 #: ../../faq.rst:167
 msgid "See also other suggestions at `StackOverflow`_."
-msgstr ""
+msgstr "`StackOverflow`_ の他の提案も参照してください。"
 
 #: ../../faq.rst:169
-#, fuzzy
-#| msgid ""
-#| "For more info see: :class:`~scrapy.spidermiddlewares.offsite."
-#| "OffsiteMiddleware`."
 msgid ""
 "Remember to disable :class:`scrapy.spidermiddlewares.offsite."
 "OffsiteMiddleware` when you enable your custom implementation::"
-msgstr ""
-"詳細は :class:`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware` を参照し"
-"て下さい。"
+msgstr "詳細は :class:`scrapy.spidermiddlewares.offsite.OffsiteMiddleware` を参照して下さい。"
 
 #: ../../faq.rst:184
 msgid "Can I use Basic HTTP Authentication in my spiders?"
@@ -470,21 +450,11 @@ msgstr ""
 "ですか？"
 
 #: ../../faq.rst:289
-#, fuzzy
-#| msgid ""
-#| "The ``__VIEWSTATE`` parameter is used in sites built with ASP.NET/VB.NET. "
-#| "For more info on how it works see http://search.cpan.org/~ecarroll/HTML-"
-#| "TreeBuilderX-ASP_NET-0.09/lib/HTML/TreeBuilderX/ASP_NET.pm . Also, here's "
-#| "an `example spider`_ which scrapes one of these sites."
 msgid ""
 "The ``__VIEWSTATE`` parameter is used in sites built with ASP.NET/VB.NET. "
 "For more info on how it works see `this page`_. Also, here's an `example "
 "spider`_ which scrapes one of these sites."
-msgstr ""
-"``__VIEWSTATE`` パラメーターは、ASP.NET/VB.NETで構築されたサイトで使用されま"
-"す。動作の詳細については、http://search.cpan.org/~ecarroll/HTML-TreeBuilderX-"
-"ASP_NET-0.09/lib/HTML/TreeBuilderX/ASP_NET.pm を参照してください。また、これ"
-"らのサイトの1つをスクレイピングする `example spider`_ もあります。"
+msgstr "``__VIEWSTATE`` パラメーターは、ASP.NET/VB.NETで構築されたサイトで使用されます。動作の詳細については、 `this page`_ を参照してください。また、これらのサイトの1つをスクレイピングする `example spider`_ もあります。"
 
 #: ../../faq.rst:297
 msgid "What's the best way to parse big XML/CSV data feeds?"
@@ -612,13 +582,6 @@ msgid "How to split an item into multiple items in an item pipeline?"
 msgstr "アイテム・パイプラインでアイテムを複数のアイテムに分割する方法は？"
 
 #: ../../faq.rst:358
-#, fuzzy
-#| msgid ""
-#| ":ref:`Item pipelines <topics-item-pipeline>` cannot yield multiple items "
-#| "per input item. :ref:`Create a spider middleware <custom-spider-"
-#| "middleware>` instead, and use its :meth:`~scrapy.spidermiddlewares."
-#| "SpiderMiddleware.process_spider_output` method for this puspose. For "
-#| "example::"
 msgid ""
 ":ref:`Item pipelines <topics-item-pipeline>` cannot yield multiple items per "
 "input item. :ref:`Create a spider middleware <custom-spider-middleware>` "
@@ -632,10 +595,8 @@ msgstr ""
 "す。例えば以下です::"
 
 #: ../../faq.rst:378
-#, fuzzy
-#| msgid "Does Scrapy work with HTTP proxies?"
 msgid "Does Scrapy support IPv6 addresses?"
-msgstr "ScrapyはHTTPプロキシ経由で動作しますか？"
+msgstr "ScrapyはIPv6アドレスをサポートしますか？"
 
 #: ../../faq.rst:380
 msgid ""
@@ -643,13 +604,13 @@ msgid ""
 "CachingHostnameResolver``. Note that by doing so, you lose the ability to "
 "set a specific timeout for DNS requests (the value of the :setting:"
 "`DNS_TIMEOUT` setting is ignored)."
-msgstr ""
+msgstr "はい、 :setting:`DNS_RESOLVER` を ``scrapy.resolver.CachingHostnameResolver`` に設定します。 そうすることで、DNS要求に特定のタイムアウトを設定する機能が失われることに注意してください( :setting:`DNS_TIMEOUT` 設定の値は無視されます)。"
 
 #: ../../faq.rst:388
 msgid ""
 "How to deal with ``<class 'ValueError'>: filedescriptor out of range in "
 "select()`` exceptions?"
-msgstr ""
+msgstr "``<class 'ValueError'>: filedescriptor out of range in select()`` 例外はどのように扱えばいいですか？"
 
 #: ../../faq.rst:390
 msgid ""
@@ -657,11 +618,11 @@ msgid ""
 "macOS, where the default Twisted reactor is :class:`twisted.internet."
 "selectreactor.SelectReactor`. Switching to a different reactor is possible "
 "by using the :setting:`TWISTED_REACTOR` setting."
-msgstr ""
+msgstr "この問題は、デフォルトのTwistedリアクターが :class:`twisted.internet.selectreactor.SelectReactor` であるmacOSでブロード・クロールを実行すると発生することが報告されています( `has been reported`_ )。:setting:`TWISTED_REACTOR` 設定を使用すると、別のリアクターに切り替えることができます。"
 
 #: ../../faq.rst:398
 msgid "How can I cancel the download of a given response?"
-msgstr ""
+msgstr "与えられたレスポンスのダウンロードをキャンセルするにはどうすればよいですか？"
 
 #: ../../faq.rst:400
 msgid ""
@@ -673,29 +634,4 @@ msgid ""
 "headers_received` signals and raising a :exc:`~scrapy.exceptions."
 "StopDownload` exception. Please refer to the :ref:`topics-stop-response-"
 "download` topic for additional information and examples."
-msgstr ""
-
-#~ msgid "What Python versions does Scrapy support?"
-#~ msgstr "ScrapyはどのPythonバージョンをサポートしていますか？"
-
-#~ msgid ""
-#~ "Scrapy is supported under Python 2.7 and Python 3.5+ under CPython "
-#~ "(default Python implementation) and PyPy (starting with PyPy 5.9). Python "
-#~ "2.6 support was dropped starting at Scrapy 0.20. Python 3 support was "
-#~ "added in Scrapy 1.1. PyPy support was added in Scrapy 1.4, PyPy3 support "
-#~ "was added in Scrapy 1.5."
-#~ msgstr ""
-#~ "ScrapyはCPython(デフォルトのPython実装)での Python 2.7 および Python 3.5+ "
-#~ "と、PyPy(PyPy 5.9以降) でサポートされています。Python 2.6のサポートは"
-#~ "Scrapy 0.20以降は削除されました。Python 3のサポートはScrapy 1.1で追加され"
-#~ "ました。 PyPyサポートはScrapy 1.4で追加され、PyPy3サポートはScrapy 1.5で追"
-#~ "加されました。"
-
-#~ msgid ""
-#~ "For Python 3 support on Windows, it is recommended to use Anaconda/"
-#~ "Miniconda as :ref:`outlined in the installation guide <intro-install-"
-#~ "windows>`."
-#~ msgstr ""
-#~ "WindowsでPython 3をサポートするには、 :ref:`インストールガイドで概説"
-#~ "<intro-install-windows>` しているように、Anaconda/Miniconda を使用すること"
-#~ "をお勧めします。"
+msgstr "状況によっては、与えられたレスポンスのダウンロードを停止すると便利な場合があります。たとえば、レスポンスのヘッダーまたはボディの最初のバイトを調べることで、レスポンスの完全な内容が必要かどうかを判断できる場合があります。その場合、 :class:`~scrapy.signals.bytes_received` または :class:`~scrapy.signals.headers_received` シグナルにハンドラーをアタッチし、 そして :exc:`~scrapy.exceptions.StopDownload` 例外を発生させることで、リソースを節約できます。 追加情報と例については、 :ref:`topics-stop-response-download` トピックを参照してください。"

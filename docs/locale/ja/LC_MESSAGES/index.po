@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-11-12 01:39+0900\n"
+"PO-Revision-Date: 2021-04-20 08:51+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -291,10 +291,8 @@ msgid ":doc:`topics/debug`"
 msgstr ":doc:`topics/debug`"
 
 #: ../../index.rst:174
-#, fuzzy
-#| msgid "Learn how to debug common problems of your scrapy spider."
 msgid "Learn how to debug common problems of your Scrapy spider."
-msgstr "scrapyスパイダーの一般的な問題をデバッグする方法を学びます。"
+msgstr "Scrapyスパイダーの一般的な問題をデバッグする方法を学びます。"
 
 #: ../../index.rst:177
 msgid ":doc:`topics/contracts`"
@@ -390,24 +388,20 @@ msgid "Learn how to pause and resume crawls for large spiders."
 msgstr "大きなスパイダーのクロールを一時停止および再開する方法を学習します。"
 
 #: ../../index.rst:210
-#, fuzzy
-#| msgid ":doc:`topics/contracts`"
 msgid ":doc:`topics/coroutines`"
 msgstr ":doc:`topics/contracts`"
 
 #: ../../index.rst:210
 msgid "Use the :ref:`coroutine syntax <async>`."
-msgstr ""
+msgstr ":ref:`coroutine syntax <async>` の利用"
 
 #: ../../index.rst:213
-#, fuzzy
-#| msgid ":doc:`topics/api`"
 msgid ":doc:`topics/asyncio`"
-msgstr ":doc:`topics/api`"
+msgstr ":doc:`topics/asyncio`"
 
 #: ../../index.rst:213
 msgid "Use :mod:`asyncio` and :mod:`asyncio`-powered libraries."
-msgstr ""
+msgstr ":mod:`asyncio` と :mod:`asyncio`-powered ライブラリ"
 
 #: ../../index.rst:234
 msgid ":doc:`topics/architecture`"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-06 20:21+0900\n"
+"PO-Revision-Date: 2021-04-20 09:42+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -109,11 +109,6 @@ msgstr ""
 "問で問題が解決されていないかどうかを確認してください"
 
 #: ../../contributing.rst:47
-#, fuzzy
-#| msgid ""
-#| "if you have a general question about scrapy usage, please ask it at "
-#| "`Stack Overflow <https://stackoverflow.com/questions/tagged/scrapy>`__ "
-#| "(use \"scrapy\" tag)."
 msgid ""
 "if you have a general question about Scrapy usage, please ask it at `Stack "
 "Overflow <https://stackoverflow.com/questions/tagged/scrapy>`__ (use \"scrapy"
@@ -251,16 +246,14 @@ msgstr ""
 msgid ""
 "To see if your private API is skipped properly, generate a documentation "
 "coverage report as follows::"
-msgstr ""
-"あなたのプライベートAPIが適切にスキップされているかどうかを確認するには、次の"
-"ようにドキュメント・カバレッジ・レポートを生成します::"
+msgstr "あなたのプライベートAPIが適切にスキップされているかどうかを確認するには、次のように文書カバレッジ・レポートを生成します::"
 
 #: ../../contributing.rst:111
 msgid ""
 "if you are removing deprecated code, first make sure that at least 1 year "
 "(12 months) has passed since the release that introduced the deprecation. "
 "See :ref:`deprecation-policy`."
-msgstr ""
+msgstr "非推奨のコードを削除する場合は、最初に、非推奨を導入したリリースから少なくとも1年(12か月)が経過していることを確認してください。 ：ref： `deprecation-policy`を参照してください。 :ref:`deprecation-policy` 参照。"
 
 #: ../../contributing.rst:119
 msgid "Submitting patches"
@@ -294,27 +287,9 @@ msgid ""
 "later, after the idea has been validated and proven useful. Alternatively, "
 "you can start a conversation in the `Scrapy subreddit`_ to discuss your idea "
 "first."
-msgstr ""
-"パッチを作成する前に新しい機能(またはバグ修正)について議論することもできます"
-"が、引数を説明し、主題にいくつかの追加の考えを入れたことを示す準備ができてい"
-"るパッチを用意しておくことは常に良いことです。適切な出発点は、GitHubでプル・"
-"リクエストを送信することです。それはあなたのアイデアを説明するのに十分単純で"
-"あり、アイデアが検証され有用であることが証明された後、ドキュメント/テストを後"
-"で残すことができます。または、 `Scrapy subreddit`_ で会話を開始して、最初にア"
-"イデアについて話し合うこともできます。"
+msgstr "パッチを作成する前に新しい機能(またはバグ修正)について議論することもできますが、引数を説明し、主題にいくつかの追加の考えを入れたことを示す準備ができているパッチを用意しておくことは常に良いことです。適切な出発点は、GitHubでプル・リクエストを送信することです。それはあなたのアイデアを説明するのに十分単純であり、アイデアが検証され有用であることが証明された後、文書/テストを後で残すことができます。または、 `Scrapy subreddit`_ で会話を開始して、最初にアイデアについて話し合うこともできます。"
 
 #: ../../contributing.rst:136
-#, fuzzy
-#| msgid ""
-#| "Sometimes there is an existing pull request for the problem you'd like to "
-#| "solve, which is stalled for some reason. Often the pull request is in a "
-#| "right direction, but changes are requested by Scrapy maintainers, and the "
-#| "original pull request author hasn't had time to address them. In this "
-#| "case consider picking up this pull request: open a new pull request with "
-#| "all commits from the original pull request, as well as additional changes "
-#| "to address the raised issues. Doing so helps a lot; it is not considered "
-#| "rude as soon as the original author is acknowledged by keeping his/her "
-#| "commits."
 msgid ""
 "Sometimes there is an existing pull request for the problem you'd like to "
 "solve, which is stalled for some reason. Often the pull request is in a "
@@ -335,15 +310,6 @@ msgstr ""
 "いなや、彼/彼女のそのコミットを取り込むことは失礼とはみなされません。"
 
 #: ../../contributing.rst:146
-#, fuzzy
-#| msgid ""
-#| "You can pull an existing pull request to a local branch by running ``git "
-#| "fetch upstream pull/$PR_NUMBER/head:$BRANCH_NAME_TO_CREATE`` (replace "
-#| "'upstream' with a remote name for scrapy repository, ``$PR_NUMBER`` with "
-#| "an ID of the pull request, and ``$BRANCH_NAME_TO_CREATE`` with a name of "
-#| "the branch you want to create locally). See also: https://help.github.com/"
-#| "articles/checking-out-pull-requests-locally/#modifying-an-inactive-pull-"
-#| "request-locally."
 msgid ""
 "You can pull an existing pull request to a local branch by running ``git "
 "fetch upstream pull/$PR_NUMBER/head:$BRANCH_NAME_TO_CREATE`` (replace "
@@ -352,14 +318,7 @@ msgid ""
 "branch you want to create locally). See also: https://help.github.com/en/"
 "github/collaborating-with-issues-and-pull-requests/checking-out-pull-"
 "requests-locally#modifying-an-inactive-pull-request-locally."
-msgstr ""
-"既存のプルリクエストをローカル・ブランチにプルするには、 ``git fetch "
-"upstream pull/$PR_NUMBER/head:$BRANCH_NAME_TO_CREATE`` を実行します"
-"(「upstream」をscrapyリポジトリのリモート名に、「$ PR_NUMBER」をプル・リクエ"
-"ストのID、びローカルに作成するブランチの名前を含む ``"
-"$BRANCH_NAME_TO_CREATE`` )。 https://help.github.com/articles/checking-out-"
-"pull-requests-locally/#modifying-an-inactive-pull-request-locally も参照して"
-"ください。"
+msgstr "既存のプルリクエストをローカル・ブランチにプルするには、 ``git fetch upstream pull/$PR_NUMBER/head:$BRANCH_NAME_TO_CREATE`` を実行します(「upstream」をscrapyリポジトリのリモート名に、「$ PR_NUMBER」をプル・リクエストのID、びローカルに作成するブランチの名前を含む ``$BRANCH_NAME_TO_CREATE`` )。 https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally#modifying-an-inactive-pull-request-locally も参照してください。"
 
 #: ../../contributing.rst:153
 msgid ""
@@ -402,82 +361,46 @@ msgid "Unless otherwise specified, follow :pep:`8`."
 msgstr "特に指定がない限り、 :pep:`8` に従ってください。"
 
 #: ../../contributing.rst:174
-#, fuzzy
-#| msgid ""
-#| "It's OK to use lines longer than 80 chars if it improves the code "
-#| "readability."
 msgid ""
 "It's OK to use lines longer than 79 chars if it improves the code "
 "readability."
-msgstr ""
-"コードの可読性を向上させるためであれば、80文字より長い行を使用しても構いませ"
-"ん。"
+msgstr "コードの可読性を向上させるためであれば、79文字より長い行を使用しても構いません。"
 
 #: ../../contributing.rst:177
-#, fuzzy
-#| msgid ""
-#| "Don't put your name in the code you contribute; git provides enough "
-#| "metadata to identify author of the code. See https://help.github.com/"
-#| "articles/setting-your-username-in-git/ for setup instructions."
 msgid ""
 "Don't put your name in the code you contribute; git provides enough metadata "
 "to identify author of the code. See https://help.github.com/en/github/using-"
 "git/setting-your-username-in-git for setup instructions."
-msgstr ""
-"貢献するコードにあなたの名前を入れないでください。gitは、コードの作成者を識別"
-"するのに十分なメタ・データを提供します。セットアップ手順については、 https://"
-"help.github.com/articles/setting-your-username-in-git/ を参照してください。"
+msgstr "貢献するコードにあなたの名前を入れないでください。gitは、コードの作成者を識別するのに十分なメタ・データを提供します。セットアップ手順については、 https://help.github.com/en/github/using-git/setting-your-username-in-git を参照してください。"
 
 #: ../../contributing.rst:185
 msgid "Documentation policies"
 msgstr "文書ポリシー"
 
 #: ../../contributing.rst:187
-#, fuzzy
-#| msgid ""
-#| "For reference documentation of API members (classes, methods, etc.) use "
-#| "docstrings and make sure that the Sphinx documentation uses the autodoc_ "
-#| "extension to pull the docstrings. API reference documentation should "
-#| "follow docstring conventions (`PEP 257`_) and be IDE-friendly: short, to "
-#| "the point, and it may provide short examples."
 msgid ""
 "For reference documentation of API members (classes, methods, etc.) use "
 "docstrings and make sure that the Sphinx documentation uses the :mod:"
 "`~sphinx.ext.autodoc` extension to pull the docstrings. API reference "
 "documentation should follow docstring conventions (`PEP 257`_) and be IDE-"
 "friendly: short, to the point, and it may provide short examples."
-msgstr ""
-"APIメンバー(クラス、メソッドなど)のリファレンス・ドキュメントについては、"
-"docstringsを使用し、Sphinxドキュメントが autodoc_ 拡張を使用してドキュメント"
-"文字列をプルすることを確認してください。 APIリファレンス・ドキュメントは"
-"docstringの規則( `PEP 257`_ )に準拠し、IDEフレンドリである必要があります。そ"
-"れは短くて要点を示して短い例を提供します。"
+msgstr "APIメンバー(クラス、メソッドなど)のリファレンス文書については、docstringsを使用し、Sphinx文書が :mod:`~sphinx.ext.autodoc` 拡張を使用してdocstringを引用することを確認してください。APIリファレンス文書はdocstringの規則( `PEP 257`_ )に準拠し、IDEにフレンドリである必要があります。つまりそれは簡潔な要点と例で書く必要があります。"
 
 #: ../../contributing.rst:193
 msgid ""
 "Other types of documentation, such as tutorials or topics, should be covered "
 "in files within the ``docs/`` directory. This includes documentation that is "
 "specific to an API member, but goes beyond API reference documentation."
-msgstr ""
-"チュートリアルやトピックなどの他の種類のドキュメントは、 ``docs/`` ディレクト"
-"リ内のファイルでカバーする必要があります。これには、APIメンバーに固有のドキュ"
-"メントが含まれますが、それはAPIリファレンス・ドキュメントを超える解説内容のも"
-"のです。"
+msgstr "チュートリアルやトピックなどの他の種類のドキュメントは、 ``docs/`` ディレクトリ内のファイルでカバーする必要があります。これには、APIメンバーに固有の文書が含まれますが、それはAPIリファレンス文書を超える解説内容のものです。"
 
 #: ../../contributing.rst:197
-#, fuzzy
-#| msgid ""
-#| "In any case, if something is covered in a docstring, use the autodoc_ "
-#| "extension to pull the docstring into the documentation instead of "
-#| "duplicating the docstring in files within the ``docs/`` directory."
 msgid ""
 "In any case, if something is covered in a docstring, use the :mod:`~sphinx."
 "ext.autodoc` extension to pull the docstring into the documentation instead "
 "of duplicating the docstring in files within the ``docs/`` directory."
 msgstr ""
-"いずれにせよ、docstringで何かが網羅されている場合、 ``docs/`` ディレクトリ内"
-"のファイルにdocstringを複製するのではなく、autodoc_ 拡張を使用してdocstringを"
-"ドキュメントに取り込みます。"
+"いずれにせよ、docstringで何かが網羅されている場合、 ``docs/`` ディレクトリ内のファイルにdocstringを複製するのではなく、 :mod:`~sphinx.\"\n"
+"\"ext.autodoc` 拡張を使用してdocstringを文書に取り込みます。"
 
 #: ../../contributing.rst:202
 msgid ""
@@ -486,31 +409,25 @@ msgid ""
 "``VERSION`` as version, we will replace it with the actual version right "
 "before the corresponding release. When we release a new major or minor "
 "version of Scrapy, we remove these directives if they are older than 3 years."
-msgstr ""
+msgstr "新機能または変更された機能を対象とする文書の更新では、Sphinxの :rst:dir:`versionadded` と :rst:dir:`versionchanged` ディレクティブを使用する必要があります。 バージョンとして ``VERSION`` を使用します。対応するリリースの直前の実際のバージョンに置き換えます。 Scrapyの新しいメジャーバージョンまたはマイナーバージョンをリリースする際、我々はこれらのディレクティブのうち、3年以上経過しているディレクティブを削除します。"
 
 #: ../../contributing.rst:208
 msgid ""
 "Documentation about deprecated features must be removed as those features "
 "are deprecated, so that new readers do not run into it. New deprecations and "
 "deprecation removals are documented in the :ref:`release notes <news>`."
-msgstr ""
+msgstr "非推奨の機能に関する文書は、新しい読者が遭遇しないように削除する必要があります。非推奨への追加と非推奨の削除については、 :ref:`リリース・ノート <news>` に記載されています。"
 
 #: ../../contributing.rst:214
 msgid "Tests"
 msgstr "テスト"
 
 #: ../../contributing.rst:216
-#, fuzzy
-#| msgid ""
-#| "Tests are implemented using the `Twisted unit-testing framework`_, "
-#| "running tests requires `tox`_."
 msgid ""
 "Tests are implemented using the :doc:`Twisted unit-testing framework "
 "<twisted:core/development/policy/test-standard>`. Running tests requires :"
 "doc:`tox <tox:index>`."
-msgstr ""
-"テストは `Twisted unit-testing framework`_ を使用して実装され、テストの実行に"
-"は `tox`_ が必要です。"
+msgstr "テストは、 :doc:`Twisted ユニットテスト フレームワーク <twisted:core/development/policy/test-standard>` を使用して実装されます。 テストを実行するには、 :doc:`tox <tox:index>` が必要です。"
 
 #: ../../contributing.rst:223
 msgid "Running tests"
@@ -518,7 +435,7 @@ msgstr "テストを実行する"
 
 #: ../../contributing.rst:225
 msgid "To run all tests::"
-msgstr ""
+msgstr "全てのテストを実行するには::"
 
 #: ../../contributing.rst:229
 msgid "To run a specific test (say ``tests/test_loader.py``) use:"
@@ -531,77 +448,39 @@ msgid "``tox -- tests/test_loader.py``"
 msgstr "``tox -- tests/test_loader.py``"
 
 #: ../../contributing.rst:233
-#, fuzzy
-#| msgid ""
-#| "To run the tests on a specific tox_ environment, use ``-e <name>`` with "
-#| "an environment name from ``tox.ini``. For example, to run the tests with "
-#| "Python 3.6 use::"
 msgid ""
 "To run the tests on a specific :doc:`tox <tox:index>` environment, use ``-e "
 "<name>`` with an environment name from ``tox.ini``. For example, to run the "
 "tests with Python 3.6 use::"
-msgstr ""
-"特定の tox_ 環境でテストを実行するには、 ``tox.ini`` からの環境名で ``-e "
-"<name>`` を使用します。たとえば、Python 3.6でテストを実行するときは次の通りで"
-"す::"
+msgstr "特定の :doc:`tox <tox:index>` 環境でテストを実行するには、 ``tox.ini`` からの環境名で ``-e <name>`` を使用します。たとえば、Python 3.6でテストを実行するときは次の通りです::"
 
 #: ../../contributing.rst:239
-#, fuzzy
-#| msgid ""
-#| "You can also specify a comma-separated list of environmets, and use "
-#| "`tox’s parallel mode`_ to run the tests on multiple environments in "
-#| "parallel::"
 msgid ""
 "You can also specify a comma-separated list of environments, and use :ref:"
 "`tox’s parallel mode <tox:parallel_mode>` to run the tests on multiple "
 "environments in parallel::"
-msgstr ""
-"環境のコンマ区切りリストを指定し、 `tox’s parallel mode`_ を使用して、複数の"
-"環境でテストを並行して実行することもできます::"
+msgstr "環境のコンマ区切りリストを指定し、 :ref:`toxのパラレルモード <tox:parallel_mode>` を使用して、複数の環境でテストを並行して実行することもできます::"
 
 #: ../../contributing.rst:245
-#, fuzzy
-#| msgid ""
-#| "To pass command-line options to pytest_, add them after ``--`` in your "
-#| "call to tox_. Using ``--`` overrides the default positional arguments "
-#| "defined in ``tox.ini``, so you must include those default positional "
-#| "arguments (``scrapy tests``) after ``--`` as well::"
 msgid ""
 "To pass command-line options to :doc:`pytest <pytest:index>`, add them after "
 "``--`` in your call to :doc:`tox <tox:index>`. Using ``--`` overrides the "
 "default positional arguments defined in ``tox.ini``, so you must include "
 "those default positional arguments (``scrapy tests``) after ``--`` as well::"
-msgstr ""
-"コマンドライン・オプションを pytest_ に渡すには、tox_ の呼び出しで ``--`` の"
-"後に追加します。 ``--`` を使用すると、 ``tox.ini`` で定義されているデフォルト"
-"の位置引数がオーバーライドされるため、これらのデフォルトの位置引数( ``scrapy "
-"tests`` )も ``--`` の後に含める必要があります::"
+msgstr "コマンドライン・オプションを :doc:`pytest <pytest:index>` に渡すには、 :doc:`tox <tox:index>` の呼び出しで ``--`` の後に追加します。 ``--`` を使用すると、 ``tox.ini`` で定義されているデフォルトの位置引数がオーバーライドされるため、これらのデフォルトの位置引数( ``scrapy tests`` )も ``--`` の後に含める必要があります::"
 
 #: ../../contributing.rst:252
-#, fuzzy
-#| msgid ""
-#| "You can also use the `pytest-xdist`_ plugin. For example, to run all "
-#| "tests on the Python 3.6 tox_ environment using all your CPU cores::"
 msgid ""
 "You can also use the `pytest-xdist`_ plugin. For example, to run all tests "
 "on the Python 3.6 :doc:`tox <tox:index>` environment using all your CPU "
 "cores::"
-msgstr ""
-"`pytest-xdist`_ プラグインを使用することもできます。たとえば、すべてのCPUコア"
-"を使用してPython 3.6 tox_ 環境ですべてのテストを実行するには次のようにしま"
-"す::"
+msgstr "`pytest-xdist`_ プラグインを使用することもできます。たとえば、すべてのCPUコアを使用してPython 3.6 :doc:`tox <tox:index>` 環境ですべてのテストを実行するには次のようにします::"
 
 #: ../../contributing.rst:257
-#, fuzzy
-#| msgid ""
-#| "To see coverage report install `coverage`_ (``pip install coverage``) and "
-#| "run:"
 msgid ""
 "To see coverage report install :doc:`coverage <coverage:index>` (``pip "
 "install coverage``) and run:"
-msgstr ""
-"カバレッジ・レポートを表示するには、 `coverage`_ をインストール( ``pip "
-"install coverage`` )して実行します:"
+msgstr "カバレッジ・レポートを表示するには、 :doc:`coverage <coverage:index>` をインストール( ``pip install coverage`` )して実行します:"
 
 #: ../../contributing.rst:260
 msgid "``coverage report``"
