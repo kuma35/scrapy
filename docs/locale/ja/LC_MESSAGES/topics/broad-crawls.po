@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-30 01:16+0900\n"
+"PO-Revision-Date: 2021-04-25 10:53+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -413,11 +413,11 @@ msgstr ""
 
 #: ../../topics/broad-crawls.rst:217
 msgid "Install a specific Twisted reactor"
-msgstr ""
+msgstr "指定のTwistedリアクターをインストールする"
 
 #: ../../topics/broad-crawls.rst:219
 msgid ""
 "If the crawl is exceeding the system's capabilities, you might want to try "
 "installing a specific Twisted reactor, via the :setting:`TWISTED_REACTOR` "
 "setting."
-msgstr ""
+msgstr "クロールがシステムの機能を超えている場合は、 :setting:`TWISTED_REACTOR` 設定を使用して、指定のTwistedリアクターをインストールしてみてください。"

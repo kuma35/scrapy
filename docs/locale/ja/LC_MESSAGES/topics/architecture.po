@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-29 12:52+0900\n"
+"PO-Revision-Date: 2021-04-24 10:14+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -203,20 +203,11 @@ msgid "Spiders"
 msgstr "スパイダー"
 
 #: ../../topics/architecture.rst:106
-#, fuzzy
-#| msgid ""
-#| "Spiders are custom classes written by Scrapy users to parse responses and "
-#| "extract items (aka scraped items) from them or additional requests to "
-#| "follow. For more information see :ref:`topics-spiders`."
 msgid ""
 "Spiders are custom classes written by Scrapy users to parse responses and "
 "extract :ref:`items <topics-items>` from them or additional requests to "
 "follow. For more information see :ref:`topics-spiders`."
-msgstr ""
-"スパイダーは、Scrapyユーザーによって記述されたカスタム・クラスであり、レスポ"
-"ンスをパースし、それらからアイテム(またはスクレイピング・アイテム)を抽出する"
-"か、追跡するための追加のリクエストを行います。詳細については、 :ref:`topics-"
-"spiders` を参照してください。"
+msgstr "スパイダーは、Scrapyユーザーによって作成されたカスタムクラスであり、レスポンスをパースして、レスポンスまたは追跡する追加のレスポンスから :ref:`アイテム <topics-items>` を抽出します。詳細については :ref:`topics-spiders` を参照してください。"
 
 #: ../../topics/architecture.rst:113
 msgid "Item Pipeline"
@@ -352,18 +343,12 @@ msgstr ""
 
 #: ../../topics/architecture.rst:169
 msgid ":doc:`twisted:core/howto/defer-intro`"
-msgstr ""
+msgstr ":doc:`twisted:core/howto/defer-intro`"
 
 #: ../../topics/architecture.rst:170
 msgid "`Twisted - hello, asynchronous programming`_"
-msgstr ""
-"Twisted - こんにちは、非同期プログラミング(`Twisted - hello, asynchronous "
-"programming`_)"
+msgstr "Twisted - こんにちは、非同期プログラミング(`Twisted - hello, asynchronous programming`_)"
 
 #: ../../topics/architecture.rst:171
 msgid "`Twisted Introduction - Krondo`_"
 msgstr "Twisted紹介 - Krondo(`Twisted Introduction - Krondo`_)"
-
-#~ msgid "`Introduction to Deferreds in Twisted`_"
-#~ msgstr ""
-#~ "Twistedの遅延オブジェクトの紹介(`Introduction to Deferreds in Twisted`_)"

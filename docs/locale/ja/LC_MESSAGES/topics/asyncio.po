@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Scrapy package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Scrapy 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-04-25 10:46+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,31 +19,31 @@ msgstr ""
 
 #: ../../topics/asyncio.rst:5
 msgid "asyncio"
-msgstr ""
+msgstr "asyncio(非同期I/O)"
 
 #: ../../topics/asyncio.rst:9
 msgid ""
 "Scrapy has partial support for :mod:`asyncio`. After you :ref:`install "
 "the asyncio reactor <install-asyncio>`, you may use :mod:`asyncio` and "
 ":mod:`asyncio`-powered libraries in any :doc:`coroutine <coroutines>`."
-msgstr ""
+msgstr "Scrapyは :mod:`asyncio` を部分的にサポートしています。 :ref:`asyncioリアクターのインストール <install-asyncio>` の後で、任意の :doc:`コルーチン <coroutines>` で :mod:`asyncio` および :mod:`asyncio` を利用したライブラリを使用できます。"
 
 #: ../../topics/asyncio.rst:13
 msgid ""
 ":mod:`asyncio` support in Scrapy is experimental, and not yet recommended"
 " for production environments. Future Scrapy versions may introduce "
 "related changes without a deprecation period or warning."
-msgstr ""
+msgstr "Scrapyでの :mod:`asyncio` のサポートは実験的なものであり、実稼働環境ではまだ推奨されていません。 将来のScrapyバージョンでは、非推奨の期間や警告なしに関連する変更が導入される可能性があります。"
 
 #: ../../topics/asyncio.rst:21
 msgid "Installing the asyncio reactor"
-msgstr ""
+msgstr "asyncioリアクターのインストール"
 
 #: ../../topics/asyncio.rst:23
 msgid ""
 "To enable :mod:`asyncio` support, set the :setting:`TWISTED_REACTOR` "
 "setting to ``'twisted.internet.asyncioreactor.AsyncioSelectorReactor'``."
-msgstr ""
+msgstr ":mod:`asyncio` サポートを有効にするには、 :setting:`TWISTED_REACTOR` 設定を ``'twisted.internet.asyncioreactor.AsyncioSelectorReactor'`` に設定します。"
 
 #: ../../topics/asyncio.rst:26
 msgid ""
@@ -52,11 +52,11 @@ msgid ""
 ":class:`~twisted.internet.asyncioreactor.AsyncioSelectorReactor` reactor "
 "manually. You can do that using "
 ":func:`~scrapy.utils.reactor.install_reactor`::"
-msgstr ""
+msgstr ":class:`~scrapy.crawler.CrawlerRunner` を使用している場合は、 :class:`~twisted.internet.asyncioreactor.AsyncioSelectorReactor` リアクターも手動でインストールする必要があります。 :func:`~scrapy.utils.reactor.install_reactor` を使用してこれを行うことができます::"
 
 #: ../../topics/asyncio.rst:36
 msgid "Using custom asyncio loops"
-msgstr ""
+msgstr "カスタムasyncioループの使用"
 
 #: ../../topics/asyncio.rst:38
 msgid ""
@@ -64,5 +64,5 @@ msgid ""
 " the :setting:`ASYNCIO_EVENT_LOOP` setting to the import path of the "
 "desired event loop class to use it instead of the default asyncio event "
 "loop."
-msgstr ""
+msgstr "asyncioリアクターでカスタムasyncioイベント・ループを使用することもできます。 :setting:`ASYNCIO_EVENT_LOOP` 設定を目的のイベント・ループ・クラスのインポート・パスに設定して、デフォルトのasyncioイベント・ループの代わりに使用します。"
 

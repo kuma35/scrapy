@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-18 15:47+0900\n"
+"PO-Revision-Date: 2021-04-25 12:41+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -74,8 +74,6 @@ msgstr ""
 "$HOME``) は、当該ユーザー全体の設定で、"
 
 #: ../../topics/commands.rst:30
-#, fuzzy
-#| msgid "``scrapy.cfg`` inside a scrapy project's root (see next section)."
 msgid "``scrapy.cfg`` inside a Scrapy project's root (see next section)."
 msgstr ""
 "(あなたの)Scrapyプロジェクトのルート内にある ``scrapy.cfg`` (詳しくは次節参"
@@ -132,19 +130,11 @@ msgstr ""
 "イル構造を持ち、以下のようになります。::"
 
 #: ../../topics/commands.rst:67
-#, fuzzy
-#| msgid ""
-#| "The directory where the ``scrapy.cfg`` file resides is known as the "
-#| "*project root directory*. That file contains the name of the python "
-#| "module that defines the project settings. Here is an example::"
 msgid ""
 "The directory where the ``scrapy.cfg`` file resides is known as the *project "
 "root directory*. That file contains the name of the python module that "
 "defines the project settings. Here is an example:"
-msgstr ""
-"``scrapy.cfg`` ファイルが存在するディレクトリは *プロジェクトルートディレクト"
-"リ* と呼ばれます。 そのファイルには、プロジェクト設定を定義するpythonモジュー"
-"ルの名前が含まれています。 以下に例を示します。::"
+msgstr "``scrapy.cfg`` ファイルが存在するディレクトリは *プロジェクトルートディレクトリ* と呼ばれます。 そのファイルには、プロジェクト設定を定義するpythonモジュールの名前が含まれています。 以下に例を示します:"
 
 #: ../../topics/commands.rst:79
 msgid "Sharing the root directory between projects"
@@ -159,16 +149,10 @@ msgstr ""
 "ジュールを持つ複数のScrapyプロジェクトで共有できます。"
 
 #: ../../topics/commands.rst:84
-#, fuzzy
-#| msgid ""
-#| "In that case, you must define one or more aliases for those settings "
-#| "modules under ``[settings]`` in your ``scrapy.cfg`` file::"
 msgid ""
 "In that case, you must define one or more aliases for those settings modules "
 "under ``[settings]`` in your ``scrapy.cfg`` file:"
-msgstr ""
-"その場合、あなたの ``scrapy.cfg`` ファイルの ``[settings]`` の下で、これらの"
-"設定モジュールの1つ以上のエイリアスを定義する必要があります。::"
+msgstr "その場合、あなたの ``scrapy.cfg`` ファイルの ``[settings]`` の下で、これらの設定モジュールの1つ以上のエイリアスを定義する必要があります:"
 
 #: ../../topics/commands.rst:94
 msgid ""
@@ -733,7 +717,7 @@ msgstr "``--verbose`` または ``-v``: 各深度レベルの情報を表示。"
 
 #: ../../topics/commands.rst:492
 msgid "``--output`` or ``-o``: dump scraped items to a file"
-msgstr ""
+msgstr "``--output`` または ``-o``: スクレイピングされたアイテムをファイルにダンプします"
 
 #: ../../topics/commands.rst:518
 msgid "settings"
@@ -833,10 +817,8 @@ msgstr ""
 "ロジェクトにカスタムコマンドを追加するために使用されます。"
 
 #: ../../topics/commands.rst:590
-#, fuzzy
-#| msgid "Example::"
 msgid "Example:"
-msgstr "例::"
+msgstr "例:"
 
 #: ../../topics/commands.rst:599
 msgid "Register commands via setup.py entry points"
@@ -853,10 +835,5 @@ msgstr ""
 "できます。"
 
 #: ../../topics/commands.rst:605
-#, fuzzy
-#| msgid "The following example adds ``my_command`` command::"
 msgid "The following example adds ``my_command`` command:"
-msgstr "以下の例は ``my_command`` コマンドを追加します。::"
-
-#~ msgid "This is an experimental feature, use with caution."
-#~ msgstr "これは実験的な機能です。注意して使用してください。"
+msgstr "以下の例は ``my_command`` コマンドを追加します:"
