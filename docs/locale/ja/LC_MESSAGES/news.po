@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-29 10:09+0900\n"
+"PO-Revision-Date: 2021-04-24 08:51+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -22,10 +22,8 @@ msgid "Release notes"
 msgstr "リリース・ノート"
 
 #: ../../news.rst:9
-#, fuzzy
-#| msgid "Scrapy 1.2.0 (2016-10-03)"
 msgid "Scrapy 2.5.0 (2021-04-06)"
-msgstr "Scrapy 1.2.0 (2016-10-03)"
+msgstr "Scrapy 2.5.0 (2021-04-06)"
 
 #: ../../news.rst:11 ../../news.rst:218 ../../news.rst:524 ../../news.rst:657
 #: ../../news.rst:852 ../../news.rst:1015 ../../news.rst:1462
@@ -35,28 +33,28 @@ msgstr "ハイライト:"
 
 #: ../../news.rst:13
 msgid "Official Python 3.9 support"
-msgstr ""
+msgstr "Python3.9を公式にサポート"
 
 #: ../../news.rst:15
 msgid "Experimental :ref:`HTTP/2 support <http2>`"
-msgstr ""
+msgstr "実験的な :ref:`HTTP/2 サポート <http2>`"
 
 #: ../../news.rst:17
 msgid ""
 "New :func:`~scrapy.downloadermiddlewares.retry.get_retry_request` function "
 "to retry requests from spider callbacks"
-msgstr ""
+msgstr "新機能 :func:`~scrapy.downloadermiddlewares.retry.get_retry_request` 関数を使用して、スパイダー・コールバックからのリクエストを再試行します"
 
 #: ../../news.rst:20
 msgid ""
 "New :class:`~scrapy.signals.headers_received` signal that allows stopping "
 "downloads early"
-msgstr ""
+msgstr "新機能 :class:`~scrapy.signals.headers_received` シグナルにより、ダウンロードを早期に停止できます"
 
 #: ../../news.rst:23
 msgid ""
 "New :class:`Response.protocol <scrapy.http.Response.protocol>` attribute"
-msgstr ""
+msgstr "新機能 :class:`Response.protocol <scrapy.http.Response.protocol>` 属性"
 
 #: ../../news.rst:26 ../../news.rst:287 ../../news.rst:543 ../../news.rst:872
 #: ../../news.rst:1077 ../../news.rst:1617 ../../news.rst:1892
@@ -69,13 +67,13 @@ msgid ""
 "Removed all code that :ref:`was deprecated in 1.7.0 <1.7-deprecations>` and "
 "had not :ref:`already been removed in 2.4.0 <2.4-deprecation-removals>`. (:"
 "issue:`4901`)"
-msgstr ""
+msgstr "削除 :ref:`1.7.0で非推奨になった <1.7-deprecations>` けど、まだ :ref:`2.4.0の非推奨削除 <2.4-deprecation-removals>` で削除されていなかった全てのコードを削除しました。"
 
 #: ../../news.rst:32
 msgid ""
 "Removed support for the ``SCRAPY_PICKLED_SETTINGS_TO_OVERRIDE`` environment "
 "variable, :ref:`deprecated in 1.8.0 <1.8-deprecations>`. (:issue:`4912`)"
-msgstr ""
+msgstr "削除 ``SCRAPY_PICKLED_SETTINGS_TO_OVERRIDE`` 環境変数を削除。 :ref:`1.8.0 の非推奨 <1.8-deprecations>` (:issue:`4912`)"
 
 #: ../../news.rst:37 ../../news.rst:303 ../../news.rst:559 ../../news.rst:676
 #: ../../news.rst:896 ../../news.rst:1091 ../../news.rst:1625
@@ -87,7 +85,7 @@ msgstr "非推奨"
 msgid ""
 "The :mod:`scrapy.utils.py36` module is now deprecated in favor of :mod:"
 "`scrapy.utils.asyncgen`. (:issue:`4900`)"
-msgstr ""
+msgstr ":mod:`scrapy.utils.py36` モジュールは非推奨になり、 :mod:`scrapy.utils.asyncgen` が優先されます。 (:issue:`4900`)"
 
 #: ../../news.rst:44 ../../news.rst:324 ../../news.rst:566 ../../news.rst:688
 #: ../../news.rst:904 ../../news.rst:1110 ../../news.rst:1516
@@ -102,7 +100,7 @@ msgid ""
 "that can be assigned to the ``https`` protocol in the :setting:"
 "`DOWNLOAD_HANDLERS` setting. (:issue:`1854`, :issue:`4769`, :issue:`5058`, :"
 "issue:`5059`, :issue:`5066`)"
-msgstr ""
+msgstr "実験的 :setting:`DOWNLOAD_HANDLERS` 設定にて ``https`` プロトコルに割り当てることができる新しいダウンロード・ハンドラーによる実験的な :ref:`HTTP/2 サポート <http2>`"
 
 #: ../../news.rst:51
 msgid ""
@@ -111,7 +109,7 @@ msgid ""
 "retrying of a request beyond the scenarios that :class:`~scrapy."
 "downloadermiddlewares.retry.RetryMiddleware` supports. (:issue:`3590`, :"
 "issue:`3685`, :issue:`4902`)"
-msgstr ""
+msgstr "新しい :func:`scrapy.downloadermiddlewares.retry.get_retry_request` 関数は、スパイダー・コールバックまたはミドルウェアから使用し、 :class:`~scrapy.downloadermiddlewares.retry.RetryMiddleware` がサポートするシナリオを超えたリクエストの再試行を処理できます。"
 
 #: ../../news.rst:57
 msgid ""
@@ -143,7 +141,7 @@ msgstr ""
 
 #: ../../news.rst:77
 msgid "(:issue:`3947`, :issue:`4850`)"
-msgstr ""
+msgstr "(:issue:`3947`, :issue:`4850`)"
 
 #: ../../news.rst:79
 msgid ""
@@ -155,7 +153,7 @@ msgstr ""
 
 #: ../../news.rst:87
 msgid "(:issue:`5036`)"
-msgstr ""
+msgstr "(:issue:`5036`)"
 
 #: ../../news.rst:89
 msgid ""
@@ -166,7 +164,7 @@ msgstr ""
 
 #: ../../news.rst:97
 msgid "(:issue:`4797`, :issue:`4799`)"
-msgstr ""
+msgstr "(:issue:`4797`, :issue:`4799`)"
 
 #: ../../news.rst:101 ../../news.rst:437 ../../news.rst:587 ../../news.rst:735
 #: ../../news.rst:929 ../../news.rst:1217 ../../news.rst:1566
@@ -213,7 +211,7 @@ msgstr ""
 #: ../../news.rst:2711 ../../news.rst:2744 ../../news.rst:2818
 #: ../../news.rst:2846 ../../news.rst:2903 ../../news.rst:3510
 msgid "Documentation"
-msgstr ""
+msgstr "文書"
 
 #: ../../news.rst:126
 msgid ""
@@ -282,22 +280,18 @@ msgid "Quality Assurance"
 msgstr ""
 
 #: ../../news.rst:167
-#, fuzzy
-#| msgid "Python 3.7 support (:issue:`3326`, :issue:`3150`, :issue:`3547`)."
 msgid "Made Python 3.9 support official (:issue:`4757`, :issue:`4759`)"
-msgstr "Python 3.7 サポート (:issue:`3326`, :issue:`3150`, :issue:`3547`)."
+msgstr "公式に Python3.9 をサポートしました( :issue:`4757` 、 :issue:`4759` )。"
 
 #: ../../news.rst:169
 msgid "Extended typing hints (:issue:`4895`)"
 msgstr ""
 
 #: ../../news.rst:171
-#, fuzzy
-#| msgid "Fix Python 2 support (:issue:`3889`, :issue:`3893`, :issue:`3896`)."
 msgid ""
 "Fixed deprecated uses of the Twisted API. (:issue:`4940`, :issue:`4950`, :"
 "issue:`5073`)"
-msgstr "Python 2 サポートを修正(:issue:`3889`, :issue:`3893`, :issue:`3896`)."
+msgstr "TwistedAPIの非推奨の使用を修正しました。 (:issue:`4940`, :issue:`4950`, :issue:`5073`)"
 
 #: ../../news.rst:174
 msgid ""
@@ -327,10 +321,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:193
-#, fuzzy
-#| msgid "Scrapy 1.7.1 (2019-07-18)"
 msgid "Scrapy 2.4.1 (2020-11-17)"
-msgstr "Scrapy 1.7.1 (2019-07-18)"
+msgstr "Scrapy 2.4.1 (2020-11-17)"
 
 #: ../../news.rst:195
 msgid ""
@@ -365,10 +357,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:216
-#, fuzzy
-#| msgid "Scrapy 1.2.0 (2016-10-03)"
 msgid "Scrapy 2.4.0 (2020-10-11)"
-msgstr "Scrapy 1.2.0 (2016-10-03)"
+msgstr "Scrapy 2.4.0 (2020-10-11)"
 
 #: ../../news.rst:220
 msgid "Python 3.5 support has been dropped."
@@ -485,7 +475,7 @@ msgstr ""
 
 #: ../../news.rst:281
 msgid "(:issue:`4717`, :issue:`4823`)"
-msgstr ""
+msgstr "(:issue:`4717`, :issue:`4823`)"
 
 #: ../../news.rst:289
 msgid ""
@@ -542,55 +532,55 @@ msgstr ""
 
 #: ../../news.rst:332
 msgid "In :class:`scrapy.pipelines.files.FilesPipeline`:"
-msgstr ""
+msgstr ":class:`scrapy.pipelines.files.FilesPipeline` 内:"
 
 #: ../../news.rst:334
 msgid ":meth:`~scrapy.pipelines.files.FilesPipeline.file_downloaded`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.files.FilesPipeline.file_downloaded`"
 
 #: ../../news.rst:336
 msgid ":meth:`~scrapy.pipelines.files.FilesPipeline.file_path`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.files.FilesPipeline.file_path`"
 
 #: ../../news.rst:338
 msgid ":meth:`~scrapy.pipelines.files.FilesPipeline.media_downloaded`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.files.FilesPipeline.media_downloaded`"
 
 #: ../../news.rst:340
 msgid ":meth:`~scrapy.pipelines.files.FilesPipeline.media_to_download`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.files.FilesPipeline.media_to_download`"
 
 #: ../../news.rst:342
 msgid "In :class:`scrapy.pipelines.images.ImagesPipeline`:"
-msgstr ""
+msgstr ":class:`scrapy.pipelines.images.ImagesPipeline` 内:"
 
 #: ../../news.rst:344
 msgid ":meth:`~scrapy.pipelines.images.ImagesPipeline.file_downloaded`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.images.ImagesPipeline.file_downloaded`"
 
 #: ../../news.rst:346
 msgid ":meth:`~scrapy.pipelines.images.ImagesPipeline.file_path`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.images.ImagesPipeline.file_path`"
 
 #: ../../news.rst:348
 msgid ":meth:`~scrapy.pipelines.images.ImagesPipeline.get_images`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.images.ImagesPipeline.get_images`"
 
 #: ../../news.rst:350
 msgid ":meth:`~scrapy.pipelines.images.ImagesPipeline.image_downloaded`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.images.ImagesPipeline.image_downloaded`"
 
 #: ../../news.rst:352
 msgid ":meth:`~scrapy.pipelines.images.ImagesPipeline.media_downloaded`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.images.ImagesPipeline.media_downloaded`"
 
 #: ../../news.rst:354
 msgid ":meth:`~scrapy.pipelines.images.ImagesPipeline.media_to_download`"
-msgstr ""
+msgstr ":meth:`~scrapy.pipelines.images.ImagesPipeline.media_to_download`"
 
 #: ../../news.rst:356
 msgid "(:issue:`4628`, :issue:`4686`)"
-msgstr ""
+msgstr "(:issue:`4628`, :issue:`4686`)"
 
 #: ../../news.rst:358
 msgid ""
@@ -624,10 +614,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:377 ../../news.rst:418
-#, fuzzy
-#| msgid "Python 3.7 support (:issue:`3326`, :issue:`3150`, :issue:`3547`)."
 msgid "(:issue:`547`, :issue:`716`, :issue:`4512`)"
-msgstr "Python 3.7 サポート (:issue:`3326`, :issue:`3150`, :issue:`3547`)."
+msgstr "(:issue:`547`, :issue:`716`, :issue:`4512`)"
 
 #: ../../news.rst:379
 msgid ""
@@ -834,11 +822,9 @@ msgid "Added tests for the :command:`check` command (:issue:`4663`)"
 msgstr ""
 
 #: ../../news.rst:504
-#, fuzzy
-#| msgid "Fix Python 2 support (:issue:`3889`, :issue:`3893`, :issue:`3896`)."
 msgid ""
 "Fixed test failures on Debian (:issue:`4726`, :issue:`4727`, :issue:`4735`)"
-msgstr "Python 2 サポートを修正(:issue:`3889`, :issue:`3893`, :issue:`3896`)."
+msgstr "Debianでのテストの失敗を修正しました。 (:issue:`4726`, :issue:`4727`, :issue:`4735`)"
 
 #: ../../news.rst:506
 msgid "Improved Windows test coverage (:issue:`4723`)"
@@ -863,10 +849,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:522
-#, fuzzy
-#| msgid "Scrapy 1.7.3 (2019-08-01)"
 msgid "Scrapy 2.3.0 (2020-08-04)"
-msgstr "Scrapy 1.7.3 (2019-08-01)"
+msgstr "Scrapy 2.3.0 (2020-08-04)"
 
 #: ../../news.rst:526
 msgid ""
@@ -915,10 +899,8 @@ msgid "``sgml.BaseSgmlLinkExtractor``"
 msgstr ""
 
 #: ../../news.rst:551
-#, fuzzy
-#| msgid "scrapy.linkextractor"
 msgid "``sgml.SgmlLinkExtractor``"
-msgstr "scrapy.linkextractor"
+msgstr "``sgml.SgmlLinkExtractor``"
 
 #: ../../news.rst:553
 msgid ""
@@ -1042,10 +1024,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:645
-#, fuzzy
-#| msgid "Scrapy 1.7.1 (2019-07-18)"
 msgid "Scrapy 2.2.1 (2020-07-17)"
-msgstr "Scrapy 1.7.1 (2019-07-18)"
+msgstr "Scrapy 2.2.1 (2020-07-17)"
 
 #: ../../news.rst:647
 msgid ""
@@ -1055,10 +1035,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:655
-#, fuzzy
-#| msgid "Scrapy 1.2.0 (2016-10-03)"
 msgid "Scrapy 2.2.0 (2020-06-24)"
-msgstr "Scrapy 1.2.0 (2016-10-03)"
+msgstr "Scrapy 2.2.0 (2020-06-24)"
 
 #: ../../news.rst:659
 msgid "Python 3.5.2+ is required now"
@@ -1285,12 +1263,10 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:815
-#, fuzzy
-#| msgid "Fix Python 2 support (:issue:`3889`, :issue:`3893`, :issue:`3896`)."
 msgid ""
 "Removed remnants of Python 2 support (:issue:`4550`, :issue:`4553`, :issue:"
 "`4568`)"
-msgstr "Python 2 サポートを修正(:issue:`3889`, :issue:`3893`, :issue:`3896`)."
+msgstr "Python2サポートの跡を削除。 (:issue:`4550`, :issue:`4553`, :issue:`4568`)"
 
 #: ../../news.rst:818
 msgid ""
@@ -1349,10 +1325,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:850
-#, fuzzy
-#| msgid "Scrapy 1.7.0 (2019-07-18)"
 msgid "Scrapy 2.1.0 (2020-04-24)"
-msgstr "Scrapy 1.7.0 (2019-07-18)"
+msgstr "Scrapy 2.1.0 (2020-04-24)"
 
 #: ../../news.rst:854
 msgid "New :setting:`FEEDS` setting to export to multiple feeds"
@@ -1560,12 +1534,10 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:987
-#, fuzzy
-#| msgid "Fix Python 2 support (:issue:`3889`, :issue:`3893`, :issue:`3896`)."
 msgid ""
 "Fixed code style issues (:issue:`4468`, :issue:`4469`, :issue:`4471`, :issue:"
 "`4481`)"
-msgstr "Python 2 サポートを修正(:issue:`3889`, :issue:`3893`, :issue:`3896`)."
+msgstr "コード・スタイルの問題を修正 (:issue:`4468`, :issue:`4469`, :issue:`4471`, :issue:`4481`)"
 
 #: ../../news.rst:990
 msgid ""
@@ -1574,10 +1546,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:997
-#, fuzzy
-#| msgid "Scrapy 1.7.1 (2019-07-18)"
 msgid "Scrapy 2.0.1 (2020-03-18)"
-msgstr "Scrapy 1.7.1 (2019-07-18)"
+msgstr "Scrapy 2.0.1 (2020-03-18)"
 
 #: ../../news.rst:999
 msgid ""
@@ -1598,10 +1568,8 @@ msgid "Fixed tests (:issue:`4422`)"
 msgstr ""
 
 #: ../../news.rst:1013
-#, fuzzy
-#| msgid "Scrapy 1.2.0 (2016-10-03)"
 msgid "Scrapy 2.0.0 (2020-03-03)"
-msgstr "Scrapy 1.2.0 (2016-10-03)"
+msgstr "Scrapy 2.0.0 (2020-03-03)"
 
 #: ../../news.rst:1017
 msgid "Python 2 support has been removed"
@@ -1715,10 +1683,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:1083
-#, fuzzy
-#| msgid "The following deprecated APIs have been removed (:issue:`3578`):"
 msgid "LevelDB support has been removed (:issue:`4112`)"
-msgstr "次の非推奨APIは削除されました(:issue:`3578`):"
+msgstr "LevelDBのサポートを削除(:issue:`4112`)。"
 
 #: ../../news.rst:1085
 msgid ""
@@ -2133,10 +2099,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:1332
-#, fuzzy
-#| msgid "Fix Python 2 support (:issue:`3889`, :issue:`3893`, :issue:`3896`)."
 msgid "Improved test coverage (:issue:`4097`, :issue:`4218`, :issue:`4236`)"
-msgstr "Python 2 サポートを修正(:issue:`3889`, :issue:`3893`, :issue:`3896`)."
+msgstr "テストカバレッジの改善(:issue:`4097`, :issue:`4218`, :issue:`4236`)。"
 
 #: ../../news.rst:1334
 msgid ""
@@ -2336,10 +2300,8 @@ msgid "(:issue:`3884`)"
 msgstr ""
 
 #: ../../news.rst:1460
-#, fuzzy
-#| msgid "Scrapy 1.7.0 (2019-07-18)"
 msgid "Scrapy 1.8.0 (2019-10-28)"
-msgstr "Scrapy 1.7.0 (2019-07-18)"
+msgstr "Scrapy 1.8.0 (2019-10-28)"
 
 #: ../../news.rst:1464
 msgid ""
@@ -2448,10 +2410,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:1512
-#, fuzzy
-#| msgid "See also :ref:`1.7-deprecation-removals` below."
 msgid "See also :ref:`1.8-deprecation-removals` below."
-msgstr "下記の :ref:`1.7-deprecation-removals` も参照してください。"
+msgstr "下記の :ref:`1.8-deprecation-removals` も参照してください。"
 
 #: ../../news.rst:1518
 #, fuzzy
@@ -2666,10 +2626,8 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:1663
-#, fuzzy
-#| msgid "Scrapy 1.7.3 (2019-08-01)"
 msgid "Scrapy 1.7.4 (2019-10-21)"
-msgstr "Scrapy 1.7.3 (2019-08-01)"
+msgstr "Scrapy 1.7.4 (2019-10-21)"
 
 #: ../../news.rst:1665
 msgid ""
@@ -3751,22 +3709,12 @@ msgstr ""
 "so and elevates the risk for local development environment."
 
 #: ../../news.rst:2235
-#, fuzzy
-#| msgid ""
-#| "*The fix is backward incompatible*, it enables telnet user-password "
-#| "authentication by default with a random generated password. If you can't "
-#| "upgrade right away, please consider setting :setting:"
-#| "`TELNET_CONSOLE_PORT` out of its default value."
 msgid ""
 "*The fix is backward incompatible*, it enables telnet user-password "
 "authentication by default with a random generated password. If you can't "
 "upgrade right away, please consider setting :setting:`TELNETCONSOLE_PORT` "
 "out of its default value."
-msgstr ""
-"*この修正は下位互換性がありません*, it enables telnet user-password "
-"authentication by default with a random generated password. If you can't "
-"upgrade right away, please consider setting :setting:`TELNET_CONSOLE_PORT` "
-"out of its default value."
+msgstr "*この修正は下位互換性がありません*, it enables telnet user-password authentication by default with a random generated password. If you can't upgrade right away, please consider setting :setting:`TELNETCONSOLE_PORT` out of its default value."
 
 #: ../../news.rst:2240
 msgid ""
@@ -4738,11 +4686,6 @@ msgstr ""
 "ようになりました(:issue:`2272`)"
 
 #: ../../news.rst:2665
-#, fuzzy
-#| msgid ""
-#| "``scrapy fetch url``, ``scrapy shell url`` and ``fetch(url)`` inside "
-#| "scrapy shell now follow HTTP redirections by default (:issue:`2290`); "
-#| "See :command:`fetch` and :command:`shell` for details."
 msgid ""
 "``scrapy fetch url``, ``scrapy shell url`` and ``fetch(url)`` inside Scrapy "
 "shell now follow HTTP redirections by default (:issue:`2290`); See :command:"
@@ -9803,11 +9746,11 @@ msgstr ""
 
 #: ../../news.rst:4479
 msgid "added ``StatsCollector.iter_spider_stats()`` method"
-msgstr ""
+msgstr "``StatsCollector.iter_spider_stats()`` メソッドを追加"
 
 #: ../../news.rst:4480
 msgid "removed ``StatsCollector.list_domains()`` method"
-msgstr ""
+msgstr "``StatsCollector.list_domains()`` メソッドを削除"
 
 #: ../../news.rst:4481
 msgid ""
@@ -9830,37 +9773,37 @@ msgstr ""
 
 #: ../../news.rst:4485
 msgid "Its settings were also renamed:"
-msgstr ""
+msgstr "以下の設定は名前を変更しました:"
 
 #: ../../news.rst:4485
 msgid "``CLOSEDOMAIN_TIMEOUT`` to ``CLOSESPIDER_TIMEOUT``"
-msgstr ""
+msgstr "``CLOSEDOMAIN_TIMEOUT`` から ``CLOSESPIDER_TIMEOUT`` へ"
 
 #: ../../news.rst:4486
 msgid "``CLOSEDOMAIN_ITEMCOUNT`` to ``CLOSESPIDER_ITEMCOUNT``"
-msgstr ""
+msgstr "``CLOSEDOMAIN_ITEMCOUNT`` から ``CLOSESPIDER_ITEMCOUNT`` へ"
 
 #: ../../news.rst:4487
 msgid ""
 "Removed deprecated ``SCRAPYSETTINGS_MODULE`` environment variable - use "
 "``SCRAPY_SETTINGS_MODULE`` instead (:rev:`1840`)"
-msgstr ""
+msgstr "削除 ``SCRAPYSETTINGS_MODULE`` 環境変数を非推奨のため削除。代わりに ``SCRAPY_SETTINGS_MODULE`` を使ってください。 (:rev:`1840`)"
 
 #: ../../news.rst:4488
 msgid ""
 "Renamed setting: ``REQUESTS_PER_DOMAIN`` to "
 "``CONCURRENT_REQUESTS_PER_SPIDER`` (:rev:`1830`, :rev:`1844`)"
-msgstr ""
+msgstr "名前変更 設定: ``REQUESTS_PER_DOMAIN`` を ``CONCURRENT_REQUESTS_PER_SPIDER`` へ (:rev:`1830`, :rev:`1844`)"
 
 #: ../../news.rst:4489
 msgid ""
 "Renamed setting: ``CONCURRENT_DOMAINS`` to ``CONCURRENT_SPIDERS`` (:rev:"
 "`1830`)"
-msgstr ""
+msgstr "名前変更 設定: ``CONCURRENT_DOMAINS`` を ``CONCURRENT_SPIDERS`` へ (:rev:`1830`)"
 
 #: ../../news.rst:4490
 msgid "Refactored HTTP Cache middleware"
-msgstr ""
+msgstr "HTTPキャッシュ・ミドルウェアをリファクタリング"
 
 #: ../../news.rst:4491
 msgid ""
@@ -9873,32 +9816,24 @@ msgstr ""
 msgid ""
 "Renamed exception: ``DontCloseDomain`` to ``DontCloseSpider`` (:rev:`1859` | "
 "#120)"
-msgstr ""
+msgstr "名前変更 例外 ``DontCloseDomain`` を ``DontCloseSpider`` へ (:rev:`1859` | #120)"
 
 #: ../../news.rst:4493
 msgid ""
 "Renamed extension: ``DelayedCloseDomain`` to ``SpiderCloseDelay`` (:rev:"
 "`1861` | #121)"
-msgstr ""
+msgstr "名前変更 エクステンション: ``DelayedCloseDomain`` を ``SpiderCloseDelay`` へ (:rev:`1861` | #121)"
 
 #: ../../news.rst:4494
 msgid ""
 "Removed obsolete ``scrapy.utils.markup.remove_escape_chars`` function - use "
 "``scrapy.utils.markup.replace_escape_chars`` instead (:rev:`1865`)"
-msgstr ""
+msgstr "削除 ``scrapy.utils.markup.remove_escape_chars`` 関数を廃止。代わりに ``scrapy.utils.markup.replace_escape_chars`` を使ってください (:rev:`1865`)"
 
 #: ../../news.rst:4497
 msgid "Scrapy 0.7"
-msgstr ""
+msgstr "Scrapy 0.7"
 
 #: ../../news.rst:4499
 msgid "First release of Scrapy."
 msgstr "Scrapyの最初のリリース。"
-
-#~ msgid ""
-#~ "Scrapy 1.x will be the last series supporting Python 2. Scrapy 2.0, "
-#~ "planned for Q4 2019 or Q1 2020, will support **Python 3 only**."
-#~ msgstr ""
-#~ "Scrapy 1.xはPython2をサポートする最後のシリーズになります。Scrapy2.0は2019"
-#~ "年第4四半期または2020年第1四半期に予定されており、 **Python3のみ** をサ"
-#~ "ポートします。"
