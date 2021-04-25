@@ -26,7 +26,7 @@ sys.path.insert(0, path.dirname(path.dirname(__file__)))
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
-    'hoverxref.extension',
+#    'hoverxref.extension',
     'notfound.extension',
     'scrapydocs',
     'sphinx.ext.autodoc',
@@ -301,15 +301,15 @@ intersphinx_mapping = {
 # Options for sphinx-hoverxref options
 # ------------------------------------
 
-hoverxref_auto_ref = True
-hoverxref_role_types = {
-    "class": "tooltip",
-    "confval": "tooltip",
-    "hoverxref": "tooltip",
-    "mod": "tooltip",
-    "ref": "tooltip",
-}
-hoverxref_roles = ['command', 'reqmeta', 'setting', 'signal']
+#hoverxref_auto_ref = True
+#hoverxref_role_types = {
+#    "class": "tooltip",
+#    "confval": "tooltip",
+#    "hoverxref": "tooltip",
+#    "mod": "tooltip",
+#    "ref": "tooltip",
+#}
+#hoverxref_roles = ['command', 'reqmeta', 'setting', 'signal']
 
 
 def setup(app):
