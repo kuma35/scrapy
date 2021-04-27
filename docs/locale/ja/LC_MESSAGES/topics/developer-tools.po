@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-23 07:47+0900\n"
+"PO-Revision-Date: 2021-04-27 21:27+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -142,16 +142,6 @@ msgstr ""
 "で私たちはセクションを得ましたが、引用テキストはどこにも見つかりません。"
 
 #: ../../topics/developer-tools.rst:77
-#, fuzzy
-#| msgid ""
-#| "The advantage of the `Inspector` is that it automatically expands and "
-#| "collapses sections and tags of a webpage, which greatly improves "
-#| "readability. You can expand and collapse a tag by clicking on the arrow "
-#| "in front of it or by double clicking directly on the tag. If we expand "
-#| "the ``span`` tag with the ``class= \"text\"`` we will see the quote-text "
-#| "we clicked on. The `Inspector` lets you copy XPaths to selected elements. "
-#| "Let's try it out: Right-click on the ``span`` tag, select ``Copy > "
-#| "XPath`` and paste it in the scrapy shell like so::"
 msgid ""
 "The advantage of the `Inspector` is that it automatically expands and "
 "collapses sections and tags of a webpage, which greatly improves "
@@ -160,25 +150,18 @@ msgid ""
 "``span`` tag with the ``class= \"text\"`` we will see the quote-text we "
 "clicked on. The `Inspector` lets you copy XPaths to selected elements. Let's "
 "try it out."
-msgstr ""
-"インスペクタの利点は、Webページのセクションとタグを自動的に展開および折りたた"
-"むことであり、読みやすさが大幅に向上します。タグの前にある矢印をクリックする"
-"か、タグを直接ダブルクリックして、タグを展開したり折りたたんだりできます。"
-"``span`` タグを ``class= \"text\"`` で展開すると、クリックした引用テキストが"
-"表示されます。インスペクタを使用すると、選択した要素にXPathをコピーできます。"
-"試してみましょう。 ``span`` タグを右クリックして ``コピー→XPath`` を選択し、"
-"Scrapyシェルに貼り付けます::"
+msgstr "インスペクタの利点は、Webページのセクションとタグを自動的に展開および折りたたむことであり、読みやすさが大幅に向上します。タグの前にある矢印をクリックするか、タグを直接ダブルクリックして、タグを展開したり折りたたんだりできます。``span`` タグを ``class= \"text\"`` で展開すると、クリックした引用テキストが表示されます。 `Inspector` を使用すると、XPathを選択した要素にコピーできます。試してみましょう。"
 
 #: ../../topics/developer-tools.rst:84
 msgid ""
 "First open the Scrapy shell at http://quotes.toscrape.com/ in a terminal:"
-msgstr ""
+msgstr "まず、ターミナルのScrapyシェルで http://quotes.toscrape.com/ を開きます:"
 
 #: ../../topics/developer-tools.rst:90
 msgid ""
 "Then, back to your web browser, right-click on the ``span`` tag, select "
 "``Copy > XPath`` and paste it in the Scrapy shell like so:"
-msgstr ""
+msgstr "それからWebブラウザに戻り ``span`` タグで右クリックし、 ``Copy > XPath`` を選んで、以下のようにScrapyシェルに貼り付けします:"
 
 #: ../../topics/developer-tools.rst:100
 msgid ""
@@ -208,19 +191,11 @@ msgstr ""
 "\"`` で各 ``span`` タグを展開し、各引用を見ることができます:"
 
 #: ../../topics/developer-tools.rst:123
-#, fuzzy
-#| msgid ""
-#| "With this knowledge we can refine our XPath: Instead of a path to follow, "
-#| "we'll simply select all ``span`` tags with the ``class=\"text\"`` by "
-#| "using the `has-class-extension`_::"
 msgid ""
 "With this knowledge we can refine our XPath: Instead of a path to follow, "
 "we'll simply select all ``span`` tags with the ``class=\"text\"`` by using "
 "the `has-class-extension`_:"
-msgstr ""
-"この知識があれば、私たちのXPathを改良できます。たどるパスの代わりに、 `has-"
-"class-extension`_ を使用して ``class=\"text\"`` を持つすべての ``span`` タグ"
-"を選択するだけです::"
+msgstr "この知識があれば、私たちのXPathを改良できます。たどるパスの代わりに、 `has-class-extension`_ を使用して ``class=\"text\"`` を持つすべての ``span`` タグを選択するだけです:"
 
 #: ../../topics/developer-tools.rst:133
 msgid ""
@@ -245,17 +220,6 @@ msgstr ""
 "他の便利な機能がたくさんあります。以下にユースケースを示しましょう:"
 
 #: ../../topics/developer-tools.rst:143
-#, fuzzy
-#| msgid ""
-#| "Say you want to find the ``Next`` button on the page. Type ``Next`` into "
-#| "the search bar on the top right of the `Inspector`. You should get two "
-#| "results. The first is a ``li`` tag with the ``class=\"text\"``, the "
-#| "second the text of an ``a`` tag. Right click on the ``a`` tag and select "
-#| "``Scroll into View``. If you hover over the tag, you'll see the button "
-#| "highlighted. From here we could easily create a :ref:`Link Extractor "
-#| "<topics-link-extractors>` to follow the pagination. On a simple site such "
-#| "as this, there may not be the need to find an element visually but the "
-#| "``Scroll into View`` function can be quite useful on complex sites."
 msgid ""
 "Say you want to find the ``Next`` button on the page. Type ``Next`` into the "
 "search bar on the top right of the `Inspector`. You should get two results. "
@@ -307,24 +271,13 @@ msgstr ""
 "scroll`_ を見てみましょう。"
 
 #: ../../topics/developer-tools.rst:168
-#, fuzzy
-#| msgid ""
-#| "The page is quite similar to the basic `quotes.toscrape.com`_-page, but "
-#| "instead of the above-mentioned ``Next`` button, the page automatically "
-#| "loads new quotes when you scroll to the bottom. We could go ahead and try "
-#| "out different XPaths directly, but instead we'll check another quite "
-#| "useful command from the scrapy shell::"
 msgid ""
 "The page is quite similar to the basic `quotes.toscrape.com`_-page, but "
 "instead of the above-mentioned ``Next`` button, the page automatically loads "
 "new quotes when you scroll to the bottom. We could go ahead and try out "
 "different XPaths directly, but instead we'll check another quite useful "
 "command from the Scrapy shell:"
-msgstr ""
-"このページは基本的な `quotes.toscrape.com`_ -page に非常に似ていますが、上記"
-"の ``Next`` ボタンの代わりに、ページを下にスクロールすると自動的に新しい引用"
-"を読み込みます。先に進んでさまざまなXPathを直接試すこともできますが、代わりに"
-"Scrapyシェルから別の非常に便利なコマンドをチェックします::"
+msgstr "このページは基本的な `quotes.toscrape.com`_ -page に非常に似ていますが、上記の ``Next`` ボタンの代わりに、ページを下にスクロールすると自動的に新しい引用を読み込みます。先に進んでさまざまなXPathを直接試すこともできますが、代わりにScrapyシェルから別の非常に便利なコマンドをチェックします:"
 
 #: ../../topics/developer-tools.rst:182
 msgid ""
@@ -382,22 +335,12 @@ msgstr ""
 "のかを見てみましょう:"
 
 #: ../../topics/developer-tools.rst:217
-#, fuzzy
-#| msgid ""
-#| "First click on the request with the name ``scroll``. On the right you can "
-#| "now inspect the request. In ``Headers`` you'll find details about the "
-#| "request headers, such as the URL, the method, the IP-address, and so on. "
-#| "We'll ignore the other tabs and click directly on ``Reponse``."
 msgid ""
 "First click on the request with the name ``scroll``. On the right you can "
 "now inspect the request. In ``Headers`` you'll find details about the "
 "request headers, such as the URL, the method, the IP-address, and so on. "
 "We'll ignore the other tabs and click directly on ``Response``."
-msgstr ""
-"最初に ``scroll`` という名前のリクエストをクリックします。 開発ツール画面の右"
-"側で、リクエストを検査できます。ヘッダー・タブには、URL、メソッド、IPアドレス"
-"などのリクエスト・ヘッダーに関する詳細があります。 他のタブは無視し、応答タブ"
-"をクリックします。"
+msgstr "最初に ``scroll`` という名前のリクエストをクリックします。 開発ツール画面の右側で、リクエストを検査できます。ヘッダー・タブには、URL、メソッド、IPアドレスなどのリクエスト・ヘッダーに関する詳細があります。 他のタブは無視し、``レスポンス`` を直接クリックします。"
 
 #: ../../topics/developer-tools.rst:222
 msgid ""
@@ -469,57 +412,49 @@ msgstr ""
 "できます。"
 
 #: ../../topics/developer-tools.rst:291
-#, fuzzy
-#| msgid ""
-#| "Alternatively, if you want to know the arguments needed to recreate that "
-#| "request you can use the :func:`scrapy.utils.curl.curl_to_request_kwargs` "
-#| "function to get a dictionary with the equivalent arguments."
 msgid ""
 "Alternatively, if you want to know the arguments needed to recreate that "
 "request you can use the :func:`~scrapy.utils.curl.curl_to_request_kwargs` "
 "function to get a dictionary with the equivalent arguments:"
-msgstr ""
-"あるいは、そのリクエストを再作成するために必要な引数を知りたい場合、 :func:"
-"`scrapy.utils.curl.curl_to_request_kwargs` 関数を使用して同等の引数を持つ辞書"
-"を取得できます。"
+msgstr "あるいは、そのリクエストを再作成するために必要な引数を知りたい場合、 :func:`~scrapy.utils.curl.curl_to_request_kwargs` 関数を使用して同等の引数を持つ辞書を取得できます:"
 
 #: ../../../scrapy/utils/curl.py:docstring of
 #: scrapy.utils.curl.curl_to_request_kwargs:1
 msgid "Convert a cURL command syntax to Request kwargs."
-msgstr ""
+msgstr "cURLコマンド構文をリクエストkwargsに変換します。"
 
 #: ../../../scrapy/utils/curl.py:docstring of
 #: scrapy.utils.curl.curl_to_request_kwargs:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../../scrapy/utils/curl.py:docstring of
 #: scrapy.utils.curl.curl_to_request_kwargs:3
 msgid "string containing the curl command"
-msgstr ""
+msgstr "curlコマンドを含む文字列"
 
 #: ../../../scrapy/utils/curl.py:docstring of
 #: scrapy.utils.curl.curl_to_request_kwargs:4
 msgid ""
 "If true, only a warning is emitted when cURL options are unknown. Otherwise "
 "raises an error. (default: True)"
-msgstr ""
+msgstr "trueの場合、cURLオプションが不明な場合にのみ警告が発行されます。 それ以外の場合はエラーが発生します(デフォルト:True)。"
 
 #: ../../../scrapy/utils/curl.py:docstring of
 #: scrapy.utils.curl.curl_to_request_kwargs:0
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: ../../../scrapy/utils/curl.py:docstring of
 #: scrapy.utils.curl.curl_to_request_kwargs:7
 msgid "dictionary of Request kwargs"
-msgstr ""
+msgstr "リクエストkwargsのディクショナリ"
 
 #: ../../topics/developer-tools.rst:297
 msgid ""
 "Note that to translate a cURL command into a Scrapy request, you may use "
 "`curl2scrapy <https://michael-shub.github.io/curl2scrapy/>`_."
-msgstr ""
+msgstr "cURLコマンドをScrapyリクエストに変換するには、 `curl2scrapy <https://michael-shub.github.io/curl2scrapy/>`_ を使用することもできます。"
 
 #: ../../topics/developer-tools.rst:300
 msgid ""

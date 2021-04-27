@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-04-18 16:04+0900\n"
+"PO-Revision-Date: 2021-04-27 21:32+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -19,17 +19,17 @@ msgstr ""
 
 #: ../../topics/djangoitem.rst:7
 msgid "DjangoItem"
-msgstr ""
+msgstr "DjangoItem"
 
 #: ../../topics/djangoitem.rst:9
 msgid "DjangoItem has been moved into a separate project."
-msgstr ""
+msgstr "DjangoItemは別のプロジェクトに移されました。"
 
 #: ../../topics/djangoitem.rst:11
 msgid "It is hosted at:"
-msgstr ""
+msgstr "以下でホストされています:"
 
 #: ../../topics/djangoitem.rst:13
 msgid "https://github.com/scrapy-plugins/scrapy-djangoitem"
-msgstr ""
+msgstr "https://github.com/scrapy-plugins/scrapy-djangoitem"
 

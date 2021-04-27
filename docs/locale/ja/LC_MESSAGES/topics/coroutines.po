@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Scrapy package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Scrapy 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-04-27 05:33+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,50 +19,50 @@ msgstr ""
 
 #: ../../topics/coroutines.rst:3
 msgid "Coroutines"
-msgstr ""
+msgstr "コルーチン"
 
 #: ../../topics/coroutines.rst:7
 msgid ""
 "Scrapy has :ref:`partial support <coroutine-support>` for the "
 ":ref:`coroutine syntax <async>`."
-msgstr ""
+msgstr "Scrapy は、 :ref:`コルーチン構文 <async>` を :ref:`部分的にサポート <coroutine-support>` しています。"
 
 #: ../../topics/coroutines.rst:13
 msgid "Supported callables"
-msgstr ""
+msgstr "呼び出し可能オブジェクト(callable)サポート"
 
 #: ../../topics/coroutines.rst:15
 msgid ""
 "The following callables may be defined as coroutines using ``async def``,"
 " and hence use coroutine syntax (e.g. ``await``, ``async for``, ``async "
 "with``):"
-msgstr ""
+msgstr "以下の呼び出し可能オブジェクト(callable)は、 ``async def`` を使用してコルーチンとして定義できるため、コルーチン構文を使用します(例: ``await``, ``async for``, ``async with``):"
 
 #: ../../topics/coroutines.rst:18
 msgid ":class:`~scrapy.http.Request` callbacks."
-msgstr ""
+msgstr ":class:`~scrapy.http.Request` コールバック。"
 
 #: ../../topics/coroutines.rst:20
 msgid "The callback output is not processed until the whole callback finishes."
-msgstr ""
+msgstr "コールバックの出力は、コールバック全体が終了するまで処理されません。"
 
 #: ../../topics/coroutines.rst:23
 msgid ""
 "As a side effect, if the callback raises an exception, none of its output"
 " is processed."
-msgstr ""
+msgstr "よって、その副作用として、コールバックで例外が発生した場合、その出力は処理されません。"
 
 #: ../../topics/coroutines.rst:26
 msgid ""
 "This is a known caveat of the current implementation that we aim to "
 "address in a future version of Scrapy."
-msgstr ""
+msgstr "これは、Scrapyの将来のバージョンでは対処することを目指してはいますが、現在の実装で判明している注意事項です。"
 
 #: ../../topics/coroutines.rst:29
 msgid ""
 "The :meth:`process_item` method of :ref:`item pipelines <topics-item-"
 "pipeline>`."
-msgstr ""
+msgstr ":ref:`アイテム・パイプライン <topics-item-pipeline>` の :meth:`process_item` メソッド。"
 
 #: ../../topics/coroutines.rst:32
 msgid ""
@@ -74,15 +74,15 @@ msgid ""
 ":meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_exception`"
 " methods of :ref:`downloader middlewares <topics-downloader-middleware-"
 "custom>`."
-msgstr ""
+msgstr ":ref:`ダウンローダー・ミドルウェア <topics-downloader-middleware-custom>` の :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_request` と :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_response` と :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_exception` メソッド。"
 
 #: ../../topics/coroutines.rst:40
 msgid ":ref:`Signal handlers that support deferreds <signal-deferred>`."
-msgstr ""
+msgstr ":ref:`シグナル・ハンドラーの遅延(deferred) <signal-deferred>` 。"
 
 #: ../../topics/coroutines.rst:43
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../../topics/coroutines.rst:45
 msgid ""
@@ -90,11 +90,11 @@ msgid ""
 "return Deferreds when written for previous Scrapy versions, such as "
 "downloader middlewares and signal handlers, can be rewritten to be "
 "shorter and cleaner::"
-msgstr ""
+msgstr "Scrapyのコルーチンにはいくつかのユースケースがあります。 ダウンローダー・ミドルウェアやシグナル・ハンドラーなど、以前のScrapyバージョン用に記述されたときにDeferredを返すコードは、より短く、よりクリーンになるように書き直すことができます:"
 
 #: ../../topics/coroutines.rst:63
 msgid "becomes::"
-msgstr ""
+msgstr "上記は以下のようになります::"
 
 #: ../../topics/coroutines.rst:73
 msgid ""
@@ -102,38 +102,38 @@ msgid ""
 "coroutines, functions that return Deferreds and functions that return "
 ":term:`awaitable objects <awaitable>` such as :class:`~asyncio.Future`. "
 "This means you can use many useful Python libraries providing such code::"
-msgstr ""
+msgstr "コルーチンは、非同期コードを呼び出すために使用できます。 これには、他のコルーチン、Deferredを返す関数、および :class:`~asyncio.Future` などの :term:`awaitableオブジェクト <awaitable>` を返す関数が含まれます。 これは、そのようなコードを提供する多くの便利なPythonライブラリを使用できることを意味します::"
 
 #: ../../topics/coroutines.rst:91
 msgid ""
 "Many libraries that use coroutines, such as `aio-libs`_, require the "
 ":mod:`asyncio` loop and to use them you need to :doc:`enable asyncio "
 "support in Scrapy<asyncio>`."
-msgstr ""
+msgstr "`aio-libs`_ などのコルーチンを使用する多くのライブラリは :mod:`asyncio` ループを必要とし、それらを使用するには :doc:`Scrapyで非同期サポートを有効にする <asyncio>` 必要があります。"
 
 #: ../../topics/coroutines.rst:95
 msgid "Common use cases for asynchronous code include:"
-msgstr ""
+msgstr "非同期コードの一般的な使用例は以下のとおりです:"
 
 #: ../../topics/coroutines.rst:97
 msgid ""
 "requesting data from websites, databases and other services (in "
 "callbacks, pipelines and middlewares);"
-msgstr ""
+msgstr "ウェブサイトとデータベースとその他のサービス(コールバック、パイプライン、ミドルウェア)からのデータのリクエスト。"
 
 #: ../../topics/coroutines.rst:99
 msgid "storing data in databases (in pipelines and middlewares);"
-msgstr ""
+msgstr "(パイプラインおよびミドルウェアの)データベースにデータを保存する。"
 
 #: ../../topics/coroutines.rst:100
 msgid ""
 "delaying the spider initialization until some external event (in the "
 ":signal:`spider_opened` handler);"
-msgstr ""
+msgstr "( :signal:`spider_opened` ハンドラー内の)何らかの外部イベントまでスパイダーの初期化を遅らせる。"
 
 #: ../../topics/coroutines.rst:102
 msgid ""
 "calling asynchronous Scrapy methods like ``ExecutionEngine.download`` "
 "(see :ref:`the screenshot pipeline example<ScreenshotPipeline>`)."
-msgstr ""
+msgstr "``ExecutionEngine.download`` のような非同期Scrapyメソッドを呼び出す( :ref:`スクリーンショット・パイプライン <ScreenshotPipeline>` 参照)。"
 

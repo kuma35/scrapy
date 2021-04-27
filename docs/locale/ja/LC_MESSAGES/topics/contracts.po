@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-13 00:52+0900\n"
+"PO-Revision-Date: 2021-04-25 12:50+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -96,11 +96,6 @@ msgid "Custom Contracts"
 msgstr "カスタム コントラクト"
 
 #: ../../topics/contracts.rst:65
-#, fuzzy
-#| msgid ""
-#| "If you find you need more power than the built-in scrapy contracts you "
-#| "can create and load your own contracts in the project by using the :"
-#| "setting:`SPIDER_CONTRACTS` setting::"
 msgid ""
 "If you find you need more power than the built-in Scrapy contracts you can "
 "create and load your own contracts in the project by using the :setting:"
@@ -120,7 +115,7 @@ msgstr ""
 
 #: ../../topics/contracts.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/contracts.rst:81
 msgid "callback function to which the contract is associated"
@@ -174,7 +169,7 @@ msgstr ""
 
 #: ../../../scrapy/exceptions.py:docstring of scrapy.exceptions.ContractFail:1
 msgid "Error raised in case of a failing contract"
-msgstr ""
+msgstr "コントラクトが失敗した場合に発生するエラー"
 
 #: ../../topics/contracts.rst:113
 msgid ""
@@ -189,29 +184,8 @@ msgid "Detecting check runs"
 msgstr "``scrapy check`` 実行の検出"
 
 #: ../../topics/contracts.rst:136
-#, fuzzy
-#| msgid ""
-#| "When ``scrapy check`` is running, the ``SCRAPY_CHECK`` environment "
-#| "variable is set to the ``true`` string. You can use `os.environ`_ to "
-#| "perform any change to your spiders or your settings when ``scrapy check`` "
-#| "is used::"
 msgid ""
 "When ``scrapy check`` is running, the ``SCRAPY_CHECK`` environment variable "
 "is set to the ``true`` string. You can use :data:`os.environ` to perform any "
 "change to your spiders or your settings when ``scrapy check`` is used::"
-msgstr ""
-"``scrapy check`` が実行されているとき、 ``SCRAPY_CHECK`` 環境変数を ``true`` "
-"文字列に設定します。 ``scrapy check`` が使用されている場合、 `os.environ`_ を"
-"使用して、スパイダーや設定に変更を加えることができます。::"
-
-#~ msgid ""
-#~ "This is a new feature (introduced in Scrapy 0.15) and may be subject to "
-#~ "minor functionality/API updates. Check the :ref:`release notes <news>` to "
-#~ "be notified of updates."
-#~ msgstr ""
-#~ "これは新機能(Scrapy 0.15で導入)であり、細かい機能やAPIの更新が行われる場合"
-#~ "があります。更新を知る為に :ref:`リリースノート<news>` をチェックしてくだ"
-#~ "さい。"
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
+msgstr "``scrapy check`` が実行されているとき、 ``SCRAPY_CHECK`` 環境変数を ``true`` 文字列に設定します。 ``scrapy check`` が使用されている場合、 :data:`os.environ` を使用して、スパイダーや設定に変更を加えることができます::"
