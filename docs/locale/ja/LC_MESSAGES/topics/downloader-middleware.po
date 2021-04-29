@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-04 22:37+0900\n"
+"PO-Revision-Date: 2021-04-30 06:31+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -212,7 +212,7 @@ msgstr ""
 #: scrapy.robotstxt.RobotParser.allowed:0
 #: scrapy.robotstxt.RobotParser.from_crawler:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/downloader-middleware.rst:102
 msgid "the request being processed"
@@ -387,12 +387,6 @@ msgid "CookiesMiddleware"
 msgstr "CookiesMiddleware"
 
 #: ../../topics/downloader-middleware.rst:200
-#, fuzzy
-#| msgid ""
-#| "This middleware enables working with sites that require cookies, such as "
-#| "those that use sessions. It keeps track of cookies sent by web servers, "
-#| "and send them back on subsequent requests (from that spider), just like "
-#| "web browsers do."
 msgid ""
 "This middleware enables working with sites that require cookies, such as "
 "those that use sessions. It keeps track of cookies sent by web servers, and "
@@ -408,7 +402,7 @@ msgid ""
 "When non-UTF8 encoded byte sequences are passed to a :class:`~scrapy.http."
 "Request`, the ``CookiesMiddleware`` will log a warning. Refer to :ref:"
 "`topics-logging-advanced-customization` to customize the logging behaviour."
-msgstr ""
+msgstr "UTF8でエンコードされていないバイト・シーケンスが :class:`~scrapy.http.Request` に渡されると、 ``CookiesMiddleware`` は警告をログに取ります。 ログ取り動作をカスタマイズするには、 :ref:`topics-logging-advanced-customization` を参照してください。"
 
 #: ../../topics/downloader-middleware.rst:210
 msgid ""
@@ -416,7 +410,7 @@ msgid ""
 "`cookies-mw`. If you need to set cookies for a request, use the :class:"
 "`Request.cookies <scrapy.http.Request>` parameter. This is a known current "
 "limitation that is being worked on."
-msgstr ""
+msgstr "``Cookie`` ヘッダーを介して設定されたCookieは、 :ref:`cookies-mw` では考慮されません。リクエストにCookieを設定する必要がある場合は、 :class:`Request.cookies <scrapy.http.Request>` パラメータを使用します。これは現在改善に取り組んでいる既知の制限です。"
 
 #: ../../topics/downloader-middleware.rst:215
 msgid "The following settings can be used to configure the cookie middleware:"
@@ -514,10 +508,6 @@ msgid "Default: ``False``"
 msgstr "デフォルト: ``False``"
 
 #: ../../topics/downloader-middleware.rst:270
-#, fuzzy
-#| msgid ""
-#| "If enabled, Scrapy will log all cookies sent in requests (ie. ``Cookie`` "
-#| "header) and all cookies received in responses (ie. ``Set-Cookie`` header)."
 msgid ""
 "If enabled, Scrapy will log all cookies sent in requests (i.e. ``Cookie`` "
 "header) and all cookies received in responses (i.e. ``Set-Cookie`` header)."
@@ -887,16 +877,10 @@ msgstr ""
 "す。"
 
 #: ../../topics/downloader-middleware.rst:483
-#, fuzzy
-#| msgid ""
-#| "By default, it uses the anydbm_ module, but you can change it with the :"
-#| "setting:`HTTPCACHE_DBM_MODULE` setting."
 msgid ""
 "By default, it uses the :mod:`dbm`, but you can change it with the :setting:"
 "`HTTPCACHE_DBM_MODULE` setting."
-msgstr ""
-"デフォルトでは、anydbm_ モジュールを使用しますが、 :setting:"
-"`HTTPCACHE_DBM_MODULE` 設定で変更できます。"
+msgstr "デフォルトでは :mod:`dbm` を使用しますが、 :setting:`HTTPCACHE_DBM_MODULE` 設定で変更できます。"
 
 #: ../../topics/downloader-middleware.rst:489
 msgid "Writing your own storage backend"
@@ -945,8 +929,6 @@ msgid "the spider which generated the request"
 msgstr "リクエストを生成したスパイダー"
 
 #: ../../topics/downloader-middleware.rst:521
-#, fuzzy
-#| msgid "the request to find cached reponse for"
 msgid "the request to find cached response for"
 msgstr "キャッシュされたレスポンスを見つけるためのリクエスト"
 
@@ -1090,8 +1072,6 @@ msgid "HTTPCACHE_DBM_MODULE"
 msgstr "HTTPCACHE_DBM_MODULE"
 
 #: ../../topics/downloader-middleware.rst:621
-#, fuzzy
-#| msgid "Default: ``'anydbm'``"
 msgid "Default: ``'dbm'``"
 msgstr "デフォルト: ``'anydbm'``"
 
@@ -1148,11 +1128,6 @@ msgstr ""
 "また、より微妙なポリシーが望ましい場合があります。"
 
 #: ../../topics/downloader-middleware.rst:659
-#, fuzzy
-#| msgid ""
-#| "This setting still respects ``Cache-Control: no-store`` directives in "
-#| "responses. If you don't want that, filter ``no-store`` out of the Cache-"
-#| "Control headers in responses you feedto the cache middleware."
 msgid ""
 "This setting still respects ``Cache-Control: no-store`` directives in "
 "responses. If you don't want that, filter ``no-store`` out of the Cache-"
@@ -1171,12 +1146,6 @@ msgid "List of Cache-Control directives in responses to be ignored."
 msgstr "無視されるレスポンスのキャッシュ制御ディレクティブのリスト。"
 
 #: ../../topics/downloader-middleware.rst:672
-#, fuzzy
-#| msgid ""
-#| "Sites often set \"no-store\", \"no-cache\", \"must-revalidate\", etc., "
-#| "but get upset at the traffic a spider can generate if it respects those "
-#| "directives. This allows to selectively ignore Cache-Control directives "
-#| "that are known to be unimportant for the sites being crawled."
 msgid ""
 "Sites often set \"no-store\", \"no-cache\", \"must-revalidate\", etc., but "
 "get upset at the traffic a spider can generate if it actually respects those "
@@ -1210,17 +1179,11 @@ msgstr ""
 "できます。"
 
 #: ../../topics/downloader-middleware.rst:692
-#, fuzzy
-#| msgid ""
-#| "This middleware also supports decoding `brotli-compressed`_ responses, "
-#| "provided `brotlipy`_ is installed."
 msgid ""
 "This middleware also supports decoding `brotli-compressed`_ as well as `zstd-"
 "compressed`_ responses, provided that `brotlipy`_ or `zstandard`_ is "
 "installed, respectively."
-msgstr ""
-"このミドルウェアは、 `brotlipy`_ がインストールされている場合、 `brotli-"
-"compressed`_ レスポンスのデコードもサポートします。"
+msgstr "このミドルウェアは、 `brotlipy`_ または `zstandard`_  がインストールされている場合、それぞれに、 `brotli-compressed`_ と共に `zstd-compressed`_ レスポンスのデコードもサポートします。"
 
 #: ../../topics/downloader-middleware.rst:702
 msgid "HttpCompressionMiddleware Settings"
@@ -1247,16 +1210,10 @@ msgstr ""
 "メタ値を設定することにより、リクエストに使用するHTTPプロキシを設定します。"
 
 #: ../../topics/downloader-middleware.rst:727
-#, fuzzy
-#| msgid ""
-#| "Like the Python standard library modules `urllib`_ and `urllib2`_, it "
-#| "obeys the following environment variables:"
 msgid ""
 "Like the Python standard library module :mod:`urllib.request`, it obeys the "
 "following environment variables:"
-msgstr ""
-"Python標準ライブラリモジュール `urllib`_ および `urllib2`_ と同様に、以下の環"
-"境変数に従います:"
+msgstr "Python標準ライブラリモジュール :mod:`urllib.request` と同様に、以下の環境変数に従います:"
 
 #: ../../topics/downloader-middleware.rst:730
 msgid "``http_proxy``"
@@ -1399,14 +1356,10 @@ msgid "Default: ``20``"
 msgstr "デフォルト: ``20``"
 
 #: ../../topics/downloader-middleware.rst:811
-#, fuzzy
-#| msgid ""
-#| "The maximum number of redirections that will be followed for a single "
-#| "request."
 msgid ""
 "The maximum number of redirections that will be followed for a single "
 "request. After this maximum, the request's response is returned as is."
-msgstr "1回のリクエストで追跡されるリダイレクトの最大数。"
+msgstr "1回のリクエストで追跡されるリダイレクトの最大数。この最大値を超えると、そのリクエストのレスポンスがそのまま返されます。"
 
 #: ../../topics/downloader-middleware.rst:815
 msgid "MetaRefreshMiddleware"
@@ -1475,7 +1428,7 @@ msgstr "これらのタグ内のメタ・タグは無視されます。"
 msgid ""
 "The default value of :setting:`METAREFRESH_IGNORE_TAGS` changed from "
 "``['script', 'noscript']`` to ``[]``."
-msgstr ""
+msgstr ":setting:`METAREFRESH_IGNORE_TAGS` のデフォルト値は ``['script', 'noscript']`` kから ``[]`` に変更されました。"
 
 #: ../../topics/downloader-middleware.rst:861
 msgid "METAREFRESH_MAXDELAY"
@@ -1548,21 +1501,21 @@ msgstr ""
 msgid ""
 "To retry requests from a spider callback, you can use the :func:"
 "`get_retry_request` function:"
-msgstr ""
+msgstr "スパイダー・コールバックからのリクエストを再試行するには、 :func:`get_retry_request` 関数を使用できます:"
 
 #: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
 #: scrapy.downloadermiddlewares.retry.get_retry_request:1
 msgid ""
 "Returns a new :class:`~scrapy.Request` object to retry the specified "
 "request, or ``None`` if retries of the specified request have been exhausted."
-msgstr ""
+msgstr "新しい :class:`~scrapy.Request` オブジェクトを返し、指定されたリクエストを再試行します。指定されたリクエストの再試行をやり尽くした場合は ``None`` を返します。"
 
 #: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
 #: scrapy.downloadermiddlewares.retry.get_retry_request:5
 msgid ""
 "For example, in a :class:`~scrapy.Spider` callback, you could use it as "
 "follows::"
-msgstr ""
+msgstr "たとえば、 :class:`~scrapy.Spider` コールバックは以下のように使用できます::"
 
 #: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
 #: scrapy.downloadermiddlewares.retry.get_retry_request:17
@@ -1571,14 +1524,14 @@ msgid ""
 "retry request. It is used to access the :ref:`settings <topics-settings>` "
 "and :ref:`stats <topics-stats>`, and to provide extra logging context (see :"
 "func:`logging.debug`)."
-msgstr ""
+msgstr "*spider* は、再試行リクエストを求めている :class:`~scrapy.Spider` インスタンスです。 これは、 :ref:`settings <topics-settings>` や :ref:`stats <topics-stats>` にアクセスし、追加のロギング・コンテキストを提供するために使用されます( :func:`logging.debug` を参照)。"
 
 #: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
 #: scrapy.downloadermiddlewares.retry.get_retry_request:22
 msgid ""
 "*reason* is a string or an :class:`Exception` object that indicates the "
 "reason why the request needs to be retried. It is used to name retry stats."
-msgstr ""
+msgstr "*reason* は、リクエストを再試行する必要がある理由を示す文字列または :class:`Exception` オブジェクトです。再試行統計(訳注:retry stats)に名前を付けるために使用されます。"
 
 #: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
 #: scrapy.downloadermiddlewares.retry.get_retry_request:25
@@ -1588,7 +1541,7 @@ msgid ""
 "read from the :reqmeta:`max_retry_times` meta key of the request. If the :"
 "reqmeta:`max_retry_times` meta key is not defined or ``None``, the number is "
 "read from the :setting:`RETRY_TIMES` setting."
-msgstr ""
+msgstr "*max_retry_times* は、 *request* を再試行できる最大回数を決定する数値です。 指定されていない場合または ``None`` の場合、数値はリクエストの :reqmeta:`max_retry_times` メタ・キーから読み取られます。 :reqmeta:`max_retry_times` メタ・キーが定義されていないか ``None`` の場合、数値は :setting:`RETRY_TIMES` 設定から読み取られます。"
 
 #: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
 #: scrapy.downloadermiddlewares.retry.get_retry_request:31
@@ -1596,19 +1549,19 @@ msgid ""
 "*priority_adjust* is a number that determines how the priority of the new "
 "request changes in relation to *request*. If not specified, the number is "
 "read from the :setting:`RETRY_PRIORITY_ADJUST` setting."
-msgstr ""
+msgstr "*priority_adjust* は、 *request* に関連して新しいリクエストの優先度がどのように変化するかを決定する数値です。 指定しない場合、数値は :setting:`RETRY_PRIORITY_ADJUST` 設定から読み取られます。"
 
 #: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
 #: scrapy.downloadermiddlewares.retry.get_retry_request:35
 msgid "*logger* is the logging.Logger object to be used when logging messages"
-msgstr ""
+msgstr "*logger* は、メッセージをログに記録するときに使用されるlogging.Logger オブジェクトです"
 
 #: ../../../scrapy/downloadermiddlewares/retry.py:docstring of
 #: scrapy.downloadermiddlewares.retry.get_retry_request:37
 msgid ""
 "*stats_base_key* is a string to be used as the base key for the retry-"
 "related job stats"
-msgstr ""
+msgstr "*stats_base_key* は、再試行関連のジョブ統計のベース・キーとして使用される文字列です"
 
 #: ../../topics/downloader-middleware.rst:901
 msgid "RetryMiddleware Settings"
@@ -1674,25 +1627,23 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:943
 msgid "RETRY_PRIORITY_ADJUST"
-msgstr ""
+msgstr "RETRY_PRIORITY_ADJUST"
 
 #: ../../topics/downloader-middleware.rst:945
-#, fuzzy
-#| msgid "Default: ``100``"
 msgid "Default: ``-1``"
-msgstr "デフォルト: ``100``"
+msgstr "デフォルト: ``-1``"
 
 #: ../../topics/downloader-middleware.rst:947
 msgid "Adjust retry request priority relative to original request:"
-msgstr ""
+msgstr "元のリクエストに対して再試行リクエストの優先度を調整します:"
 
 #: ../../topics/downloader-middleware.rst:949
 msgid "a positive priority adjust means higher priority."
-msgstr ""
+msgstr "正の優先度調整は、より高い優先度を意味します。"
 
 #: ../../topics/downloader-middleware.rst:950
 msgid "**a negative priority adjust (default) means lower priority.**"
-msgstr ""
+msgstr "**負の優先度調整(デフォルト)は、優先度が低いことを意味します。**"
 
 #: ../../topics/downloader-middleware.rst:956
 msgid "RobotsTxtMiddleware"
@@ -1738,16 +1689,12 @@ msgid "Scrapy ships with support for the following robots.txt_ parsers:"
 msgstr "Scrapyには、次の robots.txt_ パーサがサポートされています:"
 
 #: ../../topics/downloader-middleware.rst:979
-#, fuzzy
-#| msgid ":ref:`Protego <protego-parser>`"
 msgid ":ref:`Protego <protego-parser>` (default)"
-msgstr ":ref:`Protego <protego-parser>`"
+msgstr ":ref:`Protego <protego-parser>` (デフォルト)"
 
 #: ../../topics/downloader-middleware.rst:980
-#, fuzzy
-#| msgid ":ref:`RobotFileParser <python-robotfileparser>` (default)"
 msgid ":ref:`RobotFileParser <python-robotfileparser>`"
-msgstr ":ref:`RobotFileParser <python-robotfileparser>` (デフォルト)"
+msgstr ":ref:`RobotFileParser <python-robotfileparser>`"
 
 #: ../../topics/downloader-middleware.rst:981
 msgid ":ref:`Reppy <reppy-parser>`"
@@ -1779,19 +1726,19 @@ msgstr ""
 
 #: ../../topics/downloader-middleware.rst:994
 msgid "Parsers vary in several aspects:"
-msgstr ""
+msgstr "パーサはいくつかの側面で異なります:"
 
 #: ../../topics/downloader-middleware.rst:996
 msgid "Language of implementation"
-msgstr ""
+msgstr "実装言語"
 
 #: ../../topics/downloader-middleware.rst:998
 msgid "Supported specification"
-msgstr ""
+msgstr "サポートされている仕様"
 
 #: ../../topics/downloader-middleware.rst:1000
 msgid "Support for wildcard matching"
-msgstr ""
+msgstr "ワイルドカードマッチングのサポート"
 
 #: ../../topics/downloader-middleware.rst:1002
 msgid ""
@@ -1799,53 +1746,47 @@ msgid ""
 "robots_txt#order-of-precedence-for-group-member-lines>`_: in particular for "
 "``Allow`` and ``Disallow`` directives, where the most specific rule based on "
 "the length of the path trumps the less specific (shorter) rule"
-msgstr ""
+msgstr "長さベースのルール( `length based rule <https://developers.google.com/search/reference/robots_txt#order-of-precedence-for-group-member-lines>`_ )の使い方: 特に ``Allow`` と ``Disallow`` ディレクティブは、パスの長さに基づく最も具体的なルールが、より具体的でない(短い)ルールよりも優先されます"
 
 #: ../../topics/downloader-middleware.rst:1007
 msgid ""
 "Performance comparison of different parsers is available at `the following "
 "link <https://anubhavp28.github.io/gsoc-weekly-checkin-12/>`_."
-msgstr ""
+msgstr "さまざまなパーサの性能比較については `the following link <https://anubhavp28.github.io/gsoc-weekly-checkin-12/>`_ で入手できます。"
 
 #: ../../topics/downloader-middleware.rst:1013
 msgid "Protego parser"
 msgstr "Protegoパーサ"
 
 #: ../../topics/downloader-middleware.rst:1015
-#, fuzzy
-#| msgid ""
-#| "Install `Protego <https://github.com/scrapy/protego>`_ by running ``pip "
-#| "install protego``"
 msgid "Based on `Protego <https://github.com/scrapy/protego>`_:"
-msgstr ""
-"``pip install protego`` を実行して `Protego <https://github.com/scrapy/"
-"protego>`_ をインストールします"
+msgstr "`Protego <https://github.com/scrapy/protego>`_ に基づく:"
 
 #: ../../topics/downloader-middleware.rst:1017
 #: ../../topics/downloader-middleware.rst:1083
 msgid "implemented in Python"
-msgstr ""
+msgstr "Pythonによる実装"
 
 #: ../../topics/downloader-middleware.rst:1019
 msgid ""
 "is compliant with `Google's Robots.txt Specification <https://developers."
 "google.com/search/reference/robots_txt>`_"
-msgstr ""
+msgstr "GoogleのRobots.txt仕様( `Google's Robots.txt Specification <https://developers.google.com/search/reference/robots_txt>`_ )に準拠しています。"
 
 #: ../../topics/downloader-middleware.rst:1022
 #: ../../topics/downloader-middleware.rst:1063
 #: ../../topics/downloader-middleware.rst:1088
 msgid "supports wildcard matching"
-msgstr ""
+msgstr "ワイルドカード・マッチングのサポート"
 
 #: ../../topics/downloader-middleware.rst:1024
 #: ../../topics/downloader-middleware.rst:1065
 msgid "uses the length based rule"
-msgstr ""
+msgstr "長さベースのルールの使用"
 
 #: ../../topics/downloader-middleware.rst:1026
 msgid "Scrapy uses this parser by default."
-msgstr ""
+msgstr "Scrapyはデフォルトでこのパーサを使います"
 
 #: ../../topics/downloader-middleware.rst:1031
 msgid "RobotFileParser"
@@ -1853,43 +1794,34 @@ msgstr "RobotFileParser"
 
 #: ../../topics/downloader-middleware.rst:1033
 msgid "Based on :class:`~urllib.robotparser.RobotFileParser`:"
-msgstr ""
+msgstr ":class:`~urllib.robotparser.RobotFileParser` に基づく:"
 
 #: ../../topics/downloader-middleware.rst:1035
 msgid "is Python's built-in robots.txt_ parser"
-msgstr ""
+msgstr "Python組み込みの robots.txt_ パーサです"
 
 #: ../../topics/downloader-middleware.rst:1037
 #: ../../topics/downloader-middleware.rst:1060
 #: ../../topics/downloader-middleware.rst:1085
-#, fuzzy
-#| msgid ""
-#| "`Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ is "
-#| "fully compliant with `Martijn Koster's 1996 draft specification <http://"
-#| "www.robotstxt.org/norobots-rfc.txt>`_, with support for wildcard matching."
 msgid ""
 "is compliant with `Martijn Koster's 1996 draft specification <https://www."
 "robotstxt.org/norobots-rfc.txt>`_"
-msgstr ""
-"`Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ は、 "
-"`Martijn Koster's 1996 draft specification <http://www.robotstxt.org/"
-"norobots-rfc.txt>`_ に完全に準拠しており、サポートされています。ワイルド・"
-"カード・マッチング用です。"
+msgstr "`Martijn Kosterの1996年のドラフト仕様 <https://www.robotstxt.org/norobots-rfc.txt>`_ に準拠しています"
 
 #: ../../topics/downloader-middleware.rst:1040
 msgid "lacks support for wildcard matching"
-msgstr ""
+msgstr "ワイルドカードマッチングのサポートはありません"
 
 #: ../../topics/downloader-middleware.rst:1042
 #: ../../topics/downloader-middleware.rst:1090
 msgid "doesn't use the length based rule"
-msgstr ""
+msgstr "長さベースのルールを使用しません"
 
 #: ../../topics/downloader-middleware.rst:1044
 msgid ""
 "It is faster than Protego and backward-compatible with versions of Scrapy "
 "before 1.8.0."
-msgstr ""
+msgstr "Protegoよりも高速で、1.8.0より前のバージョンのScrapyと下位互換性があります。"
 
 #: ../../topics/downloader-middleware.rst:1046
 msgid "In order to use this parser, set:"
@@ -1906,24 +1838,18 @@ msgid "Reppy parser"
 msgstr "Reppyパーサ"
 
 #: ../../topics/downloader-middleware.rst:1055
-#, fuzzy
-#| msgid ""
-#| "Install `Reppy <https://github.com/seomoz/reppy/>`_ by running ``pip "
-#| "install reppy``"
 msgid "Based on `Reppy <https://github.com/seomoz/reppy/>`_:"
-msgstr ""
-"``pip install reppy`` を実行して `Reppy <https://github.com/seomoz/reppy/>`_ "
-"をインストールします"
+msgstr "`Reppy <https://github.com/seomoz/reppy/>`_ に基づいています:"
 
 #: ../../topics/downloader-middleware.rst:1057
 msgid ""
 "is a Python wrapper around `Robots Exclusion Protocol Parser for C++ "
 "<https://github.com/seomoz/rep-cpp>`_"
-msgstr ""
+msgstr "`Robots Exclusion Protocol Parser for C++ <https://github.com/seomoz/rep-cpp>`_ (ロボット除外プロトコル・パーサ)のPythonラッパーです。"
 
 #: ../../topics/downloader-middleware.rst:1067
 msgid "Native implementation, provides better speed than Protego."
-msgstr ""
+msgstr "ネイティブ実装で、Protegoよりも高速です。"
 
 #: ../../topics/downloader-middleware.rst:1069
 #: ../../topics/downloader-middleware.rst:1092
@@ -1951,17 +1877,10 @@ msgid "Robotexclusionrulesparser"
 msgstr "Robotexclusionrulesparser"
 
 #: ../../topics/downloader-middleware.rst:1081
-#, fuzzy
-#| msgid ""
-#| "Install `Robotexclusionrulesparser <http://nikitathespider.com/python/"
-#| "rerp/>`_ by running ``pip install robotexclusionrulesparser``"
 msgid ""
 "Based on `Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/"
 ">`_:"
-msgstr ""
-"``pip install robotexclusionrulesparser`` を実行して、 "
-"`Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ をイン"
-"ストールします"
+msgstr "`Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ に基づいています:"
 
 #: ../../topics/downloader-middleware.rst:1094
 msgid ""
@@ -2075,19 +1994,11 @@ msgid "AjaxCrawlMiddleware"
 msgstr "AjaxCrawlMiddleware"
 
 #: ../../topics/downloader-middleware.rst:1153
-#, fuzzy
-#| msgid ""
-#| "Middleware that finds 'AJAX crawlable' page variants based on meta-"
-#| "fragment html tag. See https://developers.google.com/webmasters/ajax-"
-#| "crawling/docs/getting-started for more info."
 msgid ""
 "Middleware that finds 'AJAX crawlable' page variants based on meta-fragment "
 "html tag. See https://developers.google.com/search/docs/ajax-crawling/docs/"
 "getting-started for more info."
-msgstr ""
-"メタ・フラグメントHTMLタグに基づいて「AJAXクロール可能な」ページ・バリアント"
-"を検出するミドルウェア。 詳細については、https：//developers.google.com/"
-"webmasters/ajax-crawling/docs/getting-started をご覧ください。"
+msgstr "メタ・フラグメントHTMLタグに基づいて「AJAXクロール可能な」ページ・バリアントを検出するミドルウェア。 詳細については、 https://developers.google.com/search/docs/ajax-crawling/docs/getting-started をご覧ください。"
 
 #: ../../topics/downloader-middleware.rst:1160
 msgid ""
@@ -2143,104 +2054,3 @@ msgid ""
 "`HttpProxyMiddleware`."
 msgstr ""
 ":class:`HttpProxyMiddleware` のプロキシ認証のデフォルトのエンコーディング。"
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
-
-#~ msgid ":ref:`httpcache-storage-leveldb`"
-#~ msgstr ":ref:`httpcache-storage-leveldb`"
-
-#~ msgid "LevelDB storage backend"
-#~ msgstr "LevelDBストレージ・バックエンド"
-
-#~ msgid ""
-#~ "A LevelDB_ storage backend is also available for the HTTP cache "
-#~ "middleware."
-#~ msgstr ""
-#~ "LevelDB_ ストレージ・バックエンドは、HTTPキャッシュ・ミドルウェアでも使用"
-#~ "できます。"
-
-#~ msgid ""
-#~ "This backend is not recommended for development because only one process "
-#~ "can access LevelDB databases at the same time, so you can't run a crawl "
-#~ "and open the scrapy shell in parallel for the same spider."
-#~ msgstr ""
-#~ "LevelDBデータベースに同時にアクセスできるプロセスは1つだけなので、このバッ"
-#~ "クエンドは開発にはお勧めできません。そのため、同じスパイダーに対してクロー"
-#~ "ルを実行してScrapyシェルを並行して開くことはできません。"
-
-#~ msgid ""
-#~ "In order to use this storage backend, install the `LevelDB python "
-#~ "bindings`_ (e.g. ``pip install leveldb``)."
-#~ msgstr ""
-#~ "このストレージ・バックエンドを使用するには、 `LevelDB python bindings`_ を"
-#~ "インストールします(例: ``pip install leveldb`` )。"
-
-#~ msgid "Before 0.11, :setting:`HTTPCACHE_DIR` was used to enable cache."
-#~ msgstr ""
-#~ "バージョン0.11より前は、 :setting:`HTTPCACHE_DIR` がキャッシュを有効にする"
-#~ "のに使われていました。"
-
-#~ msgid "Before 0.11, zero meant cached requests always expire."
-#~ msgstr ""
-#~ "バージョン0.11より前は、ゼロは、キャッシュされたリクエストが常に期限切れに"
-#~ "なることを意味しました。"
-
-#~ msgid "Default: ``['script', 'noscript']``"
-#~ msgstr "デフォルト: ``['script', 'noscript']``"
-
-#~ msgid ""
-#~ "`RobotFileParser <https://docs.python.org/3.7/library/urllib.robotparser."
-#~ "html>`_ is Python's inbuilt robots.txt_ parser. The parser is fully "
-#~ "compliant with `Martijn Koster's 1996 draft specification <http://www."
-#~ "robotstxt.org/norobots-rfc.txt>`_. It lacks support for wildcard "
-#~ "matching. Scrapy uses this parser by default."
-#~ msgstr ""
-#~ "`RobotFileParser <https://docs.python.org/3.7/library/urllib.robotparser."
-#~ "html>`_ はPythonに組み込まれている robots.txt_ パーサです。 パーサは、"
-#~ "`Martijn Kosterの1996年のドラフト仕様 <http://www.robotstxt.org/norobots-"
-#~ "rfc.txt>`_ に完全に準拠しています。 ワイルド・カード・マッチングのサポート"
-#~ "はありません。Scrapyはデフォルトでこのパーサを使用します。"
-
-#~ msgid ""
-#~ "`Reppy <https://github.com/seomoz/reppy/>`_ is a Python wrapper around "
-#~ "`Robots Exclusion Protocol Parser for C++ <https://github.com/seomoz/rep-"
-#~ "cpp>`_. The parser is fully compliant with `Martijn Koster's 1996 draft "
-#~ "specification <http://www.robotstxt.org/norobots-rfc.txt>`_, with support "
-#~ "for wildcard matching. Unlike `RobotFileParser <https://docs.python."
-#~ "org/3.7/library/urllib.robotparser.html>`_ and `Robotexclusionrulesparser "
-#~ "<http://nikitathespider.com/python/rerp/>`_, it uses the length based "
-#~ "rule, in particular for ``Allow`` and ``Disallow`` directives, where the "
-#~ "most specific rule based on the length of the path trumps the less "
-#~ "specific (shorter) rule."
-#~ msgstr ""
-#~ "`Reppy <https://github.com/seomoz/reppy/>`_ は、 `Robots Exclusion "
-#~ "Protocol Parser for C++ <https://github.com/seomoz/rep-cpp>`_ のPythonラッ"
-#~ "パーです。 パーサーは、 `Martijn Koster's 1996 draft specification "
-#~ "<http://www.robotstxt.org/norobots-rfc.txt>`_ に完全に準拠しており、ワイル"
-#~ "ド・カード・マッチングをサポートしています。 `RobotFileParser <https://"
-#~ "docs.python.org/3.7/library/urllib.robotparser.html>`_ や "
-#~ "``Robotexclusionrulesparser <http://nikitathespider.com/python/rerp/>`_ と"
-#~ "は異なり、特に、 ``Allow`` と ``Disallow`` ディレクティブでは、パスの長さ"
-#~ "に基づいた最も具体的なルールがより具体的ではない(より短い)ルールより優先さ"
-#~ "れる、長さベースのルールを使用します。"
-
-#~ msgid ""
-#~ "`Protego <https://github.com/scrapy/protego>`_ is a pure-Python robots."
-#~ "txt_ parser. The parser is fully compliant with `Google's Robots.txt "
-#~ "Specification <https://developers.google.com/search/reference/"
-#~ "robots_txt>`_ hence supports wildcard matching, and uses the length based "
-#~ "rule similar to `Reppy <https://github.com/seomoz/reppy/>`_."
-#~ msgstr ""
-#~ "`Protego <https://github.com/scrapy/protego>`_ は、純粋なPython robots."
-#~ "txt_ パーサです。パーサは `Google's Robots.txt Specification <https://"
-#~ "developers.google.com/search/reference/robots_txt>`_ に完全に準拠している"
-#~ "ため、ワイルドカード・マッチングをサポートし、 `Reppy <https://github.com/"
-#~ "seomoz/reppy/>`_ に類似した長さベースのルールを使用します。"
-
-#~ msgid ""
-#~ "Set :setting:`ROBOTSTXT_PARSER` setting to ``scrapy.robotstxt."
-#~ "ProtegoRobotParser``"
-#~ msgstr ""
-#~ ":setting:`ROBOTSTXT_PARSER` 設定に ``scrapy.robotstxt."
-#~ "ProtegoRobotParser`` をセットします"
