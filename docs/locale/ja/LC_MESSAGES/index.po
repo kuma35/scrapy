@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-04-20 08:51+0900\n"
+"PO-Revision-Date: 2021-04-28 08:01+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -393,7 +393,7 @@ msgstr ":doc:`topics/contracts`"
 
 #: ../../index.rst:210
 msgid "Use the :ref:`coroutine syntax <async>`."
-msgstr ":ref:`coroutine syntax <async>` の利用"
+msgstr ":ref:`コルーチン構文 <async>` の利用"
 
 #: ../../index.rst:213
 msgid ":doc:`topics/asyncio`"
