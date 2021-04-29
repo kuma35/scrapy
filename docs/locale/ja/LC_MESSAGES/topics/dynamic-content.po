@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-03 07:56+0900\n"
+"PO-Revision-Date: 2021-04-30 08:18+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -249,7 +249,7 @@ msgstr ""
 msgid ""
 "Note that to translate a cURL command into a Scrapy request, you may use "
 "`curl2scrapy <https://michael-shub.github.io/curl2scrapy/>`_."
-msgstr ""
+msgstr "cURLコマンドをScrapyリクエストに変換するには、 `curl2scrapy <https://michael-shub.github.io/curl2scrapy/>`_ を使用できます。"
 
 #: ../../topics/dynamic-content.rst:113
 msgid "Handling different response formats"
@@ -272,16 +272,10 @@ msgstr ""
 "selectors>` を使用します。"
 
 #: ../../topics/dynamic-content.rst:121
-#, fuzzy
-#| msgid ""
-#| "If the response is JSON, use `json.loads`_ to load the desired data from :"
-#| "attr:`response.text <scrapy.http.TextResponse.text>`::"
 msgid ""
 "If the response is JSON, use :func:`json.loads` to load the desired data "
 "from :attr:`response.text <scrapy.http.TextResponse.text>`::"
-msgstr ""
-"応答がJSONの場合、 `json.loads`_ を使用して :attr:`response.text <scrapy."
-"http.TextResponse.text>` から目的のデータをロードします。::"
+msgstr "応答がJSONの場合、 :func:`json.loads` を使用して、:attr:`response.text <scrapy.http.TextResponse.text>` から目的のデータをロードします::"
 
 #: ../../topics/dynamic-content.rst:126
 msgid ""
@@ -302,18 +296,11 @@ msgstr ""
 "合、 :ref:`topics-parsing-javascript` を参照してください。"
 
 #: ../../topics/dynamic-content.rst:136
-#, fuzzy
-#| msgid ""
-#| "If the response is CSS, use a `regular expression`_ to extract the "
-#| "desired data from :attr:`response.text <scrapy.http.TextResponse.text>`."
 msgid ""
 "If the response is CSS, use a :doc:`regular expression <library/re>` to "
 "extract the desired data from :attr:`response.text <scrapy.http.TextResponse."
 "text>`."
-msgstr ""
-"レスポンスがCSSの場合、正規表現(`regular expression`_)を使用して :attr:"
-"`response.text <scrapy.http.TextResponse.text>` から目的のデータを抽出しま"
-"す。"
+msgstr "レスポンスがCSSの場合、 :doc:`正規表現 <library/re>` を使用して :attr:`response.text <scrapy.http.TextResponse.text>` から目的のデータを抽出します。"
 
 #: ../../topics/dynamic-content.rst:142
 msgid ""
@@ -391,46 +378,28 @@ msgstr ""
 "できます。:"
 
 #: ../../topics/dynamic-content.rst:175
-#, fuzzy
-#| msgid ""
-#| "You might be able to use a `regular expression`_ to extract the desired "
-#| "data in JSON format, which you can then parse with `json.loads`_."
 msgid ""
 "You might be able to use a :doc:`regular expression <library/re>` to extract "
 "the desired data in JSON format, which you can then parse with :func:`json."
 "loads`."
-msgstr ""
-"正規表現(`regular expression`_)を使用してJSON形式で目的のデータを抽出し、 "
-"`json.loads`_ でパースできる場合があります。"
+msgstr ":doc:`正規表現 <library/re>` を使用してJSON形式で目的のデータを抽出し、 :func:`json.loads` でパースできる場合があります。"
 
 #: ../../topics/dynamic-content.rst:179
-#, fuzzy
-#| msgid ""
-#| "For example, if the JavaScript code contains a separate line like ``var "
-#| "data = {\"field\": \"value\"};`` you can extract that data as follows::"
 msgid ""
 "For example, if the JavaScript code contains a separate line like ``var data "
 "= {\"field\": \"value\"};`` you can extract that data as follows:"
-msgstr ""
-"たとえば、JavaScriptコードに ``var data = {\"field\": \"value\"};`` のような"
-"個別の行が含まれている場合、次のようにそのデータを抽出できます。::"
+msgstr "たとえば、JavaScriptコードに ``var data = {\"field\": \"value\"};`` のような個別の行が含まれている場合、次のようにそのデータを抽出できます:"
 
 #: ../../topics/dynamic-content.rst:187
 msgid ""
 "chompjs_ provides an API to parse JavaScript objects into a :class:`dict`."
-msgstr ""
+msgstr "chompjs_ は、JavaScriptオブジェクトをパースして :class:`dict` に格納するAPIを提供します。"
 
 #: ../../topics/dynamic-content.rst:189
-#, fuzzy
-#| msgid ""
-#| "For example, if the JavaScript code contains ``var data = {field: \"value"
-#| "\"};`` you can extract that data as follows::"
 msgid ""
 "For example, if the JavaScript code contains ``var data = {field: \"value\", "
 "secondField: \"second value\"};`` you can extract that data as follows:"
-msgstr ""
-"たとえば、JavaScriptコードに ``var data = {field: \"value\"};`` が含まれてい"
-"る場合、次のようにしてそのデータを抽出できます。::"
+msgstr "たとえば、JavaScriptコードに ``var data = {field: \"value\", secondField: \"second value\"};`` が含まれている場合、以下のようにしてそのデータを抽出できます:"
 
 #: ../../topics/dynamic-content.rst:199
 msgid ""
@@ -441,16 +410,10 @@ msgstr ""
 "`セレクター<topics-selectors>` を使用して解析できます。"
 
 #: ../../topics/dynamic-content.rst:202
-#, fuzzy
-#| msgid ""
-#| "For example, if the JavaScript code contains ``var data = {field: \"value"
-#| "\"};`` you can extract that data as follows::"
 msgid ""
 "For example, if the JavaScript code contains ``var data = {field: \"value\"};"
 "`` you can extract that data as follows:"
-msgstr ""
-"たとえば、JavaScriptコードに ``var data = {field: \"value\"};`` が含まれてい"
-"る場合、次のようにしてそのデータを抽出できます。::"
+msgstr "たとえば、JavaScriptコードに ``var data = {field: \"value\"};`` が含まれている場合、以下のようにしてそのデータを抽出できます:"
 
 #: ../../topics/dynamic-content.rst:217
 msgid "Pre-rendering JavaScript"
