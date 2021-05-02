@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-06 18:56+0900\n"
+"PO-Revision-Date: 2021-05-02 17:10+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -200,24 +200,16 @@ msgstr ""
 "能のサポートを提供します。"
 
 #: ../../topics/exporters.rst:150
-#, fuzzy
-#| msgid ""
-#| "These features can be configured through the constructor arguments which "
-#| "populate their respective instance attributes: :attr:`fields_to_export`, :"
-#| "attr:`export_empty_fields`, :attr:`encoding`, :attr:`indent`."
 msgid ""
 "These features can be configured through the ``__init__`` method arguments "
 "which populate their respective instance attributes: :attr:"
 "`fields_to_export`, :attr:`export_empty_fields`, :attr:`encoding`, :attr:"
 "`indent`."
-msgstr ""
-"これらの機能は、それぞれのインスタンス属性を設定するコンストラクター引数で構"
-"成(configure)できます： :attr:`fields_to_export` 、 :attr:"
-"`export_empty_fields` 、 :attr:`encoding` 、 :attr:`indent`"
+msgstr "これらの機能は、それぞれのインスタンス属性を設定する ``__init__`` メソッド引数を介して構成できます。それらは、 :attr:`fields_to_export` 、 :attr:`export_empty_fields` 、 :attr:`encoding` 、 :attr:`indent` です。"
 
 #: ../../topics/exporters.rst:154
 msgid "The *dont_fail* parameter."
-msgstr ""
+msgstr "*dont_fail* パラメータ"
 
 #: ../../topics/exporters.rst:159
 msgid "Exports the given item. This method must be implemented in subclasses."
@@ -236,41 +228,23 @@ msgstr ""
 "ターでこのメソッドをオーバーライドできます。"
 
 #: ../../topics/exporters.rst:167
-#, fuzzy
-#| msgid ""
-#| "By default, this method looks for a serializer :ref:`declared in the item "
-#| "field <topics-exporters-serializers>` and returns the result of applying "
-#| "that serializer to the value. If no serializer is found, it returns the "
-#| "value unchanged except for ``unicode`` values which are encoded to "
-#| "``str`` using the encoding declared in the :attr:`encoding` attribute."
 msgid ""
 "By default, this method looks for a serializer :ref:`declared in the item "
 "field <topics-exporters-serializers>` and returns the result of applying "
 "that serializer to the value. If no serializer is found, it returns the "
 "value unchanged."
-msgstr ""
-"デフォルトでは、このメソッドは :ref:`項目フィールドで宣言<topics-exporters-"
-"serializers>` されたシリアライザーを探し、そして、そのシリアライザーを値に適"
-"用した結果を返します。シリアライザーが見つからない場合、 :attr:`encoding` 属"
-"性で宣言されたエンコーディングを使用して ``str`` にエンコードされる "
-"``unicode`` 値を除いて、値を変更せずに返します。"
+msgstr "デフォルトでは、このメソッドは :ref:`アイテムフィールドで宣言された <topics-exporters-serializers>` シリアライザーを検索し、そして、そのシリアライザーを値に適用した結果を返します。 シリアライザーが見つからない場合は、値を変更せずに返します。"
 
 #: ../../topics/exporters.rst:0 ../../../scrapy/exporters.py:docstring of
 #: scrapy.exporters.MarshalItemExporter:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/exporters.rst:172
-#, fuzzy
-#| msgid ""
-#| "the field being serialized. If a raw dict is being exported (not :class:"
-#| "`~.Item`) *field* value is an empty dict."
 msgid ""
 "the field being serialized. If the source :ref:`item object <item-types>` "
 "does not define field metadata, *field* is an empty :class:`dict`."
-msgstr ""
-"シリアル化されているフィールド。生の辞書がエクスポートされる場合( :class:`~."
-"Item` ではなく ) **フィールド** 値は空の辞書です。"
+msgstr "シリアル化されるフィールド。 ソースの :ref:`アイテム・オブジェクト <item-types>` がフィールド・メタデータを定義していない場合、 *field* は空の辞書( :class:`dict` )です。"
 
 #: ../../topics/exporters.rst:177
 msgid "the name of the field being serialized"
@@ -301,16 +275,10 @@ msgstr ""
 "ポートするアイテムがなくなったら、常にこのメソッドを呼び出す必要があります。"
 
 #: ../../topics/exporters.rst:198
-#, fuzzy
-#| msgid ""
-#| "A list with the name of the fields that will be exported, or None if you "
-#| "want to export all fields. Defaults to None."
 msgid ""
 "A list with the name of the fields that will be exported, or ``None`` if you "
 "want to export all fields. Defaults to ``None``."
-msgstr ""
-"エクスポートされるフィールドの名前のリスト、またはすべてのフィールドをエクス"
-"ポートする場合はNone。デフォルトはNoneです。"
+msgstr "エクスポートされるフィールドの名前のリスト、またはすべてのフィールドをエクスポートする場合は ``None`` 。デフォルトは ``None`` です。"
 
 #: ../../topics/exporters.rst:201
 msgid ""
@@ -326,7 +294,7 @@ msgid ""
 "possible fields, exporters that do not support exporting a different subset "
 "of fields per item will only export the fields found in the first item "
 "exported. Use ``fields_to_export`` to define all the fields to be exported."
-msgstr ""
+msgstr "可能なすべてのフィールドを公開しない :ref:`アイテム・オブジェクト<item-types>` を使用する場合、アイテムごとに異なるサブセットのフィールドのエクスポートをサポートしないエクスポーターは、最初にエクスポートされたアイテムで見つかったフィールドのみをエクスポートします。 ``fields_to_export`` を使用して、エクスポートするすべてのフィールドを定義します。"
 
 #: ../../topics/exporters.rst:212
 msgid ""
@@ -344,7 +312,7 @@ msgstr "このオプションは、辞書アイテムでは無視されます。
 
 #: ../../topics/exporters.rst:220
 msgid "The output character encoding."
-msgstr ""
+msgstr "出力キャラクタ・エンコーディング"
 
 #: ../../topics/exporters.rst:224
 msgid ""
@@ -398,8 +366,6 @@ msgid "XmlItemExporter"
 msgstr "XmlItemExporter"
 
 #: ../../topics/exporters.rst:244
-#, fuzzy
-#| msgid "Exports Items in XML format to the specified file object."
 msgid "Exports items in XML format to the specified file object."
 msgstr "指定のファイルオブジェクトにアイテムをXML形式でエクスポートします。"
 
@@ -425,16 +391,10 @@ msgstr "エクスポートされたXMLの各アイテム要素の名前。"
 
 #: ../../topics/exporters.rst:255 ../../topics/exporters.rst:346
 #: ../../topics/exporters.rst:361
-#, fuzzy
-#| msgid ""
-#| "The additional keyword arguments of this constructor are passed to the :"
-#| "class:`BaseItemExporter` constructor."
 msgid ""
 "The additional keyword arguments of this ``__init__`` method are passed to "
 "the :class:`BaseItemExporter` ``__init__`` method."
-msgstr ""
-"このコンストラクタの追加のキーワード引数は、 :class:`BaseItemExporter` コンス"
-"トラクタに渡されます。"
+msgstr "この ``__init__`` メソッドの追加のキーワード引数は、 :class:`BaseItemExporter` の ``__init__`` メソッドに渡されます。"
 
 #: ../../topics/exporters.rst:258 ../../topics/exporters.rst:325
 #: ../../topics/exporters.rst:364 ../../topics/exporters.rst:385
@@ -465,12 +425,6 @@ msgid "CsvItemExporter"
 msgstr "CsvItemExporter"
 
 #: ../../topics/exporters.rst:298
-#, fuzzy
-#| msgid ""
-#| "Exports Items in CSV format to the given file-like object. If the :attr:"
-#| "`fields_to_export` attribute is set, it will be used to define the CSV "
-#| "columns and their order. The :attr:`export_empty_fields` attribute has no "
-#| "effect on this exporter."
 msgid ""
 "Exports items in CSV format to the given file-like object. If the :attr:"
 "`fields_to_export` attribute is set, it will be used to define the CSV "
@@ -502,33 +456,21 @@ msgstr "複数値フィールドを結合するために使用される単一文
 msgid ""
 "The optional string that specifies how encoding and decoding errors are to "
 "be handled. For more information see :class:`io.TextIOWrapper`."
-msgstr ""
+msgstr "エンコードおよびデコードエラーの処理方法を指定するオプションの文字列。 詳細については、 :class:`io.TextIOWrapper` を参照してください。"
 
 #: ../../topics/exporters.rst:320
-#, fuzzy
-#| msgid ""
-#| "The additional keyword arguments of this constructor are passed to the :"
-#| "class:`BaseItemExporter` constructor, and the leftover arguments to the "
-#| "`csv.writer`_ constructor, so you can use any ``csv.writer`` constructor "
-#| "argument to customize this exporter."
 msgid ""
 "The additional keyword arguments of this ``__init__`` method are passed to "
 "the :class:`BaseItemExporter` ``__init__`` method, and the leftover "
 "arguments to the :func:`csv.writer` function, so you can use any :func:`csv."
 "writer` function argument to customize this exporter."
-msgstr ""
-"このコンストラクタの追加のキーワード引数は :class:`BaseItemExporter` コンスト"
-"ラクタに渡され、残りの引数は `csv.writer`_ コンストラクタに渡されるため、任意"
-"の ``csv.writer`` コンストラクタ引数を使用してエクスポーターをカスタマイズで"
-"きます。"
+msgstr "この ``__init__`` メソッドの追加のキーワード引数は :class:`BaseItemExporter` の ``__init__`` メソッドに渡され、残りの引数は :func:`csv.writer` 関数に渡されるため、任意の :func:`csv.writer` 関数引数を使用してこのエクスポーターをカスタマイズできます。"
 
 #: ../../topics/exporters.rst:332
 msgid "PickleItemExporter"
 msgstr "PickleItemExporter"
 
 #: ../../topics/exporters.rst:336
-#, fuzzy
-#| msgid "Exports Items in pickle format to the given file-like object."
 msgid "Exports items in pickle format to the given file-like object."
 msgstr ""
 "アイテムをpickle形式で与えられたファイルのようなオブジェクトにエクスポートし"
@@ -539,10 +481,8 @@ msgid "The pickle protocol to use."
 msgstr "使用するpickleプロトコル。"
 
 #: ../../topics/exporters.rst:344
-#, fuzzy
-#| msgid "For more information, refer to the `pickle module documentation`_."
 msgid "For more information, see :mod:`pickle`."
-msgstr "詳細については、 `pickle module documentation`_ を参照してください。"
+msgstr "詳細については、 :mod:`pickle` を参照してください。"
 
 #: ../../topics/exporters.rst:349
 msgid ""
@@ -554,8 +494,6 @@ msgid "PprintItemExporter"
 msgstr "PprintItemExporter"
 
 #: ../../topics/exporters.rst:356
-#, fuzzy
-#| msgid "Exports Items in pretty print format to the specified file object."
 msgid "Exports items in pretty print format to the specified file object."
 msgstr ""
 "指定のファイルオブジェクトにきれいな(pretty)印刷形式でアイテムをエクスポート"
@@ -563,20 +501,13 @@ msgstr ""
 
 #: ../../topics/exporters.rst:369
 msgid "Longer lines (when present) are pretty-formatted."
-msgstr "(存在する場合)長い行はきれいに(pretty)フォーマットされます。"
+msgstr "長大な行の場合は綺麗に(pretty)フォーマットされます。"
 
 #: ../../topics/exporters.rst:372
 msgid "JsonItemExporter"
 msgstr "JsonItemExporter"
 
 #: ../../topics/exporters.rst:376
-#, fuzzy
-#| msgid ""
-#| "Exports Items in JSON format to the specified file-like object, writing "
-#| "all objects as a list of objects. The additional constructor arguments "
-#| "are passed to the :class:`BaseItemExporter` constructor, and the leftover "
-#| "arguments to the `JSONEncoder`_ constructor, so you can use any "
-#| "`JSONEncoder`_ constructor argument to customize this exporter."
 msgid ""
 "Exports items in JSON format to the specified file-like object, writing all "
 "objects as a list of objects. The additional ``__init__`` method arguments "
@@ -584,12 +515,7 @@ msgid ""
 "leftover arguments to the :class:`~json.JSONEncoder` ``__init__`` method, so "
 "you can use any :class:`~json.JSONEncoder` ``__init__`` method argument to "
 "customize this exporter."
-msgstr ""
-"アイテムをJSON形式で、指定されたファイルのようなオブジェクトにエクスポート"
-"し、すべてのオブジェクトをオブジェクトのリストとして書き込みます。追加のコン"
-"ストラクター引数は :class:`BaseItemExporter` コンストラクターに、残りの引数"
-"は `JSONEncoder`_ コンストラクターに渡されるため、任意の `JSONEncoder`_ コン"
-"ストラクター引数を使用してこのエクスポーターをカスタマイズできます。"
+msgstr "アイテムをJSON形式で、指定のファイル様オブジェクトにエクスポートし、すべてのオブジェクトをオブジェクトのリストとして書き込みます。 追加の ``__init__`` メソッドの引数は :class:`BaseItemExporter` の ``__init__`` メソッドに渡され、残りの引数は :class:`~json.JSONEncoder` の ``__init__`` メソッドに渡されるため、あなたは任意の :class:`~json.JSONEncoder` の ``__init__`` メソッド引数を使用してこのエクスポーターをカスタマイズできます。"
 
 #: ../../topics/exporters.rst:392
 msgid ""
@@ -614,13 +540,6 @@ msgid "JsonLinesItemExporter"
 msgstr "JsonLinesItemExporter"
 
 #: ../../topics/exporters.rst:405
-#, fuzzy
-#| msgid ""
-#| "Exports Items in JSON format to the specified file-like object, writing "
-#| "one JSON-encoded item per line. The additional constructor arguments are "
-#| "passed to the :class:`BaseItemExporter` constructor, and the leftover "
-#| "arguments to the `JSONEncoder`_ constructor, so you can use any "
-#| "`JSONEncoder`_ constructor argument to customize this exporter."
 msgid ""
 "Exports items in JSON format to the specified file-like object, writing one "
 "JSON-encoded item per line. The additional ``__init__`` method arguments are "
@@ -628,12 +547,7 @@ msgid ""
 "leftover arguments to the :class:`~json.JSONEncoder` ``__init__`` method, so "
 "you can use any :class:`~json.JSONEncoder` ``__init__`` method argument to "
 "customize this exporter."
-msgstr ""
-"JSON形式のアイテムを、指定されたファイルのようなオブジェクトにエクスポート"
-"し、1行にJSONエンコードされたアイテムを1つ書き込みます。追加のコンストラク"
-"ター引数は :class:`BaseItemExporter` コンストラクターに、残りの引数は "
-"`JSONEncoder`_ コンストラクターに渡されるため、任意の `JSONEncoder`_ コンスト"
-"ラクター引数を使用してこのエクスポーターをカスタマイズできます。"
+msgstr "アイテムをJSON形式で、指定のファイル様オブジェクトにエクスポートし、1行に1つのJSONエンコードされたアイテムを書き込みます。 追加の ``__init__`` メソッド引数は :class:`BaseItemExporter` の ``__init__`` メソッドに渡され、残りの引数は :class:`~json.JSONEncoder` の ``__init__`` メソッドに渡されるため、あなたは任意の :class:`~json.JSONEncoder` の ``__init__`` メソッド引数を使用して、このエクスポーターをカスタマイズできます。"
 
 #: ../../topics/exporters.rst:419
 msgid ""
@@ -664,24 +578,3 @@ msgstr ""
 "データのエクスポートに使用するファイルのようなオブジェクト。 その ``write`` "
 "メソッドは :class:`bytes` (バイナリ・モードで開かれたディスク・ファイルや、 :"
 "class:`~io.BytesIO` オブジェクトなど)を受け入れる必要があります"
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
-
-#~ msgid ""
-#~ "Some exporters may require fields_to_export list in order to export the "
-#~ "data properly when spiders return dicts (not :class:`~Item` instances)."
-#~ msgstr ""
-#~ "一部のエクスポーターは、スパイダーが辞書を返すときにデータを適切にエクス"
-#~ "ポートするために、fields_to_exportリストを必要とする場合があります( :"
-#~ "class:`~Item` インスタンスではありません)。"
-
-#~ msgid ""
-#~ "The encoding that will be used to encode unicode values. This only "
-#~ "affects unicode values (which are always serialized to str using this "
-#~ "encoding). Other value types are passed unchanged to the specific "
-#~ "serialization library."
-#~ msgstr ""
-#~ "ユニコード値をエンコードするために使用されるエンコード。これは、ユニコード"
-#~ "値(このエンコードを使用して常にstrにシリアル化される)にのみ影響します。他"
-#~ "の値の型は変更されずに特定のシリアル化ライブラリに渡されます。"

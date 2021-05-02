@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-27 04:46+0900\n"
+"PO-Revision-Date: 2021-05-01 06:46+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../topics/exceptions.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/exceptions.rst:26
 msgid "the reason for closing"
@@ -133,20 +133,20 @@ msgstr "この例外は、サポートされていない機能を示すために
 
 #: ../../topics/exceptions.rst:82
 msgid "StopDownload"
-msgstr ""
+msgstr "StopDownload"
 
 #: ../../topics/exceptions.rst:88
 msgid ""
 "Raised from a :class:`~scrapy.signals.bytes_received` or :class:`~scrapy."
 "signals.headers_received` signal handler to indicate that no further bytes "
 "should be downloaded for a response."
-msgstr ""
+msgstr ":class:`~scrapy.signals.bytes_received` や :class:`~scrapy.signals.headers_received` シグナル・ハンドラーから発生(raise)し、レスポンスのためにこれ以上バイト・データをダウンロードしないことを示します。"
 
 #: ../../topics/exceptions.rst:91
 msgid ""
 "The ``fail`` boolean parameter controls which method will handle the "
 "resulting response:"
-msgstr ""
+msgstr "``fail`` 二値論理(boolean) パラメータは、結果のレスポンスを処理するメソッドを制御します:"
 
 #: ../../topics/exceptions.rst:94
 msgid ""
@@ -156,11 +156,11 @@ msgid ""
 "received :class:`~twisted.python.failure.Failure` object. This means that in "
 "an errback defined as ``def errback(self, failure)``, the response can be "
 "accessed though ``failure.value.response``."
-msgstr ""
+msgstr "(デフォルト) ``fail=True`` の場合、リクエスト・エラーバック(errback)が呼び出されます。 レスポンス・オブジェクトは、 ``StopDownload`` 例外の ``response`` 属性として使用できます。これは、受信した :class:`~twisted.python.failure.Failure` の ``value`` 属性として保存されます。これは、 ``def errback(self, failure)`` として定義されたエラーバック(errback)では、 ``failure.value.response`` を介してレスポンスにアクセスできることを意味します。"
 
 #: ../../topics/exceptions.rst:101
 msgid "If ``fail=False``, the request callback is called instead."
-msgstr ""
+msgstr "``fail=False`` の場合、代わりにリクエスト・コールバックが呼び出されます。"
 
 #: ../../topics/exceptions.rst:103
 msgid ""
@@ -169,20 +169,22 @@ msgid ""
 "received in the signal handler that raises the exception. Also, the response "
 "object is marked with ``\"download_stopped\"`` in its :attr:`Response.flags` "
 "attribute."
-msgstr ""
+msgstr "いずれ場合でも、レスポンスのボディが切り捨てられる可能性があります。ボディには、例外が発生するシグナル・ハンドラーで受信されたバイト・データを含め、例外が発生するまでに受信されたすべてのバイト・データが含まれます。 また、レスポンス・オブジェクトでは、その :attr:`Response.flags` 属性に ``\"download_stopped\"`` がセットされます。"
 
+# PEP 3102 -- Keyword-Only Arguments
+# https://docs.python.org/ja/3.9/glossary.html
+# キーワード専用: キーワードによってのみ与えられる引数を指定します。
+# キーワード専用の引数を定義できる場所は、例えば以下の kw_only1 や kw_only2 のように、
+# 関数定義の仮引数リストに含めた可変長位置引数または裸の * の後です
 #: ../../topics/exceptions.rst:109
 msgid ""
 "``fail`` is a keyword-only parameter, i.e. raising ``StopDownload(False)`` "
 "or ``StopDownload(True)`` will raise a :class:`TypeError`."
-msgstr ""
+msgstr "``fail`` はキーワード専用引数です。例えば ``StopDownload(False)`` や ``StopDownload(True)`` は :class:`TypeError` を引き起こします。"
 
 #: ../../topics/exceptions.rst:113
 msgid ""
 "See the documentation for the :class:`~scrapy.signals.bytes_received` and :"
 "class:`~scrapy.signals.headers_received` signals and the :ref:`topics-stop-"
 "response-download` topic for additional information and examples."
-msgstr ""
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
+msgstr "追加情報と例については、 :class:`~scrapy.signals.bytes_received` や :class:`~scrapy.signals.headers_received` シグナルの文書と、 :ref:`レスポンスのダウンロードの停止 <topics-stop-response-download>` トピックを参照してください。"

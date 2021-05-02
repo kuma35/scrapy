@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-05 11:03+0900\n"
+"PO-Revision-Date: 2021-05-02 22:11+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../topics/extensions.rst:10
 msgid "Extensions are just regular classes."
-msgstr ""
+msgstr "拡張機能は単なる通常のクラスです。"
 
 #: ../../topics/extensions.rst:13
 msgid "Extension settings"
@@ -62,21 +62,11 @@ msgid "Loading & activating extensions"
 msgstr "拡張機能の読み込みとアクティブ化"
 
 #: ../../topics/extensions.rst:28
-#, fuzzy
-#| msgid ""
-#| "Extensions are loaded and activated at startup by instantiating a single "
-#| "instance of the extension class. Therefore, all the extension "
-#| "initialization code must be performed in the class constructor "
-#| "(``__init__`` method)."
 msgid ""
 "Extensions are loaded and activated at startup by instantiating a single "
 "instance of the extension class per spider being run. All the extension "
 "initialization code must be performed in the class ``__init__`` method."
-msgstr ""
-"拡張機能は、拡張機能クラスの単一インスタンスをインスタンス化することにより、"
-"起動時にロードおよびアクティブ化されます。したがって、すべての拡張機能初期化"
-"コードはクラス・コンストラクター( ``__init__`` メソッド)で実行する必要があり"
-"ます。"
+msgstr "拡張機能は、実行中のスパイダーごとに拡張機能クラスの単一インスタンスをインスタンス化することにより、起動時にロードおよびアクティブ化されます。すべての拡張機能初期化コードは、クラス ``__init__`` メソッドで実行する必要があります。"
 
 #: ../../topics/extensions.rst:32
 msgid ""
@@ -137,11 +127,6 @@ msgid "Disabling an extension"
 msgstr "拡張機能を無効にする"
 
 #: ../../topics/extensions.rst:65
-#, fuzzy
-#| msgid ""
-#| "In order to disable an extension that comes enabled by default (ie. those "
-#| "included in the :setting:`EXTENSIONS_BASE` setting) you must set its "
-#| "order to ``None``. For example::"
 msgid ""
 "In order to disable an extension that comes enabled by default (i.e. those "
 "included in the :setting:`EXTENSIONS_BASE` setting) you must set its order "
@@ -400,7 +385,7 @@ msgid ""
 "When a certain closing condition is met, requests which are currently in the "
 "downloader queue (up to :setting:`CONCURRENT_REQUESTS` requests) are still "
 "processed."
-msgstr ""
+msgstr "特定の終了条件が満たされた場合でも、現在ダウンローダー・キューにあるリクエスト(その最大値は :setting:`CONCURRENT_REQUESTS` による) は引き続き処理されます。"
 
 #: ../../topics/extensions.rst:268
 msgid "CLOSESPIDER_TIMEOUT"
@@ -427,26 +412,12 @@ msgid "CLOSESPIDER_ITEMCOUNT"
 msgstr "CLOSESPIDER_ITEMCOUNT"
 
 #: ../../topics/extensions.rst:284
-#, fuzzy
-#| msgid ""
-#| "An integer which specifies a number of items. If the spider scrapes more "
-#| "than that amount and those items are passed by the item pipeline, the "
-#| "spider will be closed with the reason ``closespider_itemcount``. Requests "
-#| "which  are currently in the downloader queue (up to :setting:"
-#| "`CONCURRENT_REQUESTS` requests) are still processed. If zero (or non "
-#| "set), spiders won't be closed by number of passed items."
 msgid ""
 "An integer which specifies a number of items. If the spider scrapes more "
 "than that amount and those items are passed by the item pipeline, the spider "
 "will be closed with the reason ``closespider_itemcount``. If zero (or non "
 "set), spiders won't be closed by number of passed items."
-msgstr ""
-"アイテムの数を指定する整数。 スパイダーがその量より多くスクレイピングし、それ"
-"らのアイテムがアイテム・パイプラインによって渡される場合、スパイダーは理由 "
-"``closespider_itemcount`` によって閉じられます。現在ダウンローダー・キューに"
-"あるリクエスト( :setting:`CONCURRENT_REQUESTS` リクエストまで )は引き続き処理"
-"されます。ゼロ(または未設定)の場合、スパイダーは渡されたアイテムの数によって"
-"制限され超えた分をクローズさせられる事はありません。"
+msgstr "アイテムの数を指定する整数。 スパイダーがその量を超えてスクレイピングし、それらのアイテムがアイテム・パイプラインを通過した場合、スパイダーは ``closespider_itemcount`` という理由で閉じられます。 ゼロ(または設定されていない)場合、スパイダーは渡されたアイテムの数によって閉じられる事はありません。"
 
 #: ../../topics/extensions.rst:292
 msgid "CLOSESPIDER_PAGECOUNT"
@@ -532,11 +503,6 @@ msgstr ""
 "常に実行を続けます。"
 
 #: ../../topics/extensions.rst:347
-#, fuzzy
-#| msgid ""
-#| "This extension only works on POSIX-compliant platforms (ie. not Windows), "
-#| "because the `SIGQUIT`_ and `SIGUSR2`_ signals are not available on "
-#| "Windows."
 msgid ""
 "This extension only works on POSIX-compliant platforms (i.e. not Windows), "
 "because the `SIGQUIT`_ and `SIGUSR2`_ signals are not available on Windows."
@@ -565,37 +531,19 @@ msgid "Debugger extension"
 msgstr "デバッガー拡張機能"
 
 #: ../../topics/extensions.rst:366
-#, fuzzy
-#| msgid ""
-#| "Invokes a `Python debugger`_ inside a running Scrapy process when a "
-#| "`SIGUSR2`_ signal is received. After the debugger is exited, the Scrapy "
-#| "process continues running normally."
 msgid ""
 "Invokes a :doc:`Python debugger <library/pdb>` inside a running Scrapy "
 "process when a `SIGUSR2`_ signal is received. After the debugger is exited, "
 "the Scrapy process continues running normally."
-msgstr ""
-"`SIGUSR2`_ シグナルを受信すると、実行中のScrapyプロセス内で `Python "
-"debugger`_ を呼び出します。 デバッガーが終了した後、Scrapyプロセスは正常に実"
-"行を続けます。"
+msgstr "`SIGUSR2`_ シグナルを受信すると、実行中のScrapyプロセス内で :doc:`Pythonデバッガ <library/pdb>` を呼び出します。 デバッガが終了した後、Scrapyプロセスは正常に実行を続けます。"
 
 #: ../../topics/extensions.rst:370
 msgid "For more info see `Debugging in Python`_."
 msgstr "詳細は `Debugging in Python`_ 参照。"
 
 #: ../../topics/extensions.rst:372
-#, fuzzy
-#| msgid ""
-#| "This extension only works on POSIX-compliant platforms (ie. not Windows)."
 msgid ""
 "This extension only works on POSIX-compliant platforms (i.e. not Windows)."
 msgstr ""
 "この拡張機能はPOSIX準拠のプラットフォームでのみ機能します(つまり、Windowsでは"
 "機能しません)。"
-
-#~ msgid ""
-#~ "Extensions are just regular classes that are instantiated at Scrapy "
-#~ "startup, when extensions are initialized."
-#~ msgstr ""
-#~ "拡張機能は、拡張機能が初期化されるときに、Scrapyの起動時にインスタンス化さ"
-#~ "れる単なる通常のクラスです。"
