@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-26 02:33+0900\n"
+"PO-Revision-Date: 2021-05-06 10:26+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -78,35 +78,31 @@ msgstr ""
 "を実装する必要があります:"
 
 #: ../../topics/item-pipeline.rst:30
-#, fuzzy
-#| msgid "This method is called when the spider is opened."
 msgid "This method is called for every item pipeline component."
-msgstr "このメソッドは、スパイダーがオープンされたときに呼び出されます。"
+msgstr "このメソッドは、すべてのアイテム・パイプライン・コンポーネントに対して呼び出されます。"
 
 #: ../../topics/item-pipeline.rst:32
 msgid ""
 "`item` is an :ref:`item object <item-types>`, see :ref:`supporting-item-"
 "types`."
-msgstr ""
+msgstr "`item` は :ref:`アイテム・オブジェクト <item-types>` です。 :ref:`supporting-item-types` 参照。"
 
 #: ../../topics/item-pipeline.rst:35
 msgid ""
 ":meth:`process_item` must either: return an :ref:`item object <item-types>`, "
 "return a :class:`~twisted.internet.defer.Deferred` or raise a :exc:`~scrapy."
 "exceptions.DropItem` exception."
-msgstr ""
+msgstr ":meth:`process_item` は、 :ref:`アイテム・オブジェクト <item-types>` を返すか、あるいは :class:`~twisted.internet.defer.Deferred` を返すか、 あるいは :exc:`~scrapy.exceptions.DropItem` 例外を発生させるかの、いずれかである必要があります。"
 
 #: ../../topics/item-pipeline.rst:39
 msgid "Dropped items are no longer processed by further pipeline components."
-msgstr ""
+msgstr "ドロップされたアイテムは、それ以降のパイプライン・コンポーネントには処理されません。"
 
 #: ../../topics/item-pipeline.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/item-pipeline.rst:41
-#, fuzzy
-#| msgid "the item scraped"
 msgid "the scraped item"
 msgstr "スクレイプされたアイテム"
 
@@ -225,7 +221,7 @@ msgstr "アイテムのスクリーンショットをとる"
 msgid ""
 "This example demonstrates how to use :doc:`coroutine syntax <coroutines>` in "
 "the :meth:`process_item` method."
-msgstr ""
+msgstr "この例は、 :meth:`process_item` メソッドで :doc:`コルーチン構文 <coroutines>` を使用する方法を示しています。"
 
 #: ../../topics/item-pipeline.rst:181
 msgid ""
@@ -233,7 +229,7 @@ msgid ""
 "to render a screenshot of the item URL. After the request response is "
 "downloaded, the item pipeline saves the screenshot to a file and adds the "
 "filename to the item."
-msgstr ""
+msgstr "このアイテム・パイプラインは、ローカルで実行されている Splash_ のインスタンスにリクエストを送信して、アイテムのURLのスクリーンショットをレンダリングします。リクエストのレスポンスがダウンロードされた後、アイテム・パイプラインはスクリーンショットをファイルに保存し、ファイル名をアイテムに追加します。"
 
 #: ../../topics/item-pipeline.rst:225
 msgid "Duplicates filter"
@@ -270,34 +266,3 @@ msgstr ""
 "あなたがこの設定でクラスに割り当てる整数値は、それらが実行される順序を決定し"
 "ます。項目は、低い値のクラスから高い値のクラスへと通過します。 これらの数値は"
 "0〜1000の範囲で定義するのが慣例です。"
-
-#~ msgid ""
-#~ "This method is called for every item pipeline component. :meth:"
-#~ "`process_item` must either: return a dict with data, return an :class:"
-#~ "`~scrapy.item.Item` (or any descendant class) object, return a `Twisted "
-#~ "Deferred`_ or raise :exc:`~scrapy.exceptions.DropItem` exception. Dropped "
-#~ "items are no longer processed by further pipeline components."
-#~ msgstr ""
-#~ "このメソッドは、すべてのアイテム・パイプライン・コンポーネントに対して呼び"
-#~ "出されます。 :meth:`process_item` は、データの辞書を返す、あるいは :class:"
-#~ "`~scrapy.item.Item` (または任意の子孫クラス)オブジェクトを返す、あるいは "
-#~ "`Twisted Deferred`_ を返す、あるいは :exc:`~scrapy.exceptions.DropItem` 例"
-#~ "外を発生させる、のいずれかを行う必要があります。ドロップしたアイテムは、そ"
-#~ "れ以降のパイプライン・コンポーネントにでは処理しません。"
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
-
-#~ msgid ""
-#~ "This example demonstrates how to return Deferred_ from :meth:"
-#~ "`process_item` method. It uses Splash_ to render screenshot of item url. "
-#~ "Pipeline makes request to locally running instance of Splash_. After "
-#~ "request is downloaded and Deferred callback fires, it saves item to a "
-#~ "file and adds filename to an item."
-#~ msgstr ""
-#~ "このデモンストレーションは、 :meth:`process_item` メソッドから Deferred_ "
-#~ "を返す方法を示しています。 Splash_ を使用して、アイテムのURLのスクリーン"
-#~ "ショットをレンダリングします。 パイプラインは、ローカルで実行されている "
-#~ "Splash_ のインスタンスにリクエストを行います。 リクエストがダウンロードさ"
-#~ "れ、Deferredコールバックが起動した後、アイテムをファイルに保存し、ファイル"
-#~ "名をアイテムに追加します。"

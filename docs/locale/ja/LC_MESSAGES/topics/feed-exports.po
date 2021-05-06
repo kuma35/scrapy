@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-24 10:49+0900\n"
+"PO-Revision-Date: 2021-05-06 08:39+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -34,11 +34,6 @@ msgstr ""
 "ることを意味します。"
 
 #: ../../topics/feed-exports.rst:12
-#, fuzzy
-#| msgid ""
-#| "Scrapy provides this functionality out of the box with the Feed Exports, "
-#| "which allows you to generate a feed with the scraped items, using "
-#| "multiple serialization formats and storage backends."
 msgid ""
 "Scrapy provides this functionality out of the box with the Feed Exports, "
 "which allows you to generate feeds with the scraped items, using multiple "
@@ -91,7 +86,7 @@ msgstr "JSON"
 
 #: ../../topics/feed-exports.rst:37
 msgid "Value for the ``format`` key in the :setting:`FEEDS` setting: ``json``"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の ``format`` キーの値: ``json``"
 
 #: ../../topics/feed-exports.rst:39
 msgid "Exporter used: :class:`~scrapy.exporters.JsonItemExporter`"
@@ -112,12 +107,11 @@ msgstr "JSON lines"
 #: ../../topics/feed-exports.rst:49
 msgid ""
 "Value for the ``format`` key in the :setting:`FEEDS` setting: ``jsonlines``"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の ``format`` キーの値: ``jsonlines``"
 
 #: ../../topics/feed-exports.rst:50
 msgid "Exporter used: :class:`~scrapy.exporters.JsonLinesItemExporter`"
-msgstr ""
-"使用されるエクスポーター: :class:`~scrapy.exporters.JsonLinesItemExporter`"
+msgstr "使用されるエクスポーター: :class:`~scrapy.exporters.JsonLinesItemExporter`"
 
 #: ../../topics/feed-exports.rst:55
 msgid "CSV"
@@ -125,7 +119,7 @@ msgstr "CSV"
 
 #: ../../topics/feed-exports.rst:57
 msgid "Value for the ``format`` key in the :setting:`FEEDS` setting: ``csv``"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の ``format`` キーの値: ``csv``"
 
 #: ../../topics/feed-exports.rst:59
 msgid "Exporter used: :class:`~scrapy.exporters.CsvItemExporter`"
@@ -149,7 +143,7 @@ msgstr "XML"
 
 #: ../../topics/feed-exports.rst:71
 msgid "Value for the ``format`` key in the :setting:`FEEDS` setting: ``xml``"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の ``format`` キーの値: ``xml``"
 
 #: ../../topics/feed-exports.rst:72
 msgid "Exporter used: :class:`~scrapy.exporters.XmlItemExporter`"
@@ -162,12 +156,11 @@ msgstr "Pickle"
 #: ../../topics/feed-exports.rst:79
 msgid ""
 "Value for the ``format`` key in the :setting:`FEEDS` setting: ``pickle``"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の ``format`` キーの: ``pickle``"
 
 #: ../../topics/feed-exports.rst:80
 msgid "Exporter used: :class:`~scrapy.exporters.PickleItemExporter`"
-msgstr ""
-"使用されるエクスポーター: :class:`~scrapy.exporters.PickleItemExporter`"
+msgstr "使用されるエクスポーター: :class:`~scrapy.exporters.PickleItemExporter`"
 
 #: ../../topics/feed-exports.rst:85
 msgid "Marshal"
@@ -176,31 +169,22 @@ msgstr "Marshal"
 #: ../../topics/feed-exports.rst:87
 msgid ""
 "Value for the ``format`` key in the :setting:`FEEDS` setting: ``marshal``"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の ``format`` キーの値: ``marshal``"
 
 #: ../../topics/feed-exports.rst:88
 msgid "Exporter used: :class:`~scrapy.exporters.MarshalItemExporter`"
-msgstr ""
-"使用されるエクスポーター: :class:`~scrapy.exporters.MarshalItemExporter`"
+msgstr "使用されるエクスポーター: :class:`~scrapy.exporters.MarshalItemExporter`"
 
 #: ../../topics/feed-exports.rst:94
 msgid "Storages"
 msgstr "ストレージ"
 
 #: ../../topics/feed-exports.rst:96
-#, fuzzy
-#| msgid ""
-#| "When using the feed exports you define where to store the feed using a "
-#| "URI_ (through the :setting:`FEED_URI` setting). The feed exports supports "
-#| "multiple storage backend types which are defined by the URI scheme."
 msgid ""
 "When using the feed exports you define where to store the feed using one or "
 "multiple URIs_ (through the :setting:`FEEDS` setting). The feed exports "
 "supports multiple storage backend types which are defined by the URI scheme."
-msgstr ""
-"フィード・エクスポートを使用する場合、URI_ を使用して( :setting:`FEED_URI` 設"
-"定を使用して)フィードを保存する場所を定義します。フィード・エクスポートは、"
-"URIスキームで定義された複数のストレージバックエンドタイプをサポートします。"
+msgstr "フィード・エクスポートを使用する場合は、1つまたは複数の URIs_ を使用してフィードを保存する場所を定義します( :setting:`FEEDS` 設定を使用)。 フィードのエクスポートは、URIスキームで定義された複数のストレージ・バックエンド・タイプをサポートします。"
 
 #: ../../topics/feed-exports.rst:100
 msgid "The storages backends supported out of the box are:"
@@ -215,37 +199,23 @@ msgid ":ref:`topics-feed-storage-ftp`"
 msgstr ":ref:`topics-feed-storage-ftp`"
 
 #: ../../topics/feed-exports.rst:104
-#, fuzzy
-#| msgid ":ref:`topics-feed-storage-s3` (requires botocore_ or boto_)"
 msgid ":ref:`topics-feed-storage-s3` (requires botocore_)"
-msgstr ":ref:`topics-feed-storage-s3` (botocore_ または boto_ が必要です)"
+msgstr ":ref:`topics-feed-storage-s3` (botocore_ が必要です)"
 
 #: ../../topics/feed-exports.rst:105
-#, fuzzy
-#| msgid ":ref:`topics-feed-storage-s3` (requires botocore_ or boto_)"
 msgid ":ref:`topics-feed-storage-gcs` (requires `google-cloud-storage`_)"
-msgstr ":ref:`topics-feed-storage-s3` (botocore_ または boto_ が必要です)"
+msgstr ":ref:`topics-feed-storage-gcs` ( `google-cloud-storage`_ が必要です )"
 
 #: ../../topics/feed-exports.rst:106
 msgid ":ref:`topics-feed-storage-stdout`"
 msgstr ":ref:`topics-feed-storage-stdout`"
 
 #: ../../topics/feed-exports.rst:108
-#, fuzzy
-#| msgid ""
-#| "Some storage backends may be unavailable if the required external "
-#| "libraries are not available. For example, the S3 backend is only "
-#| "available if the botocore_ or boto_ library is installed (Scrapy supports "
-#| "boto_ only on Python 2)."
 msgid ""
 "Some storage backends may be unavailable if the required external libraries "
 "are not available. For example, the S3 backend is only available if the "
 "botocore_ library is installed."
-msgstr ""
-"必要な外部ライブラリが利用できない場合、一部のストレージバックエンドは利用で"
-"きません。 たとえば、S3バックエンドは、botocore_ または boto_ ライブラリがイ"
-"ンストールされている場合にのみ使用できます(ScrapyはPython2でのみ boto_ をサ"
-"ポートします)。"
+msgstr "必要な外部ライブラリが利用できない場合、一部のストレージバックエンドは利用できません。 たとえば、S3バックエンドは botocore_ ライブラリがインストールされている場合にのみ使用できます。"
 
 #: ../../topics/feed-exports.rst:116
 msgid "Storage URI parameters"
@@ -370,7 +340,7 @@ msgstr ""
 msgid ""
 "This storage backend uses :ref:`delayed file delivery <delayed-file-"
 "delivery>`."
-msgstr ""
+msgstr "このストレージ・バックエンドは :ref:`遅延ファイル配送 <delayed-file-delivery>` を使います。"
 
 #: ../../topics/feed-exports.rst:181
 msgid "S3"
@@ -397,10 +367,8 @@ msgid "``s3://aws_key:aws_secret@mybucket/path/to/export.csv``"
 msgstr "``s3://aws_key:aws_secret@mybucket/path/to/export.csv``"
 
 #: ../../topics/feed-exports.rst:193
-#, fuzzy
-#| msgid "Required external libraries: none"
 msgid "Required external libraries: `botocore`_ >= 1.4.87"
-msgstr "必要な外部ライブラリ: なし"
+msgstr "必要な外部ライブラリ: `botocore`_ >= 1.4.87"
 
 #: ../../topics/feed-exports.rst:195
 msgid ""
@@ -430,55 +398,43 @@ msgstr ":setting:`FEED_STORAGE_S3_ACL`"
 
 #: ../../topics/feed-exports.rst:211
 msgid "Google Cloud Storage (GCS)"
-msgstr ""
+msgstr "Googleクラウド・ストレージ(GCS)"
 
 #: ../../topics/feed-exports.rst:215
-#, fuzzy
-#| msgid "The feeds are stored on `Amazon S3`_."
 msgid "The feeds are stored on `Google Cloud Storage`_."
-msgstr "フィードは `Amazon S3`_ に保存されます。"
+msgstr "フィードは `Google Cloud Storage`_ に保存されます。"
 
 #: ../../topics/feed-exports.rst:217
-#, fuzzy
-#| msgid "URI scheme: ``s3``"
 msgid "URI scheme: ``gs``"
-msgstr "URIスキーム: ``s3``"
+msgstr "URIスキーム: ``gs``"
 
 #: ../../topics/feed-exports.rst:221
-#, fuzzy
-#| msgid "``s3://mybucket/path/to/export.csv``"
 msgid "``gs://mybucket/path/to/export.csv``"
-msgstr "``s3://mybucket/path/to/export.csv``"
+msgstr "``gs://mybucket/path/to/export.csv``"
 
 #: ../../topics/feed-exports.rst:223
-#, fuzzy
-#| msgid "Required external libraries: none"
 msgid "Required external libraries: `google-cloud-storage`_."
-msgstr "必要な外部ライブラリ: なし"
+msgstr "必要な外部ライブラリ: `google-cloud-storage`_"
 
 #: ../../topics/feed-exports.rst:225
 msgid ""
 "For more information about authentication, please refer to `Google Cloud "
 "documentation <https://cloud.google.com/docs/authentication/production>`_."
-msgstr ""
+msgstr "認証の詳細については `Google Cloud documentation <https://cloud.google.com/docs/authentication/production>`_ を参照してください。"
 
 #: ../../topics/feed-exports.rst:227
 msgid ""
 "You can set a *Project ID* and *Access Control List (ACL)* through the "
 "following settings:"
-msgstr ""
+msgstr "*Project ID* と *Access Control List (ACL)* は、以下の設定で設定できます:"
 
 #: ../../topics/feed-exports.rst:229
-#, fuzzy
-#| msgid ":setting:`FEED_STORAGE_S3_ACL`"
 msgid ":setting:`FEED_STORAGE_GCS_ACL`"
-msgstr ":setting:`FEED_STORAGE_S3_ACL`"
+msgstr ":setting:`FEED_STORAGE_GCS_ACL`"
 
 #: ../../topics/feed-exports.rst:230
-#, fuzzy
-#| msgid ":setting:`AWS_ACCESS_KEY_ID`"
 msgid ":setting:`GCS_PROJECT_ID`"
-msgstr ":setting:`AWS_ACCESS_KEY_ID`"
+msgstr ":setting:`GCS_PROJECT_ID`"
 
 #: ../../topics/feed-exports.rst:240
 msgid "Standard output"
@@ -498,13 +454,13 @@ msgstr "URI例: ``stdout:``"
 
 #: ../../topics/feed-exports.rst:252
 msgid "Delayed file delivery"
-msgstr ""
+msgstr "遅延ファイル配送(Delayed file delivery)"
 
 #: ../../topics/feed-exports.rst:254
 msgid ""
 "As indicated above, some of the described storage backends use delayed file "
 "delivery."
-msgstr ""
+msgstr "先に記したように、説明したストレージ・バックエンドの一部は遅延ファイル配信(delayed file delivery)を使用します。"
 
 #: ../../topics/feed-exports.rst:257
 msgid ""
@@ -512,7 +468,7 @@ msgid ""
 "are scraped. Instead, Scrapy writes items into a temporary local file, and "
 "only once all the file contents have been written (i.e. at the end of the "
 "crawl) is that file uploaded to the feed URI."
-msgstr ""
+msgstr "これらのストレージ・バックエンドは、アイテムがスクレイプされるため、フィードURIにアイテムをアップロードしません。 代わりに、Scrapyはアイテムを一時的なローカル・ファイルに書き込み、すべてのファイルの内容が書き込まれた後(つまり、クロールの最後)にのみ、そのファイルがフィードURIにアップロードされます。"
 
 #: ../../topics/feed-exports.rst:262
 msgid ""
@@ -522,7 +478,7 @@ msgid ""
 "That way, as soon as a file reaches the maximum item count, that file is "
 "delivered to the feed URI, allowing item delivery to start way before the "
 "end of the crawl."
-msgstr ""
+msgstr "これらのストレージ・バックエンドのいずれかを使用するときにアイテムの配信を早く開始したい場合は、 :setting:`FEED_EXPORT_BATCH_ITEM_COUNT` を使用して、ファイルごとに指定された最大アイテム数で出力アイテムを複数のファイルに分割します。そうすれば、ファイルが最大アイテム数に達するとすぐに、そのファイルがフィードURIに配信され、クロールが終了する前にアイテムの配信を開始できるようになります。"
 
 #: ../../topics/feed-exports.rst:270
 msgid "Settings"
@@ -534,10 +490,8 @@ msgstr ""
 "これらは、フィードのエクスポートの構成(configuration)に使用される設定です:"
 
 #: ../../topics/feed-exports.rst:274
-#, fuzzy
-#| msgid ":setting:`FEED_URI` (mandatory)"
 msgid ":setting:`FEEDS` (mandatory)"
-msgstr ":setting:`FEED_URI` (必須)"
+msgstr ":setting:`FEEDS` (必須)"
 
 #: ../../topics/feed-exports.rst:275
 msgid ":setting:`FEED_EXPORT_ENCODING`"
@@ -568,16 +522,12 @@ msgid ":setting:`FEED_EXPORTERS`"
 msgstr ":setting:`FEED_EXPORTERS`"
 
 #: ../../topics/feed-exports.rst:283
-#, fuzzy
-#| msgid ":setting:`FEED_EXPORT_INDENT`"
 msgid ":setting:`FEED_EXPORT_BATCH_ITEM_COUNT`"
-msgstr ":setting:`FEED_EXPORT_INDENT`"
+msgstr ":setting:`FEED_EXPORT_BATCH_ITEM_COUNT`"
 
 #: ../../topics/feed-exports.rst:290
-#, fuzzy
-#| msgid "FEED_URI"
 msgid "FEEDS"
-msgstr "FEED_URI"
+msgstr "FEEDS"
 
 #: ../../topics/feed-exports.rst:294 ../../topics/feed-exports.rst:442
 #: ../../topics/feed-exports.rst:500
@@ -589,123 +539,101 @@ msgid ""
 "A dictionary in which every key is a feed URI (or a :class:`pathlib.Path` "
 "object) and each value is a nested dictionary containing configuration "
 "parameters for the specific feed."
-msgstr ""
+msgstr "すべてのキーがフィードURI(または :class:`pathlib.Path` オブジェクト)であり、各値が特定のフィードの構成パラメータを含むネストされた辞書である辞書。"
 
 #: ../../topics/feed-exports.rst:300
-#, fuzzy
-#| msgid "This setting is required for enabling the feed exports."
 msgid "This setting is required for enabling the feed export feature."
-msgstr "この設定は、フィード・エクスポートを有効にするために必要です。"
+msgstr "この設定は、フィード・エクスポート機能を有効にするために必要です。"
 
 #: ../../topics/feed-exports.rst:302
-#, fuzzy
-#| msgid ""
-#| "The URI of the export feed. See :ref:`topics-feed-storage-backends` for "
-#| "supported URI schemes."
 msgid "See :ref:`topics-feed-storage-backends` for supported URI schemes."
-msgstr ""
-"エクスポートフィードのURI。 サポートされているURIスキームについては、 :ref:"
-"`topics-feed-storage-backends` を参照してください。"
+msgstr "サポートされているURIスキームについては、 :ref:`topics-feed-storage-backends` を参照してください。"
 
 #: ../../topics/feed-exports.rst:304
 msgid "For instance::"
-msgstr ""
+msgstr "例えば::"
 
 #: ../../topics/feed-exports.rst:331
 msgid ""
 "The following is a list of the accepted keys and the setting that is used as "
 "a fallback value if that key is not provided for a specific feed definition:"
-msgstr ""
+msgstr "以下は、受け入れられたキーと、そのキーが特定のフィード定義に提供されていない場合にフォールバック値として使用される設定のリストです:"
 
 #: ../../topics/feed-exports.rst:334
 msgid "``format``: the :ref:`serialization format <topics-feed-format>`."
-msgstr ""
+msgstr "``format``: :ref:`シリアライズ・フォーマット <topics-feed-format>`"
 
 #: ../../topics/feed-exports.rst:336
 msgid "This setting is mandatory, there is no fallback value."
-msgstr ""
+msgstr "この設定は必須なのでフォールバック値はありません。"
 
 #: ../../topics/feed-exports.rst:338
 msgid ""
 "``batch_item_count``: falls back to :setting:`FEED_EXPORT_BATCH_ITEM_COUNT`."
-msgstr ""
+msgstr "``batch_item_count``: :setting:`FEED_EXPORT_BATCH_ITEM_COUNT` にフォールバック。"
 
 #: ../../topics/feed-exports.rst:343
-#, fuzzy
-#| msgid ":setting:`FEED_EXPORT_ENCODING`"
 msgid "``encoding``: falls back to :setting:`FEED_EXPORT_ENCODING`."
-msgstr ":setting:`FEED_EXPORT_ENCODING`"
+msgstr "``encoding``: :setting:`FEED_EXPORT_ENCODING` にフォールバックします。"
 
 #: ../../topics/feed-exports.rst:345
-#, fuzzy
-#| msgid ":setting:`FEED_EXPORT_FIELDS`"
 msgid "``fields``: falls back to :setting:`FEED_EXPORT_FIELDS`."
-msgstr ":setting:`FEED_EXPORT_FIELDS`"
+msgstr "``fields``: :setting:`FEED_EXPORT_FIELDS` にフォールバックします。"
 
 #: ../../topics/feed-exports.rst:347
-#, fuzzy
-#| msgid ":setting:`FEED_EXPORT_INDENT`"
 msgid "``indent``: falls back to :setting:`FEED_EXPORT_INDENT`."
-msgstr ":setting:`FEED_EXPORT_INDENT`"
+msgstr "``indent``: :setting:`FEED_EXPORT_INDENT` にフォールバックします。"
 
 #: ../../topics/feed-exports.rst:349
 msgid ""
 "``item_export_kwargs``: :class:`dict` with keyword arguments for the "
 "corresponding :ref:`item exporter class <topics-exporters>`."
-msgstr ""
+msgstr "``item_export_kwargs``: :ref:`アイテム・エクスポーター・クラス <topics-exporters>` に対応するキーワード引数を持つ辞書( :class:`dict` )。"
 
 #: ../../topics/feed-exports.rst:353
 msgid ""
 "``overwrite``: whether to overwrite the file if it already exists (``True``) "
 "or append to its content (``False``)."
-msgstr ""
+msgstr "``overwrite``: ファイルがすでに存在する場合、上書きするか( ``True`` )、あるいはコンテンツに追加するか( ``False`` )。"
 
 #: ../../topics/feed-exports.rst:356
 msgid ""
 "The default value depends on the :ref:`storage backend <topics-feed-storage-"
 "backends>`:"
-msgstr ""
+msgstr "デフォルト値は :ref:`ストレージ・バックエンド <topics-feed-storage-backends>` に依存します:"
 
 #: ../../topics/feed-exports.rst:359
-#, fuzzy
-#| msgid ":ref:`topics-feed-storage-fs`"
 msgid ":ref:`topics-feed-storage-fs`: ``False``"
-msgstr ":ref:`topics-feed-storage-fs`"
+msgstr ":ref:`topics-feed-storage-fs`: ``False``"
 
 #: ../../topics/feed-exports.rst:361
-#, fuzzy
-#| msgid ":ref:`topics-feed-storage-ftp`"
 msgid ":ref:`topics-feed-storage-ftp`: ``True``"
-msgstr ":ref:`topics-feed-storage-ftp`"
+msgstr ":ref:`topics-feed-storage-ftp`: ``True``"
 
 #: ../../topics/feed-exports.rst:363
 msgid ""
 "Some FTP servers may not support appending to files (the ``APPE`` FTP "
 "command)."
-msgstr ""
+msgstr "幾つかのFTPサーバはファイルへの追加( ``APPE`` FTP コマンド)をサポートしていません。"
 
 #: ../../topics/feed-exports.rst:366
 msgid ""
 ":ref:`topics-feed-storage-s3`: ``True`` (appending `is not supported "
 "<https://forums.aws.amazon.com/message.jspa?messageID=540395>`_)"
-msgstr ""
+msgstr ":ref:`topics-feed-storage-s3`: ``True`` (追加はサポートされていない)(appending `is not supported <https://forums.aws.amazon.com/message.jspa?messageID=540395>`_)"
 
 #: ../../topics/feed-exports.rst:369
-#, fuzzy
-#| msgid ":ref:`topics-feed-storage-s3` (requires botocore_ or boto_)"
 msgid ""
 ":ref:`topics-feed-storage-stdout`: ``False`` (overwriting is not supported)"
-msgstr ":ref:`topics-feed-storage-s3` (botocore_ または boto_ が必要です)"
+msgstr ":ref:`topics-feed-storage-stdout`: ``False`` (上書きはサポートされていません)"
 
 #: ../../topics/feed-exports.rst:373
-#, fuzzy
-#| msgid ":setting:`FEED_STORE_EMPTY`"
 msgid "``store_empty``: falls back to :setting:`FEED_STORE_EMPTY`."
-msgstr ":setting:`FEED_STORE_EMPTY`"
+msgstr "``store_empty``: :setting:`FEED_STORE_EMPTY` にフォールバックします。"
 
 #: ../../topics/feed-exports.rst:375
 msgid "``uri_params``: falls back to :setting:`FEED_URI_PARAMS`."
-msgstr ""
+msgstr "``uri_params``: :setting:`FEED_URI_PARAMS` にフォールバックします。"
 
 #: ../../topics/feed-exports.rst:381
 msgid "FEED_EXPORT_ENCODING"
@@ -754,17 +682,10 @@ msgstr ""
 "を定義します。"
 
 #: ../../topics/feed-exports.rst:404
-#, fuzzy
-#| msgid ""
-#| "When FEED_EXPORT_FIELDS is empty or None (default), Scrapy uses fields "
-#| "defined in dicts or :class:`~.Item` subclasses a spider is yielding."
 msgid ""
 "When FEED_EXPORT_FIELDS is empty or None (default), Scrapy uses the fields "
 "defined in :ref:`item objects <topics-items>` yielded by your spider."
-msgstr ""
-"FEED_EXPORT_FIELDSが空またはNone (デフォルト)の場合、Scrapyは辞書または :"
-"class:`~.Item` のサブクラスで定義されたフィールドを使用し、スパイダーが生成し"
-"ます。"
+msgstr "FEED_EXPORT_FIELDSが空またはNone (デフォルト)の場合、Scrapyは、あなたのスパイダーによって生成された :ref:`item objects <topics-items>` で定義されたフィールドを使用します。"
 
 #: ../../topics/feed-exports.rst:407
 msgid ""
@@ -819,11 +740,8 @@ msgid "Default: ``False``"
 msgstr "デフォルト: ``False``"
 
 #: ../../topics/feed-exports.rst:435
-#, fuzzy
-#| msgid "Whether to export empty feeds (ie. feeds with no items)."
 msgid "Whether to export empty feeds (i.e. feeds with no items)."
-msgstr ""
-"空のフィード(つまり、アイテムのないフィード)をエクスポートするかどうか。"
+msgstr "空のフィード(つまり、アイテムのないフィード)をエクスポートするかどうか。"
 
 #: ../../topics/feed-exports.rst:440
 msgid "FEED_STORAGES"
@@ -936,40 +854,35 @@ msgstr ""
 "無効にするには、以下を(置換なしで)、 ``settings.py`` に配置します::"
 
 #: ../../topics/feed-exports.rst:535
-#, fuzzy
-#| msgid "FEED_EXPORT_INDENT"
 msgid "FEED_EXPORT_BATCH_ITEM_COUNT"
-msgstr "FEED_EXPORT_INDENT"
+msgstr "FEED_EXPORT_BATCH_ITEM_COUNT"
 
+# n > 0 ??
+# ``0`` より大きい整数が割り当てられている場合、Scrapyは指定数のアイテムごとに出力ファイルを分割します。
 #: ../../topics/feed-exports.rst:541
 msgid ""
 "If assigned an integer number higher than ``0``, Scrapy generates multiple "
 "output files storing up to the specified number of items in each output file."
-msgstr ""
+msgstr "``0`` より大きい整数が割り当てられている場合、Scrapyは複数の出力ファイルを生成し、各出力ファイルに最大指定した数のアイテムを保存します。"
 
 #: ../../topics/feed-exports.rst:544
 msgid ""
 "When generating multiple output files, you must use at least one of the "
 "following placeholders in the feed URI to indicate how the different output "
 "file names are generated:"
-msgstr ""
+msgstr "複数の出力ファイルを生成する場合は、フィードURIで以下のプレース・ホルダーの少なくとも1つを使用して、さまざまな出力ファイル名をどのように生成するかを示す必要があります。"
 
 # python-format 警告だが、 ``...`` で囲ってあるのでそのままでいい。
 #: ../../topics/feed-exports.rst:548
-#, fuzzy
-#| msgid ""
-#| "``%(time)s`` - gets replaced by a timestamp when the feed is being created"
 msgid ""
 "``%(batch_time)s`` - gets replaced by a timestamp when the feed is being "
 "created (e.g. ``2020-03-28T14-45-08.237134``)"
-msgstr "``%(time)s`` - フィードの作成時にタイムスタンプに置き換えられます"
+msgstr "``%(batch_time)s`` - フィードの作成時にタイムスタンプに置き換えられます(例: ``2020-03-28T14-45-08.237134`` )"
 
 #: ../../topics/feed-exports.rst:551
-#, fuzzy
-#| msgid "``%(name)s`` - gets replaced by the spider name"
 msgid ""
 "``%(batch_id)d`` - gets replaced by the 1-based sequence number of the batch."
-msgstr "``%(name)s`` - スパイダー名に置き換えられます"
+msgstr "``%(batch_id)d`` - そのバッチの1から始まるシーケンス番号に置き換えられます。"
 
 #: ../../topics/feed-exports.rst:553
 msgid ""
@@ -977,156 +890,104 @@ msgid ""
 "alter the number format. For example, to make the batch ID a 5-digit number "
 "by introducing leading zeroes as needed, use ``%(batch_id)05d`` (e.g. ``3`` "
 "becomes ``00003``, ``123`` becomes ``00123``)."
-msgstr ""
+msgstr "数値形式を変更するには :ref:`printfスタイルの文字列書式 <python:old-string-formatting>` を使います。例えばバッチIDをゼロ詰めの5桁の数値にするには ``%(batch_id)05d`` とします(``3`` なら ``00003`` となり、 ``123`` なら ``00123`` となる)。"
 
 #: ../../topics/feed-exports.rst:558
 msgid "For instance, if your settings include::"
-msgstr ""
+msgstr "たとえば、設定に以下が含まれている場合::"
 
 #: ../../topics/feed-exports.rst:562
 msgid "And your :command:`crawl` command line is::"
-msgstr ""
+msgstr "そして、あなたの :command:`crawl` (クロール)コマンドラインは::"
 
 #: ../../topics/feed-exports.rst:566
 msgid "The command line above can generate a directory tree like::"
-msgstr ""
+msgstr "上記のコマンドラインは、以下のようなディレクトリ・ツリーを生成できます::"
 
+# where ... , の誤記？
 #: ../../topics/feed-exports.rst:574
 msgid ""
 "Where the first and second files contain exactly 100 items. The last one "
 "contains 100 items or fewer."
-msgstr ""
+msgstr "ここで、最初と2番目のファイルに正確に100個のアイテムが含まれている場合。最後のファイルには100個またはそれ以下の数のアイテムが含まれています。"
 
 #: ../../topics/feed-exports.rst:581
-#, fuzzy
-#| msgid "FEED_URI"
 msgid "FEED_URI_PARAMS"
-msgstr "FEED_URI"
+msgstr "FEED_URI_PARAMS"
 
 #: ../../topics/feed-exports.rst:585
 msgid ""
 "A string with the import path of a function to set the parameters to apply "
 "with :ref:`printf-style string formatting <python:old-string-formatting>` to "
 "the feed URI."
-msgstr ""
+msgstr "フィードURIに :ref:`printfスタイル文字列書式 <python:old-string-formatting>` のパラメーターを設定する関数のインポート・パスを持つ文字列。"
 
 #: ../../topics/feed-exports.rst:589
 msgid "The function signature should be as follows:"
-msgstr ""
+msgstr "関数の識別は以下のようにしなければなりません:"
 
 #: ../../topics/feed-exports.rst:593
 msgid ""
 "Return a :class:`dict` of key-value pairs to apply to the feed URI using :"
 "ref:`printf-style string formatting <python:old-string-formatting>`."
-msgstr ""
+msgstr ":ref:`printfスタイル文字列書式 <python:old-string-formatting>` をフィードURIに適用したkey-valueペアの辞書(:class:`dict`)を返す。"
 
 #: ../../topics/feed-exports.rst:0
 msgid "Parameters"
-msgstr ""
-
-#: ../../topics/feed-exports.rst:596
-msgid ""
-"default key-value pairs  Specifically:  -   ``batch_id``: ID of the file "
-"batch. See     :setting:`FEED_EXPORT_BATCH_ITEM_COUNT`.      If :setting:"
-"`FEED_EXPORT_BATCH_ITEM_COUNT` is ``0``, ``batch_id``     is always "
-"``1``.      .. versionadded:: 2.3.0  -   ``batch_time``: UTC date and time, "
-"in ISO format with ``:``     replaced with ``-``.      See :setting:"
-"`FEED_EXPORT_BATCH_ITEM_COUNT`.      .. versionadded:: 2.3.0  -   ``time``: "
-"``batch_time``, with microseconds set to ``0``."
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/feed-exports.rst:596
 msgid "default key-value pairs"
-msgstr ""
+msgstr "デフォルトのkey-valueペア達"
 
 #: ../../topics/feed-exports.rst:598
 msgid "Specifically:"
-msgstr ""
+msgstr "具体的には:"
 
 #: ../../topics/feed-exports.rst:600
 msgid ""
 "``batch_id``: ID of the file batch. See :setting:"
 "`FEED_EXPORT_BATCH_ITEM_COUNT`."
-msgstr ""
+msgstr "``batch_id``: ファイルバッチのID。 :setting:`FEED_EXPORT_BATCH_ITEM_COUNT` 参照。"
 
 #: ../../topics/feed-exports.rst:603
 msgid ""
 "If :setting:`FEED_EXPORT_BATCH_ITEM_COUNT` is ``0``, ``batch_id`` is always "
 "``1``."
-msgstr ""
+msgstr ":setting:`FEED_EXPORT_BATCH_ITEM_COUNT` が ``0`` の場合 ``batch_id`` は常に ``1`` 。"
 
 #: ../../topics/feed-exports.rst:608
 msgid ""
 "``batch_time``: UTC date and time, in ISO format with ``:`` replaced with ``-"
 "``."
-msgstr ""
+msgstr "``batch_time``: UTCの日付と時間。ISO書式ですが ``:`` は ``-`` で置き換えられています。"
 
 #: ../../topics/feed-exports.rst:611
-#, fuzzy
-#| msgid ":setting:`FEED_EXPORT_INDENT`"
 msgid "See :setting:`FEED_EXPORT_BATCH_ITEM_COUNT`."
-msgstr ":setting:`FEED_EXPORT_INDENT`"
+msgstr ":setting:`FEED_EXPORT_BATCH_ITEM_COUNT` 参照。"
 
 #: ../../topics/feed-exports.rst:615
 msgid "``time``: ``batch_time``, with microseconds set to ``0``."
-msgstr ""
+msgstr "``time``: ``batch_time`` のマイクロ秒単位を ``0`` にセットしたもの。"
 
 #: ../../topics/feed-exports.rst:618
 msgid "source spider of the feed items"
-msgstr ""
+msgstr "フィード・アイテムのソース・スパイダー"
 
 #: ../../topics/feed-exports.rst:621
 msgid ""
 "For example, to include the :attr:`name <scrapy.spiders.Spider.name>` of the "
 "source spider in the feed URI:"
-msgstr ""
+msgstr "例えば、ソース・スパイダーの :attr:`name <scrapy.spiders.Spider.name>` を フィードURIに含めるには:"
 
 #: ../../topics/feed-exports.rst:624
 msgid "Define the following function somewhere in your project::"
-msgstr ""
+msgstr "あなたのプロジェクトの何処かで以下の関数を定義します::"
 
 #: ../../topics/feed-exports.rst:630
 msgid "Point :setting:`FEED_URI_PARAMS` to that function in your settings::"
-msgstr ""
+msgstr "あなたの設定でその関数を :setting:`FEED_URI_PARAMS` に指定します::"
 
 #: ../../topics/feed-exports.rst:635
 msgid "Use ``%(spider_name)s`` in your feed URI::"
-msgstr ""
-
-#~ msgid ":setting:`FEED_FORMAT`: ``json``"
-#~ msgstr ":setting:`FEED_FORMAT`: ``json``"
-
-#~ msgid ":setting:`FEED_FORMAT`: ``jsonlines``"
-#~ msgstr ":setting:`FEED_FORMAT`: ``jsonlines``"
-
-#~ msgid ":setting:`FEED_FORMAT`: ``csv``"
-#~ msgstr ":setting:`FEED_FORMAT`: ``csv``"
-
-#~ msgid ":setting:`FEED_FORMAT`: ``xml``"
-#~ msgstr ":setting:`FEED_FORMAT`: ``xml``"
-
-#~ msgid ":setting:`FEED_FORMAT`: ``pickle``"
-#~ msgstr ":setting:`FEED_FORMAT`: ``pickle``"
-
-#~ msgid ":setting:`FEED_FORMAT`: ``marshal``"
-#~ msgstr ":setting:`FEED_FORMAT`: ``marshal``"
-
-#~ msgid ""
-#~ "Required external libraries: `botocore`_ (Python 2 and Python 3) or "
-#~ "`boto`_ (Python 2 only)"
-#~ msgstr ""
-#~ "必要な外部ライブラリ: `botocore`_ (Python2およびPython3) または `boto`_ "
-#~ "(Python2のみ)"
-
-#~ msgid ":setting:`FEED_FORMAT`"
-#~ msgstr ":setting:`FEED_FORMAT`"
-
-#~ msgid "FEED_FORMAT"
-#~ msgstr "FEED_FORMAT"
-
-#~ msgid ""
-#~ "The serialization format to be used for the feed. See :ref:`topics-feed-"
-#~ "format` for possible values."
-#~ msgstr ""
-#~ "フィードに使用されるシリアル化形式。 設定可能な値については、 :ref:"
-#~ "`topics-feed-format` を参照してください。"
+msgstr "あなたのフィードURIで ``%(spider_name)s`` を使います::"
