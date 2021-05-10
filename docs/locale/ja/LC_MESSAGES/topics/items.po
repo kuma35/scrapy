@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-02 18:43+0900\n"
+"PO-Revision-Date: 2021-05-11 08:43+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -22,23 +22,11 @@ msgid "Items"
 msgstr "アイテム"
 
 #: ../../topics/items.rst:10
-#, fuzzy
-#| msgid ""
-#| "The main goal in scraping is to extract structured data from unstructured "
-#| "sources, typically, web pages. Scrapy spiders can return the extracted "
-#| "data as Python dicts. While convenient and familiar, Python dicts lack "
-#| "structure: it is easy to make a typo in a field name or return "
-#| "inconsistent data, especially in a larger project with many spiders."
 msgid ""
 "The main goal in scraping is to extract structured data from unstructured "
 "sources, typically, web pages. :ref:`Spiders <topics-spiders>` may return "
 "the extracted data as `items`, Python objects that define key-value pairs."
-msgstr ""
-"スクレイピングの主な目標は、非構造化ソース(通常はWebページ)から構造化データを"
-"抽出することです。 Scrapyスパイダーは、抽出したデータをPythonの辞書として返す"
-"ことができます。 Pythonの辞書には便利で使い慣れていますが、構造が欠けていま"
-"す。特に、多くのスパイダーがいる大規模なプロジェクトでは、容易にフィールド名"
-"をtypoしたり、矛盾したデータを返しちゃったりします。"
+msgstr "スクレイピングの主な目標は、非構造化ソース(通常はWebページ)から構造化データを抽出することです。 :ref:`スパイダー <topics-spiders>` は、抽出されたデータを `アイテム`  、つまりkey-valueペアを定義するPythonオブジェクトとして返す場合があります。"
 
 #: ../../topics/items.rst:14
 msgid ""
@@ -46,13 +34,11 @@ msgid ""
 "an item, you may use whichever type of item you want. When you write code "
 "that receives an item, your code should :ref:`work for any item type "
 "<supporting-item-types>`."
-msgstr ""
+msgstr "Scrapyは :ref:`複数のタイプのアイテム<item-types>` をサポートしています。 あなたがアイテムを作成したいときは、任意のタイプのアイテムを使用できます。 アイテムを受け取るコードを作成する場合、そのコードは :ref:`任意のアイテムタイプ<supporting-item-types>` で機能する必要があります。"
 
 #: ../../topics/items.rst:22
-#, fuzzy
-#| msgid "Item Fields"
 msgid "Item Types"
-msgstr "アイテムのフィールド"
+msgstr "アイテム型"
 
 #: ../../topics/items.rst:24
 msgid ""
@@ -60,68 +46,68 @@ msgid ""
 "library: :ref:`dictionaries <dict-items>`, :ref:`Item objects <item-"
 "objects>`, :ref:`dataclass objects <dataclass-items>`, and :ref:`attrs "
 "objects <attrs-items>`."
-msgstr ""
+msgstr "Scrapyは、 `itemadapter`_ ライブラリを介して以下の型のアイテムをサポートします: :ref:`辞書 <dict-items>` 、 :ref:`Item オブジェクト <item-objects>` 、 :ref:`dataclass オブジェクト <dataclass-items>` 、 :ref:`attrs オブジェクト <attrs-items>` 。"
 
 #: ../../topics/items.rst:33
 msgid "Dictionaries"
-msgstr ""
+msgstr "辞書"
 
 #: ../../topics/items.rst:35
 msgid "As an item type, :class:`dict` is convenient and familiar."
-msgstr ""
+msgstr "アイテム型として辞書( :class:`dict` )は便利でおなじみです。"
 
 #: ../../topics/items.rst:40
 msgid "Item objects"
-msgstr "アイテム・オブジェクト"
+msgstr "Itemオブジェクト"
 
 #: ../../topics/items.rst:42
 msgid ""
 ":class:`Item` provides a :class:`dict`-like API plus additional features "
 "that make it the most feature-complete item type:"
-msgstr ""
+msgstr ":class:`Item`  は :class:`dict` 風のAPIに加えて、アイテム型としての豊富な機能を提供します:"
 
 #: ../../topics/items.rst:47
 msgid ""
 ":class:`Item` objects replicate the standard :class:`dict` API, including "
 "its ``__init__`` method."
-msgstr ""
+msgstr ":class:`Item` オブジェクトは、``__init__`` メッソドを含む標準の :class:`dict` APIを複製(replicate)します。"
 
 #: ../../topics/items.rst:50
 msgid ":class:`Item` allows defining field names, so that:"
-msgstr ""
+msgstr ":class:`Item` ではフィールド名を定義できるため、以下のようになります:"
 
 #: ../../topics/items.rst:52
 msgid ""
 ":class:`KeyError` is raised when using undefined field names (i.e. prevents "
 "typos going unnoticed)"
-msgstr ""
+msgstr ":class:`KeyError` は、未定義のフィールド名を使用すると発生(raise)します(つまり、タイプミスが見過ごされないようにします)"
 
 #: ../../topics/items.rst:55
 msgid ""
 ":ref:`Item exporters <topics-exporters>` can export all fields by default "
 "even if the first scraped object does not have values for all of them"
-msgstr ""
+msgstr ":ref:`アイテム・エクスポーター <topics-exporters>` は、最初にスクレイプされたオブジェクトにすべてのフィールドの値が揃ってない場合でも、デフォルト値をセットしてすべてのフィールドをエクスポートできます"
 
 #: ../../topics/items.rst:59
 msgid ""
 ":class:`Item` also allows defining field metadata, which can be used to :ref:"
 "`customize serialization <topics-exporters-field-serialization>`."
-msgstr ""
+msgstr ":class:`Item` はフィールド・メタ・データを定義することもできます。これは :ref:`シリアライズのカスタマイズ <topics-exporters-field-serialization>` に使用できます。"
 
 #: ../../topics/items.rst:62
 msgid ""
 ":mod:`trackref` tracks :class:`Item` objects to help find memory leaks (see :"
 "ref:`topics-leaks-trackrefs`)."
-msgstr ""
+msgstr ":mod:`trackref` は、 :class:`Item` を追跡しメモリ・リークを見つけるのに役立ちます(see :ref:`topics-leaks-trackrefs`)。"
 
 #: ../../topics/items.rst:65
 msgid ""
 ":class:`Item` objects also provide the following additional API members:"
-msgstr ""
+msgstr ":class:`Item` オブジェクトは、以下の追加APIメンバーも提供します:"
 
 #: ../../../scrapy/item.py:docstring of scrapy.item.DictItem.deepcopy:1
 msgid "Return a :func:`~copy.deepcopy` of this item."
-msgstr ""
+msgstr "このアイテムの :func:`~copy.deepcopy` を返す。"
 
 #: ../../topics/items.rst:73
 msgid ""
@@ -135,16 +121,12 @@ msgstr ""
 
 #: ../../topics/items.rst:78 ../../topics/items.rst:109
 #: ../../topics/items.rst:140
-#, fuzzy
-#| msgid "For example::"
 msgid "Example::"
-msgstr "例えば::"
+msgstr "例::"
 
 #: ../../topics/items.rst:89
-#, fuzzy
-#| msgid "Item objects"
 msgid "Dataclass objects"
-msgstr "アイテム・オブジェクト"
+msgstr "Dataclassオブジェクト"
 
 #: ../../topics/items.rst:93
 msgid ""
@@ -152,85 +134,73 @@ msgid ""
 "names, so that :ref:`item exporters <topics-exporters>` can export all "
 "fields by default even if the first scraped object does not have values for "
 "all of them."
-msgstr ""
+msgstr ":func:`~dataclasses.dataclass` を使用すると、フィールド名を使用してアイテム・クラスを定義できるため、 :ref:`アイテム・エクスポーター <topics-exporters>` は、最初にスクレイプされたオブジェクトにすべての値がない場合でも、デフォルトでそれらすべてのフィールドをエクスポートできます。"
 
 #: ../../topics/items.rst:97
 msgid "Additionally, ``dataclass`` items also allow to:"
-msgstr ""
+msgstr "さらに、 ``dataclass`` アイテムは以下も可能にします:"
 
 #: ../../topics/items.rst:99 ../../topics/items.rst:133
 msgid "define the type and default value of each defined field."
-msgstr ""
+msgstr "定義された各フィールドの型とデフォルト値を定義します。"
 
 #: ../../topics/items.rst:101
 msgid ""
 "define custom field metadata through :func:`dataclasses.field`, which can be "
 "used to :ref:`customize serialization <topics-exporters-field-"
 "serialization>`."
-msgstr ""
+msgstr ":func:`dataclasses.field` を介してカスタム・フィールド・メタ・データを定義します。これは、 :ref:`シリアル化のカスタマイズ <topics-exporters-field-serialization>` に使用できます。"
 
 #: ../../topics/items.rst:104
 msgid ""
 "They work natively in Python 3.7 or later, or using the `dataclasses "
 "backport`_ in Python 3.6."
-msgstr ""
+msgstr "これらはPython3.7以降はネイティブに機能します。また、Python3.6では `dataclasses backport`_ を使用します。"
 
 #: ../../topics/items.rst:118
 msgid "Field types are not enforced at run time."
-msgstr ""
+msgstr "フィールド型は実行時に強要されません。"
 
 #: ../../topics/items.rst:123
-#, fuzzy
-#| msgid "Item objects"
 msgid "attr.s objects"
-msgstr "アイテム・オブジェクト"
+msgstr "attr.sオブジェクト"
 
 #: ../../topics/items.rst:127
 msgid ""
 ":func:`attr.s` allows defining item classes with field names, so that :ref:"
 "`item exporters <topics-exporters>` can export all fields by default even if "
 "the first scraped object does not have values for all of them."
-msgstr ""
+msgstr ":func:`attr.s` を使用すると、フィールド名を使用してアイテム・クラスを定義できるため、 :ref:`アイテム・エクスポーター <topics-exporters>` は、最初にスクレイプされたオブジェクトにすべてのフィールドの値がない場合でも、デフォルトですべてのフィールドをエクスポートできます。"
 
 #: ../../topics/items.rst:131
 msgid "Additionally, ``attr.s`` items also allow to:"
-msgstr ""
+msgstr "さらに、 ``attr.s`` アイテムは以下も可能にします:"
 
 #: ../../topics/items.rst:135
 msgid ""
 "define custom field :ref:`metadata <attrs:metadata>`, which can be used to :"
 "ref:`customize serialization <topics-exporters-field-serialization>`."
-msgstr ""
+msgstr "カスタムフィールド :ref:`metadata <attrs:metadata>` を定義します。これは :ref:`シリアル化のカスタマイズ <topics-exporters-field-serialization>` に使用できます。"
 
 #: ../../topics/items.rst:138
 msgid ""
 "In order to use this type, the :doc:`attrs package <attrs:index>` needs to "
 "be installed."
-msgstr ""
+msgstr "この型を使用するには、 :doc:`attrsパッケージ <attrs:index>` をインストールする必要があります。"
 
 #: ../../topics/items.rst:151 ../../topics/items.rst:219
-#, fuzzy
-#| msgid "Working with Items"
 msgid "Working with Item objects"
-msgstr "アイテムで作業する"
+msgstr "Itemオブジェクトで作業する"
 
 #: ../../topics/items.rst:156
-#, fuzzy
-#| msgid "Declaring Items"
 msgid "Declaring Item subclasses"
-msgstr "アイテムの宣言"
+msgstr "Itemサブクラス宣言"
 
 #: ../../topics/items.rst:158
-#, fuzzy
-#| msgid ""
-#| "Items are declared using a simple class definition syntax and :class:"
-#| "`Field` objects. Here is an example::"
 msgid ""
 "Item subclasses are declared using a simple class definition syntax and :"
 "class:`Field` objects. Here is an example::"
-msgstr ""
-"アイテムは、単純なクラス定義構文と :class:`Field` オブジェクトを使用して宣言"
-"します。 以下に例があります::"
+msgstr "Itemsサブクラスは、単純なクラス定義構文と :class:`Field` オブジェクトを使用して宣言します。 以下に例を示します::"
 
 #: ../../topics/items.rst:170
 msgid ""
@@ -243,10 +213,8 @@ msgstr ""
 "Scrapyアイテムははるかに単純です。"
 
 #: ../../topics/items.rst:181
-#, fuzzy
-#| msgid "Declaring Items"
 msgid "Declaring fields"
-msgstr "アイテムの宣言"
+msgstr "フィールド宣言"
 
 #: ../../topics/items.rst:183
 msgid ""
@@ -293,46 +261,27 @@ msgstr ""
 "`Item.fields` 属性を介してアクセスできます。"
 
 #: ../../topics/items.rst:204
-#, fuzzy
-#| msgid ""
-#| "The :class:`Field` class is just an alias to the built-in `dict`_ class "
-#| "and doesn't provide any extra functionality or attributes. In other "
-#| "words, :class:`Field` objects are plain-old Python dicts. A separate "
-#| "class is used to support the :ref:`item declaration syntax <topics-items-"
-#| "declaring>` based on class attributes."
 msgid ""
 "The :class:`Field` class is just an alias to the built-in :class:`dict` "
 "class and doesn't provide any extra functionality or attributes. In other "
 "words, :class:`Field` objects are plain-old Python dicts. A separate class "
 "is used to support the :ref:`item declaration syntax <topics-items-"
 "declaring>` based on class attributes."
-msgstr ""
-":class:`Field` クラスは組み込みの `dict`_ クラスの単なるエイリアスであり、追"
-"加の機能や属性を提供しません。 言い換えれば、 :class:`Field` オブジェクトは昔"
-"ながらのPython辞書です。 別のクラスを使用して、クラス属性に基づいて :ref:`ア"
-"イテム宣言構文<topics-items-declaring>` をサポートします。"
+msgstr ":class:`Field` クラスは組み込みの :class:`dict` クラスの単なるエイリアスであり、追加の機能や属性を提供しません。 言い換えれば、 :class:`Field` オブジェクトは昔ながらのPython辞書です。 別のクラスを使用して、クラス属性に基づいて :ref:`アイテム宣言構文<topics-items-declaring>` をサポートします。"
 
 #: ../../topics/items.rst:210
 msgid ""
 "Field metadata can also be declared for ``dataclass`` and ``attrs`` items. "
 "Please refer to the documentation for `dataclasses.field`_ and `attr.ib`_ "
 "for additional information."
-msgstr ""
+msgstr "metadataフィールドは、 ``dataclass`` と ``attrs`` アイテムに対しても宣言できます。 詳細については、 `dataclasses.field`_ と `attr.ib`_ の文書を参照してください。"
 
 #: ../../topics/items.rst:221
-#, fuzzy
-#| msgid ""
-#| "Here are some examples of common tasks performed with items, using the "
-#| "``Product`` item :ref:`declared above  <topics-items-declaring>`. You "
-#| "will notice the API is very similar to the `dict API`_."
 msgid ""
 "Here are some examples of common tasks performed with items, using the "
 "``Product`` item :ref:`declared above  <topics-items-declaring>`. You will "
 "notice the API is very similar to the :class:`dict` API."
-msgstr ""
-"ここで、 :ref:`先程宣言した<topics-items-declaring>` ``Product`` アイテムを"
-"使って、アイテムで実行される一般的なタスクの例をいくつか示します。 APIは辞書"
-"API(`dict API`_)に非常に似ていることに気付くでしょう。"
+msgstr "ここで、 :ref:`先程宣言した<topics-items-declaring>` ``Product`` アイテムを使って、アイテムで実行される一般的なタスクの例をいくつか示します。 APIは :class:`dict` APIに非常に似ていることに気付くでしょう。"
 
 #: ../../topics/items.rst:226
 msgid "Creating items"
@@ -351,12 +300,8 @@ msgid "Accessing all populated values"
 msgstr "読み込まれたすべての値へのアクセス"
 
 #: ../../topics/items.rst:289
-#, fuzzy
-#| msgid "To access all populated values, just use the typical `dict API`_::"
 msgid "To access all populated values, just use the typical :class:`dict` API:"
-msgstr ""
-"読み込まれたすべての値にアクセスするには、典型的な辞書API(`dict API`_)を使用"
-"するだけです::"
+msgstr "読み込まれたすべての値にアクセスするには、典型的な :class:`dict` API を使用するだけです:"
 
 #: ../../topics/items.rst:301
 msgid "Copying items"
@@ -371,18 +316,11 @@ msgstr ""
 "を使用するかを決定する必要があります。"
 
 #: ../../topics/items.rst:306
-#, fuzzy
-#| msgid ""
-#| "If your item contains mutable_ values like lists or dictionaries, a "
-#| "shallow copy will keep references to the same mutable values across all "
-#| "different copies."
 msgid ""
 "If your item contains :term:`mutable` values like lists or dictionaries, a "
 "shallow copy will keep references to the same mutable values across all "
 "different copies."
-msgstr ""
-"アイテムにリストや辞書などのミュータブル(mutable_)値が含まれている場合、浅い"
-"コピーは、すべての異なるコピー間で同じミュータブル値への参照を保持します。"
+msgstr "アイテムにリストや辞書などのミュータブル( :term:`mutable` )値が含まれている場合、浅いコピーは、すべての異なるコピー間で同じミュータブル値への参照を保持します。"
 
 #: ../../topics/items.rst:310
 msgid ""
@@ -401,10 +339,8 @@ msgstr ""
 "それが望ましい振る舞いでない場合は、代わりにディープ・コピーを使用します。"
 
 #: ../../topics/items.rst:317
-#, fuzzy
-#| msgid "See the `documentation of the copy module`_ for more information."
 msgid "See :mod:`copy` for more information."
-msgstr "詳細は `documentation of the copy module`_ 参照。"
+msgstr "詳細は :mod:`copy` 参照。"
 
 #: ../../topics/items.rst:319
 msgid ""
@@ -431,22 +367,16 @@ msgid "Other common tasks"
 msgstr "その他の一般的な作業"
 
 #: ../../topics/items.rst:331
-#, fuzzy
-#| msgid "Creating dicts from items::"
 msgid "Creating dicts from items:"
-msgstr "アイテムから辞書を作成する::"
+msgstr "アイテムから辞書を作成する:"
 
 #: ../../topics/items.rst:336
-#, fuzzy
-#| msgid "Creating items from dicts::"
 msgid "Creating items from dicts:"
-msgstr "辞書からアイテムを作成する::"
+msgstr "辞書からアイテムを作成する:"
 
 #: ../../topics/items.rst:348
-#, fuzzy
-#| msgid "Extending Items"
 msgid "Extending Item subclasses"
-msgstr "アイテムの拡張"
+msgstr "Itemサブクラスの拡張"
 
 #: ../../topics/items.rst:350
 msgid ""
@@ -479,7 +409,7 @@ msgstr ""
 
 #: ../../topics/items.rst:372
 msgid "Supporting All Item Types"
-msgstr ""
+msgstr "全アイテム型のサポート"
 
 #: ../../topics/items.rst:374
 msgid ""
@@ -488,7 +418,7 @@ msgid ""
 "middleware>`, it is a good practice to use the :class:`~itemadapter."
 "ItemAdapter` class and the :func:`~itemadapter.is_item` function to write "
 "code that works for any :ref:`supported item type <item-types>`:"
-msgstr ""
+msgstr ":ref:`アイテム・パイプライン <topics-item-pipeline>` または :ref:`スパイダー・ミドルウェア <topics-spider-middleware>` のメソッドなど、アイテムを受け取るコードでは、任意の :ref:`サポートされているアイテム型 <item-types>` で機能するコードを書くために :class:`~itemadapter.ItemAdapter` クラスと :func:`~itemadapter.is_item` 関数を使用することをお勧めします。"
 
 #: ../../../venv/lib/python3.8/site-packages/itemadapter/adapter.py:docstring
 #: of itemadapter.adapter.ItemAdapter:1
@@ -496,63 +426,24 @@ msgid ""
 "Wrapper class to interact with data container objects. It provides a common "
 "interface to extract and set data without having to take the object's type "
 "into account."
-msgstr ""
+msgstr "データ・コンテナ・オブジェクトと対話するラッパー・クラス。 オブジェクトの型を考慮せずにデータを抽出および設定するための共通のインターフェースを提供します。"
 
 #: ../../../venv/lib/python3.8/site-packages/itemadapter/utils.py:docstring of
 #: itemadapter.utils.is_item:1
 msgid ""
 "Return True if the given object belongs to one of the supported types, False "
 "otherwise."
-msgstr ""
+msgstr "指定されたオブジェクトがサポートされている型の1つに属している場合はTrueを返し、そうでない場合はFalseを返します。"
 
 #: ../../../venv/lib/python3.8/site-packages/itemadapter/utils.py:docstring of
 #: itemadapter.utils.is_item:3
 msgid "Alias for ItemAdapter.is_item"
-msgstr ""
+msgstr "ItemAdapter.is_item のエイリアス"
 
 #: ../../topics/items.rst:387
 msgid "Other classes related to items"
-msgstr ""
+msgstr "アイテムに関連する他のクラス"
 
 #: ../../../scrapy/item.py:docstring of scrapy.item.ItemMeta:1
 msgid "Metaclass_ of :class:`Item` that handles field definitions."
-msgstr ""
-
-#~ msgid ""
-#~ "To define common output data format Scrapy provides the :class:`Item` "
-#~ "class. :class:`Item` objects are simple containers used to collect the "
-#~ "scraped data. They provide a `dictionary-like`_ API with a convenient "
-#~ "syntax for declaring their available fields."
-#~ msgstr ""
-#~ "一般的な出力データ形式を定義するために、Scrapyは :class:`Item` クラスを提"
-#~ "供します。 :class:`Item` オブジェクトは、スクレイピングされたデータを収集"
-#~ "するために使用される単純なコンテナです。 これらは、利用可能なフィールドを"
-#~ "宣言するための便利な構文を持つ「辞書のようなAPI」(`dictionary-like`_ API)"
-#~ "を提供します。"
-
-#~ msgid ""
-#~ "Various Scrapy components use extra information provided by Items: "
-#~ "exporters look at declared fields to figure out columns to export, "
-#~ "serialization can be customized using Item fields metadata, :mod:"
-#~ "`trackref` tracks Item instances to help find memory leaks (see :ref:"
-#~ "`topics-leaks-trackrefs`), etc."
-#~ msgstr ""
-#~ "さまざまなScrapyコンポーネントは、アイテムによって提供される追加情報を使用"
-#~ "します。エクスポーターは、宣言されたフィールドを見てエクスポートする列を見"
-#~ "つけます。シリアル化は、アイテムのフィールド・メタ・データを使用してカスタ"
-#~ "マイズできます。 :mod:`trackref` はアイテムのインスタンスを追跡して、メモ"
-#~ "リ・リーク( :ref:`topics-leaks-trackrefs` 参照)などを見つけるのに役立ちま"
-#~ "す。"
-
-#~ msgid "Return a new Item optionally initialized from the given argument."
-#~ msgstr "オプションで指定した引数によって初期化された新しいItemを返します。"
-
-#~ msgid ""
-#~ "Items replicate the standard `dict API`_, including its constructor. The "
-#~ "only additional attribute provided by Items is:"
-#~ msgstr ""
-#~ "アイテムは、コンストラクタを含む標準の辞書API(`dict API`_)を複製します。 "
-#~ "アイテムによって提供される追加の属性は次のとおりです:"
-
-#~ msgid "Field objects"
-#~ msgstr "フィールド・オブジェクト"
+msgstr "フィールド定義を処理する :class:`Item` の Metaclass_ 。"
