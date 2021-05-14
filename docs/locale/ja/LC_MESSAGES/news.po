@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-04-24 08:51+0900\n"
+"PO-Revision-Date: 2021-05-15 05:36+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -275,9 +275,10 @@ msgstr ""
 msgid "Reduced the top margin of lists. (:issue:`4974`)"
 msgstr ""
 
+# QA,QC,監査と絡むらしくてややこしそうだが、品質保証で良いようである。
 #: ../../news.rst:165
 msgid "Quality Assurance"
-msgstr ""
+msgstr "品質保証"
 
 #: ../../news.rst:167
 msgid "Made Python 3.9 support official (:issue:`4757`, :issue:`4759`)"
@@ -406,42 +407,42 @@ msgstr ""
 
 #: ../../news.rst:244
 msgid "Modified requirements"
-msgstr ""
+msgstr "必須要件の変更"
 
 #: ../../news.rst:246
 msgid ""
 "Python 3.6 or greater is now required; support for Python 3.5 has been "
 "dropped"
-msgstr ""
+msgstr "Python3.6以降が必要になりました。Python3.5のサポートは終了しました"
 
 #: ../../news.rst:249
 msgid "As a result:"
-msgstr ""
+msgstr "その結果、"
 
 #: ../../news.rst:251
 msgid ""
 "When using PyPy, PyPy 7.2.0 or greater :ref:`is now required <faq-python-"
 "versions>`"
-msgstr ""
+msgstr "PyPyを使用する場合、PyPy 7.2.0以降が必要になりました( :ref:`faq-python-versions` 参照)"
 
 #: ../../news.rst:254
 msgid ""
 "For Amazon S3 storage support in :ref:`feed exports <topics-feed-storage-"
 "s3>` or :ref:`media pipelines <media-pipelines-s3>`, botocore_ 1.4.87 or "
 "greater is now required"
-msgstr ""
+msgstr ":ref:`フィード・エクスポート <topics-feed-storage-s3>` または :ref:`メディア・パイプライン <media-pipelines-s3>` でのAmazonS3ストレージのサポートには、 botocore_ 1.4.87以上が必要になりました"
 
 #: ../../news.rst:258
 msgid ""
 "To use the :ref:`images pipeline <images-pipeline>`, Pillow_ 4.0.0 or "
 "greater is now required"
-msgstr ""
+msgstr ":ref:`イメージ・パイプライン <images-pipeline>` を使用するには、Pillow_ 4.0.0以降が必要になります"
 
 #: ../../news.rst:261
 msgid ""
 "(:issue:`4718`, :issue:`4732`, :issue:`4733`, :issue:`4742`, :issue:`4743`, :"
 "issue:`4764`)"
-msgstr ""
+msgstr "(:issue:`4718`, :issue:`4732`, :issue:`4733`, :issue:`4742`, :issue:`4743`, :issue:`4764`)"
 
 #: ../../news.rst:266 ../../news.rst:668 ../../news.rst:858 ../../news.rst:1027
 #: ../../news.rst:1472 ../../news.rst:1717 ../../news.rst:4465
@@ -668,7 +669,7 @@ msgstr ""
 
 #: ../../news.rst:408
 msgid "(:issue:`4529`, :issue:`4632`)"
-msgstr ""
+msgstr "(:issue:`4529`, :issue:`4632`)"
 
 #: ../../news.rst:410
 msgid ""
@@ -811,7 +812,7 @@ msgstr ""
 #: ../../news.rst:498 ../../news.rst:616 ../../news.rst:807 ../../news.rst:972
 #: ../../news.rst:1320
 msgid "Quality assurance"
-msgstr ""
+msgstr "品質保証"
 
 #: ../../news.rst:500
 msgid "Extended typing hints (:issue:`4243`, :issue:`4691`)"
@@ -888,15 +889,15 @@ msgstr ""
 
 #: ../../news.rst:548
 msgid "``htmlparser.HtmlParserLinkExtractor``"
-msgstr ""
+msgstr "``htmlparser.HtmlParserLinkExtractor``"
 
 #: ../../news.rst:549
 msgid "``regex.RegexLinkExtractor``"
-msgstr ""
+msgstr "``regex.RegexLinkExtractor``"
 
 #: ../../news.rst:550
 msgid "``sgml.BaseSgmlLinkExtractor``"
-msgstr ""
+msgstr "``sgml.BaseSgmlLinkExtractor``"
 
 #: ../../news.rst:551
 msgid "``sgml.SgmlLinkExtractor``"
@@ -1050,16 +1051,16 @@ msgstr ""
 
 #: ../../news.rst:663
 msgid "New :meth:`TextResponse.json <scrapy.http.TextResponse.json>` method"
-msgstr ""
+msgstr "新 :meth:`TextResponse.json <scrapy.http.TextResponse.json>` メソッド"
 
 #: ../../news.rst:664
 msgid ""
 "New :signal:`bytes_received` signal that allows canceling response download"
-msgstr ""
+msgstr "新 :signal:`bytes_received` シグナルはレスポンスのダウンロードをキャンセルできます"
 
 #: ../../news.rst:665
 msgid ":class:`~scrapy.downloadermiddlewares.cookies.CookiesMiddleware` fixes"
-msgstr ""
+msgstr ":class:`~scrapy.downloadermiddlewares.cookies.CookiesMiddleware` 修正"
 
 #: ../../news.rst:670
 msgid ""
@@ -1330,12 +1331,12 @@ msgstr "Scrapy 2.1.0 (2020-04-24)"
 
 #: ../../news.rst:854
 msgid "New :setting:`FEEDS` setting to export to multiple feeds"
-msgstr ""
+msgstr "新 :setting:`FEEDS` 設定は複数のフィードにエクスポートするための設定です"
 
 #: ../../news.rst:855
 msgid ""
 "New :attr:`Response.ip_address <scrapy.http.Response.ip_address>` attribute"
-msgstr ""
+msgstr "新 :attr:`Response.ip_address <scrapy.http.Response.ip_address>` 属性"
 
 #: ../../news.rst:860
 msgid ""
@@ -1353,7 +1354,7 @@ msgstr ""
 
 #: ../../news.rst:868
 msgid "(:issue:`4440`)"
-msgstr ""
+msgstr "(:issue:`4440`)"
 
 #: ../../news.rst:874
 msgid ""
@@ -1416,19 +1417,11 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:916
-#, fuzzy
-#| msgid ""
-#| "A new :attr:`Request.cb_kwargs <scrapy.http.Request.cb_kwargs>` attribute "
-#| "provides a cleaner way to pass keyword arguments to callback methods (:"
-#| "issue:`1138`, :issue:`3563`)"
 msgid ""
 "The new :attr:`Response.ip_address <scrapy.http.Response.ip_address>` "
 "attribute gives access to the IP address that originated a response (:issue:"
 "`3903`, :issue:`3940`)"
-msgstr ""
-"新しい :attr:`Request.cb_kwargs<scrapy.http.Request.cb_kwargs>` 属性は、キー"
-"ワード引数をコールバック・メソッドに渡すよりクリーンな方法を提供します (:"
-"issue:`1138`, :issue:`3563`)"
+msgstr "新 :attr:`Response.ip_address <scrapy.http.Response.ip_address>` 属性は、レスポンスを発信したIPアドレスへのアクセスを提供します  (:issue:`3903`, :issue:`3940`)"
 
 #: ../../news.rst:920
 msgid ""
@@ -1573,7 +1566,7 @@ msgstr "Scrapy 2.0.0 (2020-03-03)"
 
 #: ../../news.rst:1017
 msgid "Python 2 support has been removed"
-msgstr ""
+msgstr "Python2のサポートは削除されました"
 
 #: ../../news.rst:1018
 msgid ""
@@ -1584,7 +1577,7 @@ msgstr ""
 #: ../../news.rst:1020
 msgid ""
 "New :meth:`Response.follow_all <scrapy.http.Response.follow_all>` method"
-msgstr ""
+msgstr "新 :meth:`Response.follow_all <scrapy.http.Response.follow_all>` メソッド"
 
 #: ../../news.rst:1021
 msgid ":ref:`FTP support <media-pipeline-ftp>` for media pipelines"
@@ -1593,7 +1586,7 @@ msgstr ""
 #: ../../news.rst:1022
 msgid ""
 "New :attr:`Response.certificate <scrapy.http.Response.certificate>` attribute"
-msgstr ""
+msgstr "新 :attr:`Response.certificate <scrapy.http.Response.certificate>` 属性"
 
 #: ../../news.rst:1024
 msgid "IPv6 support through :setting:`DNS_RESOLVER`"
@@ -1779,19 +1772,11 @@ msgid ""
 msgstr ""
 
 #: ../../news.rst:1148
-#, fuzzy
-#| msgid ""
-#| "A new :attr:`Request.cb_kwargs <scrapy.http.Request.cb_kwargs>` attribute "
-#| "provides a cleaner way to pass keyword arguments to callback methods (:"
-#| "issue:`1138`, :issue:`3563`)"
 msgid ""
 "The new :attr:`Response.cb_kwargs <scrapy.http.Response.cb_kwargs>` "
 "attribute serves as a shortcut for :attr:`Response.request.cb_kwargs <scrapy."
 "http.Request.cb_kwargs>` (:issue:`4331`)"
-msgstr ""
-"新しい :attr:`Request.cb_kwargs<scrapy.http.Request.cb_kwargs>` 属性は、キー"
-"ワード引数をコールバック・メソッドに渡すよりクリーンな方法を提供します (:"
-"issue:`1138`, :issue:`3563`)"
+msgstr "新 :attr:`Response.cb_kwargs <scrapy.http.Response.cb_kwargs>` 属性は、 :attr:`Response.request.cb_kwargs <scrapy.http.Request.cb_kwargs>` へのショートカットとして機能します (:issue:`4331`)"
 
 #: ../../news.rst:1152
 msgid ""
@@ -2312,18 +2297,18 @@ msgstr ""
 #: ../../news.rst:1466
 msgid ""
 "New :meth:`Request.from_curl <scrapy.http.Request.from_curl>` class method"
-msgstr ""
+msgstr "新 :meth:`Request.from_curl <scrapy.http.Request.from_curl>` クラス・メソッド"
 
 #: ../../news.rst:1467
 msgid ""
 "New :setting:`ROBOTSTXT_PARSER` and :setting:`ROBOTSTXT_USER_AGENT` settings"
-msgstr ""
+msgstr "新 :setting:`ROBOTSTXT_PARSER` and :setting:`ROBOTSTXT_USER_AGENT` 設定"
 
 #: ../../news.rst:1468
 msgid ""
 "New :setting:`DOWNLOADER_CLIENT_TLS_CIPHERS` and :setting:"
 "`DOWNLOADER_CLIENT_TLS_VERBOSE_LOGGING` settings"
-msgstr ""
+msgstr "新 :setting:`DOWNLOADER_CLIENT_TLS_CIPHERS` 設定 と :setting:`DOWNLOADER_CLIENT_TLS_VERBOSE_LOGGING` 設定"
 
 #: ../../news.rst:1474
 msgid ""
@@ -2372,16 +2357,10 @@ msgid "(:issue:`3892`)"
 msgstr ""
 
 #: ../../news.rst:1489
-#, fuzzy
-#| msgid ""
-#| "A new :class:`JSONRequest <scrapy.http.JsonRequest>` class offers a more "
-#| "convenient way to build JSON requests (:issue:`3504`, :issue:`3505`)"
 msgid ""
 "``JSONRequest`` is now called :class:`~scrapy.http.JsonRequest` for "
 "consistency with similar classes (:issue:`3929`, :issue:`3982`)"
-msgstr ""
-"新しい :class:`JSONRequest<scrapy.http.JsonRequest>` クラスは、JSONリクエスト"
-"を作成するより便利な方法を提供します (:issue:`3504`, :issue:`3505`)"
+msgstr "``JSONRequest`` は類似のクラスとの一貫性のために :class:`~scrapy.http.JsonRequest` と呼ばれるようになりました (:issue:`3929`, :issue:`3982`)"
 
 #: ../../news.rst:1492
 msgid ""
@@ -2414,17 +2393,11 @@ msgid "See also :ref:`1.8-deprecation-removals` below."
 msgstr "下記の :ref:`1.8-deprecation-removals` も参照してください。"
 
 #: ../../news.rst:1518
-#, fuzzy
-#| msgid ""
-#| "A new :class:`JSONRequest <scrapy.http.JsonRequest>` class offers a more "
-#| "convenient way to build JSON requests (:issue:`3504`, :issue:`3505`)"
 msgid ""
 "A new :meth:`Request.from_curl <scrapy.http.Request.from_curl>` class method "
 "allows :ref:`creating a request from a cURL command <requests-from-curl>` (:"
 "issue:`2985`, :issue:`3862`)"
-msgstr ""
-"新しい :class:`JSONRequest<scrapy.http.JsonRequest>` クラスは、JSONリクエスト"
-"を作成するより便利な方法を提供します (:issue:`3504`, :issue:`3505`)"
+msgstr "新 :meth:`Request.from_curl <scrapy.http.Request.from_curl>` クラス・メソッドを使用すると、 :ref:`cURLコマンドからのリクエストの作成 <requests-from-curl>` が可能になります (:issue:`2985`, :issue:`3862`)"
 
 #: ../../news.rst:1522
 msgid ""
@@ -2772,25 +2745,13 @@ msgid "See also :ref:`1.7-deprecation-removals` below."
 msgstr "下記の :ref:`1.7-deprecation-removals` も参照してください。"
 
 #: ../../news.rst:1754
-#, fuzzy
-#| msgid ""
-#| "A new scheduler priority queue, :class:`scrapy.pqueues."
-#| "DownloaderAwarePriorityQueue`, may be :ref:`enabled <broad-crawls-"
-#| "scheduler-priority-queue>` for a significant scheduling improvement on "
-#| "crawls targetting multiple web domains, at the cost of no :setting:"
-#| "`CONCURRENT_REQUESTS_PER_IP` support (:issue:`3520`)"
 msgid ""
 "A new scheduler priority queue, ``scrapy.pqueues."
 "DownloaderAwarePriorityQueue``, may be :ref:`enabled <broad-crawls-scheduler-"
 "priority-queue>` for a significant scheduling improvement on crawls "
 "targetting multiple web domains, at the cost of no :setting:"
 "`CONCURRENT_REQUESTS_PER_IP` support (:issue:`3520`)"
-msgstr ""
-"新しいスケジューラーの優先度キュー :class:`scrapy.pqueues."
-"DownloaderAwarePriorityQueue` は、 :ref:`enabled<broad-crawls-scheduler-"
-"priority-queue>` で、:setting:`CONCURRENT_REQUESTS_PER_IP` をサポートしないと"
-"いう犠牲を払えば、複数のWebドメインをターゲットとするクロールのスケジューリン"
-"グを大幅に改善できます。"
+msgstr "新しいスケジューラーの優先度キュー ``scrapy.pqueues.DownloaderAwarePriorityQueue`` は、 :ref:`enabled<broad-crawls-scheduler-priority-queue>` で、:setting:`CONCURRENT_REQUESTS_PER_IP` をサポートしないという犠牲を払えば、複数のWebドメインをターゲットとするクロールのスケジューリングを大幅に改善できます。"
 
 #: ../../news.rst:1760
 msgid ""
@@ -3397,7 +3358,7 @@ msgstr ""
 
 #: ../../news.rst:2112
 msgid "New FilePipeline and MediaPipeline features"
-msgstr ""
+msgstr "新 FilePipeline 機能と MediaPipeline 機能"
 
 #: ../../news.rst:2114
 msgid ""
@@ -4191,7 +4152,7 @@ msgstr ""
 
 #: ../../news.rst:2460 ../../news.rst:2661 ../../news.rst:2763
 msgid "New Features"
-msgstr ""
+msgstr "新機能"
 
 #: ../../news.rst:2462
 msgid ""
@@ -4208,7 +4169,7 @@ msgstr ""
 msgid ""
 "New :ref:`response.follow <response-follow-example>` shortcut for creating "
 "requests (:issue:`1940`)"
-msgstr ""
+msgstr "新 :ref:`response.follow <response-follow-example>` はリクエスト作成のショートカットです(:issue:`1940`)"
 
 #: ../../news.rst:2467
 msgid ""
@@ -4218,7 +4179,7 @@ msgstr ""
 
 #: ../../news.rst:2469
 msgid "Support Anonymous FTP (:issue:`2342`)"
-msgstr ""
+msgstr "アノニマスFTPのサポート (:issue:`2342`)"
 
 #: ../../news.rst:2470
 msgid ""
@@ -4244,7 +4205,7 @@ msgstr ""
 
 #: ../../news.rst:2479
 msgid "New ``data:`` URI download handler (:issue:`2334`, fixes :issue:`2156`)"
-msgstr ""
+msgstr "新 ``data:`` URI ダウンロード・ハンドラー (:issue:`2334`, fixes :issue:`2156`)"
 
 #: ../../news.rst:2480
 msgid ""
@@ -4350,7 +4311,7 @@ msgstr ""
 
 #: ../../news.rst:2521
 msgid "Remove \"commands\" from the command list  (:issue:`2695`)"
-msgstr ""
+msgstr "削除:コマンドリストから \"commands\" を削除 (:issue:`2695`)"
 
 #: ../../news.rst:2522
 msgid ""
@@ -4372,7 +4333,7 @@ msgstr ""
 
 #: ../../news.rst:2528
 msgid "Cleanups & Refactoring"
-msgstr ""
+msgstr "クリーンナップとリファクタリング"
 
 #: ../../news.rst:2530
 msgid ""
@@ -4389,7 +4350,7 @@ msgstr ""
 
 #: ../../news.rst:2534
 msgid "Remove “Python 3 progress” badge (:issue:`2567`)"
-msgstr ""
+msgstr "削除: “Python 3 progress”  バッジを削除 (:issue:`2567`)"
 
 #: ../../news.rst:2535
 msgid "Add a couple more lines to ``.gitignore`` (:issue:`2557`)"
@@ -4401,7 +4362,7 @@ msgstr ""
 
 #: ../../news.rst:2537
 msgid "Add codecov.yml file (:issue:`2750`)"
-msgstr ""
+msgstr "追加: codecov.yml ファイル追加 (:issue:`2750`)"
 
 #: ../../news.rst:2538
 msgid ""
@@ -4433,12 +4394,12 @@ msgstr ""
 
 #: ../../news.rst:2545
 msgid "Remove unused ``MEMUSAGE_REPORT`` setting (:issue:`2576`)"
-msgstr ""
+msgstr "削除: 未使用の ``MEMUSAGE_REPORT`` 設定を削除 (:issue:`2576`)"
 
 #: ../../news.rst:2550
 msgid ""
 "Binary mode is required for exporters (:issue:`2564`, fixes :issue:`2553`)"
-msgstr ""
+msgstr "エクスポーターにはバイナリモードが必要です (:issue:`2564`, fixes :issue:`2553`)"
 
 #: ../../news.rst:2551
 msgid ""
@@ -4448,7 +4409,7 @@ msgstr ""
 
 #: ../../news.rst:2553
 msgid "Use single quotes uniformly in templates (:issue:`2596`)"
-msgstr ""
+msgstr "テンプレートではシングル・クォートを一律に使用します (:issue:`2596`)"
 
 #: ../../news.rst:2554
 msgid ""
