@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-01 07:09+0900\n"
+"PO-Revision-Date: 2021-05-13 02:32+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -22,46 +22,26 @@ msgid "Debugging memory leaks"
 msgstr "メモリ・リークのデバッグ"
 
 #: ../../topics/leaks.rst:7
-#, fuzzy
-#| msgid ""
-#| "In Scrapy, objects such as Requests, Responses and Items have a finite "
-#| "lifetime: they are created, used for a while, and finally destroyed."
 msgid ""
 "In Scrapy, objects such as requests, responses and items have a finite "
 "lifetime: they are created, used for a while, and finally destroyed."
-msgstr ""
-"Scrapyでは、リクエスト、レスポンス、アイテムなどのオブジェクトのライフタイム"
-"は有限です。それらは作成され、しばらく使用され、最終的に破棄されます。"
+msgstr "Scrapyでは、リクエスト、レスポンス、アイテムなどのオブジェクトの寿命は有限です。それらは作成され、しばらく使用され、最終的に破棄されます。"
 
 #: ../../topics/leaks.rst:10
 msgid ""
 "From all those objects, the Request is probably the one with the longest "
 "lifetime, as it stays waiting in the Scheduler queue until it's time to "
 "process it. For more info see :ref:`topics-architecture`."
-msgstr ""
-"これらすべてのオブジェクトの中で、リクエストはおそらく最も長いライフタイムを"
-"持つものです。リクエストを処理するまでスケジューラのキューで待機しているため"
-"です。 詳細については、 :ref:`topics-architecture` を参照してください。"
+msgstr "これらすべてのオブジェクトの中で、Requestはおそらく最も長い寿命を持つものです。それを処理するまでスケジューラのキューで待機しているためです。 詳細については、 :ref:`topics-architecture` を参照してください。"
 
 #: ../../topics/leaks.rst:14
 msgid ""
 "As these Scrapy objects have a (rather long) lifetime, there is always the "
 "risk of accumulating them in memory without releasing them properly and thus "
 "causing what is known as a \"memory leak\"."
-msgstr ""
-"これらのScrapyオブジェクトには(かなり長い)寿命があるため、それらを適切に解放"
-"せずにメモリに蓄積してしまい、「メモリ・リーク」と呼ばれるものを引き起こすリ"
-"スクが常にあります。"
+msgstr "これらのScrapyオブジェクトには(かなり長い)寿命があるため、それらを適切に解放せずにメモリに蓄積してしまい、「メモリ・リーク」と呼ばれるものを引き起こすリスクが常にあります。"
 
 #: ../../topics/leaks.rst:18
-#, fuzzy
-#| msgid ""
-#| "To help debugging memory leaks, Scrapy provides a built-in mechanism for "
-#| "tracking objects references called :ref:`trackref <topics-leaks-"
-#| "trackrefs>`, and you can also use a third-party library called :ref:"
-#| "`Guppy <topics-leaks-guppy>` for more advanced memory debugging (see "
-#| "below for more info). Both mechanisms must be used from the :ref:`Telnet "
-#| "Console <topics-telnetconsole>`."
 msgid ""
 "To help debugging memory leaks, Scrapy provides a built-in mechanism for "
 "tracking objects references called :ref:`trackref <topics-leaks-trackrefs>`, "
@@ -69,13 +49,7 @@ msgid ""
 "muppy>` for more advanced memory debugging (see below for more info). Both "
 "mechanisms must be used from the :ref:`Telnet Console <topics-"
 "telnetconsole>`."
-msgstr ""
-"メモリリークのデバッグを支援するために、Scrapyは :ref:`trackref <topics-"
-"leaks-trackrefs>` というオブジェクト参照を追跡するための組み込みメカニズムを"
-"提供します。また、 :ref:`Guppy <topics-leaks-guppy>` というサードパーティ・ラ"
-"イブラリを使用すると、より高度なメモリ・デバッグが可能になります(詳細は以下を"
-"参照)。両方のメカニズムは、:ref:`Telnetコンソール<topics-telnetconsole>` から"
-"使用する必要があります。"
+msgstr "メモリリークのデバッグを支援するために、Scrapyは :ref:`trackref <topics-leaks-trackrefs>` というオブジェクト参照を追跡するための組み込みメカニズムを提供します。また、 :ref:`muppy <topics-leaks-muppy>` というサードパーティ・ライブラリを使用すると、より高度なメモリ・デバッグが可能になります(詳細は以下を参照)。両方のメカニズムは、:ref:`Telnetコンソール<topics-telnetconsole>` から使用する必要があります。"
 
 #: ../../topics/leaks.rst:26
 msgid "Common causes of memory leaks"
@@ -90,13 +64,7 @@ msgid ""
 "effectively bounds the lifetime of those referenced objects to the lifetime "
 "of the Request. This is, by far, the most common cause of memory leaks in "
 "Scrapy projects, and a quite difficult one to debug for newcomers."
-msgstr ""
-"Scrapy開発者がリクエストで参照されるオブジェクトを渡し(たとえば、 :attr:"
-"`~scrapy.http.Request.cb_kwargs` または :attr:`~scrapy.http.Request.meta` 属"
-"性またはリクエスト・コールバック関数の使用)、そして、事実上、それらの参照され"
-"たオブジェクトの寿命をリクエストの寿命に合わせます。これは、Scrapyプロジェク"
-"トでのメモリ・リークの最も一般的な原因であり、初心者にとってデバッグが非常に"
-"難しいものです。"
+msgstr "Scrapy開発者がリクエストで参照されるオブジェクトを渡し(たとえば、 :attr:`~scrapy.http.Request.cb_kwargs` または :attr:`~scrapy.http.Request.meta` 属性またはリクエスト・コールバック関数の使用)、そして、事実上、それらの参照されたオブジェクトの寿命をリクエストの寿命に合わせます。これは、Scrapyプロジェクトでのメモリ・リークの最も一般的な原因であり、初心者にとってデバッグが非常に難しいものです。"
 
 #: ../../topics/leaks.rst:36
 msgid ""
@@ -151,11 +119,6 @@ msgid "Debugging memory leaks with ``trackref``"
 msgstr "``trackref`` を使用したメモリ・リークのデバッグ"
 
 #: ../../topics/leaks.rst:63
-#, fuzzy
-#| msgid ""
-#| ":mod:`trackref` is a module provided by Scrapy to debug the most common "
-#| "cases of memory leaks. It basically tracks the references to all live "
-#| "Requests, Responses, Item and Selector objects."
 msgid ""
 ":mod:`trackref` is a module provided by Scrapy to debug the most common "
 "cases of memory leaks. It basically tracks the references to all live "
@@ -239,16 +202,9 @@ msgid ""
 "That line is passing a response reference inside a request which effectively "
 "ties the response lifetime to the requests' one, and that would definitely "
 "cause memory leaks."
-msgstr ""
-"この例は、レスポンスの有効期間をリクエストの有効期間と効果的に結び付けるレス"
-"ポンス参照をリクエスト内に渡しているため、間違いなくメモリ・リークが発生しま"
-"す。"
+msgstr "この例は、レスポンスの寿命をリクエストの寿命と効果的に結び付けるレスポンス参照をリクエスト内に渡しているため、間違いなくメモリ・リークが発生します。"
 
 #: ../../topics/leaks.rst:112
-#, fuzzy
-#| msgid ""
-#| "Let's see how we can discover the cause (without knowing it a-priori, of "
-#| "course) by using the ``trackref`` tool."
 msgid ""
 "Let's see how we can discover the cause (without knowing it a priori, of "
 "course) by using the ``trackref`` tool."
@@ -273,59 +229,32 @@ msgid ""
 "requests, so it looks like they are tied in a some way. We can now go and "
 "check the code of the spider to discover the nasty line that is generating "
 "the leaks (passing response references inside requests)."
-msgstr ""
-"レスポンスはリクエストと比較して比較的短い寿命であるはずなので、非常に多くの"
-"生存中のレスポンスが存在するという事実(そしてそれらが非常に古いという事実)は"
-"間違いなく疑わしいです。レスポンスの数はリクエストの数と似ているため、何らか"
-"の形で結び付けられているように見えます。これで、スパイダーのコードを調べて、"
-"リークを生成している厄介な当該コード(リクエスト内でレスポンス参照を渡してい"
-"る)を発見できます。"
+msgstr "レスポンスはリクエストと比較して比較的短い寿命であるはずなので、非常に多くの生存中のレスポンスが存在するという事実(そしてそれらが非常に古いという事実)は間違いなく疑わしいです。レスポンスの数はリクエストの数と似ているため、何らかの形で結び付けられているように見えます。これで、スパイダーのコードを調べて、リークを生成している厄介な当該コード(リクエスト内でレスポンス参照を渡している)を発見できます。"
 
 #: ../../topics/leaks.rst:134
-#, fuzzy
-#| msgid ""
-#| "Sometimes extra information about live objects can be helpful. Let's "
-#| "check the oldest response::"
 msgid ""
 "Sometimes extra information about live objects can be helpful. Let's check "
 "the oldest response:"
-msgstr "生存中オブジェクトに関する追加情報が役立つ場合があります。"
+msgstr "生存中オブジェクトに関する追加情報が役立つ場合があります:"
 
 #: ../../topics/leaks.rst:142
-#, fuzzy
-#| msgid ""
-#| "If you want to iterate over all objects, instead of getting the oldest "
-#| "one, you can use the :func:`scrapy.utils.trackref.iter_all` function::"
 msgid ""
 "If you want to iterate over all objects, instead of getting the oldest one, "
 "you can use the :func:`scrapy.utils.trackref.iter_all` function:"
-msgstr ""
-"最も古いオブジェクトを取得する代わりに、すべてのオブジェクトを反復処理する場"
-"合は、 :func:`scrapy.utils.trackref.iter_all` 関数を使用できます::"
+msgstr "最も古いオブジェクトを取得する代わりに、すべてのオブジェクトを反復処理する場合は、 :func:`scrapy.utils.trackref.iter_all` 関数を使用できます:"
 
 #: ../../topics/leaks.rst:152
 msgid "Too many spiders?"
 msgstr "スパイダーが多すぎるのか？"
 
 #: ../../topics/leaks.rst:154
-#, fuzzy
-#| msgid ""
-#| "If your project has too many spiders executed in parallel, the output of :"
-#| "func:`prefs()` can be difficult to read. For this reason, that function "
-#| "has a ``ignore`` argument which can be used to ignore a particular class "
-#| "(and all its subclases). For example, this won't show any live references "
-#| "to spiders::"
 msgid ""
 "If your project has too many spiders executed in parallel, the output of :"
 "func:`prefs()` can be difficult to read. For this reason, that function has "
 "a ``ignore`` argument which can be used to ignore a particular class (and "
 "all its subclases). For example, this won't show any live references to "
 "spiders:"
-msgstr ""
-"プロジェクトで並行して実行されるスパイダーが多すぎる場合、 :func:`prefs()` の"
-"出力は読みにくい場合があります。このため、その関数には、特定のクラス(およびそ"
-"のすべてのサブクラス)を無視するために使用できる ``ignore`` 引数があります。た"
-"とえば、以下はスパイダーへの生存中参照を表示しません::"
+msgstr "プロジェクトで並行して実行されるスパイダーが多すぎる場合、 :func:`prefs()` の出力は読みにくい場合があります。このため、その関数には、特定のクラス(およびそのすべてのサブクラス)を無視するために使用できる ``ignore`` 引数があります。たとえば、以下はスパイダーへの生存中参照を表示しません:"
 
 #: ../../topics/leaks.rst:167
 msgid "scrapy.utils.trackref module"
@@ -338,16 +267,10 @@ msgstr ""
 ":mod:`~scrapy.utils.trackref` モジュールで利用可能な関数は以下のとおりです。"
 
 #: ../../topics/leaks.rst:173
-#, fuzzy
-#| msgid ""
-#| "Inherit from this class (instead of object) if you want to track live "
-#| "instances with the ``trackref`` module."
 msgid ""
 "Inherit from this class if you want to track live instances with the "
 "``trackref`` module."
-msgstr ""
-"``trackref`` モジュールを使用して生存中のインスタンスを追跡する場合は、(オブ"
-"ジェクトの代わりに)このクラスから継承します。"
+msgstr "``trackref`` モジュールを使用して生存中のインスタンスを追跡する場合は、このクラスから継承します。"
 
 #: ../../topics/leaks.rst:178
 msgid "Print a report of live references, grouped by class name."
@@ -355,7 +278,7 @@ msgstr "クラス名でグループ化された生存中参照のレポートを
 
 #: ../../topics/leaks.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/leaks.rst:180
 msgid ""
@@ -391,15 +314,6 @@ msgid "Debugging memory leaks with muppy"
 msgstr "muppyを使ってメモリ・リークをデバッグする"
 
 #: ../../topics/leaks.rst:201
-#, fuzzy
-#| msgid ""
-#| "``trackref`` provides a very convenient mechanism for tracking down "
-#| "memory leaks, but it only keeps track of the objects that are more likely "
-#| "to cause memory leaks (Requests, Responses, Items, and Selectors). "
-#| "However, there are other cases where the memory leaks could come from "
-#| "other (more or less obscure) objects. If this is your case, and you can't "
-#| "find your leaks using ``trackref``, you still have another resource: the "
-#| "`Guppy library`_. If you're using Python3, see :ref:`topics-leaks-muppy`."
 msgid ""
 "``trackref`` provides a very convenient mechanism for tracking down memory "
 "leaks, but it only keeps track of the objects that are more likely to cause "
@@ -407,36 +321,21 @@ msgid ""
 "come from other (more or less obscure) objects. If this is your case, and "
 "you can't find your leaks using ``trackref``, you still have another "
 "resource: the muppy library."
-msgstr ""
-"`` trackref``は、メモリ・リークを追跡するための非常に便利なメカニズムを提供し"
-"ますが、メモリリークを引き起こす可能性が高いオブジェクト(リクエスト、レスポン"
-"ス、アイテム、セレクタ)のみを追跡します。 ただし、他の(多かれ少なかれ不明瞭"
-"な)オブジェクトからメモリ・リークが発生する場合があります。そうした場合で、 "
-"``trackref`` を使用してリークを見つけることができない場合、更に別の方法があり"
-"ます。それは `Guppy library`_ です。そして、Python3を使用している場合は、 :"
-"ref:`topics-leaks-muppy` を参照してください。"
+msgstr "``trackref`` は、メモリ・リークを追跡するための非常に便利なメカニズムを提供しますが、メモリリークを引き起こす可能性が高いオブジェクトのみを追跡します。 ただし、他の(多かれ少なかれ不明瞭な)オブジェクトからメモリ・リークが発生する場合があります。そうした場合に ``trackref`` を使用してリークを見つけることができない場合でも、muppyライブラリという別の方法があります。"
 
 #: ../../topics/leaks.rst:208
-#, fuzzy
-#| msgid "If you're using Python 3, you can use muppy from `Pympler`_."
 msgid "You can use muppy from `Pympler`_."
-msgstr "Python 3を使用している場合、 `Pympler`_ からmuppyを使用できます。"
+msgstr "`Pympler`_ からmuppyを使用できます。"
 
 #: ../../topics/leaks.rst:212
 msgid "If you use ``pip``, you can install muppy with the following command::"
 msgstr "``pip`` を使用する場合、次のコマンドでmuppyをインストールできます::"
 
 #: ../../topics/leaks.rst:216
-#, fuzzy
-#| msgid ""
-#| "Here's an example to view all Python objects available in the heap using "
-#| "muppy::"
 msgid ""
 "Here's an example to view all Python objects available in the heap using "
 "muppy:"
-msgstr ""
-"muppyを使用してヒープ内で使用可能なすべてのPythonオブジェクトを表示する例を次"
-"に示します::"
+msgstr "muppyを使用してヒープ内で使用可能なすべてのPythonオブジェクトを表示する例を次に示します:"
 
 #: ../../topics/leaks.rst:244
 msgid "For more info about muppy, refer to the `muppy documentation`_."
@@ -462,37 +361,21 @@ msgstr ""
 "あります。 この問題の詳細については以下を参照して下さい。"
 
 #: ../../topics/leaks.rst:259
-#, fuzzy
-#| msgid ""
-#| "`Python Memory Management <http://www.evanjones.ca/python-memory.html>`_"
 msgid ""
 "`Python Memory Management <https://www.evanjones.ca/python-memory.html>`_"
-msgstr ""
-"`Python Memory Management <http://www.evanjones.ca/python-memory.html>`_"
+msgstr "`Python Memory Management <https://www.evanjones.ca/python-memory.html>`_"
 
 #: ../../topics/leaks.rst:260
-#, fuzzy
-#| msgid ""
-#| "`Python Memory Management Part 2 <http://www.evanjones.ca/python-memory-"
-#| "part2.html>`_"
 msgid ""
 "`Python Memory Management Part 2 <https://www.evanjones.ca/python-memory-"
 "part2.html>`_"
-msgstr ""
-"`Python Memory Management Part 2 <http://www.evanjones.ca/python-memory-"
-"part2.html>`_"
+msgstr "`Python Memory Management Part 2 <https://www.evanjones.ca/python-memory-part2.html>`_"
 
 #: ../../topics/leaks.rst:261
-#, fuzzy
-#| msgid ""
-#| "`Python Memory Management Part 3 <http://www.evanjones.ca/python-memory-"
-#| "part3.html>`_"
 msgid ""
 "`Python Memory Management Part 3 <https://www.evanjones.ca/python-memory-"
 "part3.html>`_"
-msgstr ""
-"`Python Memory Management Part 3 <http://www.evanjones.ca/python-memory-"
-"part3.html>`_"
+msgstr "`Python Memory Management Part 3 <https://www.evanjones.ca/python-memory-part3.html>`_"
 
 #: ../../topics/leaks.rst:263
 msgid ""
@@ -531,39 +414,3 @@ msgstr ""
 "メモリ消費を適切に保つために、ジョブをいくつかの小さなジョブに分割するか、 :"
 "ref:`永続ジョブ・キュー<topics-jobs>` を有効にして、スパイダーを時々停止/開始"
 "できます。"
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
-
-#~ msgid "Debugging memory leaks with Guppy"
-#~ msgstr "Guppyを使ってメモリ・リークをデバッグする"
-
-#~ msgid ""
-#~ "If you use ``pip``, you can install Guppy with the following command::"
-#~ msgstr "``pip`` を使用する場合、次のコマンドでGuppyをインストールできます::"
-
-#~ msgid ""
-#~ "The telnet console also comes with a built-in shortcut (``hpy``) for "
-#~ "accessing Guppy heap objects. Here's an example to view all Python "
-#~ "objects available in the heap using Guppy::"
-#~ msgstr ""
-#~ "telnetコンソールには、グッピー・ヒープ・オブジェクトにアクセスするための組"
-#~ "み込みのショートカット( ``hpy`` )も付属しています。 Guppyを使用して、ヒー"
-#~ "プで使用可能なすべてのPythonオブジェクトを表示する例を次に示します::"
-
-#~ msgid ""
-#~ "You can see that most space is used by dicts. Then, if you want to see "
-#~ "from which attribute those dicts are referenced, you could do::"
-#~ msgstr ""
-#~ "ほとんどのスペースが辞書(dict)によって使用されていることがわかります。次"
-#~ "に、それらの辞書がどの属性から参照されているかを見たい場合は、以下のように"
-#~ "します::"
-
-#~ msgid ""
-#~ "As you can see, the Guppy module is very powerful but also requires some "
-#~ "deep knowledge about Python internals. For more info about Guppy, refer "
-#~ "to the `Guppy documentation`_."
-#~ msgstr ""
-#~ "ご覧のとおり、Guppyモジュールは非常に強力ですが、Python内部についての深い"
-#~ "知識も必要です。 グッピーの詳細については、 `Guppy documentation`_ を参照"
-#~ "してください。"

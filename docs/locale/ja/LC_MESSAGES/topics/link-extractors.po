@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-08 08:48+0900\n"
+"PO-Revision-Date: 2021-05-15 03:54+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../topics/link-extractors.rst:5
 msgid "Link Extractors"
-msgstr "リンク抽出器(extractor)"
+msgstr "リンク抽出器(link extractors)"
 
 #: ../../topics/link-extractors.rst:7
 msgid "A link extractor is an object that extracts links from responses."
-msgstr ""
+msgstr "リンク抽出器(link extractor)は、レスポンスからリンクを抽出するオブジェクトです。"
 
 #: ../../topics/link-extractors.rst:9
 msgid ""
@@ -33,13 +33,13 @@ msgid ""
 "extracted. :class:`LxmlLinkExtractor.extract_links <scrapy.linkextractors."
 "lxmlhtml.LxmlLinkExtractor.extract_links>` returns a list of matching :class:"
 "`~scrapy.link.Link` objects from a :class:`~scrapy.http.Response` object."
-msgstr ""
+msgstr ":class:`~scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor` の ``__init__`` メソッドは、抽出されるリンクを決める設定を取得します。 :class:`LxmlLinkExtractor.extract_links <scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor.extract_links>` は、 :class:`~scrapy.http.Response` オブジェクトからマッチする :class:`~scrapy.link.Link` オブジェクトのリストを返します。"
 
 #: ../../topics/link-extractors.rst:16
 msgid ""
 "Link extractors are used in :class:`~scrapy.spiders.CrawlSpider` spiders "
 "through a set of :class:`~scrapy.spiders.Rule` objects."
-msgstr ""
+msgstr "リンク抽出器は、 :class:`~scrapy.spiders.Rule` オブジェクトの組を介して :class:`~scrapy.spiders.CrawlSpider` スパイダー群で使用されます。"
 
 #: ../../topics/link-extractors.rst:19
 msgid ""
@@ -47,20 +47,18 @@ msgid ""
 "instantiate :class:`LinkExtractor <scrapy.linkextractors.lxmlhtml."
 "LxmlLinkExtractor>` into a class variable in your spider, and use it from "
 "your spider callbacks::"
-msgstr ""
+msgstr "あなたは、通常のスパイダーでリンク抽出器を使用することもできます。 たとえば、 :class:`LinkExtractor <scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor>` をスパイダーのクラス変数としてインスタンス化し、そしてそれをスパイダー・コールバックから使用します::"
 
 #: ../../topics/link-extractors.rst:30
-#, fuzzy
-#| msgid "Built-in link extractors reference"
 msgid "Link extractor reference"
-msgstr "組み込みリンク抽出器リファレンス"
+msgstr "リンク抽出器リファレンス"
 
 #: ../../topics/link-extractors.rst:35
 msgid ""
 "The link extractor class is :class:`scrapy.linkextractors.lxmlhtml."
 "LxmlLinkExtractor`. For convenience it can also be imported as ``scrapy."
 "linkextractors.LinkExtractor``::"
-msgstr ""
+msgstr "リンク抽出器クラスは :class:`scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor` です。 便宜上、 ``scrapy.linkextractors.LinkExtractor`` としてインポートすることもできます::"
 
 #: ../../topics/link-extractors.rst:42
 msgid "LxmlLinkExtractor"
@@ -77,7 +75,7 @@ msgstr ""
 #: ../../topics/link-extractors.rst:0 ../../../scrapy/link.py:docstring of
 #: scrapy.link.Link:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/link-extractors.rst:53
 msgid ""
@@ -89,12 +87,6 @@ msgstr ""
 "リスト)。指定しない場合(または空の場合)は、すべてのリンクに一致します。"
 
 #: ../../topics/link-extractors.rst:58
-#, fuzzy
-#| msgid ""
-#| "a single regular expression (or list of regular expressions) that the "
-#| "(absolute) urls must match in order to be excluded (ie. not extracted). "
-#| "It has precedence over the ``allow`` parameter. If not given (or empty) "
-#| "it won't exclude any links."
 msgid ""
 "a single regular expression (or list of regular expressions) that the "
 "(absolute) urls must match in order to be excluded (i.e. not extracted). It "
@@ -121,46 +113,18 @@ msgstr ""
 "リスト"
 
 #: ../../topics/link-extractors.rst:72
-#, fuzzy
-#| msgid ""
-#| "a single value or list of strings containing extensions that should be "
-#| "ignored when extracting links. If not given, it will default to the "
-#| "``IGNORED_EXTENSIONS`` list defined in the `scrapy.linkextractors`_ "
-#| "package."
-msgid ""
-"a single value or list of strings containing extensions that should be "
-"ignored when extracting links. If not given, it will default to :data:"
-"`scrapy.linkextractors.IGNORED_EXTENSIONS`.  .. versionchanged:: 2.0    :"
-"data:`~scrapy.linkextractors.IGNORED_EXTENSIONS` now includes    ``7z``, "
-"``7zip``, ``apk``, ``bz2``, ``cdr``, ``dmg``, ``ico``,    ``iso``, ``tar``, "
-"``tar.gz``, ``webm``, and ``xz``."
-msgstr ""
-"リンクを抽出するときに無視される拡張子を含む単一の値または文字列のリスト。 指"
-"定しない場合、 `scrapy.linkextractors`_ パッケージで定義された "
-"``IGNORED_EXTENSIONS`` リストがデフォルトになります。"
-
-#: ../../topics/link-extractors.rst:72
-#, fuzzy
-#| msgid ""
-#| "a single value or list of strings containing extensions that should be "
-#| "ignored when extracting links. If not given, it will default to the "
-#| "``IGNORED_EXTENSIONS`` list defined in the `scrapy.linkextractors`_ "
-#| "package."
 msgid ""
 "a single value or list of strings containing extensions that should be "
 "ignored when extracting links. If not given, it will default to :data:"
 "`scrapy.linkextractors.IGNORED_EXTENSIONS`."
-msgstr ""
-"リンクを抽出するときに無視される拡張子を含む単一の値または文字列のリスト。 指"
-"定しない場合、 `scrapy.linkextractors`_ パッケージで定義された "
-"``IGNORED_EXTENSIONS`` リストがデフォルトになります。"
+msgstr "リンクを抽出するときに無視する必要がある拡張子を含む単一の値または文字列のリスト。 指定しない場合、デフォルトで :data:`scrapy.linkextractors.IGNORED_EXTENSIONS` になります。"
 
 #: ../../topics/link-extractors.rst:77
 msgid ""
 ":data:`~scrapy.linkextractors.IGNORED_EXTENSIONS` now includes ``7z``, "
 "``7zip``, ``apk``, ``bz2``, ``cdr``, ``dmg``, ``ico``, ``iso``, ``tar``, "
 "``tar.gz``, ``webm``, and ``xz``."
-msgstr ""
+msgstr ":data:`~scrapy.linkextractors.IGNORED_EXTENSIONS` は、現在は以下を含んでいます ``7z`` 、 ``7zip`` 、 ``apk`` 、 ``bz2`` 、 ``cdr`` 、 ``dmg`` 、 ``ico`` 、 ``iso`` 、 ``tar`` 、 ``tar.gz`` 、 ``webm`` 、 ``xz``"
 
 #: ../../topics/link-extractors.rst:83
 msgid ""
@@ -283,117 +247,51 @@ msgstr ""
 msgid ""
 "Returns a list of :class:`~scrapy.link.Link` objects from the specified :"
 "class:`response <scrapy.http.Response>`."
-msgstr ""
+msgstr "指定された :class:`response <scrapy.http.Response>` から :class:`~scrapy.link.Link` オブジェクトのリストを返します。"
 
 #: ../../../scrapy/linkextractors/lxmlhtml.py:docstring of
 #: scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor.extract_links:4
 msgid ""
 "Only links that match the settings passed to the ``__init__`` method of the "
 "link extractor are returned."
-msgstr ""
+msgstr "リンク抽出器の ``__init__`` メソッドに渡された設定にマッチするリンクのみが返されます。"
 
 #: ../../../scrapy/linkextractors/lxmlhtml.py:docstring of
 #: scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor.extract_links:7
 msgid "Duplicate links are omitted."
-msgstr ""
+msgstr "重複するリンクは省略されます。"
 
 #: ../../topics/link-extractors.rst:156
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 #: ../../../scrapy/link.py:docstring of scrapy.link.Link:1
 msgid "Link objects represent an extracted link by the LinkExtractor."
-msgstr ""
+msgstr "Linkオブジェクトは、LinkExtractorによって抽出されたリンクを表します。"
 
 #: ../../../scrapy/link.py:docstring of scrapy.link.Link:3
 msgid "Using the anchor tag sample below to illustrate the parameters::"
-msgstr ""
+msgstr "以下のアンカー・タグの例にてパラメータを説明します::"
 
 #: ../../../scrapy/link.py:docstring of scrapy.link.Link:7
 msgid ""
 "the absolute url being linked to in the anchor tag. From the sample, this is "
 "``https://example.com/nofollow.html``."
-msgstr ""
+msgstr "アンカー・タグでリンクされている絶対URL。 例では、 ``https://example.com/nofollow.html`` の部分です。"
 
 #: ../../../scrapy/link.py:docstring of scrapy.link.Link:10
 msgid ""
 "the text in the anchor tag. From the sample, this is ``Dont follow this "
 "one``."
-msgstr ""
+msgstr "アンカー・タグのテキスト。 例では ``Dont follow this one`` の部分です。"
 
 #: ../../../scrapy/link.py:docstring of scrapy.link.Link:12
 msgid ""
 "the part of the url after the hash symbol. From the sample, this is ``foo``."
-msgstr ""
+msgstr "ハッシュ記号の後のURLの部分。 例では ``foo`` の部分です。"
 
 #: ../../../scrapy/link.py:docstring of scrapy.link.Link:14
 msgid ""
 "an indication of the presence or absence of a nofollow value in the ``rel`` "
 "attribute of the anchor tag."
-msgstr ""
-
-#~ msgid ""
-#~ "Link extractors are objects whose only purpose is to extract links from "
-#~ "web pages (:class:`scrapy.http.Response` objects) which will be "
-#~ "eventually followed."
-#~ msgstr ""
-#~ "リンク抽出器(link extractor)は、最終的に追跡されるWebページ( :class:"
-#~ "`scrapy.http.Response` オブジェクト)からリンクを抽出することを唯一の目的と"
-#~ "するオブジェクトです。"
-
-#~ msgid ""
-#~ "There is ``scrapy.linkextractors.LinkExtractor`` available in Scrapy, but "
-#~ "you can create your own custom Link Extractors to suit your needs by "
-#~ "implementing a simple interface."
-#~ msgstr ""
-#~ "Scrapyには ``scrapy.linkextractors.LinkExtractor`` がありますが、シンプル"
-#~ "なインターフェースを実装することで、ニーズに合わせて独自のカスタム・リンク"
-#~ "抽出器を作成できます。"
-
-#~ msgid ""
-#~ "The only public method that every link extractor has is "
-#~ "``extract_links``, which receives a :class:`~scrapy.http.Response` object "
-#~ "and returns a list of :class:`scrapy.link.Link` objects. Link extractors "
-#~ "are meant to be instantiated once and their ``extract_links`` method "
-#~ "called several times with different responses to extract links to follow."
-#~ msgstr ""
-#~ "すべてのリンク抽出器が持つ唯一のパブリック・メソッドは ``extract_links`` "
-#~ "で、これは :class:`~scrapy.http.Response` オブジェクトを受け取り、 :class:"
-#~ "`scrapy.link.Link` オブジェクトのリストを返します。リンク抽出器は一度イン"
-#~ "スタンス化され、それらの ``extract_links`` メソッドが異なるレスポンスで数"
-#~ "回呼び出されて、追跡するリンクを抽出します。"
-
-#~ msgid ""
-#~ "Link extractors are used in the :class:`~scrapy.spiders.CrawlSpider` "
-#~ "class (available in Scrapy), through a set of rules, but you can also use "
-#~ "it in your spiders, even if you don't subclass from :class:`~scrapy."
-#~ "spiders.CrawlSpider`, as its purpose is very simple: to extract links."
-#~ msgstr ""
-#~ "リンク抽出器は、(Scrapyに用意されている) :class:`~scrapy.spiders."
-#~ "CrawlSpider` クラスで一連のルールを介して使用されますが、 :class:`~scrapy."
-#~ "spiders.CrawlSpider` サブクラスを作成しなくても、スパイダーでも使用できま"
-#~ "す。"
-
-#~ msgid ""
-#~ "Link extractors classes bundled with Scrapy are provided in the :mod:"
-#~ "`scrapy.linkextractors` module."
-#~ msgstr ""
-#~ "Scrapyに同梱されているリンク抽出器クラスは、 :mod:`scrapy.linkextractors` "
-#~ "モジュールで提供されます。"
-
-#~ msgid ""
-#~ "The default link extractor is ``LinkExtractor``, which is the same as :"
-#~ "class:`~.LxmlLinkExtractor`::"
-#~ msgstr ""
-#~ "デフォルトのリンク抽出器は ``LinkExtractor`` で、これは :class:`~."
-#~ "LxmlLinkExtractor` と同じです::"
-
-#~ msgid ""
-#~ "There used to be other link extractor classes in previous Scrapy "
-#~ "versions, but they are deprecated now."
-#~ msgstr ""
-#~ "以前のScrapyバージョンには他のリンク抽出器クラスがありましたが、現在は廃止"
-#~ "されています。"
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
+msgstr "アンカー・タグの ``rel`` 属性にnofollow値が存在するかどうかを示します。"
