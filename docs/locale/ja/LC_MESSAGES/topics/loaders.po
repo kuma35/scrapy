@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-05-15 04:37+0900\n"
+"PO-Revision-Date: 2021-05-16 05:20+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -61,21 +61,20 @@ msgid ""
 "Item Loaders are an extension of the itemloaders_ library that make it "
 "easier to work with Scrapy by adding support for :ref:`responses <topics-"
 "request-response>`."
-msgstr ""
+msgstr "アイテム・ローダーは itemloaders_ ライブラリの拡張であり、 :ref:`レスポンス <topics-request-response>` へのサポートを追加して、Scrapyの操作をさらに簡単にします。"
 
 #: ../../topics/loaders.rst:28
 msgid "Using Item Loaders to populate items"
 msgstr "アイテムを格納するためにアイテム・ローダーを使う"
 
 #: ../../topics/loaders.rst:30
-#, fuzzy
 msgid ""
 "To use an Item Loader, you must first instantiate it. You can either "
 "instantiate it with an :ref:`item object <topics-items>` or without one, in "
 "which case an :ref:`item object <topics-items>` is automatically created in "
 "the Item Loader ``__init__`` method using the :ref:`item <topics-items>` "
 "class specified in the :attr:`ItemLoader.default_item_class` attribute."
-msgstr "アイテム・ローダーを使用するには、最初にインスタンス化する必要があります。 あなたは :ref:`アイテム・オブジェクト <topics-items>` を使用して、または使用せずにインスタンス化することができます。使用せずにインスタンス化する場合、:ref:`アイテム・オブジェクト<topics-items>` はアイテム・ローダーの ``__init__``メソッド内で、 :attr:`ItemLoader.default_item_class` 属性で指定された :ref:`アイテム <topics-items>` を使用して自動的に生成されます。"
+msgstr "アイテム・ローダーを使用するには、最初にインスタンス化する必要があります。 あなたは :ref:`アイテム・オブジェクト <topics-items>` を使用して、または使用せずにインスタンス化することができます。使用せずにインスタンス化する場合、:ref:`アイテム・オブジェクト<topics-items>` はアイテム・ローダーの ``__init__`` メソッド内で、 :attr:`ItemLoader.default_item_class` 属性で指定された :ref:`アイテム <topics-items>` を使用して自動的に生成されます。"
 
 #: ../../topics/loaders.rst:36
 msgid ""
@@ -95,7 +94,7 @@ msgid ""
 "to the same field. If an ``item`` argument is passed when creating a loader, "
 "each of the item's values will be stored as-is if it's already an iterable, "
 "or wrapped with a list if it's a single value."
-msgstr ""
+msgstr "収集されたデータはリストとして内部に保存され、同じフィールドに複数の値を追加できます。 ローダーの作成時に ``item`` 引数が渡された場合、アイテムの各値は、既に反復可能(iterable)である場合はそのまま保存され、単一の値の場合はリストで包まれます。"
 
 #: ../../topics/loaders.rst:47
 msgid ""
@@ -159,7 +158,7 @@ msgstr ""
 
 #: ../../topics/loaders.rst:87
 msgid "Working with dataclass items"
-msgstr ""
+msgstr "dataclassアイテムの操作"
 
 #: ../../topics/loaders.rst:89
 msgid ""
@@ -169,13 +168,13 @@ msgid ""
 "fields will be populated incrementally using the loader's :meth:`~ItemLoader."
 "add_xpath`, :meth:`~ItemLoader.add_css` and :meth:`~ItemLoader.add_value` "
 "methods."
-msgstr ""
+msgstr "デフォルトでは、 :ref:`dataclassアイテム <dataclass-items>` では、作成時にすべてのフィールドを渡す必要があります。これは、アイテム・ローダーでdataclassアイテムを使用するときに問題になる可能性があります。アイテム・ローダーでは、事前入力されたアイテムがローダーに渡されない場合、各フィールドはローダーの :meth:`~ItemLoader.add_xpath` と :meth:`~ItemLoader.add_css` と :meth:`~ItemLoader.add_value` メソッドを使用して段階的に入力されるためです。"
 
 #: ../../topics/loaders.rst:95
 msgid ""
 "One approach to overcome this is to define items using the :func:"
 "`~dataclasses.field` function, with a ``default`` argument::"
-msgstr ""
+msgstr "これを克服するための1つのアプローチは、 ``default`` 引数を指定して :func:`~dataclasses.field` 関数を使用してアイテムを定義することです。"
 
 #: ../../topics/loaders.rst:111
 msgid "Input and Output processors"
@@ -277,7 +276,7 @@ msgstr "プロセッサは、パース対象のデータとともに呼び出さ
 
 #: ../../topics/loaders.rst:167
 msgid "Processors no longer need to be methods."
-msgstr ""
+msgstr "プロセッサはもはやメソッドである必要はありません。"
 
 #: ../../topics/loaders.rst:170
 msgid ""
@@ -303,7 +302,6 @@ msgstr ""
 "集され、出力プロセッサに渡されてフィールドに入力されることです。"
 
 #: ../../topics/loaders.rst:180
-#, fuzzy
 msgid ""
 "Last, but not least, itemloaders_ comes with some :ref:`commonly used "
 "processors <itemloaders:built-in-processors>` built-in for convenience."
@@ -430,16 +428,10 @@ msgstr ""
 "context` 属性)を変更する::"
 
 #: ../../topics/loaders.rst:286
-#, fuzzy
-#| msgid ""
-#| "On Item Loader instantiation (the keyword arguments of Item Loader "
-#| "constructor are stored in the Item Loader context)::"
 msgid ""
 "On Item Loader instantiation (the keyword arguments of Item Loader "
 "``__init__`` method are stored in the Item Loader context)::"
-msgstr ""
-"アイテム・ローダーのインスタンス化時(アイテム・ローダー・コンストラクターの"
-"キーワード引数は、アイテム・ローダー・コンテキストに保存されます)::"
+msgstr "アイテム・ローダーのインスタンス化時(アイテムローダーの ``__init __`` メソッドのキーワード引数はアイテム・ローダーのコンテキストに格納されます)::"
 
 #: ../../topics/loaders.rst:291
 msgid ""
@@ -554,7 +546,7 @@ msgstr ""
 
 #: ../../topics/loaders.rst:395
 msgid "And that's how you typically extend input processors."
-msgstr "そして、それは、入力プロセッサを拡張する典型的な方法です。"
+msgstr "これは入力プロセッサを拡張する典型的な方法です。"
 
 #: ../../topics/loaders.rst:397
 msgid ""
