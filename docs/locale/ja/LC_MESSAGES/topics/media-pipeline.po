@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-02 16:22+0900\n"
+"PO-Revision-Date: 2021-05-21 08:15+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -29,12 +29,7 @@ msgid ""
 "pipelines share a bit of functionality and structure (we refer to them as "
 "media pipelines), but typically you'll either use the Files Pipeline or the "
 "Images Pipeline."
-msgstr ""
-"Scrapyは、特定のアイテムに添付されたファイルをダウンロードするための再利用可"
-"能な :doc:`アイテム・パイプライン</topics/item-pipeline>` を提供します(たとえ"
-"ば、製品をスクレイピングし、画像をローカルにダウンロードする場合)。 これらの"
-"パイプラインは少しの機能と構造を共有します(媒体パイプラインと呼びます)が、通"
-"常はファイル・パイプラインまたは画像パイプラインを使用します。"
+msgstr "Scrapyは、特定のアイテムに添付されたファイルをダウンロードするための再利用可能な :doc:`アイテム・パイプライン</topics/item-pipeline>` を提供します(たとえば、製品をスクレイピングし、画像をローカルにダウンロードする場合)。 これらのパイプラインは少しの機能と構造を共有します(メディア・パイプラインと呼びます)が、通常はファイル・パイプラインまたは画像パイプラインを使用します。"
 
 #: ../../topics/media-pipeline.rst:15
 msgid "Both pipelines implement these features:"
@@ -45,16 +40,10 @@ msgid "Avoid re-downloading media that was downloaded recently"
 msgstr "最近ダウンロードした媒体の再ダウンロードを避ける"
 
 #: ../../topics/media-pipeline.rst:18
-#, fuzzy
-#| msgid ""
-#| "Specifying where to store the media (filesystem directory, Amazon S3 "
-#| "bucket, Google Cloud Storage bucket)"
 msgid ""
 "Specifying where to store the media (filesystem directory, FTP server, "
 "Amazon S3 bucket, Google Cloud Storage bucket)"
-msgstr ""
-"メディアの保存場所の指定(ファイル・システム・ディレクトリ、Amazon S3バケッ"
-"ト、Google Cloud Storageバケット)"
+msgstr "メディアの保存場所の指定(ファイル・システム・ディレクトリ、FTPサーバ、Amazon S3バケット、Google Cloud Storageバケット)"
 
 #: ../../topics/media-pipeline.rst:21
 msgid "The Images Pipeline has a few extra functions for processing images:"
@@ -127,16 +116,6 @@ msgstr ""
 "イン・ステージでロックされたままになります。"
 
 #: ../../topics/media-pipeline.rst:50
-#, fuzzy
-#| msgid ""
-#| "When the files are downloaded, another field (``files``) will be "
-#| "populated with the results. This field will contain a list of dicts with "
-#| "information about the downloaded files, such as the downloaded path, the "
-#| "original scraped url (taken from the ``file_urls`` field) , and the file "
-#| "checksum. The files in the list of the ``files`` field will retain the "
-#| "same order of the original ``file_urls`` field. If some file failed "
-#| "downloading, an error will be logged and the file won't be present in the "
-#| "``files`` field."
 msgid ""
 "When the files are downloaded, another field (``files``) will be populated "
 "with the results. This field will contain a list of dicts with information "
@@ -146,14 +125,7 @@ msgid ""
 "same order of the original ``file_urls`` field. If some file failed "
 "downloading, an error will be logged and the file won't be present in the "
 "``files`` field."
-msgstr ""
-"ファイルがダウンロードされると、別のフィールド( ``files`` )に結果が入力されま"
-"す。このフィールドには、ダウンロードしたパス、スクレイプされた元の"
-"URL( ``file_urls`` フィールドから取得)や、ファイルのチェックサムのような、ダ"
-"ウンロードしたファイルに関する情報を含む辞書のリストが含まれます。 ``files`` "
-"フィールドのリストにあるファイルは、 元の ``file_urls`` フィールドと同じ順序"
-"を保持します。ファイルのダウンロードに失敗した場合、エラーがログに記録され、"
-"ファイルは ``files`` フィールドに存在しません。"
+msgstr "ファイルがダウンロードされると、別のフィールド( ``files`` )に結果が入力されます。このフィールドには、ダウンロードしたパスと、スクレイプされた元のURL( ``file_urls`` フィールドから取得)と、ファイルのチェックサムと、ファイルのステータス、のような、ダウンロードしたファイルに関する情報を含む辞書(dict)のリストが含まれます。 ``files`` フィールドのリストにあるファイルは、 元の ``file_urls`` フィールドと同じ順序を保持します。ファイルのダウンロードに失敗した場合、エラーがログに記録され、ファイルは ``files`` フィールドに存在しません。"
 
 #: ../../topics/media-pipeline.rst:62
 msgid "Using the Images Pipeline"
@@ -184,19 +156,18 @@ msgstr ""
 msgid ""
 "The Images Pipeline requires Pillow_ 4.0.0 or greater. It is used for "
 "thumbnailing and normalizing images to JPEG/RGB format."
-msgstr ""
+msgstr "画像パイプラインには Pillow_ 4.0.0 以降が必要です。 これは、画像のサムネイル化と JPEG/RGB 形式への正規化に使用されます。"
 
+# 「メディア」か「媒体」か悩ましいところ。mediaはmediumの複数形。媒体よりメディアの方が含意が広いかな？ということで「メディア」とする。
 #: ../../topics/media-pipeline.rst:82
 msgid "Enabling your Media Pipeline"
-msgstr "あなたの媒体パイプラインを有効にする"
+msgstr "あなたのメディア・パイプラインを有効にする"
 
 #: ../../topics/media-pipeline.rst:87
 msgid ""
 "To enable your media pipeline you must first add it to your project :setting:"
 "`ITEM_PIPELINES` setting."
-msgstr ""
-"媒体パイプラインを有効にするには、まずプロジェクトに :setting:"
-"`ITEM_PIPELINES` 設定を追加する必要があります。"
+msgstr "メディア・パイプラインを有効にするには、まずプロジェクトに :setting:`ITEM_PIPELINES` 設定を追加する必要があります。"
 
 #: ../../topics/media-pipeline.rst:90
 msgid "For Images Pipeline, use::"
@@ -276,67 +247,44 @@ msgstr ""
 "レクトリです。詳細は :ref:`topics-images-thumbnails` を参照。"
 
 #: ../../topics/media-pipeline.rst:145
-#, fuzzy
-#| msgid "File system storage"
 msgid "FTP server storage"
-msgstr "ファイル・システム・ストレージ"
+msgstr "FTPサーバ・ストレージ"
 
 #: ../../topics/media-pipeline.rst:149
-#, fuzzy
-#| msgid ""
-#| ":setting:`FILES_STORE` and :setting:`IMAGES_STORE` can represent an "
-#| "Amazon S3 bucket. Scrapy will automatically upload the files to the "
-#| "bucket."
 msgid ""
 ":setting:`FILES_STORE` and :setting:`IMAGES_STORE` can point to an FTP "
 "server. Scrapy will automatically upload the files to the server."
-msgstr ""
-":setting:`FILES_STORE` と :setting:`IMAGES_STORE` はAmazon S3バケットを表すこ"
-"とができます。 Scrapyは自動的にファイルをバケットにアップロードします。"
+msgstr ":setting:`FILES_STORE` と :setting:`IMAGES_STORE` はFTPサーバを指し示すことができます。Scrapyはファイルをサーバーに自動的にアップロードします。"
 
 #: ../../topics/media-pipeline.rst:152
-#, fuzzy
-#| msgid ""
-#| ":setting:`FILES_STORE` and :setting:`IMAGES_STORE` can represent an "
-#| "Amazon S3 bucket. Scrapy will automatically upload the files to the "
-#| "bucket."
 msgid ""
 ":setting:`FILES_STORE` and :setting:`IMAGES_STORE` should be written in one "
 "of the following forms::"
-msgstr ""
-":setting:`FILES_STORE` と :setting:`IMAGES_STORE` はAmazon S3バケットを表すこ"
-"とができます。 Scrapyは自動的にファイルをバケットにアップロードします。"
+msgstr ":setting:`FILES_STORE` と :setting:`IMAGES_STORE` 以下のいずれかの形式で記述しなければなりません::"
 
 #: ../../topics/media-pipeline.rst:158
 msgid ""
 "If ``username`` and ``password`` are not provided, they are taken from the :"
 "setting:`FTP_USER` and :setting:`FTP_PASSWORD` settings respectively."
-msgstr ""
+msgstr "``username`` や ``password`` が指定されていない場合、それぞれ :setting:`FTP_USER` 設定や :setting:`FTP_PASSWORD` 設定から取得されます。"
 
 #: ../../topics/media-pipeline.rst:161
 msgid ""
 "FTP supports two different connection modes: active or passive. Scrapy uses "
 "the passive connection mode by default. To use the active connection mode "
 "instead, set the :setting:`FEED_STORAGE_FTP_ACTIVE` setting to ``True``."
-msgstr ""
+msgstr "FTPは、アクティブまたはパッシブの2つの異なる接続モードをサポートします。 Scrapyはデフォルトでパッシブ接続モードを使用します。 代わりにアクティブ接続モードを使用するには、 :setting:`FEED_STORAGE_FTP_ACTIVE` 設定を ``True`` に設定します。"
 
 #: ../../topics/media-pipeline.rst:168
 msgid "Amazon S3 storage"
 msgstr "Amazon S3 ストレージ"
 
 #: ../../topics/media-pipeline.rst:173
-#, fuzzy
-#| msgid ""
-#| ":setting:`FILES_STORE` and :setting:`IMAGES_STORE` can represent an "
-#| "Amazon S3 bucket. Scrapy will automatically upload the files to the "
-#| "bucket."
 msgid ""
 "If botocore_ >= 1.4.87 is installed, :setting:`FILES_STORE` and :setting:"
 "`IMAGES_STORE` can represent an Amazon S3 bucket. Scrapy will automatically "
 "upload the files to the bucket."
-msgstr ""
-":setting:`FILES_STORE` と :setting:`IMAGES_STORE` はAmazon S3バケットを表すこ"
-"とができます。 Scrapyは自動的にファイルをバケットにアップロードします。"
+msgstr "botocore_ 1.4.87 以上がインストールされていれば、:setting:`FILES_STORE` と :setting:`IMAGES_STORE` はAmazon S3バケットを表すことができます。 Scrapyは自動的にファイルをバケットにアップロードします。"
 
 #: ../../topics/media-pipeline.rst:177
 msgid "For example, this is a valid :setting:`IMAGES_STORE` value::"
@@ -361,21 +309,11 @@ msgstr ""
 "詳細については、Amazon S3開発者ガイドの `canned ACLs`_ を参照してください。"
 
 #: ../../topics/media-pipeline.rst:191
-#, fuzzy
-#| msgid ""
-#| "Because Scrapy uses ``boto`` / ``botocore`` internally you can also use "
-#| "other S3-like storages. Storages like self-hosted `Minio`_ or `s3."
-#| "scality`_. All you need to do is set endpoint option in you Scrapy "
-#| "settings::"
 msgid ""
 "You can also use other S3-like storages. Storages like self-hosted `Minio`_ "
 "or `s3.scality`_. All you need to do is set endpoint option in you Scrapy "
 "settings::"
-msgstr ""
-"Scrapyは ``boto`` /  ``botocore`` を内部で使用するため、他のS3のようなスト"
-"レージも使用できます。自己ホスト型の `Minio`_ や `s3.scality`_ のようなスト"
-"レージです。あなたがする必要があるのはあなたのScrapy設定でエンドポイント・オ"
-"プションを設定することです::"
+msgstr "あなたは他のS3のようなストレージも使用できます。自己ホスト型の `Minio`_ や `s3.scality`_ のようなストレージです。あなたがする必要があるのはScrapy設定でendpointオプションを設定することです::"
 
 #: ../../topics/media-pipeline.rst:197
 msgid ""
@@ -440,33 +378,18 @@ msgid "Usage example"
 msgstr "使用例"
 
 #: ../../topics/media-pipeline.rst:251
-#, fuzzy
-#| msgid ""
-#| "In order to use a media pipeline first, :ref:`enable it <topics-media-"
-#| "pipeline-enabling>`."
 msgid ""
 "In order to use a media pipeline, first :ref:`enable it <topics-media-"
 "pipeline-enabling>`."
-msgstr ""
-"媒体パイプラインを使用するには、まず、 :ref:`媒体パイプラインを有効にする"
-"<topics-media-pipeline-enabling>` を行います。"
+msgstr "メディア・パイプラインを使用するには、まず、 :ref:`メディア・パイプラインを有効にする<topics-media-pipeline-enabling>` を行います。"
 
 #: ../../topics/media-pipeline.rst:254
-#, fuzzy
-#| msgid ""
-#| "Then, if a spider returns a dict with the URLs key (``file_urls`` or "
-#| "``image_urls``, for the Files or Images Pipeline respectively), the "
-#| "pipeline will put the results under respective key (``files`` or "
-#| "``images``)."
 msgid ""
 "Then, if a spider returns an :ref:`item object <topics-items>` with the URLs "
 "field (``file_urls`` or ``image_urls``, for the Files or Images Pipeline "
 "respectively), the pipeline will put the results under the respective field "
 "(``files`` or ``images``)."
-msgstr ""
-"次に、スパイダーがURLキー(ファイルまたは画像パイプラインの場合はそれぞれ "
-"``file_urls`` または ``image_urls`` )を含む辞書を返すと、パイプラインは結果を"
-"それぞれのキー( ``files`` または ``images`` )の値として返します。"
+msgstr "次に、スパイダーがURLフィールド(``file_urls`` (ファイル・パイプラインの場合) または ``image_urls`` (画像パイプラインの場合)) を含む :ref:`アイテム・オブジェクト <topics-items>` を返すならば、そのパイプラインは結果をそれぞれのフィールド (``files`` または ``images``) の下に配置します。"
 
 #: ../../topics/media-pipeline.rst:259
 msgid ""
@@ -475,7 +398,7 @@ msgid ""
 "example, when using the images pipeline, items must define both the "
 "``image_urls`` and the ``images`` field. For instance, using the :class:"
 "`~scrapy.item.Item` class::"
-msgstr ""
+msgstr "フィールドが事前に定義されている :ref:`アイテム型 <item-types>` を使用する場合は、URLフィールドと結果フィールドの両方を定義する必要があります。 たとえば、画像パイプラインを使用する場合、アイテムは ``image_urls`` フィールドと ``images`` フィールドの両方を定義しなければなりません。 たとえば、 :class:`~scrapy.item.Item` クラスを使用します::"
 
 #: ../../topics/media-pipeline.rst:271
 msgid ""
@@ -667,18 +590,15 @@ msgstr "リダイレクトを許可する"
 msgid ""
 "By default media pipelines ignore redirects, i.e. an HTTP redirection to a "
 "media file URL request will mean the media download is considered failed."
-msgstr ""
-"デフォルトでは、媒体パイプラインはリダイレクトを無視します。つまり、媒体ア"
-"ファイルURLリクエストへのHTTPリダイレクトは、媒体のダウンロードが失敗したと見"
-"なされることを意味します。"
+msgstr "デフォルトでは、メディア・パイプラインはリダイレクトを無視します。つまり、メディア・ファイルURLリクエストへのHTTPリダイレクトは、メディアのダウンロードが失敗したと見なされることを意味します。"
 
 #: ../../topics/media-pipeline.rst:402
 msgid "To handle media redirections, set this setting to ``True``::"
-msgstr "媒体のリダイレクトを処理するには、この設定を ``True``  に設定します::"
+msgstr "メディアのリダイレクトを処理するには、この設定を ``True``  に設定します::"
 
 #: ../../topics/media-pipeline.rst:409
 msgid "Extending the Media Pipelines"
-msgstr "媒体パイプラインの拡張"
+msgstr "メディア・パイプラインの拡張"
 
 #: ../../topics/media-pipeline.rst:414
 msgid ""
@@ -698,19 +618,11 @@ msgstr ""
 "パスを返します。"
 
 #: ../../topics/media-pipeline.rst:424 ../../topics/media-pipeline.rst:563
-#, fuzzy
-#| msgid ""
-#| "In addition to ``response``, this method receives the original :class:"
-#| "`request <scrapy.Request>` and :class:`info <scrapy.pipelines.media."
-#| "MediaPipeline.SpiderInfo>`."
 msgid ""
 "In addition to ``response``, this method receives the original :class:"
 "`request <scrapy.Request>`, :class:`info <scrapy.pipelines.media."
 "MediaPipeline.SpiderInfo>` and :class:`item <scrapy.item.Item>`"
-msgstr ""
-"``response`` に加えて、このメソッドは元の :class:`request <scrapy.Request>` "
-"と :class:`info <scrapy.pipelines.media.MediaPipeline.SpiderInfo>` を受け取り"
-"ます。"
+msgstr "``response`` に加えて、このメソッドは元の :class:`request <scrapy.Request>` と :class:`info <scrapy.pipelines.media.MediaPipeline.SpiderInfo>` と :class:`item <scrapy.item.Item>` を受け取ります。"
 
 #: ../../topics/media-pipeline.rst:429 ../../topics/media-pipeline.rst:568
 msgid ""
@@ -734,7 +646,7 @@ msgstr ""
 msgid ""
 "Similarly, you can use the ``item`` to determine the file path based on some "
 "item property."
-msgstr ""
+msgstr "同様に、 ``item`` を使用して、アイテムのプロパティに基づいてファイル・パスを決定できます。"
 
 #: ../../topics/media-pipeline.rst:449 ../../topics/media-pipeline.rst:588
 msgid ""
@@ -746,7 +658,7 @@ msgstr ""
 
 #: ../../topics/media-pipeline.rst:452 ../../topics/media-pipeline.rst:591
 msgid "The *item* parameter."
-msgstr ""
+msgstr "*アイテム* パラメータ。"
 
 #: ../../topics/media-pipeline.rst:457
 msgid ""
@@ -778,18 +690,11 @@ msgstr ""
 "であり、何らかの理由で失敗した場合は ``False`` です"
 
 #: ../../topics/media-pipeline.rst:477
-#, fuzzy
-#| msgid ""
-#| "``file_info_or_error`` is a dict containing the following keys (if "
-#| "success is ``True``) or a `Twisted Failure`_ if there was a problem."
 msgid ""
 "``file_info_or_error`` is a dict containing the following keys (if success "
 "is ``True``) or a :exc:`~twisted.python.failure.Failure` if there was a "
 "problem."
-msgstr ""
-"``file_info_or_error`` は、(success ``True`` の場合)以下のキーを含む辞書で"
-"す。(success ``False`` の場合)問題が発生した場合は `Twisted Failure`_ を含み"
-"ます。"
+msgstr "``file_info_or_error`` は、(success ``True`` の場合)以下のキーを含む辞書です。問題が発生した場合は :exc:`~twisted.python.failure.Failure` です。"
 
 #: ../../topics/media-pipeline.rst:481
 msgid ""
@@ -812,27 +717,27 @@ msgstr "``checksum`` - 画像コンテンツのMD5ハッシュ(`MD5 hash`_)"
 
 #: ../../topics/media-pipeline.rst:490
 msgid "``status`` - the file status indication."
-msgstr ""
+msgstr "``status`` - ファイル・ステータスの表示。"
 
 #: ../../topics/media-pipeline.rst:494
 msgid "It can be one of the following:"
-msgstr ""
+msgstr "以下のいずれかになります:"
 
 #: ../../topics/media-pipeline.rst:496
 msgid "``downloaded`` - file was downloaded."
-msgstr ""
+msgstr "``downloaded`` - ダウンロードされたファイル。"
 
 #: ../../topics/media-pipeline.rst:497
 msgid ""
 "``uptodate`` - file was not downloaded, as it was downloaded recently, "
 "according to the file expiration policy."
-msgstr ""
+msgstr "``uptodate`` - それは最近ダウンロードされたことがあるため、ファイルの有効期限ポリシーに従って、ファイルはダウンロードされませんでした。"
 
 #: ../../topics/media-pipeline.rst:499
 msgid ""
 "``cached`` - file was already scheduled for download, by another item "
 "sharing the same file."
-msgstr ""
+msgstr "``cached`` - 同一のファイルを共有している別のアイテムによって、ファイルのダウンロードがすでにスケジュールされていました。"
 
 #: ../../topics/media-pipeline.rst:502
 msgid ""
@@ -938,54 +843,14 @@ msgid "Custom Images pipeline example"
 msgstr "カスタム画像パイプライン例"
 
 #: ../../topics/media-pipeline.rst:618
-#, fuzzy
-#| msgid ""
-#| "Here is a full example of the Images Pipeline whose methods are "
-#| "examplified above::"
 msgid ""
 "Here is a full example of the Images Pipeline whose methods are exemplified "
 "above::"
-msgstr ""
-"上記の例示されたメソッドでの画像パイプラインの完全な例を以下に示します::"
+msgstr "上記で例示されたメソッドについて、以下に画像パイプラインの完全な例を示します::"
 
 #: ../../topics/media-pipeline.rst:641
-#, fuzzy
-#| msgid ""
-#| "To enable your media pipeline you must first add it to your project :"
-#| "setting:`ITEM_PIPELINES` setting."
 msgid ""
 "To enable your custom media pipeline component you must add its class import "
 "path to the :setting:`ITEM_PIPELINES` setting, like in the following "
 "example::"
-msgstr ""
-"媒体パイプラインを有効にするには、まずプロジェクトに :setting:"
-"`ITEM_PIPELINES` 設定を追加する必要があります。"
-
-#~ msgid ""
-#~ "The Images Pipeline uses `Pillow`_ for thumbnailing and normalizing "
-#~ "images to JPEG/RGB format, so you need to install this library in order "
-#~ "to use it. `Python Imaging Library`_ (PIL) should also work in most "
-#~ "cases, but it is known to cause troubles in some setups, so we recommend "
-#~ "to use `Pillow`_ instead of PIL."
-#~ msgstr ""
-#~ "画像パイプラインは、画像をJPEG/RGB形式にサムネイル化および正規化するため"
-#~ "に  `Pillow`_ を使用するため、使用するにはこのライブラリをインストールする"
-#~ "必要があります。 `Python Imaging Library`_ (PIL)もほとんどの場合に動作する"
-#~ "はずですが、セットアップによっては問題を引き起こすことが知られているため、"
-#~ "PILの代わりに `Pillow`_ を使用することをお勧めします。"
-
-#~ msgid ""
-#~ "File system is currently the only officially supported storage, but there "
-#~ "are also support for storing files in `Amazon S3`_ and `Google Cloud "
-#~ "Storage`_."
-#~ msgstr ""
-#~ "現在、ファイル・システムは公式にサポートされている唯一のストレージです"
-#~ "が、 `Amazon S3`_ と `Google Cloud Storage`_ にファイルを保存することもサ"
-#~ "ポートされています。"
-
-#~ msgid ""
-#~ "If you prefer to use :class:`~.Item`, then define a custom item with the "
-#~ "necessary fields, like in this example for Images Pipeline::"
-#~ msgstr ""
-#~ ":class:`~.Item` を使用する場合は、以下のImages Pipelineの例のように、必要"
-#~ "なフィールドを持つカスタム・アイテムを定義します::"
+msgstr "カスタム・メディア・パイプライン・コンポーネントを有効にするには、以下例のように、クラス・インポート・パスを :setting:`ITEM_PIPELINES` 設定に追加する必要があります::"
