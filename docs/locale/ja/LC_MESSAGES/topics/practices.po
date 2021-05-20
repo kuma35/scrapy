@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-29 19:46+0900\n"
+"PO-Revision-Date: 2021-05-21 08:19+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: ../../topics/practices.rst:105
 msgid ":doc:`twisted:core/howto/reactor-basics`"
-msgstr ""
+msgstr ":doc:`twisted:core/howto/reactor-basics`"
 
 #: ../../topics/practices.rst:110
 msgid "Running multiple spiders in the same process"
@@ -293,19 +293,11 @@ msgstr ""
 "キシです。"
 
 #: ../../topics/practices.rst:245
-#, fuzzy
-#| msgid ""
-#| "use a highly distributed downloader that circumvents bans internally, so "
-#| "you can just focus on parsing clean pages. One example of such "
-#| "downloaders is `Crawlera`_"
 msgid ""
 "use a highly distributed downloader that circumvents bans internally, so you "
 "can just focus on parsing clean pages. One example of such downloaders is "
 "`Zyte Smart Proxy Manager`_"
-msgstr ""
-"内部的に禁止を回避する高度に分散されたダウンローダーを使用することで、クリー"
-"ンなページのパースに集中できます。そのようなダウンローダーの一例は "
-"`Crawlera`_ です"
+msgstr "内部的に禁止を回避する高度に分散されたダウンローダーを使用することで、クリーンなページのパースに集中できます。そのようなダウンローダーの一例は `Zyte Smart Proxy Manager`_ です"
 
 #: ../../topics/practices.rst:249
 msgid ""
@@ -314,6 +306,3 @@ msgid ""
 msgstr ""
 "それでもボットが禁止されるのを防ぐことができない場合は、(有償の)商用サポート"
 "(`commercial support`_)に連絡することを検討してください。"
-
-#~ msgid "`Twisted Reactor Overview`_."
-#~ msgstr "`Twisted Reactor Overview`_."
