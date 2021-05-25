@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-05-15 05:36+0900\n"
+"PO-Revision-Date: 2021-05-25 18:58+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -109,35 +109,35 @@ msgid ""
 "retrying of a request beyond the scenarios that :class:`~scrapy."
 "downloadermiddlewares.retry.RetryMiddleware` supports. (:issue:`3590`, :"
 "issue:`3685`, :issue:`4902`)"
-msgstr "新しい :func:`scrapy.downloadermiddlewares.retry.get_retry_request` 関数は、スパイダー・コールバックまたはミドルウェアから使用し、 :class:`~scrapy.downloadermiddlewares.retry.RetryMiddleware` がサポートするシナリオを超えたリクエストの再試行を処理できます。"
+msgstr "新 :func:`scrapy.downloadermiddlewares.retry.get_retry_request` 関数は、スパイダー・コールバックまたはミドルウェアから使用し、 :class:`~scrapy.downloadermiddlewares.retry.RetryMiddleware` がサポートするシナリオを超えたリクエストの再試行を処理できます。"
 
 #: ../../news.rst:57
 msgid ""
 "The new :class:`~scrapy.signals.headers_received` signal gives early access "
 "to response headers and allows :ref:`stopping downloads <topics-stop-"
 "response-download>`. (:issue:`1772`, :issue:`4897`)"
-msgstr ""
+msgstr "新 :class:`~scrapy.signals.headers_received` シグナルは、レスポンス・ヘッダーへの早期アクセスを提供し、 :ref:`ダウンロードの中止 <topics-stop-response-download>` を可能にします。 (:issue:`1772`, :issue:`4897`)"
 
 #: ../../news.rst:62
 msgid ""
 "The new :attr:`Response.protocol <scrapy.http.Response.protocol>` attribute "
 "gives access to the string that identifies the protocol used to download a "
 "response. (:issue:`4878`)"
-msgstr ""
+msgstr "新 new :attr:`Response.protocol <scrapy.http.Response.protocol>` 属性は、レスポンスのダウンロードに使用されるプロトコルを識別する文字列へのアクセスを提供します。 (:issue:`4878`)"
 
 #: ../../news.rst:66
 msgid ""
 ":ref:`Stats <topics-stats>` now include the following entries that indicate "
 "the number of successes and failures in storing :ref:`feeds <topics-feed-"
 "exports>`::"
-msgstr ""
+msgstr ":ref:`統計 <topics-stats>` には、 :ref:`フィード <topics-feed-exports>` の保存の成功と失敗の数を示す以下のエントリが含まれるようになりました::"
 
 #: ../../news.rst:73
 msgid ""
 "Where ``<storage type>`` is the feed storage backend class name, such as :"
 "class:`~scrapy.extensions.feedexport.FileFeedStorage` or :class:`~scrapy."
 "extensions.feedexport.FTPFeedStorage`."
-msgstr ""
+msgstr "ここで、 ``<storage type>`` は、 :class:`~scrapy.extensions.feedexport.FileFeedStorage` または :class:`~scrapy.extensions.feedexport.FTPFeedStorage` などのフィード・ストレージ・バックエンド・クラス名です。"
 
 #: ../../news.rst:77
 msgid "(:issue:`3947`, :issue:`4850`)"
@@ -149,7 +149,7 @@ msgid ""
 "middleware now logs ignored URLs with ``INFO`` :ref:`logging level <levels>` "
 "instead of ``DEBUG``, and it now includes the following entry into :ref:"
 "`stats <topics-stats>` to keep track of the number of ignored URLs::"
-msgstr ""
+msgstr ":class:`~scrapy.spidermiddlewares.urllength.UrlLengthMiddleware` スパイダー・ミドルウェアは、無視されたURLを ``DEBUG`` ではなく ``INFO`` :ref:`ログ・レベル <levels>` でログに記録するようになりました。また、無視されたURLの数を追跡するために :ref:`統計 <topics-stats>` に以下のエントリが含まれるようになりました::"
 
 #: ../../news.rst:87
 msgid "(:issue:`5036`)"
@@ -160,7 +160,7 @@ msgid ""
 "The :class:`~scrapy.downloadermiddlewares.httpcompression."
 "HttpCompressionMiddleware` downloader middleware now logs the number of "
 "decompressed responses and the total count of resulting bytes::"
-msgstr ""
+msgstr ":class:`~scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware` ダウンローダー・ミドルウェアは、解凍されたレスポンスの数と結果のバイトの総数をログに記録するようになりました::"
 
 #: ../../news.rst:97
 msgid "(:issue:`4797`, :issue:`4799`)"
@@ -181,14 +181,14 @@ msgid ""
 "Fixed installation on PyPy installing PyDispatcher in addition to "
 "PyPyDispatcher, which could prevent Scrapy from working depending on which "
 "package got imported. (:issue:`4710`, :issue:`4814`)"
-msgstr ""
+msgstr "PyPyDispatcherに加えてPyDispatcherをインストールする、PyPyのインストールを修正しました。これにより、インポートされたパッケージによってはScrapyが機能しなくなる可能性がありました。 (:issue:`4710`, :issue:`4814`)"
 
 #: ../../news.rst:107
 msgid ""
 "When inspecting a callback to check if it is a generator that also returns a "
 "value, an exception is no longer raised if the callback has a docstring with "
 "lower indentation than the following code. (:issue:`4477`, :issue:`4935`)"
-msgstr ""
+msgstr "コールバックを検査して、それが値も返すジェネレーターであるかどうかを確認するときに、コールバックに続くコードよりも低いインデントのdocstringが含まれている場合、例外が発生しなくなりました。(:issue:`4477`, :issue:`4935`)"
 
 #: ../../news.rst:112
 msgid ""
@@ -196,14 +196,14 @@ msgid ""
 "header is no longer omitted from responses when using the default, HTTP/1.1 "
 "download handler (see :setting:`DOWNLOAD_HANDLERS`). (:issue:`5009`, :issue:"
 "`5034`, :issue:`5045`, :issue:`5057`, :issue:`5062`)"
-msgstr ""
+msgstr "デフォルトの HTTP/1.1 ダウンロード・ハンドラーを使用する場合、 `Content-Length <https://tools.ietf.org/html/rfc2616#section-14.13>`_ ヘッダーがレスポンスから省略されなくなりました( :setting:`DOWNLOAD_HANDLERS` 参照)。 (:issue:`5009`, :issue:`5034`, :issue:`5045`, :issue:`5057`, :issue:`5062`)"
 
 #: ../../news.rst:117
 msgid ""
 "Setting the :reqmeta:`handle_httpstatus_all` request meta key to ``False`` "
 "now has the same effect as not setting it at all, instead of having the same "
 "effect as setting it to ``True``. (:issue:`3851`, :issue:`4694`)"
-msgstr ""
+msgstr ":reqmeta:`handle_httpstatus_all` リクエスト・メタ・キー を ``False`` に設定すると、 ``True`` に設定するのと同じ効果を持つ代わりに、まったく設定しないのと同じ効果があります。 (:issue:`3851`, :issue:`4694`)"
 
 #: ../../news.rst:124 ../../news.rst:468 ../../news.rst:604 ../../news.rst:769
 #: ../../news.rst:949 ../../news.rst:1258 ../../news.rst:1596
@@ -217,63 +217,63 @@ msgstr "文書"
 msgid ""
 "Added instructions to :ref:`install Scrapy in Windows using pip <intro-"
 "install-windows>`. (:issue:`4715`, :issue:`4736`)"
-msgstr ""
+msgstr "導入を追加 :ref:`pip を使用してWindowsにScrapyをインストール <intro-install-windows>` 。 (:issue:`4715`, :issue:`4736`)"
 
 #: ../../news.rst:130
 msgid ""
 "Logging documentation now includes :ref:`additional ways to filter logs "
 "<topics-logging-advanced-customization>`. (:issue:`4216`, :issue:`4257`, :"
 "issue:`4965`)"
-msgstr ""
+msgstr "「ロギング」に :ref:`ログをフィルタリングする追加の方法 <topics-logging-advanced-customization>` を追加しました。 (:issue:`4216`, :issue:`4257`, :issue:`4965`)"
 
 #: ../../news.rst:134
 msgid ""
 "Covered how to deal with long lists of allowed domains in the :ref:`FAQ "
 "<faq>`. (:issue:`2263`, :issue:`3667`)"
-msgstr ""
+msgstr ":ref:`FAQ <faq>` にて、許可されたドメインの長いリストを処理する方法についての説明を追加。 (:issue:`2263`, :issue:`3667`)"
 
 #: ../../news.rst:137
 msgid ""
 "Covered scrapy-bench_ in :ref:`benchmarking`. (:issue:`4996`, :issue:`5016`)"
-msgstr ""
+msgstr ":ref:`benchmarking` に scrapy-bench_ の説明を追加。 (:issue:`4996`, :issue:`5016`)"
 
 #: ../../news.rst:140
 msgid ""
 "Clarified that one :ref:`extension <topics-extensions>` instance is created "
 "per crawler. (:issue:`5014`)"
-msgstr ""
+msgstr "クローラーごとに1つの :ref:`extension <topics-extensions>` インスタンスが作成されることを明確にしました。 (:issue:`5014`)"
 
 #: ../../news.rst:144
 msgid ""
 "Fixed some errors in examples. (:issue:`4829`, :issue:`4830`, :issue:"
 "`4907`, :issue:`4909`, :issue:`5008`)"
-msgstr ""
+msgstr "例の中のいつくかのエラーを修正 (:issue:`4829`, :issue:`4830`, :issue:`4907`, :issue:`4909`, :issue:`5008`)"
 
 #: ../../news.rst:148
 msgid ""
 "Fixed some external links, typos, and so on. (:issue:`4892`, :issue:`4899`, :"
 "issue:`4936`, :issue:`4942`, :issue:`5005`, :issue:`5063`)"
-msgstr ""
+msgstr "一部の外部リンク、タイプミスなどを修正しました。 (:issue:`4892`, :issue:`4899`, :issue:`4936`, :issue:`4942`, :issue:`5005`, :issue:`5063`)"
 
 #: ../../news.rst:152
 msgid ""
 "The :ref:`list of Request.meta keys <topics-request-meta>` is now sorted "
 "alphabetically. (:issue:`5061`, :issue:`5065`)"
-msgstr ""
+msgstr ":ref:`list of Request.meta keys <topics-request-meta>` 今やアルファベット順にソートされています。 (:issue:`5061`, :issue:`5065`)"
 
 #: ../../news.rst:156
 msgid ""
 "Updated references to Scrapinghub, which is now called Zyte. (:issue:"
 "`4973`, :issue:`5072`)"
-msgstr ""
+msgstr "現在Zyteと呼ばれている Scrapinghub への参照を更新しました。 (:issue:`4973`, :issue:`5072`)"
 
 #: ../../news.rst:159
 msgid "Added a mention to contributors in the README. (:issue:`4956`)"
-msgstr ""
+msgstr "READMEの寄稿者への言及を追加しました。 (:issue:`4956`)"
 
 #: ../../news.rst:161
 msgid "Reduced the top margin of lists. (:issue:`4974`)"
-msgstr ""
+msgstr "リストの上部マージンを減らしました。 (:issue:`4974`)"
 
 # QA,QC,監査と絡むらしくてややこしそうだが、品質保証で良いようである。
 #: ../../news.rst:165
@@ -286,7 +286,7 @@ msgstr "公式に Python3.9 をサポートしました( :issue:`4757` 、 :issu
 
 #: ../../news.rst:169
 msgid "Extended typing hints (:issue:`4895`)"
-msgstr ""
+msgstr "タイピングのヒント(typing hints)の拡張 (:issue:`4895`)"
 
 #: ../../news.rst:171
 msgid ""
@@ -297,29 +297,29 @@ msgstr "TwistedAPIの非推奨の使用を修正しました。 (:issue:`4940`, 
 #: ../../news.rst:174
 msgid ""
 "Made our tests run with the new pip resolver. (:issue:`4710`, :issue:`4814`)"
-msgstr ""
+msgstr "新しい pip リゾルバーでテストを実行しました。 (:issue:`4710`, :issue:`4814`)"
 
 #: ../../news.rst:177
 msgid ""
 "Added tests to ensure that :ref:`coroutine support <coroutine-support>` is "
 "tested. (:issue:`4987`)"
-msgstr ""
+msgstr ":ref:`coroutine support <coroutine-support>` がテストされていることを確認するためのテストが追加されました。 (:issue:`4987`)"
 
 #: ../../news.rst:180
 msgid "Migrated from Travis CI to GitHub Actions. (:issue:`4924`)"
-msgstr ""
+msgstr "Travis CI から GitHub Actions に移行しました。 (:issue:`4924`)"
 
 #: ../../news.rst:182
 msgid ""
 "Fixed CI issues. (:issue:`4986`, :issue:`5020`, :issue:`5022`, :issue:"
 "`5027`, :issue:`5052`, :issue:`5053`)"
-msgstr ""
+msgstr "CIの問題を修正しました。 (:issue:`4986`, :issue:`5020`, :issue:`5022`, :issue:`5027`, :issue:`5052`, :issue:`5053`)"
 
 #: ../../news.rst:186
 msgid ""
 "Implemented code refactorings, style fixes and cleanups. (:issue:`4911`, :"
 "issue:`4982`, :issue:`5001`, :issue:`5002`, :issue:`5076`)"
-msgstr ""
+msgstr "コードのリファクタリング、スタイルの修正、クリーンアップを実装しました。 (:issue:`4911`, :issue:`4982`, :issue:`5001`, :issue:`5002`, :issue:`5076`)"
 
 #: ../../news.rst:193
 msgid "Scrapy 2.4.1 (2020-11-17)"
