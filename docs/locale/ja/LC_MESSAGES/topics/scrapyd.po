@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the Scrapy package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Scrapy 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-04-18 16:06+0900\n"
+"PO-Revision-Date: 2021-05-29 07:36+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -20,17 +19,17 @@ msgstr ""
 
 #: ../../topics/scrapyd.rst:7
 msgid "Scrapyd"
-msgstr ""
+msgstr "Scrapyd"
 
 #: ../../topics/scrapyd.rst:9
 msgid "Scrapyd has been moved into a separate project."
-msgstr ""
+msgstr "Scrapyd は別のプロジェクトに移動されました。"
 
 #: ../../topics/scrapyd.rst:11
 msgid "Its documentation is now hosted at:"
-msgstr ""
+msgstr "文書は現在、以下の場所でホストされています:"
 
 #: ../../topics/scrapyd.rst:13
 msgid "https://scrapyd.readthedocs.io/en/latest/"
-msgstr ""
+msgstr "https://scrapyd.readthedocs.io/en/latest/"
 
