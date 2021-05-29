@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-24 12:56+0900\n"
+"PO-Revision-Date: 2021-05-30 04:48+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.7.0\n"
 
+# セレクタではなくセレクターに統一。クラスタと間違いそうだし？
 #: ../../topics/selectors.rst:5
 msgid "Selectors"
 msgstr "セレクター"
@@ -43,18 +44,11 @@ msgstr ""
 "いマークアップも合理的に処理しますが、1つの欠点があります。遅いんです。"
 
 #: ../../topics/selectors.rst:16
-#, fuzzy
-#| msgid ""
-#| "`lxml`_ is an XML parsing library (which also parses HTML) with a "
-#| "pythonic API based on `ElementTree`_. (lxml is not part of the Python "
-#| "standard library.)"
 msgid ""
 "`lxml`_ is an XML parsing library (which also parses HTML) with a pythonic "
 "API based on :mod:`~xml.etree.ElementTree`. (lxml is not part of the Python "
 "standard library.)"
-msgstr ""
-"`lxml`_ は、 `ElementTree`_ に基づいたPython APIを備えたXMLパースライブラリ"
-"(HTMLもパースします)です。(lxmlはPython標準ライブラリの一部ではありません。)"
+msgstr "`lxml`_ は、 :mod:`~xml.etree.ElementTree` に基づいたPython APIを備えたXMLパースライブラリ(HTMLもパースします)です。(lxmlはPython標準ライブラリの一部ではありません。)"
 
 #: ../../topics/selectors.rst:20
 msgid ""
@@ -106,87 +100,44 @@ msgid "Constructing selectors"
 msgstr "セレクターの構築"
 
 #: ../../topics/selectors.rst:51
-#, fuzzy
-#| msgid ""
-#| "Response objects expose a :class:`~scrapy.selector.Selector` instance on "
-#| "``.selector`` attribute::"
 msgid ""
 "Response objects expose a :class:`~scrapy.selector.Selector` instance on ``."
 "selector`` attribute:"
-msgstr ""
-"Responseオブジェクトは ``.selector`` 属性で :class:`~scrapy.selector."
-"Selector` インスタンスを公開します。::"
+msgstr "Responseオブジェクトは ``.selector`` 属性で :class:`~scrapy.selector.Selector` インスタンスを公開します:"
 
 #: ../../topics/selectors.rst:57
-#, fuzzy
-#| msgid ""
-#| "Querying responses using XPath and CSS is so common that responses "
-#| "include two more shortcuts: ``response.xpath()`` and ``response.css()``::"
 msgid ""
 "Querying responses using XPath and CSS is so common that responses include "
 "two more shortcuts: ``response.xpath()`` and ``response.css()``:"
-msgstr ""
-"XPathとCSSを使用したレスポンスのクエリは非常によく使われるので、レスポンスに"
-"はさらに2つのショートカットが含まれます。 ``response.xpath()`` と ``response."
-"css()`` です。::"
+msgstr "XPathとCSSを使用したレスポンスのクエリは非常によく使われるので、レスポンスにはさらに2つのショートカットが含まれます。 ``response.xpath()`` と ``response.css()`` です:"
 
 #: ../../topics/selectors.rst:65
 msgid ""
 "Scrapy selectors are instances of :class:`~scrapy.selector.Selector` class "
 "constructed by passing either :class:`~scrapy.http.TextResponse` object or "
 "markup as a string (in ``text`` argument)."
-msgstr ""
+msgstr "Scrapy セレクターは :class:`~scrapy.selector.Selector` クラスのインスタンスであり、 :class:`~scrapy.http.TextResponse` オブジェクトまたはマークアップを文字列( ``text`` 引数に)として渡すことによって構築されます。"
 
 #: ../../topics/selectors.rst:69
-#, fuzzy
-#| msgid ""
-#| "Scrapy selectors are instances of :class:`~scrapy.selector.Selector` "
-#| "class constructed by passing either :class:`~scrapy.http.TextResponse` "
-#| "object or markup as an unicode string (in ``text`` argument). Usually "
-#| "there is no need to construct Scrapy selectors manually: ``response`` "
-#| "object is available in Spider callbacks, so in most cases it is more "
-#| "convenient to use ``response.css()`` and ``response.xpath()`` shortcuts. "
-#| "By using ``response.selector`` or one of these shortcuts you can also "
-#| "ensure the response body is parsed only once."
 msgid ""
 "Usually there is no need to construct Scrapy selectors manually: "
 "``response`` object is available in Spider callbacks, so in most cases it is "
 "more convenient to use ``response.css()`` and ``response.xpath()`` "
 "shortcuts. By using ``response.selector`` or one of these shortcuts you can "
 "also ensure the response body is parsed only once."
-msgstr ""
-"Scrapyセレクターは、 :class:`~scrapy.http.TextResponse` オブジェクトまたは"
-"Unicode文字列でマークアップを渡す(``text`` 引数で)ことで構築された :class:"
-"`~scrapy.selector.Selector` クラスのインスタンスです。通常、Scrapyセレクター"
-"を手動で作成する必要はありません。 ``response`` オブジェクトはSpiderコール"
-"バックで使用できるため、ほとんどの場合、 ``response.css()`` ショートカットと "
-"``response.xpath()`` ショートカットを使用する方が便利です。  ``response."
-"selector`` またはこれらのショートカットのいずれかを使用することで、レスポン"
-"ス・ボディが1回だけパースされることを確認することもできます。"
+msgstr "通常は Scrapy セレクターを手動で構築する必要はありません。 ``response`` オブジェクトはスパイダーのコールバックで利用できるので、ほとんどの場合、 ``response.css()`` と ``response.xpath()`` のショートカットを使うほうが便利です。 ``response.selector`` またはこれらのショートカットのいずれかを使用することで、レスポンスのボディが1回だけ解析されるようにすることもできます。"
 
 #: ../../topics/selectors.rst:75
-#, fuzzy
-#| msgid ""
-#| "But if required, it is possible to use ``Selector`` directly. "
-#| "Constructing from text::"
 msgid ""
 "But if required, it is possible to use ``Selector`` directly. Constructing "
 "from text:"
-msgstr ""
-"ただし、必要に応じて、セレクターを直接使用することができます。 テキストから構"
-"築する場合は以下です。::"
+msgstr "ただし、必要に応じて、セレクターを直接使用することができます。 テキストから構築する場合は以下です:"
 
 #: ../../topics/selectors.rst:83
-#, fuzzy
-#| msgid ""
-#| "Constructing from response - :class:`~scrapy.http.HtmlResponse` is one "
-#| "of :class:`~scrapy.http.TextResponse` subclasses::"
 msgid ""
 "Constructing from response - :class:`~scrapy.http.HtmlResponse` is one of :"
 "class:`~scrapy.http.TextResponse` subclasses:"
-msgstr ""
-"レスポンスから構築する場合、 :class:`~scrapy.http.HtmlResponse` は :class:"
-"`~scrapy.http.TextResponse` のサブクラスの1つです::"
+msgstr "レスポンスから構築する場合、 :class:`~scrapy.http.HtmlResponse` は :class:`~scrapy.http.TextResponse` のサブクラスの1つです:"
 
 #: ../../topics/selectors.rst:92
 msgid ""
@@ -234,29 +185,16 @@ msgid ""
 msgstr "HTMLを扱っているため、セレクターは自動的にHTMLパーサーを使用します。"
 
 #: ../../topics/selectors.rst:124
-#, fuzzy
-#| msgid ""
-#| "So, by looking at the :ref:`HTML code <topics-selectors-htmlcode>` of "
-#| "that page, let's construct an XPath for selecting the text inside the "
-#| "title tag::"
 msgid ""
 "So, by looking at the :ref:`HTML code <topics-selectors-htmlcode>` of that "
 "page, let's construct an XPath for selecting the text inside the title tag:"
-msgstr ""
-"それでは、そのページの :ref:`HTMLコード<topics-selectors-htmlcode>` を見て、"
-"タイトルタグ内のテキストを選択するためのXPathを作成しましょう。::"
+msgstr "それでは、そのページの :ref:`HTMLコード<topics-selectors-htmlcode>` を見て、タイトルタグ内のテキストを選択するためのXPathを作成しましょう:"
 
 #: ../../topics/selectors.rst:130
-#, fuzzy
-#| msgid ""
-#| "To actually extract the textual data, you must call the selector ``."
-#| "get()`` or ``.getall()`` methods, as follows::"
 msgid ""
 "To actually extract the textual data, you must call the selector ``.get()`` "
 "or ``.getall()`` methods, as follows:"
-msgstr ""
-"テキストデータを実際に抽出するには、次のようにセレクタ ``.get()`` または ``."
-"getall()`` メソッドを呼び出す必要があります。::"
+msgstr "テキストデータを実際に抽出するには、次のようにセレクターの ``.get()`` または ``.getall()`` メソッドを呼び出す必要があります:"
 
 #: ../../topics/selectors.rst:138
 msgid ""
@@ -269,53 +207,28 @@ msgstr ""
 "getall()`` はすべての結果を含むリストを返します。"
 
 #: ../../topics/selectors.rst:142
-#, fuzzy
-#| msgid ""
-#| "Notice that CSS selectors can select text or attribute nodes using CSS3 "
-#| "pseudo-elements::"
 msgid ""
 "Notice that CSS selectors can select text or attribute nodes using CSS3 "
 "pseudo-elements:"
-msgstr ""
-"CSSセレクターは、CSS3疑似要素を使用してテキストまたは属性ノードを選択できるこ"
-"とに注意してください。::"
+msgstr "CSSセレクターは、CSS3疑似要素を使用してテキストまたは属性ノードを選択できることに注意してください:"
 
 #: ../../topics/selectors.rst:148
-#, fuzzy
-#| msgid ""
-#| "As you can see, ``.xpath()`` and ``.css()`` methods return a :class:"
-#| "`~scrapy.selector.SelectorList` instance, which is a list of new "
-#| "selectors. This API can be used for quickly selecting nested data::"
 msgid ""
 "As you can see, ``.xpath()`` and ``.css()`` methods return a :class:`~scrapy."
 "selector.SelectorList` instance, which is a list of new selectors. This API "
 "can be used for quickly selecting nested data:"
-msgstr ""
-"あなたがご覧のとおり、 ``.xpath()`` と ``.css()`` メソッドは :class:`~scrapy."
-"selector.SelectorList` のインスタンスを返します。これは新しいセレクターのリス"
-"トです。 このAPIは、ネストされたデータをすばやく選択するために使用できま"
-"す。::"
+msgstr "あなたがご覧のとおり、 ``.xpath()`` と ``.css()`` メソッドは :class:`~scrapy.selector.SelectorList` のインスタンスを返します。これは新しいセレクターのリストです。 このAPIは、ネストされたデータをすばやく選択するために使用できます:"
 
 #: ../../topics/selectors.rst:159
-#, fuzzy
-#| msgid ""
-#| "If you want to extract only the first matched element, you can call the "
-#| "selector ``.get()`` (or its alias ``.extract_first()`` commonly used in "
-#| "previous Scrapy versions)::"
 msgid ""
 "If you want to extract only the first matched element, you can call the "
 "selector ``.get()`` (or its alias ``.extract_first()`` commonly used in "
 "previous Scrapy versions):"
-msgstr ""
-"あなたが最初に一致した要素のみを抽出したい場合は、セレクタ ``.get()`` (または"
-"以前のScrapyバージョンで一般的に使用されていたエイリアス ``."
-"extract_first()`` )を呼び出すことができます。::"
+msgstr "あなたが最初に一致した要素のみを抽出したい場合は、セレクターの ``.get()`` (または以前のScrapyバージョンで一般的に使用されていたエイリアス ``.extract_first()`` )を呼び出すことができます:"
 
 #: ../../topics/selectors.rst:166
-#, fuzzy
-#| msgid "It returns ``None`` if no element was found::"
 msgid "It returns ``None`` if no element was found:"
-msgstr "要素が見つからなかった場合は ``None`` を返します。::"
+msgstr "要素が見つからなかった場合は ``None`` を返します:"
 
 #: ../../topics/selectors.rst:171
 msgid ""
@@ -325,49 +238,27 @@ msgstr ""
 "``None`` の代わりに使用されるデフォルトの戻り値を引数として提供できます。:"
 
 #: ../../topics/selectors.rst:177
-#, fuzzy
-#| msgid ""
-#| "Instead of using e.g. ``'@src'`` XPath it is possible to query for "
-#| "attributes using ``.attrib`` property of a :class:`~scrapy.selector."
-#| "Selector`::"
 msgid ""
 "Instead of using e.g. ``'@src'`` XPath it is possible to query for "
 "attributes using ``.attrib`` property of a :class:`~scrapy.selector."
 "Selector`:"
-msgstr ""
-"例えば ``'@src'`` のようなXPathを使用する代わりに、 :class:`~scrapy.selector."
-"Selector` の ``.attrib`` プロパティを使用して属性を問い合わせることができま"
-"す。::"
+msgstr "例えば ``'@src'`` のようなXPathを使用する代わりに、 :class:`~scrapy.selector.Selector` の ``.attrib`` プロパティを使用して属性を問い合わせることができます:"
 
 #: ../../topics/selectors.rst:187
-#, fuzzy
-#| msgid ""
-#| "As a shortcut, ``.attrib`` is also available on SelectorList directly; it "
-#| "returns attributes for the first matching element::"
 msgid ""
 "As a shortcut, ``.attrib`` is also available on SelectorList directly; it "
 "returns attributes for the first matching element:"
-msgstr ""
-"ショートカットとして、 ``.attrib`` はSelectorListでも直接利用できます。 最初"
-"に一致する要素の属性を返します。::"
+msgstr "ショートカットとして、 ``.attrib`` はSelectorListでも直接利用できます。 最初に一致する要素の属性を返します:"
 
 #: ../../topics/selectors.rst:193
-#, fuzzy
-#| msgid ""
-#| "This is most useful when only a single result is expected, e.g. when "
-#| "selecting by id, or selecting unique elements on a web page::"
 msgid ""
 "This is most useful when only a single result is expected, e.g. when "
 "selecting by id, or selecting unique elements on a web page:"
-msgstr ""
-"これは、単一の結果のみが予想される場合に最も役立ちます。例えばIDで選択する場"
-"合、またはWebページ上の一意の要素を選択する場合。::"
+msgstr "これは、単一の結果のみが予想される場合に最も役立ちます。例えばIDで選択する場合、またはWebページ上の一意の要素を選択する場合:"
 
 #: ../../topics/selectors.rst:199
-#, fuzzy
-#| msgid "Now we're going to get the base URL and some image links::"
 msgid "Now we're going to get the base URL and some image links:"
-msgstr "今や、私たちは、ベースURLといくつかの画像リンクを取得します。::"
+msgstr "今や、私たちは、ベースURLといくつかの画像リンクを取得します:"
 
 #: ../../topics/selectors.rst:241
 msgid "Extensions to CSS Selectors"
@@ -410,60 +301,33 @@ msgid "Examples:"
 msgstr "例:"
 
 #: ../../topics/selectors.rst:261
-#, fuzzy
-#| msgid ""
-#| "``title::text`` selects children text nodes of a descendant ``<title>`` "
-#| "element::"
 msgid ""
 "``title::text`` selects children text nodes of a descendant ``<title>`` "
 "element:"
-msgstr "``title::text`` は ``<title>`` の子孫のテキストノードを選択します。::"
+msgstr "``title::text`` は ``<title>`` の子孫のテキストノードを選択します:"
 
 #: ../../topics/selectors.rst:266
-#, fuzzy
-#| msgid ""
-#| "``*::text`` selects all descendant text nodes of the current selector "
-#| "context::"
 msgid ""
 "``*::text`` selects all descendant text nodes of the current selector "
 "context:"
-msgstr ""
-"``*::text`` は、現在のセレクターコンテキストの全ての子孫テキストノードを選択"
-"します。::"
+msgstr "``*::text`` は、現在のセレクターコンテキストの全ての子孫テキストノードを選択します:"
 
 #: ../../topics/selectors.rst:281
-#, fuzzy
-#| msgid ""
-#| "``foo::text`` returns no results if ``foo`` element exists, but contains "
-#| "no text (i.e. text is empty)::"
 msgid ""
 "``foo::text`` returns no results if ``foo`` element exists, but contains no "
 "text (i.e. text is empty):"
-msgstr ""
-"``foo::text`` は、 ``foo`` 要素が存在するが、テキストを含まない場合(つまり、"
-"テキストが空の場合)の場合、結果を返しません。"
+msgstr "``foo::text`` は、 ``foo`` 要素が存在するが、テキストを含まない場合(つまり、テキストが空の場合)の場合、結果を返しません:"
 
 #: ../../topics/selectors.rst:287
-#, fuzzy
-#| msgid ""
-#| "This means ``.css('foo::text').get()`` could return None even if an "
-#| "element exists. Use ``default=''`` if you always want a string::"
 msgid ""
 "This means ``.css('foo::text').get()`` could return None even if an element "
 "exists. Use ``default=''`` if you always want a string:"
-msgstr ""
-"つまり、 ``.css('foo::text').get()`` は、要素が存在する場合でもNoneを返す可能"
-"性があることを意味します。 常に文字列が必要な場合は ``default=''`` 引数を使用"
-"してください。::"
+msgstr "つまり、 ``.css('foo::text').get()`` は、要素が存在する場合でもNoneを返す可能性があることを意味します。 常に文字列が必要な場合は ``default=''`` 引数を使用してください:"
 
 #: ../../topics/selectors.rst:294
-#, fuzzy
-#| msgid ""
-#| "``a::attr(href)`` selects the *href* attribute value of descendant links::"
 msgid ""
 "``a::attr(href)`` selects the *href* attribute value of descendant links:"
-msgstr ""
-"``a::attr(href)`` は、リンクにぶら下がってる *href* 属性値を選択します。::"
+msgstr "``a::attr(href)`` は、リンクにぶら下がってる *href* 属性値を選択します:"
 
 #: ../../topics/selectors.rst:304 ../../topics/selectors.rst:930
 #: ../../topics/selectors.rst:970
@@ -485,34 +349,21 @@ msgid "Nesting selectors"
 msgstr "セレクターを入れ子にする"
 
 #: ../../topics/selectors.rst:318
-#, fuzzy
-#| msgid ""
-#| "The selection methods (``.xpath()`` or ``.css()``) return a list of "
-#| "selectors of the same type, so you can call the selection methods for "
-#| "those selectors too. Here's an example::"
 msgid ""
 "The selection methods (``.xpath()`` or ``.css()``) return a list of "
 "selectors of the same type, so you can call the selection methods for those "
 "selectors too. Here's an example:"
-msgstr ""
-"選択メソッド(``.xpath()`` または ``.css()``)は同じタイプのセレクターのリスト"
-"を返すため、これらのセレクターの選択メソッドも呼び出すことができます。 以下に"
-"例を示します。::"
+msgstr "選択メソッド(``.xpath()`` または ``.css()``)は同じタイプのセレクターのリストを返すため、これらのセレクターの選択メソッドも呼び出すことができます。 以下に例を示します:"
 
 #: ../../topics/selectors.rst:343
 msgid "Selecting element attributes"
 msgstr "要素属性の選択"
 
 #: ../../topics/selectors.rst:345
-#, fuzzy
-#| msgid ""
-#| "There are several ways to get a value of an attribute. First, one can use "
-#| "XPath syntax::"
 msgid ""
 "There are several ways to get a value of an attribute. First, one can use "
 "XPath syntax:"
-msgstr ""
-"属性の値を取得する方法はいくつかあります。 まず、XPath構文を使用できます。::"
+msgstr "属性の値を取得する方法はいくつかあります。 まず、XPath構文を使用できます:"
 
 #: ../../topics/selectors.rst:351
 msgid ""
@@ -525,103 +376,54 @@ msgstr ""
 "ることが可能です。"
 
 #: ../../topics/selectors.rst:355
-#, fuzzy
-#| msgid ""
-#| "Scrapy also provides an extension to CSS selectors (``::attr(...)``) "
-#| "which allows to get attribute values::"
 msgid ""
 "Scrapy also provides an extension to CSS selectors (``::attr(...)``) which "
 "allows to get attribute values:"
-msgstr ""
-"Scrapyは、属性値を取得できるCSSセレクター(``::attr(...)``)の拡張機能も提供し"
-"ます。::"
+msgstr "Scrapyは、属性値を取得できるCSSセレクター(``::attr(...)``)の拡張機能も提供します:"
 
 #: ../../topics/selectors.rst:361
-#, fuzzy
-#| msgid ""
-#| "In addition to that, there is a ``.attrib`` property of Selector. You can "
-#| "use it if you prefer to lookup attributes in Python code, without using "
-#| "XPaths or CSS extensions::"
 msgid ""
 "In addition to that, there is a ``.attrib`` property of Selector. You can "
 "use it if you prefer to lookup attributes in Python code, without using "
 "XPaths or CSS extensions:"
-msgstr ""
-"それに加えて、Selectorの ``.attrib`` プロパティがあります。 XPathまたはCSS拡"
-"張機能を使用せずに、Pythonコードで属性を検索する場合に使用できます。::"
+msgstr "それに加えて、Selectorの ``.attrib`` プロパティがあります。 XPathまたはCSS拡張機能を使用せずに、Pythonコードで属性を検索する場合に使用できます:"
 
 #: ../../topics/selectors.rst:368
-#, fuzzy
-#| msgid ""
-#| "This property is also available on SelectorList; it returns a dictionary "
-#| "with attributes of a first matching element. It is convenient to use when "
-#| "a selector is expected to give a single result (e.g. when selecting by "
-#| "element ID, or when selecting an unique element on a page)::"
 msgid ""
 "This property is also available on SelectorList; it returns a dictionary "
 "with attributes of a first matching element. It is convenient to use when a "
 "selector is expected to give a single result (e.g. when selecting by element "
 "ID, or when selecting an unique element on a page):"
-msgstr ""
-"このプロパティはSelectorListでも使用できます。 最初に一致した要素の属性を持つ"
-"辞書を返します。 セレクターが単一の結果を返すと予想される場合(たとえば、要素"
-"IDで選択する場合、またはページ上の一意の要素を選択する場合)に使用すると便利で"
-"す。::"
+msgstr "このプロパティはSelectorListでも使用できます。 最初に一致した要素の属性を持つ辞書を返します。 セレクターが単一の結果を返すと予想される場合(たとえば、要素IDで選択する場合、またはページ上の一意の要素を選択する場合)に使用すると便利です:"
 
 #: ../../topics/selectors.rst:378
-#, fuzzy
-#| msgid "``.attrib`` property of an empty SelectorList is empty::"
 msgid "``.attrib`` property of an empty SelectorList is empty:"
-msgstr "空のSelectorListの ``.attrib`` プロパティは空です。::"
+msgstr "空のSelectorListの ``.attrib`` プロパティは空です:"
 
 #: ../../topics/selectors.rst:384
 msgid "Using selectors with regular expressions"
 msgstr "セレクターで正規表現を使う"
 
 #: ../../topics/selectors.rst:386
-#, fuzzy
-#| msgid ""
-#| ":class:`~scrapy.selector.Selector` also has a ``.re()`` method for "
-#| "extracting data using regular expressions. However, unlike using ``."
-#| "xpath()`` or ``.css()`` methods, ``.re()`` returns a list of unicode "
-#| "strings. So you can't construct nested ``.re()`` calls."
 msgid ""
 ":class:`~scrapy.selector.Selector` also has a ``.re()`` method for "
 "extracting data using regular expressions. However, unlike using ``."
 "xpath()`` or ``.css()`` methods, ``.re()`` returns a list of strings. So you "
 "can't construct nested ``.re()`` calls."
-msgstr ""
-":class:`~scrapy.selector.Selector` には、正規表現を使用してデータを抽出する "
-"``.re()`` メソッドもあります。 ただし、 ``.xpath()`` または ``.css()`` メソッ"
-"ドを使用するのとは異なり、 ``.re()`` はUnicode文字列のリストを返します。 した"
-"がって、ネストした ``.re()`` 呼び出しを構築することはできません。"
+msgstr ":class:`~scrapy.selector.Selector` には、正規表現を使用してデータを抽出する ``.re()`` メソッドもあります。 ただし、 ``.xpath()`` または ``.css()`` メソッドを使用するのとは異なり、 ``.re()`` は文字列のリストを返します。 したがって、ネストした ``.re()`` 呼び出しを構築することはできません。"
 
 #: ../../topics/selectors.rst:391
-#, fuzzy
-#| msgid ""
-#| "Here's an example used to extract image names from the :ref:`HTML code "
-#| "<topics-selectors-htmlcode>` above::"
 msgid ""
 "Here's an example used to extract image names from the :ref:`HTML code "
 "<topics-selectors-htmlcode>` above:"
-msgstr ""
-"上記の :ref:`HTMLコード<topics-selectors-htmlcode>` から画像名を抽出する例を"
-"次に示します。::"
+msgstr "上記の :ref:`HTMLコード<topics-selectors-htmlcode>` から画像名を抽出する例を次に示します:"
 
 #: ../../topics/selectors.rst:401
-#, fuzzy
-#| msgid ""
-#| "There's an additional helper reciprocating ``.get()`` (and its alias ``."
-#| "extract_first()``) for ``.re()``, named ``.re_first()``. Use it to "
-#| "extract just the first matching string::"
 msgid ""
 "There's an additional helper reciprocating ``.get()`` (and its alias ``."
 "extract_first()``) for ``.re()``, named ``.re_first()``. Use it to extract "
 "just the first matching string:"
-msgstr ""
-"``.re()`` のために ``.get()`` (およびそのエイリアス ``.extract_first()``)に対"
-"応する追加のヘルパーがあり、名前は ``.re_first()`` です。 これを使用して、最"
-"初に一致する文字列のみを抽出します。::"
+msgstr "``.re()`` のために ``.get()`` (およびそのエイリアス ``.extract_first()``)に対応する追加のヘルパーがあり、名前は ``.re_first()`` です。 これを使用して、最初に一致する文字列のみを抽出します:"
 
 #: ../../topics/selectors.rst:411
 msgid "extract() and extract_first()"
@@ -656,34 +458,21 @@ msgstr ""
 "す。"
 
 #: ../../topics/selectors.rst:424
-#, fuzzy
-#| msgid ""
-#| "``SelectorList.get()`` is the same as ``SelectorList.extract_first()``::"
 msgid "``SelectorList.get()`` is the same as ``SelectorList.extract_first()``:"
-msgstr ""
-"``SelectorList.get()`` は ``SelectorList.extract_first()`` と同じです::"
+msgstr "``SelectorList.get()`` は ``SelectorList.extract_first()`` と同じです:"
 
 #: ../../topics/selectors.rst:431
-#, fuzzy
-#| msgid ""
-#| "``SelectorList.getall()`` is the same as ``SelectorList.extract()``::"
 msgid "``SelectorList.getall()`` is the same as ``SelectorList.extract()``:"
-msgstr "``SelectorList.getall()`` は ``SelectorList.extract()`` と同じです::"
+msgstr "``SelectorList.getall()`` は ``SelectorList.extract()`` と同じです:"
 
 #: ../../topics/selectors.rst:438
-#, fuzzy
-#| msgid "``Selector.get()`` is the same as ``Selector.extract()``::"
 msgid "``Selector.get()`` is the same as ``Selector.extract()``:"
-msgstr "``Selector.get()`` は ``Selector.extract()`` と同じです::"
+msgstr "``Selector.get()`` は ``Selector.extract()`` と同じです:"
 
 #: ../../topics/selectors.rst:445
-#, fuzzy
-#| msgid ""
-#| "For consistency, there is also ``Selector.getall()``, which returns a "
-#| "list::"
 msgid ""
 "For consistency, there is also ``Selector.getall()``, which returns a list:"
-msgstr "一貫性のために、リストを返す ``Selector.getall()`` もあります::"
+msgstr "一貫性のために、リストを返す ``Selector.getall()`` もあります:"
 
 #: ../../topics/selectors.rst:450
 msgid ""
@@ -716,11 +505,8 @@ msgstr ""
 "す。 XPathにまだ慣れていない場合は、まず、 `XPath tutorial`_ をご覧ください。"
 
 #: ../../topics/selectors.rst:467
-#, fuzzy
-#| msgid "Some of the tips are based on `this post from ScrapingHub's blog`_."
 msgid "Some of the tips are based on `this post from Zyte's blog`_."
-msgstr ""
-"いくつかのヒントは `this post from ScrapingHub's blog`_ に基づいています。"
+msgstr "いくつかのヒントは `this post from Zyte's blog`_ に基づいています。"
 
 #: ../../topics/selectors.rst:476
 msgid "Working with relative XPaths"
@@ -737,51 +523,26 @@ msgstr ""
 "してください。"
 
 #: ../../topics/selectors.rst:482
-#, fuzzy
-#| msgid ""
-#| "For example, suppose you want to extract all ``<p>`` elements inside "
-#| "``<div>`` elements. First, you would get all ``<div>`` elements::"
 msgid ""
 "For example, suppose you want to extract all ``<p>`` elements inside "
 "``<div>`` elements. First, you would get all ``<div>`` elements:"
-msgstr ""
-"たとえば、 ``<div>`` 要素内のすべての ``<p>`` 要素を抽出するとします。最初"
-"に、すべての ``<div>`` 要素を取得します::"
+msgstr "たとえば、 ``<div>`` 要素内のすべての ``<p>`` 要素を抽出するとします。最初に、すべての ``<div>`` 要素を取得します:"
 
 #: ../../topics/selectors.rst:487
-#, fuzzy
-#| msgid ""
-#| "At first, you may be tempted to use the following approach, which is "
-#| "wrong, as it actually extracts all ``<p>`` elements from the document, "
-#| "not only those inside ``<div>`` elements::"
 msgid ""
 "At first, you may be tempted to use the following approach, which is wrong, "
 "as it actually extracts all ``<p>`` elements from the document, not only "
 "those inside ``<div>`` elements:"
-msgstr ""
-"最初は、以下のアプローチを使用したくなるかもしれませんが、実際には ``<div>`` "
-"要素内の要素だけでなく、ドキュメント内すべての ``<p>`` 要素を抽出するため、間"
-"違っています::"
+msgstr "最初は、以下のアプローチを使用したくなるかもしれませんが、実際には ``<div>`` 要素内の要素だけでなく、ドキュメント内すべての ``<p>`` 要素を抽出するため、間違っています:"
 
-# 文脈からして原文がミスってるぽい。勝手に修正。 ``.//p`` → ``.``
 #: ../../topics/selectors.rst:494
-#, fuzzy
-#| msgid ""
-#| "This is the proper way to do it (note the dot prefixing the ``.//p`` "
-#| "XPath)::"
 msgid ""
 "This is the proper way to do it (note the dot prefixing the ``.//p`` XPath):"
-msgstr ""
-"以下が適切な方法です(XPathの先頭に ``.`` が付いていることに注意してくださ"
-"い)::"
+msgstr "以下が適切な方法です( ``.//p`` XPath のように先頭にドットが付いていることに注意してください):"
 
 #: ../../topics/selectors.rst:499
-#, fuzzy
-#| msgid ""
-#| "Another common case would be to extract all direct ``<p>`` children::"
 msgid "Another common case would be to extract all direct ``<p>`` children:"
-msgstr ""
-"もう一つの一般的なやり方は、すべての子 ``<p>`` を直接抽出することです::"
+msgstr "もう一つの一般的なやり方は、すべての子 ``<p>`` を直接抽出することです:"
 
 #: ../../topics/selectors.rst:504
 msgid ""
@@ -816,19 +577,11 @@ msgstr ""
 "要素が必要になる可能性があります。"
 
 #: ../../topics/selectors.rst:522
-#, fuzzy
-#| msgid ""
-#| "As it turns out, Scrapy selectors allow you to chain selectors, so most "
-#| "of the time you can just select by class using CSS and then switch to "
-#| "XPath when needed::"
 msgid ""
 "As it turns out, Scrapy selectors allow you to chain selectors, so most of "
 "the time you can just select by class using CSS and then switch to XPath "
 "when needed:"
-msgstr ""
-"この場合、Scrapyセレクターを使用するとセレクターをチェインできるため、ほとん"
-"どの場合、CSSを使用してクラスごとに選択し、それから必要に応じてXPathに切り替"
-"えることができます。::"
+msgstr "この場合、Scrapyセレクターを使用するとセレクターをチェインできるため、ほとんどの場合、CSSを使用してクラスごとに選択し、それから必要に応じてXPathに切り替えることができます:"
 
 #: ../../topics/selectors.rst:530
 msgid ""
@@ -859,45 +612,26 @@ msgstr ""
 "を取得します。"
 
 #: ../../topics/selectors.rst:540 ../../topics/selectors.rst:586
-#, fuzzy
-#| msgid "Example::"
 msgid "Example:"
-msgstr "例::"
+msgstr "例:"
 
 #: ../../topics/selectors.rst:556
-#, fuzzy
-#| msgid ""
-#| "This gets all first ``<li>``  elements under whatever it is its parent::"
 msgid "This gets all first ``<li>``  elements under whatever it is its parent:"
-msgstr ""
-"これは、``<li>`` 要素の親(parent)である全ての要素の子としてある、``<li>`` 要"
-"素達の最初のを取得します::"
+msgstr "これは、``<li>`` 要素の親(parent)である全ての要素の子としてある、``<li>`` 要素達の最初のを取得します:"
 
 #: ../../topics/selectors.rst:561
-#, fuzzy
-#| msgid "And this gets the first ``<li>``  element in the whole document::"
 msgid "And this gets the first ``<li>``  element in the whole document:"
-msgstr "ドキュメント全体の ``<li>`` 要素の最初のものを返します。::"
+msgstr "ドキュメント全体の ``<li>`` 要素の最初のものを返します:"
 
 #: ../../topics/selectors.rst:566
-#, fuzzy
-#| msgid "This gets all first ``<li>``  elements under an ``<ul>``  parent::"
 msgid "This gets all first ``<li>``  elements under an ``<ul>``  parent:"
-msgstr ""
-"これは `` <ul> `` の子に `` <li> `` があるパターン全てが対象となり、それぞれ"
-"での最初の``<li>`` 要素を取得します。::"
+msgstr "これは `` <ul> `` の子に `` <li> `` があるパターン全てが対象となり、それぞれでの最初の``<li>`` 要素を取得します:"
 
 #: ../../topics/selectors.rst:571
-#, fuzzy
-#| msgid ""
-#| "And this gets the first ``<li>``  element under an ``<ul>``  parent in "
-#| "the whole document::"
 msgid ""
 "And this gets the first ``<li>``  element under an ``<ul>``  parent in the "
 "whole document:"
-msgstr ""
-"ドキュメント全体の、 ``<ul>`` の子に ``<li>`` があるパターン全てが対象とな"
-"り、その中で、一番最初の ``<li>`` 要素を取得します::"
+msgstr "ドキュメント全体の、 ``<ul>`` の子に ``<li>`` があるパターン全てが対象となり、その中で、一番最初の ``<li>`` 要素を取得します:"
 
 #: ../../topics/selectors.rst:577
 msgid "Using text nodes in a condition"
@@ -926,38 +660,23 @@ msgstr ""
 "れるとき、最初の要素のテキストのみが渡されます。"
 
 #: ../../topics/selectors.rst:591
-#, fuzzy
-#| msgid "Converting a *node-set* to string::"
 msgid "Converting a *node-set* to string:"
-msgstr "*ノードセット* から文字列への変換::"
+msgstr "*ノードセット* から文字列への変換:"
 
 #: ../../topics/selectors.rst:598
-#, fuzzy
-#| msgid ""
-#| "A *node* converted to a string, however, puts together the text of itself "
-#| "plus of all its descendants::"
 msgid ""
 "A *node* converted to a string, however, puts together the text of itself "
 "plus of all its descendants:"
-msgstr ""
-"ただし、文字列に変換された *ノード* は、それ自体のテキストとそのすべての子孫"
-"のテキストを一緒にします。"
+msgstr "ただし、文字列に変換された *ノード* は、それ自体のテキストとそのすべての子孫のテキストを一緒にします:"
 
 #: ../../topics/selectors.rst:605
-#, fuzzy
-#| msgid ""
-#| "So, using the ``.//text()`` node-set won't select anything in this case::"
 msgid ""
 "So, using the ``.//text()`` node-set won't select anything in this case:"
-msgstr ""
-"したがって、 ``.//text()`` ノードセットを使用しても、この場合は何も選択されま"
-"せん::"
+msgstr "したがって、 ``.//text()`` ノードセットを使用しても、この場合は何も選択されません:"
 
 #: ../../topics/selectors.rst:610
-#, fuzzy
-#| msgid "But using the ``.`` to mean the node, works::"
 msgid "But using the ``.`` to mean the node, works:"
-msgstr "しかし、ノードを意味するために ``.`` を使用すると、動作します::"
+msgstr "しかし、ノードを意味するために ``.`` を使用すると、動作します:"
 
 #: ../../topics/selectors.rst:620
 msgid "Variables in XPath expressions"
@@ -977,40 +696,24 @@ msgstr ""
 "トメントに似ているところがあります。"
 
 #: ../../topics/selectors.rst:628
-#, fuzzy
-#| msgid ""
-#| "Here's an example to match an element based on its \"id\" attribute "
-#| "value, without hard-coding it (that was shown previously)::"
 msgid ""
 "Here's an example to match an element based on its \"id\" attribute value, "
 "without hard-coding it (that was shown previously):"
-msgstr ""
-"\"id\" 属性値に基づいて、ハードコーディングせずに要素をマッチする例を次に示し"
-"ます(ハードコーディングする例は前述しました)::"
+msgstr "\"id\" 属性値に基づいて、ハードコーディングせずに要素をマッチする例を次に示します(ハードコーディングする例は前述しました):"
 
 #: ../../topics/selectors.rst:635
-#, fuzzy
-#| msgid ""
-#| "Here's another example, to find the \"id\" attribute of a ``<div>`` tag "
-#| "containing five ``<a>`` children (here we pass the value ``5`` as an "
-#| "integer)::"
 msgid ""
 "Here's another example, to find the \"id\" attribute of a ``<div>`` tag "
 "containing five ``<a>`` children (here we pass the value ``5`` as an "
 "integer):"
-msgstr ""
-"別の例として、5つの子 ``<a>`` を含む ``<div>`` タグの \"id\" 属性を見つけます"
-"(ここでは整数として値 ``5`` を渡します)::"
+msgstr "別の例として、5つの子 ``<a>`` を含む ``<div>`` タグの \"id\" 属性を見つけます(ここでは整数として値 ``5`` を渡します):"
 
 #: ../../topics/selectors.rst:641
 msgid ""
 "All variable references must have a binding value when calling ``.xpath()`` "
 "(otherwise you'll get a ``ValueError: XPath error:`` exception). This is "
 "done by passing as many named arguments as necessary."
-msgstr ""
-" ``.xpath()`` を呼び出すときは、すべての変数参照にバインディング値が必要です"
-"(そうでない場合は ``ValueError: XPath error:`` 例外が発生します)。これは、必"
-"要な数の名前付き引数を渡すことで実行されます。"
+msgstr "``.xpath()`` を呼び出すときは、すべての変数参照にバインディング値が必要です(そうでない場合は ``ValueError: XPath error:`` 例外が発生します)。これは、必要な数の名前付き引数を渡すことで実行されます。"
 
 #: ../../topics/selectors.rst:645
 msgid ""
@@ -1060,29 +763,16 @@ msgstr ""
 "を確認できます。"
 
 #: ../../topics/selectors.rst:688
-#, fuzzy
-#| msgid ""
-#| "Once in the shell we can try selecting all ``<link>`` objects and see "
-#| "that it doesn't work (because the Atom XML namespace is obfuscating those "
-#| "nodes)::"
 msgid ""
 "Once in the shell we can try selecting all ``<link>`` objects and see that "
 "it doesn't work (because the Atom XML namespace is obfuscating those nodes):"
-msgstr ""
-"シェルに入ったら、すべての ``<link>`` オブジェクトを選択して、機能しないこと"
-"を確認できます(Atom XML名前空間がこれらのノードを難読化しているため)::"
+msgstr "シェルに入ったら、すべての ``<link>`` オブジェクトを選択して、機能しないことを確認できます(Atom XML名前空間がこれらのノードを難読化しているため):"
 
 #: ../../topics/selectors.rst:694
-#, fuzzy
-#| msgid ""
-#| "But once we call the :meth:`Selector.remove_namespaces` method, all nodes "
-#| "can be accessed directly by their names::"
 msgid ""
 "But once we call the :meth:`Selector.remove_namespaces` method, all nodes "
 "can be accessed directly by their names:"
-msgstr ""
-"しかし、一度、 :meth:`Selector.remove_namespaces` メソッドを呼び出すと、すべ"
-"てのノードに名前で直接アクセスできます::"
+msgstr "しかし、一度、 :meth:`Selector.remove_namespaces` メソッドを呼び出すと、すべてのノードに名前で直接アクセスできます:"
 
 #: ../../topics/selectors.rst:703
 msgid ""
@@ -1173,14 +863,10 @@ msgstr ""
 "``contains()`` が十分でない場合に非常に便利です。"
 
 #: ../../topics/selectors.rst:736
-#, fuzzy
-#| msgid ""
-#| "Example selecting links in list item with a \"class\" attribute ending "
-#| "with a digit::"
 msgid ""
 "Example selecting links in list item with a \"class\" attribute ending with "
 "a digit:"
-msgstr "数字で終わるクラス属性を持つリスト項目内のリンクを選択する例::"
+msgstr "数字で終わるクラス属性を持つリスト項目内のリンクを選択する例:"
 
 #: ../../topics/selectors.rst:756
 msgid ""
@@ -1207,10 +893,6 @@ msgstr ""
 "るのに便利です。"
 
 #: ../../topics/selectors.rst:767
-#, fuzzy
-#| msgid ""
-#| "Example extracting microdata (sample content taken from http://schema.org/"
-#| "Product) with groups of itemscopes and corresponding itemprops::"
 msgid ""
 "Example extracting microdata (sample content taken from https://schema.org/"
 "Product) with groups of itemscopes and corresponding itemprops::"
@@ -1245,10 +927,8 @@ msgid "For the following HTML::"
 msgstr "次のHTMLの場合::"
 
 #: ../../topics/selectors.rst:877
-#, fuzzy
-#| msgid "You can use it like this::"
 msgid "You can use it like this:"
-msgstr "あなたは以下のように使用できます::"
+msgstr "あなたは以下のように使用できます:"
 
 #: ../../topics/selectors.rst:887
 msgid ""
@@ -1296,7 +976,7 @@ msgstr "詳細は `in lxml documentation`_ を参照してください。"
 
 #: ../../topics/selectors.rst:902
 msgid "Built-in Selectors reference"
-msgstr "組み込みセレクタリファレンス"
+msgstr "組み込みセレクター・リファレンス"
 
 #: ../../topics/selectors.rst:908
 msgid "Selector objects"
@@ -1549,9 +1229,7 @@ msgstr ""
 msgid ""
 "This method is added to Selector for consistency; it is more useful with "
 "SelectorList. See also: :ref:`old-extraction-api`"
-msgstr ""
-"このメソッドは、一貫性のためにセレクタに追加されます。 SelectorListの方が便利"
-"です。 :ref:`old-extraction-api` 参照。"
+msgstr "このメソッドは、一貫性のためにセレクターに追加されます。 SelectorListの方が便利です。 :ref:`old-extraction-api` 参照。"
 
 #: ../../topics/selectors.rst:948
 msgid "SelectorList objects"
@@ -1670,10 +1348,6 @@ msgstr ""
 "インスタンス化された :class:`Selector` が既に存在すると仮定します::"
 
 #: ../../topics/selectors.rst:988
-#, fuzzy
-#| msgid ""
-#| "Select all ``<h1>`` elements from an HTML response body, returning a list "
-#| "of :class:`Selector` objects (ie. a :class:`SelectorList` object)::"
 msgid ""
 "Select all ``<h1>`` elements from an HTML response body, returning a list "
 "of :class:`Selector` objects (i.e. a :class:`SelectorList` object)::"
@@ -1682,16 +1356,10 @@ msgstr ""
 "オブジェクトのリスト(つまり、 :class:`SelectorList` オブジェクト)を返します::"
 
 #: ../../topics/selectors.rst:993
-#, fuzzy
-#| msgid ""
-#| "Extract the text of all ``<h1>`` elements from an HTML response body, "
-#| "returning a list of unicode strings::"
 msgid ""
 "Extract the text of all ``<h1>`` elements from an HTML response body, "
 "returning a list of strings::"
-msgstr ""
-"HTMLレスポンス・ボディのすべての ``<h1>`` 要素のテキストを抽出し、Unicode文字"
-"列のリストを返します::"
+msgstr "HTMLレスポンス・ボディのすべての ``<h1>`` 要素のテキストを抽出し、文字列のリストを返します::"
 
 #: ../../topics/selectors.rst:999
 msgid "Iterate over all ``<p>`` tags and print their class attribute::"
@@ -1710,10 +1378,6 @@ msgstr ""
 "`Selector` オブジェクトの概念を説明するための例をいくつか示します::"
 
 #: ../../topics/selectors.rst:1015
-#, fuzzy
-#| msgid ""
-#| "Select all ``<product>`` elements from an XML response body, returning a "
-#| "list of :class:`Selector` objects (ie. a :class:`SelectorList` object)::"
 msgid ""
 "Select all ``<product>`` elements from an XML response body, returning a "
 "list of :class:`Selector` objects (i.e. a :class:`SelectorList` object)::"
