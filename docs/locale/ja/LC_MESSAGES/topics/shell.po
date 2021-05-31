@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-10 11:08+0900\n"
+"PO-Revision-Date: 2021-06-01 08:52+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -86,13 +86,6 @@ msgstr ""
 "を使用しようとします。"
 
 #: ../../topics/shell.rst:34
-#, fuzzy
-#| msgid ""
-#| "Through scrapy's settings you can configure it to use any one of "
-#| "``ipython``, ``bpython`` or the standard ``python`` shell, regardless of "
-#| "which are installed. This is done by setting the ``SCRAPY_PYTHON_SHELL`` "
-#| "environment variable; or by defining it in your :ref:`scrapy.cfg <topics-"
-#| "config-settings>`::"
 msgid ""
 "Through Scrapy's settings you can configure it to use any one of "
 "``ipython``, ``bpython`` or the standard ``python`` shell, regardless of "
@@ -278,25 +271,13 @@ msgid "Example of shell session"
 msgstr "シェル セッション の例"
 
 #: ../../topics/shell.rst:145
-#, fuzzy
-#| msgid ""
-#| "Here's an example of a typical shell session where we start by scraping "
-#| "the https://scrapy.org page, and then proceed to scrape the https://"
-#| "reddit.com page. Finally, we modify the (Reddit) request method to POST "
-#| "and re-fetch it getting an error. We end the session by typing Ctrl-D (in "
-#| "Unix systems) or Ctrl-Z in Windows."
 msgid ""
 "Here's an example of a typical shell session where we start by scraping the "
 "https://scrapy.org page, and then proceed to scrape the https://old.reddit."
 "com/ page. Finally, we modify the (Reddit) request method to POST and re-"
 "fetch it getting an error. We end the session by typing Ctrl-D (in Unix "
 "systems) or Ctrl-Z in Windows."
-msgstr ""
-"ここで、 https://scrapy.org ページをスクレイピングすることから始めて、 次"
-"に、 https://reddit.com ページのスクレイピングに進む、典型的なシェルセッショ"
-"ンの例を以下に示します。 そして最後に、(Reddit)リクエストメソッドをPOSTに変更"
-"し、エラーを取得して再フェッチします。セッションを終了するには、Ctrl-D(Unixシ"
-"ステムの場合)、WindowsではCtrl-Zを入力します。"
+msgstr "ここで、 https://scrapy.org ページをスクレイピングすることから始めて、 次に、 https://old.reddit.com/ ページのスクレイピングに進む、典型的なシェルセッションの例を以下に示します。 そして最後に、(Reddit)リクエストメソッドをPOSTに変更し、エラーを取得して再フェッチします。セッションを終了するには、Ctrl-D(Unixシステムの場合)、WindowsではCtrl-Zを入力します。"
 
 #: ../../topics/shell.rst:151
 msgid ""
@@ -318,11 +299,11 @@ msgid ""
 "Remember to always enclose URLs in quotes when running the Scrapy shell from "
 "the command line, otherwise URLs containing arguments (i.e. the ``&`` "
 "character) will not work."
-msgstr ""
+msgstr "コマンドラインから Scrapy シェルを実行するときは、常に URL を引用符で囲むことを忘れないでください。そうしないと、引数を含む URL (例えば ``&`` 文字を含むURL)が機能しません。"
 
 #: ../../topics/shell.rst:166
 msgid "On Windows, use double quotes instead::"
-msgstr ""
+msgstr "Windows では、代わりに二重引用符を使用してください::"
 
 #: ../../topics/shell.rst:171
 msgid ""
@@ -335,10 +316,8 @@ msgstr ""
 "頭辞で始まることがわかります)::"
 
 #: ../../topics/shell.rst:192
-#, fuzzy
-#| msgid "After that, we can start playing with the objects::"
 msgid "After that, we can start playing with the objects:"
-msgstr "その後、オブジェクトで遊んでみましょう::"
+msgstr "その後、オブジェクトで遊んでみましょう:"
 
 #: ../../topics/shell.rst:237
 msgid "Invoking the shell from spiders to inspect responses"
@@ -368,22 +347,14 @@ msgid "When you run the spider, you will get something similar to this::"
 msgstr "スパイダーを実行すると、次のようなものが得られます::"
 
 #: ../../topics/shell.rst:277
-#, fuzzy
-#| msgid "Then, you can check if the extraction code is working::"
 msgid "Then, you can check if the extraction code is working:"
-msgstr "そこから、抽出コードが機能しているかどうかを確認できます::"
+msgstr "そこから、抽出コードが機能しているかどうかを確認できます:"
 
 #: ../../topics/shell.rst:282
-#, fuzzy
-#| msgid ""
-#| "Nope, it doesn't. So you can open the response in your web browser and "
-#| "see if it's the response you were expecting::"
 msgid ""
 "Nope, it doesn't. So you can open the response in your web browser and see "
 "if it's the response you were expecting:"
-msgstr ""
-"Orz。期待したとおりではありません。 したがって、あなたはWebブラウザーでレスポ"
-"ンスを開き、それが期待したレスポンスかどうかを確認できます::"
+msgstr "Orz。期待したとおりではありません。 したがって、あなたはWebブラウザーでレスポンスを開き、それが期待したレスポンスかどうかを確認できます:"
 
 #: ../../topics/shell.rst:288
 msgid ""
