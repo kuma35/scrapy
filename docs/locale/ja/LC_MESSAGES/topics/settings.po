@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-09-28 11:23+0900\n"
+"PO-Revision-Date: 2021-06-01 03:36+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -68,19 +68,11 @@ msgstr ""
 "す。これを行うには、環境変数 ``SCRAPY_SETTINGS_MODULE`` を使用します。"
 
 #: ../../topics/settings.rst:27
-#, fuzzy
-#| msgid ""
-#| "The value of ``SCRAPY_SETTINGS_MODULE`` should be in Python path syntax, "
-#| "e.g. ``myproject.settings``. Note that the settings module should be on "
-#| "the Python `import search path`_."
 msgid ""
 "The value of ``SCRAPY_SETTINGS_MODULE`` should be in Python path syntax, e."
 "g. ``myproject.settings``. Note that the settings module should be on the "
 "Python :ref:`import search path <tut-searchpath>`."
-msgstr ""
-"``SCRAPY_SETTINGS_MODULE`` の値は、Pythonパス構文である必要があります。例え"
-"ば ``myproject.settings`` です。設定モジュールはPythonのインポート検索パス"
-"(`import search path`_)にある必要があることに注意してください。"
+msgstr "``SCRAPY_SETTINGS_MODULE`` の値は、Pythonパス構文である必要があります。例えば ``myproject.settings`` です。設定モジュールはPythonの :ref:`インポート検索パス <tut-searchpath>` にある必要があることに注意してください。"
 
 #: ../../topics/settings.rst:34
 msgid "Populating the settings"
@@ -210,32 +202,30 @@ msgstr ""
 
 #: ../../topics/settings.rst:103
 msgid "Import paths and classes"
-msgstr ""
+msgstr "パス達やクラス達のインポート"
 
 #: ../../topics/settings.rst:107
 msgid ""
 "When a setting references a callable object to be imported by Scrapy, such "
 "as a class or a function, there are two different ways you can specify that "
 "object:"
-msgstr ""
+msgstr "設定がクラスや関数など、Scrapyによってインポートされる呼び出し可能なオブジェクトを参照する場合、そのオブジェクトを指定する2つの異なる方法があります:"
 
 #: ../../topics/settings.rst:110
 msgid "As a string containing the import path of that object"
-msgstr ""
+msgstr "そのオブジェクトのインポート・パス(path)を含む文字列として"
 
 #: ../../topics/settings.rst:112
 msgid "As the object itself"
-msgstr ""
+msgstr "オブジェクト自体として"
 
 #: ../../topics/settings.rst:114
-#, fuzzy
-#| msgid "Example::"
 msgid "For example::"
 msgstr "例::"
 
 #: ../../topics/settings.rst:124
 msgid "Passing non-callable objects is not supported."
-msgstr ""
+msgstr "呼び出し不可能なオブジェクトの受け渡しはサポートされていません。"
 
 #: ../../topics/settings.rst:128
 msgid "How to access settings"
@@ -360,72 +350,44 @@ msgid "AWS_ENDPOINT_URL"
 msgstr "AWS_ENDPOINT_URL"
 
 #: ../../topics/settings.rst:214
-#, fuzzy
-#| msgid ""
-#| "Endpoint URL used for S3-like storage, for example Minio or s3.scality. "
-#| "Only supported with ``botocore`` library."
 msgid "Endpoint URL used for S3-like storage, for example Minio or s3.scality."
-msgstr ""
-"Minioやs3.scalityなど、S3のようなストレージに使用されるエンドポイントURL。 "
-"``botocore`` ライブラリでのみサポートされています。"
+msgstr "Minioやs3.scalityなど、S3のようなストレージに使用されるエンドポイントURL。"
 
 #: ../../topics/settings.rst:219
 msgid "AWS_USE_SSL"
 msgstr "AWS_USE_SSL"
 
 #: ../../topics/settings.rst:223
-#, fuzzy
-#| msgid ""
-#| "Use this option if you want to disable SSL connection for communication "
-#| "with S3 or S3-like storage. By default SSL will be used. Only supported "
-#| "with ``botocore`` library."
 msgid ""
 "Use this option if you want to disable SSL connection for communication with "
 "S3 or S3-like storage. By default SSL will be used."
-msgstr ""
-"S3またはS3のようなストレージとの通信のためにSSL接続を無効にする場合は、このオ"
-"プションを使用します。 デフォルトでは、SSLが使用されます。 ``botocore`` ライ"
-"ブラリでのみサポートされています。"
+msgstr "S3またはS3のようなストレージとの通信でSSL接続を無効にする場合は、このオプションを使用します。デフォルトではSSLが使用されます。"
 
 #: ../../topics/settings.rst:229
 msgid "AWS_VERIFY"
 msgstr "AWS_VERIFY"
 
 #: ../../topics/settings.rst:233
-#, fuzzy
-#| msgid ""
-#| "Verify SSL connection between Scrapy and S3 or S3-like storage. By "
-#| "default SSL verification will occur. Only supported with ``botocore`` "
-#| "library."
 msgid ""
 "Verify SSL connection between Scrapy and S3 or S3-like storage. By default "
 "SSL verification will occur."
-msgstr ""
-"ScrapyとS3またはS3のようなストレージ間のSSL接続を検証(verify)します。デフォル"
-"トでは、SSL検証が行われます。 ``botocore`` ライブラリでのみサポートされていま"
-"す。"
+msgstr "ScrapyとS3またはS3のようなストレージ間のSSL接続を検証(verify)します。デフォルトでは、SSL検証(verify)が行われます。"
 
 #: ../../topics/settings.rst:239
 msgid "AWS_REGION_NAME"
 msgstr "AWS_REGION_NAME"
 
 #: ../../topics/settings.rst:243
-#, fuzzy
-#| msgid ""
-#| "The name of the region associated with the AWS client. Only supported "
-#| "with ``botocore`` library."
 msgid "The name of the region associated with the AWS client."
-msgstr ""
-"AWSクライアントに関連付けられているリージョンの名前。 ``botocore`` ライブラリ"
-"でのみサポートされています。"
+msgstr "AWSクライアントに関連付けられているリージョンの名前。"
 
 #: ../../topics/settings.rst:248
 msgid "ASYNCIO_EVENT_LOOP"
-msgstr ""
+msgstr "ASYNCIO_EVENT_LOOP"
 
 #: ../../topics/settings.rst:252
 msgid "Import path of a given ``asyncio`` event loop class."
-msgstr ""
+msgstr "指定された ``asyncio`` イベント・ループ・クラスのインポート・パス。"
 
 #: ../../topics/settings.rst:254
 msgid ""
@@ -434,20 +396,20 @@ msgid ""
 "Set the setting to the import path of the desired asyncio event loop class. "
 "If the setting is set to ``None`` the default asyncio event loop will be "
 "used."
-msgstr ""
+msgstr "asyncioリアクターが有効になっている場合(:setting:`TWISTED_REACTOR` 参照)、この設定を使用してasyncioイベント・ループを指定することができます。設定を目的のasyncioイベント・ループ・クラスのインポート・パスに設定します。設定が ``None`` に設定されている場合、デフォルトのasyncioイベント・ループを使用します。。"
 
 #: ../../topics/settings.rst:259
 msgid ""
 "If you are installing the asyncio reactor manually using the :func:`~scrapy."
 "utils.reactor.install_reactor` function, you can use the ``event_loop_path`` "
 "parameter to indicate the import path of the event loop class to be used."
-msgstr ""
+msgstr ":func:`~scrapy.utils.reactor.install_reactor` 関数を使用して非同期リアクターを手動でインストールする場合、 ``event_loop_path`` パラメータを使用して、使用するイベント・ループ・クラスのインポート・パスを指定できます。"
 
 #: ../../topics/settings.rst:263
 msgid ""
 "Note that the event loop class must inherit from :class:`asyncio."
 "AbstractEventLoop`."
-msgstr ""
+msgstr "イベント・ループ・クラスは :class:`asyncio.AbstractEventLoop` を継承する必要があることに注意してください。"
 
 #: ../../topics/settings.rst:265
 msgid ""
@@ -456,7 +418,7 @@ msgid ""
 "reactor.install_reactor`), Scrapy will call :func:`asyncio.set_event_loop`, "
 "which will set the specified event loop as the current loop for the current "
 "OS thread."
-msgstr ""
+msgstr "以下をご了承ください：デフォルト以外のイベントループ (:setting:`ASYNCIO_EVENT_LOOP` で定義するか、 :func:`~scrapy.utils.reactor.install_reactor` でインストール) を使用する場合、Scrapy は :func:`asyncio.set_event_loop` を呼び出します。これにより、指定されたイベント・ループが現在のOSスレッドの現在のループとして設定されます。"
 
 #: ../../topics/settings.rst:274
 msgid "BOT_NAME"
@@ -467,18 +429,10 @@ msgid "Default: ``'scrapybot'``"
 msgstr "デフォルト: ``'scrapybot'``"
 
 #: ../../topics/settings.rst:278
-#, fuzzy
-#| msgid ""
-#| "The name of the bot implemented by this Scrapy project (also known as the "
-#| "project name). This will be used to construct the User-Agent by default, "
-#| "and also for logging."
 msgid ""
 "The name of the bot implemented by this Scrapy project (also known as the "
 "project name). This name will be used for the logging too."
-msgstr ""
-"このScrapyプロジェクトによって実装されるボットの名前(プロジェクト名とも呼ばれ"
-"ます)。 これは、デフォルトでUser-Agentを構築するために使用され、ログでも使用"
-"されます。"
+msgstr "このScrapyプロジェクトによって実装されるボット(bot)の名前(プロジェクト名とも呼ばれます)。この名前はロギングにも使用されます。"
 
 #: ../../topics/settings.rst:281
 msgid ""
@@ -497,17 +451,10 @@ msgid "Default: ``100``"
 msgstr "デフォルト: ``100``"
 
 #: ../../topics/settings.rst:291
-#, fuzzy
-#| msgid ""
-#| "Maximum number of concurrent items (per response) to process in parallel "
-#| "in the Item Processor (also known as the :ref:`Item Pipeline <topics-item-"
-#| "pipeline>`)."
 msgid ""
 "Maximum number of concurrent items (per response) to process in parallel in :"
 "ref:`item pipelines <topics-item-pipeline>`."
-msgstr ""
-"アイテム・プロセッサ( :ref:`アイテム・パイプライン<topics-item-pipeline>` と"
-"も呼ばれます)で並列処理する(レスポンスごとの)同時アイテムの最大数。"
+msgstr ":ref:`item パイプライン <topics-item-pipeline>` で並行して処理する(レスポンスごとの)同時アイテムの最大数。"
 
 #: ../../topics/settings.rst:297
 msgid "CONCURRENT_REQUESTS"
@@ -518,10 +465,6 @@ msgid "Default: ``16``"
 msgstr "デフォルト: ``16``"
 
 #: ../../topics/settings.rst:301
-#, fuzzy
-#| msgid ""
-#| "The maximum number of concurrent (ie. simultaneous) requests that will be "
-#| "performed by the Scrapy downloader."
 msgid ""
 "The maximum number of concurrent (i.e. simultaneous) requests that will be "
 "performed by the Scrapy downloader."
@@ -536,10 +479,6 @@ msgid "Default: ``8``"
 msgstr "デフォルト: ``8``"
 
 #: ../../topics/settings.rst:311
-#, fuzzy
-#| msgid ""
-#| "The maximum number of concurrent (ie. simultaneous) requests that will be "
-#| "performed to any single domain."
 msgid ""
 "The maximum number of concurrent (i.e. simultaneous) requests that will be "
 "performed to any single domain."
@@ -565,13 +504,6 @@ msgid "Default: ``0``"
 msgstr "デフォルト: ``0``"
 
 #: ../../topics/settings.rst:325
-#, fuzzy
-#| msgid ""
-#| "The maximum number of concurrent (ie. simultaneous) requests that will be "
-#| "performed to any single IP. If non-zero, the :setting:"
-#| "`CONCURRENT_REQUESTS_PER_DOMAIN` setting is ignored, and this one is used "
-#| "instead. In other words, concurrency limits will be applied per IP, not "
-#| "per domain."
 msgid ""
 "The maximum number of concurrent (i.e. simultaneous) requests that will be "
 "performed to any single IP. If non-zero, the :setting:"
@@ -636,7 +568,7 @@ msgid ""
 "`cookies-mw`. If you need to set cookies for a request, use the :class:"
 "`Request.cookies <scrapy.http.Request>` parameter. This is a known current "
 "limitation that is being worked on."
-msgstr ""
+msgstr "``Cookie`` ヘッダーを介して設定されたクッキーは、 :ref:`cookies-mw` では考慮されません。 リクエストにクッキーを設定する必要がある場合は、 :class:`Request.cookies <scrapy.http.Request>` パラメータを使用します。 これは、現在改善に取り組んでいる既知の制限です。"
 
 #: ../../topics/settings.rst:369
 msgid "DEPTH_LIMIT"
@@ -739,13 +671,11 @@ msgstr "DNSイン・メモリ・キャッシュ・サイズ。"
 
 #: ../../topics/settings.rst:437
 msgid "DNS_RESOLVER"
-msgstr ""
+msgstr "DNS_RESOLVER"
 
 #: ../../topics/settings.rst:441
-#, fuzzy
-#| msgid "Default: ``'scrapy.core.scheduler.Scheduler'``"
 msgid "Default: ``'scrapy.resolver.CachingThreadedResolver'``"
-msgstr "デフォルト: ``'scrapy.core.scheduler.Scheduler'``"
+msgstr "デフォルト: ``'scrapy.resolver.CachingThreadedResolver'``"
 
 #: ../../topics/settings.rst:443
 msgid ""
@@ -755,7 +685,7 @@ msgid ""
 "Scrapy provides an alternative resolver, ``scrapy.resolver."
 "CachingHostnameResolver``, which supports IPv4/IPv6 addresses but does not "
 "take the :setting:`DNS_TIMEOUT` setting into account."
-msgstr ""
+msgstr "DNS名を解決するために使用されるクラス。デフォルトの ``scrapy.resolver.CachingThreadedResolver`` は :setting:`DNS_TIMEOUT` 設定によるDNSリクエストのタイムアウトの指定をサポートしていますが、IPv4 アドレスでのみ機能します。Scrapyは代替のリゾルバ ``scrapy.resolver.CachingHostnameResolver`` を提供します。これは IPv4/IPv6 アドレスをサポートしますが :setting:`DNS_TIMEOUT` 設定を考慮しません。"
 
 #: ../../topics/settings.rst:452
 msgid "DNS_TIMEOUT"
@@ -799,24 +729,12 @@ msgstr ""
 "``protocol.ClientFactory`` クラスを定義します。"
 
 #: ../../topics/settings.rst:479
-#, fuzzy
-#| msgid ""
-#| "HTTP/1.0 is rarely used nowadays so you can safely ignore this setting, "
-#| "unless you use Twisted<11.1, or if you really want to use HTTP/1.0 and "
-#| "override :setting:`DOWNLOAD_HANDLERS_BASE` for ``http(s)`` scheme "
-#| "accordingly, i.e. to ``'scrapy.core.downloader.handlers.http."
-#| "HTTP10DownloadHandler'``."
 msgid ""
 "HTTP/1.0 is rarely used nowadays so you can safely ignore this setting, "
 "unless you really want to use HTTP/1.0 and override :setting:"
 "`DOWNLOAD_HANDLERS` for ``http(s)`` scheme accordingly, i.e. to ``'scrapy."
 "core.downloader.handlers.http.HTTP10DownloadHandler'``."
-msgstr ""
-"最近では HTTP/1.0 はめったに使用されないため、Twisted <11.1 を使用する場合、"
-"または HTTP/1.0 を使用して ``http(s)`` スキームの :setting:"
-"`DOWNLOAD_HANDLERS_BASE` をオーバーライドする場合、つまり ``'scrapy.core."
-"downloader.handlers.http.HTTP10DownloadHandler'`` を使用する場合を除き、この"
-"設定を無視しても安全です。"
+msgstr "HTTP/1.0 は最近ではめったに使用されないため、 本当に HTTP/1.0 を使用しかつ、 ``'scrapy.core.downloader.handlers.http.HTTP10DownloadHandler'`` に応じて ``http(s)`` スキームの :setting:`DOWNLOAD_HANDLERS` をオーバーライドしたい場合を除き、この設定は無視しても問題ありません。"
 
 #: ../../topics/settings.rst:487
 msgid "DOWNLOADER_CLIENTCONTEXTFACTORY"
@@ -853,24 +771,12 @@ msgstr ""
 "を実行しません** 。これは通常、Webスクレイピングに適しています。"
 
 #: ../../topics/settings.rst:502
-#, fuzzy
-#| msgid ""
-#| "If you do need remote server certificate verification enabled, Scrapy "
-#| "also has another context factory class that you can set, ``'scrapy.core."
-#| "downloader.contextfactory.BrowserLikeContextFactory'``, which uses the "
-#| "platform's certificates to validate remote endpoints. **This is only "
-#| "available if you use Twisted>=14.0.**"
 msgid ""
 "If you do need remote server certificate verification enabled, Scrapy also "
 "has another context factory class that you can set, ``'scrapy.core."
 "downloader.contextfactory.BrowserLikeContextFactory'``, which uses the "
 "platform's certificates to validate remote endpoints."
-msgstr ""
-"リモート・サーバー証明書の検証を有効にする必要がある場合、Scrapyには設定可能"
-"な別のコンテキスト・ファクトリ・クラス ``'scrapy.core.downloader."
-"contextfactory.BrowserLikeContextFactory'`` があり、プラットフォームの証明書"
-"を使用してリモート・エンドポイントを検証します。 **これは、Twisted>=14.0 を使"
-"用する場合にのみ利用可能です** 。"
+msgstr "リモート・サーバー証明書の検証を有効にする必要がある場合、Scrapyには設定可能な別のコンテキスト・ファクトリ・クラス ``'scrapy.core.downloader.contextfactory.BrowserLikeContextFactory'`` があり、プラットフォームの証明書を使用してリモート・エンドポイントを検証します。"
 
 #: ../../topics/settings.rst:507
 msgid ""
@@ -1121,41 +1027,41 @@ msgstr ""
 msgid ""
 "The default HTTPS handler uses HTTP/1.1. To use HTTP/2 update :setting:"
 "`DOWNLOAD_HANDLERS` as follows::"
-msgstr ""
+msgstr "デフォルトの HTTPS ハンドラーは HTTP/1.1 を使用します。 HTTP/2 アップデートを使用するには、以下のように :setting:`DOWNLOAD_HANDLERS` を使用します::"
 
 #: ../../topics/settings.rst:691
 msgid ""
 "HTTP/2 support in Scrapy is experimental, and not yet recommended for "
 "production environments. Future Scrapy versions may introduce related "
 "changes without a deprecation period or warning."
-msgstr ""
+msgstr "Scrapy での HTTP/2 サポートは実験的であり、実稼働環境ではまだ推奨されていません。 将来の Scrapy バージョンでは、非推奨期間や警告なしに関連する変更が導入される可能性があります。"
 
 #: ../../topics/settings.rst:697
 msgid ""
 "Known limitations of the current HTTP/2 implementation of Scrapy include:"
-msgstr ""
+msgstr "Scrapyの現在の HTTP/2 実装の既知の制限は以下のとおりです:"
 
 #: ../../topics/settings.rst:699
 msgid ""
 "No support for HTTP/2 Cleartext (h2c), since no major browser supports "
 "HTTP/2 unencrypted (refer `http2 faq`_)."
-msgstr ""
+msgstr "主要なブラウザは暗号化されていない HTTP/2 をサポートしていないため、HTTP/2 Cleartext (h2c) はサポートしていません( `http2 faq`_ 参照)。"
 
 #: ../../topics/settings.rst:702
 msgid ""
 "No setting to specify a maximum `frame size`_ larger than the default value, "
 "16384. Connections to servers that send a larger frame will fail."
-msgstr ""
+msgstr "デフォルト値の 16384 より大きい最大 `frame size`_ を指定する設定はありません。それより大きなフレームを送信するサーバーへの接続は失敗します。"
 
 #: ../../topics/settings.rst:706
 msgid "No support for `server pushes`_, which are ignored."
-msgstr ""
+msgstr "`server pushes`_ はサポートされていません。無視されます。"
 
 #: ../../topics/settings.rst:708
 msgid ""
 "No support for the :signal:`bytes_received` and :signal:`headers_received` "
 "signals."
-msgstr ""
+msgstr ":signal:`bytes_received` と :signal:`headers_received` シグナルはサポートされていません。"
 
 #: ../../topics/settings.rst:718
 msgid "DOWNLOAD_TIMEOUT"
@@ -1279,7 +1185,7 @@ msgid ""
 "connection may be corrupted, affecting other requests that use the same "
 "connection; hence, a ``ResponseFailed([InvalidBodyLengthError])`` failure is "
 "always raised for every request that was using that connection."
-msgstr ""
+msgstr "この設定は :class:`~scrapy.core.downloader.handlers.http2.H2DownloadHandler` ダウンロードハンドラでは無視されます (:setting:`DOWNLOAD_HANDLERS` を参照)。 データ損失エラーの場合、対応する HTTP/2 接続が破損し、同じ接続を使用する他のリクエストに影響を与える可能性があります。 したがって、その接続を使用していたすべてのリクエストに対して、常に ``ResponseFailed([InvalidBodyLengthError])`` 失敗が発生します。"
 
 #: ../../topics/settings.rst:804
 msgid "DUPEFILTER_CLASS"
@@ -1405,7 +1311,7 @@ msgstr ""
 
 #: ../../topics/settings.rst:893
 msgid "FEED_STORAGE_GCS_ACL"
-msgstr ""
+msgstr "FEED_STORAGE_GCS_ACL"
 
 #: ../../topics/settings.rst:895
 msgid ""
@@ -1413,7 +1319,7 @@ msgid ""
 "Storage <topics-feed-storage-gcs>`. For more information on how to set this "
 "value, please refer to the column *JSON API* in `Google Cloud documentation "
 "<https://cloud.google.com/storage/docs/access-control/lists>`_."
-msgstr ""
+msgstr "アイテムを :ref:`Google Cloud Storage <topics-feed-storage-gcs>` に保存するときに使用されるアクセス制御リスト (ACL)。 この値の設定方法の詳細については、 `Google Cloud documentation <https://cloud.google.com/storage/docs/access-control/lists>`_ の *JSON API* コラムを参照してください。"
 
 #: ../../topics/settings.rst:901
 msgid "FTP_PASSIVE_MODE"
@@ -1468,13 +1374,13 @@ msgstr ""
 
 #: ../../topics/settings.rst:940
 msgid "GCS_PROJECT_ID"
-msgstr ""
+msgstr "GCS_PROJECT_ID"
 
 #: ../../topics/settings.rst:944
 msgid ""
 "The Project ID that will be used when storing data on `Google Cloud "
 "Storage`_."
-msgstr ""
+msgstr "`Google Cloud Storage`_ にデータを保存するときに使用されるプロジェクトID。"
 
 #: ../../topics/settings.rst:949
 msgid "ITEM_PIPELINES"
@@ -1544,17 +1450,11 @@ msgid "Default: ``'%(asctime)s [%(name)s] %(levelname)s: %(message)s'``"
 msgstr "デフォルト: ``'%(asctime)s [%(name)s] %(levelname)s: %(message)s'``"
 
 #: ../../topics/settings.rst:1008
-#, fuzzy
-#| msgid ""
-#| "String for formatting log messsages. Refer to the `Python logging "
-#| "documentation`_ for the whole list of available placeholders."
 msgid ""
 "String for formatting log messages. Refer to the :ref:`Python logging "
 "documentation <logrecord-attributes>` for the qwhole list of available "
 "placeholders."
-msgstr ""
-"ログ・メッセージをフォーマットするための文字列。 利用可能なプレース・ホルダー"
-"の全リストについては、 `Python logging documentation`_ を参照してください。"
+msgstr "ログ・メッセージをフォーマットするための文字列。 利用可能なプレース・ホルダーの全リストについては、 :ref:`Python logging documentation <logrecord-attributes>` を参照してください。"
 
 #: ../../topics/settings.rst:1015
 msgid "LOG_DATEFORMAT"
@@ -1565,20 +1465,12 @@ msgid "Default: ``'%Y-%m-%d %H:%M:%S'``"
 msgstr "デフォルト: ``'%Y-%m-%d %H:%M:%S'``"
 
 #: ../../topics/settings.rst:1019
-#, fuzzy
-#| msgid ""
-#| "String for formatting date/time, expansion of the ``%(asctime)s`` "
-#| "placeholder in :setting:`LOG_FORMAT`. Refer to the `Python datetime "
-#| "documentation`_ for the whole list of available directives."
 msgid ""
 "String for formatting date/time, expansion of the ``%(asctime)s`` "
 "placeholder in :setting:`LOG_FORMAT`. Refer to the :ref:`Python datetime "
 "documentation <strftime-strptime-behavior>` for the whole list of available "
 "directives."
-msgstr ""
-"日付/時刻をフォーマットするための文字列、 :setting:`LOG_FORMAT` の ``"
-"%(asctime)s`` プレース・ホルダーの展開。 利用可能なディレクティブのリストにつ"
-"いては、 `Python datetime documentation`_ を参照してください。"
+msgstr "日付/時刻をフォーマットするための文字列、 :setting:`LOG_FORMAT` の ``%(asctime)s`` プレース・ホルダーの展開。 利用可能なディレクティブのリストについては、 :ref:`Python datetime documentation <strftime-strptime-behavior>` を参照してください。"
 
 #: ../../topics/settings.rst:1027
 msgid "LOG_FORMATTER"
@@ -1901,10 +1793,8 @@ msgid "ROBOTSTXT_PARSER"
 msgstr "ROBOTSTXT_PARSER"
 
 #: ../../topics/settings.rst:1258
-#, fuzzy
-#| msgid "Default: ``'scrapy.robotstxt.PythonRobotParser'``"
 msgid "Default: ``'scrapy.robotstxt.ProtegoRobotParser'``"
-msgstr "デフォルト: ``'scrapy.robotstxt.PythonRobotParser'``"
+msgstr "デフォルト: ``'scrapy.robotstxt.ProtegoRobotParser'``"
 
 #: ../../topics/settings.rst:1260
 msgid ""
@@ -2022,23 +1912,22 @@ msgstr ""
 
 #: ../../topics/settings.rst:1339
 msgid "SCRAPER_SLOT_MAX_ACTIVE_SIZE"
-msgstr ""
+msgstr "SCRAPER_SLOT_MAX_ACTIVE_SIZE"
 
 #: ../../topics/settings.rst:1343
-#, fuzzy
-#| msgid "Default: ``10000``"
 msgid "Default: ``5_000_000``"
-msgstr "デフォルト: ``10000``"
+msgstr "デフォルト: ``5_000_000``"
 
+# ソフトリミット、ハードリミット
 #: ../../topics/settings.rst:1345
 msgid "Soft limit (in bytes) for response data being processed."
-msgstr ""
+msgstr "処理中のレスポンス・データのソフトリミット値(バイト単位)。"
 
 #: ../../topics/settings.rst:1347
 msgid ""
 "While the sum of the sizes of all responses being processed is above this "
 "value, Scrapy does not process new requests."
-msgstr ""
+msgstr "処理中のすべてのレスポンスのサイズの合計がこの値を超えている間、Scrapy は新しいリクエストを処理しません。"
 
 #: ../../topics/settings.rst:1353
 msgid "SPIDER_CONTRACTS"
@@ -2058,11 +1947,6 @@ msgid "SPIDER_CONTRACTS_BASE"
 msgstr "SPIDER_CONTRACTS_BASE"
 
 #: ../../topics/settings.rst:1373
-#, fuzzy
-#| msgid ""
-#| "A dict containing the scrapy contracts enabled by default in Scrapy. You "
-#| "should never modify this setting in your project, modify :setting:"
-#| "`SPIDER_CONTRACTS` instead. For more info see :ref:`topics-contracts`."
 msgid ""
 "A dict containing the Scrapy contracts enabled by default in Scrapy. You "
 "should never modify this setting in your project, modify :setting:"
@@ -2104,12 +1988,6 @@ msgid "SPIDER_LOADER_WARN_ONLY"
 msgstr "SPIDER_LOADER_WARN_ONLY"
 
 #: ../../topics/settings.rst:1402
-#, fuzzy
-#| msgid ""
-#| "By default, when scrapy tries to import spider classes from :setting:"
-#| "`SPIDER_MODULES`, it will fail loudly if there is any ``ImportError`` "
-#| "exception. But you can choose to silence this exception and turn it into "
-#| "a simple warning by setting ``SPIDER_LOADER_WARN_ONLY = True``."
 msgid ""
 "By default, when Scrapy tries to import spider classes from :setting:"
 "`SPIDER_MODULES`, it will fail loudly if there is any ``ImportError`` "
@@ -2258,25 +2136,25 @@ msgstr ""
 
 #: ../../topics/settings.rst:1517
 msgid "TWISTED_REACTOR"
-msgstr ""
+msgstr "TWISTED_REACTOR"
 
 #: ../../topics/settings.rst:1523
 msgid "Import path of a given :mod:`~twisted.internet.reactor`."
-msgstr ""
+msgstr "指定された :mod:`~twisted.internet.reactor` のインポート・パス。"
 
 #: ../../topics/settings.rst:1525
 msgid ""
 "Scrapy will install this reactor if no other reactor is installed yet, such "
 "as when the ``scrapy`` CLI program is invoked or when using the :class:"
 "`~scrapy.crawler.CrawlerProcess` class."
-msgstr ""
+msgstr "``scrapy`` CLI プログラムが呼び出されたときや :class:`~scrapy.crawler.CrawlerProcess` クラスを使用するときなど、他のリアクターがまだインストールされていない場合、Scrapy はこのリアクターをインストールします。"
 
 #: ../../topics/settings.rst:1529
 msgid ""
 "If you are using the :class:`~scrapy.crawler.CrawlerRunner` class, you also "
 "need to install the correct reactor manually. You can do that using :func:"
 "`~scrapy.utils.reactor.install_reactor`:"
-msgstr ""
+msgstr ":class:`~scrapy.crawler.CrawlerRunner` クラスを使用している場合は、正しいリアクターを手動でインストールする必要もあります。 :func:`~scrapy.utils.reactor.install_reactor` を使用してそれを行うことができます。"
 
 #: ../../../scrapy/utils/reactor.py:docstring of
 #: scrapy.utils.reactor.install_reactor:1
@@ -2284,13 +2162,13 @@ msgid ""
 "Installs the :mod:`~twisted.internet.reactor` with the specified import "
 "path. Also installs the asyncio event loop with the specified import path if "
 "the asyncio reactor is enabled"
-msgstr ""
+msgstr "指定されたインポート・パスで :mod:`~twisted.internet.reactor` をインストールします。 また、asyncio リアクターが有効な場合、指定されたインポート・パスで asyncio イベント・ループをインストールします。"
 
 #: ../../topics/settings.rst:1535
 msgid ""
 "If a reactor is already installed, :func:`~scrapy.utils.reactor."
 "install_reactor` has no effect."
-msgstr ""
+msgstr "リアクターがすでにインストールされている場合、 :func:`~scrapy.utils.reactor.install_reactor` は効果がありません。"
 
 #: ../../topics/settings.rst:1538
 msgid ""
@@ -2300,15 +2178,15 @@ msgid ""
 "internet.reactor` imports in project files and imported third-party "
 "libraries will make Scrapy raise :exc:`Exception` when it checks which "
 "reactor is installed."
-msgstr ""
+msgstr ":meth:`CrawlerRunner.__init__ <scrapy.crawler.CrawlerRunner.__init__>` は、インストールされているリアクタが :setting:`TWISTED_REACTOR` 設定と一致しない場合、 :exc:`Exception` を発生させます。 したがって、トップレベルの :mod:`~twisted.internet.reactor` をプロジェクトファイルにインポートし、サードパーティのライブラリをインポートすると、Scrapy は、どのリアクターがインストールされているかをチェックするときに :exc:`Exception` を発生させます。"
 
 #: ../../topics/settings.rst:1545
 msgid "In order to use the reactor installed by Scrapy::"
-msgstr ""
+msgstr "Scrapyでインストールしたリアクターを使うには::"
 
 #: ../../topics/settings.rst:1573
 msgid "which raises :exc:`Exception`, becomes::"
-msgstr ""
+msgstr "これは :exc:`Exception` を発生させ、以下のようになります::"
 
 #: ../../topics/settings.rst:1601
 msgid ""
@@ -2317,11 +2195,11 @@ msgid ""
 "and the default reactor defined by Twisted for the current platform will be "
 "used. This is to maintain backward compatibility and avoid possible problems "
 "caused by using a non-default reactor."
-msgstr ""
+msgstr ":setting:`TWISTED_REACTOR` 設定のデフォルト値は ``None`` です.これは, Scrapy が特定のリアクターをインストールしようとせず, 現在のプラットフォーム用に Twisted によって定義されたデフォルトのリアクターが使用されることを意味します。これは、下位互換性を維持し、デフォルト以外のリアクターを使用することで発生する可能性のある問題を回避するためです。"
 
 #: ../../topics/settings.rst:1607
 msgid "For additional information, see :doc:`core/howto/choosing-reactor`."
-msgstr ""
+msgstr "追加情報については、 :doc:`core/howto/choosing-reactor` を参照してください。"
 
 #: ../../topics/settings.rst:1613
 msgid "URLLENGTH_LIMIT"
@@ -2376,61 +2254,3 @@ msgid ""
 msgstr ""
 "以下の設定は他の場所で文書化されています。それぞれの特定の場合をチェックし"
 "て、それらを有効にして使用する方法を確認してください。"
-
-#~ msgid ""
-#~ "We recommend that you use PyOpenSSL>=0.13 and Twisted>=0.13 or above "
-#~ "(Twisted>=14.0 if you can)."
-#~ msgstr ""
-#~ "私達は PyOpenSSL>=0.13 かつ Twisted>=0.1 3 以上(可能な場合はTwisted>=14.0)"
-#~ "を使用することをお勧めします。"
-
-#~ msgid "This feature needs Twisted >= 11.1."
-#~ msgstr "この機能には Twisted >= 11.1. が必要です。"
-
-#~ msgid "REDIRECT_MAX_TIMES"
-#~ msgstr "REDIRECT_MAX_TIMES"
-
-#~ msgid "Default: ``20``"
-#~ msgstr "デフォルト: ``20``"
-
-#~ msgid ""
-#~ "Defines the maximum times a request can be redirected. After this maximum "
-#~ "the request's response is returned as is. We used Firefox default value "
-#~ "for the same task."
-#~ msgstr ""
-#~ "リクエストをリダイレクトできる最大回数を定義します。この最大値を超えると、"
-#~ "リクエストのレスポンスがそのまま返されます。 私たちはFirefoxの同じタスクの"
-#~ "デフォルト値を使用しました。"
-
-#~ msgid "RETRY_PRIORITY_ADJUST"
-#~ msgstr "RETRY_PRIORITY_ADJUST"
-
-#~ msgid "Default: ``-1``"
-#~ msgstr "デフォルト: ``-1``"
-
-#~ msgid "Scope: ``scrapy.downloadermiddlewares.retry.RetryMiddleware``"
-#~ msgstr "スコープ: ``scrapy.downloadermiddlewares.retry.RetryMiddleware``"
-
-#~ msgid "Adjust retry request priority relative to original request:"
-#~ msgstr "元のリクエストに対する再試行要求の優先度を調整する:"
-
-#~ msgid "a positive priority adjust means higher priority."
-#~ msgstr "正の優先度調整はより高い優先度を意味します。"
-
-#~ msgid "**a negative priority adjust (default) means lower priority.**"
-#~ msgstr "**負の優先度調整(デフォルト)は、より低いを意味します** 。"
-
-#~ msgid "TELNETCONSOLE_PORT"
-#~ msgstr "TELNETCONSOLE_PORT"
-
-#~ msgid "Default: ``[6023, 6073]``"
-#~ msgstr "デフォルト: ``[6023, 6073]``"
-
-#~ msgid ""
-#~ "The port range to use for the telnet console. If set to ``None`` or "
-#~ "``0``, a dynamically assigned port is used. For more info see :ref:"
-#~ "`topics-telnetconsole`."
-#~ msgstr ""
-#~ "telnetコンソールに使用するポート範囲。 ``None`` または ``0`` に設定する"
-#~ "と、動的に割り当てられたポートが使用されます。 詳細については、 :ref:"
-#~ "`topics-telnetconsole` を参照してください。"
