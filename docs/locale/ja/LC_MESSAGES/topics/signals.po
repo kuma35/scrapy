@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-24 10:49+0900\n"
+"PO-Revision-Date: 2021-06-02 08:19+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -52,10 +52,6 @@ msgstr ""
 "きます。"
 
 #: ../../topics/signals.rst:19
-#, fuzzy
-#| msgid ""
-#| "Here is a simple example showing how you can catch signals and perform "
-#| "some action: ::"
 msgid ""
 "Here is a simple example showing how you can catch signals and perform some "
 "action::"
@@ -74,17 +70,17 @@ msgid ""
 "not block Scrapy. If a signal handler returns a :class:`~twisted.internet."
 "defer.Deferred`, Scrapy waits for that :class:`~twisted.internet.defer."
 "Deferred` to fire."
-msgstr ""
+msgstr "一部のシグナルはハンドラーから :class:`~twisted.internet.defer.Deferred` オブジェクトを返すことをサポートしており、Scrapy をブロックしない非同期コードを実行できます。 シグナルハンドラが :class:`~twisted.internet.defer.Deferred` を返した場合、Scrapy はその :class:`~twisted.internet.defer.Deferred` が起動するのを待ちます。"
 
 #: ../../topics/signals.rst:59
 msgid "Let's take an example::"
-msgstr ""
+msgstr "例を見てみましょう::"
 
 #: ../../topics/signals.rst:91
 msgid ""
 "See the :ref:`topics-signals-ref` below to know which signals support :class:"
 "`~twisted.internet.defer.Deferred`."
-msgstr ""
+msgstr "どのシグナルが :class:`~twisted.internet.defer.Deferred` をサポートするかについては、以下の :ref:`topics-signals-ref` を参照してください。"
 
 #: ../../topics/signals.rst:97
 msgid "Built-in signals reference"
@@ -96,7 +92,7 @@ msgstr "Scrapy組み込みシグナルとその意味のリストを以下に示
 
 #: ../../topics/signals.rst:105
 msgid "Engine signals"
-msgstr ""
+msgstr "エンジン・シグナル群"
 
 #: ../../topics/signals.rst:108
 msgid "engine_started"
@@ -110,8 +106,6 @@ msgstr "Scrapyエンジンがクロールを開始すると送信されます。
 #: ../../topics/signals.rst:152 ../../topics/signals.rst:172
 #: ../../topics/signals.rst:197 ../../topics/signals.rst:223
 #: ../../topics/signals.rst:247
-#, fuzzy
-#| msgid "This signal supports returning deferreds from their handlers."
 msgid "This signal supports returning deferreds from its handlers."
 msgstr ""
 "このシグナルは、ハンドラーから遅延オブジェクト(deferred)を返すことをサポート"
@@ -140,10 +134,8 @@ msgstr ""
 "が終了したとき)。"
 
 #: ../../topics/signals.rst:133
-#, fuzzy
-#| msgid "Signals"
 msgid "Item signals"
-msgstr "シグナル"
+msgstr "アイテム・シグナル群"
 
 #: ../../topics/signals.rst:136
 msgid ""
@@ -152,7 +144,7 @@ msgid ""
 "DeferredList`. Hence the next batch waits for the :class:`~twisted.internet."
 "defer.DeferredList` to fire and then runs the respective item signal handler "
 "for the next batch of scraped items."
-msgstr ""
+msgstr "最大 :setting:`CONCURRENT_ITEMS` 数のアイテムが並行して処理されるため、多くの遅延(deferred)は :class:`~twisted.internet.defer.DeferredList` を使用して同時に起動されます。 したがって、以下のバッチは :class:`~twisted.internet.defer.DeferredList` が起動するのを待ってから、スクレイピングされたアイテムの次のバッチに対してそれぞれのアイテム・シグナル・ハンドラーを実行します。"
 
 #: ../../topics/signals.rst:144
 msgid "item_scraped"
@@ -168,11 +160,9 @@ msgstr ""
 
 #: ../../topics/signals.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/signals.rst:154
-#, fuzzy
-#| msgid "the item scraped"
 msgid "the scraped item"
 msgstr "スクレイプされたアイテム"
 
@@ -217,10 +207,6 @@ msgid "item_error"
 msgstr "item_error"
 
 #: ../../topics/signals.rst:194
-#, fuzzy
-#| msgid ""
-#| "Sent when a :ref:`topics-item-pipeline` generates an error (ie. raises an "
-#| "exception), except :exc:`~scrapy.exceptions.DropItem` exception."
 msgid ""
 "Sent when a :ref:`topics-item-pipeline` generates an error (i.e. raises an "
 "exception), except :exc:`~scrapy.exceptions.DropItem` exception."
@@ -229,10 +215,8 @@ msgstr ""
 "がエラーを生成した(つまり、例外を発生させた)ときに送信されます。"
 
 #: ../../topics/signals.rst:199
-#, fuzzy
-#| msgid "the item dropped from the :ref:`topics-item-pipeline`"
 msgid "the item that caused the error in the :ref:`topics-item-pipeline`"
-msgstr ":ref:`topics-item-pipeline` からドロップされたアイテム"
+msgstr ":ref:`topics-item-pipeline` でエラーの原因となったアイテム"
 
 #: ../../topics/signals.rst:202 ../../topics/signals.rst:295
 msgid "the response being processed when the exception was raised"
@@ -243,16 +227,12 @@ msgid "the spider which raised the exception"
 msgstr "例外を発生させたスパイダー"
 
 #: ../../topics/signals.rst:208 ../../topics/signals.rst:292
-#, fuzzy
-#| msgid "the response received"
 msgid "the exception raised"
-msgstr "レスポンスを受信した"
+msgstr "例外が発生した"
 
 #: ../../topics/signals.rst:212
-#, fuzzy
-#| msgid "Signals"
 msgid "Spider signals"
-msgstr "シグナル"
+msgstr "スパイダー・シグナル群"
 
 #: ../../topics/signals.rst:215
 msgid "spider_closed"
@@ -351,9 +331,6 @@ msgstr ""
 #: ../../topics/signals.rst:346 ../../topics/signals.rst:365
 #: ../../topics/signals.rst:392 ../../topics/signals.rst:419
 #: ../../topics/signals.rst:445 ../../topics/signals.rst:469
-#, fuzzy
-#| msgid ""
-#| "This signal does not support returning deferreds from their handlers."
 msgid "This signal does not support returning deferreds from its handlers."
 msgstr ""
 "このシグナルは、ハンドラーから遅延オブジェクト(deferred)を返すことをサポート"
@@ -382,9 +359,6 @@ msgid "spider_error"
 msgstr "spider_error"
 
 #: ../../topics/signals.rst:288
-#, fuzzy
-#| msgid ""
-#| "Sent when a spider callback generates an error (ie. raises an exception)."
 msgid ""
 "Sent when a spider callback generates an error (i.e. raises an exception)."
 msgstr ""
@@ -393,7 +367,7 @@ msgstr ""
 
 #: ../../topics/signals.rst:302
 msgid "Request signals"
-msgstr ""
+msgstr "リクエスト・シグナル群"
 
 #: ../../topics/signals.rst:305
 msgid "request_scheduled"
@@ -442,31 +416,22 @@ msgid "the request that reached downloader"
 msgstr "リクエストはダウンローダーに到達した"
 
 #: ../../topics/signals.rst:355
-#, fuzzy
-#| msgid "request_reached_downloader"
 msgid "request_left_downloader"
-msgstr "request_reached_downloader"
+msgstr "request_left_downloader"
 
 #: ../../topics/signals.rst:362
-#, fuzzy
-#| msgid "Sent when a :class:`~scrapy.http.Request` reached downloader."
 msgid ""
 "Sent when a :class:`~scrapy.http.Request` leaves the downloader, even in "
 "case of failure."
-msgstr ""
-":class:`~scrapy.http.Request` がダウンローダーに到達すると送信されます。"
+msgstr "失敗した場合でも、ダウンローダーを離れるときに :class:`~scrapy.http.Request` が送信されます。"
 
 #: ../../topics/signals.rst:367
-#, fuzzy
-#| msgid "the request that reached downloader"
 msgid "the request that reached the downloader"
 msgstr "リクエストはダウンローダーに到達した"
 
 #: ../../topics/signals.rst:374
-#, fuzzy
-#| msgid "response_received"
 msgid "bytes_received"
-msgstr "response_received"
+msgstr "bytes_received"
 
 #: ../../topics/signals.rst:381
 msgid ""
@@ -475,7 +440,7 @@ msgid ""
 "for the same request, with partial data each time. For instance, a possible "
 "scenario for a 25 kb response would be two signals fired with 10 kb of data, "
 "and a final one with 5 kb of data."
-msgstr ""
+msgstr "特定のリクエストに対してバイトのグループが受信されたときに、HTTP 1.1 および S3 ダウンロード・ハンドラーによって送信されます。 このシグナルは、同じリクエストに対して複数回発生する可能性があり、そのたびに部分的なデータが生成されます。 たとえば、25 kb のレスポンスのシナリオとしては、2 つの信号が 10 kb のデータで発信され、最後の信号が 5 kb のデータで発信されます。"
 
 #: ../../topics/signals.rst:387 ../../topics/signals.rst:414
 msgid ""
@@ -483,53 +448,41 @@ msgid ""
 "progress by raising the :exc:`~scrapy.exceptions.StopDownload` exception. "
 "Please refer to the :ref:`topics-stop-response-download` topic for "
 "additional information and examples."
-msgstr ""
+msgstr "このシグナルのハンドラは :exc:`~scrapy.exceptions.StopDownload` 例外を発生させることで進行中のレスポンスのダウンロードを停止できます. 追加情報と例については、:ref:`topics-stop-response-download` トピックを参照してください。"
 
 #: ../../topics/signals.rst:394
-#, fuzzy
-#| msgid "the request that reached downloader"
 msgid "the data received by the download handler"
-msgstr "リクエストはダウンローダーに到達した"
+msgstr "ダウンロード・ハンドラーによって受信されたデータ"
 
 #: ../../topics/signals.rst:397 ../../topics/signals.rst:427
-#, fuzzy
-#| msgid "the request that generated the response"
 msgid "the request that generated the download"
-msgstr "レスポンスを生成したリクエスト"
+msgstr "ダウンロードを生成したリクエスト"
 
 #: ../../topics/signals.rst:400 ../../topics/signals.rst:430
-#, fuzzy
-#| msgid "the spider for which the response is intended"
 msgid "the spider associated with the response"
-msgstr "そのレスポンスを意図したスパイダー"
+msgstr "レスポンスに関連付けられたスパイダー"
 
 #: ../../topics/signals.rst:404
-#, fuzzy
-#| msgid "response_received"
 msgid "headers_received"
-msgstr "response_received"
+msgstr "headers_received"
 
 #: ../../topics/signals.rst:411
 msgid ""
 "Sent by the HTTP 1.1 and S3 download handlers when the response headers are "
 "available for a given request, before downloading any additional content."
-msgstr ""
+msgstr "追加のコンテンツをダウンロードする前に、特定のリクエストに対してレスポンス・ヘッダーが使用可能な場合に、HTTP 1.1 および S3 ダウンロード・ハンドラーによって送信されます。"
 
 #: ../../topics/signals.rst:421
-#, fuzzy
-#| msgid "the request that reached downloader"
 msgid "the headers received by the download handler"
-msgstr "リクエストはダウンローダーに到達した"
+msgstr "ダウンロード・ハンドラーによって受信されたヘッダー"
 
 #: ../../topics/signals.rst:424
-#, fuzzy
-#| msgid "the spider for which the response is intended"
 msgid "expected size of the response body, in bytes"
-msgstr "そのレスポンスを意図したスパイダー"
+msgstr "レスポンス・ボディの期待するサイズ(バイト単位)"
 
 #: ../../topics/signals.rst:434
 msgid "Response signals"
-msgstr ""
+msgstr "レスポンス・シグナル群"
 
 #: ../../topics/signals.rst:437
 msgid "response_received"
@@ -560,7 +513,7 @@ msgid ""
 "The ``request`` argument might not contain the original request that reached "
 "the downloader, if a :ref:`topics-downloader-middleware` modifies the :class:"
 "`~scrapy.http.Response` object and sets a specific ``request`` attribute."
-msgstr ""
+msgstr ":ref:`topics-downloader-middleware` が :class:`~scrapy.http.Response` オブジェクトを変更し、特定の ``request`` 属性を設定する場合、``request`` 引数はダウンローダに届いた元のリクエストを含まない可能性があります。"
 
 #: ../../topics/signals.rst:462
 msgid "response_downloaded"
@@ -575,22 +528,3 @@ msgstr ""
 #: ../../topics/signals.rst:471
 msgid "the response downloaded"
 msgstr "レスポンスがダウンロードされた"
-
-#~ msgid ""
-#~ "Some signals support returning `Twisted deferreds`_ from their handlers, "
-#~ "see the :ref:`topics-signals-ref` below to know which ones."
-#~ msgstr ""
-#~ "いくつかのシグナルは、ハンドラーから `Twisted deferreds`_ を返すことをサ"
-#~ "ポートしています。それがどのシグナルか知るには、以下の :ref:`topics-"
-#~ "signals-ref` を参照してください。"
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
-
-#~ msgid "the exception raised as a Twisted `Failure`_ object"
-#~ msgstr "Twisted `Failure`_ オブジェクトとして発生した例外"
-
-#~ msgid "The signal does not support returning deferreds from their handlers."
-#~ msgstr ""
-#~ "シグナルは、ハンドラーから遅延オブジェクト(deferred)を返すことをサポートし"
-#~ "ていません。"
