@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2019-10-05 07:43+0900\n"
+"PO-Revision-Date: 2021-06-03 16:23+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -175,7 +175,7 @@ msgstr ""
 
 #: ../../topics/spider-middleware.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../topics/spider-middleware.rst:92
 msgid "the response being processed"
@@ -194,17 +194,10 @@ msgstr ""
 "す。"
 
 #: ../../topics/spider-middleware.rst:104
-#, fuzzy
-#| msgid ""
-#| ":meth:`process_spider_output` must return an iterable of :class:`~scrapy."
-#| "http.Request`, dict or :class:`~scrapy.item.Item` objects."
 msgid ""
 ":meth:`process_spider_output` must return an iterable of :class:`~scrapy."
 "http.Request` objects and :ref:`item object <topics-items>`."
-msgstr ""
-":meth:`process_spider_output` は、 :class:`~scrapy.http.Request` または辞書ま"
-"たは :class:`~scrapy.item.Item` オブジェクトの反復可能オブジェクト(iterable)"
-"を返す必要があります。"
+msgstr ":meth:`process_spider_output` は :class:`~scrapy.http.Request` オブジェクトと :ref:`item object <topics-items>` の反復可能オブジェクト(iterable)を返さなければなりません。"
 
 #: ../../topics/spider-middleware.rst:108
 msgid "the response which generated this output from the spider"
@@ -227,19 +220,11 @@ msgstr ""
 "`process_spider_output` メソッドが例外を発生させたときに呼び出されます。"
 
 #: ../../topics/spider-middleware.rst:124
-#, fuzzy
-#| msgid ""
-#| ":meth:`process_spider_exception` should return either ``None`` or an "
-#| "iterable of :class:`~scrapy.http.Request`, dict or :class:`~scrapy.item."
-#| "Item` objects."
 msgid ""
 ":meth:`process_spider_exception` should return either ``None`` or an "
 "iterable of :class:`~scrapy.http.Request` objects and :ref:`item object "
 "<topics-items>`."
-msgstr ""
-":meth:`process_spider_exception` は ``None`` または :class:`~scrapy.http."
-"Request` または辞書または :class:`~scrapy.item.Item` オブジェクトの反復可能オ"
-"ブジェクト(iterable)のいずれかを返す必要があります。"
+msgstr ":meth:`process_spider_exception` は ``None`` または :class:`~scrapy.http.Request` オブジェクトと、 :ref:`アイテム・オブジェクト <topics-items>` の反復可能オブジェクト(iterable)を返す必要があります。"
 
 #: ../../topics/spider-middleware.rst:128
 msgid ""
@@ -459,25 +444,13 @@ msgstr ""
 "ます::"
 
 #: ../../topics/spider-middleware.rst:253
-#, fuzzy
-#| msgid ""
-#| "The ``handle_httpstatus_list`` key of :attr:`Request.meta <scrapy.http."
-#| "Request.meta>` can also be used to specify which response codes to allow "
-#| "on a per-request basis. You can also set the meta key "
-#| "``handle_httpstatus_all`` to ``True`` if you want to allow any response "
-#| "code for a request."
 msgid ""
 "The ``handle_httpstatus_list`` key of :attr:`Request.meta <scrapy.http."
 "Request.meta>` can also be used to specify which response codes to allow on "
 "a per-request basis. You can also set the meta key ``handle_httpstatus_all`` "
 "to ``True`` if you want to allow any response code for a request, and "
 "``False`` to disable the effects of the ``handle_httpstatus_all`` key."
-msgstr ""
-":attr:`Request.meta <scrapy.http.Request.meta>` の "
-"``handle_httpstatus_list`` キーは、リクエストごとに許可するレスポンス・コード"
-"を指定するためにも使用できます。リクエストに対するレスポンス・コードを許可し"
-"たい場合、メタ・キー ``handle_httpstatus_all`` を ``True`` に設定することもで"
-"きます。"
+msgstr ":attr:`Request.meta <scrapy.http.Request.meta>` の ``handle_httpstatus_list`` キーを使用して、リクエストごとに許可するレスポンス・コードを指定することもできます。 また、メタキー ``handle_httpstatus_all`` を ``True`` に設定すると、リクエストに対する任意のレスポンス・コードを許可し、 ``False`` で ``handle_httpstatus_all`` キーの効果を無効にすることができます。"
 
 #: ../../topics/spider-middleware.rst:259
 msgid ""
@@ -1044,6 +1017,3 @@ msgid ""
 ":setting:`URLLENGTH_LIMIT` - The maximum URL length to allow for crawled "
 "URLs."
 msgstr ":setting:`URLLENGTH_LIMIT` - クロールするURLの最大長。"
-
-#~ msgid "パラメータ"
-#~ msgstr "パラメータ"
