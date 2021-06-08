@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-08 21:46+0900\n"
+"PO-Revision-Date: 2021-06-09 08:24+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -857,13 +857,13 @@ msgstr "Scrapy 2.3.0 (2020-08-04)"
 msgid ""
 ":ref:`Feed exports <topics-feed-exports>` now support :ref:`Google Cloud "
 "Storage <topics-feed-storage-gcs>` as a storage backend"
-msgstr ""
+msgstr ":ref:`フィード・エクスポート <topics-feed-exports>` は、ストレージ・バックエンドとして :ref:`Google Cloud Storage <topics-feed-storage-gcs>` をサポートするようになりました"
 
 #: ../../news.rst:529
 msgid ""
 "The new :setting:`FEED_EXPORT_BATCH_ITEM_COUNT` setting allows to deliver "
 "output items in batches of up to the specified number of items."
-msgstr ""
+msgstr "新しい :setting:`FEED_EXPORT_BATCH_ITEM_COUNT` 設定により、指定された数のアイテムのバッチで出力アイテムを配信できます。"
 
 #: ../../news.rst:532
 msgid ""
@@ -872,20 +872,20 @@ msgid ""
 "has finished when using certain storage backends (:ref:`S3 <topics-feed-"
 "storage-s3>`, :ref:`FTP <topics-feed-storage-ftp>`, and now :ref:`GCS "
 "<topics-feed-storage-gcs>`)."
-msgstr ""
+msgstr "これは、特定のストレージ・バックエンド (:ref:`S3 <topics-feed-storage-s3>` と :ref:`FTP <topics-feed-storage-ftp>` と 今回の :ref:`GCS <topics-feed-storage-gcs>`) を使用している場合、クロールが完了した後にのみ Scrapy がアイテムの配信を開始する :ref:`遅延ファイル配信 <delayed-file-delivery>` の回避策としても機能します。"
 
 #: ../../news.rst:538
 msgid ""
 "The base implementation of :ref:`item loaders <topics-loaders>` has been "
 "moved into a separate library, :doc:`itemloaders <itemloaders:index>`, "
 "allowing usage from outside Scrapy and a separate release schedule"
-msgstr ""
+msgstr ":ref:`itemloaders <topics-loaders>` の基本実装は別のライブラリ :doc:`itemloaders <itemloaders:index>` に移動され、Scrapy の外部からの使用と別のリリースのスケジューリングが可能になりました。"
 
 #: ../../news.rst:545
 msgid ""
 "Removed the following classes and their parent modules from ``scrapy."
 "linkextractors``:"
-msgstr ""
+msgstr "以下のクラスとその親モジュールを ``scrapy.linkextractors`` から削除しました:"
 
 #: ../../news.rst:548
 msgid "``htmlparser.HtmlParserLinkExtractor``"
@@ -907,52 +907,52 @@ msgstr "``sgml.SgmlLinkExtractor``"
 msgid ""
 "Use :class:`LinkExtractor <scrapy.linkextractors.lxmlhtml."
 "LxmlLinkExtractor>` instead (:issue:`4356`, :issue:`4679`)"
-msgstr ""
+msgstr "代わりに :class:`LinkExtractor <scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor>` を使用してください (:issue:`4356`, :issue:`4679`)"
 
 #: ../../news.rst:561
 msgid ""
 "The ``scrapy.utils.python.retry_on_eintr`` function is now deprecated (:"
 "issue:`4683`)"
-msgstr ""
+msgstr "``scrapy.utils.python.retry_on_eintr`` 関数は非推奨になりました (:issue:`4683`)"
 
 #: ../../news.rst:568
 msgid ""
 ":ref:`Feed exports <topics-feed-exports>` support :ref:`Google Cloud Storage "
 "<topics-feed-storage-gcs>` (:issue:`685`, :issue:`3608`)"
-msgstr ""
+msgstr ":ref:`フィード・エクスポート <topics-feed-exports>` が :ref:`Google Cloud Storage <topics-feed-storage-gcs>` をサポート (:issue:`685`, :issue:`3608`)"
 
 #: ../../news.rst:571
 msgid ""
 "New :setting:`FEED_EXPORT_BATCH_ITEM_COUNT` setting for batch deliveries (:"
 "issue:`4250`, :issue:`4434`)"
-msgstr ""
+msgstr "バッチ配信用の新しい :setting:`FEED_EXPORT_BATCH_ITEM_COUNT` 設定 (:issue:`4250`, :issue:`4434`)"
 
 #: ../../news.rst:574
 msgid ""
 "The :command:`parse` command now allows specifying an output file (:issue:"
 "`4317`, :issue:`4377`)"
-msgstr ""
+msgstr ":command:`parse` コマンドで出力ファイルを指定できるようになりました (:issue:`4317`, :issue:`4377`)"
 
 #: ../../news.rst:577
 msgid ""
 ":meth:`Request.from_curl <scrapy.http.Request.from_curl>` and :func:`~scrapy."
 "utils.curl.curl_to_request_kwargs` now also support ``--data-raw`` (:issue:"
 "`4612`)"
-msgstr ""
+msgstr ":meth:`Request.from_curl <scrapy.http.Request.from_curl>` と :func:`~scrapy.utils.curl.curl_to_request_kwargs` は ``--data-raw`` もサポートするようになりました (:issue:`4612`)"
 
 #: ../../news.rst:581
 msgid ""
 "A ``parse`` callback may now be used in built-in spider subclasses, such as :"
 "class:`~scrapy.spiders.CrawlSpider` (:issue:`712`, :issue:`732`, :issue:"
 "`781`, :issue:`4254` )"
-msgstr ""
+msgstr "``parse`` コールバックは :class:`~scrapy.spiders.CrawlSpider` などの組み込みスパイダー・サブクラスで使用できるようになりました。 (:issue:`712`, :issue:`732`, :issue:`781`, :issue:`4254` )"
 
 #: ../../news.rst:589
 msgid ""
 "Fixed the :ref:`CSV exporting <topics-feed-format-csv>` of :ref:`dataclass "
 "items <dataclass-items>` and :ref:`attr.s items <attrs-items>` (:issue:"
 "`4667`, :issue:`4668`)"
-msgstr ""
+msgstr ":ref:`dataclassアイテム <dataclass-items>` および :ref:`attr.s アイテム <attrs-items>` の :ref:`CSV エクスポート <topics-feed-format-csv>` を修正しました (:issue: `4667`, :issue:`4668`)"
 
 #: ../../news.rst:593
 msgid ""
@@ -960,69 +960,69 @@ msgid ""
 "utils.curl.curl_to_request_kwargs` now set the request method to ``POST`` "
 "when a request body is specified and no request method is specified (:issue:"
 "`4612`)"
-msgstr ""
+msgstr ":meth:`Request.from_curl <scrapy.http.Request.from_curl>` と :func:`~scrapy.utils.curl.curl_to_request_kwargs` は、リクエスト・ボディが指定され、リクエスト・メソッドが指定されていない場合、リクエスト・メソッドを ``POST`` に設定するようになりました (:issue:`4612`)"
 
 #: ../../news.rst:598
 msgid ""
 "The processing of ANSI escape sequences in enabled in Windows 10.0.14393 and "
 "later, where it is required for colored output (:issue:`4393`, :issue:`4403`)"
-msgstr ""
+msgstr "Windows 10.0.14393 以降では、カラー出力に必要な ANSI エスケープ シーケンスの処理が有効になっています。 (:issue:`4393`, :issue:`4403`)"
 
 #: ../../news.rst:606
 msgid ""
 "Updated the `OpenSSL cipher list format`_ link in the documentation about "
 "the :setting:`DOWNLOADER_CLIENT_TLS_CIPHERS` setting (:issue:`4653`)"
-msgstr ""
+msgstr ":setting:`DOWNLOADER_CLIENT_TLS_CIPHERS` 設定に関する文書で `OpenSSL cipher list format`_ リンクを更新しました (:issue:`4653`)"
 
 #: ../../news.rst:609
 msgid ""
 "Simplified the code example in :ref:`topics-loaders-dataclass` (:issue:"
 "`4652`)"
-msgstr ""
+msgstr ":ref:`topics-loaders-dataclass` のコード例を簡略化 (:issue:`4652`)"
 
 #: ../../news.rst:618
 msgid ""
 "The base implementation of :ref:`item loaders <topics-loaders>` has been "
 "moved into :doc:`itemloaders <itemloaders:index>` (:issue:`4005`, :issue:"
 "`4516`)"
-msgstr ""
+msgstr ":ref:`itemloaders <topics-loaders>` の基本実装は :doc:`itemloaders <itemloaders:index>` に移動しました。 (:issue:`4005`, :issue:`4516`)"
 
 #: ../../news.rst:622
 msgid ""
 "Fixed a silenced error in some scheduler tests (:issue:`4644`, :issue:`4645`)"
-msgstr ""
+msgstr "いくつかのスケジューラーテストの沈黙エラー(silenced error)を修正 (:issue:`4644`, :issue:`4645`)"
 
 #: ../../news.rst:625
 msgid "Renewed the localhost certificate used for SSL tests (:issue:`4650`)"
-msgstr ""
+msgstr "SSLテストに使用されるローカルホスト証明書を更新 (:issue:`4650`)"
 
 #: ../../news.rst:627
 msgid "Removed cookie-handling code specific to Python 2 (:issue:`4682`)"
-msgstr ""
+msgstr "Python2固有のクッキー処理コードを削除 (:issue:`4682`)"
 
 #: ../../news.rst:629
 msgid "Stopped using Python 2 unicode literal syntax (:issue:`4704`)"
-msgstr ""
+msgstr "Python 2 unicode リテラル構文の使用を停止 (:issue:`4704`)"
 
 #: ../../news.rst:631
 msgid "Stopped using a backlash for line continuation (:issue:`4673`)"
-msgstr ""
+msgstr "行継続のためのバックラッシュの使用をやめました (:issue:`4673`)"
 
 #: ../../news.rst:633
 msgid "Removed unneeded entries from the MyPy exception list (:issue:`4690`)"
-msgstr ""
+msgstr "MyPy 例外リストから不要なエントリを削除 (:issue:`4690`)"
 
 #: ../../news.rst:635
 msgid ""
 "Automated tests now pass on Windows as part of our continuous integration "
 "system (:issue:`4458`)"
-msgstr ""
+msgstr "継続的インテグレーション・システムの一部として自動テストがWindowsでパス(pass)するようになりました (:issue:`4458`)"
 
 #: ../../news.rst:638
 msgid ""
 "Automated tests now pass on the latest PyPy version for supported Python "
 "versions in our continuous integration system (:issue:`4504`)"
-msgstr ""
+msgstr "自動テストは、継続的インテグレーション・システムでサポートされている Python バージョンの最新の PyPy バージョンに合格するようになりました (:issue:`4504`)"
 
 #: ../../news.rst:645
 msgid "Scrapy 2.2.1 (2020-07-17)"
