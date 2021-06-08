@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-05-25 18:58+0900\n"
+"PO-Revision-Date: 2021-06-08 21:46+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -329,13 +329,13 @@ msgstr "Scrapy 2.4.1 (2020-11-17)"
 msgid ""
 "Fixed :ref:`feed exports <topics-feed-exports>` overwrite support (:issue:"
 "`4845`, :issue:`4857`, :issue:`4859`)"
-msgstr ""
+msgstr "修正： :ref:`フィード・エクスポート <topics-feed-exports>` 上書きサポート (:issue:`4845`, :issue:`4857`, :issue:`4859`)"
 
 #: ../../news.rst:197
 msgid ""
 "Fixed the AsyncIO event loop handling, which could make code hang (:issue:"
 "`4855`, :issue:`4872`)"
-msgstr ""
+msgstr "修正：コードがハングする可能性がある AsyncIO イベント ループ処理 (:issue:`4855`, :issue:`4872`)"
 
 #: ../../news.rst:200
 msgid ""
@@ -343,19 +343,19 @@ msgid ""
 "CachingHostnameResolver` for download handlers that call :meth:`reactor."
 "resolve <twisted.internet.interfaces.IReactorCore.resolve>` (:issue:`4802`, :"
 "issue:`4803`)"
-msgstr ""
+msgstr "修正： :meth:`reactor.resolve <twisted.internet.interfaces.IReactorCore.resolve>` を呼び出すダウンロード・ハンドラー用のIPv6対応DNSリゾルバー :class:`~scrapy.resolver.CachingHostnameResolver` (:issue:`4802`, :issue:`4803`)"
 
 #: ../../news.rst:206
 msgid ""
 "Fixed the output of the :command:`genspider` command showing placeholders "
 "instead of the import path of the generated spider module (:issue:`4874`)"
-msgstr ""
+msgstr "修正：生成されたスパイダー・モジュールのインポートパスの代わりにプレース・ホルダーを表示する :command:`genspider` コマンドの出力 (:issue:`4874`)"
 
 #: ../../news.rst:209
 msgid ""
 "Migrated Windows CI from Azure Pipelines to GitHub Actions (:issue:`4869`, :"
 "issue:`4876`)"
-msgstr ""
+msgstr "Azure Pipelines から GitHub Actions への Windows CI の移行 (:issue:`4869`, :issue:`4876`)"
 
 #: ../../news.rst:216
 msgid "Scrapy 2.4.0 (2020-10-11)"
@@ -363,47 +363,47 @@ msgstr "Scrapy 2.4.0 (2020-10-11)"
 
 #: ../../news.rst:220
 msgid "Python 3.5 support has been dropped."
-msgstr ""
+msgstr "Python 3.5 のサポートは廃止されました。"
 
 #: ../../news.rst:222
 msgid ""
 "The ``file_path`` method of :ref:`media pipelines <topics-media-pipeline>` "
 "can now access the source :ref:`item <topics-items>`."
-msgstr ""
+msgstr ":ref:`メディア・パイプライン <topics-media-pipeline>` の ``file_path`` メソッドは、源の :ref:`アイテム <topics-items>` にアクセスできるようになりました。"
 
 #: ../../news.rst:225
 msgid "This allows you to set a download file path based on item data."
-msgstr ""
+msgstr "これにより、アイテム・データに基づいてダウンロード・ファイルのパス(path)を設定できます。"
 
 #: ../../news.rst:227
 msgid ""
 "The new ``item_export_kwargs`` key of the :setting:`FEEDS` setting allows to "
 "define keyword parameters to pass to :ref:`item exporter classes <topics-"
 "exporters>`"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の新しい ``item_export_kwargs`` キーにより、 :ref:`アイテム・エクスポーター・クラス <topics-exporters>` に渡すキーワード・パラメータを定義できます。"
 
 #: ../../news.rst:231
 msgid ""
 "You can now choose whether :ref:`feed exports <topics-feed-exports>` "
 "overwrite or append to the output file."
-msgstr ""
+msgstr ":ref:`フィード・エクスポート <topics-feed-exports>` が出力ファイルを上書きするか追加するかを選択できるようになりました。"
 
 #: ../../news.rst:234
 msgid ""
 "For example, when using the :command:`crawl` or :command:`runspider` "
 "commands, you can use the ``-O`` option instead of ``-o`` to overwrite the "
 "output file."
-msgstr ""
+msgstr "たとえば、 :command:`crawl` または :command:`runspider` コマンドを使用する場合、出力ファイルを上書きするために ``-o`` の代わりに ``-O`` オプションを使用できます。"
 
 #: ../../news.rst:238
 msgid "Zstd-compressed responses are now supported if zstandard_ is installed."
-msgstr ""
+msgstr "zstandard_ がインストールされている場合、Zstd-compressedレスポンス がサポートされるようになりました。"
 
 #: ../../news.rst:240
 msgid ""
 "In settings, where the import path of a class is required, it is now "
 "possible to pass a class object instead."
-msgstr ""
+msgstr "クラスのインポート・パスが必要な設定で、代わりにクラス・オブジェクトを渡すことができるようになりました。"
 
 #: ../../news.rst:244
 msgid "Modified requirements"
@@ -454,25 +454,25 @@ msgid ""
 ":class:`~scrapy.downloadermiddlewares.cookies.CookiesMiddleware` once again "
 "discards cookies defined in :attr:`Request.headers <scrapy.http.Request."
 "headers>`."
-msgstr ""
+msgstr ":class:`~scrapy.downloadermiddlewares.cookies.CookiesMiddleware` は再び :attr:`Request.headers <scrapy.http.Request.headers>` で定義されたクッキーを破棄します。"
 
 #: ../../news.rst:272
 msgid ""
 "We decided to revert this bug fix, introduced in Scrapy 2.2.0, because it "
 "was reported that the current implementation could break existing code."
-msgstr ""
+msgstr "現在の実装では既存のコードが壊れる可能性があると報告されたため、Scrapy 2.2.0 で行われたバグ修正を元に戻すことにしました。"
 
 #: ../../news.rst:275
 msgid ""
 "If you need to set cookies for a request, use the :class:`Request.cookies "
 "<scrapy.http.Request>` parameter."
-msgstr ""
+msgstr "リクエストにクッキーを設定する必要がある場合は、 :class:`Request.cookies <scrapy.http.Request>` パラメータを使用してください。"
 
 #: ../../news.rst:278
 msgid ""
 "A future version of Scrapy will include a new, better implementation of the "
 "reverted bug fix."
-msgstr ""
+msgstr "Scrapy の将来のバージョンには、元に戻されたバグ修正の新しい、より良い実装が含まれます。"
 
 #: ../../news.rst:281
 msgid "(:issue:`4717`, :issue:`4823`)"
@@ -486,14 +486,14 @@ msgid ""
 "either pass those parameters to its ``__init__`` method or use :class:"
 "`S3FeedStorage.from_crawler <scrapy.extensions.feedexport.S3FeedStorage."
 "from_crawler>` (:issue:`4356`, :issue:`4411`, :issue:`4688`)"
-msgstr ""
+msgstr ":class:`scrapy.extensions.feedexport.S3FeedStorage` は ``__init__`` メソッドに渡されない場合、実行中のプロジェクト設定から ``access_key`` と ``secret_key`` の値を読み込まなくなりました。 これらのパラメータを ``__init__`` メソッドに渡すか、あるいは :class:`S3FeedStorage.from_crawler <scrapy.extensions.feedexport.S3FeedStorage.from_crawler>` を使用する必要があります。 (:issue:`4356`, :issue:`4411`, :issue:`4688`)"
 
 #: ../../news.rst:297
 msgid ""
 ":attr:`Rule.process_request <scrapy.spiders.crawl.Rule.process_request>` no "
 "longer admits callables which expect a single ``request`` parameter, rather "
 "than both ``request`` and ``response`` (:issue:`4818`)"
-msgstr ""
+msgstr ":attr:`Rule.process_request <scrapy.spiders.crawl.Rule.process_request>` は、``request`` と ``response`` の両方ではなく、単一の ``request`` パラメータを期待する呼び出し可能オブジェクトを許可しなくなりました。"
 
 #: ../../news.rst:305
 msgid ""
@@ -501,7 +501,7 @@ msgid ""
 "not accept a keyword-only ``item`` parameter in any of the  methods that :"
 "ref:`now support this parameter <media-pipeline-item-parameter>` are now "
 "deprecated (:issue:`4628`, :issue:`4686`)"
-msgstr ""
+msgstr "カスタムの :ref:`メディア・パイプライン <topics-media-pipeline>` では、 :ref:`現在このパラメータをサポートする <media-pipeline-item-parameter>` どのメソッドでも ``item`` キーワード・オンリー・パラメータを受け入れないシグネチャは非推奨になりました。"
 
 #: ../../news.rst:310
 msgid ""
@@ -509,27 +509,27 @@ msgid ""
 "``__init__`` method signatures that do not accept a keyword-only "
 "``feed_options`` parameter are now deprecated (:issue:`547`, :issue:`716`, :"
 "issue:`4512`)"
-msgstr ""
+msgstr "カスタム :ref:`フィード・ストレージ・バックエンド・クラス <topics-feed-storage>` では、キーワード・オンリーの ``feed_options`` パラメータを受け入れない ``__init__`` メソッド・シグネチャは非推奨になりました。"
 
 #: ../../news.rst:315
 msgid ""
 "The :class:`scrapy.utils.python.WeakKeyCache` class is now deprecated (:"
 "issue:`4684`, :issue:`4701`)"
-msgstr ""
+msgstr ":class:`scrapy.utils.python.WeakKeyCache` クラスは非推奨になりました。 (:issue:`4684`, :issue:`4701`)"
 
 #: ../../news.rst:318
 msgid ""
 "The :func:`scrapy.utils.boto.is_botocore` function is now deprecated, use :"
 "func:`scrapy.utils.boto.is_botocore_available` instead (:issue:`4734`, :"
 "issue:`4776`)"
-msgstr ""
+msgstr ":func:`scrapy.utils.boto.is_botocore` 関数は非推奨になりました。代わりに :func:`scrapy.utils.boto.is_botocore_available` を使ってください。 (:issue:`4734`, :issue:`4776`)"
 
 #: ../../news.rst:328
 msgid ""
 "The following methods of :ref:`media pipelines <topics-media-pipeline>` now "
 "accept an ``item`` keyword-only parameter containing the source :ref:`item "
 "<topics-items>`:"
-msgstr ""
+msgstr ":ref:`メディア・パイプライン <topics-media-pipeline>` の以下メソッドは、ソース :ref:`アイテム <topics-items>` を含む ``item`` キーワード・オンリー・パラメータを受け入れるようになりました。"
 
 #: ../../news.rst:332
 msgid "In :class:`scrapy.pipelines.files.FilesPipeline`:"
@@ -588,31 +588,31 @@ msgid ""
 "The new ``item_export_kwargs`` key of the :setting:`FEEDS` setting allows to "
 "define keyword parameters to pass to :ref:`item exporter classes <topics-"
 "exporters>` (:issue:`4606`, :issue:`4768`)"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の新しい ``item_export_kwargs`` キーにより、キーワード・パラメータを定義して :ref:`アイテム・エクスポーター・クラス <topics-exporters>` に渡すことができます。 (:issue:`4606`, :issue:`4768`)"
 
 #: ../../news.rst:362
 msgid ":ref:`Feed exports <topics-feed-exports>` gained overwrite support:"
-msgstr ""
+msgstr ":ref:`フィード・エクスポート <topics-feed-exports>` は上書きのサポートを獲得しました:"
 
 #: ../../news.rst:364
 msgid ""
 "When using the :command:`crawl` or :command:`runspider` commands, you can "
 "use the ``-O`` option instead of ``-o`` to overwrite the output file"
-msgstr ""
+msgstr ":command:`crawl` または :command:`runspider` コマンドを使用する場合、出力ファイルを上書きするために ``-o`` の代わりに ``-O`` オプションを使用できます"
 
 #: ../../news.rst:368
 msgid ""
 "You can use the ``overwrite`` key in the :setting:`FEEDS` setting to "
 "configure whether to overwrite the output file (``True``) or append to its "
 "content (``False``)"
-msgstr ""
+msgstr ":setting:`FEEDS` 設定の ``overwrite`` キーを使用して、出力ファイルを上書きする (``True``) か、その内容に追加する (``False``) かを設定できます。"
 
 #: ../../news.rst:372
 msgid ""
 "The ``__init__`` and ``from_crawler`` methods of :ref:`feed storage backend "
 "classes <topics-feed-storage>` now receive a new keyword-only parameter, "
 "``feed_options``, which is a dictionary of :ref:`feed options <feed-options>`"
-msgstr ""
+msgstr ":ref:`フィード・ストレージ・バックエンド・クラス <topics-feed-storage>` の ``__init__`` および ``from_crawler`` メソッドは、新しいキーワード・オンリー・パラメータ ``feed_options`` を受け取るようになりました。これは、 :ref:`フィード・オプション <feed-options>` の辞書です。"
 
 #: ../../news.rst:377 ../../news.rst:418
 msgid "(:issue:`547`, :issue:`716`, :issue:`4512`)"
@@ -622,26 +622,26 @@ msgstr "(:issue:`547`, :issue:`716`, :issue:`4512`)"
 msgid ""
 "Zstd-compressed responses are now supported if zstandard_ is installed (:"
 "issue:`4831`)"
-msgstr ""
+msgstr "zstandard_ がインストールされている場合、Zstd-compressedレスポンスがサポートされるようになりました(:issue:`4831`)"
 
 #: ../../news.rst:382
 msgid ""
 "In settings, where the import path of a class is required, it is now "
 "possible to pass a class object instead (:issue:`3870`, :issue:`3873`)."
-msgstr ""
+msgstr "クラスのインポート パスが必要な設定で、代わりにクラス オブジェクトを渡すことができるようになりました (:issue:`3870`, :issue:`3873`)"
 
 #: ../../news.rst:385
 msgid ""
 "This includes also settings where only part of its value is made of an "
 "import path, such as :setting:`DOWNLOADER_MIDDLEWARES` or :setting:"
 "`DOWNLOAD_HANDLERS`."
-msgstr ""
+msgstr "これには、 :setting:`DOWNLOADER_MIDDLEWARES` や :setting:`DOWNLOAD_HANDLERS` など、値の一部のみがインポート・パスで構成される設定も含まれます。"
 
 #: ../../news.rst:389
 msgid ""
 ":ref:`Downloader middlewares <topics-downloader-middleware>` can now "
 "override :class:`response.request <scrapy.http.Response.request>`."
-msgstr ""
+msgstr ":ref:`ダウンローダー・ミドルウェア <topics-downloader-middleware>` は :class:`response.request <scrapy.http.Response.request>` をオーバーライドできるようになりました。"
 
 #: ../../news.rst:392
 msgid ""
@@ -651,21 +651,21 @@ msgid ""
 "`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_exception` with "
 "a custom :class:`~scrapy.http.Request` object assigned to :class:`response."
 "request <scrapy.http.Response.request>`:"
-msgstr ""
+msgstr ":ref:`ダウンローダー・ミドルウェア <topics-downloader-middleware>` が、 :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_response` または :meth:`~scrapy.downloadermiddlewares.DownloaderMiddleware.process_exception` から :class:`~scrapy.http.Response` オブジェクトを返し、 :class:`response.request <scrapy.http.Response.request>` に割り当てられたカスタム :class:`~scrapy.http.Request` オブジェクトを使用する場合:"
 
 #: ../../news.rst:400
 msgid ""
 "The response is handled by the callback of that custom :class:`~scrapy.http."
 "Request` object, instead of being handled by the callback of the original :"
 "class:`~scrapy.http.Request` object"
-msgstr ""
+msgstr "レスポンスは、元の :class:`~scrapy.http.Request` オブジェクトのコールバックによって処理される代わりに、そのカスタム :class:`~scrapy.http.Request` オブジェクトのコールバックによって処理されます"
 
 #: ../../news.rst:404
 msgid ""
 "That custom :class:`~scrapy.http.Request` object is now sent as the "
 "``request`` argument to the :signal:`response_received` signal, instead of "
 "the original :class:`~scrapy.http.Request` object"
-msgstr ""
+msgstr "そのカスタム :class:`~scrapy.http.Request` オブジェクトは、元の :class:`~scrapy.http.Request` オブジェクトの代わりに、 :signal:`response_received` シグナルへの ``request`` 引数として送信されます"
 
 #: ../../news.rst:408
 msgid "(:issue:`4529`, :issue:`4632`)"
@@ -674,100 +674,100 @@ msgstr "(:issue:`4529`, :issue:`4632`)"
 #: ../../news.rst:410
 msgid ""
 "When using the :ref:`FTP feed storage backend <topics-feed-storage-ftp>`:"
-msgstr ""
+msgstr ":ref:`FTPフィード・ストレージ・バックエンド <topics-feed-storage-ftp>` を使う場合:"
 
 #: ../../news.rst:412
 msgid ""
 "It is now possible to set the new ``overwrite`` :ref:`feed option <feed-"
 "options>` to ``False`` to append to an existing file instead of overwriting "
 "it"
-msgstr ""
+msgstr "新しい ``overwrite`` :ref:`フィード・オプション <feed-options>` を ``False`` に設定して、既存のファイルに上書きする代わりに追加することができるようになりました。"
 
 #: ../../news.rst:416
 msgid "The FTP password can now be omitted if it is not necessary"
-msgstr ""
+msgstr "FTP パスワードが不要な場合は省略できるようになりました"
 
 #: ../../news.rst:420
 msgid ""
 "The ``__init__`` method of :class:`~scrapy.exporters.CsvItemExporter` now "
 "supports an ``errors`` parameter to indicate how to handle encoding errors (:"
 "issue:`4755`)"
-msgstr ""
+msgstr ":class:`~scrapy.exporters.CsvItemExporter` の ``__init__`` メソッドは、エンコーディング・エラーの処理方法を示す ``errors`` パラメータをサポートするようになりました。 (:issue:`4755`)"
 
 #: ../../news.rst:424
 msgid ""
 "When :ref:`using asyncio <using-asyncio>`, it is now possible to :ref:`set a "
 "custom asyncio loop <using-custom-loops>` (:issue:`4306`, :issue:`4414`)"
-msgstr ""
+msgstr ":ref:`asyncio使用 <using-asyncio>` の場合、 :ref:`カスタム asyncio ループの設定 <using-custom-loops>` が可能になりました。"
 
 #: ../../news.rst:428
 msgid ""
 "Serialized requests (see :ref:`topics-jobs`) now support callbacks that are "
 "spider methods that delegate on other callable (:issue:`4756`)"
-msgstr ""
+msgstr "シリアライズされたリクエスト( :ref:`topics-jobs` 参照) は、他の呼び出し可能オブジェクトに委任するスパイダー・メソッドであるコールバックをサポートするようになりました。 (:issue:`4756`)"
 
 #: ../../news.rst:431
 msgid ""
 "When a response is larger than :setting:`DOWNLOAD_MAXSIZE`, the logged "
 "message is now a warning, instead of an error (:issue:`3874`, :issue:"
 "`3886`, :issue:`4752`)"
-msgstr ""
+msgstr "レスポンスが :setting:`DOWNLOAD_MAXSIZE` よりも大きい場合、ログに記録されるメッセージはエラーではなく警告になります (:issue:`3874`, :issue:`3886`, :issue:`4752`)"
 
 #: ../../news.rst:439
 msgid ""
 "The :command:`genspider` command no longer overwrites existing files unless "
 "the ``--force`` option is used (:issue:`4561`, :issue:`4616`, :issue:`4623`)"
-msgstr ""
+msgstr ":command:`genspider` コマンドは、``--force`` オプションを使用しない限り既存のファイルを上書きしなくなりました (:issue:`4561`, :issue:`4616`, :issue:`4623`)"
 
 #: ../../news.rst:443
 msgid ""
 "Cookies with an empty value are no longer considered invalid cookies (:issue:"
 "`4772`)"
-msgstr ""
+msgstr "値が空のクッキーは無効なクッキーとは見なされくなりました(:issue:`4772`)"
 
 #: ../../news.rst:446
 msgid ""
 "The :command:`runspider` command now supports files with the ``.pyw`` file "
 "extension (:issue:`4643`, :issue:`4646`)"
-msgstr ""
+msgstr ":command:`runspider` コマンドは、ファイル拡張子 ``.pyw`` のファイルをサポートするようになりました。 (:issue:`4643`, :issue:`4646`)"
 
 #: ../../news.rst:449
 msgid ""
 "The :class:`~scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` "
 "middleware now simply ignores unsupported proxy values (:issue:`3331`, :"
 "issue:`4778`)"
-msgstr ""
+msgstr ":class:`~scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` ミドルウェアは、サポートされていないプロキシ値を単に無視するようになりました (:issue:`3331`, :issue:`4778`)"
 
 #: ../../news.rst:453
 msgid ""
 "Checks for generator callbacks with a ``return`` statement no longer warn "
 "about ``return`` statements in nested functions (:issue:`4720`, :issue:"
 "`4721`)"
-msgstr ""
+msgstr "``return`` 文でジェネレータのコールバックをチェックしても、ネストされた関数の ``return`` 文について警告しなくなりました (:issue:`4720`, :issue:`4721`)"
 
 #: ../../news.rst:457
 msgid ""
 "The system file mode creation mask no longer affects the permissions of "
 "files generated using the :command:`startproject` command (:issue:`4722`)"
-msgstr ""
+msgstr "システム・ファイル・モードの作成マスクは、:command:`startproject` コマンドを使用して生成されたファイルのパーミッションに影響しなくなりました (:issue:`4722`)"
 
 #: ../../news.rst:460
 msgid ""
 ":func:`scrapy.utils.iterators.xmliter` now supports namespaced node names (:"
 "issue:`861`, :issue:`4746`)"
-msgstr ""
+msgstr ":func:`scrapy.utils.iterators.xmliter` は名前空間付きノード名をサポートするようになりました(:issue:`861`, :issue:`4746`)"
 
 #: ../../news.rst:463
 msgid ""
 ":class:`~scrapy.Request` objects can now have ``about:`` URLs, which can "
 "work when using a headless browser (:issue:`4835`)"
-msgstr ""
+msgstr ":class:`~scrapy.Request` オブジェクトは ``about:`` の URL達 を持つことができるようになりました。これはヘッドレス・ブラウザを使用しているときに機能します。"
 
 #: ../../news.rst:470
 msgid ""
 "The :setting:`FEED_URI_PARAMS` setting is now documented (:issue:`4671`, :"
 "issue:`4724`)"
-msgstr ""
+msgstr ":setting:`FEED_URI_PARAMS` 設定が文書化されました (:issue:`4671`, :issue:`4724`)"
 
 #: ../../news.rst:473
 msgid ""
@@ -775,25 +775,25 @@ msgid ""
 "extractors>` with an usage example from a spider callback and reference "
 "documentation for the :class:`~scrapy.link.Link` class (:issue:`4751`, :"
 "issue:`4775`)"
-msgstr ""
+msgstr "スパイダー・コールバックと、 :class:`~scrapy.link.Link` クラスのリファレンス文書の使用例により、 :ref:`リンク抽出器 <topics-link-extractors>` の文書を改善しました (:issue:`4751`, :issue:`4775`)"
 
 #: ../../news.rst:478
 msgid ""
 "Clarified the impact of :setting:`CONCURRENT_REQUESTS` when using the :class:"
 "`~scrapy.extensions.closespider.CloseSpider` extension (:issue:`4836`)"
-msgstr ""
+msgstr ":class:`~scrapy.extensions.closespider.CloseSpider` 拡張機能を使用する場合の :setting:`CONCURRENT_REQUESTS` の影響を明確にしました (:issue:`4836`)"
 
 #: ../../news.rst:482
 msgid ""
 "Removed references to Python 2’s ``unicode`` type (:issue:`4547`, :issue:"
 "`4703`)"
-msgstr ""
+msgstr "Python 2 の ``unicode`` 型への参照を削除 (:issue:`4547`, :issue:`4703`)"
 
 #: ../../news.rst:485
 msgid ""
 "We now have an :ref:`official deprecation policy <deprecation-policy>` (:"
 "issue:`4705`)"
-msgstr ""
+msgstr "今や :ref:`公式の非推奨ポリシー <deprecation-policy>` ができました (:issue:`4705`)"
 
 #: ../../news.rst:488
 msgid ""
@@ -801,13 +801,13 @@ msgid ""
 "of Sphinx’s :rst:dir:`versionadded` and :rst:dir:`versionchanged` "
 "directives, and we have removed usages referencing Scrapy 1.4.0 and earlier "
 "versions (:issue:`3971`, :issue:`4310`)"
-msgstr ""
+msgstr ":ref:`ドキュメントポリシー <documentation-policies>` は、Sphinx の :rst:dir:`versionadded` ディレクティブと :rst:dir:`versionchanged` ディレクティブの使用に対応し、Scrapy 1.4.0 以前のバージョンを参照する使用法を削除しました。 (:issue:`3971`, :issue:`4310`)"
 
 #: ../../news.rst:493
 msgid ""
 "Other documentation cleanups (:issue:`4090`, :issue:`4782`, :issue:`4800`, :"
 "issue:`4801`, :issue:`4809`, :issue:`4816`, :issue:`4825`)"
-msgstr ""
+msgstr "その他のドキュメントの整理 (:issue:`4090`, :issue:`4782`, :issue:`4800`, :issue:`4801`, :issue:`4809`, :issue:`4816`, :issue:`4825`)"
 
 #: ../../news.rst:498 ../../news.rst:616 ../../news.rst:807 ../../news.rst:972
 #: ../../news.rst:1320
@@ -816,11 +816,11 @@ msgstr "品質保証"
 
 #: ../../news.rst:500
 msgid "Extended typing hints (:issue:`4243`, :issue:`4691`)"
-msgstr ""
+msgstr "型のヒントの拡張 (:issue:`4243`, :issue:`4691`)"
 
 #: ../../news.rst:502
 msgid "Added tests for the :command:`check` command (:issue:`4663`)"
-msgstr ""
+msgstr ":command:`check` コマンドのテストを追加 (:issue:`4663`)"
 
 #: ../../news.rst:504
 msgid ""
@@ -829,17 +829,17 @@ msgstr "Debianでのテストの失敗を修正しました。 (:issue:`4726`, :
 
 #: ../../news.rst:506
 msgid "Improved Windows test coverage (:issue:`4723`)"
-msgstr ""
+msgstr "Windows テスト カバレッジの改善 (:issue:`4723`)"
 
 #: ../../news.rst:508
 msgid ""
 "Switched to :ref:`formatted string literals <f-strings>` where possible (:"
 "issue:`4307`, :issue:`4324`, :issue:`4672`)"
-msgstr ""
+msgstr "可能な場合は :ref:`書式化された文字列リテラル <f-strings>` に切り替え (:issue:`4307`, :issue:`4324`, :issue:`4672`)"
 
 #: ../../news.rst:511
 msgid "Modernized :func:`super` usage (:issue:`4707`)"
-msgstr ""
+msgstr "現代化された :func:`super` の使用法 (:issue:`4707`)"
 
 #: ../../news.rst:513
 msgid ""
@@ -847,7 +847,7 @@ msgid ""
 "issue:`4564`, :issue:`4651`, :issue:`4714`, :issue:`4738`, :issue:`4745`, :"
 "issue:`4747`, :issue:`4761`, :issue:`4765`, :issue:`4804`, :issue:`4817`, :"
 "issue:`4820`, :issue:`4822`, :issue:`4839`)"
-msgstr ""
+msgstr "その他のコードとテストの整理 (:issue:`1790`, :issue:`3288`, :issue:`4165`, :issue:`4564`, :issue:`4651`, :issue:`4714`, :issue:`4738`, :issue:`4745`, :issue:`4747`, :issue:`4761`, :issue:`4765`, :issue:`4804`, :issue:`4817`, :issue:`4820`, :issue:`4822`, :issue:`4839`)"
 
 #: ../../news.rst:522
 msgid "Scrapy 2.3.0 (2020-08-04)"
