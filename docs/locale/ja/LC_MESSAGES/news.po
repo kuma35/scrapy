@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-09 08:24+0900\n"
+"PO-Revision-Date: 2021-06-10 08:52+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -1033,7 +1033,7 @@ msgid ""
 "The :command:`startproject` command no longer makes unintended changes to "
 "the permissions of files in the destination folder, such as removing "
 "execution permissions (:issue:`4662`, :issue:`4666`)"
-msgstr ""
+msgstr ":command:`startproject` コマンドは、実行パーミッションの削除など、宛先フォルダー内のファイルのパーミッションに意図しない変更を加えなくなりました。 (:issue:`4662`, :issue:`4666`)"
 
 #: ../../news.rst:655
 msgid "Scrapy 2.2.0 (2020-06-24)"
@@ -1041,13 +1041,13 @@ msgstr "Scrapy 2.2.0 (2020-06-24)"
 
 #: ../../news.rst:659
 msgid "Python 3.5.2+ is required now"
-msgstr ""
+msgstr "今や Python 3.5.2+ が必要です。"
 
 #: ../../news.rst:660
 msgid ""
 ":ref:`dataclass objects <dataclass-items>` and :ref:`attrs objects <attrs-"
 "items>` are now valid :ref:`item types <item-types>`"
-msgstr ""
+msgstr ":ref:`dataclassオブジェクト <dataclass-items>` と :ref:`attrsオブジェクト <attrs-items>` は今や有効な :ref:`アイテム型 <item-types>` になりました"
 
 #: ../../news.rst:663
 msgid "New :meth:`TextResponse.json <scrapy.http.TextResponse.json>` method"
@@ -1067,7 +1067,7 @@ msgid ""
 "Support for Python 3.5.0 and 3.5.1 has been dropped; Scrapy now refuses to "
 "run with a Python version lower than 3.5.2, which introduced :class:`typing."
 "Type` (:issue:`4615`)"
-msgstr ""
+msgstr "Python 3.5.0 および 3.5.1 のサポートは廃止されました。 Scrapy は :class:`typing.Type` が導入された 3.5.2 より前の Python バージョンでの実行を拒否するようになりました。 (:issue:`4615`)"
 
 #: ../../news.rst:678
 msgid ""
@@ -1075,13 +1075,13 @@ msgid ""
 "body_as_unicode>` is now deprecated, use :attr:`TextResponse.text <scrapy."
 "http.TextResponse.text>` instead (:issue:`4546`, :issue:`4555`, :issue:"
 "`4579`)"
-msgstr ""
+msgstr ":meth:`TextResponse.body_as_unicode <scrapy.http.TextResponse.body_as_unicode>` は非推奨になりました。代わりに :attr:`TextResponse.text <scrapy.http.TextResponse.text>` を使用してください (:issue:`4546`, :issue:`4555`, :issue:`4579`)"
 
 #: ../../news.rst:683
 msgid ""
 ":class:`scrapy.item.BaseItem` is now deprecated, use :class:`scrapy.item."
 "Item` instead (:issue:`4534`)"
-msgstr ""
+msgstr ":class:`scrapy.item.BaseItem` は非推奨になりました。代わりに :class:`scrapy.item.Item` を使用してください (:issue:`4534`)"
 
 #: ../../news.rst:690
 msgid ""
@@ -1090,21 +1090,21 @@ msgid ""
 "library makes it easy to write code that :ref:`supports any item type "
 "<supporting-item-types>` (:issue:`2749`, :issue:`2807`, :issue:`3761`, :"
 "issue:`3881`, :issue:`4642`)"
-msgstr ""
+msgstr ":ref:`dataclassオブジェクト <dataclass-items>` と :ref:`attrsオブジェクト <attrs-items>` が有効な :ref:`アイテム型 <item-types>` となり、新しい itemadapter_ ライブラリにより、 :ref:`あらゆるアイテム型をサポートする <supporting-item-types>` コードを簡単に記述できるようになりました。 (:issue:`2749`, :issue:`2807`, :issue:`3761`, :issue:`3881`, :issue:`4642`)"
 
 #: ../../news.rst:696
 msgid ""
 "A new :meth:`TextResponse.json <scrapy.http.TextResponse.json>` method "
 "allows to deserialize JSON responses (:issue:`2444`, :issue:`4460`, :issue:"
 "`4574`)"
-msgstr ""
+msgstr "新しい :meth:`TextResponse.json <scrapy.http.TextResponse.json>` メソッドにより、JSONレスポンスを逆シリアライズできます (:issue:`2444`, :issue:`4460`, :issue:`4574`)"
 
 #: ../../news.rst:700
 msgid ""
 "A new :signal:`bytes_received` signal allows monitoring response download "
 "progress and :ref:`stopping downloads <topics-stop-response-download>` (:"
 "issue:`4205`, :issue:`4559`)"
-msgstr ""
+msgstr "新しい :signal:`bytes_received` シグナルにより、レスポンスのダウンロードの進行状況を監視し、 :ref:`ダウンロードの停止(stop) <topics-stop-response-download>` を行う事ができます。 (:issue:`4205`, :issue:`4559`)"
 
 #: ../../news.rst:704
 msgid ""
@@ -1114,7 +1114,7 @@ msgid ""
 "downloaded; see :meth:`FilesPipeline.get_media_requests <scrapy.pipelines."
 "files.FilesPipeline.get_media_requests>` for more information (:issue:"
 "`2893`, :issue:`4486`)"
-msgstr ""
+msgstr ":ref:`メディア・パイプライン <topics-media-pipeline>` の結果リストの辞書には、ファイルがダウンロードされたかどうか、ファイルがダウンロードされなかった場合はダウンロードされなかった理由を示す新しいキー ``status`` が含まれるようになりました。詳細については、 :meth:`FilesPipeline.get_media_requests <scrapy.pipelines.files.FilesPipeline.get_media_requests>` を参照してください。 (:issue:`2893`, :issue:`4486`)"
 
 #: ../../news.rst:711
 msgid ""
@@ -1122,7 +1122,7 @@ msgid ""
 "`media pipeline <topics-media-pipeline>`, a warning is now logged if the "
 "configured credentials do not grant the required permissions (:issue:"
 "`4346`, :issue:`4508`)"
-msgstr ""
+msgstr ":ref:`メディア・パイプライン <topics-media-pipeline>` に対して :ref:`Google Cloud Storage <media-pipeline-gcs>` を使用する場合、構成された資格情報が必要な権限を付与しない場合、警告がログに記録されるようになりました ( :issue:`4346`, :issue:`4508`)"
 
 #: ../../news.rst:716
 msgid ""
@@ -1131,28 +1131,28 @@ msgid ""
 "you can now pass link extractors in :attr:`Request.cb_kwargs <scrapy.http."
 "Request.cb_kwargs>` or :attr:`Request.meta <scrapy.http.Request.meta>` when :"
 "ref:`persisting scheduled requests <topics-jobs>` (:issue:`4554`)"
-msgstr ""
+msgstr ":ref:`リンク抽出器 <topics-link-extractors>` は、パラメータに :ref:`ラムダ式(lambda) <lambda>` を使用しない限り、シリアライズ可能になりました。 たとえば、 :ref:`スケジュールされたリクエストを永続化 <topics-jobs>` するときに、 :attr:`Request.cb_kwargs <scrapy.http.Request.cb_kwargs>` または :attr:`Request.meta <scrapy.http.Request.meta>` でリンク抽出器を渡すことができるようになりました (:issue:`4554`)"
 
 #: ../../news.rst:723
 msgid ""
 "Upgraded the :ref:`pickle protocol <pickle-protocols>` that Scrapy uses from "
 "protocol 2 to protocol 4, improving serialization capabilities and "
 "performance (:issue:`4135`, :issue:`4541`)"
-msgstr ""
+msgstr "Scrapy が使用する :ref:`pickle プロトコル <pickle-protocols>` をプロトコル2からプロトコル4にアップグレードし、シリアル化機能と性能を改善しました (:issue:`4135`, :issue:`4541`)"
 
 #: ../../news.rst:727
 msgid ""
 ":func:`scrapy.utils.misc.create_instance` now raises a :exc:`TypeError` "
 "exception if the resulting instance is ``None`` (:issue:`4528`, :issue:"
 "`4532`)"
-msgstr ""
+msgstr ":func:`scrapy.utils.misc.create_instance` は、結果のインスタンスが ``None`` の場合に :exc:`TypeError` 例外を送出するようになりました (:issue:`4528`, :issue:`4532`)"
 
 #: ../../news.rst:737
 msgid ""
 ":class:`~scrapy.downloadermiddlewares.cookies.CookiesMiddleware` no longer "
 "discards cookies defined in :attr:`Request.headers <scrapy.http.Request."
 "headers>` (:issue:`1992`, :issue:`2400`)"
-msgstr ""
+msgstr ":class:`~scrapy.downloadermiddlewares.cookies.CookiesMiddleware` はもはや :attr:`Request.headers <scrapy.http.Request.headers>` で定義されたクッキーを破棄しません (:issue:`1992`, :issue:`2400`)"
 
 #: ../../news.rst:741
 msgid ""
@@ -1160,14 +1160,14 @@ msgid ""
 "re-encodes cookies defined as :class:`bytes` in the ``cookies`` parameter of "
 "the ``__init__`` method of :class:`~scrapy.http.Request` (:issue:`2400`, :"
 "issue:`3575`)"
-msgstr ""
+msgstr ":class:`~scrapy.downloadermiddlewares.cookies.CookiesMiddleware` は、 :class:`~scrapy.http.Request` の ``__init__`` メソッドの ``cookies`` パラメータで :class:`bytes` として定義されたクッキーを再エンコードしなくなりました。 (:issue:`2400`, :issue:`3575`)"
 
 #: ../../news.rst:746
 msgid ""
 "When :setting:`FEEDS` defines multiple URIs, :setting:`FEED_STORE_EMPTY` is "
 "``False`` and the crawl yields no items, Scrapy no longer stops feed exports "
 "after the first URI (:issue:`4621`, :issue:`4626`)"
-msgstr ""
+msgstr ":setting:`FEEDS` が複数の URI を定義し、 かつ :setting:`FEED_STORE_EMPTY` が ``False`` であり、かつ クロールでアイテムが生成されない場合、Scrapy は最初の URI の後にフィードのエクスポートを停止しなくなりました (:issue:`4621`, :issue:`4626`)"
 
 #: ../../news.rst:750
 msgid ""
@@ -1175,19 +1175,19 @@ msgid ""
 "syntax <topics/coroutines>` no longer need to return an iterable, and may "
 "instead return a :class:`~scrapy.http.Request` object, an :ref:`item <topics-"
 "items>`, or ``None`` (:issue:`4609`)"
-msgstr ""
+msgstr ":doc:`コルーチン構文 <topics/coroutines>` を使用して定義された :class:`~scrapy.spiders.Spider` コールバックは、反復可能オブジェク(iterable)を返す必要がなくなり、代わりに :class:`~scrapy.http.Request` オブジェクト、または :ref:`アイテム <topics-items>` 、または ``None`` を返す場合があります (:issue:`4609`)"
 
 #: ../../news.rst:755
 msgid ""
 "The :command:`startproject` command now ensures that the generated project "
 "folders and files have the right permissions (:issue:`4604`)"
-msgstr ""
+msgstr ":command:`startproject` コマンドは、生成されたプロジェクト・フォルダとファイルに適切なパーミッションを付与するようになりました (:issue:`4604`)"
 
 #: ../../news.rst:758
 msgid ""
 "Fix a :exc:`KeyError` exception being sometimes raised from :class:`scrapy."
 "utils.datatypes.LocalWeakReferencedCache` (:issue:`4597`, :issue:`4599`)"
-msgstr ""
+msgstr "修正: :class:`scrapy.utils.datatypes.LocalWeakReferencedCache` から時々発生する :exc:`KeyError` 例外を修正 (:issue:`4597`, :issue:`4599`)"
 
 #: ../../news.rst:762
 msgid ""
@@ -1195,31 +1195,31 @@ msgid ""
 "stored now contain information from the corresponding feed, instead of "
 "always containing information about only one of the feeds (:issue:`4619`, :"
 "issue:`4629`)"
-msgstr ""
+msgstr ":setting:`FEEDS` が複数の URI を定義する場合、保存されているアイテム達に関するログ・メッセージ達には、常にフィードの1つだけに関する情報を含むのではなく、対応するフィード達からの情報が含まれるようになりました。 (:issue:`4619`, :issue:`4629`)"
 
 #: ../../news.rst:771
 msgid ""
 "Added a new section about :ref:`accessing cb_kwargs from errbacks <errback-"
 "cb_kwargs>` (:issue:`4598`, :issue:`4634`)"
-msgstr ""
+msgstr ":ref:`errbacks から cb_kwargs へアクセス <errback-cb_kwargs>` に関する新しい節を追加しました。 (:issue:`4598`, :issue:`4634`)"
 
 #: ../../news.rst:774
 msgid ""
 "Covered chompjs_ in :ref:`topics-parsing-javascript` (:issue:`4556`, :issue:"
 "`4562`)"
-msgstr ""
+msgstr ":ref:`topics-parsing-javascript` で chompjs_ をカバー (:issue:`4556`, :issue:`4562`)"
 
 #: ../../news.rst:777
 msgid ""
 "Removed from :doc:`topics/coroutines` the warning about the API being "
 "experimental (:issue:`4511`, :issue:`4513`)"
-msgstr ""
+msgstr "API が実験的であるという警告を :doc:`topics/coroutines` から削除 (:issue:`4511`, :issue:`4513`)"
 
 #: ../../news.rst:780
 msgid ""
 "Removed references to unsupported versions of :doc:`Twisted <twisted:index>` "
 "(:issue:`4533`)"
-msgstr ""
+msgstr "サポートされていないバージョンの :doc:`Twisted <twisted:index>` への参照を削除 (:issue:`4533`)"
 
 #: ../../news.rst:783
 msgid ""
@@ -1227,13 +1227,13 @@ msgid ""
 "<ScreenshotPipeline>`, which now uses :doc:`coroutine syntax <topics/"
 "coroutines>` instead of returning a :class:`~twisted.internet.defer."
 "Deferred` (:issue:`4514`, :issue:`4593`)"
-msgstr ""
+msgstr ":ref:`スクリーンショット・パイプラインの例 <ScreenshotPipeline>` の説明を更新し、 :class:`~twisted.internet.defer.Deferred` を返す代わりに :doc:`コルーチン構文 <topics/coroutines>` を使用するようになりました (:issue:`4514`, :issue:`4593`)"
 
 #: ../../news.rst:788
 msgid ""
 "Removed a misleading import line from the :func:`scrapy.utils.log."
 "configure_logging` code example (:issue:`4510`, :issue:`4587`)"
-msgstr ""
+msgstr "誤解を招くインポート行を :func:`scrapy.utils.log.configure_logging` コード例から削除しました (:issue:`4510`, :issue:`4587`)"
 
 #: ../../news.rst:792
 msgid ""
@@ -1241,19 +1241,19 @@ msgid ""
 "covers links to :ref:`commands <topics-commands>`, :attr:`Request.meta "
 "<scrapy.http.Request.meta>` keys, :ref:`settings <topics-settings>` and :ref:"
 "`signals <topics-signals>` (:issue:`4495`, :issue:`4563`)"
-msgstr ""
+msgstr "内部ドキュメント参照のホバー時の表示動作は、 :ref:`コマンド <topics-commands>` と :attr:`Request.meta <scrapy.http.Request.meta>` キーと :ref:`設定 <topics-settings>` と :ref:`シグナル <topics-signals>` へのリンクもカバーするようになりました。 (:issue:`4495`, :issue:`4563`)"
 
 #: ../../news.rst:797
 msgid ""
 "It is again possible to download the documentation for offline reading (:"
 "issue:`4578`, :issue:`4585`)"
-msgstr ""
+msgstr "オフラインで読むための文書を再びダウンロードできるようになりました (:issue:`4578`, :issue:`4585`)"
 
 #: ../../news.rst:800
 msgid ""
 "Removed backslashes preceding ``*args`` and ``**kwargs`` in some function "
 "and method signatures (:issue:`4592`, :issue:`4596`)"
-msgstr ""
+msgstr "一部の関数とメソッドのシグネチャの ``*args`` と ``**kwargs`` の前にあるバックスラッシュを削除 (:issue:`4592`, :issue:`4596`)"
 
 #: ../../news.rst:809
 msgid ""
@@ -1261,7 +1261,7 @@ msgid ""
 "(:issue:`4237`, :issue:`4525`, :issue:`4538`, :issue:`4539`, :issue:`4540`, :"
 "issue:`4542`, :issue:`4543`, :issue:`4544`, :issue:`4545`, :issue:`4557`, :"
 "issue:`4558`, :issue:`4566`, :issue:`4568`, :issue:`4572`)"
-msgstr ""
+msgstr ":ref:`スタイル・ガイドライン <coding-style>` に合わせてコード・ベースをさらに調整 (:issue:`4237`, :issue:`4525`, :issue:`4538`, :issue:`4539`, :issue:`4540`, :issue:`4542`, :issue:`4543`, :issue:`4544`, :issue:`4545`, :issue:`4557`, :issue:`4558`, :issue:`4566`, :issue:`4568`, :issue:`4572`)"
 
 #: ../../news.rst:815
 msgid ""
@@ -1273,57 +1273,57 @@ msgstr "Python2サポートの跡を削除。 (:issue:`4550`, :issue:`4553`, :is
 msgid ""
 "Improved code sharing between the :command:`crawl` and :command:`runspider` "
 "commands (:issue:`4548`, :issue:`4552`)"
-msgstr ""
+msgstr ":command:`crawl` コマンドと :command:`runspider` コマンド間のコード共有の改善 (:issue:`4548`, :issue:`4552`)"
 
 #: ../../news.rst:821
 msgid ""
 "Replaced ``chain(*iterable)`` with ``chain.from_iterable(iterable)`` (:issue:"
 "`4635`)"
-msgstr ""
+msgstr "``chain(*iterable)`` を ``chain.from_iterable(iterable)`` に置き換えました (:issue:`4635`)"
 
 #: ../../news.rst:824
 msgid ""
 "You may now run the :mod:`asyncio` tests with Tox on any Python version (:"
 "issue:`4521`)"
-msgstr ""
+msgstr "どの Python バージョンでも Tox を使用して :mod:`asyncio` テストを実行できるようになりました (:issue:`4521`)"
 
 #: ../../news.rst:827
 msgid ""
 "Updated test requirements to reflect an incompatibility with pytest 5.4 and "
 "5.4.1 (:issue:`4588`)"
-msgstr ""
+msgstr "pytest 5.4 および 5.4.1 との非互換性を反映するようにテスト要件を更新しました (:issue:`4588`)"
 
 #: ../../news.rst:830
 msgid ""
 "Improved :class:`~scrapy.spiderloader.SpiderLoader` test coverage for "
 "scenarios involving duplicate spider names (:issue:`4549`, :issue:`4560`)"
-msgstr ""
+msgstr "スパイダー名が重複するシナリオの :class:`~scrapy.spiderloader.SpiderLoader` テストカバレッジの改善 (:issue:`4549`, :issue:`4560`)"
 
 #: ../../news.rst:833
 msgid ""
 "Configured Travis CI to also run the tests with Python 3.5.2 (:issue:"
 "`4518`, :issue:`4615`)"
-msgstr ""
+msgstr "Python 3.5.2 でもテストを実行するように Travis CI を構成しました (:issue:`4518`, :issue:`4615`)"
 
 #: ../../news.rst:836
 msgid ""
 "Added a `Pylint <https://www.pylint.org/>`_ job to Travis CI (:issue:`3727`)"
-msgstr ""
+msgstr "Travis CI に `Pylint <https://www.pylint.org/>`_ ジョブを追加しました (:issue:`3727`)"
 
 #: ../../news.rst:839
 msgid ""
 "Added a `Mypy <http://mypy-lang.org/>`_ job to Travis CI (:issue:`4637`)"
-msgstr ""
+msgstr "Travis CI に `Mypy <http://mypy-lang.org/>`_ ジョブを追加しました (:issue:`4637`)"
 
 #: ../../news.rst:841
 msgid "Made use of set literals in tests (:issue:`4573`)"
-msgstr ""
+msgstr "テストで set リテラルを使用しました (:issue:`4573`)"
 
 #: ../../news.rst:843
 msgid ""
 "Cleaned up the Travis CI configuration (:issue:`4517`, :issue:`4519`, :issue:"
 "`4522`, :issue:`4537`)"
-msgstr ""
+msgstr "Travis CI 設定をクリーンアップ (:issue:`4517`, :issue:`4519`, :issue:`4522`, :issue:`4537`)"
 
 #: ../../news.rst:850
 msgid "Scrapy 2.1.0 (2020-04-24)"
