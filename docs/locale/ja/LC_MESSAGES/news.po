@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-10 09:37+0900\n"
+"PO-Revision-Date: 2021-06-10 09:42+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -1547,7 +1547,7 @@ msgstr "Scrapy 2.0.1 (2020-03-18)"
 msgid ""
 ":meth:`Response.follow_all <scrapy.http.Response.follow_all>` now supports "
 "an empty URL iterable as input (:issue:`4408`, :issue:`4420`)"
-msgstr ""
+msgstr ":meth:`Response.follow_all <scrapy.http.Response.follow_all>` は入力として空のURLの反復可能なオブジェクト(iterable)をサポートするようになりました (:issue:`4408`, :issue:`4420`)"
 
 #: ../../news.rst:1002
 msgid ""
@@ -1555,11 +1555,11 @@ msgid ""
 "about the wrong Twisted reactor being installed when setting a different "
 "Twisted reactor using :setting:`TWISTED_REACTOR` (:issue:`4401`, :issue:"
 "`4406`)"
-msgstr ""
+msgstr "トップレベルの :mod:`~twisted.internet.reactor` インポートを削除して、:setting:`TWISTED_REACTOR` を使用して別の Twisted リアクターを設定するときに間違った Twisted リアクターがインストールされるというエラーを防止しました。 (:issue:`4401`, :issue:`4406`)"
 
 #: ../../news.rst:1007
 msgid "Fixed tests (:issue:`4422`)"
-msgstr ""
+msgstr "修正されたテスト (:issue:`4422`)"
 
 #: ../../news.rst:1013
 msgid "Scrapy 2.0.0 (2020-03-03)"
