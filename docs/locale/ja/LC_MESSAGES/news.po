@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-10 08:52+0900\n"
+"PO-Revision-Date: 2021-06-10 09:37+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -1344,13 +1344,13 @@ msgid ""
 "statements have been replaced by new exception types, to support running "
 "Python in optimized mode (see :option:`-O`) without changing Scrapy’s "
 "behavior in any unexpected ways."
-msgstr ""
+msgstr ":ref:`assert <assert>` 文によって引き起こされる :exc:`AssertionError` 例外は、Scrapy の動作を予期しない方法で変更することなく最適化モード (:option:`-O` を参照) での Python の実行をサポートするために、新しい例外タイプに置き換えられました。"
 
 #: ../../news.rst:865
 msgid ""
 "If you catch an :exc:`AssertionError` exception from Scrapy, update your "
 "code to catch the corresponding new exception."
-msgstr ""
+msgstr "あなたが Scrapy から :exc:`AssertionError` 例外をキャッチしたい場合、対応する新しい例外をキャッチするためにあなたのコードを更新して下さい。"
 
 #: ../../news.rst:868
 msgid "(:issue:`4440`)"
@@ -1360,21 +1360,22 @@ msgstr "(:issue:`4440`)"
 msgid ""
 "The ``LOG_UNSERIALIZABLE_REQUESTS`` setting is no longer supported, use :"
 "setting:`SCHEDULER_DEBUG` instead (:issue:`4385`)"
-msgstr ""
+msgstr "``LOG_UNSERIALIZABLE_REQUESTS`` 設定はサポートされなくなりました。代わりに :setting:`SCHEDULER_DEBUG` を使用してください (:issue:`4385`)"
 
 #: ../../news.rst:877
 msgid ""
 "The ``REDIRECT_MAX_METAREFRESH_DELAY`` setting is no longer supported, use :"
 "setting:`METAREFRESH_MAXDELAY` instead (:issue:`4385`)"
-msgstr ""
+msgstr "``REDIRECT_MAX_METAREFRESH_DELAY`` 設定はサポートされなくなりました。代わりに :setting:`METAREFRESH_MAXDELAY` を使用してください (:issue:`4385`)"
 
+# out of the box：すぐに使える状態
 #: ../../news.rst:880
 msgid ""
 "The :class:`~scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware` "
 "middleware has been removed, including the entire :class:`scrapy."
 "downloadermiddlewares.chunked` module; chunked transfers work out of the box "
 "(:issue:`4431`)"
-msgstr ""
+msgstr ":class:`~scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware` ミドルウェアが削除されました。これには :class:`scrapy.downloadermiddlewares.chunked` モジュール全体が含まれています。これに関わらずチャンク転送はいつでも使用可能です。 (:issue:`4431`)"
 
 #: ../../news.rst:885
 msgid ""
@@ -1382,39 +1383,39 @@ msgid ""
 "Crawler`, use :class:`CrawlerRunner.spider_loader <scrapy.crawler."
 "CrawlerRunner.spider_loader>` or instantiate :setting:`SPIDER_LOADER_CLASS` "
 "with your settings instead (:issue:`4398`)"
-msgstr ""
+msgstr "``spiders`` プロパティは :class:`~scrapy.crawler.Crawler` から削除されました.代わりに :class:`CrawlerRunner.spider_loader <scrapy.crawler.CrawlerRunner.spider_loader>` を使用するか、設定で :setting:`SPIDER_LOADER_CLASS` をインスタンス化してください (:issue:`4398`)"
 
 #: ../../news.rst:890
 msgid ""
 "The ``MultiValueDict``, ``MultiValueDictKeyError``, and ``SiteNode`` classes "
 "have been removed from :mod:`scrapy.utils.datatypes` (:issue:`4400`)"
-msgstr ""
+msgstr "``MultiValueDict`` と``MultiValueDictKeyError`` と``SiteNode`` クラスは :mod:`scrapy.utils.datatypes` から削除されました (:issue:`4400`)"
 
 #: ../../news.rst:898
 msgid ""
 "The ``FEED_FORMAT`` and ``FEED_URI`` settings have been deprecated in favor "
 "of the new :setting:`FEEDS` setting (:issue:`1336`, :issue:`3858`, :issue:"
 "`4507`)"
-msgstr ""
+msgstr "``FEED_FORMAT`` と ``FEED_URI`` の設定は廃止され、新しい :setting:`FEEDS` 設定が採用されました。 (:issue:`1336`, :issue:`3858`, :issue:`4507`)"
 
 #: ../../news.rst:906
 msgid ""
 "A new setting, :setting:`FEEDS`, allows configuring multiple output feeds "
 "with different settings each (:issue:`1336`, :issue:`3858`, :issue:`4507`)"
-msgstr ""
+msgstr "新しい設定 :setting:`FEEDS` では、それぞれ異なる設定で複数の出力フィードを構成できます。 (:issue:`1336`, :issue:`3858`, :issue:`4507`)"
 
 #: ../../news.rst:909
 msgid ""
 "The :command:`crawl` and :command:`runspider` commands now support multiple "
 "``-o`` parameters (:issue:`1336`, :issue:`3858`, :issue:`4507`)"
-msgstr ""
+msgstr ":command:`crawl` および :command:`runspider` コマンドは、複数の ``-o`` パラメータをサポートするようになりました (:issue:`1336`, :issue:`3858`, :issue:`4507`)"
 
 #: ../../news.rst:912
 msgid ""
 "The :command:`crawl` and :command:`runspider` commands now support "
 "specifying an output format by appending ``:<format>`` to the output file (:"
 "issue:`1336`, :issue:`3858`, :issue:`4507`)"
-msgstr ""
+msgstr ":command:`crawl` および :command:`runspider` コマンドは、出力ファイルに ``:<format>`` を追加することで出力形式を指定できるようになりました (:issue:`1336`, :issue:`3858`, :issue:`4507`)"
 
 #: ../../news.rst:916
 msgid ""
@@ -1427,104 +1428,104 @@ msgstr "新 :attr:`Response.ip_address <scrapy.http.Response.ip_address>` 属性
 msgid ""
 "A warning is now issued when a value in :attr:`~scrapy.spiders.Spider."
 "allowed_domains` includes a port (:issue:`50`, :issue:`3198`, :issue:`4413`)"
-msgstr ""
+msgstr ":attr:`~scrapy.spiders.Spider.allowed_domains` の値にポート(port)が含まれている場合に警告が出るようになりました (:issue:`50`, :issue:`3198`, :issue:`4413`)"
 
 #: ../../news.rst:924
 msgid ""
 "Zsh completion now excludes used option aliases from the completion list (:"
 "issue:`4438`)"
-msgstr ""
+msgstr "Zsh 補完により、使用されたオプション・エイリアスが補完リストから除外されるようになりました (:issue:`4438`)"
 
 #: ../../news.rst:931
 msgid ""
 ":ref:`Request serialization <request-serialization>` no longer breaks for "
 "callbacks that are spider attributes which are assigned a function with a "
 "different name (:issue:`4500`)"
-msgstr ""
+msgstr ":ref:`リクエストのシリアライズ <request-serialization>` は、別の名前の関数が割り当てられたスパイダー属性であるコールバックで壊れなくなりました (:issue:`4500`)"
 
 #: ../../news.rst:935
 msgid ""
 "``None`` values in :attr:`~scrapy.spiders.Spider.allowed_domains` no longer "
 "cause a :exc:`TypeError` exception (:issue:`4410`)"
-msgstr ""
+msgstr ":attr:`~scrapy.spiders.Spider.allowed_domains` の ``None`` 値はもはや :exc:`TypeError` 例外を引き起こしません (:issue:`4410`)"
 
 #: ../../news.rst:938
 msgid "Zsh completion no longer allows options after arguments (:issue:`4438`)"
-msgstr ""
+msgstr "Zsh 補完で引数の後のオプションが許可されなくなりました (:issue:`4438`)"
 
 #: ../../news.rst:940
 msgid ""
 "zope.interface 5.0.0 and later versions are now supported (:issue:`4447`, :"
 "issue:`4448`)"
-msgstr ""
+msgstr "zope.interface 5.0.0 以降のバージョンがサポートされるようになりました (:issue:`4447`, :issue:`4448`)"
 
 #: ../../news.rst:943
 msgid ""
 ":meth:`Spider.make_requests_from_url <scrapy.spiders.Spider."
 "make_requests_from_url>`, deprecated in Scrapy 1.4.0, now issues a warning "
 "when used (:issue:`4412`)"
-msgstr ""
+msgstr ":meth:`Spider.make_requests_from_url <scrapy.spiders.Spider.make_requests_from_url>` は Scrapy 1.4.0 で非推奨となり、使用時に警告を発するようになりました (:issue:`4412`)"
 
 #: ../../news.rst:951
 msgid ""
 "Improved the documentation about signals that allow their handlers to return "
 "a :class:`~twisted.internet.defer.Deferred` (:issue:`4295`, :issue:`4390`)"
-msgstr ""
+msgstr "ハンドラーが :class:`~twisted.internet.defer.Deferred` を返すことを可能にするシグナルに関する文書を改善しました。 (:issue:`4295`, :issue:`4390`)"
 
 #: ../../news.rst:955
 msgid ""
 "Our PyPI entry now includes links for our documentation, our source code "
 "repository and our issue tracker (:issue:`4456`)"
-msgstr ""
+msgstr "PyPI エントリには、文書とソースコードとリポジトリとIssue Trackerへのリンクが含まれるようになりました。 (:issue:`4456`)"
 
 #: ../../news.rst:958
 msgid ""
 "Covered the `curl2scrapy <https://michael-shub.github.io/curl2scrapy/>`_ "
 "service in the documentation (:issue:`4206`, :issue:`4455`)"
-msgstr ""
+msgstr "文書の `curl2scrapy <https://michael-shub.github.io/curl2scrapy/>`_ サービスについて説明を加えました。 (:issue:`4206`, :issue:`4455`)"
 
 #: ../../news.rst:961
 msgid ""
 "Removed references to the Guppy library, which only works in Python 2 (:"
 "issue:`4285`, :issue:`4343`)"
-msgstr ""
+msgstr "Python 2 でのみ動作する Guppy ライブラリへの参照を削除しました (:issue:`4285`, :issue:`4343`)"
 
 #: ../../news.rst:964
 msgid ""
 "Extended use of InterSphinx to link to Python 3 documentation (:issue:"
 "`4444`, :issue:`4445`)"
-msgstr ""
+msgstr "InterSphinx の拡張を使用して Python 3 文書へリンクするようになりました (:issue:`4444`, :issue:`4445`)"
 
 #: ../../news.rst:967
 msgid ""
 "Added support for Sphinx 3.0 and later (:issue:`4475`, :issue:`4480`, :issue:"
 "`4496`, :issue:`4503`)"
-msgstr ""
+msgstr "Sphinx 3.0 以降のサポートを追加 (:issue:`4475`, :issue:`4480`, :issue:`4496`, :issue:`4503`)"
 
 #: ../../news.rst:974
 msgid "Removed warnings about using old, removed settings (:issue:`4404`)"
-msgstr ""
+msgstr "削除された古い設定の使用に関する警告を削除 (:issue:`4404`)"
 
 #: ../../news.rst:976
 msgid ""
 "Removed a warning about importing :class:`~twisted.internet.testing."
 "StringTransport` from ``twisted.test.proto_helpers`` in Twisted 19.7.0 or "
 "newer (:issue:`4409`)"
-msgstr ""
+msgstr "Twisted 19.7.0 以降の ``twisted.test.proto_helpers`` から :class:`~twisted.internet.testing.StringTransport` をインポートすることに関する警告を削除しました (:issue:`4409`)"
 
 #: ../../news.rst:980
 msgid "Removed outdated Debian package build files (:issue:`4384`)"
-msgstr ""
+msgstr "古い Debian パッケージ ビルド ファイルを削除 (:issue:`4384`)"
 
 #: ../../news.rst:982
 msgid "Removed :class:`object` usage as a base class (:issue:`4430`)"
-msgstr ""
+msgstr "基底クラスとしての :class:`object` の使用を削除 (:issue:`4430`)"
 
 #: ../../news.rst:984
 msgid ""
 "Removed code that added support for old versions of Twisted that we no "
 "longer support (:issue:`4472`)"
-msgstr ""
+msgstr "サポートされなくなった古いバージョンの Twisted のサポートを追加したコードを削除しました (:issue:`4472`)"
 
 #: ../../news.rst:987
 msgid ""
@@ -1536,7 +1537,7 @@ msgstr "コード・スタイルの問題を修正 (:issue:`4468`, :issue:`4469`
 msgid ""
 "Removed :func:`twisted.internet.defer.returnValue` calls (:issue:`4443`, :"
 "issue:`4446`, :issue:`4489`)"
-msgstr ""
+msgstr ":func:`twisted.internet.defer.returnValue` 関数の削除 (:issue:`4443`, :issue:`4446`, :issue:`4489`)"
 
 #: ../../news.rst:997
 msgid "Scrapy 2.0.1 (2020-03-18)"
