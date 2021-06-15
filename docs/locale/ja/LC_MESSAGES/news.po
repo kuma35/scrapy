@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-15 19:50+0900\n"
+"PO-Revision-Date: 2021-06-15 19:55+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -3698,19 +3698,19 @@ msgstr ""
 msgid ""
 "``O(N^2)`` gzip decompression issue which affected Python 3 and PyPy is "
 "fixed (:issue:`3281`);"
-msgstr ""
+msgstr "Python3とPyPyに影響を与えた ``O(N^2)`` gzip解凍の問題が修正されました (:issue:`3281`);"
 
 #: ../../news.rst:2253
 msgid "skipping of TLS validation errors is improved (:issue:`3166`);"
-msgstr ""
+msgstr "TLS検証エラーのスキップが改善されました (:issue:`3166`);"
 
 #: ../../news.rst:2254
 msgid "Ctrl-C handling is fixed in Python 3.5+ (:issue:`3096`);"
-msgstr ""
+msgstr "Ctrl-Cの処理は Python3.5+ で修正されています (:issue:`3096`);"
 
 #: ../../news.rst:2255
 msgid "testing fixes (:issue:`3092`, :issue:`3263`);"
-msgstr ""
+msgstr "テストの修正 (:issue:`3092`, :issue:`3263`);"
 
 #: ../../news.rst:2256
 msgid ""
@@ -3718,7 +3718,7 @@ msgid ""
 "issue:`3123`, :issue:`3127`, :issue:`3189`, :issue:`3224`, :issue:`3280`, :"
 "issue:`3279`, :issue:`3201`, :issue:`3260`, :issue:`3284`, :issue:`3298`, :"
 "issue:`3294`)."
-msgstr ""
+msgstr "文書の改善 (:issue:`3058`, :issue:`3059`, :issue:`3089`, :issue:`3123`, :issue:`3127`, :issue:`3189`, :issue:`3224`, :issue:`3280`, :issue:`3279`, :issue:`3201`, :issue:`3260`, :issue:`3284`, :issue:`3298`, :issue:`3294`)."
 
 #: ../../news.rst:2265
 msgid "Scrapy 1.5.0 (2017-12-29)"
