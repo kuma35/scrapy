@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-12 05:25+0900\n"
+"PO-Revision-Date: 2021-06-15 09:13+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -2735,11 +2735,11 @@ msgid ""
 "method of the :class:`~scrapy.core.scheduler.Scheduler` class. Custom "
 "scheduler subclasses which don't accept arbitrary parameters in their "
 "``__init__`` method might break because of this change."
-msgstr ""
+msgstr ":class:`~scrapy.core.scheduler.Scheduler` クラスの ``__init__`` メソッドに追加の ``crawler`` パラメーターが追加されました。 その `` __init__``メソッドで任意のパラメーターを受け入れてないカスタム・スケジューラ・サブクラスは、この変更により破損する可能性があります。"
 
 #: ../../news.rst:1746
 msgid "For more information, see :setting:`SCHEDULER`."
-msgstr ""
+msgstr "詳細については、 :setting:`SCHEDULER` を参照してください。"
 
 #: ../../news.rst:1748
 msgid "See also :ref:`1.7-deprecation-removals` below."
@@ -2777,40 +2777,40 @@ msgid ""
 "A ``process_request`` callback passed to the :class:`~scrapy.spiders.Rule` "
 "``__init__`` method now receives the :class:`~scrapy.http.Response` object "
 "that originated the request as its second argument (:issue:`3682`)"
-msgstr ""
+msgstr ":class:`~scrapy.spiders.Rule` の ``__init__`` メソッドに渡された ``process_request`` コールバックは、2番目の引数として、リクエストを産み出した :class:`~scrapy.http.Response` オブジェクトを受け取るようになりました (:issue:`3682`)"
 
 #: ../../news.rst:1771
 msgid ""
 "A new ``restrict_text`` parameter for the :attr:`LinkExtractor <scrapy."
 "linkextractors.lxmlhtml.LxmlLinkExtractor>` ``__init__`` method allows "
 "filtering links by linking text (:issue:`3622`, :issue:`3635`)"
-msgstr ""
+msgstr ":attr:`LinkExtractor <scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor>` の `` __init__`` メソッドの新しい ``restrict_text`` パラメーターにより、リンクテキストによりリンクをフィルタリングできます (:issue:`3622`, :issue:`3635`)"
 
 #: ../../news.rst:1776
 msgid ""
 "A new :setting:`FEED_STORAGE_S3_ACL` setting allows defining a custom ACL "
 "for feeds exported to Amazon S3 (:issue:`3607`)"
-msgstr ""
+msgstr "新しい :setting:`FEED_STORAGE_S3_ACL` 設定により、Amazon S3にエクスポートされたフィードのカスタムACLを定義できます (:issue:`3607`)"
 
 #: ../../news.rst:1779
 msgid ""
 "A new :setting:`FEED_STORAGE_FTP_ACTIVE` setting allows using FTP’s active "
 "connection mode for feeds exported to FTP servers (:issue:`3829`)"
-msgstr ""
+msgstr "新しい :setting:`FEED_STORAGE_FTP_ACTIVE` 設定により、FTPサーバーにエクスポートされたフィードにFTPのアクティブ接続モードを使用できるようになります (:issue:`3829`)"
 
 #: ../../news.rst:1782
 msgid ""
 "A new :setting:`METAREFRESH_IGNORE_TAGS` setting allows overriding which "
 "HTML tags are ignored when searching a response for HTML meta tags that "
 "trigger a redirect (:issue:`1422`, :issue:`3768`)"
-msgstr ""
+msgstr "新しい :setting:`METAREFRESH_IGNORE_TAGS` 設定により、リダイレクトをトリガーするHTMLメタタグのレスポンスを検索するときに無視されるHTMLタグをオーバーライドできます (:issue:`1422`, :issue:`3768`)"
 
 #: ../../news.rst:1786
 msgid ""
 "A new :reqmeta:`redirect_reasons` request meta key exposes the reason "
 "(status code, meta refresh) behind every followed redirect (:issue:`3581`, :"
 "issue:`3687`)"
-msgstr ""
+msgstr "新しい :reqmeta:`redirect_reasons` リクエスト・メタ・キーは、後続のすべてのリダイレクトの背後にある理由（ステータスコード、メタリフレッシュ）を公開します (:issue:`3581`, :issue:`3687`)"
 
 #: ../../news.rst:1790
 msgid ""
@@ -2818,27 +2818,27 @@ msgid ""
 "of the :command:`check` command, which allows :ref:`detecting contract check "
 "runs from code <detecting-contract-check-runs>` (:issue:`3704`, :issue:"
 "`3739`)"
-msgstr ""
+msgstr ":command:`check` コマンドの実行中に ``SCRAPY_CHECK` `変数が ``true`` 文字列に設定されるようになりました。これにより、 :ref:`コードからコントラクト・チェックの実行を検出 <detecting-contract-check-runs>` できます。 (:issue:`3704`, :issue:`3739`)"
 
 #: ../../news.rst:1795
 msgid ""
 "A new :meth:`Item.deepcopy() <scrapy.item.Item.deepcopy>` method makes it "
 "easier to :ref:`deep-copy items <copying-items>` (:issue:`1493`, :issue:"
 "`3671`)"
-msgstr ""
+msgstr "新しい :meth:`Item.deepcopy() <scrapy.item.Item.deepcopy>` メソッドにより、 :ref:`アイテムのディープ・コピー <copying-items>` が簡単になります (:issue:`1493`, :issue:`3671`)"
 
 #: ../../news.rst:1799
 msgid ""
 ":class:`~scrapy.extensions.corestats.CoreStats` also logs "
 "``elapsed_time_seconds`` now (:issue:`3638`)"
-msgstr ""
+msgstr ":class:`~scrapy.extensions.corestats.CoreStats` もまた ``elapsed_time_seconds`` をログに記録します (:issue:`3638`)"
 
 #: ../../news.rst:1802
 msgid ""
 "Exceptions from :class:`~scrapy.loader.ItemLoader` :ref:`input and output "
 "processors <topics-loaders-processors>` are now more verbose (:issue:"
 "`3836`, :issue:`3840`)"
-msgstr ""
+msgstr ":class:`~scrapy.loader.ItemLoader` の :ref:`入出力プロセッサ <topics-loaders-processors>` の例外がより饒舌(verbose)になりました (:issue:`3836`, :issue:`3840`)"
 
 #: ../../news.rst:1806
 msgid ""
@@ -2847,19 +2847,19 @@ msgid ""
 "<scrapy.crawler.CrawlerRunner.create_crawler>` now fail gracefully if they "
 "receive a :class:`~scrapy.spiders.Spider` subclass instance instead of the "
 "subclass itself (:issue:`2283`, :issue:`3610`, :issue:`3872`)"
-msgstr ""
+msgstr ":class:`~scrapy.crawler.Crawler` と  :class:`CrawlerRunner.crawl <scrapy.crawler.CrawlerRunner.crawl>` と :class:`CrawlerRunner.create_crawler <scrapy.crawler.CrawlerRunner.create_crawler>` はそれ自身のサブクラス自体ではなく :class:`~scrapy.spiders.Spider` サブクラスのインスタンスを受け取った場合、正常に失敗するようになりました (:issue:`2283`, :issue:`3610`, :issue:`3872`)"
 
 #: ../../news.rst:1817
 msgid ""
 ":meth:`~scrapy.spidermiddlewares.SpiderMiddleware.process_spider_exception` "
 "is now also invoked for generators (:issue:`220`, :issue:`2061`)"
-msgstr ""
+msgstr ":meth:`~scrapy.spidermiddlewares.SpiderMiddleware.process_spider_exception` は今やジェネレーターに対しても呼び出されるようになりました (:issue:`220`, :issue:`2061`)"
 
 #: ../../news.rst:1820
 msgid ""
 "System exceptions like KeyboardInterrupt_ are no longer caught (:issue:"
 "`3726`)"
-msgstr ""
+msgstr "KeyboardInterrupt_ のようなシステム例外はキャッチされなくなりました (:issue:`3726`)"
 
 #: ../../news.rst:1823
 msgid ""
@@ -2868,7 +2868,7 @@ msgid ""
 "loader.ItemLoader.get_output_value>` or :meth:`ItemLoader.load_item() "
 "<scrapy.loader.ItemLoader.load_item>` return empty data (:issue:`3804`, :"
 "issue:`3819`)"
-msgstr ""
+msgstr ":meth:`ItemLoader.load_item() <scrapy.loader.ItemLoader.load_item>` は、後で :meth:`ItemLoader.get_output_value() <scrapy.loader.ItemLoader.get_output_value>` を呼び出したり、 :meth:`ItemLoader.load_item() <scrapy.loader.ItemLoader.load_item>` が空のデータを返したりすることは無くなりました (:issue:`3804`, :issue:`3819`)"
 
 #: ../../news.rst:1829
 msgid ""
@@ -2876,67 +2876,67 @@ msgid ""
 "longer ignores these Amazon S3 settings: :setting:`AWS_ENDPOINT_URL`, :"
 "setting:`AWS_REGION_NAME`, :setting:`AWS_USE_SSL`, :setting:`AWS_VERIFY` (:"
 "issue:`3625`)"
-msgstr ""
+msgstr "画像パイプライン (:class:`~scrapy.pipelines.images.ImagesPipeline`) は、以下のAmazon S3設定を無視しなくなりました。:setting:`AWS_ENDPOINT_URL`, :setting:`AWS_REGION_NAME`, :setting:`AWS_USE_SSL`, :setting:`AWS_VERIFY` (:issue:`3625`)"
 
 #: ../../news.rst:1834
 msgid ""
 "Fixed a memory leak in ``scrapy.pipelines.media.MediaPipeline`` affecting, "
 "for example, non-200 responses and exceptions from custom middlewares (:"
 "issue:`3813`)"
-msgstr ""
+msgstr "``scrapy.pipelines.media.MediaPipeline`` のメモリリークを修正しました。たとえば、200以外のレスポンスや、カスタム・ミドルウェアからの例外に影響します (:issue:`3813`)"
 
 #: ../../news.rst:1838
 msgid ""
 "Requests with private callbacks are now correctly unserialized from disk (:"
 "issue:`3790`)"
-msgstr ""
+msgstr "プライベート・コールバックを含むリクエストは、ディスクから正しく逆シリアル化されなくなりました (:issue:`3790`)"
 
 #: ../../news.rst:1841
 msgid ""
 ":meth:`FormRequest.from_response() <scrapy.http.FormRequest.from_response>` "
 "now handles invalid methods like major web browsers (:issue:`3777`, :issue:"
 "`3794`)"
-msgstr ""
+msgstr ":meth:`FormRequest.from_response() <scrapy.http.FormRequest.from_response>` は、主要なWebブラウザ風の不正なメソッドを処理するようになりました (:issue:`3777`, :issue:`3794`)"
 
 #: ../../news.rst:1849
 msgid ""
 "A new topic, :ref:`topics-dynamic-content`, covers recommended approaches to "
 "read dynamically-loaded data (:issue:`3703`)"
-msgstr ""
+msgstr "新しいトピック :ref:`topics-dynamic-content` 動的にロードされたデータを読み取るための推奨アプローチを網羅しています (:issue:`3703`)"
 
 #: ../../news.rst:1852
 msgid ""
 ":ref:`topics-broad-crawls` now features information about memory usage (:"
 "issue:`1264`, :issue:`3866`)"
-msgstr ""
+msgstr ":ref:`topics-broad-crawls` に、メモリ使用量に関する情報が表示されるようになりました (:issue:`1264`, :issue:`3866`)"
 
 #: ../../news.rst:1855
 msgid ""
 "The documentation of :class:`~scrapy.spiders.Rule` now covers how to access "
 "the text of a link when using :class:`~scrapy.spiders.CrawlSpider` (:issue:"
 "`3711`, :issue:`3712`)"
-msgstr ""
+msgstr ":class:`~scrapy.spiders.Rule` の文書では、 :class:`~scrapy.spiders.CrawlSpider` を使用するときにリンクのテキストにアクセスする方法について説明しています (:issue:`3711`, :issue:`3712`)"
 
 #: ../../news.rst:1859
 msgid ""
 "A new section, :ref:`httpcache-storage-custom`, covers writing a custom "
 "cache storage backend for :class:`~scrapy.downloadermiddlewares.httpcache."
 "HttpCacheMiddleware` (:issue:`3683`, :issue:`3692`)"
-msgstr ""
+msgstr "新しい節 :ref:`httpcache-storage-custom` では、 :class:`~scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware` のカスタム・キャッシュ・ストレージバック・エンドの作成について説明しています (:issue:`3683`, :issue:`3692`)"
 
 #: ../../news.rst:1864
 msgid ""
 "A new :ref:`FAQ <faq>` entry, :ref:`faq-split-item`, explains what to do "
 "when you want to split an item into multiple items from an item pipeline (:"
 "issue:`2240`, :issue:`3672`)"
-msgstr ""
+msgstr "新しい :ref:`FAQ <faq>` 項目の :ref:`faq-split-item` では、アイテム・パイプラインからアイテムを複数のアイテムに分割する場合の対処方法を説明しています (:issue:`2240`, :issue:`3672`)"
 
 #: ../../news.rst:1868
 msgid ""
 "Updated the :ref:`FAQ entry about crawl order <faq-bfo-dfo>` to explain why "
 "the first few requests rarely follow the desired order (:issue:`1739`, :"
 "issue:`3621`)"
-msgstr ""
+msgstr ":ref:`クロール順序に関するFAQ項目 <faq-bfo-dfo>` を更新して、最初のいくつかのリクエストが目的の順序にほとんど従わない理由を説明しました (:issue:`1739`, :issue:`3621`)"
 
 #: ../../news.rst:1872
 msgid ""
@@ -2946,7 +2946,7 @@ msgid ""
 "file_path>` methods (:issue:`2253`, :issue:`3609`) and the :meth:`Crawler."
 "stop() <scrapy.crawler.Crawler.stop>` method (:issue:`3842`) are now "
 "documented"
-msgstr ""
+msgstr ":setting:`LOGSTATS_INTERVAL` 設定 (:issue:`3730`) と、 :meth:`FilesPipeline.file_path <scrapy.pipelines.files.FilesPipeline.file_path>` ・ :meth:`ImagesPipeline.file_path <scrapy.pipelines.images.ImagesPipeline.file_path>` メソッド (:issue:`2253`, :issue:`3609`) と :meth:`Crawler.stop() <scrapy.crawler.Crawler.stop>` method (:issue:`3842`) が文書化されました"
 
 #: ../../news.rst:1880
 msgid ""
@@ -2954,14 +2954,14 @@ msgid ""
 "clearer (:issue:`1347`, :issue:`1789`, :issue:`2289`, :issue:`3069`, :issue:"
 "`3615`, :issue:`3626`, :issue:`3668`, :issue:`3670`, :issue:`3673`, :issue:"
 "`3728`, :issue:`3762`, :issue:`3861`, :issue:`3882`)"
-msgstr ""
+msgstr "紛らわしい、または誤解を招く可能性のある文書の一部がより明確になりました (:issue:`1347`, :issue:`1789`, :issue:`2289`, :issue:`3069`, :issue:`3615`, :issue:`3626`, :issue:`3668`, :issue:`3670`, :issue:`3673`, :issue:`3728`, :issue:`3762`, :issue:`3861`, :issue:`3882`)"
 
 #: ../../news.rst:1885
 msgid ""
 "Minor documentation fixes (:issue:`3648`, :issue:`3649`, :issue:`3662`, :"
 "issue:`3674`, :issue:`3676`, :issue:`3694`, :issue:`3724`, :issue:`3764`, :"
 "issue:`3767`, :issue:`3791`, :issue:`3797`, :issue:`3806`, :issue:`3812`)"
-msgstr ""
+msgstr "些末な文書の修正 (:issue:`3648`, :issue:`3649`, :issue:`3662`, :issue:`3674`, :issue:`3676`, :issue:`3694`, :issue:`3724`, :issue:`3764`, :issue:`3767`, :issue:`3791`, :issue:`3797`, :issue:`3806`, :issue:`3812`)"
 
 #: ../../news.rst:1894
 msgid "The following deprecated APIs have been removed (:issue:`3578`):"
@@ -2971,154 +2971,154 @@ msgstr "次の非推奨APIは削除されました(:issue:`3578`):"
 msgid ""
 "``scrapy.conf`` (use :attr:`Crawler.settings <scrapy.crawler.Crawler."
 "settings>`)"
-msgstr ""
+msgstr "``scrapy.conf`` (:attr:`Crawler.settings <scrapy.crawler.Crawler.settings>` を使用して下さい)"
 
 #: ../../news.rst:1899
 msgid "From ``scrapy.core.downloader.handlers``:"
-msgstr ""
+msgstr "``scrapy.core.downloader.handlers`` について:"
 
 #: ../../news.rst:1901
 msgid "``http.HttpDownloadHandler`` (use ``http10.HTTP10DownloadHandler``)"
-msgstr ""
+msgstr "``http.HttpDownloadHandler`` (``http10.HTTP10DownloadHandler`` を使用して下さい)"
 
 #: ../../news.rst:1903
 msgid "``scrapy.loader.ItemLoader._get_values`` (use ``_get_xpathvalues``)"
-msgstr ""
+msgstr "``scrapy.loader.ItemLoader._get_values`` (``_get_xpathvalues`` を使用して下さい)"
 
 #: ../../news.rst:1905
 msgid ""
 "``scrapy.loader.XPathItemLoader`` (use :class:`~scrapy.loader.ItemLoader`)"
-msgstr ""
+msgstr "``scrapy.loader.XPathItemLoader`` (:class:`~scrapy.loader.ItemLoader` を使用して下さい)"
 
 #: ../../news.rst:1907
 msgid "``scrapy.log`` (see :ref:`topics-logging`)"
-msgstr ""
+msgstr "``scrapy.log`` (:ref:`topics-logging` 参照)"
 
 #: ../../news.rst:1909
 msgid "From ``scrapy.pipelines``:"
-msgstr ""
+msgstr "``scrapy.pipelines`` について:"
 
 #: ../../news.rst:1911
 msgid "``files.FilesPipeline.file_key`` (use ``file_path``)"
-msgstr ""
+msgstr "``files.FilesPipeline.file_key`` (``file_path`` を使用して下さい)"
 
 #: ../../news.rst:1913
 msgid "``images.ImagesPipeline.file_key`` (use ``file_path``)"
-msgstr ""
+msgstr "``images.ImagesPipeline.file_key`` (``file_path`` を使用して下さい)"
 
 #: ../../news.rst:1915
 msgid "``images.ImagesPipeline.image_key`` (use ``file_path``)"
-msgstr ""
+msgstr "``images.ImagesPipeline.image_key`` (``file_path`` を使用して下さい)"
 
 #: ../../news.rst:1917
 msgid "``images.ImagesPipeline.thumb_key`` (use ``thumb_path``)"
-msgstr ""
+msgstr "``images.ImagesPipeline.thumb_key`` (``thumb_path`` を使用して下さい)"
 
 #: ../../news.rst:1919
 msgid "From both ``scrapy.selector`` and ``scrapy.selector.lxmlsel``:"
-msgstr ""
+msgstr "``scrapy.selector`` と ``scrapy.selector.lxmlsel`` の両方より:"
 
 #: ../../news.rst:1921
 msgid "``HtmlXPathSelector`` (use :class:`~scrapy.selector.Selector`)"
-msgstr ""
+msgstr "``HtmlXPathSelector`` (:class:`~scrapy.selector.Selector` を使用して下さい)"
 
 #: ../../news.rst:1923
 msgid "``XmlXPathSelector`` (use :class:`~scrapy.selector.Selector`)"
-msgstr ""
+msgstr "``XmlXPathSelector`` (:class:`~scrapy.selector.Selector` を使用して下さい)"
 
 #: ../../news.rst:1925
 msgid "``XPathSelector`` (use :class:`~scrapy.selector.Selector`)"
-msgstr ""
+msgstr "``XPathSelector`` (:class:`~scrapy.selector.Selector` を使用して下さい)"
 
 #: ../../news.rst:1927
 msgid "``XPathSelectorList`` (use :class:`~scrapy.selector.Selector`)"
-msgstr ""
+msgstr "``XPathSelectorList`` (:class:`~scrapy.selector.Selector` を使用して下さい)"
 
 #: ../../news.rst:1929
 msgid "From ``scrapy.selector.csstranslator``:"
-msgstr ""
+msgstr "``scrapy.selector.csstranslator`` より:"
 
 #: ../../news.rst:1931
 msgid ""
 "``ScrapyGenericTranslator`` (use parsel.csstranslator.GenericTranslator_)"
-msgstr ""
+msgstr "``ScrapyGenericTranslator`` ( parsel.csstranslator.GenericTranslator_ を使用して下さい)"
 
 #: ../../news.rst:1933
 msgid "``ScrapyHTMLTranslator`` (use parsel.csstranslator.HTMLTranslator_)"
-msgstr ""
+msgstr "``ScrapyHTMLTranslator`` ( parsel.csstranslator.HTMLTranslator_ を使用して下さい)"
 
 #: ../../news.rst:1935
 msgid "``ScrapyXPathExpr`` (use parsel.csstranslator.XPathExpr_)"
-msgstr ""
+msgstr "``ScrapyXPathExpr`` ( parsel.csstranslator.XPathExpr_ を使用して下さい)"
 
 #: ../../news.rst:1937
 msgid "From :class:`~scrapy.selector.Selector`:"
-msgstr ""
+msgstr ":class:`~scrapy.selector.Selector` より:"
 
 #: ../../news.rst:1939
 msgid ""
 "``_root`` (both the ``__init__`` method argument and the object property, "
 "use ``root``)"
-msgstr ""
+msgstr "`` _root`` ( ``__init__`` メソッド引数とオブジェクト・プロパティの両方で、 ``root`` を使用します)"
 
 #: ../../news.rst:1942 ../../news.rst:1948
 msgid "``extract_unquoted`` (use ``getall``)"
-msgstr ""
+msgstr "``extract_unquoted`` (``getall`` を使用して下さい)"
 
 #: ../../news.rst:1944 ../../news.rst:1950
 msgid "``select`` (use ``xpath``)"
-msgstr ""
+msgstr "``select`` (``xpath`` を使用して下さい)"
 
 #: ../../news.rst:1946
 msgid "From :class:`~scrapy.selector.SelectorList`:"
-msgstr ""
+msgstr ":class:`~scrapy.selector.SelectorList` より:"
 
 #: ../../news.rst:1952
 msgid "``x`` (use ``xpath``)"
-msgstr ""
+msgstr "``x`` (``xpath`` を使用して下さい)"
 
 #: ../../news.rst:1954
 msgid "``scrapy.spiders.BaseSpider`` (use :class:`~scrapy.spiders.Spider`)"
-msgstr ""
+msgstr "``scrapy.spiders.BaseSpider`` (:class:`~scrapy.spiders.Spider` を使用して下さい)"
 
 #: ../../news.rst:1956
 msgid "From :class:`~scrapy.spiders.Spider` (and subclasses):"
-msgstr ""
+msgstr ":class:`~scrapy.spiders.Spider` (と、そのサブクラス)より:"
 
 #: ../../news.rst:1958
 msgid ""
 "``DOWNLOAD_DELAY`` (use :ref:`download_delay <spider-download_delay-"
 "attribute>`)"
-msgstr ""
+msgstr "``DOWNLOAD_DELAY`` (:ref:`download_delay <spider-download_delay-attribute>` を使用して下さい)"
 
 #: ../../news.rst:1961
 msgid "``set_crawler`` (use :meth:`~scrapy.spiders.Spider.from_crawler`)"
-msgstr ""
+msgstr "``set_crawler`` (:meth:`~scrapy.spiders.Spider.from_crawler` を使用して下さい)"
 
 #: ../../news.rst:1963
 msgid ""
 "``scrapy.spiders.spiders`` (use :class:`~scrapy.spiderloader.SpiderLoader`)"
-msgstr ""
+msgstr "``scrapy.spiders.spiders`` (:class:`~scrapy.spiderloader.SpiderLoader` を使用して下さい)"
 
 #: ../../news.rst:1965
 msgid "``scrapy.telnet`` (use :mod:`scrapy.extensions.telnet`)"
-msgstr ""
+msgstr "``scrapy.telnet`` (:mod:`scrapy.extensions.telnet` を使用して下さい)"
 
 #: ../../news.rst:1967
 msgid "From ``scrapy.utils.python``:"
-msgstr ""
+msgstr "``scrapy.utils.python`` より:"
 
 #: ../../news.rst:1969
 msgid "``str_to_unicode`` (use ``to_unicode``)"
-msgstr ""
+msgstr "``str_to_unicode`` (``to_unicode`` を使用して下さい)"
 
 #: ../../news.rst:1971
 msgid "``unicode_to_str`` (use ``to_bytes``)"
-msgstr ""
+msgstr "``unicode_to_str`` (``to_bytes`` を使用して下さい)"
 
 #: ../../news.rst:1973
 msgid "``scrapy.utils.response.body_or_str``"
-msgstr ""
+msgstr "``scrapy.utils.response.body_or_str``"
 
 #: ../../news.rst:1975
 msgid ""
@@ -3127,67 +3127,67 @@ msgstr "また、以下の非推奨の設定も削除されました(:issue:`357
 
 #: ../../news.rst:1977
 msgid "``SPIDER_MANAGER_CLASS`` (use :setting:`SPIDER_LOADER_CLASS`)"
-msgstr ""
+msgstr "``SPIDER_MANAGER_CLASS`` (:setting:`SPIDER_LOADER_CLASS` を使用して下さい)"
 
 #: ../../news.rst:1985
 msgid ""
 "The ``queuelib.PriorityQueue`` value for the :setting:"
 "`SCHEDULER_PRIORITY_QUEUE` setting is deprecated. Use ``scrapy.pqueues."
 "ScrapyPriorityQueue`` instead."
-msgstr ""
+msgstr ":setting:`SCHEDULER_PRIORITY_QUEUE` 設定の ``queuelib.PriorityQueue`` 値は非推奨です。代わりに ``scrapy.pqueues.ScrapyPriorityQueue`` を使って下さい。"
 
 #: ../../news.rst:1989
 msgid ""
 "``process_request`` callbacks passed to :class:`~scrapy.spiders.Rule` that "
 "do not accept two arguments are deprecated."
-msgstr ""
+msgstr "2つの引数を受け入れない :class:`~scrapy.spiders.Rule` に渡される ``process_request`` コールバックは非推奨です。"
 
 #: ../../news.rst:1992
 msgid "The following modules are deprecated:"
-msgstr ""
+msgstr "以下のモジュールは非推奨です:"
 
 #: ../../news.rst:1994
 msgid "``scrapy.utils.http`` (use `w3lib.http`_)"
-msgstr ""
+msgstr "``scrapy.utils.http`` (`w3lib.http`_ を使用して下さい)"
 
 #: ../../news.rst:1996
 msgid "``scrapy.utils.markup`` (use `w3lib.html`_)"
-msgstr ""
+msgstr "``scrapy.utils.markup`` (`w3lib.html`_ を使用して下さい)"
 
 #: ../../news.rst:1998
 msgid "``scrapy.utils.multipart`` (use `urllib3`_)"
-msgstr ""
+msgstr "``scrapy.utils.multipart`` (`urllib3`_ を使用して下さい)"
 
 #: ../../news.rst:2000
 msgid ""
 "The ``scrapy.utils.datatypes.MergeDict`` class is deprecated for Python 3 "
 "code bases. Use :class:`~collections.ChainMap` instead. (:issue:`3878`)"
-msgstr ""
+msgstr "``scrapy.utils.datatypes.MergeDict`` クラスは、Python3コードベースでは非推奨です。 代わりに :class:`~collections.ChainMap` を使用してください。 (:issue:`3878`)"
 
 #: ../../news.rst:2003
 msgid ""
 "The ``scrapy.utils.gz.is_gzipped`` function is deprecated. Use ``scrapy."
 "utils.gz.gzip_magic_number`` instead."
-msgstr ""
+msgstr "``scrapy.utils.gz.is_gzipped`` 関数は非推奨です。代わりに ``scrapy.utils.gz.gzip_magic_number`` を使って下さい。"
 
 #: ../../news.rst:2014
 msgid ""
 "It is now possible to run all tests from the same tox_ environment in "
 "parallel; the documentation now covers :ref:`this and other ways to run "
 "tests <running-tests>` (:issue:`3707`)"
-msgstr ""
+msgstr "同じ tox_ 環境からすべてのテストを並行して実行できるようになりました。文書では、 :ref:`テストを実行する方法あれこれ <running-tests>` について説明しています。 (:issue:`3707`)"
 
 #: ../../news.rst:2018
 msgid ""
 "It is now possible to generate an API documentation coverage report (:issue:"
 "`3806`, :issue:`3810`, :issue:`3860`)"
-msgstr ""
+msgstr "APIドキュメントカバレッジレポートを生成できるようになりました (:issue:`3806`, :issue:`3810`, :issue:`3860`)"
 
 #: ../../news.rst:2021
 msgid ""
 "The :ref:`documentation policies <documentation-policies>` now require "
 "docstrings_ (:issue:`3701`) that follow `PEP 257`_ (:issue:`3748`)"
-msgstr ""
+msgstr ":ref:`文書ポリシー <documentation-policies>` では、 `PEP 257`_ に従った docstrings_ (:issue:`3701`) が必要になりました (:issue:`3748`)"
 
 #: ../../news.rst:2024
 msgid ""
@@ -3195,7 +3195,7 @@ msgid ""
 "issue:`3698`, :issue:`3734`, :issue:`3735`, :issue:`3736`, :issue:`3737`, :"
 "issue:`3809`, :issue:`3821`, :issue:`3825`, :issue:`3827`, :issue:`3833`, :"
 "issue:`3857`, :issue:`3877`)"
-msgstr ""
+msgstr "内部修正と整理 (:issue:`3629`, :issue:`3643`, :issue:`3684`, :issue:`3698`, :issue:`3734`, :issue:`3735`, :issue:`3736`, :issue:`3737`, :issue:`3809`, :issue:`3821`, :issue:`3825`, :issue:`3827`, :issue:`3833`, :issue:`3857`, :issue:`3877`)"
 
 #: ../../news.rst:2032
 msgid "Scrapy 1.6.0 (2019-01-30)"
