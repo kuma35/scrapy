@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-15 19:42+0900\n"
+"PO-Revision-Date: 2021-06-15 19:50+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -3656,7 +3656,7 @@ msgstr "collections.dequeは、リストの代わりにMiddlewareManagerメソ�
 
 #: ../../news.rst:2228
 msgid "Scrapy 1.5.2 (2019-01-22)"
-msgstr ""
+msgstr "Scrapy 1.5.2 (2019-01-22)"
 
 #: ../../news.rst:2230
 msgid ""
@@ -3664,7 +3664,7 @@ msgid ""
 "websites POSTing content to http://localhost:6023, we haven't found a way to "
 "exploit it from Scrapy, but it is very easy to trick a browser to do so and "
 "elevates the risk for local development environment."
-msgstr ""
+msgstr "*セキュリティのバグ修正* : Telnetコンソール拡張機能は、コンテンツを http://localhost:6023 にPOSTする不正なWebサイトによって簡単に悪用される可能性があり、Scrapyからそれを悪用する方法は見つかりませんでしたが、ブラウザをだまして悪用するのは非常に簡単であり、ローカル開発環境のリスクを高めます。"
 
 #: ../../news.rst:2235
 msgid ""
@@ -3672,7 +3672,7 @@ msgid ""
 "authentication by default with a random generated password. If you can't "
 "upgrade right away, please consider setting :setting:`TELNETCONSOLE_PORT` "
 "out of its default value."
-msgstr ""
+msgstr "*修正には下位互換性がありません* ランダムに生成されたパスワードを使用して、デフォルトでtelnetユーザーパスワード認証を有効にします。すぐにアップグレードできない場合は、 :setting:`TELNETCONSOLE_PORT` のデフォルト値の変更を検討してください。"
 
 #: ../../news.rst:2240
 msgid ""
@@ -3686,7 +3686,7 @@ msgstr "botoインポート・エラーが原因で、GCE環境でのバック�
 
 #: ../../news.rst:2247
 msgid "Scrapy 1.5.1 (2018-07-12)"
-msgstr ""
+msgstr "Scrapy 1.5.1 (2018-07-12)"
 
 #: ../../news.rst:2249
 msgid ""
