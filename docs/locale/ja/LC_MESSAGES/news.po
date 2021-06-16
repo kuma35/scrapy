@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-15 19:55+0900\n"
+"PO-Revision-Date: 2021-06-17 08:44+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -3722,49 +3722,49 @@ msgstr "文書の改善 (:issue:`3058`, :issue:`3059`, :issue:`3089`, :issue:`31
 
 #: ../../news.rst:2265
 msgid "Scrapy 1.5.0 (2017-12-29)"
-msgstr ""
+msgstr "Scrapy 1.5.0 (2017-12-29)"
 
 #: ../../news.rst:2267
 msgid ""
 "This release brings small new features and improvements across the codebase. "
 "Some highlights:"
-msgstr ""
+msgstr "このリリースでは、コードベース全体に小さな新機能と改善が加えられています。 いくつかのハイライト:"
 
 #: ../../news.rst:2270
 msgid "Google Cloud Storage is supported in FilesPipeline and ImagesPipeline."
-msgstr ""
+msgstr "Google Cloud Storageは、FilesPipelineとImagesPipelineでサポートされています。"
 
 #: ../../news.rst:2271
 msgid ""
 "Crawling with proxy servers becomes more efficient, as connections to "
 "proxies can be reused now."
-msgstr ""
+msgstr "プロキシーへの接続を再利用できるようになったため、プロキシー・サーバーを使用したクロールがより効率的になりました。"
 
 #: ../../news.rst:2273
 msgid ""
 "Warnings, exception and logging messages are improved to make debugging "
 "easier."
-msgstr ""
+msgstr "警告と例外とログのメッセージが改善され、デバッグが容易になりました。"
 
 #: ../../news.rst:2275
 msgid ""
 "``scrapy parse`` command now allows to set custom request meta via ``--"
 "meta`` argument."
-msgstr ""
+msgstr "``scrapy parse`` コマンドで、 ``--meta`` 引数を介してカスタム・リクエスト・メタを設定できるようになりました。"
 
 #: ../../news.rst:2277
 msgid ""
 "Compatibility with Python 3.6, PyPy and PyPy3 is improved; PyPy and PyPy3 "
 "are now supported officially, by running tests on CI."
-msgstr ""
+msgstr "Python 3.6、PyPy、PyPy3との互換性が向上しました。 PyPyとPyPy3は、CIでテストを実行することにより、正式にサポートされるようになりました。"
 
 #: ../../news.rst:2279
 msgid "Better default handling of HTTP 308, 522 and 524 status codes."
-msgstr ""
+msgstr "HTTP 308と522と524のステータスコードのデフォルト処理が改善されました。"
 
 #: ../../news.rst:2280
 msgid "Documentation is improved, as usual."
-msgstr ""
+msgstr "毎度おなじみ文書の改善。"
 
 #: ../../news.rst:2283
 msgid "Backward Incompatible Changes"
@@ -3772,14 +3772,14 @@ msgstr "後方互換性の無い変更"
 
 #: ../../news.rst:2285
 msgid "Scrapy 1.5 drops support for Python 3.3."
-msgstr ""
+msgstr "Scrapy 1.5は、Python3.3のサポートを終了します。"
 
 #: ../../news.rst:2286 ../../news.rst:2330
 msgid ""
 "Default Scrapy User-Agent now uses https link to scrapy.org (:issue:`2983`). "
 "**This is technically backward-incompatible**; override :setting:"
 "`USER_AGENT` if you relied on old value."
-msgstr ""
+msgstr "デフォルトのScrapy User-Agentは、scrapy.orgへのhttpsリンクを使用するようになりました(:issue:`2983`)。 **これは技術的に後方互換性がありません** 古い値に依存している場合は、 :setting:`USER_AGENT` をオーバーライドします。"
 
 #: ../../news.rst:2289
 msgid ""
@@ -3787,97 +3787,97 @@ msgid ""
 "technically backward-incompatible** because the logger changes from "
 "``[scrapy.utils.log]`` to ``[scrapy.crawler]``. If you're parsing Scrapy "
 "logs, please update your log parsers (:issue:`1343`)."
-msgstr ""
+msgstr "``custom_settings`` によってオーバーライドされた設定のログが修正されました。 **これは技術的に後方互換性がありません** ロガーが ``[scrapy.utils.log]`` から  ``[scrapy.crawler]`` に変更されたためです。 Scrapyログをパースしている場合は、ログパーサーを更新してください (:issue:`1343`)."
 
 #: ../../news.rst:2293
 msgid ""
 "LinkExtractor now ignores ``m4v`` extension by default, this is change in "
 "behavior."
-msgstr ""
+msgstr "LinkExtractorは、デフォルトで ``m4v`` 拡張子を無視するようになりました。これは動作の変更です。"
 
 #: ../../news.rst:2295
 msgid ""
 "522 and 524 status codes are added to ``RETRY_HTTP_CODES`` (:issue:`2851`)"
-msgstr ""
+msgstr "522 と 524 のステータスコードが ``RETRY_HTTP_CODES`` に追加されました (:issue:`2851`)"
 
 #: ../../news.rst:2300
 msgid "Support ``<link>`` tags in ``Response.follow`` (:issue:`2785`)"
-msgstr ""
+msgstr "``Response.follow``  内で ``<link>`` タグをサポートしました (:issue:`2785`)"
 
 #: ../../news.rst:2301
 msgid "Support for ``ptpython`` REPL (:issue:`2654`)"
-msgstr ""
+msgstr "``ptpython`` REPL をサポートしました (:issue:`2654`)"
 
 #: ../../news.rst:2302
 msgid ""
 "Google Cloud Storage support for FilesPipeline and ImagesPipeline (:issue:"
 "`2923`)."
-msgstr ""
+msgstr "FilesPipelineとImagesPipelineに対するGoogleCloud Storageのサポート (:issue:`2923`)"
 
 #: ../../news.rst:2304
 msgid ""
 "New ``--meta`` option of the \"scrapy parse\" command allows to pass "
 "additional request.meta (:issue:`2883`)"
-msgstr ""
+msgstr "\"scrapy parse\" コマンドの新しい ``--meta`` オプションにより、追加のrequest.metaを渡すことができます (:issue:`2883`)"
 
 #: ../../news.rst:2306
 msgid ""
 "Populate spider variable when using ``shell.inspect_response`` (:issue:"
 "`2812`)"
-msgstr ""
+msgstr "``shell.inspect_response`` を使用するときは、スパイダー変数に設定します (:issue:`2812`)"
 
 #: ../../news.rst:2307
 msgid "Handle HTTP 308 Permanent Redirect (:issue:`2844`)"
-msgstr ""
+msgstr "HTTP 308 恒久的リダイレクト(Permanent Redirect) の処理 (:issue:`2844`)"
 
 #: ../../news.rst:2308
 msgid "Add 522 and 524 to ``RETRY_HTTP_CODES`` (:issue:`2851`)"
-msgstr ""
+msgstr "``RETRY_HTTP_CODES`` に 522 と 524 を追加 (:issue:`2851`)"
 
 #: ../../news.rst:2309
 msgid "Log versions information at startup (:issue:`2857`)"
-msgstr ""
+msgstr "起動時のログバージョン情報 (:issue:`2857`)"
 
 #: ../../news.rst:2310
 msgid ""
 "``scrapy.mail.MailSender`` now works in Python 3 (it requires Twisted 17.9.0)"
-msgstr ""
+msgstr "``scrapy.mail.MailSender`` は今や Python 3 で動作します (Twisted 17.9.0 が必要です)"
 
 #: ../../news.rst:2311
 msgid "Connections to proxy servers are reused (:issue:`2743`)"
-msgstr ""
+msgstr "プロキシー・サーバーへの接続(connection)は再利用されます (:issue:`2743`)"
 
 #: ../../news.rst:2312
 msgid "Add template for a downloader middleware (:issue:`2755`)"
-msgstr ""
+msgstr "ダウンローダー・ミドルウェアのためのテンプレートを追加 (:issue:`2755`)"
 
 #: ../../news.rst:2313
 msgid ""
 "Explicit message for NotImplementedError when parse callback not defined (:"
 "issue:`2831`)"
-msgstr ""
+msgstr "パース・コールバックが定義されていない場合のNotImplementedErrorの明示的なメッセージ (:issue:`2831`)"
 
 #: ../../news.rst:2315
 msgid ""
 "CrawlerProcess got an option to disable installation of root log handler (:"
 "issue:`2921`)"
-msgstr ""
+msgstr "CrawlerProcessは、ルート・ログ・ハンドラーのインストールを無効にするオプションが追加されました (:issue:`2921`)"
 
 #: ../../news.rst:2317
 msgid "LinkExtractor now ignores ``m4v`` extension by default"
-msgstr ""
+msgstr "LinkExtractorは今やデフォルトで ``m4v`` 拡張子を無視します"
 
 #: ../../news.rst:2318
 msgid ""
 "Better log messages for responses over :setting:`DOWNLOAD_WARNSIZE` and :"
 "setting:`DOWNLOAD_MAXSIZE` limits (:issue:`2927`)"
-msgstr ""
+msgstr ":setting:`DOWNLOAD_WARNSIZE` と :setting:`DOWNLOAD_MAXSIZE` の制限を超えるレスポンスのログ・メッセージが改善されました (:issue:`2927`)"
 
 #: ../../news.rst:2320
 msgid ""
 "Show warning when a URL is put to ``Spider.allowed_domains`` instead of a "
 "domain (:issue:`2250`)."
-msgstr ""
+msgstr "URLがドメインではなく ``Spider.allowed_domains`` に配置されたときに警告を表示します (:issue:`2250`)."
 
 #: ../../news.rst:2326
 msgid ""
@@ -3885,44 +3885,44 @@ msgid ""
 "technically backward-incompatible** because the logger changes from "
 "``[scrapy.utils.log]`` to ``[scrapy.crawler]``, so please update your log "
 "parsers if needed (:issue:`1343`)"
-msgstr ""
+msgstr "``custom_settings`` によって上書きされた設定のログを修正しました。 **これは技術的に後方互換性がありません** ロガーが ``[scrapy.utils.log]`` から ``[scrapy.crawler]`` に変わるため、必要に応じてログ・パーサーを更新してください (:issue:`1343`)"
 
 #: ../../news.rst:2333
 msgid ""
 "Fix PyPy and PyPy3 test failures, support them officially (:issue:`2793`, :"
 "issue:`2935`, :issue:`2990`, :issue:`3050`, :issue:`2213`, :issue:`3048`)"
-msgstr ""
+msgstr "PyPyとPyPy3のテストの失敗を修正し、それらを公式にサポートします (:issue:`2793`, :issue:`2935`, :issue:`2990`, :issue:`3050`, :issue:`2213`, :issue:`3048`)"
 
 #: ../../news.rst:2336
 msgid "Fix DNS resolver when ``DNSCACHE_ENABLED=False`` (:issue:`2811`)"
-msgstr ""
+msgstr "``DNSCACHE_ENABLED=False`` の時のDNSリゾルバーを修正 (:issue:`2811`)"
 
 #: ../../news.rst:2337
 msgid "Add ``cryptography`` for Debian Jessie tox test env (:issue:`2848`)"
-msgstr ""
+msgstr "Debian Jessie tox test envの ``cryptography`` を追加します (:issue:`2848`)"
 
 #: ../../news.rst:2338
 msgid ""
 "Add verification to check if Request callback is callable (:issue:`2766`)"
-msgstr ""
+msgstr "リクエスト・コールバックが呼び出し可能かどうかを確認するための検証を追加します (:issue:`2766`)"
 
 #: ../../news.rst:2339
 msgid "Port ``extras/qpsclient.py`` to Python 3 (:issue:`2849`)"
-msgstr ""
+msgstr "``extras/qpsclient.py`` を Python 3 に移植しました (:issue:`2849`)"
 
 #: ../../news.rst:2340
 msgid ""
 "Use getfullargspec under the scenes for Python 3 to stop DeprecationWarning "
 "(:issue:`2862`)"
-msgstr ""
+msgstr "Python3の環境下でgetfullargspecを使用した時の非推奨警告をやめました (:issue:`2862`)"
 
 #: ../../news.rst:2342
 msgid "Update deprecated test aliases (:issue:`2876`)"
-msgstr ""
+msgstr "非推奨のテスト・エイリアスを更新 (:issue:`2876`)"
 
 #: ../../news.rst:2343
 msgid "Fix ``SitemapSpider`` support for alternate links (:issue:`2853`)"
-msgstr ""
+msgstr "代替リンク(alternate link)の ``SitemapSpider`` サポートを修正 (:issue:`2853`)"
 
 #: ../../news.rst:2346
 msgid "Docs"
@@ -3932,91 +3932,91 @@ msgstr "文書"
 msgid ""
 "Added missing bullet point for the ``AUTOTHROTTLE_TARGET_CONCURRENCY`` "
 "setting. (:issue:`2756`)"
-msgstr ""
+msgstr "``AUTOTHROTTLE_TARGET_CONCURRENCY`` 設定に欠落していた箇条書きを追加。 (:issue:`2756`)"
 
 #: ../../news.rst:2350
 msgid ""
 "Update Contributing docs, document new support channels (:issue:`2762`, "
 "issue:`3038`)"
-msgstr ""
+msgstr "寄稿文書を更新し、新しいサポート・チャネルを文書化します (:issue:`2762`, issue:`3038`)"
 
 #: ../../news.rst:2352
 msgid "Include references to Scrapy subreddit in the docs"
-msgstr ""
+msgstr "文書にScrapy subredditへの参照を含めます"
 
 #: ../../news.rst:2353
 msgid ""
 "Fix broken links; use https:// for external links (:issue:`2978`, :issue:"
 "`2982`, :issue:`2958`)"
-msgstr ""
+msgstr "誤ったリンクを修正。 外部へのリンクには https:// を使用 (:issue:`2978`, :issue:`2982`, :issue:`2958`)"
 
 #: ../../news.rst:2355
 msgid "Document CloseSpider extension better (:issue:`2759`)"
-msgstr ""
+msgstr "CloseSpider拡張機能をより適切に文書化 (:issue:`2759`)"
 
 #: ../../news.rst:2356
 msgid ""
 "Use ``pymongo.collection.Collection.insert_one()`` in MongoDB example (:"
 "issue:`2781`)"
-msgstr ""
+msgstr "MongoDBの例で ``pymongo.collection.Collection.insert_one()`` を使用 (:issue:`2781`)"
 
 #: ../../news.rst:2358
 msgid ""
 "Spelling mistake and typos (:issue:`2828`, :issue:`2837`, :issue:`2884`, :"
 "issue:`2924`)"
-msgstr ""
+msgstr "スペルミスとタイプミス (:issue:`2828`, :issue:`2837`, :issue:`2884`, :issue:`2924`)"
 
 #: ../../news.rst:2360
 msgid "Clarify ``CSVFeedSpider.headers`` documentation (:issue:`2826`)"
-msgstr ""
+msgstr "``CSVFeedSpider.headers`` 文書を明確にしました (:issue:`2826`)"
 
 #: ../../news.rst:2361
 msgid ""
 "Document ``DontCloseSpider`` exception and clarify ``spider_idle`` (:issue:"
 "`2791`)"
-msgstr ""
+msgstr "``DontCloseSpider`` 例外を文書化し、 ``spider_idle`` を明確にします (:issue:`2791`)"
 
 #: ../../news.rst:2363
 msgid "Update \"Releases\" section in README (:issue:`2764`)"
-msgstr ""
+msgstr "README の \"Releases\" 節を更新 (:issue:`2764`)"
 
 #: ../../news.rst:2364
 msgid "Fix rst syntax in ``DOWNLOAD_FAIL_ON_DATALOSS`` docs (:issue:`2763`)"
-msgstr ""
+msgstr "``DOWNLOAD_FAIL_ON_DATALOSS`` 文書内の rst 文法 を修正 (:issue:`2763`)"
 
 #: ../../news.rst:2365
 msgid "Small fix in description of startproject arguments (:issue:`2866`)"
-msgstr ""
+msgstr "startproject引数の説明の些細な修正 (:issue:`2866`)"
 
 #: ../../news.rst:2366
 msgid "Clarify data types in Response.body docs (:issue:`2922`)"
-msgstr ""
+msgstr "Response.body文書でデータ型を明確にする (:issue:`2922`)"
 
 #: ../../news.rst:2367
 msgid ""
 "Add a note about ``request.meta['depth']`` to DepthMiddleware docs (:issue:"
 "`2374`)"
-msgstr ""
+msgstr "``request.meta['depth']`` に関する注記をDepthMiddleware文書に追加 (:issue:`2374`)"
 
 #: ../../news.rst:2368
 msgid ""
 "Add a note about ``request.meta['dont_merge_cookies']`` to CookiesMiddleware "
 "docs (:issue:`2999`)"
-msgstr ""
+msgstr "``request.meta['dont_merge_cookies']`` に関する注記をCookiesMiddleware文書に追加 (:issue:`2999`)"
 
 #: ../../news.rst:2370
 msgid "Up-to-date example of project structure (:issue:`2964`, :issue:`2976`)"
-msgstr ""
+msgstr "プロジェクト構造の例を更新 (:issue:`2964`, :issue:`2976`)"
 
 #: ../../news.rst:2371
 msgid "A better example of ItemExporters usage (:issue:`2989`)"
-msgstr ""
+msgstr "ItemExportersの使用例を改善 (:issue:`2989`)"
 
 #: ../../news.rst:2372
 msgid ""
 "Document ``from_crawler`` methods for spider and downloader middlewares (:"
 "issue:`3019`)"
-msgstr ""
+msgstr "スパイダーとダウンローダーミドルウェアのための ``from_crawler`` メソッドについて文書化 (:issue:`3019`)"
 
 #: ../../news.rst:2378
 msgid "Scrapy 1.4.0 (2017-05-18)"
