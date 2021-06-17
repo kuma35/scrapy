@@ -9092,7 +9092,7 @@ msgstr ""
 msgid ""
 "The numbers like #NNN reference tickets in the old issue tracker (Trac) "
 "which is no longer available."
-msgstr ""
+msgstr "#NNN形式の番号は古い課題トラッカー(issue tracker)（Trac）の参照チケット番号なので、もはや利用できません。"
 
 #: ../../news.rst:4299 ../../news.rst:4343 ../../news.rst:4416
 msgid "New features and improvements"
@@ -9604,62 +9604,62 @@ msgstr ""
 
 #: ../../news.rst:4451
 msgid "Scrapy 0.8"
-msgstr ""
+msgstr "Scrapy 0.8"
 
 #: ../../news.rst:4458
 msgid "Added DEFAULT_RESPONSE_ENCODING setting (:rev:`1809`)"
-msgstr ""
+msgstr "DEFAULT_RESPONSE_ENCODING 設定追加 (:rev:`1809`)"
 
 #: ../../news.rst:4459
 msgid ""
 "Added ``dont_click`` argument to ``FormRequest.from_response()`` method (:"
 "rev:`1813`, :rev:`1816`)"
-msgstr ""
+msgstr "``FormRequest.from_response()`` メソッドに ``dont_click`` 引数追加 (:rev:`1813`, :rev:`1816`)"
 
 #: ../../news.rst:4460
 msgid ""
 "Added ``clickdata`` argument to ``FormRequest.from_response()`` method (:rev:"
 "`1802`, :rev:`1803`)"
-msgstr ""
+msgstr "``FormRequest.from_response()`` メソッドに `clickdata`` 引数追加 (:rev:`1802`, :rev:`1803`)"
 
 #: ../../news.rst:4461
 msgid ""
 "Added support for HTTP proxies (``HttpProxyMiddleware``) (:rev:`1781`, :rev:"
 "`1785`)"
-msgstr ""
+msgstr "HTTPプロキシー (``HttpProxyMiddleware``) サポートの追加 (:rev:`1781`, :rev:`1785`)"
 
 #: ../../news.rst:4462
 msgid ""
 "Offsite spider middleware now logs messages when filtering out requests (:"
 "rev:`1841`)"
-msgstr ""
+msgstr "オフサイト・スパイダー・ミドルウェアは、リクエストを除外するときにメッセージをログに記録するようになりました (:rev:`1841`)"
 
 #: ../../news.rst:4467
 msgid ""
 "Changed ``scrapy.utils.response.get_meta_refresh()`` signature (:rev:`1804`)"
-msgstr ""
+msgstr "``scrapy.utils.response.get_meta_refresh()`` シグネチャを変更した (:rev:`1804`)"
 
 #: ../../news.rst:4468
 msgid ""
 "Removed deprecated ``scrapy.item.ScrapedItem`` class - use ``scrapy.item."
 "Item instead`` (:rev:`1838`)"
-msgstr ""
+msgstr "``scrapy.item.ScrapedItem`` class を非推奨削除。代わりに ``scrapy.item.Item`` を使って下さい (:rev:`1838`)"
 
 #: ../../news.rst:4469
 msgid ""
 "Removed deprecated ``scrapy.xpath`` module - use ``scrapy.selector`` "
 "instead. (:rev:`1836`)"
-msgstr ""
+msgstr "``scrapy.xpath`` モジュールを非推奨削除。代わりに ``scrapy.selector`` を使って下さい。 (:rev:`1836`)"
 
 #: ../../news.rst:4470
 msgid ""
 "Removed deprecated ``core.signals.domain_open`` signal - use ``core.signals."
 "domain_opened`` instead (:rev:`1822`)"
-msgstr ""
+msgstr "``core.signals.domain_open`` シグナルを非推奨削除。代わりに ``core.signals.domain_opened`` を使って下さい (:rev:`1822`)"
 
 #: ../../news.rst:4471
 msgid "``log.msg()`` now receives a ``spider`` argument (:rev:`1822`)"
-msgstr ""
+msgstr "``log.msg()`` は今や ``spider`` 引数を受け入れます (:rev:`1822`)"
 
 #: ../../news.rst:4472
 msgid ""
@@ -9667,40 +9667,40 @@ msgid ""
 "spiders, you should always use the ``spider`` argument and pass spider "
 "references. If you really want to pass a string, use the ``component`` "
 "argument instead."
-msgstr ""
+msgstr "古いドメイン引数は非推奨になり、0.9で削除される予定です。 スパイダーの場合は、常に ``spider`` 引数を使用し、スパイダーへの参照を渡す必要があります。 本当に文字列を渡したい場合は、代わりに ``component`` 引数を使用してください。"
 
 #: ../../news.rst:4473
 msgid ""
 "Changed core signals ``domain_opened``, ``domain_closed``, ``domain_idle``"
-msgstr ""
+msgstr "コア・シグナル ``domain_opened``, ``domain_closed``, ``domain_idle`` を変更した"
 
 #: ../../news.rst:4475
 msgid "Changed Item pipeline to use spiders instead of domains"
-msgstr ""
+msgstr "ドメインの代わりにスパイダーを使用するようにアイテム・パイプラインを変更しました"
 
 #: ../../news.rst:4475
 msgid ""
 "The ``domain`` argument of  ``process_item()`` item pipeline method was "
 "changed to  ``spider``, the new signature is: ``process_item(spider, item)`` "
 "(:rev:`1827` | #105)"
-msgstr ""
+msgstr "``process_item()`` アイテム・パイプライン・メソッドの ``domain`` 引数が ``spider`` に変更され、新しいシグネチャは次のようになります: ``process_item(spider, item)``  (:rev:`1827` | #105)"
 
 #: ../../news.rst:4476
 msgid ""
 "To quickly port your code (to work with Scrapy 0.8) just use ``spider."
 "domain_name`` where you previously used ``domain``."
-msgstr ""
+msgstr "（Scrapy 0.8で動作するように）コードをすばやく移植するには、以前に ``domain`` を使用していたあなたは、 ``spider.domain_name`` を使用するだけです。"
 
 #: ../../news.rst:4481
 msgid ""
 "Changed Stats API to use spiders instead of domains (:rev:`1849` | #113)"
-msgstr ""
+msgstr "ドメインの代わりにスパイダーを使用するようにStatsAPIを変更しました (:rev:`1849` | #113)"
 
 #: ../../news.rst:4478
 msgid ""
 "``StatsCollector`` was changed to receive spider references (instead of "
 "domains) in its methods (``set_value``, ``inc_value``, etc)."
-msgstr ""
+msgstr "``StatsCollector`` は、そのメソッド( ``set_value`` 、 ``inc_value`` など)で(ドメインではなく)スパイダーへの参照を受け取るように変更されました。"
 
 #: ../../news.rst:4479
 msgid "added ``StatsCollector.iter_spider_stats()`` method"
@@ -9714,20 +9714,20 @@ msgstr "``StatsCollector.list_domains()`` メソッドを削除"
 msgid ""
 "Also, Stats signals were renamed and now pass around spider references "
 "(instead of domains). Here's a summary of the changes:"
-msgstr ""
+msgstr "また、Statsシグナルの名前が変更され、（ドメインではなく）スパイダーへの参照を渡すようになりました。 変更の概要は以下のとおりです:"
 
 #: ../../news.rst:4482
 msgid ""
 "To quickly port your code (to work with Scrapy 0.8) just use ``spider."
 "domain_name`` where you previously used ``domain``. ``spider_stats`` "
 "contains exactly the same data as ``domain_stats``."
-msgstr ""
+msgstr "（Scrapy 0.8で動作するように）コードをすばやく移植するには、以前に ``domain`` を使用していたあなたは ``spider.domain_name`` を使用するだけです。 ``spider_stats`` には、  ``domain_stats`` とまったく同じデータが含まれています。"
 
 #: ../../news.rst:4485
 msgid ""
 "``CloseDomain`` extension moved to ``scrapy.contrib.closespider."
 "CloseSpider`` (:rev:`1833`)"
-msgstr ""
+msgstr "``CloseDomain`` 拡張機能が ``scrapy.contrib.closespider.CloseSpider`` に移動しました (:rev:`1833`)"
 
 #: ../../news.rst:4485
 msgid "Its settings were also renamed:"
@@ -9761,14 +9761,14 @@ msgstr "名前変更 設定: ``CONCURRENT_DOMAINS`` を ``CONCURRENT_SPIDERS`` �
 
 #: ../../news.rst:4490
 msgid "Refactored HTTP Cache middleware"
-msgstr "HTTPキャッシュ・ミドルウェアをリファクタリング"
+msgstr "HTTPキャッシュ・ミドルウェアのリファクタリング"
 
 #: ../../news.rst:4491
 msgid ""
 "HTTP Cache middleware has been heavilty refactored, retaining the same "
 "functionality except for the domain sectorization which was removed. (:rev:"
 "`1843` )"
-msgstr ""
+msgstr "HTTPキャッシュミドルウェアは大幅にリファクタリングされましたが、削除されたドメイン・セクター化(sectorization)を除いて同じ機能を保持しています。 (:rev:`1843` )"
 
 #: ../../news.rst:4492
 msgid ""
