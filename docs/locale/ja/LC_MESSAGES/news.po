@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-18 07:48+0900\n"
+"PO-Revision-Date: 2021-06-18 07:52+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -4471,21 +4471,21 @@ msgstr "依存関係が欠落していて、 :setting:`SPIDER_MODULES` が間違
 
 #: ../../news.rst:2586
 msgid "Scrapy 1.3.2 (2017-02-13)"
-msgstr ""
+msgstr "Scrapy 1.3.2 (2017-02-13)"
 
 #: ../../news.rst:2591
 msgid ""
 "Preserve request class when converting to/from dicts (utils.reqser) (:issue:"
 "`2510`)."
-msgstr ""
+msgstr "辞書との間で変換するときにリクエスト・クラスを保持(utils.reqser) (:issue:`2510`)"
 
 #: ../../news.rst:2592
 msgid "Use consistent selectors for author field in tutorial (:issue:`2551`)."
-msgstr ""
+msgstr "チュートリアルの作成者フィールドに一貫したセレクターを使用します (:issue:`2551`)"
 
 #: ../../news.rst:2593
 msgid "Fix TLS compatibility in Twisted 17+ (:issue:`2558`)"
-msgstr ""
+msgstr "Twisted 17+のTLS互換性を修正 (:issue:`2558`)"
 
 #: ../../news.rst:2598
 msgid "Scrapy 1.3.1 (2017-02-08)"
