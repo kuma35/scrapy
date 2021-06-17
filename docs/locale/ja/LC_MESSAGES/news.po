@@ -6882,17 +6882,17 @@ msgstr ""
 
 #: ../../news.rst:3630
 msgid "Scrapy 0.24.4 (2014-08-09)"
-msgstr ""
+msgstr "Scrapy 0.24.4 (2014-08-09)"
 
 #: ../../news.rst:3632
 msgid ""
 "pem file is used by mockserver and required by scrapy bench (:commit:"
 "`5eddc68`)"
-msgstr ""
+msgstr "pemファイルはmockserverによって使用され、scrapyベンチによって必要とされます (:commit:`5eddc68`)"
 
 #: ../../news.rst:3633
 msgid "scrapy bench needs scrapy.tests* (:commit:`d6cb999`)"
-msgstr ""
+msgstr "scrapyベンチには scrapy.tests* が必要です (:commit:`d6cb999`)"
 
 #: ../../news.rst:3636
 msgid "Scrapy 0.24.3 (2014-08-09)"
