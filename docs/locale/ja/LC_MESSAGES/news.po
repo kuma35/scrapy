@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-17 08:44+0900\n"
+"PO-Revision-Date: 2021-06-18 07:43+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -4020,13 +4020,13 @@ msgstr "スパイダーとダウンローダーミドルウェアのための ``
 
 #: ../../news.rst:2378
 msgid "Scrapy 1.4.0 (2017-05-18)"
-msgstr ""
+msgstr "Scrapy 1.4.0 (2017-05-18)"
 
 #: ../../news.rst:2380
 msgid ""
 "Scrapy 1.4 does not bring that many breathtaking new features but quite a "
 "few handy improvements nonetheless."
-msgstr ""
+msgstr "Scrapy 1.4は、それほど多くの息をのむような新機能をもたらしませんが、それでもかなりの数の便利な改善をもたらします。"
 
 #: ../../news.rst:2383
 msgid ""
@@ -4034,7 +4034,7 @@ msgid ""
 "password via the new :setting:`FTP_USER` and :setting:`FTP_PASSWORD` "
 "settings. And if you're using Twisted version 17.1.0 or above, FTP is now "
 "available with Python 3."
-msgstr ""
+msgstr "Scrapyは、新しい設定 :setting:`FTP_USER` と :setting:`FTP_PASSWORD` を介して、カスタマイズ可能なユーザーとパスワードを使用した匿名FTPセッションをサポートするようになりました。 また、Twistedバージョン17.1.0以降を使用している場合、Python3でFTPを使用できるようになりました。"
 
 #: ../../news.rst:2388
 msgid ""
@@ -4043,29 +4043,29 @@ msgid ""
 "Requests in Scrapy spiders**. This method makes it easier to write correct "
 "spiders; ``response.follow`` has several advantages over creating ``scrapy."
 "Request`` objects directly:"
-msgstr ""
+msgstr "リクエストを作成するための新メソッド :meth:`response.follow <scrapy.http.TextResponse.follow>` があります。 **これは、Scrapyスパイダーでリクエストを作成するための推奨される方法になりました。** この方法により、正しいスパイダーを簡単に作成できます。 ``response.follow`` には、 ``scrapy.Request`` オブジェクトを直接作成するよりもいくつかの利点があります。"
 
 #: ../../news.rst:2394
 msgid "it handles relative URLs;"
-msgstr ""
+msgstr "相対URLを処理します;"
 
 #: ../../news.rst:2395
 msgid "it works properly with non-ascii URLs on non-UTF8 pages;"
-msgstr ""
+msgstr "非UTF8ページの非ASCII URLで適切に機能します;"
 
 #: ../../news.rst:2396
 msgid ""
 "in addition to absolute and relative URLs it supports Selectors; for ``<a>`` "
 "elements it can also extract their href values."
-msgstr ""
+msgstr "絶対URLと相対URLに加えて、セレクターをサポートします。 ``<a>`` 要素の場合、href値を抽出することもできます。"
 
 #: ../../news.rst:2399
 msgid "For example, instead of this::"
-msgstr ""
+msgstr "たとえば、以下の代わりに::"
 
 #: ../../news.rst:2405
 msgid "One can now write this::"
-msgstr ""
+msgstr "以下のように書くことができます::"
 
 #: ../../news.rst:2410
 msgid ""
@@ -4074,7 +4074,7 @@ msgid ""
 "attributes (think ``href=\"   http://example.com\"``) when building ``Link`` "
 "objects. This whitespace-stripping also happens for ``action`` attributes "
 "with ``FormRequest``."
-msgstr ""
+msgstr "リンクエ抽出器も改善されています。 これらは、汎用の最新のブラウザと同じように機能します。 ``Link`` オブジェクトを作成するときに、先頭と末尾の空白が属性から削除されます(例えば ``href=\"   http://example.com\"`` と考えて下さい)。この空白の削除は、 ``FormRequest`` を含む ``action`` 属性でも発生します。"
 
 #: ../../news.rst:2416
 msgid ""
@@ -4082,7 +4082,7 @@ msgid ""
 "anymore.** This was puzzling users every now and then, and it's not what "
 "browsers do in fact, so we removed that extra transformation on extracted "
 "links."
-msgstr ""
+msgstr "**リンク抽出器はデフォルトでURLを正規化しないことにも注意してください。** これは時々ユーザーを困惑させていました、そしてそれは実際にはブラウザがすることではないので、抽出されたリンクの余分な変換を削除しました。"
 
 #: ../../news.rst:2421
 msgid ""
@@ -4094,25 +4094,25 @@ msgid ""
 "much like your regular browser does. And this policy is fully customizable "
 "with W3C standard values (or with something really custom of your own if you "
 "wish). See :setting:`REFERRER_POLICY` for details."
-msgstr ""
+msgstr "Scrapyがリンクをたどるときに送信する ``Referer:`` ヘッダーをより細かく制御したい場合は、独自の ``Referrer Policy`` を設定できます。 Scrapy 1.4より前は、デフォルトの ``RefererMiddleware`` HTTPリクエストを生成したレスポンスのURLに単純かつ盲目的に設定していました(URLシードの情報が漏洩する可能性がありました)。 デフォルトでは、Scrapyは通常のブラウザと同じように動作するようになりました。 また、このポリシーは、W3C標準値(または必要に応じて独自のカスタム値)を使用して完全にカスタマイズできます。 詳細については、 :setting:`REFERRER_POLICY` を参照してください。"
 
 #: ../../news.rst:2431
 msgid ""
 "To make Scrapy spiders easier to debug, Scrapy logs more stats by default in "
 "1.4: memory usage stats, detailed retry stats, detailed HTTP error code "
 "stats. A similar change is that HTTP cache path is also visible in logs now."
-msgstr ""
+msgstr "Scrapyスパイダーのデバッグを容易にするために、Scrapyはデフォルトで1.4でより多くの統計をログに記録します。それらは、メモリ使用統計、詳細な再試行統計、詳細なHTTPエラー・コード統計 です。 同様の変更として、HTTPキャッシュパスがログにも表示されるようになりました。"
 
 #: ../../news.rst:2435
 msgid ""
 "Last but not least, Scrapy now has the option to make JSON and XML items "
 "more human-readable, with newlines between items and even custom indenting "
 "offset, using the new :setting:`FEED_EXPORT_INDENT` setting."
-msgstr ""
+msgstr "最後になりますが、Scrapyには、新しい :setting:`FEED_EXPORT_INDENT` 設定を使用して、JSONおよびXMLアイテムをより人間が読みやすいようにするオプションがあり、アイテム間の改行やカスタム・インデント・オフセットもあります。"
 
 #: ../../news.rst:2439
 msgid "Enjoy! (Or read on for the rest of changes in this release.)"
-msgstr ""
+msgstr "Enjoy! （または、このリリースの残りの変更について読んでください。)"
 
 #: ../../news.rst:2442
 msgid "Deprecations and Backward Incompatible Changes"
@@ -4124,14 +4124,14 @@ msgid ""
 "LinkExtractor <scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor>` (:issue:"
 "`2537`, fixes :issue:`1941` and :issue:`1982`): **warning, this is "
 "technically backward-incompatible**"
-msgstr ""
+msgstr "デフォルトは :class:`scrapy.linkextractors.LinkExtractor <scrapy.linkextractors.lxmlhtml.LxmlLinkExtractor>` の ``canonicalize=False`` です (:issue:`2537`, fixes :issue:`1941` and :issue:`1982`) **警告：これは技術的に後方互換性がありません**"
 
 #: ../../news.rst:2449
 msgid ""
 "Enable memusage extension by default (:issue:`2539`, fixes :issue:`2187`); "
 "**this is technically backward-incompatible** so please check if you have "
 "any non-default ``MEMUSAGE_***`` options set."
-msgstr ""
+msgstr "デフォルトでメモリ拡張を有効にします (:issue:`2539`, fixes :issue:`2187`)  。 **これは技術的に後方互換性がありません。** ですので、デフォルト以外の ``MEMUSAGE_***`` オプションが設定されているかどうかを確認してください。"
 
 #: ../../news.rst:2452
 msgid ""
@@ -4139,13 +4139,13 @@ msgid ""
 "defined in settings.py (:issue:`1829`); Scrapy default settings no longer "
 "depend on environment variables. **This is technically a backward "
 "incompatible change**."
-msgstr ""
+msgstr "``EDITOR`` 環境変数は、settings.py で定義された ``EDITOR`` オプションよりも優先されるようになりました (:issue:`1829`) 。 Scrapyのデフォルト設定は、環境変数に依存しなくなりました。 **これは技術的には後方互換性のない変更です。**"
 
 #: ../../news.rst:2456
 msgid ""
 "``Spider.make_requests_from_url`` is deprecated (:issue:`1728`, fixes :issue:"
 "`1495`)."
-msgstr ""
+msgstr "``Spider.make_requests_from_url`` は非推奨です (:issue:`1728`, fixes :issue:`1495`)"
 
 #: ../../news.rst:2460 ../../news.rst:2661 ../../news.rst:2763
 msgid "New Features"
@@ -4154,13 +4154,13 @@ msgstr "新機能"
 #: ../../news.rst:2462
 msgid ""
 "Accept proxy credentials in :reqmeta:`proxy` request meta key (:issue:`2526`)"
-msgstr ""
+msgstr ":reqmeta:`proxy` リクエスト・メタ・キーでプロキシー資格情報(proxy credentials)を受け入れます (:issue:`2526`)"
 
 #: ../../news.rst:2463
 msgid ""
 "Support `brotli`_-compressed content; requires optional `brotlipy`_ (:issue:"
 "`2535`)"
-msgstr ""
+msgstr "`brotli`_ 圧縮された内容をサポートします。オプションの `brotlipy`_ が必要です (:issue:`2535`)"
 
 #: ../../news.rst:2465
 msgid ""
@@ -4172,7 +4172,7 @@ msgstr "新 :ref:`response.follow <response-follow-example>` はリクエスト�
 msgid ""
 "Added ``flags`` argument and attribute to :class:`Request <scrapy.http."
 "Request>` objects (:issue:`2047`)"
-msgstr ""
+msgstr ":class:`Request <scrapy.http.Request>` オブジェクトに ``flags`` 引数と属性を追加 (:issue:`2047`)"
 
 #: ../../news.rst:2469
 msgid "Support Anonymous FTP (:issue:`2342`)"
@@ -4183,7 +4183,7 @@ msgid ""
 "Added ``retry/count``, ``retry/max_reached`` and ``retry/reason_count/"
 "<reason>`` stats to :class:`RetryMiddleware <scrapy.downloadermiddlewares."
 "retry.RetryMiddleware>` (:issue:`2543`)"
-msgstr ""
+msgstr "``retry/count`` 統計と ``retry/max_reached`` 統計と ``retry/reason_count/<reason>`` 統計を :class:`RetryMiddleware <scrapy.downloadermiddlewares.retry.RetryMiddleware>` に追加 (:issue:`2543`)"
 
 #: ../../news.rst:2473
 msgid ""
@@ -4191,14 +4191,14 @@ msgid ""
 "response_ignored_status_count/<status>`` stats to :class:"
 "`HttpErrorMiddleware <scrapy.spidermiddlewares.httperror."
 "HttpErrorMiddleware>` (:issue:`2566`)"
-msgstr ""
+msgstr "``httperror/response_ignored_count`` 統計と ``httperror/response_ignored_status_count/<status>`` 統計を :class:`HttpErrorMiddleware <scrapy.spidermiddlewares.httperror.HttpErrorMiddleware>` に追加 (:issue:`2566`)"
 
 #: ../../news.rst:2476
 msgid ""
 "Customizable :setting:`Referrer policy <REFERRER_POLICY>` in :class:"
 "`RefererMiddleware <scrapy.spidermiddlewares.referer.RefererMiddleware>` (:"
 "issue:`2306`)"
-msgstr ""
+msgstr ":class:`RefererMiddleware <scrapy.spidermiddlewares.referer.RefererMiddleware>` のカスタマイズ可能な :setting:`Referrer policy <REFERRER_POLICY>` (:issue:`2306`)"
 
 #: ../../news.rst:2479
 msgid "New ``data:`` URI download handler (:issue:`2334`, fixes :issue:`2156`)"
@@ -4208,18 +4208,18 @@ msgstr "新 ``data:`` URI ダウンロード・ハンドラー (:issue:`2334`, f
 msgid ""
 "Log cache directory when HTTP Cache is used (:issue:`2611`, fixes :issue:"
 "`2604`)"
-msgstr ""
+msgstr "HTTPキャッシュ使用時のログキャッシュディレクトリ (:issue:`2611`, 修正 :issue:`2604`)"
 
 #: ../../news.rst:2481
 msgid ""
 "Warn users when project contains duplicate spider names (fixes :issue:`2181`)"
-msgstr ""
+msgstr "プロジェクトに重複するスパイダー名が含まれている場合にユーザーに警告 (fixes :issue:`2181`)"
 
 #: ../../news.rst:2482
 msgid ""
 "``scrapy.utils.datatypes.CaselessDict`` now accepts ``Mapping`` instances "
 "and not only dicts (:issue:`2646`)"
-msgstr ""
+msgstr "``scrapy.utils.datatypes.CaselessDict`` は今や辞書だけでなく ``Mapping`` インスタンスも受け入れるようになりました (:issue:`2646`)"
 
 #: ../../news.rst:2484
 msgid ""
@@ -4227,84 +4227,84 @@ msgid ""
 "pipelines.files.FilesPipeline` or :class:`~scrapy.pipelines.images."
 "ImagesPipeline`, can now optionally handle HTTP redirects using the new :"
 "setting:`MEDIA_ALLOW_REDIRECTS` setting (:issue:`2616`, fixes :issue:`2004`)"
-msgstr ""
+msgstr ":class:`~scrapy.pipelines.files.FilesPipeline` または :class:`~scrapy.pipelines.images.ImagesPipeline` を使用した :ref:`メディア ダウンロード <topics-media-pipeline>` は、オプションで新しい :setting:`MEDIA_ALLOW_REDIRECTS` 設定を使用してHTTPリダイレクトを処理できるようになりました (:issue:`2616`, 修正 :issue:`2004`)"
 
 #: ../../news.rst:2489
 msgid ""
 "Accept non-complete responses from websites using a new :setting:"
 "`DOWNLOAD_FAIL_ON_DATALOSS` setting (:issue:`2590`, fixes :issue:`2586`)"
-msgstr ""
+msgstr "新しい :setting:`DOWNLOAD_FAIL_ON_DATALOSS` 設定を使用してWebサイトからの不完全なレスポンスを受け入れます (:issue:`2590`, fixes :issue:`2586`)"
 
 #: ../../news.rst:2491
 msgid ""
 "Optional pretty-printing of JSON and XML items via :setting:"
 "`FEED_EXPORT_INDENT` setting (:issue:`2456`, fixes :issue:`1327`)"
-msgstr ""
+msgstr "オプションの :setting:`FEED_EXPORT_INDENT` 設定によるJSONおよびXMLアイテムのキレイな印刷(pretty-print) (:issue:`2456`, 修正 :issue:`1327`)"
 
 #: ../../news.rst:2493
 msgid ""
 "Allow dropping fields in ``FormRequest.from_response`` formdata when "
 "``None`` value is passed (:issue:`667`)"
-msgstr ""
+msgstr "``None`` 値が渡されたときに、 ``FormRequest.from_response`` フォームデータにフィールドをドロップできるようにします (:issue:`667`)"
 
 #: ../../news.rst:2495
 msgid ""
 "Per-request retry times with the new :reqmeta:`max_retry_times` meta key (:"
 "issue:`2642`)"
-msgstr ""
+msgstr "新しい :reqmeta:`max_retry_times` メタ・キーを使用したリクエストごとの再試行時間 (:issue:`2642`)"
 
 #: ../../news.rst:2497
 msgid ""
 "``python -m scrapy`` as a more explicit alternative to ``scrapy`` command (:"
 "issue:`2740`)"
-msgstr ""
+msgstr "``scrapy`` コマンドのより明示的な代替手段としての ``python -m scary`` (:issue:`2740`)"
 
 #: ../../news.rst:2506
 msgid ""
 "LinkExtractor now strips leading and trailing whitespaces from attributes (:"
 "issue:`2547`, fixes :issue:`1614`)"
-msgstr ""
+msgstr "LinkExtractorは、属性から先頭と末尾の空白を削除するようになりました (:issue:`2547`, 修正 :issue:`1614`)"
 
 #: ../../news.rst:2508
 msgid ""
 "Properly handle whitespaces in action attribute in :class:`~scrapy.http."
 "FormRequest` (:issue:`2548`)"
-msgstr ""
+msgstr ":class:`~scrapy.http.FormRequest` のaction属性で空白を適切に処理する (:issue:`2548`)"
 
 #: ../../news.rst:2510
 msgid ""
 "Buffer CONNECT response bytes from proxy until all HTTP headers are received "
 "(:issue:`2495`, fixes :issue:`2491`)"
-msgstr ""
+msgstr "すべてのHTTPヘッダーが受信されるまでプロキシからのCONNECTレスポンス・バイトをバッファリングします (:issue:`2495`, 修正 :issue:`2491`)"
 
 #: ../../news.rst:2512
 msgid ""
 "FTP downloader now works on Python 3, provided you use Twisted>=17.1 (:issue:"
 "`2599`)"
-msgstr ""
+msgstr "Twisted>=17.1 を使用している場合、FTPダウンローダーがPython3で動作するようになりました (:issue:`2599`)"
 
 #: ../../news.rst:2514
 msgid ""
 "Use body to choose response type after decompressing content (:issue:`2393`, "
 "fixes :issue:`2145`)"
-msgstr ""
+msgstr "コンテンツを解凍した後、ボディを使用してレスポンス・タイプを選択します (:issue:`2393`, 修正 :issue:`2145`)"
 
 #: ../../news.rst:2516
 msgid ""
 "Always decompress ``Content-Encoding: gzip`` at :class:"
 "`HttpCompressionMiddleware <scrapy.downloadermiddlewares.httpcompression."
 "HttpCompressionMiddleware>` stage (:issue:`2391`)"
-msgstr ""
+msgstr "常に ``Content-Encoding: gzip`` を :class:`HttpCompressionMiddleware <scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware>` ステージで解凍します (:issue:`2391`)"
 
 #: ../../news.rst:2518
 msgid ""
 "Respect custom log level in ``Spider.custom_settings`` (:issue:`2581`, "
 "fixes :issue:`1612`)"
-msgstr ""
+msgstr "``Spider.custom_settings`` のカスタムログレベルを尊重します (:issue:`2581`, fixes :issue:`1612`)"
 
 #: ../../news.rst:2520
 msgid "'make htmlview' fix for macOS (:issue:`2661`)"
-msgstr ""
+msgstr "macOS の 'make htmlview' 修正 (:issue:`2661`)"
 
 #: ../../news.rst:2521
 msgid "Remove \"commands\" from the command list  (:issue:`2695`)"
@@ -4314,36 +4314,36 @@ msgstr "削除:コマンドリストから \"commands\" を削除 (:issue:`2695`
 msgid ""
 "Fix duplicate Content-Length header for POST requests with empty body (:"
 "issue:`2677`)"
-msgstr ""
+msgstr "本文が空のPOSTリクエストの重複するContent-Lengthヘッダーを修正しました (:issue:`2677`)"
 
 #: ../../news.rst:2523
 msgid ""
 "Properly cancel large downloads, i.e. above :setting:`DOWNLOAD_MAXSIZE` (:"
 "issue:`1616`)"
-msgstr ""
+msgstr "大量のダウンロードを適切にキャンセルします。例えば上記の :setting:`DOWNLOAD_MAXSIZE` (:issue:`1616`)"
 
 #: ../../news.rst:2524
 msgid ""
 "ImagesPipeline: fixed processing of transparent PNG images with palette (:"
 "issue:`2675`)"
-msgstr ""
+msgstr "ImagesPipeline: パレットを使用した透明なPNG画像の処理を修正しました (:issue:`2675`)"
 
 #: ../../news.rst:2528
 msgid "Cleanups & Refactoring"
-msgstr "クリーンナップとリファクタリング"
+msgstr "整理とリファクタリング"
 
 #: ../../news.rst:2530
 msgid ""
 "Tests: remove temp files and folders (:issue:`2570`), fixed ProjectUtilsTest "
 "on macOS (:issue:`2569`), use portable pypy for Linux on Travis CI (:issue:"
 "`2710`)"
-msgstr ""
+msgstr "テスト: 一時ファイルとフォルダーの削除 (:issue:`2570`) 、macOSでのProjectUtilsTestの修正 (:issue:`2569`) 、Travis CIでのLinux用のポータブルpypyの使用 (:issue:`2710`)"
 
 #: ../../news.rst:2533
 msgid ""
 "Separate building request from ``_requests_to_follow`` in CrawlSpider (:"
 "issue:`2562`)"
-msgstr ""
+msgstr "CrawlSpiderの ``_requests_to_follow`` からリクエスト構築を分離します (:issue:`2562`)"
 
 #: ../../news.rst:2534
 msgid "Remove “Python 3 progress” badge (:issue:`2567`)"
@@ -4351,11 +4351,11 @@ msgstr "削除: “Python 3 progress”  バッジを削除 (:issue:`2567`)"
 
 #: ../../news.rst:2535
 msgid "Add a couple more lines to ``.gitignore`` (:issue:`2557`)"
-msgstr ""
+msgstr "``.gitignore`` にさらに数行追加します (:issue:`2557`)"
 
 #: ../../news.rst:2536
 msgid "Remove bumpversion prerelease configuration (:issue:`2159`)"
-msgstr ""
+msgstr "バンプバージョン(bumpversion)のプレリリース構成を削除します (:issue:`2159`)"
 
 #: ../../news.rst:2537
 msgid "Add codecov.yml file (:issue:`2750`)"
@@ -4365,29 +4365,29 @@ msgstr "追加: codecov.yml ファイル追加 (:issue:`2750`)"
 msgid ""
 "Set context factory implementation based on Twisted version (:issue:`2577`, "
 "fixes :issue:`2560`)"
-msgstr ""
+msgstr "Twistedのバージョンに基づいてコンテキスト・ファクトリの実装を設定します (:issue:`2577`, 修正 :issue:`2560`)"
 
 #: ../../news.rst:2540
 msgid ""
 "Add omitted ``self`` arguments in default project middleware template (:"
 "issue:`2595`)"
-msgstr ""
+msgstr "デフォルトのプロジェクト・ミドルウェア・テンプレートに省略された ``self`` 引数を追加 (:issue:`2595`)"
 
 #: ../../news.rst:2541
 msgid ""
 "Remove redundant ``slot.add_request()`` call in ExecutionEngine (:issue:"
 "`2617`)"
-msgstr ""
+msgstr "ExecutionEngineで冗長な ``slot.add_request()`` 呼び出しを削除 (:issue:`2617`)"
 
 #: ../../news.rst:2542
 msgid ""
 "Catch more specific ``os.error`` exception in ``scrapy.pipelines.files."
 "FSFilesStore`` (:issue:`2644`)"
-msgstr ""
+msgstr "``scrapy.pipelines.files.FSFilesStore`` でより具体的な ``os.error`` 例外をキャッチします (:issue:`2644`)"
 
 #: ../../news.rst:2544
 msgid "Change \"localhost\" test server certificate (:issue:`2720`)"
-msgstr ""
+msgstr "\"localhost\" テスト・サーバー証明書を変更 (:issue:`2720`)"
 
 #: ../../news.rst:2545
 msgid "Remove unused ``MEMUSAGE_REPORT`` setting (:issue:`2576`)"
@@ -4402,7 +4402,7 @@ msgstr "エクスポーターにはバイナリモードが必要です (:issue:
 msgid ""
 "Mention issue with :meth:`FormRequest.from_response <scrapy.http.FormRequest."
 "from_response>` due to bug in lxml (:issue:`2572`)"
-msgstr ""
+msgstr "lxmlのバグによる :meth:`FormRequest.from_response <scrapy.http.FormRequest.from_response>` の問題に言及 (:issue:`2572`)"
 
 #: ../../news.rst:2553
 msgid "Use single quotes uniformly in templates (:issue:`2596`)"
@@ -4412,49 +4412,49 @@ msgstr "テンプレートではシングル・クォートを一律に使用し
 msgid ""
 "Document :reqmeta:`ftp_user` and :reqmeta:`ftp_password` meta keys (:issue:"
 "`2587`)"
-msgstr ""
+msgstr ":reqmeta:`ftp_user` メタ・キーと :reqmeta:`ftp_password` メタ・キーについて文書化 (:issue:`2587`)"
 
 #: ../../news.rst:2555
 msgid "Removed section on deprecated ``contrib/`` (:issue:`2636`)"
-msgstr ""
+msgstr "非推奨になった ``contrib/`` 節を削除 (:issue:`2636`)"
 
 #: ../../news.rst:2556
 msgid ""
 "Recommend Anaconda when installing Scrapy on Windows (:issue:`2477`, fixes :"
 "issue:`2475`)"
-msgstr ""
+msgstr "WindowsにScrapyをインストールするときにAnacondaをお勧めします (:issue:`2477`, 修正 :issue:`2475`)"
 
 #: ../../news.rst:2558
 msgid "FAQ: rewrite note on Python 3 support on Windows (:issue:`2690`)"
-msgstr ""
+msgstr "FAQ: WindowsでのPython 3サポートに関するメモを書き直し (:issue:`2690`)"
 
 #: ../../news.rst:2559
 msgid "Rearrange selector sections (:issue:`2705`)"
-msgstr ""
+msgstr "セレクターの節を再配置 (:issue:`2705`)"
 
 #: ../../news.rst:2560
 msgid ""
 "Remove ``__nonzero__`` from :class:`~scrapy.selector.SelectorList` docs (:"
 "issue:`2683`)"
-msgstr ""
+msgstr ":class:`~scrapy.selector.SelectorList` 文書から ``__nonzero__`` を削除 (:issue:`2683`)"
 
 #: ../../news.rst:2562
 msgid ""
 "Mention how to disable request filtering in documentation of :setting:"
 "`DUPEFILTER_CLASS` setting (:issue:`2714`)"
-msgstr ""
+msgstr ":setting:`DUPEFILTER_CLASS` 設定の文書でリクエスト・フィルタリングを無効にする方法を説明 (:issue:`2714`)"
 
 #: ../../news.rst:2564
 msgid "Add sphinx_rtd_theme to docs setup readme (:issue:`2668`)"
-msgstr ""
+msgstr "sphinx_rtd_themeを文書とsetupとreadmeに追加 (:issue:`2668`)"
 
 #: ../../news.rst:2565
 msgid "Open file in text mode in JSON item writer example (:issue:`2729`)"
-msgstr ""
+msgstr "JSONアイテム・ライターの例でテキスト・モードでファイルを開く (:issue:`2729`)"
 
 #: ../../news.rst:2566
 msgid "Clarify ``allowed_domains`` example (:issue:`2670`)"
-msgstr ""
+msgstr "``allowed_domains`` の例を明確にする (:issue:`2670`)"
 
 #: ../../news.rst:2572
 msgid "Scrapy 1.3.3 (2017-03-10)"
