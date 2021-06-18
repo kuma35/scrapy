@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-18 07:52+0900\n"
+"PO-Revision-Date: 2021-06-19 02:52+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -4489,107 +4489,107 @@ msgstr "Twisted 17+のTLS互換性を修正 (:issue:`2558`)"
 
 #: ../../news.rst:2598
 msgid "Scrapy 1.3.1 (2017-02-08)"
-msgstr ""
+msgstr "Scrapy 1.3.1 (2017-02-08)"
 
 #: ../../news.rst:2603
 msgid ""
 "Support ``'True'`` and ``'False'`` string values for boolean settings (:"
 "issue:`2519`); you can now do something like ``scrapy crawl myspider -s "
 "REDIRECT_ENABLED=False``."
-msgstr ""
+msgstr "ブーリアン設定で ``'True'`` と ``' False'`` 文字列値をサポートします (:issue:`2519`) 。 あなたは ``scrapy crawl myspider -s REDIRECT_ENABLED=False`` のようなことができるようになりました。"
 
 #: ../../news.rst:2605
 msgid ""
 "Support kwargs with ``response.xpath()`` to use :ref:`XPath variables "
 "<topics-selectors-xpath-variables>` and ad-hoc namespaces declarations ; "
 "this requires at least Parsel v1.1 (:issue:`2457`)."
-msgstr ""
+msgstr "``response.xpath()`` でkwargsをサポートして、 :ref:`XPath変数 <topics-selectors-xpath-variables>` とアドホックな名前空間宣言を使用します。これには、少なくとも Parsel v1.1 が必要です。 (:issue:`2457`)"
 
 #: ../../news.rst:2608
 msgid "Add support for Python 3.6 (:issue:`2485`)."
-msgstr ""
+msgstr "Python 3.6のサポートを追加 (:issue:`2485`)"
 
 #: ../../news.rst:2609
 msgid ""
 "Run tests on PyPy (warning: some tests still fail, so PyPy is not supported "
 "yet)."
-msgstr ""
+msgstr "PyPyでテストが走ります(警告:一部のテストはまだ失敗するため、PyPyはまだサポートされていません)。"
 
 #: ../../news.rst:2614
 msgid "Enforce ``DNS_TIMEOUT`` setting (:issue:`2496`)."
-msgstr ""
+msgstr "``DNS_TIMEOUT`` 設定を適用 (:issue:`2496`)"
 
 #: ../../news.rst:2615
 msgid ""
 "Fix :command:`view` command ; it was a regression in v1.3.0 (:issue:`2503`)."
-msgstr ""
+msgstr "修正: :command:`view` コマンド。 v1.3.0 でデグレてた。 (:issue:`2503`)"
 
 #: ../../news.rst:2616
 msgid ""
 "Fix tests regarding ``*_EXPIRES settings`` with Files/Images pipelines (:"
 "issue:`2460`)."
-msgstr ""
+msgstr "ファイル/画像 パイプラインでの ``*_EXPIRES settings`` に関するテストを修正 (:issue:`2460`)"
 
 #: ../../news.rst:2617
 msgid ""
 "Fix name of generated pipeline class when using basic project template (:"
 "issue:`2466`)."
-msgstr ""
+msgstr "基本的なプロジェクト・テンプレートを使用するときに生成されるパイプライン・クラスの名前を修正 (:issue:`2466`)"
 
 #: ../../news.rst:2618
 msgid "Fix compatibility with Twisted 17+ (:issue:`2496`, :issue:`2528`)."
-msgstr ""
+msgstr "Twisted 17+ との互換性を修正 (:issue:`2496`, :issue:`2528`)"
 
 #: ../../news.rst:2619
 msgid "Fix ``scrapy.Item`` inheritance on Python 3.6 (:issue:`2511`)."
-msgstr ""
+msgstr "Python 3.6での ``scrapy.Item`` の継承を修正 (:issue:`2511`)"
 
 #: ../../news.rst:2620
 msgid ""
 "Enforce numeric values for components order in ``SPIDER_MIDDLEWARES``, "
 "``DOWNLOADER_MIDDLEWARES``, ``EXTENSIONS`` and ``SPIDER_CONTRACTS`` (:issue:"
 "`2420`)."
-msgstr ""
+msgstr "``SPIDER_MIDDLEWARES`` と ``DOWNLOADER_MIDDLEWARES`` と ``EXTENSIONS`` と ``SPIDER_CONTRACTS`` のコンポーネントの順序の為に数値を適用します (:issue:`2420`)"
 
 #: ../../news.rst:2626
 msgid ""
 "Reword Code of Conduct section and upgrade to Contributor Covenant v1.4 (:"
 "issue:`2469`)."
-msgstr ""
+msgstr "行動規範(Code of Conduct)節を書き直し、 Contributor Covenant v1.4 にアップグレードします。 (:issue:`2469`)"
 
 #: ../../news.rst:2628
 msgid ""
 "Clarify that passing spider arguments converts them to spider attributes (:"
 "issue:`2483`)."
-msgstr ""
+msgstr "スパイダー引数を渡すと、それらがスパイダー属性に変換されることを明確にします (:issue:`2483`)"
 
 #: ../../news.rst:2630
 msgid ""
 "Document ``formid`` argument on ``FormRequest.from_response()`` (:issue:"
 "`2497`)."
-msgstr ""
+msgstr "``FormRequest.from_response()`` の ``formid`` 引数について文書化 (:issue:`2497`)"
 
 #: ../../news.rst:2631
 msgid "Add .rst extension to README files (:issue:`2507`)."
-msgstr ""
+msgstr "READMEファイル達に .rst 拡張子を追加 (:issue:`2507`)"
 
 #: ../../news.rst:2632
 msgid "Mention LevelDB cache storage backend (:issue:`2525`)."
-msgstr ""
+msgstr "LevelDBキャッシュ・ストレージ・バックエンドに言及します (:issue:`2525`)"
 
 #: ../../news.rst:2633
 msgid "Use ``yield`` in sample callback code (:issue:`2533`)."
-msgstr ""
+msgstr "コールバック・コード例で ``yield`` を使用 (:issue:`2533`)"
 
 #: ../../news.rst:2634
 msgid ""
 "Add note about HTML entities decoding with ``.re()/.re_first()`` (:issue:"
 "`1704`)."
-msgstr ""
+msgstr "``.re()/.re_first()`` デコードするHTML要素に関する注記を追加 (:issue:`1704`)"
 
 #: ../../news.rst:2635
 msgid "Typos (:issue:`2512`, :issue:`2534`, :issue:`2531`)."
-msgstr ""
+msgstr "タイプミス (:issue:`2512`, :issue:`2534`, :issue:`2531`)"
 
 #: ../../news.rst:2638
 msgid "Cleanups"
@@ -4597,16 +4597,16 @@ msgstr "整理"
 
 #: ../../news.rst:2640
 msgid "Remove redundant check in ``MetaRefreshMiddleware`` (:issue:`2542`)."
-msgstr ""
+msgstr "``MetaRefreshMiddleware`` の冗長なチェックを削除 (:issue:`2542`)"
 
 #: ../../news.rst:2641
 msgid ""
 "Faster checks in ``LinkExtractor`` for allow/deny patterns (:issue:`2538`)."
-msgstr ""
+msgstr "``LinkExtractor`` で allow/deny パターンをより速くチェックします (:issue:`2538`)"
 
 #: ../../news.rst:2642
 msgid "Remove dead code supporting old Twisted versions (:issue:`2544`)."
-msgstr ""
+msgstr "古いTwistedバージョンをサポートするデッド・コードを削除 (:issue:`2544`)"
 
 #: ../../news.rst:2648
 msgid "Scrapy 1.3.0 (2016-12-21)"
