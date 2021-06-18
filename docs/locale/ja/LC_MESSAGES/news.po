@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-19 03:13+0900\n"
+"PO-Revision-Date: 2021-06-19 03:18+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -4782,36 +4782,36 @@ msgstr "ソース配布からすべての ``*.pyc`` ファイルを削除 (:issu
 
 #: ../../news.rst:2734
 msgid "Scrapy 1.2.1 (2016-10-21)"
-msgstr ""
+msgstr "Scrapy 1.2.1 (2016-10-21)"
 
 #: ../../news.rst:2739
 msgid ""
 "Include OpenSSL's more permissive default ciphers when establishing TLS/SSL "
 "connections (:issue:`2314`)."
-msgstr ""
+msgstr "TLS/SSL接続を確立するときにOpenSSLのより寛容な(permissive)デフォルト暗号を含めます (:issue:`2314`)"
 
 #: ../../news.rst:2741
 msgid ""
 "Fix \"Location\" HTTP header decoding on non-ASCII URL redirects (:issue:"
 "`2321`)."
-msgstr ""
+msgstr "非ASCIIURLリダイレクトでの \"Location\" HTTPヘッダー・デコードを修正 (:issue:`2321`)"
 
 #: ../../news.rst:2746
 msgid "Fix JsonWriterPipeline example (:issue:`2302`)."
-msgstr ""
+msgstr "JsonWriterPipeline例を修正 (:issue:`2302`)"
 
 #: ../../news.rst:2747
 msgid ""
 "Various notes: :issue:`2330` on spider names, :issue:`2329` on middleware "
 "methods processing order, :issue:`2327` on getting multi-valued HTTP headers "
 "as lists."
-msgstr ""
+msgstr "さまざまな注意事項: :issue:`2330` はスパイダー名、 :issue:`2329` はミドルウェア・メソッドの処理順序、 :issue:`2327` は複数値(multi-valued)のHTTPヘッダーをリストとして取得します。"
 
 #: ../../news.rst:2754
 msgid ""
 "Removed ``www.`` from ``start_urls`` in built-in spider templates (:issue:"
 "`2299`)."
-msgstr ""
+msgstr "組み込みのスパイダー・テンプレートの ``start_urls`` から ``www.`` を削除 (:issue:`2299`)"
 
 #: ../../news.rst:2760
 msgid "Scrapy 1.2.0 (2016-10-03)"
