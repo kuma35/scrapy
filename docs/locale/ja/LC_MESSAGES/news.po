@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-19 02:58+0900\n"
+"PO-Revision-Date: 2021-06-19 03:13+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -4701,86 +4701,84 @@ msgstr "``ChunkedTransferMiddleware`` は非推奨になり、デフォルトの
 
 #: ../../news.rst:2689
 msgid "Scrapy 1.2.3 (2017-03-03)"
-msgstr ""
+msgstr "Scrapy 1.2.3 (2017-03-03)"
 
 #: ../../news.rst:2691 ../../news.rst:2832 ../../news.rst:3115
 msgid "Packaging fix: disallow unsupported Twisted versions in setup.py"
-msgstr ""
-"パッケージの修正：setup.pyでサポートされていないTwistedバージョンを禁止しま"
-"す。"
+msgstr "パッケージの修正：setup.pyでサポートされていないTwistedバージョンを禁止します。"
 
 #: ../../news.rst:2697
 msgid "Scrapy 1.2.2 (2016-12-06)"
-msgstr ""
+msgstr "Scrapy 1.2.2 (2016-12-06)"
 
 #: ../../news.rst:2702
 msgid ""
 "Fix a cryptic traceback when a pipeline fails on ``open_spider()`` (:issue:"
 "`2011`)"
-msgstr ""
+msgstr "パイプラインが ``open_spider()`` で失敗したときの不可解なトレースバックを修正しました (:issue:`2011`)"
 
 #: ../../news.rst:2703
 msgid ""
 "Fix embedded IPython shell variables (fixing :issue:`396` that re-appeared "
 "in 1.2.0, fixed in :issue:`2418`)"
-msgstr ""
+msgstr "埋め込まれたIPythonシェル変数を修正 (1.2.0で再表示された :issue:`396` の修正は :issue:`2418` )"
 
 #: ../../news.rst:2705
 msgid "A couple of patches when dealing with robots.txt:"
-msgstr ""
+msgstr "robots.txtを扱う際のいくつかのパッチ:"
 
 #: ../../news.rst:2707
 msgid "handle (non-standard) relative sitemap URLs (:issue:`2390`)"
-msgstr ""
+msgstr "(非標準の)相対サイトマップURLを処理 (:issue:`2390`)"
 
 #: ../../news.rst:2708
 msgid "handle non-ASCII URLs and User-Agents in Python 2 (:issue:`2373`)"
-msgstr ""
+msgstr "Python 2で非ASCIIのURLとUser-Agentを処理 (:issue:`2373`)"
 
 #: ../../news.rst:2713
 msgid ""
 "Document ``\"download_latency\"`` key in ``Request``'s ``meta`` dict (:issue:"
 "`2033`)"
-msgstr ""
+msgstr "``Request`` の ``meta`` 辞書の ``\"download_latency\"`` を文書化 (:issue:`2033`)"
 
 #: ../../news.rst:2714
 msgid ""
 "Remove page on (deprecated & unsupported) Ubuntu packages from ToC (:issue:"
 "`2335`)"
-msgstr ""
+msgstr "ToCから(非推奨およびサポートされていない)Ubuntuパッケージのページを削除 (:issue:`2335`)"
 
 #: ../../news.rst:2715
 msgid ""
 "A few fixed typos (:issue:`2346`, :issue:`2369`, :issue:`2369`, :issue:"
 "`2380`) and clarifications (:issue:`2354`, :issue:`2325`, :issue:`2414`)"
-msgstr ""
+msgstr "タイプミスを幾つか修正 (:issue:`2346`, :issue:`2369`, :issue:`2369`, :issue:`2380`) and clarifications (:issue:`2354`, :issue:`2325`, :issue:`2414`)"
 
 #: ../../news.rst:2721
 msgid ""
 "Advertize `conda-forge`_ as Scrapy's official conda channel (:issue:`2387`)"
-msgstr ""
+msgstr "`conda-forge`_  をScrapyの公式condaチャンネルとして宣伝する (:issue:`2387`)"
 
 #: ../../news.rst:2722
 msgid ""
 "More helpful error messages when trying to use ``.css()`` or ``.xpath()`` on "
 "non-Text Responses (:issue:`2264`)"
-msgstr ""
+msgstr "テキスト以外のレスポンスで ``.css()`` または ``.xpath()`` を使用しようとした場合の、より役立つエラーメッセージ (:issue:`2264`)"
 
 #: ../../news.rst:2724
 msgid ""
 "``startproject`` command now generates a sample ``middlewares.py`` file (:"
 "issue:`2335`)"
-msgstr ""
+msgstr "``startproject`` コマンドは、サンプルの ``middlewares.py`` ファイルを生成するようになりました (:issue:`2335`)"
 
 #: ../../news.rst:2725
 msgid ""
 "Add more dependencies' version info in ``scrapy version`` verbose output (:"
 "issue:`2404`)"
-msgstr ""
+msgstr "``scrapy version`` の詳細出力に依存関係のバージョン情報を追加します (:issue:`2404`)"
 
 #: ../../news.rst:2726
 msgid "Remove all ``*.pyc`` files from source distribution (:issue:`2386`)"
-msgstr ""
+msgstr "ソース配布からすべての ``*.pyc`` ファイルを削除 (:issue:`2386`)"
 
 #: ../../news.rst:2734
 msgid "Scrapy 1.2.1 (2016-10-21)"
