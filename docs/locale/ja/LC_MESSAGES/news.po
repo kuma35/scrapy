@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-20 09:36+0900\n"
+"PO-Revision-Date: 2021-06-20 09:42+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -4974,20 +4974,20 @@ msgstr "Scrapy 1.1.4 (2017-03-03)"
 
 #: ../../news.rst:2837
 msgid "Scrapy 1.1.3 (2016-09-22)"
-msgstr ""
+msgstr "Scrapy 1.1.3 (2016-09-22)"
 
 #: ../../news.rst:2842
 msgid ""
 "Class attributes for subclasses of ``ImagesPipeline`` and ``FilesPipeline`` "
 "work as they did before 1.1.1 (:issue:`2243`, fixes :issue:`2198`)"
-msgstr ""
+msgstr "``ImagesPipeline`` と ``FilesPipeline`` のサブクラスのクラス属性は1.1.1以前と同じように機能します (:issue:`2243`, 修正 :issue:`2198`)"
 
 #: ../../news.rst:2848
 msgid ""
 ":ref:`Overview <intro-overview>` and :ref:`tutorial <intro-tutorial>` "
 "rewritten to use http://toscrape.com websites (:issue:`2236`, :issue:"
 "`2249`, :issue:`2252`)."
-msgstr ""
+msgstr ":ref:`Overview <intro-overview>` と :ref:`tutorial <intro-tutorial>` は、 http://toscrape.com Webサイトを使用するように書き直されました (:issue:`2236`, :issue:`2249`, :issue:`2252`)"
 
 #: ../../news.rst:2855
 msgid "Scrapy 1.1.2 (2016-08-18)"
