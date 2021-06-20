@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-20 09:42+0900\n"
+"PO-Revision-Date: 2021-06-20 09:47+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -4991,7 +4991,7 @@ msgstr ":ref:`Overview <intro-overview>` と :ref:`tutorial <intro-tutorial>` �
 
 #: ../../news.rst:2855
 msgid "Scrapy 1.1.2 (2016-08-18)"
-msgstr ""
+msgstr "Scrapy 1.1.2 (2016-08-18)"
 
 #: ../../news.rst:2860
 msgid ""
@@ -4999,13 +4999,13 @@ msgid ""
 "default ACL policy in ``ImagesPipeline`` when uploading images to S3 (note "
 "that default ACL policy is \"private\" -- instead of \"public-read\" -- "
 "since Scrapy 1.1.0)"
-msgstr ""
+msgstr "欠落している :setting:`IMAGES_STORE_S3_ACL` 設定を導入して、S3に画像をアップロードするときに ``ImagesPipeline`` のデフォルトのACLポリシーを上書きします(Scrapy 1.1.0以降、デフォルトのACLポリシーは \"public-read\" ではなく \"private\"  であることに注意してください)"
 
 #: ../../news.rst:2864
 msgid ""
 ":setting:`IMAGES_EXPIRES` default value set back to 90 (the regression was "
 "introduced in 1.1.1)"
-msgstr ""
+msgstr ":setting:`IMAGES_EXPIRES` 値が90に戻されました(デグレは1.1.1で発生しました)"
 
 #: ../../news.rst:2870
 msgid "Scrapy 1.1.1 (2016-07-13)"
