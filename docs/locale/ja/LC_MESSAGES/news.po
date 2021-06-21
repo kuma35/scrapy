@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-20 15:43+0900\n"
+"PO-Revision-Date: 2021-06-22 03:18+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -4555,7 +4555,7 @@ msgstr "``SPIDER_MIDDLEWARES`` と ``DOWNLOADER_MIDDLEWARES`` と ``EXTENSIONS``
 msgid ""
 "Reword Code of Conduct section and upgrade to Contributor Covenant v1.4 (:"
 "issue:`2469`)."
-msgstr "行動規範(Code of Conduct)節を書き直し、 Contributor Covenant v1.4 にアップグレードします。 (:issue:`2469`)"
+msgstr "コーディング規範(Code of Conduct)節を書き直し、 Contributor Covenant v1.4 にアップグレードします。 (:issue:`2469`)"
 
 #: ../../news.rst:2628
 msgid ""
@@ -5120,88 +5120,88 @@ msgstr "Travis CI と Pin pytest-cov py.test要件を2.2.1にアップグレー�
 
 #: ../../news.rst:2923
 msgid "Scrapy 1.1.0 (2016-05-11)"
-msgstr ""
+msgstr "Scrapy 1.1.0 (2016-05-11)"
 
 #: ../../news.rst:2925
 msgid "This 1.1 release brings a lot of interesting features and bug fixes:"
-msgstr ""
+msgstr "この1.1リリースには、多くの興味深い機能とバグ修正が含まれています:"
 
 #: ../../news.rst:2927
 msgid ""
 "Scrapy 1.1 has beta Python 3 support (requires Twisted >= 15.5). See :ref:"
 "`news_betapy3` for more details and some limitations."
-msgstr ""
+msgstr "Scrapy1.1はPython3のベータサポートがあります( Twisted >= 15.5 が必要です)。 詳細といくつかの制限については、 :ref:`news_betapy3` を参照してください。"
 
 #: ../../news.rst:2929
 msgid "Hot new features:"
-msgstr ""
+msgstr "ホットな新機能:"
 
 #: ../../news.rst:2931
 msgid "Item loaders now support nested loaders (:issue:`1467`)."
-msgstr ""
+msgstr "Item loaderは今や入れ子になったローダーをサポートします (:issue:`1467`)"
 
 #: ../../news.rst:2932
 msgid ""
 "``FormRequest.from_response`` improvements (:issue:`1382`, :issue:`1137`)."
-msgstr ""
+msgstr "``FormRequest.from_response`` が改良されました (:issue:`1382`, :issue:`1137`)"
 
 #: ../../news.rst:2933
 msgid ""
 "Added setting :setting:`AUTOTHROTTLE_TARGET_CONCURRENCY` and improved "
 "AutoThrottle docs (:issue:`1324`)."
-msgstr ""
+msgstr "設定 :setting:`AUTOTHROTTLE_TARGET_CONCURRENCY` を追加し AutoThrottle 文書を改善しました (:issue:`1324`)"
 
 #: ../../news.rst:2935
 msgid "Added ``response.text`` to get body as unicode (:issue:`1730`)."
-msgstr ""
+msgstr "本文をunicodeとして取得するために ``response.text`` を追加しました (:issue:`1730`)"
 
 #: ../../news.rst:2936
 msgid "Anonymous S3 connections (:issue:`1358`)."
-msgstr ""
+msgstr "アノニマス S3 接続 (:issue:`1358`)"
 
 #: ../../news.rst:2937
 msgid ""
 "Deferreds in downloader middlewares (:issue:`1473`). This enables better "
 "robots.txt handling (:issue:`1471`)."
-msgstr ""
+msgstr "ダウンローダー・ミドルウェアでのDeferreds (:issue:`1473`) 。 これにより robots.txt 処理が向上します (:issue:`1471`)"
 
 #: ../../news.rst:2939
 msgid ""
 "HTTP caching now follows RFC2616 more closely, added settings :setting:"
 "`HTTPCACHE_ALWAYS_STORE` and :setting:"
 "`HTTPCACHE_IGNORE_RESPONSE_CACHE_CONTROLS` (:issue:`1151`)."
-msgstr ""
+msgstr "HTTPキャッシュ処理は今やRFC2616に厳密に従います。そして設定 :setting:`HTTPCACHE_ALWAYS_STORE` と :setting:`HTTPCACHE_IGNORE_RESPONSE_CACHE_CONTROLS` が追加されました (:issue:`1151`)"
 
 #: ../../news.rst:2942
 msgid ""
 "Selectors were extracted to the parsel_ library (:issue:`1409`). This means "
 "you can use Scrapy Selectors without Scrapy and also upgrade the selectors "
 "engine without needing to upgrade Scrapy."
-msgstr ""
+msgstr "セレクターは parsel_ ライブラリに抽出されました (:issue:`1409`) 。 つまり、ScrapyなしでScrapyセレクターを使用でき、Scrapyをアップグレードせずにセレクター・エンジンをアップグレードすることもできます。"
 
 #: ../../news.rst:2945
 msgid ""
 "HTTPS downloader now does TLS protocol negotiation by default, instead of "
 "forcing TLS 1.0. You can also set the SSL/TLS method using the new :setting:"
 "`DOWNLOADER_CLIENT_TLS_METHOD`."
-msgstr ""
+msgstr "HTTPSダウンローダーは、TLS 1.0を強制する代わりに、デフォルトでTLSプロトコル・ネゴシエーションを実行するようになりました。 あなたは 新しい :setting:`DOWNLOADER_CLIENT_TLS_METHOD` を使用してSSL/TLSメソッドを設定することもできます。"
 
 #: ../../news.rst:2949
 msgid "These bug fixes may require your attention:"
-msgstr ""
+msgstr "以下のバグ修正には注意が必要な場合があります:"
 
 #: ../../news.rst:2951
 msgid ""
 "Don't retry bad requests (HTTP 400) by default (:issue:`1289`). If you need "
 "the old behavior, add ``400`` to :setting:`RETRY_HTTP_CODES`."
-msgstr ""
+msgstr "デフォルトでは、不正なリクエスト（HTTP 400）を再試行しないでください (:issue:`1289`) 。 古い動作が必要な場合は、 ``400`` 「400」を :setting:`RETRY_HTTP_CODES` にセットしてください。"
 
 #: ../../news.rst:2953
 msgid ""
 "Fix shell files argument handling (:issue:`1710`, :issue:`1550`). If you try "
 "``scrapy shell index.html`` it will try to load the URL http://index.html, "
 "use ``scrapy shell ./index.html`` to load a local file."
-msgstr ""
+msgstr "シェル・ファイルの引数処理を修正しました (:issue:`1710`, :issue:`1550`) 。 ``scrapy shell index.html`` を実行しようとすると、URL URL http://index.html ロードしようとします。ローカル・ファイルをロードするには、 ``scrapy shell ./index.html`` を使用してください。"
 
 #: ../../news.rst:2956
 msgid ""
@@ -5210,18 +5210,18 @@ msgid ""
 "proceeding with the crawl (:issue:`1735`). If you want to disable this "
 "behavior, update :setting:`ROBOTSTXT_OBEY` in ``settings.py`` file after "
 "creating a new project."
-msgstr ""
+msgstr "Robots.txtコンプライアンスは、新しく作成されたプロジェクトに対してデフォルトで有効になりました (:issue:`1724`) 。 Scrapyは、robots.txtがダウンロードされるのを待ってから、クロールを続行します (:issue:`1735`) 。この動作を無効にする場合は、新しいプロジェクトを作成した後、 ``settings.py`` ファイルの :setting:`ROBOTSTXT_OBEY` を更新します。"
 
 #: ../../news.rst:2961
 msgid ""
 "Exporters now work on unicode, instead of bytes by default (:issue:`1080`). "
 "If you use :class:`~scrapy.exporters.PythonItemExporter`, you may want to "
 "update your code to disable binary mode which is now deprecated."
-msgstr ""
+msgstr "エクスポータは、デフォルトでbyteではなくunicodeで動作するようになりました (:issue:`1080`) 。 :class:`~scrapy.exporters.PythonItemExporter` を使用する場合は、コードを更新して、現在非推奨となっているバイナリモードを無効にすることをお勧めします。"
 
 #: ../../news.rst:2964
 msgid "Accept XML node names containing dots as valid (:issue:`1533`)."
-msgstr ""
+msgstr "ドットを含むXMLノード名を有効なものとして受け入れます (:issue:`1533`)"
 
 #: ../../news.rst:2965
 msgid ""
@@ -5229,7 +5229,7 @@ msgid ""
 "``ImagesPipeline``), the default ACL policy is now \"private\" instead of "
 "\"public\" **Warning: backward incompatible!**. You can use :setting:"
 "`FILES_STORE_S3_ACL` to change it."
-msgstr ""
+msgstr "(``FilesPipeline`` または ``ImagesPipeline`` を使用して)ファイルまたは画像をS3にアップロードする場合、デフォルトのACLポリシーが \"public\" ではなく \"private\" になりました。 **警告：後方互換性がありません！**  :setting:`FILES_STORE_S3_ACL` を使用して変更できます。"
 
 #: ../../news.rst:2969
 msgid ""
@@ -5238,15 +5238,15 @@ msgid ""
 "change link extractors output compared to previous Scrapy versions. This may "
 "also invalidate some cache entries you could still have from pre-1.1 runs. "
 "**Warning: backward incompatible!**."
-msgstr ""
+msgstr "特に非ASCII文字を含むURLの場合、より正確な出力のために ``canonicalize_url()`` を再実装しました (:issue:`1947`) 。これにより、以前のScrapyバージョンと比較してリンク抽出器の出力が変更される可能性があります。 これにより、1.1より前の実行でまだ保持されている可能性のある一部のキャッシュ・エントリが無効になる場合もあります。 **警告：後方互換性がありません！**"
 
 #: ../../news.rst:2975
 msgid "Keep reading for more details on other improvements and bug fixes."
-msgstr ""
+msgstr "その他の改善点とバグ修正の詳細については、以下を読み進めてください。"
 
 #: ../../news.rst:2980
 msgid "Beta Python 3 Support"
-msgstr ""
+msgstr "Python 3 のベータ・サポート"
 
 #: ../../news.rst:2982
 msgid ""
@@ -5254,74 +5254,74 @@ msgid ""
 "com/scrapy/scrapy/wiki/Python-3-Porting>`_. As a result, now you can run "
 "spiders on Python 3.3, 3.4 and 3.5 (Twisted >= 15.5 required). Some features "
 "are still missing (and some may never be ported)."
-msgstr ""
+msgstr "私たちはScrapyをPython3で実行するために懸命に取り組んできました( `hard at work to make Scrapy run on Python 3 <https://github.com/scrapy/scrapy/wiki/Python-3-Porting>`_ )。 その結果、Python 3.3と3.4と3.5でスパイダーを実行できるようになりました( Twisted >= 15.5 が必要)。一部の機能はまだ欠落しています(一部は移植されない可能性があります)。"
 
 #: ../../news.rst:2988
 msgid ""
 "Almost all builtin extensions/middlewares are expected to work. However, we "
 "are aware of some limitations in Python 3:"
-msgstr ""
+msgstr "ほとんどすべての組み込み拡張機能/ミドルウェアが機能することが期待されています。けれども、我々はPython3ではいくつかの制限があることを認識しています:"
 
 #: ../../news.rst:2991
 msgid "Scrapy does not work on Windows with Python 3"
-msgstr ""
+msgstr "ScrapyはPython3を搭載したWindowsでは機能しません"
 
 #: ../../news.rst:2992
 msgid "Sending emails is not supported"
-msgstr ""
+msgstr "電子メール送信はサポートされていません"
 
 #: ../../news.rst:2993
 msgid "FTP download handler is not supported"
-msgstr ""
+msgstr "FTPダウンロード処理はサポートされていません"
 
 #: ../../news.rst:2994
 msgid "Telnet console is not supported"
-msgstr ""
+msgstr "Telnetコンソールはサポートされていません"
 
 #: ../../news.rst:2997
 msgid "Additional New Features and Enhancements"
-msgstr ""
+msgstr "追加の新機能と拡張機能"
 
 #: ../../news.rst:2999
 msgid "Scrapy now has a `Code of Conduct`_ (:issue:`1681`)."
-msgstr ""
+msgstr "Scrapyにコーディング規範 ( `Code of Conduct`_ ) が追加されました (:issue:`1681`)"
 
 #: ../../news.rst:3000
 msgid "Command line tool now has completion for zsh (:issue:`934`)."
-msgstr ""
+msgstr "コマンドライン・ツールでzsh補完できるようになりました (:issue:`934`)"
 
 #: ../../news.rst:3001
 msgid "Improvements to ``scrapy shell``:"
-msgstr ""
+msgstr "``scrapy shell`` の改良:"
 
 #: ../../news.rst:3003
 msgid ""
 "Support for bpython and configure preferred Python shell via "
 "``SCRAPY_PYTHON_SHELL`` (:issue:`1100`, :issue:`1444`)."
-msgstr ""
+msgstr "bpythonをサポートし、 ``SCRAPY_PYTHON_SHELL`` を介して優先Pythonシェルを構成します (:issue:`1100`, :issue:`1444`)"
 
 #: ../../news.rst:3005
 msgid ""
 "Support URLs without scheme (:issue:`1498`) **Warning: backward incompatible!"
 "**"
-msgstr ""
+msgstr "スキーム無しのURLをサポート (:issue:`1498`) **警告: 後方互換性がありません！**"
 
 #: ../../news.rst:3007
 msgid ""
 "Bring back support for relative file path (:issue:`1710`, :issue:`1550`)."
-msgstr ""
+msgstr "相対ファイル・パスのサポートを復活させます (:issue:`1710`, :issue:`1550`)"
 
 #: ../../news.rst:3009
 msgid ""
 "Added :setting:`MEMUSAGE_CHECK_INTERVAL_SECONDS` setting to change default "
 "check interval (:issue:`1282`)."
-msgstr ""
+msgstr "デフォルトのチェック間隔を変更するために :setting:`MEMUSAGE_CHECK_INTERVAL_SECONDS` 設定を追加 (:issue:`1282`)"
 
 #: ../../news.rst:3011
 msgid ""
 "Download handlers are now lazy-loaded on first request using their scheme (:"
 "issue:`1390`, :issue:`1421`)."
-msgstr ""
+msgstr "ダウンロード・ハンドラーは、スキームを使用して最初のリクエストで遅延読み込みされるようになりました (:issue:`1390`, :issue:`1421`)"
 
 #: ../../news.rst:3013
 msgid ""
@@ -5329,101 +5329,101 @@ msgid ""
 "``SSLv23_method()/TLS_method()`` is used allowing to try negotiating with "
 "the remote hosts the highest TLS protocol version it can (:issue:`1794`, :"
 "issue:`1629`)."
-msgstr ""
+msgstr "HTTPSダウンロード・ハンドラーはTLS1.0を強制しなくなりました。 代わりに、OpenSSLの ``SSLv23_method()/TLS_method()`` が使用され、リモート・ホストと可能な限り最高のTLSプロトコル・バージョンのネゴシエーションを試みることができます (:issue:`1794`, :issue:`1629`)"
 
 #: ../../news.rst:3017
 msgid ""
 "``RedirectMiddleware`` now skips the status codes from "
 "``handle_httpstatus_list`` on spider attribute or in ``Request``'s ``meta`` "
 "key (:issue:`1334`, :issue:`1364`, :issue:`1447`)."
-msgstr ""
+msgstr "``RedirectMiddleware`` は、スパイダー属性または ``Request`` の ``meta`` キーの ``handle_httpstatus_list`` からステータス・コードをスキップするようになりました (:issue:`1334`, :issue:`1364`, :issue:`1447`)"
 
 #: ../../news.rst:3021
 msgid "Form submission:"
-msgstr ""
+msgstr "フォームの送信:"
 
 #: ../../news.rst:3023
 msgid "now works with ``<button>`` elements too (:issue:`1469`)."
-msgstr ""
+msgstr "``<button>`` 要素でも機能するようになりました (:issue:`1469`)"
 
 #: ../../news.rst:3024
 msgid ""
 "an empty string is now used for submit buttons without a value (:issue:"
 "`1472`)"
-msgstr ""
+msgstr "空の文字列が値のない送信ボタンに使用されるようになりました (:issue:`1472`)"
 
 #: ../../news.rst:3027
 msgid ""
 "Dict-like settings now have per-key priorities (:issue:`1135`, :issue:`1149` "
 "and :issue:`1586`)."
-msgstr ""
+msgstr "辞書風な設定には、キーごとの優先順位があります (:issue:`1135` と :issue:`1149` と :issue:`1586`)"
 
 #: ../../news.rst:3029
 msgid "Sending non-ASCII emails (:issue:`1662`)"
-msgstr ""
+msgstr "非ASCII電子メール送信 (:issue:`1662`)"
 
 #: ../../news.rst:3030
 msgid ""
 "``CloseSpider`` and ``SpiderState`` extensions now get disabled if no "
 "relevant setting is set (:issue:`1723`, :issue:`1725`)."
-msgstr ""
+msgstr "関連する設定が設定されていない場合、 ``CloseSpider`` と ``SpiderState`` 拡張機能が無効になるようになりました (:issue:`1723`, :issue:`1725`)"
 
 #: ../../news.rst:3032
 msgid "Added method ``ExecutionEngine.close`` (:issue:`1423`)."
-msgstr ""
+msgstr "``ExecutionEngine.close`` メソッド追加 (:issue:`1423`)"
 
 #: ../../news.rst:3033
 msgid "Added method ``CrawlerRunner.create_crawler`` (:issue:`1528`)."
-msgstr ""
+msgstr "``CrawlerRunner.create_crawler`` メソッド追加 (:issue:`1528`)"
 
 #: ../../news.rst:3034
 msgid ""
 "Scheduler priority queue can now be customized via :setting:"
 "`SCHEDULER_PRIORITY_QUEUE` (:issue:`1822`)."
-msgstr ""
+msgstr "スケジューラの優先度キューは、 :setting:`SCHEDULER_PRIORITY_QUEUE` を介してカスタマイズできるようになりました (:issue:`1822`)"
 
 #: ../../news.rst:3036
 msgid ""
 "``.pps`` links are now ignored by default in link extractors (:issue:`1835`)."
-msgstr ""
+msgstr "リンク抽出器で ``.pps`` リンクがデフォルトで無視されるようになりました (:issue:`1835`)"
 
 #: ../../news.rst:3037
 msgid ""
 "temporary data folder for FTP and S3 feed storages can be customized using a "
 "new :setting:`FEED_TEMPDIR` setting (:issue:`1847`)."
-msgstr ""
+msgstr "FTPおよびS3フィード・ストレージの一時データ・フォルダーは、新しい :setting:`FEED_TEMPDIR` 設定を使用してカスタマイズできます (:issue:`1847`)"
 
 #: ../../news.rst:3039
 msgid ""
 "``FilesPipeline`` and ``ImagesPipeline`` settings are now instance "
 "attributes instead of class attributes, enabling spider-specific behaviors (:"
 "issue:`1891`)."
-msgstr ""
+msgstr "``FilesPipeline`` と ``ImagesPipeline`` の設定がクラス属性ではなくインスタンス属性になり、スパイダー固有の動作が可能になりました (:issue:`1891`)"
 
 #: ../../news.rst:3041
 msgid ""
 "``JsonItemExporter`` now formats opening and closing square brackets on "
 "their own line (first and last lines of output file) (:issue:`1950`)."
-msgstr ""
+msgstr "``JsonItemExporter`` は、開始と終了の角括弧(square bracket)を独自の行(出力ファイルの最初と最後の行)でフォーマットするようになりました (:issue:`1950`)"
 
 #: ../../news.rst:3043
 msgid ""
 "If available, ``botocore`` is used for ``S3FeedStorage``, "
 "``S3DownloadHandler`` and ``S3FilesStore`` (:issue:`1761`, :issue:`1883`)."
-msgstr ""
+msgstr "利用可能な場合、 ``botocore`` は ``S3FeedStorage`` と ``S3DownloadHandler`` と ``S3FilesStore`` に使用されます (:issue:`1761`, :issue:`1883`)"
 
 #: ../../news.rst:3045
 msgid ""
 "Tons of documentation updates and related fixes (:issue:`1291`, :issue:"
 "`1302`, :issue:`1335`, :issue:`1683`, :issue:`1660`, :issue:`1642`, :issue:"
 "`1721`, :issue:`1727`, :issue:`1879`)."
-msgstr ""
+msgstr "大量の文書の更新と関連する修正 (:issue:`1291`, :issue:`1302`, :issue:`1335`, :issue:`1683`, :issue:`1660`, :issue:`1642`, :issue:`1721`, :issue:`1727`, :issue:`1879`)"
 
 #: ../../news.rst:3048
 msgid ""
 "Other refactoring, optimizations and cleanup (:issue:`1476`, :issue:`1481`, :"
 "issue:`1477`, :issue:`1315`, :issue:`1290`, :issue:`1750`, :issue:`1881`)."
-msgstr ""
+msgstr "その他のリファクタリングと最適化と整理 (:issue:`1476`, :issue:`1481`, :issue:`1477`, :issue:`1315`, :issue:`1290`, :issue:`1750`, :issue:`1881`)"
 
 #: ../../news.rst:3055 ../../news.rst:3486
 msgid "Deprecations and Removals"
@@ -5433,59 +5433,59 @@ msgstr "非推奨と削除"
 msgid ""
 "Added ``to_bytes`` and ``to_unicode``, deprecated ``str_to_unicode`` and "
 "``unicode_to_str`` functions (:issue:`778`)."
-msgstr ""
+msgstr "``to_bytes`` と ``to_unicode`` を追加し、``str_to_unicode`` と ``unicode_to_str`` 関数を非推奨にした (:issue:`778`)"
 
 #: ../../news.rst:3059
 msgid ""
 "``binary_is_text`` is introduced, to replace use of ``isbinarytext`` (but "
 "with inverse return value) (:issue:`1851`)"
-msgstr ""
+msgstr "``isbinarytext`` の使用を置き換えるために、 ``binary_is_text`` が導入されました(ただし、逆の戻り値で) (:issue:`1851`)"
 
 #: ../../news.rst:3061
 msgid "The ``optional_features`` set has been removed (:issue:`1359`)."
-msgstr ""
+msgstr "``optional_features`` セットは削除されました (:issue:`1359`)"
 
 #: ../../news.rst:3062
 msgid ""
 "The ``--lsprof`` command line option has been removed (:issue:`1689`). "
 "**Warning: backward incompatible**, but doesn't break user code."
-msgstr ""
+msgstr "``--lsprof`` コマンドライン・オプションが削除されました (:issue:`1689`) 。 **警告:後方互換性はありません。** しかし、ユーザー・コードを壊すことはありません。"
 
 #: ../../news.rst:3064
 msgid "The following datatypes were deprecated (:issue:`1720`):"
-msgstr ""
+msgstr "以下のデータ型は非推奨です (:issue:`1720`):"
 
 #: ../../news.rst:3066
 msgid "``scrapy.utils.datatypes.MultiValueDictKeyError``"
-msgstr ""
+msgstr "``scrapy.utils.datatypes.MultiValueDictKeyError``"
 
 #: ../../news.rst:3067
 msgid "``scrapy.utils.datatypes.MultiValueDict``"
-msgstr ""
+msgstr "``scrapy.utils.datatypes.MultiValueDict``"
 
 #: ../../news.rst:3068
 msgid "``scrapy.utils.datatypes.SiteNode``"
-msgstr ""
+msgstr "``scrapy.utils.datatypes.SiteNode``"
 
 #: ../../news.rst:3070
 msgid ""
 "The previously bundled ``scrapy.xlib.pydispatch`` library was deprecated and "
 "replaced by `pydispatcher <https://pypi.org/project/PyDispatcher/>`_."
-msgstr ""
+msgstr "以前にバンドルされていた ``scrapy.xlib.pydispatch`` ライブラリは非推奨になり、 `pydispatcher <https://pypi.org/project/PyDispatcher/>`_ に置き換えられました。"
 
 #: ../../news.rst:3075 ../../news.rst:3495
 msgid "Relocations"
-msgstr ""
+msgstr "再配置"
 
 #: ../../news.rst:3077
 msgid "``telnetconsole`` was relocated to ``extensions/`` (:issue:`1524`)."
-msgstr ""
+msgstr "``telnetconsole`` は ``extensions/`` へ再配置されました (:issue:`1524`)"
 
 #: ../../news.rst:3079
 msgid ""
 "Note: telnet is not enabled on Python 3 (https://github.com/scrapy/scrapy/"
 "pull/1524#issuecomment-146985595)"
-msgstr ""
+msgstr "注記: telnet は Python 3 では有効ではありません (https://github.com/scrapy/scrapy/pull/1524#issuecomment-146985595)"
 
 #: ../../news.rst:3086 ../../news.rst:3535 ../../news.rst:3744
 #: ../../news.rst:3887
@@ -5496,76 +5496,76 @@ msgstr "バグ修正"
 msgid ""
 "Scrapy does not retry requests that got a ``HTTP 400 Bad Request`` response "
 "anymore (:issue:`1289`). **Warning: backward incompatible!**"
-msgstr ""
+msgstr "Scrapyは、 ``HTTP 400 Bad Request`` レスポンスを受け取ったリクエストを再試行しなくなりました (:issue:`1289`) 。 **警告:後方互換性がありません！**"
 
 #: ../../news.rst:3090
 msgid "Support empty password for http_proxy config (:issue:`1274`)."
-msgstr ""
+msgstr "http_proxy configの空のパスワードをサポート (:issue:`1274`)"
 
 #: ../../news.rst:3091
 msgid "Interpret ``application/x-json`` as ``TextResponse`` (:issue:`1333`)."
-msgstr ""
+msgstr "``application/x-json`` を ``TextResponse`` として解釈します (:issue:`1333`)"
 
 #: ../../news.rst:3092
 msgid "Support link rel attribute with multiple values (:issue:`1201`)."
-msgstr ""
+msgstr "複数の値を持つlink rel属性をサポート (:issue:`1201`)"
 
 #: ../../news.rst:3093
 msgid ""
 "Fixed ``scrapy.http.FormRequest.from_response`` when there is a ``<base>`` "
 "tag (:issue:`1564`)."
-msgstr ""
+msgstr "``<base>`` タグがある場合の ``scrapy.http.FormRequest.from_response`` を修正 (:issue:`1564`)"
 
 #: ../../news.rst:3095
 msgid "Fixed :setting:`TEMPLATES_DIR` handling (:issue:`1575`)."
-msgstr ""
+msgstr ":setting:`TEMPLATES_DIR` 処理修正 (:issue:`1575`)"
 
 #: ../../news.rst:3096
 msgid ""
 "Various ``FormRequest`` fixes (:issue:`1595`, :issue:`1596`, :issue:`1597`)."
-msgstr ""
+msgstr "``FormRequest`` に関する様々な修正 (:issue:`1595`, :issue:`1596`, :issue:`1597`)"
 
 #: ../../news.rst:3097
 msgid "Makes ``_monkeypatches`` more robust (:issue:`1634`)."
-msgstr ""
+msgstr "``_monkeypatches`` をより堅牢にします (:issue:`1634`)"
 
 #: ../../news.rst:3098
 msgid ""
 "Fixed bug on ``XMLItemExporter`` with non-string fields in items (:issue:"
 "`1738`)."
-msgstr ""
+msgstr "アイテムに文字列以外のフィールドがある ``XMLItemExporter`` のバグを修正しました (:issue:`1738`)"
 
 #: ../../news.rst:3100
 msgid "Fixed startproject command in macOS (:issue:`1635`)."
-msgstr ""
+msgstr "macOSでのstartprojectコマンドの修正 (:issue:`1635`)"
 
 #: ../../news.rst:3101
 msgid ""
 "Fixed :class:`~scrapy.exporters.PythonItemExporter` and CSVExporter for non-"
 "string item types (:issue:`1737`)."
-msgstr ""
+msgstr "文字列以外のアイテム型の :class:`~scrapy.exporters.PythonItemExporter` とCSVExporterを修正しました (:issue:`1737`)"
 
 #: ../../news.rst:3103
 msgid ""
 "Various logging related fixes (:issue:`1294`, :issue:`1419`, :issue:`1263`, :"
 "issue:`1624`, :issue:`1654`, :issue:`1722`, :issue:`1726` and :issue:`1303`)."
-msgstr ""
+msgstr "ロギング関係の様々な修正 (:issue:`1294`, :issue:`1419`, :issue:`1263`, :issue:`1624`, :issue:`1654`, :issue:`1722`, :issue:`1726` and :issue:`1303`)"
 
 #: ../../news.rst:3105
 msgid "Fixed bug in ``utils.template.render_templatefile()`` (:issue:`1212`)."
-msgstr ""
+msgstr "``utils.template.render_templatefile()`` 内のバグを修正 (:issue:`1212`)"
 
 #: ../../news.rst:3106
 msgid ""
 "sitemaps extraction from ``robots.txt`` is now case-insensitive (:issue:"
 "`1902`)."
-msgstr ""
+msgstr "``robots.txt`` からのサイト・マップの抽出では、大文字と小文字が区別されなくなりました (:issue:`1902`)"
 
 #: ../../news.rst:3107
 msgid ""
 "HTTPS+CONNECT tunnels could get mixed up when using multiple proxies to same "
 "remote host (:issue:`1912`)."
-msgstr ""
+msgstr "同じリモート・ホストに複数のプロキシを使用すると、HTTPS+CONNECTトンネルが混同される可能性があります (:issue:`1912`)"
 
 #: ../../news.rst:3113
 msgid "Scrapy 1.0.7 (2017-03-03)"
@@ -9590,15 +9590,15 @@ msgstr ""
 #: ../../news.rst:4443
 msgid ""
 "Moved module: ``scrapy.management.telnet`` to ``scrapy.telnet`` (:rev:`2047`)"
-msgstr ""
+msgstr "モジュール移動: ``scrapy.management.telnet`` を ``scrapy.telnet`` へ (:rev:`2047`)"
 
 #: ../../news.rst:4446
 msgid "Changes to default settings"
-msgstr ""
+msgstr "デフォルト設定の変更"
 
 #: ../../news.rst:4448
 msgid "Changed default ``SCHEDULER_ORDER`` to ``DFO`` (:rev:`1939`)"
-msgstr ""
+msgstr "デフォルトの ``SCHEDULER_ORDER`` を ``DFO`` に変更しました (:rev:`1939`)"
 
 #: ../../news.rst:4451
 msgid "Scrapy 0.8"
