@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-22 03:18+0900\n"
+"PO-Revision-Date: 2021-06-22 03:22+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -5569,30 +5569,30 @@ msgstr "同じリモート・ホストに複数のプロキシを使用すると
 
 #: ../../news.rst:3113
 msgid "Scrapy 1.0.7 (2017-03-03)"
-msgstr ""
+msgstr "Scrapy 1.0.7 (2017-03-03)"
 
 #: ../../news.rst:3120
 msgid "Scrapy 1.0.6 (2016-05-04)"
-msgstr ""
+msgstr "Scrapy 1.0.6 (2016-05-04)"
 
 #: ../../news.rst:3122
 msgid ""
 "FIX: RetryMiddleware is now robust to non-standard HTTP status codes (:issue:"
 "`1857`)"
-msgstr ""
+msgstr "修正: RetryMiddlewareは、非標準のHTTPステータ・スコードに対して堅牢になりました (:issue:`1857`)"
 
 #: ../../news.rst:3123
 msgid ""
 "FIX: Filestorage HTTP cache was checking wrong modified time (:issue:`1875`)"
-msgstr ""
+msgstr "修正: ファイル・ストレージHTTPキャッシュが間違った変更時刻をチェックしていた (:issue:`1875`)"
 
 #: ../../news.rst:3124
 msgid "DOC: Support for Sphinx 1.4+ (:issue:`1893`)"
-msgstr ""
+msgstr "文書: Sphinx 1.4以降のサポート (:issue:`1893`)"
 
 #: ../../news.rst:3125
 msgid "DOC: Consistency in selectors examples (:issue:`1869`)"
-msgstr ""
+msgstr "文書: セレクターの例の一貫性 (:issue:`1869`)"
 
 #: ../../news.rst:3130
 msgid "Scrapy 1.0.5 (2016-02-04)"
