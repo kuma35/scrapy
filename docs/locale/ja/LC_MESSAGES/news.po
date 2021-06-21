@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-22 03:22+0900\n"
+"PO-Revision-Date: 2021-06-22 03:27+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -5596,29 +5596,29 @@ msgstr "文書: セレクターの例の一貫性 (:issue:`1869`)"
 
 #: ../../news.rst:3130
 msgid "Scrapy 1.0.5 (2016-02-04)"
-msgstr ""
+msgstr "Scrapy 1.0.5 (2016-02-04)"
 
 #: ../../news.rst:3132
 msgid ""
 "FIX: [Backport] Ignore bogus links in LinkExtractors (fixes :issue:`907`, :"
 "commit:`108195e`)"
-msgstr ""
+msgstr "修正: [バックポート] LinkExtractorsの偽のリンクを無視 (修正 :issue:`907`, :commit:`108195e`)"
 
 #: ../../news.rst:3133
 msgid "TST: Changed buildbot makefile to use 'pytest' (:commit:`1f3d90a`)"
-msgstr ""
+msgstr "テスト: 'pytest' を使用するようにbuildbot makefileを変更 (:commit:`1f3d90a`)"
 
 #: ../../news.rst:3134
 msgid ""
 "DOC: Fixed typos in tutorial and media-pipeline (:commit:`808a9ea` and :"
 "commit:`803bd87`)"
-msgstr ""
+msgstr "文書: チュートリアルとメディア・パイプラインのタイプミスを修正 (:commit:`808a9ea` と :commit:`803bd87`)"
 
 #: ../../news.rst:3135
 msgid ""
 "DOC: Add AjaxCrawlMiddleware to DOWNLOADER_MIDDLEWARES_BASE in settings docs "
 "(:commit:`aa94121`)"
-msgstr ""
+msgstr "文書: 設定の文書のDOWNLOADER_MIDDLEWARES_BASEにAjaxCrawlMiddlewareを追加 (:commit:`aa94121`)"
 
 #: ../../news.rst:3140
 msgid "Scrapy 1.0.4 (2015-12-30)"
