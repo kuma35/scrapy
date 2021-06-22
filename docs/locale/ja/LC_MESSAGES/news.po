@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-23 05:03+0900\n"
+"PO-Revision-Date: 2021-06-23 05:13+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -5845,78 +5845,78 @@ msgstr "versionコマンドにopensslバージョンを追加 (:commit:`13c45ac`
 
 #: ../../news.rst:3194
 msgid "Scrapy 1.0.3 (2015-08-11)"
-msgstr ""
+msgstr "Scrapy 1.0.3 (2015-08-11)"
 
 #: ../../news.rst:3196
 msgid "add service_identity to Scrapy install_requires (:commit:`cbc2501`)"
-msgstr ""
+msgstr "Scrapy install_requiresにservice_identityを追加 (:commit:`cbc2501`)"
 
 #: ../../news.rst:3197
 msgid "Workaround for travis#296 (:commit:`66af9cd`)"
-msgstr ""
+msgstr "travis#296の回避策 (:commit:`66af9cd`)"
 
 #: ../../news.rst:3202
 msgid "Scrapy 1.0.2 (2015-08-06)"
-msgstr ""
+msgstr "Scrapy 1.0.2 (2015-08-06)"
 
 #: ../../news.rst:3204
 msgid ""
 "Twisted 15.3.0 does not raises PicklingError serializing lambda functions (:"
 "commit:`b04dd7d`)"
-msgstr ""
+msgstr "Twisted 15.3.0 は、ラムダ関数をシリアル化するPicklingErrorを発生しません (:commit:`b04dd7d`)"
 
 #: ../../news.rst:3205
 msgid "Minor method name fix (:commit:`6f85c7f`)"
-msgstr ""
+msgstr "メソッド名の小修正 (:commit:`6f85c7f`)"
 
 #: ../../news.rst:3206
 msgid "minor: scrapy.Spider grammar and clarity (:commit:`9c9d2e0`)"
-msgstr ""
+msgstr "小修正: scrapy.Spider の文法と明快化 (:commit:`9c9d2e0`)"
 
 #: ../../news.rst:3207
 msgid "Put a blurb about support channels in CONTRIBUTING (:commit:`c63882b`)"
-msgstr ""
+msgstr "CONTRIBUTINGにサポート・チャネルに関する宣伝文句を入れる (:commit:`c63882b`)"
 
 #: ../../news.rst:3208
 msgid "Fixed typos (:commit:`a9ae7b0`)"
-msgstr ""
+msgstr "タイプミス修正 (:commit:`a9ae7b0`)"
 
 #: ../../news.rst:3209
 msgid "Fix doc reference. (:commit:`7c8a4fe`)"
-msgstr ""
+msgstr "文書・リファレンス 修正 (:commit:`7c8a4fe`)"
 
 #: ../../news.rst:3214
 msgid "Scrapy 1.0.1 (2015-07-01)"
-msgstr ""
+msgstr "Scrapy 1.0.1 (2015-07-01)"
 
 #: ../../news.rst:3216
 msgid ""
 "Unquote request path before passing to FTPClient, it already escape paths (:"
 "commit:`cc00ad2`)"
-msgstr ""
+msgstr "FTPClientに渡す前にリクエスト・パスをunquoteします。すでにパスはエスケープされています (:commit:`cc00ad2`)"
 
 #: ../../news.rst:3217
 msgid ""
 "include tests/ to source distribution in MANIFEST.in (:commit:`eca227e`)"
-msgstr ""
+msgstr "MANIFEST.in にテスト/ソース配布を含める (:commit:`eca227e`)"
 
 #: ../../news.rst:3218
 msgid "DOC Fix SelectJmes documentation (:commit:`b8567bc`)"
-msgstr ""
+msgstr "文書: SelectJmes文書修正 (:commit:`b8567bc`)"
 
 #: ../../news.rst:3219
 msgid ""
 "DOC Bring Ubuntu and Archlinux outside of Windows subsection (:commit:"
 "`392233f`)"
-msgstr ""
+msgstr "文書: UbuntuとArchlinuxをWindowsサブセクションの外に持ってくる (:commit:`392233f`)"
 
 #: ../../news.rst:3220
 msgid "DOC remove version suffix from Ubuntu package (:commit:`5303c66`)"
-msgstr ""
+msgstr "文書: Ubuntuパッケージからバージョン・サフィックスを削除 (:commit:`5303c66`)"
 
 #: ../../news.rst:3221
 msgid "DOC Update release date for 1.0 (:commit:`c89fa29`)"
-msgstr ""
+msgstr "文書: 1.0のリリース日を更新 (:commit:`c89fa29`)"
 
 #: ../../news.rst:3226
 msgid "Scrapy 1.0.0 (2015-06-19)"
