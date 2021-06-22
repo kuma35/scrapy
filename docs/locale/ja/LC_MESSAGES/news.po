@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-22 03:27+0900\n"
+"PO-Revision-Date: 2021-06-23 05:03+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -5622,226 +5622,226 @@ msgstr "文書: 設定の文書のDOWNLOADER_MIDDLEWARES_BASEにAjaxCrawlMiddlew
 
 #: ../../news.rst:3140
 msgid "Scrapy 1.0.4 (2015-12-30)"
-msgstr ""
+msgstr "Scrapy 1.0.4 (2015-12-30)"
 
 #: ../../news.rst:3142
 msgid ""
 "Ignoring xlib/tx folder, depending on Twisted version. (:commit:`7dfa979`)"
-msgstr ""
+msgstr "Twistedバージョンに応じて、 xlib/tx フォルダーを無視します (:commit:`7dfa979`)"
 
 #: ../../news.rst:3143
 msgid "Run on new travis-ci infra (:commit:`6e42f0b`)"
-msgstr ""
+msgstr "新しいtravis-ciインフラで実行 (:commit:`6e42f0b`)"
 
 #: ../../news.rst:3144
 msgid "Spelling fixes (:commit:`823a1cc`)"
-msgstr ""
+msgstr "スペル修正 (:commit:`823a1cc`)"
 
 #: ../../news.rst:3145
 msgid "escape nodename in xmliter regex (:commit:`da3c155`)"
-msgstr ""
+msgstr "xmliter正規表現のノード名をエスケープします (:commit:`da3c155`)"
 
 #: ../../news.rst:3146
 msgid "test xml nodename with dots (:commit:`4418fc3`)"
-msgstr ""
+msgstr "ドットありのxmlノード名をテスト (:commit:`4418fc3`)"
 
 #: ../../news.rst:3147
 msgid "TST don't use broken Pillow version in tests (:commit:`a55078c`)"
-msgstr ""
+msgstr "テスト: テストで、壊れているバージョンのPillowを使用禁止 (:commit:`a55078c`)"
 
 #: ../../news.rst:3148
 msgid "disable log on version command. closes #1426 (:commit:`86fc330`)"
-msgstr ""
+msgstr "log on versionコマンドを無効にする。 closes #1426 (:commit:`86fc330`)"
 
 #: ../../news.rst:3149
 msgid "disable log on startproject command (:commit:`db4c9fe`)"
-msgstr ""
+msgstr "log on startproject コマンド無効 (:commit:`db4c9fe`)"
 
 #: ../../news.rst:3150
 msgid "Add PyPI download stats badge (:commit:`df2b944`)"
-msgstr ""
+msgstr "PyPIダウンロード統計バッジを追加 (:commit:`df2b944`)"
 
 #: ../../news.rst:3151
 msgid ""
 "don't run tests twice on Travis if a PR is made from a scrapy/scrapy branch "
 "(:commit:`a83ab41`)"
-msgstr ""
+msgstr "PRが scrapy/scrapyブランチから作成されている場合は、Travisでテストを2回実行しないでください (:commit:`a83ab41`)"
 
 #: ../../news.rst:3152
 msgid "Add Python 3 porting status badge to the README (:commit:`73ac80d`)"
-msgstr ""
+msgstr "Python 3移植ステータス・バッジをREADMEに追加 (:commit:`73ac80d`)"
 
 #: ../../news.rst:3153
 msgid "fixed RFPDupeFilter persistence (:commit:`97d080e`)"
-msgstr ""
+msgstr "RFPDupeFilterの永続性を修正 (:commit:`97d080e`)"
 
 #: ../../news.rst:3154
 msgid ""
 "TST a test to show that dupefilter persistence is not working (:commit:"
 "`97f2fb3`)"
-msgstr ""
+msgstr "テスト: dupefilterの永続性が機能していないことを示すテスト (:commit:`97f2fb3`)"
 
 #: ../../news.rst:3155
 msgid "explicit close file on file:// scheme handler (:commit:`d9b4850`)"
-msgstr ""
+msgstr "file:// スキーム・ハンドラーの明示的なファイル・クローズ (:commit:`d9b4850`)"
 
 #: ../../news.rst:3156
 msgid "Disable dupefilter in shell (:commit:`c0d0734`)"
-msgstr ""
+msgstr "シェルでdupefilterを無効にします (:commit:`c0d0734`)"
 
 #: ../../news.rst:3157
 msgid ""
 "DOC: Add captions to toctrees which appear in sidebar (:commit:`aa239ad`)"
-msgstr ""
+msgstr "文書: サイドバーに表示されるtoctreeにキャプションを追加 (:commit:`aa239ad`)"
 
 #: ../../news.rst:3158
 msgid ""
 "DOC Removed pywin32 from install instructions as it's already declared as "
 "dependency. (:commit:`10eb400`)"
-msgstr ""
+msgstr "文書: pywin32はすでに依存関係として宣言されているため、インストール手順から削除しました。 (:commit:`10eb400`)"
 
 #: ../../news.rst:3159
 msgid ""
 "Added installation notes about using Conda for Windows and other OSes. (:"
 "commit:`1c3600a`)"
-msgstr ""
+msgstr "Conda for Windowsおよびその他のOSの使用に関するインストール注記を追加 (:commit:`1c3600a`)"
 
 #: ../../news.rst:3160
 msgid "Fixed minor grammar issues. (:commit:`7f4ddd5`)"
-msgstr ""
+msgstr "些細な文法の問題を修正 (:commit:`7f4ddd5`)"
 
 #: ../../news.rst:3161
 msgid "fixed a typo in the documentation. (:commit:`b71f677`)"
-msgstr ""
+msgstr "文書のタイプミスを修正 (:commit:`b71f677`)"
 
 #: ../../news.rst:3162
 msgid "Version 1 now exists (:commit:`5456c0e`)"
-msgstr ""
+msgstr "今やバージョン1が存在します (:commit:`5456c0e`)"
 
 #: ../../news.rst:3163
 msgid "fix another invalid xpath error (:commit:`0a1366e`)"
-msgstr ""
+msgstr "もう一つの無効なxpathエラーを修正 (:commit:`0a1366e`)"
 
 #: ../../news.rst:3164
 msgid ""
 "fix ValueError: Invalid XPath: //div/[id=\"not-exists\"]/text() on selectors."
 "rst (:commit:`ca8d60f`)"
-msgstr ""
+msgstr "ValueErrorを修正: 無効なXPath: selectors.rstの //div/[id=\"not-exists\"]/text() (:commit:`ca8d60f`)"
 
 #: ../../news.rst:3165
 msgid "Typos corrections (:commit:`7067117`)"
-msgstr ""
+msgstr "タイプミス修正 (:commit:`7067117`)"
 
 #: ../../news.rst:3166
 msgid ""
 "fix typos in downloader-middleware.rst and exceptions.rst, middlware -> "
 "middleware (:commit:`32f115c`)"
-msgstr ""
+msgstr "downloader-middleware.rst と exceptions.rst 内のタイプミス修正。middlware → middleware (:commit:`32f115c`)"
 
 #: ../../news.rst:3167
 msgid ""
 "Add note to Ubuntu install section about Debian compatibility (:commit:"
 "`23fda69`)"
-msgstr ""
+msgstr "Debianの互換性に関するメモをUbuntuインストール節に追加 (:commit:`23fda69`)"
 
 #: ../../news.rst:3168
 msgid ""
 "Replace alternative macOS install workaround with virtualenv (:commit:"
 "`98b63ee`)"
-msgstr ""
+msgstr "macOSインストール代替回避策をvirtualenvに置き換え (:commit:`98b63ee`)"
 
 #: ../../news.rst:3169
 msgid ""
 "Reference Homebrew's homepage for installation instructions (:commit:"
 "`1925db1`)"
-msgstr ""
+msgstr "インストール手順については、Homebrewのホームページを参照 (:commit:`1925db1`)"
 
 #: ../../news.rst:3170
 msgid ""
 "Add oldest supported tox version to contributing docs (:commit:`5d10d6d`)"
-msgstr ""
+msgstr "サポートされている最も古いtoxバージョンを寄稿文書に追加 (:commit:`5d10d6d`)"
 
 #: ../../news.rst:3171
 msgid ""
 "Note in install docs about pip being already included in python>=2.7.9 (:"
 "commit:`85c980e`)"
-msgstr ""
+msgstr "注意: すでに python>=2.7.9 に含まれているpipに関するインストール文書に注意してください (:commit:`85c980e`)"
 
 #: ../../news.rst:3172
 msgid ""
 "Add non-python dependencies to Ubuntu install section in the docs (:commit:"
 "`fbd010d`)"
-msgstr ""
+msgstr "文書のUbuntuインストール節にPython以外の依存関係を追加 (:commit:`fbd010d`)"
 
 #: ../../news.rst:3173
 msgid "Add macOS installation section to docs (:commit:`d8f4cba`)"
-msgstr ""
+msgstr "文書にmacOSインストール節追加 (:commit:`d8f4cba`)"
 
 #: ../../news.rst:3174
 msgid "DOC(ENH): specify path to rtd theme explicitly (:commit:`de73b1a`)"
-msgstr ""
+msgstr "文書(ENH): rtdテーマへのパスを明示的に指定 (:commit:`de73b1a`)"
 
 #: ../../news.rst:3175
 msgid "minor: scrapy.Spider docs grammar (:commit:`1ddcc7b`)"
-msgstr ""
+msgstr "些細な修正: scrapy.Spider 文書の文法 (:commit:`1ddcc7b`)"
 
 #: ../../news.rst:3176
 msgid ""
 "Make common practices sample code match the comments (:commit:`1b85bcf`)"
-msgstr ""
+msgstr "一般的な慣行のサンプル・コードをコメントと一致させます (:commit:`1b85bcf`)"
 
 #: ../../news.rst:3177
 msgid "nextcall repetitive calls (heartbeats). (:commit:`55f7104`)"
-msgstr ""
+msgstr "nextcall反復呼び出し(heartbeats) (:commit:`55f7104`)"
 
 #: ../../news.rst:3178
 msgid "Backport fix compatibility with Twisted 15.4.0 (:commit:`b262411`)"
-msgstr ""
+msgstr "Twisted 15.4.0 とバックポート修正の互換性 (:commit:`b262411`)"
 
 #: ../../news.rst:3179
 msgid "pin pytest to 2.7.3 (:commit:`a6535c2`)"
-msgstr ""
+msgstr "pin pytest to 2.7.3 (:commit:`a6535c2`)"
 
 #: ../../news.rst:3180
 msgid "Merge pull request #1512 from mgedmin/patch-1 (:commit:`8876111`)"
-msgstr ""
+msgstr "mgedmin/patch-1からのプル・リクエスト #1512 をマージします (:commit:`8876111`)"
 
 #: ../../news.rst:3181
 msgid "Merge pull request #1513 from mgedmin/patch-2 (:commit:`5d4daf8`)"
-msgstr ""
+msgstr "mgedmin/patch-2からのプル・リクエスト #1513 をマージします (:commit:`5d4daf8`)"
 
 #: ../../news.rst:3182
 msgid "Typo (:commit:`f8d0682`)"
-msgstr ""
+msgstr "タイプミス (:commit:`f8d0682`)"
 
 #: ../../news.rst:3183
 msgid "Fix list formatting (:commit:`5f83a93`)"
-msgstr ""
+msgstr "リスト・フォーマットの修正 (:commit:`5f83a93`)"
 
 #: ../../news.rst:3184
 msgid ""
 "fix Scrapy squeue tests after recent changes to queuelib (:commit:`3365c01`)"
-msgstr ""
+msgstr "queuelibに最近変更を加えた後のScrapyスキュー・テストを修正 (:commit:`3365c01`)"
 
 #: ../../news.rst:3185
 msgid "Merge pull request #1475 from rweindl/patch-1 (:commit:`2d688cd`)"
-msgstr ""
+msgstr "rweindl/patch-1からのプル・リクエスト #1475 をマージします (:commit:`2d688cd`)"
 
 #: ../../news.rst:3186
 msgid "Update tutorial.rst (:commit:`fbc1f25`)"
-msgstr ""
+msgstr "tutorial.rstを更新 (:commit:`fbc1f25`)"
 
 #: ../../news.rst:3187
 msgid "Merge pull request #1449 from rhoekman/patch-1 (:commit:`7d6538c`)"
-msgstr ""
+msgstr "rhoekman/patch-1からのプル・リクエスト #1449 をマージします (:commit:`7d6538c`)"
 
 #: ../../news.rst:3188
 msgid "Small grammatical change (:commit:`8752294`)"
-msgstr ""
+msgstr "文法的小変更 (:commit:`8752294`)"
 
 #: ../../news.rst:3189
 msgid "Add openssl version to version command (:commit:`13c45ac`)"
-msgstr ""
+msgstr "versionコマンドにopensslバージョンを追加 (:commit:`13c45ac`)"
 
 #: ../../news.rst:3194
 msgid "Scrapy 1.0.3 (2015-08-11)"
