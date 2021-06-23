@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-24 03:05+0900\n"
+"PO-Revision-Date: 2021-06-24 03:10+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -6746,31 +6746,31 @@ msgstr "\"sflo\" ローカル変数の名前を、分かりやすい \"log_obser
 
 #: ../../news.rst:3594
 msgid "Scrapy 0.24.6 (2015-04-20)"
-msgstr ""
+msgstr "Scrapy 0.24.6 (2015-04-20)"
 
 #: ../../news.rst:3596
 msgid "encode invalid xpath with unicode_escape under PY2 (:commit:`07cb3e5`)"
-msgstr ""
+msgstr "Python2の下でunicode_escapeを使用して無効なxpathをエンコード (:commit:`07cb3e5`)"
 
 #: ../../news.rst:3597
 msgid ""
 "fix IPython shell scope issue and load IPython user config (:commit:"
 "`2c8e573`)"
-msgstr ""
+msgstr "IPythonシェル・スコープの問題を修正し、IPythonユーザー構成をロード (:commit:`2c8e573`)"
 
 #: ../../news.rst:3598
 msgid "Fix small typo in the docs (:commit:`d694019`)"
-msgstr ""
+msgstr "文書の些細なタイプミスを修正 (:commit:`d694019`)"
 
 #: ../../news.rst:3599
 msgid "Fix small typo (:commit:`f92fa83`)"
-msgstr ""
+msgstr "些細なタイプミスを修正 (:commit:`f92fa83`)"
 
 #: ../../news.rst:3600
 msgid ""
 "Converted sel.xpath() calls to response.xpath() in Extracting the data (:"
 "commit:`c2c6d15`)"
-msgstr ""
+msgstr "データの抽出で、 sel.xpath() 呼び出しを response.xpath() に変換 (:commit:`c2c6d15`)"
 
 #: ../../news.rst:3604
 msgid "Scrapy 0.24.5 (2015-02-25)"
