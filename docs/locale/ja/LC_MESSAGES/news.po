@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-24 03:10+0900\n"
+"PO-Revision-Date: 2021-06-24 03:26+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -6774,109 +6774,109 @@ msgstr "データの抽出で、 sel.xpath() 呼び出しを response.xpath() �
 
 #: ../../news.rst:3604
 msgid "Scrapy 0.24.5 (2015-02-25)"
-msgstr ""
+msgstr "Scrapy 0.24.5 (2015-02-25)"
 
 #: ../../news.rst:3606
 msgid ""
 "Support new _getEndpoint Agent signatures on Twisted 15.0.0 (:commit:"
 "`540b9bc`)"
-msgstr ""
+msgstr "Twisted 15.0.0の新しい _getEndpoint エージェント・シグネチャをサポート (:commit:`540b9bc`)"
 
 #: ../../news.rst:3607
 msgid "DOC a couple more references are fixed (:commit:`b4c454b`)"
-msgstr ""
+msgstr "文書: さらにいくつかの参照が修正されました (:commit:`b4c454b`)"
 
 #: ../../news.rst:3608
 msgid "DOC fix a reference (:commit:`e3c1260`)"
-msgstr ""
+msgstr "文書: 参照を修正 (:commit:`e3c1260`)"
 
 #: ../../news.rst:3609
 msgid "t.i.b.ThreadedResolver is now a new-style class (:commit:`9e13f42`)"
-msgstr ""
+msgstr "t.i.b.ThreadedResolver は今や新スタイルのクラス (:commit:`9e13f42`)"
 
 #: ../../news.rst:3610
 msgid ""
 "S3DownloadHandler: fix auth for requests with quoted paths/query params (:"
 "commit:`cdb9a0b`)"
-msgstr ""
+msgstr "S3DownloadHandler: 引用符で囲まれた パス/クエリ・パラメータ を含むリクエストの認証を修正 (:commit:`cdb9a0b`)"
 
 #: ../../news.rst:3611
 msgid ""
 "fixed the variable types in mailsender documentation (:commit:`bb3a848`)"
-msgstr ""
+msgstr "mailsenderに関する文書の変数タイプを修正 (:commit:`bb3a848`)"
 
 #: ../../news.rst:3612
 msgid "Reset items_scraped instead of item_count (:commit:`edb07a4`)"
-msgstr ""
+msgstr "item_countの代わりにitems_scrapedをリセットします (:commit:`edb07a4`)"
 
 #: ../../news.rst:3613
 msgid ""
 "Tentative attention message about what document to read for contributions (:"
 "commit:`7ee6f7a`)"
-msgstr ""
+msgstr "投稿のためにどの文書を読むべきかについての暫定的な注意メッセージ (:commit:`7ee6f7a`)"
 
 #: ../../news.rst:3614
 msgid "mitmproxy 0.10.1 needs netlib 0.10.1 too (:commit:`874fcdd`)"
-msgstr ""
+msgstr "mitmproxy 0.10.1 には netlib 0.10.1 も必要です (:commit:`874fcdd`)"
 
 #: ../../news.rst:3615
 msgid ""
 "pin mitmproxy 0.10.1 as >0.11 does not work with tests (:commit:`c6b21f0`)"
-msgstr ""
+msgstr "mitmproxy 0.10.1 を >0.11 として固定すると、テストでは機能しません (:commit:`c6b21f0`)"
 
 #: ../../news.rst:3616
 msgid ""
 "Test the parse command locally instead of against an external url (:commit:"
 "`c3a6628`)"
-msgstr ""
+msgstr "外部URLに対してではなく、ローカルで解析コマンドをテストします (:commit:`c3a6628`)"
 
 #: ../../news.rst:3617
 msgid ""
 "Patches Twisted issue while closing the connection pool on "
 "HTTPDownloadHandler (:commit:`d0bf957`)"
-msgstr ""
+msgstr "HTTPDownloadHandlerで接続プールを閉じる際のTwistedの問題にパッチを適用 (:commit:`d0bf957`)"
 
 #: ../../news.rst:3618
 msgid "Updates documentation on dynamic item classes. (:commit:`eeb589a`)"
-msgstr ""
+msgstr "動的アイテム・クラスに関する文書を更新 (:commit:`eeb589a`)"
 
 #: ../../news.rst:3619
 msgid "Merge pull request #943 from Lazar-T/patch-3 (:commit:`5fdab02`)"
-msgstr ""
+msgstr "Lazar-T/patch-3 からのプル・リクエスト #943 をマージ (:commit:`5fdab02`)"
 
 #: ../../news.rst:3620
 msgid "typo (:commit:`b0ae199`)"
-msgstr ""
+msgstr "タイプミス (:commit:`b0ae199`)"
 
 #: ../../news.rst:3621
 msgid "pywin32 is required by Twisted. closes #937 (:commit:`5cb0cfb`)"
-msgstr ""
+msgstr "Twistedにはpywin32が必要です。 #937 を閉じます (:commit:`5cb0cfb`)"
 
 #: ../../news.rst:3622
 msgid "Update install.rst (:commit:`781286b`)"
-msgstr ""
+msgstr "install.rst 更新 (:commit:`781286b`)"
 
 #: ../../news.rst:3623
 msgid "Merge pull request #928 from Lazar-T/patch-1 (:commit:`b415d04`)"
-msgstr ""
+msgstr "Lazar-T/patch-1 からのプル・リクエスト #928 をマージ (:commit:`b415d04`)"
 
 #: ../../news.rst:3624
 msgid "comma instead of fullstop (:commit:`627b9ba`)"
-msgstr ""
+msgstr "ピリオド(fullstop)の代わりにコンマ(comma) (:commit:`627b9ba`)"
 
 #: ../../news.rst:3625
 msgid "Merge pull request #885 from jsma/patch-1 (:commit:`de909ad`)"
-msgstr ""
+msgstr "jsma/patch-1 からのプル・リクエスト #885 をマージ (:commit:`de909ad`)"
 
 #: ../../news.rst:3626
 msgid "Update request-response.rst (:commit:`3f3263d`)"
-msgstr ""
+msgstr "request-response.rst を更新 (:commit:`3f3263d`)"
 
 #: ../../news.rst:3627
 msgid ""
 "SgmlLinkExtractor - fix for parsing <area> tag with Unicode present (:commit:"
 "`49b40f0`)"
-msgstr ""
+msgstr "SgmlLinkExtractor - Unicodeが存在する <area> タグを解析するための修正 (:commit:`49b40f0`)"
 
 #: ../../news.rst:3630
 msgid "Scrapy 0.24.4 (2014-08-09)"
