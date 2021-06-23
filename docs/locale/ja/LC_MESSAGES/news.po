@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-23 05:13+0900\n"
+"PO-Revision-Date: 2021-06-24 03:05+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -5920,7 +5920,7 @@ msgstr "文書: 1.0のリリース日を更新 (:commit:`c89fa29`)"
 
 #: ../../news.rst:3226
 msgid "Scrapy 1.0.0 (2015-06-19)"
-msgstr ""
+msgstr "Scrapy 1.0.0 (2015-06-19)"
 
 #: ../../news.rst:3228
 msgid ""
@@ -5949,15 +5949,15 @@ msgstr ""
 
 #: ../../news.rst:3239
 msgid "*Classic version*"
-msgstr ""
+msgstr "*化石版*"
 
 #: ../../news.rst:3250 ../../news.rst:3293
 msgid "*New version*"
-msgstr ""
+msgstr "*新版*"
 
 #: ../../news.rst:3259
 msgid "Per-spider settings (GSoC 2014)"
-msgstr ""
+msgstr "スパイダー毎の設定 (GSoC 2014)"
 
 #: ../../news.rst:3261
 msgid ""
@@ -5966,21 +5966,21 @@ msgid ""
 "override any given setting. As an extension of that goal, we included a new "
 "level of priority for settings that act exclusively for a single spider, "
 "allowing them to redefine project settings."
-msgstr ""
+msgstr "前回のGoogle Summer of Code プロジェクトでは、設定の入力に使用されるメカニズムの重要な再設計が完了し、特定の設定を上書きする明示的な優先順位が導入されました。その目標の延長として、単一のスパイダー専用に機能する設定に新しいレベルの優先度を含め、プロジェクト設定を再定義できるようにしました。"
 
 #: ../../news.rst:3267
 msgid ""
 "Start using it by defining a :attr:`~scrapy.spiders.Spider.custom_settings` "
 "class variable in your spider::"
-msgstr ""
+msgstr "あなたのスパイダーで :attr:`~scrapy.spiders.Spider.custom_settings` クラス変数を定義して使用を開始します::"
 
 #: ../../news.rst:3276
 msgid "Read more about settings population: :ref:`topics-settings`"
-msgstr ""
+msgstr "設定の作成について詳しくは、 :ref:`topics-settings` をご覧ください"
 
 #: ../../news.rst:3279
 msgid "Python Logging"
-msgstr ""
+msgstr "Pythonロギング"
 
 #: ../../news.rst:3281
 msgid ""
@@ -5988,50 +5988,50 @@ msgid ""
 "as default logging system. We’re maintaining backward compatibility for most "
 "of the old custom interface to call logging functions, but you’ll get "
 "warnings to switch to the Python logging API entirely."
-msgstr ""
+msgstr "Scrapy 1.0は、Twistedロギングから離れ、デフォルトのロギング・システムとしてPython組み込みのものをサポートするようになりました。 ロギング関数を呼び出すための古いカスタム・インターフェースのほとんどについて下位互換性を維持していますが、PythonロギングAPIに完全に切り替えるように警告が表示されます。"
 
 #: ../../news.rst:3286
 msgid "*Old version*"
-msgstr ""
+msgstr "*旧版*"
 
 #: ../../news.rst:3300
 msgid ""
 "Logging with spiders remains the same, but on top of the :meth:`~scrapy."
 "spiders.Spider.log` method you’ll have access to a custom :attr:`~scrapy."
 "spiders.Spider.logger` created for the spider to issue log events:"
-msgstr ""
+msgstr "スパイダーを使用したロギングは変わりませんが、 :meth:`~scrapy.spiders.Spider.log` メソッドに加えて、スパイダーがログ・イベントを発行するために作成されたカスタム :attr:`~scrapy.spiders.Spider.logger` にアクセスできます:"
 
 #: ../../news.rst:3311
 msgid "Read more in the logging documentation: :ref:`topics-logging`"
-msgstr ""
+msgstr "詳細については、ロギング文書をご覧ください: :ref:`topics-logging`"
 
 #: ../../news.rst:3314
 msgid "Crawler API refactoring (GSoC 2014)"
-msgstr ""
+msgstr "クローラーAPIリファクタリング (GSoC 2014)"
 
 #: ../../news.rst:3316
 msgid ""
 "Another milestone for last Google Summer of Code was a refactoring of the "
 "internal API, seeking a simpler and easier usage. Check new core interface "
 "in: :ref:`topics-api`"
-msgstr ""
+msgstr "前回のGoogle Summer of Codeのもう1つのマイル・ストーンは、内部APIのリファクタリングであり、よりシンプルで簡単な使用法を模索していました。 :ref:`topics-api` で新しいコア・インターフェースを確認してください。"
 
 #: ../../news.rst:3320
 msgid ""
 "A common situation where you will face these changes is while running Scrapy "
 "from scripts. Here’s a quick example of how to run a Spider manually with "
 "the new API:"
-msgstr ""
+msgstr "これらの変更に直面する一般的な状況は、スクリプトからScrapyを実行しているときです。 新しいAPIを使用してSpiderを手動で実行する方法の簡単な例を以下に示します:"
 
 #: ../../news.rst:3334
 msgid ""
 "Bear in mind this feature is still under development and its API may change "
 "until it reaches a stable status."
-msgstr ""
+msgstr "この機能はまだ開発中であり、安定した状態に達するまではAPIが変更される可能性があることに注意してください。"
 
 #: ../../news.rst:3337
 msgid "See more examples for scripts running Scrapy: :ref:`topics-practices`"
-msgstr ""
+msgstr "Scrapyを実行するスクリプトの例をもっと見る: :ref:`topics-practices`"
 
 #: ../../news.rst:3342
 msgid "Module Relocations"
@@ -6045,22 +6045,22 @@ msgid ""
 "contrib_exp`` into top level packages. Backward compatibility was kept among "
 "internal relocations, while importing deprecated modules expect warnings "
 "indicating their new place."
-msgstr ""
+msgstr "Scrapyの一般的な構造の改善を試み、モジュールが大幅に再配置されました。主な変更点は、さまざまなサブ・パッケージを新しいプロジェクトに分割し、 ``scrapy.contrib`` と ``scrapy.contrib_exp`` の両方をトップ・レベルのパッケージに分解することでした。非推奨のモジュールをインポートすると、新しい場所を示す警告が表示されるため、内部再配置間で下位互換性が維持されています。"
 
 #: ../../news.rst:3352
 msgid "Full list of relocations"
-msgstr ""
+msgstr "再配置全リスト"
 
 #: ../../news.rst:3354
 msgid "Outsourced packages"
-msgstr ""
+msgstr "括り出されたパッケージ"
 
 #: ../../news.rst:3357
 msgid ""
 "These extensions went through some minor changes, e.g. some setting names "
 "were changed. Please check the documentation in each new repository to get "
 "familiar with the new usage."
-msgstr ""
+msgstr "これらの拡張機能には、いくつかの小さな変更が加えられました。一例として、一部の設定名が変更されました。新しい使用法を理解するには、新しい各リポジトリの文書を確認してください。"
 
 #: ../../news.rst:3362 ../../news.rst:3380 ../../news.rst:3419
 #: ../../news.rst:3439 ../../news.rst:3447
@@ -6080,7 +6080,7 @@ msgstr "scrapy.commands.deploy"
 msgid ""
 "`scrapyd-client <https://github.com /scrapy/scrapyd-client>`_ (See other "
 "alternatives here: :ref:`topics-deploy`)"
-msgstr ""
+msgstr "`scrapyd-client <https://github.com /scrapy/scrapyd-client>`_ (他の選択肢はこちら: :ref:`topics-deploy`)"
 
 #: ../../news.rst:3369
 msgid "scrapy.contrib.djangoitem"
@@ -6089,7 +6089,7 @@ msgstr "scrapy.contrib.djangoitem"
 #: ../../news.rst:3369
 msgid ""
 "`scrapy-djangoitem <https://github. com/scrapy-plugins/scrapy-djangoite m>`_"
-msgstr ""
+msgstr "`scrapy-djangoitem <https://github. com/scrapy-plugins/scrapy-djangoite m>`_"
 
 #: ../../news.rst:3373
 msgid "scrapy.webservice"
@@ -6097,23 +6097,23 @@ msgstr "scrapy.webservice"
 
 #: ../../news.rst:3373
 msgid "`scrapy-jsonrpc <https://github.com /scrapy-plugins/scrapy-jsonrpc>`_"
-msgstr ""
+msgstr "`scrapy-jsonrpc <https://github.com /scrapy-plugins/scrapy-jsonrpc>`_"
 
 #: ../../news.rst:3377
 msgid "``scrapy.contrib_exp`` and ``scrapy.contrib`` dissolutions"
-msgstr ""
+msgstr "``scrapy.contrib_exp`` と ``scrapy.contrib`` を廃止"
 
 #: ../../news.rst:3382
 msgid "scrapy.contrib\\_exp.downloadermidd\\ leware.decompression"
-msgstr ""
+msgstr "scrapy.contrib\\_exp.downloadermidd\\ leware.decompression"
 
 #: ../../news.rst:3382
 msgid "scrapy.downloadermiddlewares.decom\\ pression"
-msgstr ""
+msgstr "scrapy.downloadermiddlewares.decom\\ pression"
 
 #: ../../news.rst:3385
 msgid "scrapy.contrib\\_exp.iterators"
-msgstr ""
+msgstr "scrapy.contrib\\_exp.iterators"
 
 #: ../../news.rst:3385
 msgid "scrapy.utils.iterators"
@@ -6229,11 +6229,11 @@ msgstr "scrapy.contrib.throttle"
 
 #: ../../news.rst:3403
 msgid "scrapy.extensions.\\*"
-msgstr ""
+msgstr "scrapy.extensions.\\*"
 
 #: ../../news.rst:3416
 msgid "Plural renames and Modules unification"
-msgstr ""
+msgstr "複数形の名前変更とモジュールの統合"
 
 #: ../../news.rst:3421
 msgid "scrapy.command"
@@ -6285,7 +6285,7 @@ msgstr "scrapy.utils.decorators"
 
 #: ../../news.rst:3436
 msgid "Class renames"
-msgstr ""
+msgstr "クラス名変更"
 
 #: ../../news.rst:3441
 msgid "scrapy.spidermanager.SpiderManager"
@@ -6301,11 +6301,11 @@ msgstr "Settings renames"
 
 #: ../../news.rst:3449
 msgid "SPIDER\\_MANAGER\\_CLASS"
-msgstr ""
+msgstr "SPIDER\\_MANAGER\\_CLASS"
 
 #: ../../news.rst:3449
 msgid "SPIDER\\_LOADER\\_CLASS"
-msgstr ""
+msgstr "SPIDER\\_LOADER\\_CLASS"
 
 #: ../../news.rst:3453
 msgid "Changelog"
@@ -6363,44 +6363,44 @@ msgstr "JmesSelect 追加 (:issue:`1016`)"
 
 #: ../../news.rst:3469
 msgid "add gzip compression to filesystem http cache backend (:issue:`1020`)"
-msgstr ""
+msgstr "ファイル・システムのhttpキャッシュ・バックエンドにgzip圧縮を追加 (:issue:`1020`)"
 
 #: ../../news.rst:3470
 msgid "CSS support in link extractors (:issue:`983`)"
-msgstr ""
+msgstr "リンク抽出器でCSSをサポート (:issue:`983`)"
 
 #: ../../news.rst:3471
 msgid "httpcache dont_cache meta #19 #689 (:issue:`821`)"
-msgstr ""
+msgstr "httpcache dont_cache meta #19 #689 (:issue:`821`)"
 
 #: ../../news.rst:3472
 msgid ""
 "add signal to be sent when request is dropped by the scheduler (:issue:`961`)"
-msgstr ""
+msgstr "スケジューラーによって要求がドロップされたときに送信されるシグナルを追加 (:issue:`961`)"
 
 #: ../../news.rst:3474
 msgid "avoid download large response (:issue:`946`)"
-msgstr ""
+msgstr "大きなレスポンスのダウンロードを避ける (:issue:`946`)"
 
 #: ../../news.rst:3475
 msgid "Allow to specify the quotechar in CSVFeedSpider (:issue:`882`)"
-msgstr ""
+msgstr "CSVFeedSpiderでquotecharを指定できるようにします (:issue:`882`)"
 
 #: ../../news.rst:3476
 msgid "Add referer to \"Spider error processing\" log message (:issue:`795`)"
-msgstr ""
+msgstr "\"Spider error processing\" のログ・メッセージにリファラーを追加 (:issue:`795`)"
 
 #: ../../news.rst:3477
 msgid "process robots.txt once (:issue:`896`)"
-msgstr ""
+msgstr "robots.txtを1度だけ処理 (:issue:`896`)"
 
 #: ../../news.rst:3478
 msgid "GSoC Per-spider settings (:issue:`854`)"
-msgstr ""
+msgstr "GSoC スパイダー毎の設定 (:issue:`854`)"
 
 #: ../../news.rst:3479
 msgid "Add project name validation (:issue:`817`)"
-msgstr ""
+msgstr "プロジェクト名の検証を追加 (:issue:`817`)"
 
 #: ../../news.rst:3480
 msgid ""
@@ -6411,148 +6411,148 @@ msgstr "GSoC API 整理 (:issue:`816`, :issue:`1128`, :issue:`1147`, :issue:`114
 
 #: ../../news.rst:3483
 msgid "Be more responsive with IO operations (:issue:`1074` and :issue:`1075`)"
-msgstr ""
+msgstr "IO操作の応答性を高める (:issue:`1074` と :issue:`1075`)"
 
 #: ../../news.rst:3484
 msgid "Do leveldb compaction for httpcache on closing (:issue:`1297`)"
-msgstr ""
+msgstr "終了時にhttpcacheのleveldb圧縮を実行 (:issue:`1297`)"
 
 #: ../../news.rst:3488
 msgid "Deprecate htmlparser link extractor (:issue:`1205`)"
-msgstr ""
+msgstr "htmlparserリンク抽出器を非推奨とする (:issue:`1205`)"
 
 #: ../../news.rst:3489
 msgid "remove deprecated code from FeedExporter (:issue:`1155`)"
-msgstr ""
+msgstr "FeedExporterから非推奨コードを削除 (:issue:`1155`)"
 
 #: ../../news.rst:3490
 msgid "a leftover for.15 compatibility (:issue:`925`)"
-msgstr ""
+msgstr "leftover for.15 互換性 (:issue:`925`)"
 
 #: ../../news.rst:3491
 msgid "drop support for CONCURRENT_REQUESTS_PER_SPIDER (:issue:`895`)"
-msgstr ""
+msgstr "CONCURRENT_REQUESTS_PER_SPIDERサポートの終了 (:issue:`895`)"
 
 #: ../../news.rst:3492
 msgid "Drop old engine code (:issue:`911`)"
-msgstr ""
+msgstr "古いエンジン・コードを削除 (:issue:`911`)"
 
 #: ../../news.rst:3493
 msgid "Deprecate SgmlLinkExtractor (:issue:`777`)"
-msgstr ""
+msgstr "SgmlLinkExtractor を非推奨とする (:issue:`777`)"
 
 #: ../../news.rst:3497
 msgid "Move exporters/__init__.py to exporters.py (:issue:`1242`)"
-msgstr ""
+msgstr "exporters/__init__.py を exporters.py へ移動 (:issue:`1242`)"
 
 #: ../../news.rst:3498
 msgid "Move base classes to their packages (:issue:`1218`, :issue:`1233`)"
-msgstr ""
+msgstr "基底クラス群をそれぞれのパッケージへ移動 (:issue:`1218`, :issue:`1233`)"
 
 #: ../../news.rst:3499
 msgid "Module relocation (:issue:`1181`, :issue:`1210`)"
-msgstr ""
+msgstr "モジュール再配置 (:issue:`1181`, :issue:`1210`)"
 
 #: ../../news.rst:3500
 msgid "rename SpiderManager to SpiderLoader (:issue:`1166`)"
-msgstr ""
+msgstr "SpiderManager から SpiderLoader へ名前変更 (:issue:`1166`)"
 
 #: ../../news.rst:3501
 msgid "Remove djangoitem (:issue:`1177`)"
-msgstr ""
+msgstr "djangoitem 削除 (:issue:`1177`)"
 
 #: ../../news.rst:3502
 msgid "remove scrapy deploy command (:issue:`1102`)"
-msgstr ""
+msgstr "scrapy deploy コマンド削除 (:issue:`1102`)"
 
 #: ../../news.rst:3503
 msgid "dissolve contrib_exp (:issue:`1134`)"
-msgstr ""
+msgstr "contrib_exp 利用解消 (:issue:`1134`)"
 
 #: ../../news.rst:3504
 msgid "Deleted bin folder from root, fixes #913 (:issue:`914`)"
-msgstr ""
+msgstr "ルート・フォルダーからbinフォルダー削除。修正: #913 (:issue:`914`)"
 
 #: ../../news.rst:3505
 msgid "Remove jsonrpc based webservice (:issue:`859`)"
-msgstr ""
+msgstr "jsonrpcベースのwebservice削除 (:issue:`859`)"
 
 #: ../../news.rst:3506
 msgid "Move Test cases under project root dir (:issue:`827`, :issue:`841`)"
-msgstr ""
+msgstr "テスト・ケースをプロジェクト・ルート・ディレクトリの下に移動 (:issue:`827`, :issue:`841`)"
 
 #: ../../news.rst:3507
 msgid ""
 "Fix backward incompatibility for relocated paths in settings (:issue:`1267`)"
-msgstr ""
+msgstr "設定内の再配置されたパスの後方非互換性を修正 (:issue:`1267`)"
 
 #: ../../news.rst:3512
 msgid "CrawlerProcess documentation (:issue:`1190`)"
-msgstr ""
+msgstr "CrawlerProcess文書 (:issue:`1190`)"
 
 #: ../../news.rst:3513
 msgid ""
 "Favoring web scraping over screen scraping in the descriptions (:issue:"
 "`1188`)"
-msgstr ""
+msgstr "画面スクレイピングよりもウェブスクレイピングの説明を優先 (:issue:`1188`)"
 
 #: ../../news.rst:3515
 msgid "Some improvements for Scrapy tutorial (:issue:`1180`)"
-msgstr ""
+msgstr "Scrapyチュートリアルのいくつかの改善 (:issue:`1180`)"
 
 #: ../../news.rst:3516
 msgid ""
 "Documenting Files Pipeline together with Images Pipeline (:issue:`1150`)"
-msgstr ""
+msgstr "Files PipelineとImages Pipelineの文書化 (:issue:`1150`)"
 
 #: ../../news.rst:3517
 msgid "deployment docs tweaks (:issue:`1164`)"
-msgstr ""
+msgstr "デプロイメント文書の調整 (:issue:`1164`)"
 
 #: ../../news.rst:3518
 msgid ""
 "Added deployment section covering scrapyd-deploy and shub (:issue:`1124`)"
-msgstr ""
+msgstr "scarpyd-deployとshubをカバーするデプロイメント節を追加 (:issue:`1124`)"
 
 #: ../../news.rst:3519
 msgid "Adding more settings to project template (:issue:`1073`)"
-msgstr ""
+msgstr "プロジェクト・テンプレートに設定を追加 (:issue:`1073`)"
 
 #: ../../news.rst:3520
 msgid "some improvements to overview page (:issue:`1106`)"
-msgstr ""
+msgstr "概要ページのいくつかの改善 (:issue:`1106`)"
 
 #: ../../news.rst:3521
 msgid "Updated link in docs/topics/architecture.rst (:issue:`647`)"
-msgstr ""
+msgstr "docs/topics/architecture.rst内のリンクを更新 (:issue:`647`)"
 
 #: ../../news.rst:3522
 msgid "DOC reorder topics (:issue:`1022`)"
-msgstr ""
+msgstr "文書 reorder トピック (:issue:`1022`)"
 
 #: ../../news.rst:3523
 msgid "updating list of Request.meta special keys (:issue:`1071`)"
-msgstr ""
+msgstr "Request.meta スペシャル・キーのリストの更新 (:issue:`1071`)"
 
 #: ../../news.rst:3524
 msgid "DOC document download_timeout (:issue:`898`)"
-msgstr ""
+msgstr "文書: download_timeoutの文書化 (:issue:`898`)"
 
 #: ../../news.rst:3525
 msgid "DOC simplify extension docs (:issue:`893`)"
-msgstr ""
+msgstr "DOCは拡張文書を簡素化 (:issue:`893`)"
 
 #: ../../news.rst:3526
 msgid "Leaks docs (:issue:`894`)"
-msgstr ""
+msgstr "Leaks 文書群 (:issue:`894`)"
 
 #: ../../news.rst:3527
 msgid "DOC document from_crawler method for item pipelines (:issue:`904`)"
-msgstr ""
+msgstr "文書: アイテム・パイプラインのfrom_crawlerメソッドの文書化 (:issue:`904`)"
 
 #: ../../news.rst:3528
 msgid "Spider_error doesn't support deferreds (:issue:`1292`)"
-msgstr ""
+msgstr "Spider_errorはdeferredをサポートしていません (:issue:`1292`)"
 
 #: ../../news.rst:3529
 msgid ""
@@ -6561,188 +6561,188 @@ msgid ""
 "`1154`, :issue:`1127`, :issue:`1112`, :issue:`1105`, :issue:`1041`, :issue:"
 "`1082`, :issue:`1033`, :issue:`944`, :issue:`866`, :issue:`864`, :issue:"
 "`796`, :issue:`1260`, :issue:`1271`, :issue:`1293`, :issue:`1298`)"
-msgstr ""
+msgstr "修正と、Sphinx関係の修正 (:issue:`1220`, :issue:`1219`, :issue:`1196`, :issue:`1172`, :issue:`1171`, :issue:`1169`, :issue:`1160`, :issue:`1154`, :issue:`1127`, :issue:`1112`, :issue:`1105`, :issue:`1041`, :issue:`1082`, :issue:`1033`, :issue:`944`, :issue:`866`, :issue:`864`, :issue:`796`, :issue:`1260`, :issue:`1271`, :issue:`1293`, :issue:`1298`)"
 
 #: ../../news.rst:3537
 msgid "Item multi inheritance fix (:issue:`353`, :issue:`1228`)"
-msgstr ""
+msgstr "アイテムの他重継承修正 (:issue:`353`, :issue:`1228`)"
 
 #: ../../news.rst:3538
 msgid "ItemLoader.load_item: iterate over copy of fields (:issue:`722`)"
-msgstr ""
+msgstr "ItemLoader.load_item: フィールド達のコピーを反復処理します (:issue:`722`)"
 
 #: ../../news.rst:3539
 msgid ""
 "Fix Unhandled error in Deferred (RobotsTxtMiddleware) (:issue:`1131`, :issue:"
 "`1197`)"
-msgstr ""
+msgstr "Deferredの未処理エラーを修正(RobotsTxtMiddleware) (:issue:`1131`, :issue:`1197`)"
 
 #: ../../news.rst:3541
 msgid "Force to read DOWNLOAD_TIMEOUT as int (:issue:`954`)"
-msgstr ""
+msgstr "DOWNLOAD_TIMEOUTをintとして強制的に読み取る (:issue:`954`)"
 
 #: ../../news.rst:3542
 msgid ""
 "scrapy.utils.misc.load_object should print full traceback (:issue:`902`)"
-msgstr ""
+msgstr "scary.utils.misc.load_objectは完全なトレース・バックを出力する必要があります (:issue:`902`)"
 
 #: ../../news.rst:3543
 msgid "Fix bug for \".local\" host name (:issue:`878`)"
-msgstr ""
+msgstr "\".local\" ホスト・ネームのバグを修正 (:issue:`878`)"
 
 #: ../../news.rst:3544
 msgid ""
 "Fix for Enabled extensions, middlewares, pipelines info not printed anymore "
 "(:issue:`879`)"
-msgstr ""
+msgstr "有効な拡張機能、ミドルウェア、パイプライン情報が印刷されなくなった問題の修正 (:issue:`879`)"
 
 #: ../../news.rst:3546
 msgid ""
 "fix dont_merge_cookies bad behaviour when set to false on meta (:issue:`846`)"
-msgstr ""
+msgstr "metaでfalseに設定された場合のdont_merge_cookiesの不正な動作を修正 (:issue:`846`)"
 
 #: ../../news.rst:3549
 msgid "Python 3 In Progress Support"
-msgstr ""
+msgstr "進行中のPython3サポート"
 
 #: ../../news.rst:3551
 msgid "disable scrapy.telnet if twisted.conch is not available (:issue:`1161`)"
-msgstr ""
+msgstr "twisted.conchが利用できない場合はscrapy.telnetを無効にします (:issue:`1161`)"
 
 #: ../../news.rst:3552
 msgid "fix Python 3 syntax errors in ajaxcrawl.py (:issue:`1162`)"
-msgstr ""
+msgstr "ajaxcrawl.pyのPython3構文エラーを修正 (:issue:`1162`)"
 
 #: ../../news.rst:3553
 msgid "more python3 compatibility changes for urllib (:issue:`1121`)"
-msgstr ""
+msgstr "urllibのpython3互換性を高める変更 (:issue:`1121`)"
 
 #: ../../news.rst:3554
 msgid ""
 "assertItemsEqual was renamed to assertCountEqual in Python 3. (:issue:`1070`)"
-msgstr ""
+msgstr "assertItemsEqualは、Python 3でassertCountEqualに名前が変更されました。 (:issue:`1070`)"
 
 #: ../../news.rst:3556
 msgid "Import unittest.mock if available. (:issue:`1066`)"
-msgstr ""
+msgstr "存在すればunittest.mockをインポートします (:issue:`1066`)"
 
 #: ../../news.rst:3557
 msgid "updated deprecated cgi.parse_qsl to use six's parse_qsl (:issue:`909`)"
-msgstr ""
+msgstr "非推奨のcgi.parse_qslを更新して、6つのparse_qslを使用するようにしました (:issue:`909`)"
 
 #: ../../news.rst:3558
 msgid "Prevent Python 3 port regressions (:issue:`830`)"
-msgstr ""
+msgstr "Python3対応移植のデグレを防ぐ (:issue:`830`)"
 
 #: ../../news.rst:3559
 msgid "PY3: use MutableMapping for python 3 (:issue:`810`)"
-msgstr ""
+msgstr "PY3：Python 3にMutableMappingを使用 (:issue:`810`)"
 
 #: ../../news.rst:3560
 msgid "PY3: use six.BytesIO and six.moves.cStringIO (:issue:`803`)"
-msgstr ""
+msgstr "PY3: six.BytesIO と six.moves.cStringIO を使用 (:issue:`803`)"
 
 #: ../../news.rst:3561
 msgid "PY3: fix xmlrpclib and email imports (:issue:`801`)"
-msgstr ""
+msgstr "PY3: fix xmlrpclib と email のインポートを修正 (:issue:`801`)"
 
 #: ../../news.rst:3562
 msgid "PY3: use six for robotparser and urlparse (:issue:`800`)"
-msgstr ""
+msgstr "PY3: robotparser と urlparse に six を使用します (:issue:`800`)"
 
 #: ../../news.rst:3563
 msgid "PY3: use six.iterkeys, six.iteritems, and tempfile (:issue:`799`)"
-msgstr ""
+msgstr "PY3: six.iterkeys と six.iteritems と tempfile を使用 (:issue:`799`)"
 
 #: ../../news.rst:3564
 msgid "PY3: fix has_key and use six.moves.configparser (:issue:`798`)"
-msgstr ""
+msgstr "PY3: has_keyの修正とsix.moves.configparserの使用 (:issue:`798`)"
 
 #: ../../news.rst:3565
 msgid "PY3: use six.moves.cPickle (:issue:`797`)"
-msgstr ""
+msgstr "PY3: six.moves.cPickle の使用 (:issue:`797`)"
 
 #: ../../news.rst:3566
 msgid "PY3 make it possible to run some tests in Python3 (:issue:`776`)"
-msgstr ""
+msgstr "PY3: Python3でいくつかのテストを実行できるようにします (:issue:`776`)"
 
 #: ../../news.rst:3570
 msgid "remove unnecessary lines from py3-ignores (:issue:`1243`)"
-msgstr ""
+msgstr "py3-ignoresから不要行を削除 (:issue:`1243`)"
 
 #: ../../news.rst:3571
 msgid ""
 "Fix remaining warnings from pytest while collecting tests (:issue:`1206`)"
-msgstr ""
+msgstr "テストの収集中のpytestからの残りの警告を修正しました (:issue:`1206`)"
 
 #: ../../news.rst:3572
 msgid "Add docs build to travis (:issue:`1234`)"
-msgstr ""
+msgstr "travisでビルドの文書を追加 (:issue:`1234`)"
 
 #: ../../news.rst:3573
 msgid "TST don't collect tests from deprecated modules. (:issue:`1165`)"
-msgstr ""
+msgstr "テスト: 非推奨のモジュールからテストを収集しないでください。 (:issue:`1165`)"
 
 #: ../../news.rst:3574
 msgid ""
 "install service_identity package in tests to prevent warnings (:issue:`1168`)"
-msgstr ""
+msgstr "警告を防ぐためにテストにservice_identityパッケージをインストール (:issue:`1168`)"
 
 #: ../../news.rst:3576
 msgid "Fix deprecated settings API in tests (:issue:`1152`)"
-msgstr ""
+msgstr "テストで非推奨の設定APIを修正しました (:issue:`1152`)"
 
 #: ../../news.rst:3577
 msgid ""
 "Add test for webclient with POST method and no body given (:issue:`1089`)"
-msgstr ""
+msgstr "POSTメソッドを使用し、ボディが指定されていないWebクライアントのテストを追加 (:issue:`1089`)"
 
 #: ../../news.rst:3578
 msgid "py3-ignores.txt supports comments (:issue:`1044`)"
-msgstr ""
+msgstr "py3-ignores.txtでコメントをサポート (:issue:`1044`)"
 
 #: ../../news.rst:3579
 msgid "modernize some of the asserts (:issue:`835`)"
-msgstr ""
+msgstr "一部のアサートを最新化する (:issue:`835`)"
 
 #: ../../news.rst:3580
 msgid "selector.__repr__ test (:issue:`779`)"
-msgstr ""
+msgstr "selector.__repr__ テスト (:issue:`779`)"
 
 #: ../../news.rst:3582
 msgid "Code refactoring"
-msgstr ""
+msgstr "コードのリファクタリング"
 
 #: ../../news.rst:3584
 msgid "CSVFeedSpider cleanup: use iterate_spider_output (:issue:`1079`)"
-msgstr ""
+msgstr "CSVFeedSpiderの整理: iterate_spider_outputを使用 (:issue:`1079`)"
 
 #: ../../news.rst:3585
 msgid ""
 "remove unnecessary check from scrapy.utils.spider.iter_spider_output (:issue:"
 "`1078`)"
-msgstr ""
+msgstr "不要なチェックをscrapy.utils.spider.iter_spider_outputから削除 (:issue:`1078`)"
 
 #: ../../news.rst:3587
 msgid "Pydispatch pep8 (:issue:`992`)"
-msgstr ""
+msgstr "Pydispatch pep8 (:issue:`992`)"
 
 #: ../../news.rst:3588
 msgid ""
 "Removed unused 'load=False' parameter from walk_modules() (:issue:`871`)"
-msgstr ""
+msgstr "walk_modules()から未使用の 'load=False' パラメーターを削除しました (:issue:`871`)"
 
 #: ../../news.rst:3589
 msgid ""
 "For consistency, use ``job_dir`` helper in ``SpiderState`` extension. (:"
 "issue:`805`)"
-msgstr ""
+msgstr "一貫性を保つために、 ``SpiderState`` 拡張機能で ``job_dir`` ヘルパーを使用してください。 (:issue:`805`)"
 
 #: ../../news.rst:3591
 msgid ""
 "rename \"sflo\" local variables to less cryptic \"log_observer\" (:issue:"
 "`775`)"
-msgstr ""
+msgstr "\"sflo\" ローカル変数の名前を、分かりやすい \"log_observer\" に変更します (:issue:`775`)"
 
 #: ../../news.rst:3594
 msgid "Scrapy 0.24.6 (2015-04-20)"
