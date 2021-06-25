@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-24 03:26+0900\n"
+"PO-Revision-Date: 2021-06-26 03:22+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -6894,140 +6894,140 @@ msgstr "scrapyベンチには scrapy.tests* が必要です (:commit:`d6cb999`)"
 
 #: ../../news.rst:3636
 msgid "Scrapy 0.24.3 (2014-08-09)"
-msgstr ""
+msgstr "Scrapy 0.24.3 (2014-08-09)"
 
 #: ../../news.rst:3638
 msgid "no need to waste travis-ci time on py3 for 0.24 (:commit:`8e080c1`)"
-msgstr ""
+msgstr "0.24のpy3でtravis-ci時間を無駄にする必要はありません (:commit:`8e080c1`)"
 
 #: ../../news.rst:3639
 msgid "Update installation docs (:commit:`1d0c096`)"
-msgstr ""
+msgstr "インストールの文書を更新 (:commit:`1d0c096`)"
 
 #: ../../news.rst:3640
 msgid "There is a trove classifier for Scrapy framework! (:commit:`4c701d7`)"
-msgstr ""
+msgstr "Scrapyフレームワーク用のtrove classifierがあります！ (:commit:`4c701d7`)"
 
 #: ../../news.rst:3641
 msgid ""
 "update other places where w3lib version is mentioned (:commit:`d109c13`)"
-msgstr ""
+msgstr "w3libバージョンが言及されている他の場所を更新します (:commit:`d109c13`)"
 
 #: ../../news.rst:3642
 msgid "Update w3lib requirement to 1.8.0 (:commit:`39d2ce5`)"
-msgstr ""
+msgstr "w3lib要件を1.8.0に更新します (:commit:`39d2ce5`)"
 
 #: ../../news.rst:3643
 msgid ""
 "Use w3lib.html.replace_entities() (remove_entities() is deprecated) (:commit:"
 "`180d3ad`)"
-msgstr ""
+msgstr "w3lib.html.replace_entities() を使って下さい (remove_entities() は非推奨になりました) (:commit:`180d3ad`)"
 
 #: ../../news.rst:3644
 msgid "set zip_safe=False (:commit:`a51ee8b`)"
-msgstr ""
+msgstr "set zip_safe=False (:commit:`a51ee8b`)"
 
 #: ../../news.rst:3645
 msgid "do not ship tests package (:commit:`ee3b371`)"
-msgstr ""
+msgstr "テストパッケージを出荷しない (:commit:`ee3b371`)"
 
 #: ../../news.rst:3646
 msgid "scrapy.bat is not needed anymore (:commit:`c3861cf`)"
-msgstr ""
+msgstr "sparky.batはもう必要ありません (:commit:`c3861cf`)"
 
 #: ../../news.rst:3647
 msgid "Modernize setup.py (:commit:`362e322`)"
-msgstr ""
+msgstr "setup.pyを最新化する (:commit:`362e322`)"
 
 #: ../../news.rst:3648
 msgid "headers can not handle non-string values (:commit:`94a5c65`)"
-msgstr ""
+msgstr "ヘッダーは文字列以外の値を処理できません (:commit:`94a5c65`)"
 
 #: ../../news.rst:3649
 msgid "fix ftp test cases (:commit:`a274a7f`)"
-msgstr ""
+msgstr "ftpテスト・ケースを修正 (:commit:`a274a7f`)"
 
 #: ../../news.rst:3650
 msgid ""
 "The sum up of travis-ci builds are taking like 50min to complete (:commit:"
 "`ae1e2cc`)"
-msgstr ""
+msgstr "travis-ciビルドは完了するのに合計50分ほどかかります (:commit:`ae1e2cc`)"
 
 #: ../../news.rst:3651
 msgid "Update shell.rst typo (:commit:`e49c96a`)"
-msgstr ""
+msgstr "shell.rstのタイプミスを更新 (:commit:`e49c96a`)"
 
 #: ../../news.rst:3652
 msgid "removes weird indentation in the shell results (:commit:`1ca489d`)"
-msgstr ""
+msgstr "シェルの結果の奇妙なインデントを削除 (:commit:`1ca489d`)"
 
 #: ../../news.rst:3653
 msgid ""
 "improved explanations, clarified blog post as source, added link for XPath "
 "string functions in the spec (:commit:`65c8f05`)"
-msgstr ""
+msgstr "説明の改善、ソースとしてのブログ投稿の明確化、仕様にXPath文字列関数へのリンクの追加 (:commit:`65c8f05`)"
 
 #: ../../news.rst:3654
 msgid ""
 "renamed UserTimeoutError and ServerTimeouterror #583 (:commit:`037f6ab`)"
-msgstr ""
+msgstr "UserTimeoutError と ServerTimeouterror の名前変更 #583 (:commit:`037f6ab`)"
 
 #: ../../news.rst:3655
 msgid "adding some xpath tips to selectors docs (:commit:`2d103e0`)"
-msgstr ""
+msgstr "セレクターの文書にいくつかのxpathのヒントを追加 (:commit:`2d103e0`)"
 
 #: ../../news.rst:3656
 msgid ""
 "fix tests to account for https://github.com/scrapy/w3lib/pull/23 (:commit:"
 "`f8d366a`)"
-msgstr ""
+msgstr "https://github.com/scrapy/w3lib/pull/23 のためのアカウントのテストを修正 (:commit:`f8d366a`)"
 
 #: ../../news.rst:3657
 msgid "get_func_args maximum recursion fix #728 (:commit:`81344ea`)"
-msgstr ""
+msgstr "get_func_args最大再帰修正 #728 (:commit:`81344ea`)"
 
 #: ../../news.rst:3658
 msgid ""
 "Updated input/ouput processor example according to #560. (:commit:`f7c4ea8`)"
-msgstr ""
+msgstr "#560 に従って入出力プロセッサの例を更新 (:commit:`f7c4ea8`)"
 
 #: ../../news.rst:3659
 msgid "Fixed Python syntax in tutorial. (:commit:`db59ed9`)"
-msgstr ""
+msgstr "チュートリアルのPython文法を修正 (:commit:`db59ed9`)"
 
 #: ../../news.rst:3660
 msgid "Add test case for tunneling proxy (:commit:`f090260`)"
-msgstr ""
+msgstr "トンネリング・プロキシー(tunneling proxy)のテスト・ケースを追加 (:commit:`f090260`)"
 
 #: ../../news.rst:3661
 msgid ""
 "Bugfix for leaking Proxy-Authorization header to remote host when using "
 "tunneling (:commit:`d8793af`)"
-msgstr ""
+msgstr "トンネリングを使用しているときにプロキシ認証ヘッダーをリモート・ホストにリークするバグを修正 (:commit:`d8793af`)"
 
 #: ../../news.rst:3662
 msgid ""
 "Extract links from XHTML documents with MIME-Type \"application/xml\" (:"
 "commit:`ed1f376`)"
-msgstr ""
+msgstr "MIMEタイプが \"application/xml\" のXHTMLドキュメントからリンクを抽出 (:commit:`ed1f376`)"
 
 #: ../../news.rst:3663
 msgid "Merge pull request #793 from roysc/patch-1 (:commit:`91a1106`)"
-msgstr ""
+msgstr "roysc/patch-1からのプル・リクエスト #793 をマージ (:commit:`91a1106`)"
 
 #: ../../news.rst:3664
 msgid "Fix typo in commands.rst (:commit:`743e1e2`)"
-msgstr ""
+msgstr "commands.rst内のタイプミスを修正 (:commit:`743e1e2`)"
 
 #: ../../news.rst:3665
 msgid "better testcase for settings.overrides.setdefault (:commit:`e22daaf`)"
-msgstr ""
+msgstr "settings.overrides.setdefaultのより良いテスト・ケース (:commit:`e22daaf`)"
 
 #: ../../news.rst:3666
 msgid ""
 "Using CRLF as line marker according to http 1.1 definition (:commit:"
 "`5ec430b`)"
-msgstr ""
+msgstr "http 1.1の定義に従ってCRLFをライン・マーカーとして使用する (:commit:`5ec430b`)"
 
 #: ../../news.rst:3669
 msgid "Scrapy 0.24.2 (2014-07-08)"
