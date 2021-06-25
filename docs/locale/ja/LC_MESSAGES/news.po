@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-26 03:22+0900\n"
+"PO-Revision-Date: 2021-06-26 07:37+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -7031,36 +7031,36 @@ msgstr "http 1.1の定義に従ってCRLFをライン・マーカーとして使
 
 #: ../../news.rst:3669
 msgid "Scrapy 0.24.2 (2014-07-08)"
-msgstr ""
+msgstr "Scrapy 0.24.2 (2014-07-08)"
 
 #: ../../news.rst:3671
 msgid ""
 "Use a mutable mapping to proxy deprecated settings.overrides and settings."
 "defaults attribute (:commit:`e5e8133`)"
-msgstr ""
+msgstr "非推奨のsettings.overridesおよびsettings.defaults属性をプロキシーするために可変マッピングを使用します (:commit:`e5e8133`)"
 
 #: ../../news.rst:3672
 msgid "there is not support for python3 yet (:commit:`3cd6146`)"
-msgstr ""
+msgstr "python3はまだサポートされていません (:commit:`3cd6146`)"
 
 #: ../../news.rst:3673
 msgid ""
 "Update python compatible version set to Debian packages (:commit:`fa5d76b`)"
-msgstr ""
+msgstr "Python互換バージョンセットをDebianパッケージに更新します (:commit:`fa5d76b`)"
 
 #: ../../news.rst:3674
 msgid "DOC fix formatting in release notes (:commit:`c6a9e20`)"
-msgstr ""
+msgstr "文書: リリース・ノートの書式を修正 (:commit:`c6a9e20`)"
 
 #: ../../news.rst:3677
 msgid "Scrapy 0.24.1 (2014-06-27)"
-msgstr ""
+msgstr "Scrapy 0.24.1 (2014-06-27)"
 
 #: ../../news.rst:3679
 msgid ""
 "Fix deprecated CrawlerSettings and increase backward compatibility with ."
 "defaults attribute (:commit:`8e3f20a`)"
-msgstr ""
+msgstr "非推奨のCrawlerSettingsを修正し、.defaults属性との下位互換性を高めます (:commit:`8e3f20a`)"
 
 #: ../../news.rst:3684
 msgid "Scrapy 0.24.0 (2014-06-26)"
