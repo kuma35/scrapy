@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-26 07:37+0900\n"
+"PO-Revision-Date: 2021-06-26 16:50+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -7064,87 +7064,87 @@ msgstr "非推奨のCrawlerSettingsを修正し、.defaults属性との下位互
 
 #: ../../news.rst:3684
 msgid "Scrapy 0.24.0 (2014-06-26)"
-msgstr ""
+msgstr "Scrapy 0.24.0 (2014-06-26)"
 
 #: ../../news.rst:3687 ../../news.rst:3803 ../../news.rst:3859
 msgid "Enhancements"
-msgstr ""
+msgstr "機能強化"
 
 #: ../../news.rst:3689
 msgid "Improve Scrapy top-level namespace (:issue:`494`, :issue:`684`)"
-msgstr ""
+msgstr "Scrapyのトップレベルの名前空間改善 (:issue:`494`, :issue:`684`)"
 
 #: ../../news.rst:3690
 msgid "Add selector shortcuts to responses (:issue:`554`, :issue:`690`)"
-msgstr ""
+msgstr "レスポンスにセレクター・ショートカットを追加 (:issue:`554`, :issue:`690`)"
 
 #: ../../news.rst:3691
 msgid ""
 "Add new lxml based LinkExtractor to replace unmaintained SgmlLinkExtractor (:"
 "issue:`559`, :issue:`761`, :issue:`763`)"
-msgstr ""
+msgstr "新しいlxmlベースのLinkExtractorを追加して、メンテナンスされていないSgmlLinkExtractorを置き換えます (:issue:`559`, :issue:`761`, :issue:`763`)"
 
 #: ../../news.rst:3693
 msgid ""
 "Cleanup settings API - part of per-spider settings **GSoC project** (:issue:"
 "`737`)"
-msgstr ""
+msgstr "設定APIの整理: スパイダー毎の設定の一部 **GSoC プロジェクト** (:issue:`737`)"
 
 #: ../../news.rst:3694
 msgid "Add UTF8 encoding header to templates (:issue:`688`, :issue:`762`)"
-msgstr ""
+msgstr "テンプレートにUTF8エンコーディング・ヘッダーを追加 (:issue:`688`, :issue:`762`)"
 
 #: ../../news.rst:3695
 msgid "Telnet console now binds to 127.0.0.1 by default (:issue:`699`)"
-msgstr ""
+msgstr "Telnetコンソールはデフォルトで127.0.0.1にバインドするようになりました (:issue:`699`)"
 
 #: ../../news.rst:3696
 msgid "Update Debian/Ubuntu install instructions (:issue:`509`, :issue:`549`)"
-msgstr ""
+msgstr "Debian/Ubuntuのインストール手順を更新 (:issue:`509`, :issue:`549`)"
 
 #: ../../news.rst:3697
 msgid "Disable smart strings in lxml XPath evaluations (:issue:`535`)"
-msgstr ""
+msgstr "lxml XPath評価でスマート文字列を無効にする (:issue:`535`)"
 
 #: ../../news.rst:3698
 msgid ""
 "Restore filesystem based cache as default for http cache middleware (:issue:"
 "`541`, :issue:`500`, :issue:`571`)"
-msgstr ""
+msgstr "ファイルシステム・ベースのキャッシュをhttpキャッシュ・ミドルウェアのデフォルトとして復元 (:issue:`541`, :issue:`500`, :issue:`571`)"
 
 #: ../../news.rst:3700
 msgid "Expose current crawler in Scrapy shell (:issue:`557`)"
-msgstr ""
+msgstr "Scrapyシェルで現在のクローラーを公開 (:issue:`557`)"
 
 #: ../../news.rst:3701
 msgid "Improve testsuite comparing CSV and XML exporters (:issue:`570`)"
-msgstr ""
+msgstr "CSVとXMLエクスポーターを比較するテスト・スイートを改善 (:issue:`570`)"
 
 #: ../../news.rst:3702
 msgid "New ``offsite/filtered`` and ``offsite/domains`` stats (:issue:`566`)"
-msgstr ""
+msgstr "新 ``offsite/filtered`` 統計と、新 ``offsite/domains`` 統計 (:issue:`566`)"
 
 #: ../../news.rst:3703
 msgid "Support process_links as generator in CrawlSpider (:issue:`555`)"
-msgstr ""
+msgstr "CrawlSpiderのジェネレーターとしてprocess_linksをサポート (:issue:`555`)"
 
 #: ../../news.rst:3704
 msgid "Verbose logging and new stats counters for DupeFilter (:issue:`553`)"
-msgstr ""
+msgstr "DupeFilterの詳細ログと新しい統計カウンター (:issue:`553`)"
 
 #: ../../news.rst:3705
 msgid "Add a mimetype parameter to ``MailSender.send()`` (:issue:`602`)"
-msgstr ""
+msgstr "``MailSender.send()`` に mimetype パラメーターを追加 (:issue:`602`)"
 
 #: ../../news.rst:3706
 msgid "Generalize file pipeline log messages (:issue:`622`)"
-msgstr ""
+msgstr "ファイル・パイプライン・ログ・メッセージを一般化 (:issue:`622`)"
 
 #: ../../news.rst:3707
 msgid ""
 "Replace unencodeable codepoints with html entities in SGMLLinkExtractor (:"
 "issue:`565`)"
-msgstr ""
+msgstr "エンコードできないコード・ポイントをSGMLLinkExtractorのhtmlエンティティに置き換え (:issue:`565`)"
 
 #: ../../news.rst:3708
 msgid ""
@@ -7152,114 +7152,114 @@ msgid ""
 "`638`, :issue:`632`, :issue:`636`, :issue:`640`, :issue:`635`, :issue:"
 "`634`, :issue:`639`, :issue:`637`, :issue:`631`, :issue:`633`, :issue:"
 "`641`, :issue:`642`)"
-msgstr ""
+msgstr "SEP文書をrst書式に変換 (:issue:`629`, :issue:`630`, :issue:`638`, :issue:`632`, :issue:`636`, :issue:`640`, :issue:`635`, :issue:`634`, :issue:`639`, :issue:`637`, :issue:`631`, :issue:`633`, :issue:`641`, :issue:`642`)"
 
 #: ../../news.rst:3712
 msgid ""
 "Tests and docs for clickdata's nr index in FormRequest (:issue:`646`, :issue:"
 "`645`)"
-msgstr ""
+msgstr "FormRequestのclickdataのnrインデックスのテストと文書化 (:issue:`646`, :issue:`645`)"
 
 #: ../../news.rst:3713
 msgid ""
 "Allow to disable a downloader handler just like any other component (:issue:"
 "`650`)"
-msgstr ""
+msgstr "他のコンポーネントと同様にダウンローダー・ハンドラーを無効にできるようにします (:issue:`650`)"
 
 #: ../../news.rst:3714
 msgid ""
 "Log when a request is discarded after too many redirections (:issue:`654`)"
-msgstr ""
+msgstr "リダイレクトが多すぎるためにリクエストが破棄されたときにログに記録する (:issue:`654`)"
 
 #: ../../news.rst:3715
 msgid ""
 "Log error responses if they are not handled by spider callbacks (:issue:"
 "`612`, :issue:`656`)"
-msgstr ""
+msgstr "スパイダー・コールバックによって処理されない場合は、エラー・レスポンスをログに記録 (:issue:`612`, :issue:`656`)"
 
 #: ../../news.rst:3717
 msgid ""
 "Add content-type check to http compression mw (:issue:`193`, :issue:`660`)"
-msgstr ""
+msgstr "コンテンツ・タイプ・チェックをhttp圧縮mwに追加 (:issue:`193`, :issue:`660`)"
 
 #: ../../news.rst:3718
 msgid "Run pypy tests using latest pypi from ppa (:issue:`674`)"
-msgstr ""
+msgstr "ppaの最新のpypiを使用してpypyテストを実行します (:issue:`674`)"
 
 #: ../../news.rst:3719
 msgid "Run test suite using pytest instead of trial (:issue:`679`)"
-msgstr ""
+msgstr "trialの代わりにpytestを使用してテスト・スイートを実行します (:issue:`679`)"
 
 #: ../../news.rst:3720
 msgid "Build docs and check for dead links in tox environment (:issue:`687`)"
-msgstr ""
+msgstr "文書をビルドし、tox環境でリンク切れをチェック (:issue:`687`)"
 
 #: ../../news.rst:3721
 msgid ""
 "Make scrapy.version_info a tuple of integers (:issue:`681`, :issue:`692`)"
-msgstr ""
+msgstr "scarp.version_infoを整数のタプルにします (:issue:`681`, :issue:`692`)"
 
 #: ../../news.rst:3722
 msgid ""
 "Infer exporter's output format from filename extensions (:issue:`546`, :"
 "issue:`659`, :issue:`760`)"
-msgstr ""
+msgstr "ファイル名拡張子からエクスポーターの出力形式を推測 (:issue:`546`, :issue:`659`, :issue:`760`)"
 
 #: ../../news.rst:3724
 msgid ""
 "Support case-insensitive domains in ``url_is_from_any_domain()`` (:issue:"
 "`693`)"
-msgstr ""
+msgstr "``url_is_from_any_domain()`` で大文字と小文字を区別しないドメインをサポート (:issue:`693`)"
 
 #: ../../news.rst:3725
 msgid "Remove pep8 warnings in project and spider templates (:issue:`698`)"
-msgstr ""
+msgstr "プロジェクトおよびスパイダー・テンプレートのpep8警告を削除 (:issue:`698`)"
 
 #: ../../news.rst:3726
 msgid "Tests and docs for ``request_fingerprint`` function (:issue:`597`)"
-msgstr ""
+msgstr "``request_fingerprint`` 関数のテストと文書化 (:issue:`597`)"
 
 #: ../../news.rst:3727
 msgid "Update SEP-19 for GSoC project ``per-spider settings`` (:issue:`705`)"
-msgstr ""
+msgstr "GSoCプロジェクトの ``per-spider settings`` (スパイダーごとの設定) のSEP-19を更新 (:issue:`705`)"
 
 #: ../../news.rst:3728
 msgid "Set exit code to non-zero when contracts fails (:issue:`727`)"
-msgstr ""
+msgstr "contractが失敗した場合、終了コードをゼロ以外に設定 (:issue:`727`)"
 
 #: ../../news.rst:3729
 msgid ""
 "Add a setting to control what class is instantiated as Downloader component "
 "(:issue:`738`)"
-msgstr ""
+msgstr "ダウンロード・コンポーネントとしてインスタンス化されるクラスを制御する設定を追加 (:issue:`738`)"
 
 #: ../../news.rst:3731
 msgid "Pass response in ``item_dropped`` signal (:issue:`724`)"
-msgstr ""
+msgstr "``item_dropped`` シグナルでレスポンスを渡します (:issue:`724`)"
 
 #: ../../news.rst:3732
 msgid "Improve ``scrapy check`` contracts command (:issue:`733`, :issue:`752`)"
-msgstr ""
+msgstr "``scrapy check`` contractコマンドを改善 (:issue:`733`, :issue:`752`)"
 
 #: ../../news.rst:3733
 msgid "Document ``spider.closed()`` shortcut (:issue:`719`)"
-msgstr ""
+msgstr "``spider.closed()`` ショートカットの文書化 (:issue:`719`)"
 
 #: ../../news.rst:3734
 msgid "Document ``request_scheduled`` signal (:issue:`746`)"
-msgstr ""
+msgstr "``request_scheduled`` シグナルの文書化 (:issue:`746`)"
 
 #: ../../news.rst:3735
 msgid "Add a note about reporting security issues (:issue:`697`)"
-msgstr ""
+msgstr "セキュリティ問題を報告するときの注記を追加 (:issue:`697`)"
 
 #: ../../news.rst:3736
 msgid "Add LevelDB http cache storage backend (:issue:`626`, :issue:`500`)"
-msgstr ""
+msgstr "evelDB httpキャッシュ・ストレージ・バックエンドを追加 (:issue:`626`, :issue:`500`)"
 
 #: ../../news.rst:3737
 msgid "Sort spider list output of ``scrapy list`` command (:issue:`742`)"
-msgstr ""
+msgstr "``scrapy list`` コマンドのスパイダー・リスト出力をソート (:issue:`742`)"
 
 #: ../../news.rst:3738
 msgid ""
@@ -7267,68 +7267,68 @@ msgid ""
 "issue:`590`, :issue:`596`, :issue:`610`, :issue:`617`, :issue:`618`, :issue:"
 "`627`, :issue:`613`, :issue:`643`, :issue:`654`, :issue:`675`, :issue:"
 "`663`, :issue:`711`, :issue:`714`)"
-msgstr ""
+msgstr "複数の文書の拡張強化と修正 (:issue:`575`, :issue:`587`, :issue:`590`, :issue:`596`, :issue:`610`, :issue:`617`, :issue:`618`, :issue:`627`, :issue:`613`, :issue:`643`, :issue:`654`, :issue:`675`, :issue:`663`, :issue:`711`, :issue:`714`)"
 
 #: ../../news.rst:3746
 msgid ""
 "Encode unicode URL value when creating Links in RegexLinkExtractor (:issue:"
 "`561`)"
-msgstr ""
+msgstr "RegexLinkExtractorでリンクを作成するときにunicode URL値をエンコード (:issue:`561`)"
 
 #: ../../news.rst:3747
 msgid "Ignore None values in ItemLoader processors (:issue:`556`)"
-msgstr ""
+msgstr "ItemLoaderプロセッサのNone値を無視 (:issue:`556`)"
 
 #: ../../news.rst:3748
 msgid ""
 "Fix link text when there is an inner tag in SGMLLinkExtractor and "
 "HtmlParserLinkExtractor (:issue:`485`, :issue:`574`)"
-msgstr ""
+msgstr "SGMLLinkExtractorとHtmlParserLinkExtractorに内部タグがある場合のリンク・テキストを修正 (:issue:`485`, :issue:`574`)"
 
 #: ../../news.rst:3750
 msgid ""
 "Fix wrong checks on subclassing of deprecated classes (:issue:`581`, :issue:"
 "`584`)"
-msgstr ""
+msgstr "非推奨のクラスのサブクラス化に関する誤ったチェックを修正 (:issue:`581`, :issue:`584`)"
 
 #: ../../news.rst:3752
 msgid "Handle errors caused by inspect.stack() failures (:issue:`582`)"
-msgstr ""
+msgstr "inspect.stack() の失敗によって引き起こされたエラーを処理 (:issue:`582`)"
 
 #: ../../news.rst:3753
 msgid ""
 "Fix a reference to unexistent engine attribute (:issue:`593`, :issue:`594`)"
-msgstr ""
+msgstr "存在しないエンジン属性への参照を修正 (:issue:`593`, :issue:`594`)"
 
 #: ../../news.rst:3754
 msgid "Fix dynamic itemclass example usage of type() (:issue:`603`)"
-msgstr ""
+msgstr "type()の動的itemclassの使用例を修正 (:issue:`603`)"
 
 #: ../../news.rst:3755
 msgid "Use lucasdemarchi/codespell to fix typos (:issue:`628`)"
-msgstr ""
+msgstr "lucasdemarchi/codespellを使用してタイプミスを修正 (:issue:`628`)"
 
 #: ../../news.rst:3756
 msgid ""
 "Fix default value of attrs argument in SgmlLinkExtractor to be tuple (:issue:"
 "`661`)"
-msgstr ""
+msgstr "SgmlLinkExtractorのattrs引数のデフォルト値がタプルになるように修正 (:issue:`661`)"
 
 #: ../../news.rst:3757
 msgid "Fix XXE flaw in sitemap reader (:issue:`676`)"
-msgstr ""
+msgstr "サイトマップ・リーダーのXXEの欠陥を修正 (:issue:`676`)"
 
 #: ../../news.rst:3758
 msgid "Fix engine to support filtered start requests (:issue:`707`)"
-msgstr ""
+msgstr "フィルタリングされた開始リクエストをサポートするようにエンジンを修正 (:issue:`707`)"
 
 #: ../../news.rst:3759
 msgid "Fix offsite middleware case on urls with no hostnames (:issue:`745`)"
-msgstr ""
+msgstr "ホスト名のないURLのオフサイト・ミドルウェア・ケースを修正 (:issue:`745`)"
 
 #: ../../news.rst:3760
 msgid "Testsuite doesn't require PIL anymore (:issue:`585`)"
-msgstr ""
+msgstr "TestsuiteはもうPILを必要としません (:issue:`585`)"
 
 #: ../../news.rst:3764
 msgid "Scrapy 0.22.2 (released 2014-02-14)"
