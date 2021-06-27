@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-28 05:20+0900\n"
+"PO-Revision-Date: 2021-06-28 05:37+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -8193,37 +8193,37 @@ msgstr ""
 
 #: ../../news.rst:4077
 msgid "Scrapy 0.16.5 (released 2013-05-30)"
-msgstr ""
+msgstr "Scrapy 0.16.5 (released 2013-05-30)"
 
 #: ../../news.rst:4079
 msgid ""
 "obey request method when Scrapy deploy is redirected to a new endpoint (:"
 "commit:`8c4fcee`)"
-msgstr ""
+msgstr "Scrapyデプロイが新しいエンドポイントにリダイレクトされるときにリクエスト・メソッドに従います (:commit:`8c4fcee`)"
 
 #: ../../news.rst:4080
 msgid ""
 "fix inaccurate downloader middleware documentation. refs #280 (:commit:"
 "`40667cb`)"
-msgstr ""
+msgstr "不正確なダウンローダー・ミドルウェアの文書を修正。 refs #280 (:commit:`40667cb`)"
 
 #: ../../news.rst:4081
 msgid ""
 "doc: remove links to diveintopython.org, which is no longer available. "
 "closes #246 (:commit:`bd58bfa`)"
-msgstr ""
+msgstr "文書: 現在利用できなくなったdiveintopython.orgへのリンクを削除。 #246  をクローズ (:commit:`bd58bfa`)"
 
 #: ../../news.rst:4082
 msgid "Find form nodes in invalid html5 documents (:commit:`e3d6945`)"
-msgstr ""
+msgstr "不正なhtml5ドキュメントでフォーム・ノードを検索します (:commit:`e3d6945`)"
 
 #: ../../news.rst:4083
 msgid "Fix typo labeling attrs type bool instead of list (:commit:`a274276`)"
-msgstr ""
+msgstr "リストの代わりにタイプミスのラベル付け属性タイプboolを修正 (:commit:`a274276`)"
 
 #: ../../news.rst:4086
 msgid "Scrapy 0.16.4 (released 2013-01-23)"
-msgstr ""
+msgstr "Scrapy 0.16.4 (released 2013-01-23)"
 
 #: ../../news.rst:4088
 msgid "fixes spelling errors in documentation (:commit:`6d2b3aa`)"
@@ -8231,18 +8231,18 @@ msgstr "文書のスペルミスを修正 (:commit:`6d2b3aa`)"
 
 #: ../../news.rst:4089
 msgid "add doc about disabling an extension. refs #132 (:commit:`c90de33`)"
-msgstr ""
+msgstr "拡張機能の無効化に関する文書を追加。 refs #132 (:commit:`c90de33`)"
 
 #: ../../news.rst:4090
 msgid ""
 "Fixed error message formatting. log.err() doesn't support cool formatting "
 "and when error occurred, the message was:    \"ERROR: Error processing "
 "%(item)s\" (:commit:`c16150c`)"
-msgstr ""
+msgstr "エラー・メッセージの書式を修正しました。 log.err() はクールな書式をサポートしておらず、エラーが発生した場合、メッセージは \"ERROR: Error processing %(item)s\" でした。 (:commit:`c16150c`)"
 
 #: ../../news.rst:4091
 msgid "lint and improve images pipeline error logging (:commit:`56b45fc`)"
-msgstr ""
+msgstr "lintおよび画像パイプライン・エラーのロギングの改善 (:commit:`56b45fc`)"
 
 #: ../../news.rst:4092
 msgid "fixed doc typos (:commit:`243be84`)"
@@ -8251,13 +8251,13 @@ msgstr "文書のタイプミスを修正 (:commit:`243be84`)"
 #: ../../news.rst:4093
 msgid ""
 "add documentation topics: Broad Crawls & Common Practices (:commit:`1fbb715`)"
-msgstr ""
+msgstr "文書トピックを追加: 幅広いクロールと一般的な慣行 (:commit:`1fbb715`)"
 
 #: ../../news.rst:4094
 msgid ""
 "fix bug in Scrapy parse command when spider is not specified explicitly. "
 "closes #209 (:commit:`c72e682`)"
-msgstr ""
+msgstr "スパイダーが明示的に指定されていない場合のScrapy parseコマンドのバグを修正。 #209 をクローズ (:commit:`c72e682`)"
 
 #: ../../news.rst:4095
 msgid "Update docs/topics/commands.rst (:commit:`28eac7a`)"
@@ -8265,17 +8265,17 @@ msgstr "docs/topics/commands.rst を更新 (:commit:`28eac7a`)"
 
 #: ../../news.rst:4098
 msgid "Scrapy 0.16.3 (released 2012-12-07)"
-msgstr ""
+msgstr "Scrapy 0.16.3 (released 2012-12-07)"
 
 #: ../../news.rst:4100
 msgid ""
 "Remove concurrency limitation when using download delays and still ensure "
 "inter-request delays are enforced (:commit:`487b9b5`)"
-msgstr ""
+msgstr "ダウンロード遅延を使用する場合の同時実行制限を削除し、リクエスト間の遅延が強制されるようにします (:commit:`487b9b5`)"
 
 #: ../../news.rst:4101
 msgid "add error details when image pipeline fails (:commit:`8232569`)"
-msgstr ""
+msgstr "画像パイプラインが失敗したときにエラーの詳細を追加 (:commit:`8232569`)"
 
 #: ../../news.rst:4102
 msgid "improve macOS compatibility (:commit:`8dcf8aa`)"
@@ -8284,19 +8284,19 @@ msgstr "macOS互換性を改善 (:commit:`8dcf8aa`)"
 #: ../../news.rst:4103
 msgid ""
 "setup.py: use README.rst to populate long_description (:commit:`7b5310d`)"
-msgstr ""
+msgstr "setup.py: README.rstを使用してlong_descriptionにデータを入力します (:commit:`7b5310d`)"
 
 #: ../../news.rst:4104
 msgid "doc: removed obsolete references to ClientForm (:commit:`80f9bb6`)"
-msgstr ""
+msgstr "文書: ClientFormへの廃止された参照を削除 (:commit:`80f9bb6`)"
 
 #: ../../news.rst:4105
 msgid "correct docs for default storage backend (:commit:`2aa491b`)"
-msgstr ""
+msgstr "デフォルトのストレージ・バックエンドの正しい文書 (:commit:`2aa491b`)"
 
 #: ../../news.rst:4106
 msgid "doc: removed broken proxyhub link from FAQ (:commit:`bdf61c4`)"
-msgstr ""
+msgstr "文書: FAQから壊れたproxyhubリンクを削除 (:commit:`bdf61c4`)"
 
 #: ../../news.rst:4107
 msgid "Fixed docs typo in SpiderOpenCloseLogging example (:commit:`7184094`)"
@@ -8304,68 +8304,68 @@ msgstr "SpiderOpenCloseLoggingの例の文書のタイプミスを修正 (:commi
 
 #: ../../news.rst:4111
 msgid "Scrapy 0.16.2 (released 2012-11-09)"
-msgstr ""
+msgstr "Scrapy 0.16.2 (released 2012-11-09)"
 
 #: ../../news.rst:4113
 msgid "Scrapy contracts: python2.6 compat (:commit:`a4a9199`)"
-msgstr ""
+msgstr "Scrapy規約: python2.6 compat (:commit:`a4a9199`)"
 
 #: ../../news.rst:4114
 msgid "Scrapy contracts verbose option (:commit:`ec41673`)"
-msgstr ""
+msgstr "Scrapy規約の詳細なオプション (:commit:`ec41673`)"
 
 #: ../../news.rst:4115
 msgid "proper unittest-like output for Scrapy contracts (:commit:`86635e4`)"
-msgstr ""
+msgstr "Scrapy規約トの適切なユニット・テストのような出力 (:commit:`86635e4`)"
 
 #: ../../news.rst:4116
 msgid "added open_in_browser to debugging doc (:commit:`c9b690d`)"
-msgstr ""
+msgstr "open_in_browserをデバッグ文書に追加 (:commit:`c9b690d`)"
 
 #: ../../news.rst:4117
 msgid ""
 "removed reference to global Scrapy stats from settings doc (:commit:"
 "`dd55067`)"
-msgstr ""
+msgstr "設定文書からグローバルScrapy統計への参照を削除 (:commit:`dd55067`)"
 
 #: ../../news.rst:4118
 msgid "Fix SpiderState bug in Windows platforms (:commit:`58998f4`)"
-msgstr ""
+msgstr "WindowsプラットフォームのSpiderStateバグを修正 (:commit:`58998f4`)"
 
 #: ../../news.rst:4122
 msgid "Scrapy 0.16.1 (released 2012-10-26)"
-msgstr ""
+msgstr "Scrapy 0.16.1 (released 2012-10-26)"
 
 #: ../../news.rst:4124
 msgid ""
 "fixed LogStats extension, which got broken after a wrong merge before the "
 "0.16 release (:commit:`8c780fd`)"
-msgstr ""
+msgstr "0.16リリースの前に間違ったマージの後に壊れていたLogStats拡張機能を修正 (:commit:`8c780fd`)"
 
 #: ../../news.rst:4125
 msgid ""
 "better backward compatibility for scrapy.conf.settings (:commit:`3403089`)"
-msgstr ""
+msgstr "scarp.conf.settingsの下位互換性が向上しました (:commit:`3403089`)"
 
 #: ../../news.rst:4126
 msgid ""
 "extended documentation on how to access crawler stats from extensions (:"
 "commit:`c4da0b5`)"
-msgstr ""
+msgstr "拡張機能からクローラー統計にアクセスする方法に関する拡張文書 (:commit:`c4da0b5`)"
 
 #: ../../news.rst:4127
 msgid ""
 "removed .hgtags (no longer needed now that Scrapy uses git) (:commit:"
 "`d52c188`)"
-msgstr ""
+msgstr ".hgtagsを削除しました(Scrapyがgitを使用するようになったため、不要になりました) (:commit:`d52c188`)"
 
 #: ../../news.rst:4128
 msgid "fix dashes under rst headers (:commit:`fa4f7f9`)"
-msgstr ""
+msgstr "最初のヘッダーの下のダッシュを修正 (:commit:`fa4f7f9`)"
 
 #: ../../news.rst:4129
 msgid "set release date for 0.16.0 in news (:commit:`e292246`)"
-msgstr ""
+msgstr "リリース・ノートの0.16.0にリリース日を設定 (:commit:`e292246`)"
 
 #: ../../news.rst:4133
 msgid "Scrapy 0.16.0 (released 2012-10-18)"
