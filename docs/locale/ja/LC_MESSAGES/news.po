@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-26 16:56+0900\n"
+"PO-Revision-Date: 2021-06-27 16:48+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -7349,128 +7349,128 @@ msgstr "タイプミス修正 (:commit:`1346037`)"
 
 #: ../../news.rst:3771
 msgid "Scrapy 0.22.1 (released 2014-02-08)"
-msgstr ""
+msgstr "Scrapy 0.22.1 (released 2014-02-08)"
 
 #: ../../news.rst:3773
 msgid ""
 "localhost666 can resolve under certain circumstances (:commit:`2ec2279`)"
-msgstr ""
+msgstr "localhost666は特定の状況下で解決できます (:commit:`2ec2279`)"
 
 #: ../../news.rst:3774
 msgid "test inspect.stack failure (:commit:`cc3eda3`)"
-msgstr ""
+msgstr "inspect.stackの失敗をテスト (:commit:`cc3eda3`)"
 
 #: ../../news.rst:3775
 msgid "Handle cases when inspect.stack() fails (:commit:`8cb44f9`)"
-msgstr ""
+msgstr "inspect.stack() が失敗した場合の処理 (:commit:`8cb44f9`)"
 
 #: ../../news.rst:3776
 msgid ""
 "Fix wrong checks on subclassing of deprecated classes. closes #581 (:commit:"
 "`46d98d6`)"
-msgstr ""
+msgstr "非推奨クラスのサブクラス化に関する誤ったチェックを修正。 #581 をクローズ (:commit:`46d98d6`)"
 
 #: ../../news.rst:3777
 msgid "Docs: 4-space indent for final spider example (:commit:`13846de`)"
-msgstr ""
+msgstr "文書: 最後のスパイダーの例の4スペース・インデント (:commit:`13846de`)"
 
 #: ../../news.rst:3778
 msgid ""
 "Fix HtmlParserLinkExtractor and tests after #485 merge (:commit:`368a946`)"
-msgstr ""
+msgstr "HtmlParserLinkExtractorを修正し、 #485 マージ後にテストします (:commit:`368a946`)"
 
 #: ../../news.rst:3779
 msgid ""
 "BaseSgmlLinkExtractor: Fixed the missing space when the link has an inner "
 "tag (:commit:`b566388`)"
-msgstr ""
+msgstr "BaseSgmlLinkExtractor: リンクに内部タグがある場合に欠落していたスペースを修正 (:commit:`b566388`)"
 
 #: ../../news.rst:3780
 msgid ""
 "BaseSgmlLinkExtractor: Added unit test of a link with an inner tag (:commit:"
 "`c1cb418`)"
-msgstr ""
+msgstr "BaseSgmlLinkExtractor: 内部タグ付きのリンクの単体テストを追加 (:commit:`c1cb418`)"
 
 #: ../../news.rst:3781
 msgid ""
 "BaseSgmlLinkExtractor: Fixed unknown_endtag() so that it only set "
 "current_link=None when the end tag match the opening tag (:commit:`7e4d627`)"
-msgstr ""
+msgstr "BaseSgmlLinkExtractor: unknown_endtag() を修正して、終了タグが開始タグと一致する場合にのみ current_link=None を設定するようにしました (:commit:`7e4d627`)"
 
 #: ../../news.rst:3782
 msgid "Fix tests for Travis-CI build (:commit:`76c7e20`)"
-msgstr ""
+msgstr "Travis-CIビルドのテストを修正 (:commit:`76c7e20`)"
 
 #: ../../news.rst:3783
 msgid ""
 "replace unencodable codepoints with html entities. fixes #562 and #285 (:"
 "commit:`5f87b17`)"
-msgstr ""
+msgstr "暗号化できないコードポイントをhtmlエンティティに置き換えます。修正 #562 と #285 (:commit:`5f87b17`)"
 
 #: ../../news.rst:3784
 msgid ""
 "RegexLinkExtractor: encode URL unicode value when creating Links (:commit:"
 "`d0ee545`)"
-msgstr ""
+msgstr "RegexLinkExtractor: リンクを作成するときにURL unicode値をエンコードします (:commit:`d0ee545`)"
 
 #: ../../news.rst:3785
 msgid ""
 "Updated the tutorial crawl output with latest output. (:commit:`8da65de`)"
-msgstr ""
+msgstr "チュートリアルのクロール出力を最新の出力に更新 (:commit:`8da65de`)"
 
 #: ../../news.rst:3786
 msgid ""
 "Updated shell docs with the crawler reference and fixed the actual shell "
 "output. (:commit:`875b9ab`)"
-msgstr ""
+msgstr "クローラー参照でシェル関連文書を更新し、実際のシェル出力を修正 (:commit:`875b9ab`)"
 
 #: ../../news.rst:3787
 msgid "PEP8 minor edits. (:commit:`f89efaf`)"
-msgstr ""
+msgstr "PEP8な些細な編集 (:commit:`f89efaf`)"
 
 #: ../../news.rst:3788
 msgid "Expose current crawler in the Scrapy shell. (:commit:`5349cec`)"
-msgstr ""
+msgstr "Scrapyシェルで現在のクローラーを公開 (:commit:`5349cec`)"
 
 #: ../../news.rst:3789
 msgid "Unused re import and PEP8 minor edits. (:commit:`387f414`)"
-msgstr ""
+msgstr "未使用のreインポートとPEP8な些細な編集 (:commit:`387f414`)"
 
 #: ../../news.rst:3790
 msgid "Ignore None's values when using the ItemLoader. (:commit:`0632546`)"
-msgstr ""
+msgstr "ItemLoaderを使用するときは、Noneの値を無視します (:commit:`0632546`)"
 
 #: ../../news.rst:3791
 msgid ""
 "DOC Fixed HTTPCACHE_STORAGE typo in the default value which is now "
 "Filesystem instead Dbm. (:commit:`cde9a8c`)"
-msgstr ""
+msgstr "文書: デフォルト値のHTTPCACHE_STORAGEのタイプミスを修正しました。これは、Dbmではなくファイルシステムになりました (:commit:`cde9a8c`)"
 
 #: ../../news.rst:3792
 msgid "show Ubuntu setup instructions as literal code (:commit:`fb5c9c5`)"
-msgstr ""
+msgstr "Ubuntuのセットアップ手順をリテラル・コードとして表示 (:commit:`fb5c9c5`)"
 
 #: ../../news.rst:3793
 msgid "Update Ubuntu installation instructions (:commit:`70fb105`)"
-msgstr ""
+msgstr "Ubuntuでのインストール手順を更新 (:commit:`70fb105`)"
 
 #: ../../news.rst:3794
 msgid "Merge pull request #550 from stray-leone/patch-1 (:commit:`6f70b6a`)"
-msgstr ""
+msgstr "stray-leone/patch-1からのプル・リクエスト #550 をマージ (:commit:`6f70b6a`)"
 
 #: ../../news.rst:3795
 msgid "modify the version of Scrapy Ubuntu package (:commit:`725900d`)"
-msgstr ""
+msgstr "Scrapy Ubuntuパッケージのバージョンを変更 (:commit:`725900d`)"
 
 #: ../../news.rst:3796
 msgid "fix 0.22.0 release date (:commit:`af0219a`)"
-msgstr ""
+msgstr "0.22.0のリリース日を修正 (:commit:`af0219a`)"
 
 #: ../../news.rst:3797
 msgid ""
 "fix typos in news.rst and remove (not released yet) header (:commit:"
 "`b7f58f4`)"
-msgstr ""
+msgstr "news.rstのタイプミスを修正し、(まだリリースされていない)ヘッダーを削除 (:commit:`b7f58f4`)"
 
 #: ../../news.rst:3800
 msgid "Scrapy 0.22.0 (released 2014-01-17)"
