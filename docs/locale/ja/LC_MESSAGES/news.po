@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-27 16:48+0900\n"
+"PO-Revision-Date: 2021-06-28 05:06+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -7474,144 +7474,144 @@ msgstr "news.rstのタイプミスを修正し、(まだリリースされてい
 
 #: ../../news.rst:3800
 msgid "Scrapy 0.22.0 (released 2014-01-17)"
-msgstr ""
+msgstr "Scrapy 0.22.0 (released 2014-01-17)"
 
 #: ../../news.rst:3805
 msgid ""
 "[**Backward incompatible**] Switched HTTPCacheMiddleware backend to "
 "filesystem (:issue:`541`) To restore old backend set ``HTTPCACHE_STORAGE`` "
 "to ``scrapy.contrib.httpcache.DbmCacheStorage``"
-msgstr ""
+msgstr "[ **後方互換性なし** ] HTTPCacheMiddlewareバックエンドをファイルシステムに切り替えました (:issue:`541`) 。 古いバックエンドを復元するには、 ``HTTPCACHE_STORAGE`` を ``scrapy.contrib.httpcache.DbmCacheStorage`` に設定します"
 
 #: ../../news.rst:3807
 msgid "Proxy \\https:// urls using CONNECT method (:issue:`392`, :issue:`397`)"
-msgstr ""
+msgstr "CONNECTメソッドを使用して \\https:// URLをプロキシーします (:issue:`392`, :issue:`397`)"
 
 #: ../../news.rst:3808
 msgid ""
 "Add a middleware to crawl ajax crawleable pages as defined by google (:issue:"
 "`343`)"
-msgstr ""
+msgstr "googleによって定義されているajaxクロール可能なページをクロールするミドルウェアを追加 (:issue:`343`)"
 
 #: ../../news.rst:3809
 msgid ""
 "Rename scrapy.spider.BaseSpider to scrapy.spider.Spider (:issue:`510`, :"
 "issue:`519`)"
-msgstr ""
+msgstr "scrapy.spider.BaseSpider を scrapy.spider.Spider に名前変更 (:issue:`510`, :issue:`519`)"
 
 #: ../../news.rst:3810
 msgid "Selectors register EXSLT namespaces by default (:issue:`472`)"
-msgstr ""
+msgstr "セレクターはデフォルトでEXSLT名前空間を登録します (:issue:`472`)"
 
 #: ../../news.rst:3811
 msgid "Unify item loaders similar to selectors renaming (:issue:`461`)"
-msgstr ""
+msgstr "セレクターの名前変更と同様にアイテム・ローダーを統合する (:issue:`461`)"
 
 #: ../../news.rst:3812
 msgid "Make ``RFPDupeFilter`` class easily subclassable (:issue:`533`)"
-msgstr ""
+msgstr "``RFPDupeFilter`` クラスを簡単にサブクラス化できるようにします (:issue:`533`)"
 
 #: ../../news.rst:3813
 msgid "Improve test coverage and forthcoming Python 3 support (:issue:`525`)"
-msgstr ""
+msgstr "テスト・カバレッジと今後のPython3サポートを改善 (:issue:`525`)"
 
 #: ../../news.rst:3814
 msgid ""
 "Promote startup info on settings and middleware to INFO level (:issue:`520`)"
-msgstr ""
+msgstr "設定とミドルウェアのスタートアップ情報をINFOレベルに出力 (:issue:`520`)"
 
 #: ../../news.rst:3815
 msgid "Support partials in ``get_func_args`` util (:issue:`506`, issue:`504`)"
-msgstr ""
+msgstr "``get_func_args`` ユーティリティでパーシャル(partial)をサポート (:issue:`506`, issue:`504`)"
 
 #: ../../news.rst:3816
 msgid "Allow running individual tests via tox (:issue:`503`)"
-msgstr ""
+msgstr "toxを介して個々にテストを実行できるようにする (:issue:`503`)"
 
 #: ../../news.rst:3817
 msgid "Update extensions ignored by link extractors (:issue:`498`)"
-msgstr ""
+msgstr "リンク抽出器によって無視される拡張機能更新 (:issue:`498`)"
 
 #: ../../news.rst:3818
 msgid "Add middleware methods to get files/images/thumbs paths (:issue:`490`)"
-msgstr ""
+msgstr "ファイル/画像/サムネイル のパスを取得するミドルウェア・メソッドを追加 (:issue:`490`)"
 
 #: ../../news.rst:3819
 msgid "Improve offsite middleware tests (:issue:`478`)"
-msgstr ""
+msgstr "オフサイト・ミドルウェア・テストを改善 (:issue:`478`)"
 
 #: ../../news.rst:3820
 msgid ""
 "Add a way to skip default Referer header set by RefererMiddleware (:issue:"
 "`475`)"
-msgstr ""
+msgstr "RefererMiddlewareによって設定されたデフォルトのRefererヘッダーをスキップする方法を追加 (:issue:`475`)"
 
 #: ../../news.rst:3821
 msgid ""
 "Do not send ``x-gzip`` in default ``Accept-Encoding`` header (:issue:`469`)"
-msgstr ""
+msgstr "デフォルトの ``Accept-Encoding`` ヘッダーで ``x-gzip`` を送信しない (:issue:`469`)"
 
 #: ../../news.rst:3822
 msgid "Support defining http error handling using settings (:issue:`466`)"
-msgstr ""
+msgstr "設定を使用したhttpエラー処理の定義のサポート (:issue:`466`)"
 
 #: ../../news.rst:3823
 msgid "Use modern python idioms wherever you find legacies (:issue:`497`)"
-msgstr ""
+msgstr "レガシーが見つかった場合は常に最新のPythonイディオムを使用してください (:issue:`497`)"
 
 #: ../../news.rst:3824
 msgid ""
 "Improve and correct documentation (:issue:`527`, :issue:`524`, :issue:"
 "`521`, :issue:`517`, :issue:`512`, :issue:`505`, :issue:`502`, :issue:"
 "`489`, :issue:`465`, :issue:`460`, :issue:`425`, :issue:`536`)"
-msgstr ""
+msgstr "文書の改善と修正 (:issue:`527`, :issue:`524`, :issue:`521`, :issue:`517`, :issue:`512`, :issue:`505`, :issue:`502`, :issue:`489`, :issue:`465`, :issue:`460`, :issue:`425`, :issue:`536`)"
 
 #: ../../news.rst:3829
 msgid "Fixes"
-msgstr ""
+msgstr "修正"
 
 #: ../../news.rst:3831
 msgid "Update Selector class imports in CrawlSpider template (:issue:`484`)"
-msgstr ""
+msgstr "CrawlSpiderテンプレートのセレクター・クラスのインポートを更新 (:issue:`484`)"
 
 #: ../../news.rst:3832
 msgid "Fix unexistent reference to ``engine.slots`` (:issue:`464`)"
-msgstr ""
+msgstr "``engine.slots`` への存在しない参照を修正 (:issue:`464`)"
 
 #: ../../news.rst:3833
 msgid ""
 "Do not try to call ``body_as_unicode()`` on a non-TextResponse instance (:"
 "issue:`462`)"
-msgstr ""
+msgstr "TextResponse以外のインスタンスで ``body_as_unicode()`` を呼び出そうとしないでください (:issue:`462`)"
 
 #: ../../news.rst:3834
 msgid ""
 "Warn when subclassing XPathItemLoader, previously it only warned on "
 "instantiation. (:issue:`523`)"
-msgstr ""
+msgstr "XPathItemLoaderをサブクラス化するときに警告します。以前は、インスタンス化についてのみ警告していました。 (:issue:`523`)"
 
 #: ../../news.rst:3836
 msgid ""
 "Warn when subclassing XPathSelector, previously it only warned on "
 "instantiation. (:issue:`537`)"
-msgstr ""
+msgstr "XPathSelectorをサブクラス化するときに警告します。以前は、インスタンス化についてのみ警告していました。 (:issue:`537`)"
 
 #: ../../news.rst:3838
 msgid ""
 "Multiple fixes to memory stats (:issue:`531`, :issue:`530`, :issue:`529`)"
-msgstr ""
+msgstr "メモリ統計の複数の修正 (:issue:`531`, :issue:`530`, :issue:`529`)"
 
 #: ../../news.rst:3839
 msgid "Fix overriding url in ``FormRequest.from_response()`` (:issue:`507`)"
-msgstr ""
+msgstr "``FormRequest.from_response()`` のURLのオーバーライドを修正 (:issue:`507`)"
 
 #: ../../news.rst:3840
 msgid "Fix tests runner under pip 1.5 (:issue:`513`)"
-msgstr ""
+msgstr "pip 1.5でのテスト・ランナーの修正 (:issue:`513`)"
 
 #: ../../news.rst:3841
 msgid "Fix logging error when spider name is unicode (:issue:`479`)"
-msgstr ""
+msgstr "スパイダー名がunicodeの場合のログ・エラーを修正 (:issue:`479`)"
 
 #: ../../news.rst:3844
 msgid "Scrapy 0.20.2 (released 2013-12-09)"
@@ -7811,7 +7811,7 @@ msgstr ""
 
 #: ../../news.rst:3902
 msgid "Other"
-msgstr ""
+msgstr "その他"
 
 #: ../../news.rst:3904
 msgid "Dropped Python 2.6 support (:issue:`448`)"
@@ -7839,15 +7839,15 @@ msgstr ""
 
 #: ../../news.rst:3912
 msgid "Thanks"
-msgstr ""
+msgstr "謝辞"
 
 #: ../../news.rst:3914
 msgid "Thanks to everyone who contribute to this release!"
-msgstr ""
+msgstr "このリリースに貢献してくれたすべての人に感謝します！"
 
 #: ../../news.rst:3916
 msgid "List of contributors sorted by number of commits::"
-msgstr ""
+msgstr "コミット数でソートされた貢献者のリスト::"
 
 #: ../../news.rst:3944
 msgid "Scrapy 0.18.4 (released 2013-10-10)"
@@ -7949,7 +7949,7 @@ msgstr ""
 
 #: ../../news.rst:3976
 msgid "Merge pull request #375 from peterarenot/patch-1 (:commit:`fa766d7`)"
-msgstr ""
+msgstr "peterarenot/patch-1からのプル・リクエスト #375 をマージ (:commit:`fa766d7`)"
 
 #: ../../news.rst:3977
 msgid "Fixed so it refers to the correct folder (:commit:`3283809`)"
@@ -8094,7 +8094,7 @@ msgstr ""
 
 #: ../../news.rst:4011
 msgid "Support ``settings.getdict`` (:issue:`269`)"
-msgstr ""
+msgstr "``settings.getdict`` をサポート (:issue:`269`)"
 
 #: ../../news.rst:4012
 msgid "Simplify internal ``scrapy.core.scraper`` slot handling (:issue:`271`)"
@@ -8102,7 +8102,7 @@ msgstr ""
 
 #: ../../news.rst:4013
 msgid "Added ``Item.copy`` (:issue:`290`)"
-msgstr ""
+msgstr "``Item.copy`` 追加 (:issue:`290`)"
 
 #: ../../news.rst:4014
 msgid "Collect idle downloader slots (:issue:`297`)"
@@ -8110,7 +8110,7 @@ msgstr ""
 
 #: ../../news.rst:4015
 msgid "Add ``ftp://`` scheme downloader handler (:issue:`329`)"
-msgstr ""
+msgstr "``ftp://`` スキームのダウンローダー・ハンドラー追加 (:issue:`329`)"
 
 #: ../../news.rst:4016
 msgid ""
@@ -8129,7 +8129,7 @@ msgstr ""
 
 #: ../../news.rst:4019
 msgid "Added ``--pdb`` option to ``scrapy`` command line tool"
-msgstr ""
+msgstr "``scrapy`` コマンドライン・ツールに ``--pdb`` オプションを追加"
 
 #: ../../news.rst:4020
 msgid ""
@@ -8157,7 +8157,7 @@ msgstr ""
 
 #: ../../news.rst:4024
 msgid "added from_crawler method to spiders"
-msgstr ""
+msgstr "スパイダーにfrom_crawlerメソッド追加"
 
 #: ../../news.rst:4025
 msgid "added system tests with mock server"
@@ -8175,11 +8175,11 @@ msgstr ""
 
 #: ../../news.rst:4028
 msgid "support custom download slots"
-msgstr ""
+msgstr "カスタム・ダウンロード・スロットをサポート"
 
 #: ../../news.rst:4029
 msgid "added --spider option to \"shell\" command."
-msgstr ""
+msgstr "\"shell\" コマンドに --spider オプション追加。"
 
 #: ../../news.rst:4030
 msgid "log overridden settings when Scrapy starts"
@@ -8227,7 +8227,7 @@ msgstr ""
 
 #: ../../news.rst:4088
 msgid "fixes spelling errors in documentation (:commit:`6d2b3aa`)"
-msgstr ""
+msgstr "文書のスペルミスを修正 (:commit:`6d2b3aa`)"
 
 #: ../../news.rst:4089
 msgid "add doc about disabling an extension. refs #132 (:commit:`c90de33`)"
@@ -8246,7 +8246,7 @@ msgstr ""
 
 #: ../../news.rst:4092
 msgid "fixed doc typos (:commit:`243be84`)"
-msgstr ""
+msgstr "文書のタイプミスを修正 (:commit:`243be84`)"
 
 #: ../../news.rst:4093
 msgid ""
@@ -8261,7 +8261,7 @@ msgstr ""
 
 #: ../../news.rst:4095
 msgid "Update docs/topics/commands.rst (:commit:`28eac7a`)"
-msgstr ""
+msgstr "docs/topics/commands.rst を更新 (:commit:`28eac7a`)"
 
 #: ../../news.rst:4098
 msgid "Scrapy 0.16.3 (released 2012-12-07)"
@@ -8279,7 +8279,7 @@ msgstr ""
 
 #: ../../news.rst:4102
 msgid "improve macOS compatibility (:commit:`8dcf8aa`)"
-msgstr ""
+msgstr "macOS互換性を改善 (:commit:`8dcf8aa`)"
 
 #: ../../news.rst:4103
 msgid ""
@@ -8300,7 +8300,7 @@ msgstr ""
 
 #: ../../news.rst:4107
 msgid "Fixed docs typo in SpiderOpenCloseLogging example (:commit:`7184094`)"
-msgstr ""
+msgstr "SpiderOpenCloseLoggingの例の文書のタイプミスを修正 (:commit:`7184094`)"
 
 #: ../../news.rst:4111
 msgid "Scrapy 0.16.2 (released 2012-11-09)"
@@ -8373,7 +8373,7 @@ msgstr ""
 
 #: ../../news.rst:4135
 msgid "Scrapy changes:"
-msgstr ""
+msgstr "Scrapyの変更:"
 
 #: ../../news.rst:4137
 msgid ""
@@ -8420,7 +8420,7 @@ msgstr ""
 
 #: ../../news.rst:4144
 msgid "documented :ref:`topics-api`"
-msgstr ""
+msgstr ":ref:`topics-api` について文書化した"
 
 #: ../../news.rst:4145
 msgid "``lxml`` is now the default selectors backend instead of ``libxml2``"
@@ -8472,7 +8472,7 @@ msgstr ""
 
 #: ../../news.rst:4154
 msgid "dropped support for Twisted 2.5"
-msgstr ""
+msgstr "Twisted 2.5 のサポートを終了した"
 
 #: ../../news.rst:4155
 msgid "added :setting:`REFERER_ENABLED` setting, to control referer middleware"
@@ -8536,7 +8536,7 @@ msgstr ""
 
 #: ../../news.rst:4166
 msgid "removed signal: ``scrapy.mail.mail_sent``"
-msgstr ""
+msgstr "シグナル削除した: ``scrapy.mail.mail_sent``"
 
 #: ../../news.rst:4167
 msgid ""
@@ -8562,7 +8562,7 @@ msgstr ""
 
 #: ../../news.rst:4171
 msgid "removed ``scrapy.log.started`` attribute"
-msgstr ""
+msgstr "``scrapy.log.started`` 属性を削除した"
 
 #: ../../news.rst:4174
 msgid "Scrapy 0.14.4"
@@ -8700,7 +8700,7 @@ msgstr ""
 
 #: ../../news.rst:4207
 msgid "scrapyd: fixed documentation link (:commit:`2b4e4c3`)"
-msgstr ""
+msgstr "scrapyd: 文書のリンク修正 (:commit:`2b4e4c3`)"
 
 #: ../../news.rst:4208 ../../news.rst:4213
 msgid ""
@@ -8767,11 +8767,11 @@ msgstr ""
 
 #: ../../news.rst:4229
 msgid "New features and settings"
-msgstr ""
+msgstr "新機能と新設定"
 
 #: ../../news.rst:4231
 msgid "Support for `AJAX crawleable urls`_"
-msgstr ""
+msgstr "`AJAX crawleable urls`_ (AJAXクロール可能URL)をサポート"
 
 #: ../../news.rst:4232
 msgid ""
@@ -8848,13 +8848,13 @@ msgstr ""
 msgid ""
 "Moved spider queues to scrapyd: ``scrapy.spiderqueue`` -> ``scrapyd."
 "spiderqueue`` (:rev:`2708`)"
-msgstr ""
+msgstr "scrapydのスパイダー・キューを移動した: ``scrapy.spiderqueue`` から ``scrapyd.spiderqueue`` へ (:rev:`2708`)"
 
 #: ../../news.rst:4246
 msgid ""
 "Moved sqlite utils to scrapyd: ``scrapy.utils.sqlite`` -> ``scrapyd.sqlite`` "
 "(:rev:`2781`)"
-msgstr ""
+msgstr "scrapydのsqliteユーティリティを移動した: ``scrapy.utils.sqlite`` から ``scrapyd.sqlite`` へ (:rev:`2781`)"
 
 #: ../../news.rst:4247
 msgid ""
@@ -8930,11 +8930,11 @@ msgstr ""
 
 #: ../../news.rst:4259
 msgid "Added :signal:`spider_error` signal (:rev:`2628`)"
-msgstr ""
+msgstr ":signal:`spider_error` シグナル追加 (:rev:`2628`)"
 
 #: ../../news.rst:4260
 msgid "Added :setting:`COOKIES_ENABLED` setting (:rev:`2625`)"
-msgstr ""
+msgstr ":setting:`COOKIES_ENABLED` 設定追加 (:rev:`2625`)"
 
 #: ../../news.rst:4261
 msgid ""
@@ -8955,15 +8955,15 @@ msgstr ""
 
 #: ../../news.rst:4264
 msgid "Added ``listjobs.json`` API to Scrapyd (:rev:`2571`)"
-msgstr ""
+msgstr "Scrapyd へ ``listjobs.json`` API を追加 (:rev:`2571`)"
 
 #: ../../news.rst:4265
 msgid "``CsvItemExporter``: added ``join_multivalued`` parameter (:rev:`2578`)"
-msgstr ""
+msgstr "``CsvItemExporter``: ``join_multivalued`` パラメーター追加 (:rev:`2578`)"
 
 #: ../../news.rst:4266
 msgid "Added namespace support to ``xmliter_lxml`` (:rev:`2552`)"
-msgstr ""
+msgstr "``xmliter_lxml`` に名前空間のサポートを追加 (:rev:`2552`)"
 
 #: ../../news.rst:4267
 msgid ""
@@ -8977,7 +8977,7 @@ msgstr ""
 
 #: ../../news.rst:4271
 msgid "Code rearranged and removed"
-msgstr ""
+msgstr "コードの再配置と削除"
 
 #: ../../news.rst:4276
 msgid ""
@@ -9023,7 +9023,7 @@ msgstr ""
 msgid ""
 "Removed unused function: ``scrapy.utils.request.request_info()`` (:rev:"
 "`2577`)"
-msgstr ""
+msgstr "未使用関数削除: ``scrapy.utils.request.request_info()`` (:rev:`2577`)"
 
 #: ../../news.rst:4282
 msgid ""
@@ -9038,7 +9038,7 @@ msgstr ""
 
 #: ../../news.rst:4284
 msgid "Removed experimental crawlspider v2 (:rev:`2632`)"
-msgstr ""
+msgstr "実験的な crawlspider v2 を削除 (:rev:`2632`)"
 
 #: ../../news.rst:4285
 msgid ""
@@ -9055,7 +9055,7 @@ msgstr ""
 
 #: ../../news.rst:4287
 msgid "Removed deprecated Execution Queue (:rev:`2704`)"
-msgstr ""
+msgstr "非推奨の実行キュー(Execution Queue)を削除 (:rev:`2704`)"
 
 #: ../../news.rst:4288
 msgid ""
@@ -9110,24 +9110,24 @@ msgstr ""
 
 #: ../../news.rst:4304
 msgid "HTTP cache now stored by default in the project data dir (#279)"
-msgstr ""
+msgstr "HTTPキャッシュがデフォルトでプロジェクト・データ・ディレクトリに保存されるようになりました (#279)"
 
 #: ../../news.rst:4305
 msgid "Added project data storage directory (#276, #277)"
-msgstr ""
+msgstr "プロジェクト用データ保存ディレクトリ追加 (#276, #277)"
 
 #: ../../news.rst:4306
 msgid ""
 "Documented file structure of Scrapy projects (see command-line tool doc)"
-msgstr ""
+msgstr "Scrapyプロジェクトのファイル構成について文書化(コマンドライン・ツール文書参照)"
 
 #: ../../news.rst:4307
 msgid "New lxml backend for XPath selectors (#147)"
-msgstr ""
+msgstr "XPathセレクター用の新しいlxmlバックエンド (#147)"
 
 #: ../../news.rst:4308
 msgid "Per-spider settings (#245)"
-msgstr ""
+msgstr "スパイダー毎の設定 (#245)"
 
 #: ../../news.rst:4309
 msgid "Support exit codes to signal errors in Scrapy commands (#248)"
@@ -9135,7 +9135,7 @@ msgstr ""
 
 #: ../../news.rst:4310
 msgid "Added ``-c`` argument to ``scrapy shell`` command"
-msgstr ""
+msgstr "``scrapy shell`` コマンドに ``-c`` 引数を追加した"
 
 #: ../../news.rst:4311
 msgid "Made ``libxml2`` optional (#260)"
@@ -9143,23 +9143,23 @@ msgstr ""
 
 #: ../../news.rst:4312
 msgid "New ``deploy`` command (#261)"
-msgstr ""
+msgstr "新 ``deploy`` コマンド (#261)"
 
 #: ../../news.rst:4313
 msgid "Added :setting:`CLOSESPIDER_PAGECOUNT` setting (#253)"
-msgstr ""
+msgstr ":setting:`CLOSESPIDER_PAGECOUNT` 設定を追加 (#253)"
 
 #: ../../news.rst:4314
 msgid "Added :setting:`CLOSESPIDER_ERRORCOUNT` setting (#254)"
-msgstr ""
+msgstr ":setting:`CLOSESPIDER_ERRORCOUNT` 設定を追加 (#254)"
 
 #: ../../news.rst:4317
 msgid "Scrapyd changes"
-msgstr ""
+msgstr "Scrapydの変更"
 
 #: ../../news.rst:4319
 msgid "Scrapyd now uses one process per spider"
-msgstr ""
+msgstr "Scrapydはスパイダーごとに1つのプロセスを使用するようになりました"
 
 #: ../../news.rst:4320
 msgid ""
@@ -9180,7 +9180,7 @@ msgstr ""
 
 #: ../../news.rst:4325 ../../news.rst:4401
 msgid "Changes to settings"
-msgstr ""
+msgstr "設定の変更"
 
 #: ../../news.rst:4327
 msgid ""
@@ -9196,7 +9196,7 @@ msgstr ""
 
 #: ../../news.rst:4331
 msgid "Deprecated/obsoleted functionality"
-msgstr ""
+msgstr "非推奨/廃止された機能"
 
 #: ../../news.rst:4333
 msgid ""
@@ -9262,7 +9262,7 @@ msgstr ""
 
 #: ../../news.rst:4352
 msgid "Deferred signals (#193)"
-msgstr ""
+msgstr "遅延(deferred)シグナル (#193)"
 
 #: ../../news.rst:4353
 msgid ""
@@ -9288,7 +9288,7 @@ msgstr ""
 
 #: ../../news.rst:4357
 msgid "Scrapy log refactoring (#188)"
-msgstr ""
+msgstr "Scrapyログ機能リファクタリング (#188)"
 
 #: ../../news.rst:4358
 msgid ""
@@ -9306,7 +9306,7 @@ msgstr ""
 
 #: ../../news.rst:4363
 msgid "Command-line tool changes"
-msgstr ""
+msgstr "コマンドライン・ツールの変更"
 
 #: ../../news.rst:4365
 msgid ""
@@ -9318,11 +9318,11 @@ msgstr ""
 
 #: ../../news.rst:4368
 msgid "Added bash completion to command-line tool (#210)"
-msgstr ""
+msgstr "コマンドライン・ツールにbash補完を追加 (#210)"
 
 #: ../../news.rst:4369
 msgid "Renamed command ``start`` to ``runserver`` (#209)"
-msgstr ""
+msgstr "コマンド ``start`` を ``runserver`` に名前変更 (#209)"
 
 #: ../../news.rst:4372 ../../news.rst:4434
 msgid "API changes"
@@ -9331,7 +9331,7 @@ msgstr "API変更"
 #: ../../news.rst:4374
 msgid ""
 "``url`` and ``body`` attributes of Request objects are now read-only (#230)"
-msgstr ""
+msgstr "Requestオブジェクトの ``url`` と ``body`` 属性は今や読み取り専用です (#230)"
 
 #: ../../news.rst:4375
 msgid ""
@@ -9343,7 +9343,7 @@ msgstr ""
 msgid ""
 "Removed ``UrlFilterMiddleware`` from ``scrapy.contrib`` (already disabled by "
 "default)"
-msgstr ""
+msgstr "``scrapy.contrib`` から ``UrlFilterMiddleware`` を削除しました(デフォルトでは既に無効になっています)"
 
 #: ../../news.rst:4377
 msgid ""
@@ -9355,50 +9355,50 @@ msgstr ""
 msgid ""
 "Removed Spider Manager ``load()`` method. Now spiders are loaded in the "
 "``__init__`` method itself."
-msgstr ""
+msgstr "Spider Manager の ``load()`` メソッドを削除。今やスパイダーは ``__init__`` メソッドそれ自身によってロードされるます。"
 
 #: ../../news.rst:4380
 msgid "Changes to Scrapy Manager (now called \"Crawler\"):"
-msgstr ""
+msgstr "Scrapyマネージャーを変更しました(今や \"Crawler\" といわれます):"
 
 #: ../../news.rst:4380
 msgid ""
 "``scrapy.core.manager.ScrapyManager`` class renamed to ``scrapy.crawler."
 "Crawler``"
-msgstr ""
+msgstr "``scrapy.core.manager.ScrapyManager`` クラスは ``scrapy.crawler.Crawler`` に名前変更しました。"
 
 #: ../../news.rst:4381
 msgid ""
 "``scrapy.core.manager.scrapymanager`` singleton moved to ``scrapy.project."
 "crawler``"
-msgstr ""
+msgstr "``scrapy.core.manager.scrapymanager`` シングルトンは ``scrapy.project.crawler`` に移動しました。"
 
 #: ../../news.rst:4382
 msgid ""
 "Moved module: ``scrapy.contrib.spidermanager`` to ``scrapy.spidermanager``"
-msgstr ""
+msgstr "モジュール移動: ``scrapy.contrib.spidermanager`` から ``scrapy.spidermanager`` へ"
 
 #: ../../news.rst:4383
 msgid ""
 "Spider Manager singleton moved from ``scrapy.spider.spiders`` to the "
 "``spiders` attribute of ``scrapy.project.crawler`` singleton."
-msgstr ""
+msgstr "SpiderManager シングルトンが ``scrapy.spider.spiders`` から ``scrapy.project.crawler`` シングルトンの ``spiders`` 属性に移動しました。"
 
 #: ../../news.rst:4385
 msgid "moved Stats Collector classes: (#204)"
-msgstr ""
+msgstr "統計収集クラス群を移動した: (#204)"
 
 #: ../../news.rst:4385
 msgid ""
 "``scrapy.stats.collector.StatsCollector`` to ``scrapy.statscol."
 "StatsCollector``"
-msgstr ""
+msgstr "``scrapy.stats.collector.StatsCollector`` から ``scrapy.statscol.StatsCollector`` へ"
 
 #: ../../news.rst:4386
 msgid ""
 "``scrapy.stats.collector.SimpledbStatsCollector`` to ``scrapy.contrib."
 "statscol.SimpledbStatsCollector``"
-msgstr ""
+msgstr "``scrapy.stats.collector.SimpledbStatsCollector`` から ``scrapy.contrib.statscol.SimpledbStatsCollector`` へ"
 
 #: ../../news.rst:4387
 msgid ""
@@ -9414,38 +9414,38 @@ msgstr ""
 
 #: ../../news.rst:4389 ../../news.rst:4391 ../../news.rst:4393
 msgid "backward compatibility kept (with deprecation warning)"
-msgstr ""
+msgstr "後方互換性の維持(非推奨警告付き)"
 
 #: ../../news.rst:4390
 msgid "moved ``scrapy.core.signals`` module to ``scrapy.signals``"
-msgstr ""
+msgstr "``scrapy.core.signals`` モジュールを ``scrapy.signals`` へ移動した"
 
 #: ../../news.rst:4392
 msgid "moved ``scrapy.core.exceptions`` module to ``scrapy.exceptions``"
-msgstr ""
+msgstr "``scrapy.core.exceptions`` モジュールを ``scrapy.exceptions`` へ移動した"
 
 #: ../../news.rst:4394
 msgid "added ``handles_request()`` class method to ``BaseSpider``"
-msgstr ""
+msgstr "``BaseSpider`` に ``handles_request()`` クラス・メソッド追加"
 
 #: ../../news.rst:4395
 msgid ""
 "dropped ``scrapy.log.exc()`` function (use ``scrapy.log.err()`` instead)"
-msgstr ""
+msgstr "``scrapy.log.exc()`` 関数を削除 (代わりに ``scrapy.log.err()`` を使ってください)"
 
 #: ../../news.rst:4396
 msgid "dropped ``component`` argument of ``scrapy.log.msg()`` function"
-msgstr ""
+msgstr "``scrapy.log.msg()`` 関数の ``component`` 引数を削除"
 
 #: ../../news.rst:4397
 msgid "dropped ``scrapy.log.log_level`` attribute"
-msgstr ""
+msgstr "``scrapy.log.log_level`` 属性を削除"
 
 #: ../../news.rst:4398
 msgid ""
 "Added ``from_settings()`` class methods to Spider Manager, and Item Pipeline "
 "Manager"
-msgstr ""
+msgstr "Spider Manager と Item Pipeline Manager に ``from_settings()`` クラス・メソッドを追加"
 
 #: ../../news.rst:4403
 msgid ""
@@ -9461,15 +9461,15 @@ msgstr ""
 
 #: ../../news.rst:4405
 msgid "Added ``KEEP_ALIVE`` setting (#220)"
-msgstr ""
+msgstr "``KEEP_ALIVE`` 設定を追加 (#220)"
 
 #: ../../news.rst:4406
 msgid "Removed ``SERVICE_QUEUE`` setting (#220)"
-msgstr ""
+msgstr "``SERVICE_QUEUE`` 設定を削除 (#220)"
 
 #: ../../news.rst:4407
 msgid "Removed ``COMMANDS_SETTINGS_MODULE`` setting (#201)"
-msgstr ""
+msgstr "``COMMANDS_SETTINGS_MODULE`` 設定を削除 (#201)"
 
 #: ../../news.rst:4408
 msgid ""
@@ -9479,7 +9479,7 @@ msgstr ""
 
 #: ../../news.rst:4411
 msgid "Scrapy 0.9"
-msgstr ""
+msgstr "Scrapy 0.9"
 
 #: ../../news.rst:4418
 msgid "Added SMTP-AUTH support to scrapy.mail"
