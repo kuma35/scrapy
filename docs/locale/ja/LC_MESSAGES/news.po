@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-28 05:11+0900\n"
+"PO-Revision-Date: 2021-06-28 05:20+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -7851,49 +7851,49 @@ msgstr "コミット数でソートされた貢献者のリスト::"
 
 #: ../../news.rst:3944
 msgid "Scrapy 0.18.4 (released 2013-10-10)"
-msgstr ""
+msgstr "Scrapy 0.18.4 (released 2013-10-10)"
 
 #: ../../news.rst:3946
 msgid "IPython refuses to update the namespace. fix #396 (:commit:`3d32c4f`)"
-msgstr ""
+msgstr "IPythonは名前空間の更新を拒否します。修正 #396 (:commit:`3d32c4f`)"
 
 #: ../../news.rst:3947
 msgid ""
 "Fix AlreadyCalledError replacing a request in shell command. closes #407 (:"
 "commit:`b1d8919`)"
-msgstr ""
+msgstr "シェルコマンドのリクエストを置き換えるAlreadyCalledErrorを修正しました。 #407 をクローズ (:commit:`b1d8919`)"
 
 #: ../../news.rst:3948
 msgid "Fix start_requests laziness and early hangs (:commit:`89faf52`)"
-msgstr ""
+msgstr "start_requestsの怠惰と早期ハングを修正 (:commit:`89faf52`)"
 
 #: ../../news.rst:3951
 msgid "Scrapy 0.18.3 (released 2013-10-03)"
-msgstr ""
+msgstr "Scrapy 0.18.3 (released 2013-10-03)"
 
 #: ../../news.rst:3953
 msgid "fix regression on lazy evaluation of start requests (:commit:`12693a5`)"
-msgstr ""
+msgstr "開始リクエストの遅延評価のデグレを修正 (:commit:`12693a5`)"
 
 #: ../../news.rst:3954
 msgid "forms: do not submit reset inputs (:commit:`e429f63`)"
-msgstr ""
+msgstr "フォーム: リセット入力を送信しない (:commit:`e429f63`)"
 
 #: ../../news.rst:3955
 msgid ""
 "increase unittest timeouts to decrease travis false positive failures (:"
 "commit:`912202e`)"
-msgstr ""
+msgstr "ユニット・テストのタイムアウトを増やして、travisの誤検知の失敗を減らします (:commit:`912202e`)"
 
 #: ../../news.rst:3956
 msgid "backport master fixes to json exporter (:commit:`cfc2d46`)"
-msgstr ""
+msgstr "jsonエクスポーターのバックポート・マスターの修正 (:commit:`cfc2d46`)"
 
 #: ../../news.rst:3957
 msgid ""
 "Fix permission and set umask before generating sdist tarball (:commit:"
 "`06149e0`)"
-msgstr ""
+msgstr "sdist tarballを生成する前に権限を修正してumaskを設定します (:commit:`06149e0`)"
 
 #: ../../news.rst:3960
 msgid "Scrapy 0.18.2 (released 2013-09-03)"
