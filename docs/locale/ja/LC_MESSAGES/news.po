@@ -9094,7 +9094,7 @@ msgstr "#NNN形式の番号は古い課題トラッカー(issue tracker)（Trac�
 
 #: ../../news.rst:4299 ../../news.rst:4343 ../../news.rst:4416
 msgid "New features and improvements"
-msgstr ""
+msgstr "新機能と改善点"
 
 #: ../../news.rst:4301
 msgid ""
@@ -9326,7 +9326,7 @@ msgstr ""
 
 #: ../../news.rst:4372 ../../news.rst:4434
 msgid "API changes"
-msgstr ""
+msgstr "API変更"
 
 #: ../../news.rst:4374
 msgid ""
@@ -9487,105 +9487,105 @@ msgstr "scrapy.mailにSMTP-AUTHサポートを追加。"
 
 #: ../../news.rst:4419
 msgid "New settings added: ``MAIL_USER``, ``MAIL_PASS`` (:rev:`2065` | #149)"
-msgstr ""
+msgstr "新設定追加: ``MAIL_USER``, ``MAIL_PASS`` (:rev:`2065` | #149)"
 
 #: ../../news.rst:4420
 msgid ""
 "Added new scrapy-ctl view command - To view URL in the browser, as seen by "
 "Scrapy (:rev:`2039`)"
-msgstr ""
+msgstr "新しいscrapy-ctlviewコマンドを追加 - Scrapyで見られるように、ブラウザーでURLを表示します (:rev:`2039`)"
 
 #: ../../news.rst:4421
 msgid ""
 "Added web service for controlling Scrapy process (this also deprecates the "
 "web console. (:rev:`2053` | #167)"
-msgstr ""
+msgstr "Scrapyプロセスを制御するためのWebサービスが追加されました（これにより、Webコンソールも非推奨になります。 (:rev:`2053` | #167)"
 
 #: ../../news.rst:4422
 msgid ""
 "Support for running Scrapy as a service, for production systems (:rev:"
 "`1988`, :rev:`2054`, :rev:`2055`, :rev:`2056`, :rev:`2057` | #168)"
-msgstr ""
+msgstr "本番システムの為に、Scrapyをサービスとして実行するためのサポート (:rev:`1988`, :rev:`2054`, :rev:`2055`, :rev:`2056`, :rev:`2057` | #168)"
 
 #: ../../news.rst:4423
 msgid ""
 "Added wrapper induction library (documentation only available in source code "
 "for now). (:rev:`2011`)"
-msgstr ""
+msgstr "ラッパー帰納(wrapper induction)ライブラリを追加しました(文書は現在ソースコードでのみ利用可能です)。 (:rev:`2011`)"
 
 #: ../../news.rst:4424
 msgid ""
 "Simplified and improved response encoding support (:rev:`1961`, :rev:`1969`)"
-msgstr ""
+msgstr "簡素化および改善されたレスポンスのエンコーディングのサポート (:rev:`1961`, :rev:`1969`)"
 
 #: ../../news.rst:4425
 msgid "Added ``LOG_ENCODING`` setting (:rev:`1956`, documentation available)"
-msgstr ""
+msgstr "``LOG_ENCODING`` 設定追加 (:rev:`1956`, 文書あり)"
 
 #: ../../news.rst:4426
 msgid ""
 "Added ``RANDOMIZE_DOWNLOAD_DELAY`` setting (enabled by default) (:rev:"
 "`1923`, doc available)"
-msgstr ""
+msgstr "``RANDOMIZE_DOWNLOAD_DELAY`` 設定を追加(デフォルトで有効) (:rev:`1923`, 文書あり)"
 
 #: ../../news.rst:4427
 msgid "``MailSender`` is no longer IO-blocking (:rev:`1955` | #146)"
-msgstr ""
+msgstr "``MailSender`` はもはや入出力ブロッキングしません (:rev:`1955` | #146)"
 
 #: ../../news.rst:4428
 msgid ""
 "Linkextractors and new Crawlspider now handle relative base tag urls (:rev:"
 "`1960` | #148)"
-msgstr ""
+msgstr "Linkextractors と 新しい Crawlspider は今や相対ベースタグURLを処理するようになりました (:rev:`1960` | #148)"
 
 #: ../../news.rst:4429
 msgid ""
 "Several improvements to Item Loaders and processors (:rev:`2022`, :rev:"
 "`2023`, :rev:`2024`, :rev:`2025`, :rev:`2026`, :rev:`2027`, :rev:`2028`, :"
 "rev:`2029`, :rev:`2030`)"
-msgstr ""
+msgstr "アイテムローダーとプロセッサのいくつかの改善 (:rev:`2022`, :rev:`2023`, :rev:`2024`, :rev:`2025`, :rev:`2026`, :rev:`2027`, :rev:`2028`, :rev:`2029`, :rev:`2030`)"
 
 #: ../../news.rst:4430
 msgid ""
 "Added support for adding variables to telnet console (:rev:`2047` | #165)"
-msgstr ""
+msgstr "telnetコンソールに変数を追加するためのサポートが追加されました (:rev:`2047` | #165)"
 
 #: ../../news.rst:4431
 msgid "Support for requests without callbacks (:rev:`2050` | #166)"
-msgstr ""
+msgstr "コールバックなしのリクエストのサポート (:rev:`2050` | #166)"
 
 #: ../../news.rst:4436
 msgid "Change ``Spider.domain_name`` to ``Spider.name`` (SEP-012, :rev:`1975`)"
-msgstr ""
+msgstr "``Spider.domain_name`` から ``Spider.name`` へ変更 (SEP-012, :rev:`1975`)"
 
 #: ../../news.rst:4437
 msgid "``Response.encoding`` is now the detected encoding (:rev:`1961`)"
-msgstr ""
+msgstr "``Response.encoding`` は今やエンコーディングを検知します (:rev:`1961`)"
 
 #: ../../news.rst:4438
 msgid ""
 "``HttpErrorMiddleware`` now returns None or raises an exception (:rev:`2006` "
 "| #157)"
-msgstr ""
+msgstr "``HttpErrorMiddleware`` は今やNoneを返すか、または例外を引き起こします (:rev:`2006` | #157)"
 
 #: ../../news.rst:4439
 msgid ""
 "``scrapy.command`` modules relocation (:rev:`2035`, :rev:`2036`, :rev:`2037`)"
-msgstr ""
+msgstr "``scrapy.command`` モジュール群の再配置 (:rev:`2035`, :rev:`2036`, :rev:`2037`)"
 
 #: ../../news.rst:4440
 msgid "Added ``ExecutionQueue`` for feeding spiders to scrape (:rev:`2034`)"
-msgstr ""
+msgstr "スクラップするためのフィード・スパイダーのための ``ExecutionQueue`` を追加 (:rev:`2034`)"
 
 #: ../../news.rst:4441
 msgid "Removed ``ExecutionEngine`` singleton (:rev:`2039`)"
-msgstr ""
+msgstr "``ExecutionEngine`` シングルトンを削除 (:rev:`2039`)"
 
 #: ../../news.rst:4442
 msgid ""
 "Ported ``S3ImagesStore`` (images pipeline) to use boto and threads (:rev:"
 "`2033`)"
-msgstr ""
+msgstr "botoとスレッドを使用するために ``S3ImagesStore`` (画像パイプライン)を移植しました (:rev:`2033`)"
 
 #: ../../news.rst:4443
 msgid ""
