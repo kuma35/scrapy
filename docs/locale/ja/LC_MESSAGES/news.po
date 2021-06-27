@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-28 05:06+0900\n"
+"PO-Revision-Date: 2021-06-28 05:11+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -7615,31 +7615,31 @@ msgstr "スパイダー名がunicodeの場合のログ・エラーを修正 (:is
 
 #: ../../news.rst:3844
 msgid "Scrapy 0.20.2 (released 2013-12-09)"
-msgstr ""
+msgstr "Scrapy 0.20.2 (released 2013-12-09)"
 
 #: ../../news.rst:3846
 msgid "Update CrawlSpider Template with Selector changes (:commit:`6d1457d`)"
-msgstr ""
+msgstr "セレクターの変更に伴いCrawlSpiderテンプレートを更新 (:commit:`6d1457d`)"
 
 #: ../../news.rst:3847
 msgid "fix method name in tutorial. closes GH-480 (:commit:`b4fc359`"
-msgstr ""
+msgstr "チュートリアルのメソッド名を修正しました。 GH-480 をクローズ ( :commit:`b4fc359` )"
 
 #: ../../news.rst:3850
 msgid "Scrapy 0.20.1 (released 2013-11-28)"
-msgstr ""
+msgstr "Scrapy 0.20.1 (released 2013-11-28)"
 
 #: ../../news.rst:3852
 msgid ""
 "include_package_data is required to build wheels from published sources (:"
 "commit:`5ba1ad5`)"
-msgstr ""
+msgstr "include_package_dataは、公開されたソースからwheelを構築するために必要です (:commit:`5ba1ad5`)"
 
 #: ../../news.rst:3853
 msgid ""
 "process_parallel was leaking the failures on its internal deferreds.  closes "
 "#458 (:commit:`419a780`)"
-msgstr ""
+msgstr "process_parallelは、内部遅延で障害をリークしていました。 #458 をクローズ (:commit:`419a780`)"
 
 #: ../../news.rst:3856
 msgid "Scrapy 0.20.0 (released 2013-11-08)"
