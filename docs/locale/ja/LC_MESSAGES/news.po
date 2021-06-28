@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-28 05:37+0900\n"
+"PO-Revision-Date: 2021-06-29 03:28+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -7643,171 +7643,171 @@ msgstr "process_parallelは、内部遅延で障害をリークしていまし�
 
 #: ../../news.rst:3856
 msgid "Scrapy 0.20.0 (released 2013-11-08)"
-msgstr ""
+msgstr "Scrapy 0.20.0 (released 2013-11-08)"
 
 #: ../../news.rst:3861
 msgid ""
 "New Selector's API including CSS selectors (:issue:`395` and :issue:`426`),"
-msgstr ""
+msgstr "CSSセレクターを含む新セレクターAPI (:issue:`395` and :issue:`426`),"
 
 #: ../../news.rst:3862
 msgid ""
 "Request/Response url/body attributes are now immutable (modifying them had "
 "been deprecated for a long time)"
-msgstr ""
+msgstr "リクエスト/レスポンスのURL/ボディ属性は不変になりました(それらの変更は長い間非推奨でした)"
 
 #: ../../news.rst:3864
 msgid ":setting:`ITEM_PIPELINES` is now defined as a dict (instead of a list)"
-msgstr ""
+msgstr ":setting:`ITEM_PIPELINES` が(リストではなく)辞書として定義されるようになりました"
 
 #: ../../news.rst:3865
 msgid "Sitemap spider can fetch alternate URLs (:issue:`360`)"
-msgstr ""
+msgstr "サイトマップ・スパイダーは代替URLを取得できます (:issue:`360`)"
 
 #: ../../news.rst:3866
 msgid ""
 "``Selector.remove_namespaces()`` now remove namespaces from element's "
 "attributes. (:issue:`416`)"
-msgstr ""
+msgstr "``Selector.remove_namespaces()`` は、要素の属性から名前空間を削除するようになりました。 (:issue:`416`)"
 
 #: ../../news.rst:3867
 msgid ""
 "Paved the road for Python 3.3+ (:issue:`435`, :issue:`436`, :issue:`431`, :"
 "issue:`452`)"
-msgstr ""
+msgstr "Python 3.3以降への道を開いた (:issue:`435`, :issue:`436`, :issue:`431`, :issue:`452`)"
 
 #: ../../news.rst:3868
 msgid ""
 "New item exporter using native python types with nesting support (:issue:"
 "`366`)"
-msgstr ""
+msgstr "ネストをサポートするネイティブPythonの型を使用する新しいアイテム・エクスポーター (:issue:`366`)"
 
 #: ../../news.rst:3869
 msgid ""
 "Tune HTTP1.1 pool size so it matches concurrency defined by settings (:"
 "commit:`b43b5f575`)"
-msgstr ""
+msgstr "設定で定義された同時実行性と一致するようにHTTP1.1プール・サイズを調整します (:commit:`b43b5f575`)"
 
 #: ../../news.rst:3870
 msgid ""
 "scrapy.mail.MailSender now can connect over TLS or upgrade using STARTTLS (:"
 "issue:`327`)"
-msgstr ""
+msgstr "sparky.mail.MailSenderは、TLS経由で接続するか、STARTTLSを使用してアップグレードできるようになりました (:issue:`327`)"
 
 #: ../../news.rst:3871
 msgid ""
 "New FilesPipeline with functionality factored out from ImagesPipeline (:"
 "issue:`370`, :issue:`409`)"
-msgstr ""
+msgstr "ImagesPipelineから機能が除外された新しいFilesPipeline (:issue:`370`, :issue:`409`)"
 
 #: ../../news.rst:3872
 msgid "Recommend Pillow instead of PIL for image handling (:issue:`317`)"
-msgstr ""
+msgstr "画像処理にはPILではなくPillowをお勧めします (:issue:`317`)"
 
 #: ../../news.rst:3873
 msgid "Added Debian packages for Ubuntu Quantal and Raring (:commit:`86230c0`)"
-msgstr ""
+msgstr "Ubuntu QuantalおよびRaring用のDebianパッケージを追加しました (:commit:`86230c0`)"
 
 #: ../../news.rst:3874
 msgid ""
 "Mock server (used for tests) can listen for HTTPS requests (:issue:`410`)"
-msgstr ""
+msgstr "モック・サーバー(テストに使用)はHTTPSリクエストをリッスンできます (:issue:`410`)"
 
 #: ../../news.rst:3875
 msgid ""
 "Remove multi spider support from multiple core components (:issue:`422`, :"
 "issue:`421`, :issue:`420`, :issue:`419`, :issue:`423`, :issue:`418`)"
-msgstr ""
+msgstr "複数のコア・コンポーネントからマルチ・スパイダー・サポートを削除 (:issue:`422`, :issue:`421`, :issue:`420`, :issue:`419`, :issue:`423`, :issue:`418`)"
 
 #: ../../news.rst:3877
 msgid ""
 "Travis-CI now tests Scrapy changes against development versions of ``w3lib`` "
 "and ``queuelib`` python packages."
-msgstr ""
+msgstr "Travis-CIは、 ``w3lib`` と ``queuelib`` のPythonパッケージの開発バージョンに対してScrapyの変更をテストするようになりました。"
 
 #: ../../news.rst:3878
 msgid "Add pypy 2.1 to continuous integration tests (:commit:`ecfa7431`)"
-msgstr ""
+msgstr "継続的インテグレーション・テストにpypy2.1を追加 (:commit:`ecfa7431`)"
 
 #: ../../news.rst:3879
 msgid ""
 "Pylinted, pep8 and removed old-style exceptions from source (:issue:`430`, :"
 "issue:`432`)"
-msgstr ""
+msgstr "Pylintedとpep8と、ソースから古いスタイルの例外を削除 (:issue:`430`, :issue:`432`)"
 
 #: ../../news.rst:3880
 msgid "Use importlib for parametric imports (:issue:`445`)"
-msgstr ""
+msgstr "パラメトリック・インポートにはimportlibを使用します (:issue:`445`)"
 
 #: ../../news.rst:3881
 msgid ""
 "Handle a regression introduced in Python 2.7.5 that affects XmlItemExporter "
 "(:issue:`372`)"
-msgstr ""
+msgstr "XmlItemExporterに影響するPython2.7.5で導入されたデグレを処理 (:issue:`372`)"
 
 #: ../../news.rst:3882
 msgid "Bugfix crawling shutdown on SIGINT (:issue:`450`)"
-msgstr ""
+msgstr "SIGINTでのクロール・シャットダウンのバグ修正 (:issue:`450`)"
 
 #: ../../news.rst:3883
 msgid ""
 "Do not submit ``reset`` type inputs in FormRequest.from_response (:commit:"
 "`b326b87`)"
-msgstr ""
+msgstr "FormRequest.from_response で ``reset`` 型の入力を送信しないでください (:commit:`b326b87`)"
 
 #: ../../news.rst:3884
 msgid ""
 "Do not silence download errors when request errback raises an exception (:"
 "commit:`684cfc0`)"
-msgstr ""
+msgstr "リクエストのerrbackで例外が発生したときにダウンロード・エラーを無視しないでください (:commit:`684cfc0`)"
 
 #: ../../news.rst:3889
 msgid "Fix tests under Django 1.6 (:commit:`b6bed44c`)"
-msgstr ""
+msgstr "Django 1.6でのテストを修正 (:commit:`b6bed44c`)"
 
 #: ../../news.rst:3890
 msgid ""
 "Lot of bugfixes to retry middleware under disconnections using HTTP 1.1 "
 "download handler"
-msgstr ""
+msgstr "HTTP1.1ダウンロード・ハンドラーを使用して切断時にミドルウェアを再試行するための多くのバグ修正"
 
 #: ../../news.rst:3891
 msgid "Fix inconsistencies among Twisted releases (:issue:`406`)"
-msgstr ""
+msgstr "Twistedリリース間の不整合を修正 (:issue:`406`)"
 
 #: ../../news.rst:3892
 msgid "Fix Scrapy shell bugs (:issue:`418`, :issue:`407`)"
-msgstr ""
+msgstr "Scrapyシェルのバグを修正 (:issue:`418`, :issue:`407`)"
 
 #: ../../news.rst:3893
 msgid "Fix invalid variable name in setup.py (:issue:`429`)"
-msgstr ""
+msgstr "setup.pyの不正な変数名を修正 (:issue:`429`)"
 
 #: ../../news.rst:3894
 msgid "Fix tutorial references (:issue:`387`)"
-msgstr ""
+msgstr "チュートリアルの参照を修正 (:issue:`387`)"
 
 #: ../../news.rst:3895
 msgid "Improve request-response docs (:issue:`391`)"
-msgstr ""
+msgstr "リクエスト・レスポンス文書群の改善 (:issue:`391`)"
 
 #: ../../news.rst:3896
 msgid ""
 "Improve best practices docs (:issue:`399`, :issue:`400`, :issue:`401`, :"
 "issue:`402`)"
-msgstr ""
+msgstr "ベスト・プラクティス文書の改善 (:issue:`399`, :issue:`400`, :issue:`401`, :issue:`402`)"
 
 #: ../../news.rst:3897
 msgid "Improve django integration docs (:issue:`404`)"
-msgstr ""
+msgstr "django統合ドキュメントを改善 (:issue:`404`)"
 
 #: ../../news.rst:3898
 msgid "Document ``bindaddress`` request meta (:commit:`37c24e01d7`)"
-msgstr ""
+msgstr "``bindaddress`` リクエスト・メタの文書化 (:commit:`37c24e01d7`)"
 
 #: ../../news.rst:3899
 msgid "Improve ``Request`` class documentation (:issue:`226`)"
-msgstr ""
+msgstr "``Request`` クラス文書の改善 (:issue:`226`)"
 
 #: ../../news.rst:3902
 msgid "Other"
@@ -7815,27 +7815,27 @@ msgstr "その他"
 
 #: ../../news.rst:3904
 msgid "Dropped Python 2.6 support (:issue:`448`)"
-msgstr ""
+msgstr "Python 2.6のサポートを終了しました (:issue:`448`)"
 
 #: ../../news.rst:3905
 msgid ""
 "Add :doc:`cssselect <cssselect:index>` python package as install dependency"
-msgstr ""
+msgstr "インストールの依存関係として :doc:`cssselect <cssselect:index>` pythonパッケージを追加"
 
 #: ../../news.rst:3906
 msgid ""
 "Drop libxml2 and multi selector's backend support, `lxml`_ is required from "
 "now on."
-msgstr ""
+msgstr "libxml2とマルチ・セレクターのバックエンド・サポートを削除します。今後は `lxml`_ が必要になります。"
 
 #: ../../news.rst:3907
 msgid ""
 "Minimum Twisted version increased to 10.0.0, dropped Twisted 8.0 support."
-msgstr ""
+msgstr "Twistedの最小バージョンが10.0.0に増加し、Twisted8.0のサポートが削除されました。"
 
 #: ../../news.rst:3908
 msgid "Running test suite now requires ``mock`` python library (:issue:`390`)"
-msgstr ""
+msgstr "テストスイートを実行するには、 ``mock`` Pythonライブラリが必要になります (:issue:`390`)"
 
 #: ../../news.rst:3912
 msgid "Thanks"
