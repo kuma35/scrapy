@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-29 03:28+0900\n"
+"PO-Revision-Date: 2021-06-29 03:37+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -7907,45 +7907,45 @@ msgstr "``scrapy check`` コマンドの修正と後方互換性のあるマル�
 
 #: ../../news.rst:3966
 msgid "Scrapy 0.18.1 (released 2013-08-27)"
-msgstr ""
+msgstr "Scrapy 0.18.1 (released 2013-08-27)"
 
 #: ../../news.rst:3968
 msgid "remove extra import added by cherry picked changes (:commit:`d20304e`)"
-msgstr ""
+msgstr "チェリー・ピックの変更によって追加された余分なインポートを削除 (:commit:`d20304e`)"
 
 #: ../../news.rst:3969
 msgid "fix crawling tests under twisted pre 11.0.0 (:commit:`1994f38`)"
-msgstr ""
+msgstr "twisted pre 11.0.0でのクロール・テストを修正 (:commit:`1994f38`)"
 
 #: ../../news.rst:3970
 msgid "py26 can not format zero length fields {} (:commit:`abf756f`)"
-msgstr ""
+msgstr "py26は長さゼロのフィールドをフォーマットできません{} (:commit:`abf756f`)"
 
 #: ../../news.rst:3971
 msgid "test PotentiaDataLoss errors on unbound responses (:commit:`b15470d`)"
-msgstr ""
+msgstr "バインドされていないレスポンスでPotentiaDataLossエラーをテストします (:commit:`b15470d`)"
 
 #: ../../news.rst:3972
 msgid ""
 "Treat responses without content-length or Transfer-Encoding as good "
 "responses (:commit:`c4bf324`)"
-msgstr ""
+msgstr "content-lengthまたはTransfer-Encodingのないレスポンスを適切なレスポンスとして扱います (:commit:`c4bf324`)"
 
 #: ../../news.rst:3973
 msgid ""
 "do no include ResponseFailed if http11 handler is not enabled (:commit:"
 "`6cbe684`)"
-msgstr ""
+msgstr "http11ハンドラーが有効になっていない場合はResponseFailedを含めないでください (:commit:`6cbe684`)"
 
 #: ../../news.rst:3974
 msgid ""
 "New HTTP client wraps connection lost in ResponseFailed exception. fix #373 "
 "(:commit:`1a20bba`)"
-msgstr ""
+msgstr "新しいHTTPクライアントは、ResponseFailed例外で失われた接続をラップ(wrap)します。修正 #373 (:commit:`1a20bba`)"
 
 #: ../../news.rst:3975
 msgid "limit travis-ci build matrix (:commit:`3b01bb8`)"
-msgstr ""
+msgstr "travis-ciビルド・マトリックスを制限 (:commit:`3b01bb8`)"
 
 #: ../../news.rst:3976
 msgid "Merge pull request #375 from peterarenot/patch-1 (:commit:`fa766d7`)"
@@ -7953,29 +7953,29 @@ msgstr "peterarenot/patch-1からのプル・リクエスト #375 をマージ (
 
 #: ../../news.rst:3977
 msgid "Fixed so it refers to the correct folder (:commit:`3283809`)"
-msgstr ""
+msgstr "正しいフォルダを参照するように修正 (:commit:`3283809`)"
 
 #: ../../news.rst:3978
 msgid "added Quantal & Raring to support Ubuntu releases (:commit:`1411923`)"
-msgstr ""
+msgstr "UbuntuリリースをサポートするためにQuantal＆Raringを追加 (:commit:`1411923`)"
 
 #: ../../news.rst:3979
 msgid ""
 "fix retry middleware which didn't retry certain connection errors after the "
 "upgrade to http1 client, closes GH-373 (:commit:`bb35ed0`)"
-msgstr ""
+msgstr "http1クライアントへのアップグレード後に特定の接続エラーを再試行しなかった再試行ミドルウェアを修正し、 GH-373をクローズ (:commit:`bb35ed0`)"
 
 #: ../../news.rst:3980
 msgid "fix XmlItemExporter in Python 2.7.4 and 2.7.5 (:commit:`de3e451`)"
-msgstr ""
+msgstr "Python 2.7.4および2.7.5でXmlItemExporterを修正 (:commit:`de3e451`)"
 
 #: ../../news.rst:3981
 msgid "minor updates to 0.18 release notes (:commit:`c45e5f1`)"
-msgstr ""
+msgstr "0.18リリース・ノートの些細な更新 (:commit:`c45e5f1`)"
 
 #: ../../news.rst:3982
 msgid "fix contributors list format (:commit:`0b60031`)"
-msgstr ""
+msgstr "寄稿者リストの形式を修正 (:commit:`0b60031`)"
 
 #: ../../news.rst:3985
 msgid "Scrapy 0.18.0 (released 2013-08-09)"
