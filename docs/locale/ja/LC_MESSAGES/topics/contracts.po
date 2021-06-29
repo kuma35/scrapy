@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-04-25 12:50+0900\n"
+"PO-Revision-Date: 2021-06-29 14:32+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -20,17 +20,14 @@ msgstr ""
 
 #: ../../topics/contracts.rst:5
 msgid "Spiders Contracts"
-msgstr "スパイダー コントラクト"
+msgstr "スパイダー規約(contract)"
 
 #: ../../topics/contracts.rst:7
 msgid ""
 "Testing spiders can get particularly annoying and while nothing prevents you "
 "from writing unit tests the task gets cumbersome quickly. Scrapy offers an "
 "integrated way of testing your spiders by the means of contracts."
-msgstr ""
-"スパイダーのテストは特にウンコで、単体テストを書くのは楽チンだけど、テスト作"
-"業はマンドクサ。Scrapyはコントラクト(訳注:contract;取り決め)によってスパイ"
-"ダーを統一的にテストする方法を提供します。"
+msgstr "スパイダーのテストは特にウンコで、単体テストを書くのは楽チンだけど、テスト作業はマンドクサ。Scrapyは規約(contract)によってスパイダーを統一的にテストする方法を提供します。"
 
 #: ../../topics/contracts.rst:11
 msgid ""
@@ -38,80 +35,58 @@ msgid ""
 "url and check various constraints for how the callback processes the "
 "response. Each contract is prefixed with an ``@`` and included in the "
 "docstring. See the following example::"
-msgstr ""
-"これにより、サンプルURLをハードコーディングしてスパイダーの各コールバックをテ"
-"ストし、コールバックが応答を処理する方法のさまざまな制約を確認できます。各コ"
-"ントラクトはdocstringに含め、各コントラクトの先頭には ``@`` が付けられていま"
-"す。次の例をご覧ください::"
+msgstr "これにより、サンプルURLをハードコーディングしてスパイダーの各コールバックをテストし、コールバックが応答を処理する方法のさまざまな制約を確認できます。各規約はdocstringに含め、各コントラクトの先頭には ``@`` が付けられています。次の例をご覧ください::"
 
 #: ../../topics/contracts.rst:26
 msgid "This callback is tested using three built-in contracts:"
-msgstr ""
-"このコールバックは、3つの組み込みコントラクトを使用してテストされます。:"
+msgstr "このコールバックは、3つの組み込み規約を使用してテストされます:"
 
 #: ../../topics/contracts.rst:32
 msgid ""
 "This contract (``@url``) sets the sample URL used when checking other "
 "contract conditions for this spider. This contract is mandatory. All "
 "callbacks lacking this contract are ignored when running the checks::"
-msgstr ""
-"このコントラクト(``@url``)は、このスパイダーの他のコントラクト条件をチェック"
-"するときに使用されるサンプルURLを設定します。 このコントラクトは必須です。 "
-"チェックを実行する場合、このコントラクトがないコールバックはすべて無視されま"
-"す::"
+msgstr "この規約(``@url``)は、このスパイダーの他の規約条件をチェックするときに使用されるサンプルURLを設定します。 この規約は必須です。 チェックを実行する場合、この規約がないコールバックはすべて無視されます::"
 
 #: ../../topics/contracts.rst:40
 msgid ""
 "This contract (``@cb_kwargs``) sets the :attr:`cb_kwargs <scrapy.http."
 "Request.cb_kwargs>` attribute for the sample request. It must be a valid "
 "JSON dictionary. ::"
-msgstr ""
-"このコントラクト(``@cb_kwargs``)は、サンプルリクエストの :attr:`cb_kwargs "
-"<scrapy.http.Request.cb_kwargs>` 属性を設定します。 有効なJSON辞書である必要"
-"があります。::"
+msgstr "この規約(``@cb_kwargs``)は、サンプルリクエストの :attr:`cb_kwargs <scrapy.http.Request.cb_kwargs>` 属性を設定します。 有効なJSON辞書である必要があります::"
 
 #: ../../topics/contracts.rst:48
 msgid ""
 "This contract (``@returns``) sets lower and upper bounds for the items and "
 "requests returned by the spider. The upper bound is optional::"
-msgstr ""
-"このコントラクト(``@returns``)は、スパイダーによって返されるアイテムとリクエ"
-"ストの下限と上限を設定します。 上限はオプションです。::"
+msgstr "この規約(``@returns``)は、スパイダーによって返されるアイテムとリクエストの下限と上限を設定します。 上限はオプションです::"
 
 #: ../../topics/contracts.rst:55
 msgid ""
 "This contract (``@scrapes``) checks that all the items returned by the "
 "callback have the specified fields::"
-msgstr ""
-"このコントラクト(``@scrapes``)は、コールバックによって返されたすべてのアイテ"
-"ムに指定されたフィールドがあることを確認します。::"
+msgstr "この規約(``@scrapes``)は、コールバックによって返されたすべてのアイテムに指定されたフィールドがあることを確認します。::"
 
 #: ../../topics/contracts.rst:60
 msgid "Use the :command:`check` command to run the contract checks."
-msgstr ""
-":command:`check` コマンドを使用して、コントラクトチェックを実行します。"
+msgstr ":command:`check` コマンドを使用して、規約チェックを実行します。"
 
 #: ../../topics/contracts.rst:63
 msgid "Custom Contracts"
-msgstr "カスタム コントラクト"
+msgstr "カスタム規約"
 
 #: ../../topics/contracts.rst:65
 msgid ""
 "If you find you need more power than the built-in Scrapy contracts you can "
 "create and load your own contracts in the project by using the :setting:"
 "`SPIDER_CONTRACTS` setting::"
-msgstr ""
-"うぬはチカラが欲しくないか？ 組み込みScrapyコントラクトよりも多くのチカラを。"
-"その場合は、 :setting:`SPIDER_CONTRACTS` 設定を使用して、プロジェクトに独自の"
-"コントラクトを作成してロードできます::"
+msgstr "うぬはチカラが欲しくないか？ 組み込みScrapyコントラクトよりも多くのチカラを。その場合は、 :setting:`SPIDER_CONTRACTS` 設定を使用して、プロジェクトに独自の規約を作成してロードできます::"
 
 #: ../../topics/contracts.rst:74
 msgid ""
 "Each contract must inherit from :class:`~scrapy.contracts.Contract` and can "
 "override three methods:"
-msgstr ""
-"各コントラクトは :class:`~scrapy.contracts.Contract` から継承する必要があり、"
-"3つのメソッドをオーバーライドできます。:"
+msgstr "各規約は :class:`~scrapy.contracts.Contract` から継承する必要があり、3つのメソッドをオーバーライドできます。:"
 
 #: ../../topics/contracts.rst:0
 msgid "Parameters"
@@ -119,7 +94,7 @@ msgstr "パラメータ"
 
 #: ../../topics/contracts.rst:81
 msgid "callback function to which the contract is associated"
-msgstr "コントラクトが関連付けられているコールバック関数"
+msgstr "規約が関連付けられているコールバック関数"
 
 #: ../../topics/contracts.rst:84
 msgid "list of arguments passed into the docstring (whitespace separated)"
@@ -131,11 +106,7 @@ msgid ""
 "request object. :class:`~scrapy.http.Request` is used by default, but this "
 "can be changed with the ``request_cls`` attribute. If multiple contracts in "
 "chain have this attribute defined, the last one is used."
-msgstr ""
-"これは、リクエストオブジェクトのデフォルト引数を含む引数として ``dict`` を受"
-"け取ります。 :class:`~scrapy.http.Request` はデフォルトで使用されますが、これ"
-"は ``request_cls`` 属性で変更できます。 チェーン内の複数のコントラクトにこの"
-"属性が定義されている場合、最後のコントラクトが使用されます。"
+msgstr "これは、リクエストオブジェクトのデフォルト引数を含む引数として ``dict`` を受け取ります。 :class:`~scrapy.http.Request` はデフォルトで使用されますが、これは ``request_cls`` 属性で変更できます。 チェーン内の複数の規約にこの属性が定義されている場合、最後の規約が使用されます。"
 
 #: ../../topics/contracts.rst:95
 msgid "Must return the same or a modified version of it."
@@ -169,15 +140,13 @@ msgstr ""
 
 #: ../../../scrapy/exceptions.py:docstring of scrapy.exceptions.ContractFail:1
 msgid "Error raised in case of a failing contract"
-msgstr "コントラクトが失敗した場合に発生するエラー"
+msgstr "規約が失敗した場合に発生するエラー"
 
 #: ../../topics/contracts.rst:113
 msgid ""
 "Here is a demo contract which checks the presence of a custom header in the "
 "response received::"
-msgstr ""
-"以下に、受信した応答のカスタムヘッダーの存在を確認するデモ・コントラクトを示"
-"します。::"
+msgstr "以下に、受信した応答のカスタムヘッダーの存在を確認するデモ規約を示します::"
 
 #: ../../topics/contracts.rst:134
 msgid "Detecting check runs"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-29 04:07+0900\n"
+"PO-Revision-Date: 2021-06-29 22:48+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -2445,14 +2445,14 @@ msgid ""
 "<scrapy.http.Request.cb_kwargs>`) can now be tested using the new :class:"
 "`@cb_kwargs <scrapy.contracts.default.CallbackKeywordArgumentsContract>` :"
 "ref:`spider contract <topics-contracts>` (:issue:`3985`, :issue:`3988`)"
-msgstr "キーワード引数を受け取るコールバック( :attr:`Request.cb_kwargs <scrapy.http.Request.cb_kwargs>` 参照）は、新しい :class:`@cb_kwargs <scrapy.contracts.default.CallbackKeywordArgumentsContract>` :ref:`スパイダーコントラクト <topics-contracts>` を使用してテストできるようになりました。 (:issue:`3985`, :issue:`3988`)"
+msgstr "キーワード引数を受け取るコールバック( :attr:`Request.cb_kwargs <scrapy.http.Request.cb_kwargs>` 参照）は、新しい :class:`@cb_kwargs <scrapy.contracts.default.CallbackKeywordArgumentsContract>` :ref:`スパイダー規約 <topics-contracts>` を使用してテストできるようになりました。 (:issue:`3985`, :issue:`3988`)"
 
 #: ../../news.rst:1553
 msgid ""
 "When a :class:`@scrapes <scrapy.contracts.default.ScrapesContract>` spider "
 "contract fails, all missing fields are now reported (:issue:`766`, :issue:"
 "`3939`)"
-msgstr ":class:`@scrapes <scrapy.contracts.default.ScrapesContract>` スパイダーコントラクトが失敗した場合、欠落しているすべてのフィールドが報告されるようになりました (:issue:`766`, :issue:`3939`)"
+msgstr ":class:`@scrapes <scrapy.contracts.default.ScrapesContract>` スパイダー規約が失敗した場合、欠落しているすべてのフィールドが報告されるようになりました (:issue:`766`, :issue:`3939`)"
 
 #: ../../news.rst:1557
 msgid ""
@@ -2818,7 +2818,7 @@ msgid ""
 "of the :command:`check` command, which allows :ref:`detecting contract check "
 "runs from code <detecting-contract-check-runs>` (:issue:`3704`, :issue:"
 "`3739`)"
-msgstr ":command:`check` コマンドの実行中に ``SCRAPY_CHECK` `変数が ``true`` 文字列に設定されるようになりました。これにより、 :ref:`コードからコントラクト・チェックの実行を検出 <detecting-contract-check-runs>` できます。 (:issue:`3704`, :issue:`3739`)"
+msgstr ":command:`check` コマンドの実行中に ``SCRAPY_CHECK` `変数が ``true`` 文字列に設定されるようになりました。これにより、 :ref:`コードから規約チェックの実行を検出 <detecting-contract-check-runs>` できます。 (:issue:`3704`, :issue:`3739`)"
 
 #: ../../news.rst:1795
 msgid ""
@@ -3381,25 +3381,25 @@ msgstr "``scrapy.contracts`` の改善"
 
 #: ../../news.rst:2124
 msgid "Exceptions in contracts code are handled better (:issue:`3377`);"
-msgstr "コントラクト・コードの例外はより適切に処理されます (:issue:`3377`);"
+msgstr "規約コードの例外はより適切に処理されます (:issue:`3377`);"
 
 #: ../../news.rst:2125
 msgid ""
 "``dont_filter=True`` is used for contract requests, which allows to test "
 "different callbacks with the same URL (:issue:`3381`);"
-msgstr "``dont_filter = True`` はコントラクト・リクエストに使用され、同じURLで異なるコールバックをテストできます (:issue:`3381`);"
+msgstr "``dont_filter = True`` は規約リクエストに使用され、同じURLで異なるコールバックをテストできます (:issue:`3381`);"
 
 #: ../../news.rst:2127
 msgid ""
 "``request_cls`` attribute in Contract subclasses allow to use different "
 "Request classes in contracts, for example FormRequest (:issue:`3383`)."
-msgstr "Contract サブクラスの ``request_cls`` 属性を使用すると、FormRequestなどのコントラクトでさまざまなリクエスト・クラスを使用できます (:issue:`3383`)."
+msgstr "Contract サブクラスの ``request_cls`` 属性を使用すると、FormRequestなどの規約でさまざまなリクエスト・クラスを使用できます (:issue:`3383`)."
 
 #: ../../news.rst:2129
 msgid ""
 "Fixed errback handling in contracts, e.g. for cases where a contract is "
 "executed for URL which returns non-200 response (:issue:`3371`)."
-msgstr "コントラクトでのエラーバック(errback)処理を修正しました。例えば200以外のレスポンスを返すURLに対してコントラクトが実行される場合です (:issue:`3371`)"
+msgstr "規約でのエラーバック(errback)処理を修正しました。例えば200以外のレスポンスを返すURLに対してコントラクトが実行される場合です (:issue:`3371`)"
 
 #: ../../news.rst:2133
 msgid "Usability improvements"
@@ -7225,7 +7225,7 @@ msgstr "GSoCプロジェクトの ``per-spider settings`` (スパイダーごと
 
 #: ../../news.rst:3728
 msgid "Set exit code to non-zero when contracts fails (:issue:`727`)"
-msgstr "contractが失敗した場合、終了コードをゼロ以外に設定 (:issue:`727`)"
+msgstr "規約が失敗した場合、終了コードをゼロ以外に設定 (:issue:`727`)"
 
 #: ../../news.rst:3729
 msgid ""
@@ -7239,7 +7239,7 @@ msgstr "``item_dropped`` シグナルでレスポンスを渡します (:issue:`
 
 #: ../../news.rst:3732
 msgid "Improve ``scrapy check`` contracts command (:issue:`733`, :issue:`752`)"
-msgstr "``scrapy check`` contractコマンドを改善 (:issue:`733`, :issue:`752`)"
+msgstr "``scrapy check`` 規約(contract)コマンドを改善 (:issue:`733`, :issue:`752`)"
 
 #: ../../news.rst:3733
 msgid "Document ``spider.closed()`` shortcut (:issue:`719`)"
@@ -8379,7 +8379,7 @@ msgstr "Scrapyの変更:"
 msgid ""
 "added :ref:`topics-contracts`, a mechanism for testing spiders in a formal/"
 "reproducible way"
-msgstr ""
+msgstr "追加された :ref:`topics-contracts` は、形式的/再現可能な方法でスパイダーをテストするためのメカニズムです。"
 
 #: ../../news.rst:4138
 msgid "added options ``-o`` and ``-t`` to the :command:`runspider` command"

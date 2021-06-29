@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-04-28 08:01+0900\n"
+"PO-Revision-Date: 2021-06-29 14:25+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -298,11 +298,10 @@ msgstr "Scrapyスパイダーの一般的な問題をデバッグする方法を
 msgid ":doc:`topics/contracts`"
 msgstr ":doc:`topics/contracts`"
 
+# スパイダーをテストするためにコントラクト(訳注: ``@url`` などの ``@`` で始まる、テスト用に用意された属性指定子)を使用する方法を学びます。<
 #: ../../index.rst:177
 msgid "Learn how to use contracts for testing your spiders."
-msgstr ""
-"スパイダーをテストするためにコントラクト(訳注: ``@url`` などの ``@`` で始ま"
-"る、テスト用に用意された属性指定子)を使用する方法を学びます。"
+msgstr "スパイダーをテストするために規約(contract)を使用する方法を学びます。"
 
 #: ../../index.rst:180
 msgid ":doc:`topics/practices`"
