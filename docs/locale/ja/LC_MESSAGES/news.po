@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-29 22:48+0900\n"
+"PO-Revision-Date: 2021-06-30 23:47+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -8369,7 +8369,7 @@ msgstr "リリース・ノートの0.16.0にリリース日を設定 (:commit:`e
 
 #: ../../news.rst:4133
 msgid "Scrapy 0.16.0 (released 2012-10-18)"
-msgstr ""
+msgstr "Scrapy 0.16.0 (released 2012-10-18)"
 
 #: ../../news.rst:4135
 msgid "Scrapy changes:"
@@ -8383,13 +8383,13 @@ msgstr "追加された :ref:`topics-contracts` は、形式的/再現可能な�
 
 #: ../../news.rst:4138
 msgid "added options ``-o`` and ``-t`` to the :command:`runspider` command"
-msgstr ""
+msgstr ":command:`runspider` コマンドにオプション ``-o`` と ``-t`` を追加しました"
 
 #: ../../news.rst:4139
 msgid ""
 "documented :doc:`topics/autothrottle` and added to extensions installed by "
 "default. You still need to enable it with :setting:`AUTOTHROTTLE_ENABLED`"
-msgstr ""
+msgstr ":doc:`topics/autothrottle` を文書化し、デフォルトでインストールされる拡張機能に追加しました。あなたはいまだ :setting:`AUTOTHROTTLE_ENABLED` でそれを有効にする必要があります"
 
 #: ../../news.rst:4140
 msgid ""
@@ -8397,26 +8397,26 @@ msgid ""
 "stats, removed stats-related signals (``stats_spider_opened``, etc). Stats "
 "are much simpler now, backward compatibility is kept on the Stats Collector "
 "API and signals."
-msgstr ""
+msgstr "主要な統計コレクションのリファクタリング: グローバル/スパイダーごとの統計の分離を削除し、統計関連の信号( ``stats_spider_opened`` など)を削除しました。統計がはるかにシンプルになり、Stats Collector APIとシグナルで下位互換性が維持されます。"
 
 #: ../../news.rst:4141
 msgid ""
 "added :meth:`~scrapy.spidermiddlewares.SpiderMiddleware."
 "process_start_requests` method to spider middlewares"
-msgstr ""
+msgstr "スパイダー・ミドルウェアに :meth:`~scrapy.spidermiddlewares.SpiderMiddleware.process_start_requests` メソッドを追加した"
 
 #: ../../news.rst:4142
 msgid ""
 "dropped Signals singleton. Signals should now be accessed through the "
 "Crawler.signals attribute. See the signals documentation for more info."
-msgstr ""
+msgstr "Signalsシングルトンを削除しました。これで、Crawler.signals属性を介してシグナルにアクセスできるようになります。詳細については、シグナルのドキュメントを参照してください。"
 
 #: ../../news.rst:4143
 msgid ""
 "dropped Stats Collector singleton. Stats can now be accessed through the "
 "Crawler.stats attribute. See the stats collection documentation for more "
 "info."
-msgstr ""
+msgstr "StatsCollectorシングルトンを削除しました。 Crawler.stats属性を介して統計にアクセスできるようになりました。 詳細については、統計コレクションのドキュメントを参照してください。"
 
 #: ../../news.rst:4144
 msgid "documented :ref:`topics-api`"
@@ -8424,51 +8424,51 @@ msgstr ":ref:`topics-api` について文書化した"
 
 #: ../../news.rst:4145
 msgid "``lxml`` is now the default selectors backend instead of ``libxml2``"
-msgstr ""
+msgstr "``libxml2`` に代わり、 今や ``lxml`` がデフォルトのセレクター・バックエンドです"
 
 #: ../../news.rst:4146
 msgid ""
 "ported FormRequest.from_response() to use `lxml`_ instead of `ClientForm`_"
-msgstr ""
+msgstr "FormRequest.from_response() を移植して、 `ClientForm`_ の代わりに `lxml`_ を使用する"
 
 #: ../../news.rst:4147
 msgid ""
 "removed modules: ``scrapy.xlib.BeautifulSoup`` and ``scrapy.xlib.ClientForm``"
-msgstr ""
+msgstr "モジュール削除: ``scrapy.xlib.BeautifulSoup`` と ``scrapy.xlib.ClientForm``"
 
 #: ../../news.rst:4148
 msgid ""
 "SitemapSpider: added support for sitemap urls ending in .xml and .xml.gz, "
 "even if they advertise a wrong content type (:commit:`10ed28b`)"
-msgstr ""
+msgstr "SitemapSpider: 間違ったコンテンツ・タイプを主張(advertise)する場合、つまり、.xml および .xml.gz で終わるサイトマップURLのサポートが追加されました (:commit:`10ed28b`)"
 
 #: ../../news.rst:4149
 msgid ""
 "StackTraceDump extension: also dump trackref live references (:commit:"
 "`fe2ce93`)"
-msgstr ""
+msgstr "StackTraceDump拡張機能: trackrefライブ参照もダンプします (:commit:`fe2ce93`)"
 
 #: ../../news.rst:4150
 msgid "nested items now fully supported in JSON and JSONLines exporters"
-msgstr ""
+msgstr "ネストされたアイテムがJSONおよびJSONLinesエクスポーターで完全にサポートされるようになりました"
 
 #: ../../news.rst:4151
 msgid ""
 "added :reqmeta:`cookiejar` Request meta key to support multiple cookie "
 "sessions per spider"
-msgstr ""
+msgstr "スパイダーごとに複数のCookieセッションをサポートするための :reqmeta:`cookiejar` リクエスト・メタ・キーを追加しました"
 
 #: ../../news.rst:4152
 msgid ""
 "decoupled encoding detection code to `w3lib.encoding`_, and ported Scrapy "
 "code to use that module"
-msgstr ""
+msgstr "エンコーディング検出コードを `w3lib.encoding`_ に分離し、そのモジュールを使用するためにScrapyコードを移植しました"
 
 #: ../../news.rst:4153
 msgid ""
 "dropped support for Python 2.5. See https://blog.scrapinghub.com/2012/02/27/"
 "scrapy-0-15-dropping-support-for-python-2-5/"
-msgstr ""
+msgstr "Python 2.5 のサポートを終了しました。https://blog.scrapinghub.com/2012/02/27/scrapy-0-15-dropping-support-for-python-2-5/ 参照"
 
 #: ../../news.rst:4154
 msgid "dropped support for Twisted 2.5"
@@ -8476,63 +8476,63 @@ msgstr "Twisted 2.5 のサポートを終了した"
 
 #: ../../news.rst:4155
 msgid "added :setting:`REFERER_ENABLED` setting, to control referer middleware"
-msgstr ""
+msgstr "リファラー・ミドルウェアを制御するために :setting:`REFERER_ENABLED` 設定を追加しました"
 
 #: ../../news.rst:4156
 msgid "changed default user agent to: ``Scrapy/VERSION (+http://scrapy.org)``"
-msgstr ""
+msgstr "デフォルトのユーザーエージェントを ``Scrapy/VERSION (+http://scrapy.org)`` に変更しました"
 
 #: ../../news.rst:4157
 msgid ""
 "removed (undocumented) ``HTMLImageLinkExtractor`` class from ``scrapy."
 "contrib.linkextractors.image``"
-msgstr ""
+msgstr "``scrapy.contrib.linkextractors.image`` から ``HTMLImageLinkExtractor`` クラスを削除(文書化されていない)"
 
 #: ../../news.rst:4158
 msgid ""
 "removed per-spider settings (to be replaced by instantiating multiple "
 "crawler objects)"
-msgstr ""
+msgstr "スパイダーごとの設定を削除しました(複数のクローラーオブジェクトをインスタンス化することで置き換えられます)"
 
 #: ../../news.rst:4159
 msgid ""
 "``USER_AGENT`` spider attribute will no longer work, use ``user_agent`` "
 "attribute instead"
-msgstr ""
+msgstr "``USER_AGENT`` スパイダー属性はもはや動作しません。代わりに ``user_agent`` 属性を使って下さい。"
 
 #: ../../news.rst:4160
 msgid ""
 "``DOWNLOAD_TIMEOUT`` spider attribute will no longer work, use "
 "``download_timeout`` attribute instead"
-msgstr ""
+msgstr "``DOWNLOAD_TIMEOUT`` スパイダー属性はもはや動作しません。代わりに ``download_timeout`` 属性を使って下さい。"
 
 #: ../../news.rst:4161
 msgid ""
 "removed ``ENCODING_ALIASES`` setting, as encoding auto-detection has been "
 "moved to the `w3lib`_ library"
-msgstr ""
+msgstr "エンコーディングの自動検出が `w3lib`_ ライブラリに移動されたため、 ``ENCODING_ALIASES`` 設定が削除されました"
 
 #: ../../news.rst:4162
 msgid "promoted :ref:`topics-djangoitem` to main contrib"
-msgstr ""
+msgstr ":ref:`topics-djangoitem` をメインの投稿に昇格"
 
 #: ../../news.rst:4163
 msgid ""
 "LogFormatter method now return dicts(instead of strings) to support lazy "
 "formatting (:issue:`164`, :commit:`dcef7b0`)"
-msgstr ""
+msgstr "LogFormatterメソッドは、遅延フォーマットをサポートするために、(文字列ではなく)辞書を返すようになりました (:issue:`164`, :commit:`dcef7b0`)"
 
 #: ../../news.rst:4164
 msgid ""
 "downloader handlers (:setting:`DOWNLOAD_HANDLERS` setting) now receive "
 "settings as the first argument of the ``__init__`` method"
-msgstr ""
+msgstr "ダウンローダー・ハンドラー(:setting:`DOWNLOAD_HANDLERS` 設定)は、 ``__init__`` メソッドの最初の引数として設定を受け取るようになりました"
 
 #: ../../news.rst:4165
 msgid ""
 "replaced memory usage acounting with (more portable) `resource`_ module, "
 "removed ``scrapy.utils.memory`` module"
-msgstr ""
+msgstr "メモリ使用量のカウントを(より移植性の高い) `resource`_ モジュールに置き換え、 ``scrapy.utils.memory`` モジュールを削除しました"
 
 #: ../../news.rst:4166
 msgid "removed signal: ``scrapy.mail.mail_sent``"
@@ -8542,23 +8542,23 @@ msgstr "シグナル削除した: ``scrapy.mail.mail_sent``"
 msgid ""
 "removed ``TRACK_REFS`` setting, now :ref:`trackrefs <topics-leaks-"
 "trackrefs>` is always enabled"
-msgstr ""
+msgstr "``TRACK_REFS`` 設定を削除し、 :ref:`trackrefs <topics-leaks-trackrefs>` が常に有効になりました"
 
 #: ../../news.rst:4168
 msgid "DBM is now the default storage backend for HTTP cache middleware"
-msgstr ""
+msgstr "DBMがHTTPキャッシュ・ミドルウェアのデフォルトのストレージ・バックエンドになりました"
 
 #: ../../news.rst:4169
 msgid ""
 "number of log messages (per level) are now tracked through Scrapy stats "
 "(stat name: ``log_count/LEVEL``)"
-msgstr ""
+msgstr "(レベルごとの)ログ・メッセージの数がScrapy統計(統計名: ``log_count/LEVEL`` )で追跡されるようになりました"
 
 #: ../../news.rst:4170
 msgid ""
 "number received responses are now tracked through Scrapy stats (stat name: "
 "``response_received_count``)"
-msgstr ""
+msgstr "受信したレスポンスの数がScrapy統計(統計名: ``response_received_count`` )で追跡されるようになりました"
 
 #: ../../news.rst:4171
 msgid "removed ``scrapy.log.started`` attribute"
