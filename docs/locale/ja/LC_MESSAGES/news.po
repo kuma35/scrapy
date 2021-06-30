@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-06-30 23:47+0900\n"
+"PO-Revision-Date: 2021-07-01 02:36+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -8566,137 +8566,137 @@ msgstr "``scrapy.log.started`` 属性を削除した"
 
 #: ../../news.rst:4174
 msgid "Scrapy 0.14.4"
-msgstr ""
+msgstr "Scrapy 0.14.4"
 
 #: ../../news.rst:4176
 msgid "added precise to supported Ubuntu distros (:commit:`b7e46df`)"
-msgstr ""
+msgstr "サポートされているUbuntuディストリビューションに追加されました (:commit:`b7e46df`)"
 
 #: ../../news.rst:4177
 msgid ""
 "fixed bug in json-rpc webservice reported in https://groups.google.com/forum/"
 "#!topic/scrapy-users/qgVBmFybNAQ/discussion. also removed no longer "
 "supported 'run' command from extras/scrapy-ws.py (:commit:`340fbdb`)"
-msgstr ""
+msgstr "https://groups.google.com/forum/#!topic/scrapy-users/qgVBmFybNAQ/discussionで報告されたjson-rpcWebサービスのバグを修正しました。 また、extras/scrapy-ws.pyからサポートされなくなった 'run' コマンドも削除されました"
 
 #: ../../news.rst:4178
 msgid ""
 "meta tag attributes for content-type http equiv can be in any order. #123 (:"
 "commit:`0cb68af`)"
-msgstr ""
+msgstr "content-type http equivのメタ・タグ属性は、任意の順序にすることができます。 #123 (:commit:`0cb68af`)"
 
 #: ../../news.rst:4179
 msgid ""
 "replace \"import Image\" by more standard \"from PIL import Image\". closes "
 "#88 (:commit:`4d17048`)"
-msgstr ""
+msgstr "\"import Image\" をより標準的な \"from PIL import Image\" に置き換えます。 #88 をクローズ (:commit:`4d17048`)"
 
 #: ../../news.rst:4180
 msgid ""
 "return trial status as bin/runtests.sh exit value. #118 (:commit:`b7b2e7f`)"
-msgstr ""
+msgstr "trialステータスを bin/runtests.sh 終了値として返します。 #118 (:commit:`b7b2e7f`)"
 
 #: ../../news.rst:4183
 msgid "Scrapy 0.14.3"
-msgstr ""
+msgstr "Scrapy 0.14.3"
 
 #: ../../news.rst:4185
 msgid "forgot to include pydispatch license. #118 (:commit:`fd85f9c`)"
-msgstr ""
+msgstr "pydispatchライセンスを含めるのを忘れていました。 #118 (:commit:`fd85f9c`)"
 
 #: ../../news.rst:4186
 msgid ""
 "include egg files used by testsuite in source distribution. #118 (:commit:"
 "`c897793`)"
-msgstr ""
+msgstr "testsuiteが使用するeggファイルをソース配布に含めます。 #118 (:commit:`c897793`)"
 
 #: ../../news.rst:4187
 msgid ""
 "update docstring in project template to avoid confusion with genspider "
 "command, which may be considered as an advanced feature. refs #107 (:commit:"
 "`2548dcc`)"
-msgstr ""
+msgstr "高度な機能と見なされる可能性のあるgenspiderコマンドとの混同を避けるために、プロジェクト・テンプレートのdocstringを更新します。 refs #107 (:commit:`2548dcc`)"
 
 #: ../../news.rst:4188
 msgid ""
 "added note to docs/topics/firebug.rst about google directory being shut down "
 "(:commit:`668e352`)"
-msgstr ""
+msgstr "グーグル・ディレクトリがシャットダウンされることについての注記を docs/topics/firebug.rst に追加 (:commit:`668e352`)"
 
 #: ../../news.rst:4189
 msgid ""
 "don't discard slot when empty, just save in another dict in order to recycle "
 "if needed again. (:commit:`8e9f607`)"
-msgstr ""
+msgstr "空のときにスロットを破棄しないでください。必要に応じて再度リサイクルするために、別の辞書に保存してください。 (:commit:`8e9f607`)"
 
 #: ../../news.rst:4190
 msgid ""
 "do not fail handling unicode xpaths in libxml2 backed selectors (:commit:"
 "`b830e95`)"
-msgstr ""
+msgstr "libxml2でサポートされているセレクターでのunicode xpathの処理に失敗しないでください (:commit:`b830e95`)"
 
 #: ../../news.rst:4191
 msgid ""
 "fixed minor mistake in Request objects documentation (:commit:`bf3c9ee`)"
-msgstr ""
+msgstr "リクエスト・オブジェクトの文書の些細な間違いを修正 (:commit:`bf3c9ee`)"
 
 #: ../../news.rst:4192
 msgid "fixed minor defect in link extractors documentation (:commit:`ba14f38`)"
-msgstr ""
+msgstr "リンク抽出器の文書の些細な欠陥を修正 (:commit:`ba14f38`)"
 
 #: ../../news.rst:4193
 msgid ""
 "removed some obsolete remaining code related to sqlite support in Scrapy (:"
 "commit:`0665175`)"
-msgstr ""
+msgstr "Scrapyでのsqliteサポートに関連するいくつかの廃止済のコードの残りを削除 (:commit:`0665175`)"
 
 #: ../../news.rst:4196
 msgid "Scrapy 0.14.2"
-msgstr ""
+msgstr "Scrapy 0.14.2"
 
 #: ../../news.rst:4198
 msgid ""
 "move buffer pointing to start of file before computing checksum. refs #92 (:"
 "commit:`6a5bef2`)"
-msgstr ""
+msgstr "チェックサムを計算する前に、ファイルの先頭を指すバッファを移動します。 refs #92 (:commit:`6a5bef2`)"
 
 #: ../../news.rst:4199
 msgid ""
 "Compute image checksum before persisting images. closes #92 (:commit:"
 "`9817df1`)"
-msgstr ""
+msgstr "画像を永続化する前に、画像のチェックサムを計算します。 #92 をクローズ (:commit:`9817df1`)"
 
 #: ../../news.rst:4200
 msgid "remove leaking references in cached failures (:commit:`673a120`)"
-msgstr ""
+msgstr "キャッシュされた障害でリークしている参照を削除 (:commit:`673a120`)"
 
 #: ../../news.rst:4201
 msgid ""
 "fixed bug in MemoryUsage extension: get_engine_status() takes exactly 1 "
 "argument (0 given) (:commit:`11133e9`)"
-msgstr ""
+msgstr "MemoryUsage拡張機能のバグを修正した: get_engine_status() は正確に1つの引数を取ります(0個しか与えられていない) (:commit:`11133e9`)"
 
 #: ../../news.rst:4202
 msgid ""
 "fixed struct.error on http compression middleware. closes #87 (:commit:"
 "`1423140`)"
-msgstr ""
+msgstr "http圧縮ミドルウェアのstruct.errorを修正。 #87 をクローズ (:commit:`1423140`)"
 
 #: ../../news.rst:4203
 msgid "ajax crawling wasn't expanding for unicode urls (:commit:`0de3fb4`)"
-msgstr ""
+msgstr "ajaxクロールはunicode URLに対して拡張されていませんでした (:commit:`0de3fb4`)"
 
 #: ../../news.rst:4204
 msgid "Catch start_requests iterator errors. refs #83 (:commit:`454a21d`)"
-msgstr ""
+msgstr "start_requests イテレータ・エラーをキャッチします。 refs #83 (:commit:`454a21d`)"
 
 #: ../../news.rst:4205
 msgid "Speed-up libxml2 XPathSelector (:commit:`2fbd662`)"
-msgstr ""
+msgstr "libxml2 XPathSelector の速度向上 (:commit:`2fbd662`)"
 
 #: ../../news.rst:4206
 msgid "updated versioning doc according to recent changes (:commit:`0a070f5`)"
-msgstr ""
+msgstr "最近の変更に応じてバージョン管理文書を更新 (:commit:`0a070f5`)"
 
 #: ../../news.rst:4207
 msgid "scrapyd: fixed documentation link (:commit:`2b4e4c3`)"
@@ -8705,61 +8705,61 @@ msgstr "scrapyd: 文書のリンク修正 (:commit:`2b4e4c3`)"
 #: ../../news.rst:4208 ../../news.rst:4213
 msgid ""
 "extras/makedeb.py: no longer obtaining version from git (:commit:`caffe0e`)"
-msgstr ""
+msgstr "extras/makedeb.py: gitからバージョンを取得しなくなりました (:commit:`caffe0e`)"
 
 #: ../../news.rst:4211
 msgid "Scrapy 0.14.1"
-msgstr ""
+msgstr "Scrapy 0.14.1"
 
 #: ../../news.rst:4214
 msgid "bumped version to 0.14.1 (:commit:`6cb9e1c`)"
-msgstr ""
+msgstr "バージョンを0.14.1に上げました (:commit:`6cb9e1c`)"
 
 #: ../../news.rst:4215
 msgid "fixed reference to tutorial directory (:commit:`4b86bd6`)"
-msgstr ""
+msgstr "チュートリアル・ディレクトリへの参照を修正 (:commit:`4b86bd6`)"
 
 #: ../../news.rst:4216
 msgid ""
 "doc: removed duplicated callback argument from Request.replace() (:commit:"
 "`1aeccdd`)"
-msgstr ""
+msgstr "文書: Request.replace() から重複したコールバック引数を削除 (:commit:`1aeccdd`)"
 
 #: ../../news.rst:4217
 msgid "fixed formatting of scrapyd doc (:commit:`8bf19e6`)"
-msgstr ""
+msgstr "scrapyd文書の書式を修正 (:commit:`8bf19e6`)"
 
 #: ../../news.rst:4218
 msgid ""
 "Dump stacks for all running threads and fix engine status dumped by "
 "StackTraceDump extension (:commit:`14a8e6e`)"
-msgstr ""
+msgstr "実行中のすべてのスレッドのスタックをダンプし、StackTraceDump拡張機能によってダンプされたエンジン・ステータスを修正します (:commit:`14a8e6e`)"
 
 #: ../../news.rst:4219
 msgid ""
 "added comment about why we disable ssl on boto images upload (:commit:"
 "`5223575`)"
-msgstr ""
+msgstr "boto画像のアップロードでSSLを無効にする理由についてのコメントを追加 (:commit:`5223575`)"
 
 #: ../../news.rst:4220
 msgid ""
 "SSL handshaking hangs when doing too many parallel connections to S3 (:"
 "commit:`63d583d`)"
-msgstr ""
+msgstr "S3への並列接続が多すぎるとSSLハンドシェイクがハングします (:commit:`63d583d`)"
 
 #: ../../news.rst:4221
 msgid "change tutorial to follow changes on dmoz site (:commit:`bcb3198`)"
-msgstr ""
+msgstr "dmozサイトの変更に従うようにチュートリアルを変更 (:commit:`bcb3198`)"
 
 #: ../../news.rst:4222
 msgid ""
 "Avoid _disconnectedDeferred AttributeError exception in Twisted>=11.1.0 (:"
 "commit:`98f3f87`)"
-msgstr ""
+msgstr "Twisted>=11.1.0 での _disconnectedDeferred AttributeError 例外を回避します (:commit:`98f3f87`)"
 
 #: ../../news.rst:4223
 msgid "allow spider to set autothrottle max concurrency (:commit:`175a4b5`)"
-msgstr ""
+msgstr "スパイダーがオート・スロットルの最大同時実行性を設定できるようにする (:commit:`175a4b5`)"
 
 #: ../../news.rst:4226
 msgid "Scrapy 0.14"
