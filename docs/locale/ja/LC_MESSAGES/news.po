@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-07-01 02:36+0900\n"
+"PO-Revision-Date: 2021-07-01 11:01+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -8763,7 +8763,7 @@ msgstr "スパイダーがオート・スロットルの最大同時実行性を
 
 #: ../../news.rst:4226
 msgid "Scrapy 0.14"
-msgstr ""
+msgstr "Scrapy 0.14"
 
 #: ../../news.rst:4229
 msgid "New features and settings"
@@ -8777,72 +8777,72 @@ msgstr "`AJAX crawleable urls`_ (AJAXクロール可能URL)をサポート"
 msgid ""
 "New persistent scheduler that stores requests on disk, allowing to suspend "
 "and resume crawls (:rev:`2737`)"
-msgstr ""
+msgstr "リクエストをディスクに保存し、クロールを一時停止および再開できる新しい永続スケジューラ (:rev:`2737`)"
 
 #: ../../news.rst:4233
 msgid ""
 "added ``-o`` option to ``scrapy crawl``, a shortcut for dumping scraped "
 "items into a file (or standard output using ``-``)"
-msgstr ""
+msgstr "スクレイピングされたアイテムをファイルにダンプするためのショートカットである ``scrapy crawl`` に ``-o`` オプションを追加しました(または ``-`` を使用した標準出力)"
 
 #: ../../news.rst:4234
 msgid ""
 "Added support for passing custom settings to Scrapyd ``schedule.json`` api (:"
 "rev:`2779`, :rev:`2783`)"
-msgstr ""
+msgstr "Scrapyd ``schedule.json`` apiにカスタム設定を渡すためのサポートが追加されました (:rev:`2779`, :rev:`2783`)"
 
 #: ../../news.rst:4235
 msgid ""
 "New ``ChunkedTransferMiddleware`` (enabled by default) to support `chunked "
 "transfer encoding`_ (:rev:`2769`)"
-msgstr ""
+msgstr "`chunked transfer encoding`_ (チャンク転送エンコーディング) をサポートするための新しい ``ChunkedTransferMiddleware`` (デフォルトで有効)  (:rev:`2769`)"
 
 #: ../../news.rst:4236
 msgid "Add boto 2.0 support for S3 downloader handler (:rev:`2763`)"
-msgstr ""
+msgstr "S3ダウンローダー・ハンドラーにboto 2.0サポートを追加 (:rev:`2763`)"
 
 #: ../../news.rst:4237
 msgid "Added `marshal`_ to formats supported by feed exports (:rev:`2744`)"
-msgstr ""
+msgstr "フィードのエクスポートでサポートされる形式に `marshal`_ を追加しました (:rev:`2744`)"
 
 #: ../../news.rst:4238
 msgid ""
 "In request errbacks, offending requests are now received in ``failure."
 "request`` attribute (:rev:`2738`)"
-msgstr ""
+msgstr "リクエストのエラー・バックで、問題のあるリクエストが ``failure.request`` 属性で受信されるようになりました (:rev:`2738`)"
 
 #: ../../news.rst:4241
 msgid ""
 "Big downloader refactoring to support per domain/ip concurrency limits (:rev:"
 "`2732`)"
-msgstr ""
+msgstr "ドメイン/IPごとの同時実行制限をサポートするための大きなダウンローダーのリファクタリング (:rev:`2732`)"
 
 #: ../../news.rst:4240
 msgid ""
 "``CONCURRENT_REQUESTS_PER_SPIDER`` setting has been deprecated and replaced "
 "by:"
-msgstr ""
+msgstr "``CONCURRENT_REQUESTS_PER_SPIDER`` 設定は非推奨になり、以下のように置き換えられました:"
 
 #: ../../news.rst:4241
 msgid ""
 ":setting:`CONCURRENT_REQUESTS`, :setting:`CONCURRENT_REQUESTS_PER_DOMAIN`, :"
 "setting:`CONCURRENT_REQUESTS_PER_IP`"
-msgstr ""
+msgstr ":setting:`CONCURRENT_REQUESTS`, :setting:`CONCURRENT_REQUESTS_PER_DOMAIN`, :setting:`CONCURRENT_REQUESTS_PER_IP`"
 
 #: ../../news.rst:4242
 msgid "check the documentation for more details"
-msgstr ""
+msgstr "詳細については、ドキュメントを確認してください"
 
 #: ../../news.rst:4243
 msgid "Added builtin caching DNS resolver (:rev:`2728`)"
-msgstr ""
+msgstr "組み込みのキャッシュDNSリゾルバーを追加 (:rev:`2728`)"
 
 #: ../../news.rst:4244
 msgid ""
 "Moved Amazon AWS-related components/extensions (SQS spider queue, SimpleDB "
 "stats collector) to a separate project: [scaws](https://github.com/"
 "scrapinghub/scaws) (:rev:`2706`, :rev:`2714`)"
-msgstr ""
+msgstr "Amazon AWS関連のコンポーネント/拡張機能(SQSスパイダー・キュー、SimpleDB統計コレクター)を別のプロジェクトに移動しました: [scaws](https://github.com/scrapinghub/scaws) (:rev:`2706`, :rev:`2714`)"
 
 #: ../../news.rst:4245
 msgid ""
@@ -8861,72 +8861,72 @@ msgid ""
 "Real support for returning iterators on ``start_requests()`` method. The "
 "iterator is now consumed during the crawl when the spider is getting idle (:"
 "rev:`2704`)"
-msgstr ""
+msgstr "``start_requests()`` メソッドでイテレータを返すための実際のサポート。 スパイダーがアイドル状態になっているクロール中にイテレーターが消費されるようになりました (:rev:`2704`)"
 
 #: ../../news.rst:4248
 msgid ""
 "Added :setting:`REDIRECT_ENABLED` setting to quickly enable/disable the "
 "redirect middleware (:rev:`2697`)"
-msgstr ""
+msgstr "リダイレクト・ミドルウェアをすばやく有効/無効にする :setting:`REDIRECT_ENABLED` 設定を追加 (:rev:`2697`)"
 
 #: ../../news.rst:4249
 msgid ""
 "Added :setting:`RETRY_ENABLED` setting to quickly enable/disable the retry "
 "middleware (:rev:`2694`)"
-msgstr ""
+msgstr "再試行ミドルウェアをすばやく有効/無効にする :setting:`RETRY_ENABLED` 設定を追加 (:rev:`2694`)"
 
 #: ../../news.rst:4250
 msgid "Added ``CloseSpider`` exception to manually close spiders (:rev:`2691`)"
-msgstr ""
+msgstr "スパイダーを手動で閉じるための ``CloseSpider`` 例外を追加 (:rev:`2691`)"
 
 #: ../../news.rst:4251
 msgid ""
 "Improved encoding detection by adding support for HTML5 meta charset "
 "declaration (:rev:`2690`)"
-msgstr ""
+msgstr "HTML5 meta charset 宣言のサポートを追加することによるエンコーディング検出の改善 (:rev:`2690`)"
 
 #: ../../news.rst:4252
 msgid ""
 "Refactored close spider behavior to wait for all downloads to finish and be "
 "processed by spiders, before closing the spider (:rev:`2688`)"
-msgstr ""
+msgstr "スパイダーを閉じる前に、すべてのダウンロードが終了してスパイダーによって処理されるのを待つように、スパイダーを閉じる動作をリファクタリングしました (:rev:`2688`)"
 
 #: ../../news.rst:4253
 msgid ""
 "Added ``SitemapSpider`` (see documentation in Spiders page) (:rev:`2658`)"
-msgstr ""
+msgstr "``SitemapSpider`` を追加(Spiders pageの文書参照) (:rev:`2658`)"
 
 #: ../../news.rst:4254
 msgid ""
 "Added ``LogStats`` extension for periodically logging basic stats (like "
 "crawled pages and scraped items) (:rev:`2657`)"
-msgstr ""
+msgstr "基本的な統計(クロールされたページやスクレイピングされたアイテムなど)を定期的にログに記録するための ``LogStats`` 拡張機能が追加されました (:rev:`2657`)"
 
 #: ../../news.rst:4255
 msgid ""
 "Make handling of gzipped responses more robust (#319, :rev:`2643`). Now "
 "Scrapy will try and decompress as much as possible from a gzipped response, "
 "instead of failing with an ``IOError``."
-msgstr ""
+msgstr "gzip圧縮されたレスポンスの処理をより堅牢にします (#319, :rev:`2643`) 。これで、Scrapyは、 ``IOError`` で失敗するのではなく、gzip圧縮されたレスポンスから可能な限り解凍しようとします。"
 
 #: ../../news.rst:4256
 msgid ""
 "Simplified !MemoryDebugger extension to use stats for dumping memory "
 "debugging info (:rev:`2639`)"
-msgstr ""
+msgstr "メモリ・デバッグ情報をダンプするための統計を使用するための簡略化された !MemoryDebugger 拡張機能 (:rev:`2639`)"
 
 #: ../../news.rst:4257
 msgid ""
 "Added new command to edit spiders: ``scrapy edit`` (:rev:`2636`) and ``-e`` "
 "flag to ``genspider`` command that uses it (:rev:`2653`)"
-msgstr ""
+msgstr "スパイダーを編集するための新しいコマンドを追加しました: ``scrapy edit`` (:rev:`2636`) と、 ``-e`` フラグをそれを使用する ``genspider`` コマンドに追加しました (:rev:`2653`)"
 
 #: ../../news.rst:4258
 msgid ""
 "Changed default representation of items to pretty-printed dicts. (:rev:"
 "`2631`). This improves default logging by making log more readable in the "
 "default case, for both Scraped and Dropped lines."
-msgstr ""
+msgstr "アイテムのデフォルトの表現をきれいに印刷される辞書に変更しました。 (:rev:`2631`) 。これにより、Scraped行とDropped行の両方について、デフォルトの場合にログが読みやすくなるため、デフォルトのログが改善されます。"
 
 #: ../../news.rst:4259
 msgid "Added :signal:`spider_error` signal (:rev:`2628`)"
@@ -8941,17 +8941,17 @@ msgid ""
 "Stats are now dumped to Scrapy log (default value of :setting:`STATS_DUMP` "
 "setting has been changed to ``True``). This is to make Scrapy users more "
 "aware of Scrapy stats and the data that is collected there."
-msgstr ""
+msgstr "統計がScrapyログにダンプされるようになりました( :setting:`STATS_DUMP` 設定のデフォルト値が ``True`` に変更されました)。これは、ScrapyユーザーがScrapyの統計とそこで収集されるデータをより認識できるようにするためです。"
 
 #: ../../news.rst:4262
 msgid ""
 "Added support for dynamically adjusting download delay and maximum "
 "concurrent requests (:rev:`2599`)"
-msgstr ""
+msgstr "ダウンロード遅延と最大同時リクエストを動的に調整するためのサポートが追加されました (:rev:`2599`)"
 
 #: ../../news.rst:4263
 msgid "Added new DBM HTTP cache storage backend (:rev:`2576`)"
-msgstr ""
+msgstr "新しいDBM HTTPキャッシュ・ストレージ・バックエンドを追加 (:rev:`2576`)"
 
 #: ../../news.rst:4264
 msgid "Added ``listjobs.json`` API to Scrapyd (:rev:`2571`)"
@@ -8969,11 +8969,11 @@ msgstr "``xmliter_lxml`` に名前空間のサポートを追加 (:rev:`2552`)"
 msgid ""
 "Improved cookies middleware by making ``COOKIES_DEBUG`` nicer and "
 "documenting it (:rev:`2579`)"
-msgstr ""
+msgstr "``COOKIES_DEBUG`` をより良くし、それを文書化することにより、Cookieミドルウェアを改善しました (:rev:`2579`)"
 
 #: ../../news.rst:4268
 msgid "Several improvements to Scrapyd and Link extractors"
-msgstr ""
+msgstr "ScrapydおよびLink抽出器のいくつかの改善"
 
 #: ../../news.rst:4271
 msgid "Code rearranged and removed"
@@ -8983,41 +8983,41 @@ msgstr "コードの再配置と削除"
 msgid ""
 "Merged item passed and item scraped concepts, as they have often proved "
 "confusing in the past. This means: (:rev:`2630`)"
-msgstr ""
+msgstr "過去に混乱を招くことが多かったため、マージされたアイテムの通過(pass)とアイテムのスクレイプの概念について以下の変更 (:rev:`2630`) :"
 
 #: ../../news.rst:4274
 msgid "original item_scraped signal was removed"
-msgstr ""
+msgstr "元のitem_scrapedシグナルが削除されました"
 
 #: ../../news.rst:4275
 msgid "original item_passed signal was renamed to item_scraped"
-msgstr ""
+msgstr "元のitem_passedシグナルはitem_scrapedに名前が変更されました"
 
 #: ../../news.rst:4276
 msgid "old log lines ``Scraped Item...`` were removed"
-msgstr ""
+msgstr "古いログ行の ``Scraped Item...`` は削除されました"
 
 #: ../../news.rst:4277
 msgid ""
 "old log lines ``Passed Item...`` were renamed to ``Scraped Item...`` lines "
 "and downgraded to ``DEBUG`` level"
-msgstr ""
+msgstr "古いログ行の ``Passed Item...`` は ``Scraped Item...`` に名前変更され、 ``DEBUG`` レベルに降格されました"
 
 #: ../../news.rst:4279
 msgid ""
 "Reduced Scrapy codebase by striping part of Scrapy code into two new "
 "libraries:"
-msgstr ""
+msgstr "Scrapyコードの一部を2つの新しいライブラリに分散させることにより、Scrapyコードベースを削減しました:"
 
 #: ../../news.rst:4279
 msgid ""
 "`w3lib`_ (several functions from ``scrapy.utils.{http,markup,multipart,"
 "response,url}``, done in :rev:`2584`)"
-msgstr ""
+msgstr "`w3lib`_ ( ``scrapy.utils.{http,markup,multipart,response,url}`` からの幾つかの関数がこの中に入りました :rev:`2584`)"
 
 #: ../../news.rst:4280
 msgid "`scrapely`_ (was ``scrapy.contrib.ibl``, done in :rev:`2586`)"
-msgstr ""
+msgstr "`scrapely`_ (``scrapy.contrib.ibl`` からこの中に入りました :rev:`2586`)"
 
 #: ../../news.rst:4281
 msgid ""
@@ -9030,11 +9030,11 @@ msgid ""
 "Removed googledir project from ``examples/googledir``. There's now a new "
 "example project called ``dirbot`` available on GitHub: https://github.com/"
 "scrapy/dirbot"
-msgstr ""
+msgstr "``examples/googledir`` からgoogledirプロジェクトを削除しました。 GitHubで利用可能な ``dirbot`` と呼ばれる新しいサンプル・プロジェクトがあります: https://github.com/scrapy/dirbot"
 
 #: ../../news.rst:4283
 msgid "Removed support for default field values in Scrapy items (:rev:`2616`)"
-msgstr ""
+msgstr "Scrapyアイテムのデフォルト・フィールド値のサポートを削除 (:rev:`2616`)"
 
 #: ../../news.rst:4284
 msgid "Removed experimental crawlspider v2 (:rev:`2632`)"
@@ -9045,13 +9045,13 @@ msgid ""
 "Removed scheduler middleware to simplify architecture. Duplicates filter is "
 "now done in the scheduler itself, using the same dupe fltering class as "
 "before (``DUPEFILTER_CLASS`` setting) (:rev:`2640`)"
-msgstr ""
+msgstr "アーキテクチャを簡素化するためにスケジューラ・ミドルウェアを削除しました。 重複フィルターは、以前と同じ重複フィルター・クラスを使用して、スケジューラー自体で実行されるようになりました( ``DUPEFILTER_CLASS`` 設定) (:rev:`2640`)"
 
 #: ../../news.rst:4286
 msgid ""
 "Removed support for passing urls to ``scrapy crawl`` command (use ``scrapy "
 "parse`` instead) (:rev:`2704`)"
-msgstr ""
+msgstr "``scrapy crawl`` コマンドにURLを渡すためのサポートを削除しました(代わりに ``scrapy parse`` を使用してください) (:rev:`2704`)"
 
 #: ../../news.rst:4287
 msgid "Removed deprecated Execution Queue (:rev:`2704`)"
@@ -9061,25 +9061,25 @@ msgstr "非推奨の実行キュー(Execution Queue)を削除 (:rev:`2704`)"
 msgid ""
 "Removed (undocumented) spider context extension (from scrapy.contrib."
 "spidercontext) (:rev:`2780`)"
-msgstr ""
+msgstr "削除された(文書化されていない)(scrapy.contrib.spidercontextからの)スパイダー・コンテキスト拡張 (:rev:`2780`)"
 
 #: ../../news.rst:4289
 msgid ""
 "removed ``CONCURRENT_SPIDERS`` setting (use scrapyd maxproc instead) (:rev:"
 "`2789`)"
-msgstr ""
+msgstr "``CONCURRENT_SPIDERS`` 設定を削除しました(代わりにscrapyd maxprocを使用してください) (:rev:`2789`)"
 
 #: ../../news.rst:4290
 msgid ""
 "Renamed attributes of core components: downloader.sites -> downloader.slots, "
 "scraper.sites -> scraper.slots (:rev:`2717`, :rev:`2718`)"
-msgstr ""
+msgstr "コア・コンポーネントの属性の名前が変更されました: downloader.sites → downloader.slots、 scraper.sites → scraper.slots (:rev:`2717`, :rev:`2718`)"
 
 #: ../../news.rst:4291
 msgid ""
 "Renamed setting ``CLOSESPIDER_ITEMPASSED`` to :setting:"
 "`CLOSESPIDER_ITEMCOUNT` (:rev:`2655`). Backward compatibility kept."
-msgstr ""
+msgstr "設定の名前を ``CLOSESPIDER_ITEMPASSED`` から :setting:`CLOSESPIDER_ITEMCOUNT` に変更しました (:rev:`2655`) 。下位互換性は維持されます。"
 
 #: ../../news.rst:4294
 msgid "Scrapy 0.12"
