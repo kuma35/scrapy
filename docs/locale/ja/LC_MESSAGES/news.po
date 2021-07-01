@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-07-01 11:01+0900\n"
+"PO-Revision-Date: 2021-07-01 11:11+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -9083,7 +9083,7 @@ msgstr "設定の名前を ``CLOSESPIDER_ITEMPASSED`` から :setting:`CLOSESPID
 
 #: ../../news.rst:4294
 msgid "Scrapy 0.12"
-msgstr ""
+msgstr "Scrapy 0.12"
 
 #: ../../news.rst:4296 ../../news.rst:4340 ../../news.rst:4413
 #: ../../news.rst:4453
@@ -9100,13 +9100,13 @@ msgstr "新機能と改善点"
 msgid ""
 "Passed item is now sent in the ``item`` argument of the :signal:`item_passed "
 "<item_scraped>` (#273)"
-msgstr ""
+msgstr "渡されたアイテムは、 :signal:`item_passed <item_scraped>`  の ``item`` 引数で送信されるようになりました (#273)"
 
 #: ../../news.rst:4303
 msgid ""
 "Added verbose option to ``scrapy version`` command, useful for bug reports "
 "(#298)"
-msgstr ""
+msgstr "バグ・レポートに役立つ ``scrapy version`` コマンドにverboseオプションを追加しました (#298)"
 
 #: ../../news.rst:4304
 msgid "HTTP cache now stored by default in the project data dir (#279)"
@@ -9131,7 +9131,7 @@ msgstr "スパイダー毎の設定 (#245)"
 
 #: ../../news.rst:4309
 msgid "Support exit codes to signal errors in Scrapy commands (#248)"
-msgstr ""
+msgstr "Scrapyコマンドのエラーを通知するための終了コードをサポートします (#248)"
 
 #: ../../news.rst:4310
 msgid "Added ``-c`` argument to ``scrapy shell`` command"
@@ -9139,7 +9139,7 @@ msgstr "``scrapy shell`` コマンドに ``-c`` 引数を追加した"
 
 #: ../../news.rst:4311
 msgid "Made ``libxml2`` optional (#260)"
-msgstr ""
+msgstr "``libxml2`` をオプションにしました (#260)"
 
 #: ../../news.rst:4312
 msgid "New ``deploy`` command (#261)"
@@ -9165,18 +9165,18 @@ msgstr "Scrapydはスパイダーごとに1つのプロセスを使用するよ�
 msgid ""
 "It stores one log file per spider run, and rotate them keeping the lastest 5 "
 "logs per spider (by default)"
-msgstr ""
+msgstr "スパイダーの実行ごとに1つのログファイルを保存し、スパイダーごとに最新の5つのログを保持してローテーションします(デフォルト)"
 
 #: ../../news.rst:4321
 msgid ""
 "A minimal web ui was added, available at http://localhost:6800 by default"
-msgstr ""
+msgstr "最小限のWebUIが追加され、デフォルトでは http://localhost:6800 が有効です。"
 
 #: ../../news.rst:4322
 msgid ""
 "There is now a ``scrapy server`` command to start a Scrapyd server of the "
 "current project"
-msgstr ""
+msgstr "現在のプロジェクトのScrapydサーバを起動するために ``scrapy server`` コマンドが用意されました"
 
 #: ../../news.rst:4325 ../../news.rst:4401
 msgid "Changes to settings"
@@ -9186,13 +9186,13 @@ msgstr "設定の変更"
 msgid ""
 "added ``HTTPCACHE_ENABLED`` setting (False by default) to enable HTTP cache "
 "middleware"
-msgstr ""
+msgstr "HTTPキャッシュミドルウェアを有効にするための ``HTTPCACHE_ENABLED`` 設定(デフォルトではFalse)を追加"
 
 #: ../../news.rst:4328
 msgid ""
 "changed ``HTTPCACHE_EXPIRATION_SECS`` semantics: now zero means \"never "
 "expire\"."
-msgstr ""
+msgstr "``HTTPCACHE_EXPIRATION_SECS`` セマンティクスを変更しました: ゼロは「期限切れにならない」ことを意味します。"
 
 #: ../../news.rst:4331
 msgid "Deprecated/obsoleted functionality"
@@ -9202,19 +9202,19 @@ msgstr "非推奨/廃止された機能"
 msgid ""
 "Deprecated ``runserver`` command in favor of ``server`` command which starts "
 "a Scrapyd server. See also: Scrapyd changes"
-msgstr ""
+msgstr "Scrapydサーバーを起動する ``server`` コマンドを優先して、 ``runserver`` コマンドは非推奨になりました。Scrapydの変更も参照して下さい。"
 
 #: ../../news.rst:4334
 msgid ""
 "Deprecated ``queue`` command in favor of using Scrapyd ``schedule.json`` "
 "API. See also: Scrapyd changes"
-msgstr ""
+msgstr "Scrapyd `` schedule.json`` APIの使用を優先して、``queue`` コマンドが非推奨になりました。Scrapydの変更も参照して下さい。"
 
 #: ../../news.rst:4335
 msgid ""
 "Removed the !LxmlItemLoader (experimental contrib which never graduated to "
 "main contrib)"
-msgstr ""
+msgstr "！LxmlItemLoader(メインの投稿に昇格したことのない実験的な投稿)を削除しました"
 
 #: ../../news.rst:4338
 msgid "Scrapy 0.10"
