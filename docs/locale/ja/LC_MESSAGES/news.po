@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Scrapy \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 01:26+0900\n"
-"PO-Revision-Date: 2021-07-01 11:11+0900\n"
+"PO-Revision-Date: 2021-07-01 11:30+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -9218,7 +9218,7 @@ msgstr "！LxmlItemLoader(メインの投稿に昇格したことのない実験
 
 #: ../../news.rst:4338
 msgid "Scrapy 0.10"
-msgstr ""
+msgstr "Scrapy 0.10"
 
 #: ../../news.rst:4345
 msgid ""
@@ -9232,33 +9232,33 @@ msgstr ""
 msgid ""
 "Simplified Images pipeline usage which doesn't require subclassing your own "
 "images pipeline now (#217)"
-msgstr ""
+msgstr "独自の画像パイプラインをサブクラス化する必要がない簡略化された画像パイプラインの使用法 (#217)"
 
 #: ../../news.rst:4347
 msgid "Scrapy shell now shows the Scrapy log by default (#206)"
-msgstr ""
+msgstr "ScrapyシェルにデフォルトでScrapyログが表示されるようになりました (#206)"
 
 #: ../../news.rst:4348
 msgid ""
 "Refactored execution queue in a common base code and pluggable backends "
 "called \"spider queues\" (#220)"
-msgstr ""
+msgstr "共通ベース・コードのリファクタリングされた実行キューと \"spider queues\" と呼ばれる着脱可能なバックエンド (#220)"
 
 #: ../../news.rst:4349
 msgid ""
 "New persistent spider queue (based on SQLite) (#198), available by default, "
 "which allows to start Scrapy in server mode and then schedule spiders to run."
-msgstr ""
+msgstr "デフォルトで利用可能な新しい(SQLiteベースの)永続スパイダー・キュー  (#198) 。サーバー・モードでScrapyを起動し、スパイダーの実行をスケジュールできます。"
 
 #: ../../news.rst:4350
 msgid ""
 "Added documentation for Scrapy command-line tool and all its available sub-"
 "commands. (documentation available)"
-msgstr ""
+msgstr "Scrapyコマンドライン・ツールとそのすべての利用可能なサブ・コマンドの文書を追加(文書が利用可能)"
 
 #: ../../news.rst:4351
 msgid "Feed exporters with pluggable backends (#197) (documentation available)"
-msgstr ""
+msgstr "着脱可能なバックエンドを備えたフィード・エクスポーター (#197) (文書が利用可能)"
 
 #: ../../news.rst:4352
 msgid "Deferred signals (#193)"
@@ -9268,23 +9268,23 @@ msgstr "遅延(deferred)シグナル (#193)"
 msgid ""
 "Added two new methods to item pipeline open_spider(), close_spider() with "
 "deferred support (#195)"
-msgstr ""
+msgstr "アイテム・パイプラインに2つの新しいメソッド open_spider() と、 deferredサポート付きの close_spider() を追加しました (#195)"
 
 #: ../../news.rst:4354
 msgid "Support for overriding default request headers per spider (#181)"
-msgstr ""
+msgstr "スパイダーごとのデフォルトのリクエスト・ヘッダーのオーバーライドのサポート (#181)"
 
 #: ../../news.rst:4355
 msgid ""
 "Replaced default Spider Manager with one with similar functionality but not "
 "depending on Twisted Plugins (#186)"
-msgstr ""
+msgstr "デフォルトのSpiderManagerを、同様の機能を持つがTwisted Pluginsに依存しないものに置き換えました (#186)"
 
 #: ../../news.rst:4356
 msgid ""
 "Splitted Debian package into two packages - the library and the service "
 "(#187)"
-msgstr ""
+msgstr "二つのパッケージに分割さDebianパッケージ - ライブラリとサービス (#187)"
 
 #: ../../news.rst:4357
 msgid "Scrapy log refactoring (#188)"
@@ -9294,15 +9294,15 @@ msgstr "Scrapyログ機能リファクタリング (#188)"
 msgid ""
 "New extension for keeping persistent spider contexts among different runs "
 "(#203)"
-msgstr ""
+msgstr "異なる実行間で永続的なスパイダー・コンテキストを維持するための新しい拡張機能 (#203)"
 
 #: ../../news.rst:4359
 msgid "Added ``dont_redirect`` request.meta key for avoiding redirects (#233)"
-msgstr ""
+msgstr "リダイレクトを回避するための ``dont_redirect`` request.meta キーを追加 (#233)"
 
 #: ../../news.rst:4360
 msgid "Added ``dont_retry`` request.meta key for avoiding retries (#234)"
-msgstr ""
+msgstr "再試行を回避するための ``dont_retry`` request.metaキーを追加 (#234)"
 
 #: ../../news.rst:4363
 msgid "Command-line tool changes"
@@ -9314,7 +9314,7 @@ msgid ""
 "there is only one global ``scrapy`` command now, instead of one ``scrapy-ctl."
 "py`` per project - Added ``scrapy.bat`` script for running more conveniently "
 "from Windows"
-msgstr ""
+msgstr "古い ``scrapy-ctl.py`` を置き換える新しい ``scrapy`` コマンド (#199) 。プロジェクト毎に一つの ``scrapy-ctl.py`` ではなく、グローバルな ``scrapy`` コマンドが1つだけになりました。Windowsからより便利に実行するための ``scrapy.bat`` スクリプトを追加しました。"
 
 #: ../../news.rst:4368
 msgid "Added bash completion to command-line tool (#210)"
@@ -9337,7 +9337,7 @@ msgstr "Requestオブジェクトの ``url`` と ``body`` 属性は今や読み�
 msgid ""
 "``Request.copy()`` and ``Request.replace()`` now also copies their "
 "``callback`` and ``errback`` attributes (#231)"
-msgstr ""
+msgstr "``Request.copy()`` と ``Request.replace()`` は、それらの ``callback`` と ``errback`` 属性もコピーするようになりました (#231)"
 
 #: ../../news.rst:4376
 msgid ""
@@ -9349,7 +9349,7 @@ msgstr "``scrapy.contrib`` から ``UrlFilterMiddleware`` を削除しました(
 msgid ""
 "Offsite middleware doesn't filter out any request coming from a spider that "
 "doesn't have a allowed_domains attribute (#225)"
-msgstr ""
+msgstr "オフサイト・ミドルウェアは、allowed_domains属性を持たないスパイダーからのリクエストを除外しません (#225)"
 
 #: ../../news.rst:4378
 msgid ""
@@ -9404,13 +9404,13 @@ msgstr "``scrapy.stats.collector.SimpledbStatsCollector`` から ``scrapy.contri
 msgid ""
 "default per-command settings are now specified in the ``default_settings`` "
 "attribute of command object class (#201)"
-msgstr ""
+msgstr "コマンドごとのデフォルト設定が、コマンド・オブジェクト・クラスの ``default_settings`` 属性で指定されるようになりました (#201)"
 
 #: ../../news.rst:4388
 msgid ""
 "changed arguments of Item pipeline ``process_item()`` method from ``(spider, "
 "item)`` to ``(item, spider)``"
-msgstr ""
+msgstr "Itemパイプライン ``process_item()`` メソッドの引数を ``(spider, item)`` から ``(item, spider)`` に変更しました"
 
 #: ../../news.rst:4389 ../../news.rst:4391 ../../news.rst:4393
 msgid "backward compatibility kept (with deprecation warning)"
@@ -9451,13 +9451,13 @@ msgstr "Spider Manager と Item Pipeline Manager に ``from_settings()`` クラ�
 msgid ""
 "Added ``HTTPCACHE_IGNORE_SCHEMES`` setting to ignore certain schemes on !"
 "HttpCacheMiddleware (#225)"
-msgstr ""
+msgstr "!HttpCacheMiddlewareの特定のスキームを無視するための ``HTTPCACHE_IGNORE_SCHEMES`` 設定を追加 (#225)"
 
 #: ../../news.rst:4404
 msgid ""
 "Added ``SPIDER_QUEUE_CLASS`` setting which defines the spider queue to use "
 "(#220)"
-msgstr ""
+msgstr "使用するスパイダー・キューを定義する ``SPIDER_QUEUE_CLASS`` 設定を追加 (#220)"
 
 #: ../../news.rst:4405
 msgid "Added ``KEEP_ALIVE`` setting (#220)"
@@ -9475,7 +9475,7 @@ msgstr "``COMMANDS_SETTINGS_MODULE`` 設定を削除 (#201)"
 msgid ""
 "Renamed ``REQUEST_HANDLERS`` to ``DOWNLOAD_HANDLERS`` and make download "
 "handlers classes (instead of functions)"
-msgstr ""
+msgstr "``REQUEST_HANDLERS`` の名前を ``DOWNLOAD_HANDLERS`` に変更し、(関数の代わりに)ダウンロード・ハンドラー・クラスを作成しました"
 
 #: ../../news.rst:4411
 msgid "Scrapy 0.9"
